@@ -19,7 +19,7 @@
            "Helvetica Neue", Arial, sans-serif;
   --mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
-  --measure: 40rem;
+  --measure: 44rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,7 +60,42 @@ a:hover { color: var(--accent-lit); border-bottom-color: currentColor; }
 
 /* --- masthead --------------------------------------------------- */
 
-header.masthead { margin-bottom: 3.25rem; }
+header.masthead {
+  display: grid;
+  grid-template-columns: 1fr 12rem;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 3.25rem;
+}
+
+.masthead-text { min-width: 0; }
+.masthead-text > :last-child { margin-bottom: 0; }
+
+/* --- portrait ---------------------------------------------------- */
+
+.portrait { margin: 0; }
+
+.portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 22%;   /* hold the face just above centre */
+  border-radius: 2px;
+  background: #0d0d0f;        /* matches the photo's own falloff */
+  box-shadow:
+    0 1px 2px rgba(20, 18, 15, 0.10),
+    0 10px 26px -8px rgba(20, 18, 15, 0.26);
+}
+
+@media (prefers-color-scheme: dark) {
+  .portrait img {
+    box-shadow: none;
+    outline: 1px solid var(--rule);
+    outline-offset: -1px;
+  }
+}
 
 h1 {
   font-size: 2.05rem;
@@ -72,11 +107,12 @@ h1 {
 
 .tagline {
   font-family: var(--sans);
-  font-size: 0.9rem;
-  letter-spacing: 0.055em;
+  font-size: 0.82rem;
+  letter-spacing: 0.045em;
   text-transform: uppercase;
   color: var(--ink-faint);
   margin: 0 0 1.5rem;
+  text-wrap: balance;
 }
 
 .lede { margin: 0; color: var(--ink-soft); }
@@ -129,6 +165,7 @@ ul.entries > li:last-child { border-bottom: none; }
   font-size: 0.83rem;
   line-height: 1.5;
   color: var(--ink-faint);
+  max-width: 34rem;
 }
 
 .entry-note a { color: var(--ink-soft); }
@@ -174,6 +211,11 @@ footer {
 }
 
 /* --- small screens ---------------------------------------------- */
+
+@media (max-width: 46rem) {
+  header.masthead { grid-template-columns: 1fr; gap: 1.6rem; }
+  .portrait { order: -1; width: 9.5rem; }
+}
 
 @media (max-width: 34rem) {
   body { font-size: 17px; }

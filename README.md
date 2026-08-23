@@ -11,9 +11,25 @@ code.
 ## Layout
 
 ```
-index.html        the landing page
-assets/style.css  shared stylesheet — reuse it on any page added later
-.nojekyll         serve files as-is, skipping Jekyll processing
+index.html              the landing page
+assets/style.css        shared stylesheet — reuse it on any page added later
+assets/bernd_dark1.jpg  masthead portrait
+assets/social-card.jpg  1200x630 link preview (generated — see below)
+tools/                  source and script for the link preview
+.nojekyll               serve files as-is, skipping Jekyll processing
+```
+
+## Link preview
+
+`assets/social-card.jpg` is what LinkedIn, Slack, and iMessage show when the
+site is shared. It is generated, not hand-edited — the portrait on its own is
+2:3, and unfurlers crop to roughly 1.91:1, which would slice straight through
+the face. `tools/social-card.html` composes it against the dark field instead.
+
+After changing the portrait, the name, or the tagline, re-render it:
+
+```sh
+tools/render-card.sh
 ```
 
 ## Editing

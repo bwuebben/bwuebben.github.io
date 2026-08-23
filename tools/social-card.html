@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>social card source</title>
+<!--
+  Source for assets/social-card.jpg — the 1200x630 landscape preview that
+  LinkedIn, Slack, and friends show when the site is shared. The portrait alone
+  is 2:3, so a link unfurler would letterbox-crop it straight through the face;
+  this composes it against the dark field instead. Regenerate with:
+
+    tools/render-card.sh
+-->
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px;
+    display: grid; grid-template-columns: 470px 1fr;
+    background: #16161a; overflow: hidden;
+  }
+  .shot { position: relative; height: 630px; }
+  .shot img {
+    width: 100%; height: 100%;
+    object-fit: cover; object-position: 50% 24%;
+    display: block;
+    /* the photo's own falloff is near-black, so fading the inner edge lets it
+       sit on the card's field with no visible seam */
+    -webkit-mask-image: linear-gradient(to right, #000 62%, transparent 100%);
+            mask-image: linear-gradient(to right, #000 62%, transparent 100%);
+  }
+  .text {
+    align-self: center;
+    padding: 0 72px 0 8px;
+    font-family: "Iowan Old Style", Palatino, Georgia, serif;
+    color: #e7e4de;
+  }
+  h1 { font-size: 62px; line-height: 1.08; font-weight: 600; letter-spacing: -0.015em; }
+  .rule { width: 62px; height: 2px; background: #d98a8a; margin: 30px 0 26px; }
+  p {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    font-size: 20px; line-height: 1.55; letter-spacing: 0.055em;
+    text-transform: uppercase; color: #a9a49b;
+  }
+</style>
+</head>
+<body>
+  <div class="shot"><img src="../assets/bernd_dark1.jpg" alt=""></div>
+  <div class="text">
+    <h1>Bernd Johannes<br>Wuebben</h1>
+    <div class="rule"></div>
+    <p>Systematic Investing<br>Quantitative Research · Mathematics</p>
+  </div>
+</body>
+</html>
