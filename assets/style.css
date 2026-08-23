@@ -125,10 +125,7 @@ h1 {
 .epigraph {
   margin: 4.25rem auto 0.5rem;
   max-width: 33rem;
-  padding: 0.7rem 2.25rem;
-  /* rules on both sides so the block reads as framed rather than quoted */
-  border-left: 2px solid var(--accent);
-  border-right: 2px solid var(--accent);
+  padding: 0.7rem 0;
   font-size: 1.42rem;
   font-style: italic;
   line-height: 1.45;
@@ -246,7 +243,7 @@ footer {
 
 @media (max-width: 34rem) {
   .epigraph {
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 0;
     font-size: 1.15rem;
   }
 
