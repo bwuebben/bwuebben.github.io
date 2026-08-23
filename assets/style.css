@@ -120,6 +120,20 @@ h1 {
 .lede { margin: 0; color: var(--ink-soft); }
 .lede + .lede { margin-top: 0.9rem; }
 
+/* --- epigraph ---------------------------------------------------- */
+
+.epigraph {
+  margin: 3.5rem 0 0;
+  padding: 0.2rem 0 0.2rem 1.5rem;
+  border-left: 2px solid var(--accent);
+  max-width: 32rem;
+  font-size: 1.08rem;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  text-wrap: pretty;
+}
+
 /* --- sections --------------------------------------------------- */
 
 section { margin-top: 3.25rem; }
