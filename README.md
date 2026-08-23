@@ -36,6 +36,17 @@ tools/render-card.sh
 
 Change a file, commit, push. GitHub rebuilds and redeploys within a minute or so.
 
+GitHub Pages sends `Cache-Control: max-age=600` on assets, so a browser can hold
+a stale `style.css` for ten minutes after a deploy — long enough to pair new
+markup with an old stylesheet and render a broken page. **When you change
+`assets/style.css`, bump the version on its link in `index.html`:**
+
+```html
+<link rel="stylesheet" href="assets/style.css?v=3">
+```
+
+That changes the URL, so every browser fetches the new file immediately.
+
 ```sh
 git add -A && git commit -m "Update landing page" && git push
 ```

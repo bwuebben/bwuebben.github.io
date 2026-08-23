@@ -37,6 +37,9 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+img, svg, video { max-width: 100%; height: auto; }
+figure { margin: 0; }
+
 html { -webkit-text-size-adjust: 100%; }
 
 body {
