@@ -253,3 +253,128 @@ footer {
   .contact li { display: block; }
   .contact .label { display: block; }
 }
+
+
+/* ==================================================================
+   Poem page — /poem.html
+   Mirrors the LaTeX source: narrow measure, Palatino, 1.5 leading,
+   ragged right, centred title in small caps, diamond dividers, and
+   KaTeX-typeset display math with an italic caption beneath.
+   ================================================================== */
+
+:root {
+  --poem-title:   #1a1a1a;
+  --poem-body:    #2c2c2c;
+  --poem-rule:    #aaaaaa;
+  --poem-math:    #444444;
+  --poem-caption: #777777;
+  /* the LaTeX loads palatino; keep it first here even though the site
+     stack leads with Iowan Old Style */
+  --poem-serif: Palatino, "Palatino Linotype", "Book Antiqua",
+                "Iowan Old Style", Georgia, serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --poem-title:   #ece9e3;
+    --poem-body:    #d6d2ca;
+    --poem-rule:    #4c4c55;
+    --poem-math:    #c8c4bc;
+    --poem-caption: #8b867d;
+  }
+}
+
+.wrap.poem {
+  max-width: 31rem;
+  padding: 4rem 1.5rem 5rem;
+  font-family: var(--poem-serif);
+  color: var(--poem-body);
+  font-size: 1.12rem;
+  line-height: 1.5;
+}
+
+.poem-title {
+  margin: 0 0 2.75rem;
+  text-align: center;
+  font-family: var(--poem-serif);
+  font-size: 2.1rem;
+  font-weight: 400;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.05em;
+  color: var(--poem-title);
+}
+
+.stanza {
+  margin: 0;
+  text-align: left;   /* \raggedright */
+  text-wrap: initial;
+}
+
+.stanza + .stanza { margin-top: 1.5rem; }
+.coda { margin-top: 1.75rem; }
+
+/* --- divider: rule, diamond, rule --- */
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 1.9rem 0;
+  color: var(--poem-rule);
+}
+.divider span {
+  display: block;
+  width: 5.5rem;
+  height: 1px;
+  background: currentColor;
+}
+.divider i { font-style: normal; font-size: 0.8em; line-height: 1; }
+
+/* --- display math + caption --- */
+
+.pmath {
+  margin: 1.6rem 0;
+  color: var(--poem-math);
+}
+
+.pmath .katex-display { margin: 0; }
+.pmath .katex { font-size: 1.12em; }
+
+.pcaption {
+  margin: 0.55rem 0 0;
+  text-align: center;
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--poem-caption);
+}
+
+/* --- back link --- */
+
+.poem-back {
+  margin-top: 3.5rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.82rem;
+}
+.poem-back a { color: var(--ink-faint); }
+.poem-back a:hover { color: var(--accent); }
+
+/* --- the epigraph on the index links here --- */
+
+.epigraph a {
+  color: inherit;
+  border-bottom: none;
+  transition: color 0.15s ease;
+}
+.epigraph a:hover { color: var(--accent); border-bottom: none; }
+
+@media (max-width: 34rem) {
+  .wrap.poem { padding: 2.75rem 1.15rem 3.5rem; font-size: 1.05rem; }
+  .poem-title { font-size: 1.7rem; margin-bottom: 2rem; }
+  .divider span { width: 3.5rem; }
+  /* a long display formula must scroll in its own box, never the page */
+  .pmath { overflow-x: auto; }
+}

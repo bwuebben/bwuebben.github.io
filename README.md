@@ -58,6 +58,29 @@ relative paths behave exactly as they will in production:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
+## The poem page
+
+`poem.html` is the HTML setting of the LaTeX source for *Gradient of Mind*; the
+epigraph on the landing page links to it.
+
+Its mathematics is **pre-rendered with KaTeX at build time**, not typeset in the
+browser. `tools/render-poem-math.js` runs `katex.renderToString` over the four
+formulas and writes the markup straight into the page, so the site ships no
+runtime JavaScript and depends on no CDN — only `assets/katex/katex.min.css`
+and the woff2 fonts beside it (324 KB in total, and the `.woff`/`.ttf` fallback
+URLs are stripped from the CSS because they are not shipped).
+
+To change a formula, edit `tools/render-poem-math.js` and re-run it:
+
+```sh
+npm install katex        # once, anywhere
+node tools/render-poem-math.js
+```
+
+then paste the regenerated markup into `poem.html`. KaTeX colours itself from
+the inherited CSS `color`, so the maths follows light and dark mode with no
+extra work.
+
 ## Sub-pages
 
 New sections live in their own directory with an `index.html` that links back to
