@@ -194,12 +194,21 @@ ul.entries > li:last-child { border-bottom: none; }
   padding: 0;
   list-style: none;
 }
-.contact li { padding: 0.3rem 0; }
+/* flex, not inline-block, so a long value wraps aligned under itself
+   rather than running back under the label */
+.contact li {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+}
 .contact .label {
-  display: inline-block;
-  min-width: 6.5rem;
+  flex: 0 0 6rem;
   color: var(--ink-faint);
 }
+
+/* arXiv category names contain hyphens and dots; without this a line break
+   can land inside one, e.g. "q-" / "fin.PM" */
+.contact .cat { white-space: nowrap; }
 
 /* --- footer ----------------------------------------------------- */
 
@@ -222,5 +231,6 @@ footer {
   body { font-size: 17px; }
   .wrap { padding: 3rem 1.15rem 3.5rem; }
   h1 { font-size: 1.7rem; }
-  .contact .label { display: block; min-width: 0; }
+  .contact li { display: block; }
+  .contact .label { display: block; }
 }
