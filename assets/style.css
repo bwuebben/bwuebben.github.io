@@ -1,0 +1,183 @@
+/* ---------------------------------------------------------------
+   bwuebben.github.io — base stylesheet
+   Shared by the landing page and any sub-pages added later.
+   --------------------------------------------------------------- */
+
+:root {
+  --bg:         #fbfaf8;
+  --bg-panel:   #f3f1ec;
+  --ink:        #1c1b19;
+  --ink-soft:   #55524c;
+  --ink-faint:  #86827a;
+  --rule:       #ddd9d1;
+  --accent:     #7a2e2e;
+  --accent-lit: #a04040;
+
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+           Georgia, "Times New Roman", serif;
+  --sans:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+           "Helvetica Neue", Arial, sans-serif;
+  --mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+  --measure: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:         #16161a;
+    --bg-panel:   #1e1e23;
+    --ink:        #e7e4de;
+    --ink-soft:   #a9a49b;
+    --ink-faint:  #7c776e;
+    --rule:       #2e2e35;
+    --accent:     #d98a8a;
+    --accent-lit: #eaa3a3;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 5rem;
+}
+
+a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+a:hover { color: var(--accent-lit); border-bottom-color: currentColor; }
+
+/* --- masthead --------------------------------------------------- */
+
+header.masthead { margin-bottom: 3.25rem; }
+
+h1 {
+  font-size: 2.05rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  margin: 0 0 0.55rem;
+}
+
+.tagline {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 1.5rem;
+}
+
+.lede { margin: 0; color: var(--ink-soft); }
+.lede + .lede { margin-top: 0.9rem; }
+
+/* --- sections --------------------------------------------------- */
+
+section { margin-top: 3.25rem; }
+
+h2 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0 0 1.4rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+h3 {
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+  margin: 2rem 0 0.9rem;
+}
+h3:first-of-type { margin-top: 0; }
+
+/* --- entry list (papers, projects) ------------------------------ */
+
+ul.entries { list-style: none; margin: 0; padding: 0; }
+
+ul.entries > li {
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+ul.entries > li:last-child { border-bottom: none; }
+
+.entry-title { display: block; font-size: 1.02rem; line-height: 1.4; }
+.entry-title a { color: var(--ink); }
+.entry-title a:hover { color: var(--accent); }
+
+.entry-note {
+  display: block;
+  margin-top: 0.28rem;
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+
+.entry-note a { color: var(--ink-soft); }
+.entry-note a:hover { color: var(--accent); }
+
+/* --- research areas --------------------------------------------- */
+
+.areas { margin: 0; padding: 0; list-style: none; }
+.areas li { padding: 0.4rem 0 0.4rem 1.1rem; position: relative; color: var(--ink-soft); }
+.areas li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--ink-faint);
+}
+.areas strong { color: var(--ink); font-weight: 600; }
+
+/* --- contact ---------------------------------------------------- */
+
+.contact {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.contact li { padding: 0.3rem 0; }
+.contact .label {
+  display: inline-block;
+  min-width: 6.5rem;
+  color: var(--ink-faint);
+}
+
+/* --- footer ----------------------------------------------------- */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+}
+
+/* --- small screens ---------------------------------------------- */
+
+@media (max-width: 34rem) {
+  body { font-size: 17px; }
+  .wrap { padding: 3rem 1.15rem 3.5rem; }
+  h1 { font-size: 1.7rem; }
+  .contact .label { display: block; min-width: 0; }
+}
