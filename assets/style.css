@@ -197,6 +197,9 @@ ul.entries > li:last-child { border-bottom: none; }
 }
 
 .entry-note a { color: var(--ink-soft); }
+
+/* an identifier must never break across lines at its colon or dot */
+.entry-note a[href*="arxiv.org"] { white-space: nowrap; }
 .entry-note a:hover { color: var(--accent); }
 
 /* --- research areas --------------------------------------------- */
