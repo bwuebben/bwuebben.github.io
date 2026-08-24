@@ -1,8 +1,8 @@
 const katex = require('katex');
 const F = [
   ['eta',  String.raw`\eta_{\mathrm{intel}} \;=\; \dfrac{dI_{\mathrm{useful}}}{dE}`],
-  ['ebit', String.raw`E_{\mathrm{bit}} \;=\; k_{\!B}\, T \,\ln 2`],
-  ['flow', String.raw`\dfrac{dS_{\mathrm{int}}}{dt} \;+\; \dfrac{dS_{\mathrm{env}}}{dt} \;=\; 0`],
+  ['ebit', String.raw`E_{\mathrm{erase}} \;\ge\; k_{\!B}\, T \,\ln 2`],
+  ['flow', String.raw`\dfrac{dS_{\mathrm{int}}}{dt} \;+\; \dfrac{dS_{\mathrm{env}}}{dt} \;\ge\; 0`],
   ['iaw',  String.raw`I_{\mathrm{aware}} \;=\; \int_{0}^{\,\tau}\!\eta_{\mathrm{intel}}(t)\;\dfrac{dE}{dt}\;dt`],
 ];
 const out = {};
