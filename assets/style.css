@@ -77,7 +77,19 @@ header.masthead::after { content: ""; display: block; clear: both; }
   margin: 0.35rem 0 1.1rem 2.25rem;
 }
 
+/* the portrait opens full size in a new tab; zoom-in is the only
+   affordance telling a visitor it is clickable at all */
+.portrait a {
+  display: block;
+  border-bottom: none;
+  cursor: zoom-in;
+}
+.portrait a:hover { border-bottom: none; }
+.portrait a:hover img { opacity: 0.9; }
+.portrait a:focus-visible img { outline: 2px solid var(--accent); outline-offset: 3px; }
+
 .portrait img {
+  transition: opacity 0.18s ease;
   display: block;
   width: 100%;
   height: auto;
