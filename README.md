@@ -58,6 +58,15 @@ relative paths behave exactly as they will in production:
 python3 -m http.server 8000   # then visit http://localhost:8000
 ```
 
+## Research entries
+
+The Calabi–Yau smoothability entry in `index.html` links to the
+[five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability).
+Its 9 September 2026 summary distinguishes explicit examples from the
+conditional database classifications and states the degree and projection
+hypotheses of the mixed criterion. Keep this summary aligned with the
+repository's paper guides when the manuscripts change.
+
 ## The poem page
 
 `poem.html` is the HTML setting of the LaTeX source for *Gradient of Mind*; the
