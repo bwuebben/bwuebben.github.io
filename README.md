@@ -5,17 +5,25 @@ Source for my personal site, published by GitHub Pages at
 
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
-HTML, CSS, and (eventually) JavaScript; there is no build step and no server-side
-code.
+HTML and CSS; there is no server-side code or runtime JavaScript. The checked-in
+pages are ready to serve. A small Python helper updates shared navigation and
+stylesheet links when the site's configuration changes.
 
 ## Layout
 
 ```
 index.html              the landing page
-assets/style.css        shared stylesheet — reuse it on any page added later
-assets/bernd_dark1.jpg  masthead portrait
+papers/index.html       research papers, grouped by subject
+math-and-ai/index.html   When Mathematics Outgrows Its Gatekeepers
+poem.html               Gradient of Mind (Entropy in the navigation)
+site.json               navigation labels, groups, order, and destinations
+templates/navigation.html shared navigation markup
+templates/page.html     starting point for additional pages
+assets/theme.css        shared fonts, colours, and reading width
+assets/style.css        shared layout and page styles
+assets/bernd_dark1.jpg   masthead portrait
 assets/social-card.jpg  1200x630 link preview (generated — see below)
-tools/                  source and script for the link preview
+tools/                  site helpers and link-preview tools
 .nojekyll               serve files as-is, skipping Jekyll processing
 ```
 
@@ -32,40 +40,80 @@ After changing the portrait, the name, or the tagline, re-render it:
 tools/render-card.sh
 ```
 
-## Editing
+## Local preview and editing
 
-Change a file, commit, push. GitHub rebuilds and redeploys within a minute or so.
-
-GitHub Pages sends `Cache-Control: max-age=600` on assets, so a browser can hold
-a stale `style.css` for ten minutes after a deploy — long enough to pair new
-markup with an old stylesheet and render a broken page. **When you change
-`assets/style.css`, bump the version on its link in `index.html`:**
-
-```html
-<link rel="stylesheet" href="assets/style.css?v=3">
-```
-
-That changes the URL, so every browser fetches the new file immediately.
+Preview the checked-in pages without installing any dependencies:
 
 ```sh
-git add -A && git commit -m "Update landing page" && git push
+python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-To preview locally, open `index.html` in a browser, or serve the directory so
-relative paths behave exactly as they will in production:
+Visit <http://127.0.0.1:8000/> or the essay at
+<http://127.0.0.1:8000/math-and-ai/>. Refresh after edits. Stop the server with
+Ctrl+C. This serves only on your computer; it does not publish anything.
+
+**Theme:** edit `assets/theme.css` for fonts, light/dark colours, and reading
+width. The existing Iowan/Palatino/Georgia stack and the poem's Palatino setting
+are kept there. Layout, navigation, responsive rules, and essay styles live in
+`assets/style.css`.
+
+**Navigation:** edit the links in `site.json` or their outer markup in
+`templates/navigation.html`. The top level contains Home, Papers, and Misc.
+Misc's `children` list contains Mathematics & AI and Entropy. Groups use a
+native HTML disclosure: click or tap the label, or focus it and press Enter or
+Space, to open or close its submenu. Then run after configuration changes:
 
 ```sh
-python3 -m http.server 8000   # then visit http://localhost:8000
+python3 tools/update-site.py
+python3 tools/update-site.py --check
 ```
 
-## Research entries
+Run this after stylesheet changes too. It propagates navigation to every page
+with the shared markers, sets the active-page link, resolves relative paths,
+and versions both stylesheets by content hash so browsers fetch changed CSS.
+Navigation is ordinary HTML and works without JavaScript. The helper updates
+only the marked navigation and stylesheet blocks; page content stays editable.
 
-The Calabi–Yau smoothability entry in `index.html` links to the
+Keep changes local while reviewing. Publishing is a separate, deliberate Git
+commit and push of the reviewed files to GitHub Pages.
+
+## The papers page
+
+`papers/index.html` holds the Papers section formerly on the landing page.
+Edit paper entries here. Its subject groupings, descriptions, and links are
+preserved, with heading levels adjusted for a standalone page. Preview it at
+<http://127.0.0.1:8000/papers/>.
+
+The Calabi–Yau smoothability entry links to the
 [five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability).
 The summary distinguishes explicit examples from computer-assisted database
 classifications using the verified input copy, and states the degree and
 projection hypotheses of the mixed criterion. Keep this summary aligned with the
 repository's paper guides when the manuscripts change.
+
+## The essay page
+
+`math-and-ai/index.html` contains the full text of *When Mathematics Outgrows Its
+Gatekeepers*, including linked author–year citations and the complete bibliography.
+The source is `../papers_ai_1/math_and_ai/main.tex` (formerly referred to as
+`essay.tex`); the LaTeX build writes `essay.bbl` and `essay.pdf` beside it.
+
+To refresh the essay after changing and building that source:
+
+```sh
+python3 tools/import-essay.py ../papers_ai_1/math_and_ai/main.tex
+python3 tools/update-site.py
+```
+
+The importer reads the source and its built `essay.bbl`; it never edits them.
+It supports the TeX commands used in this essay and stops on unsupported
+commands. Rebuild the LaTeX bibliography before importing citation changes.
+The HTML title, subtitle, date, and page metadata are maintained separately.
+The expandable “The argument at a glance” overview is also maintained in the
+HTML, between the `essay:overview` markers. It sits outside `essay:content`,
+so importing the LaTeX preserves its thirteen points and section links.
+Review the resulting diff and local page after each import. The public page is
+self-contained; readers and GitHub Pages do not need the research repository.
 
 ## The poem page
 
@@ -90,14 +138,34 @@ then paste the regenerated markup into `poem.html`. KaTeX colours itself from
 the inherited CSS `color`, so the maths follows light and dark mode with no
 extra work.
 
+## Search discovery
+
+The paper titles and full descriptions are ordinary HTML, reachable through
+the Papers link on every page. Each page has a canonical URL and descriptive
+metadata. `robots.txt` allows crawling and advertises `sitemap.xml`; add new
+public pages to the sitemap when adding them to the navigation. Preserve
+`google5536594b14b40920.html`, the existing Google verification file.
+
+After publishing, submit `https://bwuebben.github.io/sitemap.xml` in Google
+Search Console. Inspect `https://bwuebben.github.io/papers/` there and request
+indexing, then monitor the Page Indexing report. Crawling and indexing are
+Google's decisions; these files make discovery possible but do not guarantee
+indexing or rankings.
+
 ## Sub-pages
 
-New sections live in their own directory with an `index.html` that links back to
-`/assets/style.css`:
+New pages can live in their own directory:
 
 ```
 writing/index.html   ->  https://bwuebben.github.io/writing/
 ```
+
+Copy `templates/page.html` to the new location, replace its title, description,
+and content, add its link to `site.json`, and run `python3 tools/update-site.py`.
+Keep the `site:navigation` and `site:styles` comment markers and the `main` ID.
+The helper supplies the same navigation and theme, including correct relative
+links at any directory depth. The `tools/` and `templates/` directories are
+excluded from propagation.
 
 Separate repositories publish under their own path instead — a repository named
 `foo` with Pages enabled serves at `https://bwuebben.github.io/foo/`, independent

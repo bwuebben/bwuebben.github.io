@@ -10,16 +10,40 @@
 <meta property="og:title" content="Bernd Johannes Wuebben">
 <meta property="og:description" content="Asset pricing theory, AI, mathematics, theoretical physics, and international relations.">
 <meta property="og:url" content="https://bwuebben.github.io/">
+<link rel="canonical" href="https://bwuebben.github.io/">
 <meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Bernd Johannes Wuebben">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="assets/style.css?v=13">
+<!-- site:styles -->
+<link rel="stylesheet" href="assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="assets/style.css?v=7ca39a1e04fc">
+<!-- /site:styles -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
 </head>
 <body>
-<div class="wrap">
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="./" aria-current="page">Home</a></li>
+      <li><a href="papers/">Papers</a></li>
+      <li>
+        <details class="nav-group">
+          <summary>Misc</summary>
+          <ul class="nav-submenu">
+            <li><a href="math-and-ai/">Mathematics &amp; AI</a></li>
+            <li><a href="poem.html">Entropy</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="wrap" tabindex="-1">
 
   <header class="masthead">
     <h1>Bernd Johannes Wuebben</h1>
@@ -91,136 +115,6 @@
   </section>
 
   <section>
-    <h2>Papers</h2>
-
-    <h3>Markets and quantitative finance</h3>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7180460">The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free</a></span>
-        <span class="entry-note">What happens to discovery when generating hypotheses costs nothing and only validation is scarce. Two pre-registered experiments on public data. SSRN, July 2026 · <a href="https://github.com/bwuebben/validation-bottleneck">replication code</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6487798">The AI-Native Asset Manager: Institutional Cognition as Competitive Advantage</a></span>
-        <span class="entry-note">As frontier AI commoditizes information and analysis, the scarce resource shifts from intelligence to institutional epistemology — the architecture by which a firm generates, challenges, sizes, and learns from its investment beliefs. Returns decompose into narrative beta, cross-sectional factor alpha, and idiosyncratic issuer alpha, each demanding a different way of knowing, and the durable advantage proves to be a velocity rather than a position. SSRN, April 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://arxiv.org/abs/2604.23833">Beyond De Prado and Cotton: Hierarchical and Iterative Methods for General Mean-Variance Portfolios</a></span>
-        <span class="entry-note">Hierarchical Risk Parity and its Schur-complement generalization are signal-blind: both solve only the minimum-variance problem and cannot carry an arbitrary expected-return forecast. Three methods lift the framework to the general case at the same cost — HRP-μ, HRP-Σμ, and CRISP, a Gauss–Seidel shrinkage solver proved unconditionally convergent. <a href="https://arxiv.org/abs/2604.23833">arXiv:2604.23833</a> · <a href="https://github.com/bwuebben/beyond_hrp_and_cotton">replication code</a></span>
-      </li>
-    </ul>
-
-    <h3>Mathematics</h3>
-    <h4>Geometric topology and Floer theory</h4>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://arxiv.org/abs/2608.17267">An exotic S²×S² and an exotic ℂP²#ℂ̄P²</a></span>
-        <span class="entry-note">Upgrading Lidman–Piccirillo’s slicing-distinguished four-manifold pair from equal cohomology rings to homeomorphic is equivalent to producing an exotic S²×S². The paper closes that gate by proving π₁ = 1 for one explicitly parametrized piece, via coset enumeration and Knuth–Bendix completion with complete certificates. <a href="https://arxiv.org/abs/2608.17267">arXiv:2608.17267</a> · <a href="https://github.com/bwuebben/exotic-s2xs2">scripts and certificates</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://arxiv.org/abs/2607.26096">The instanton homology of the (−2,3,q) pretzel knots and Maurer–Cartan deformations in the two-arc algebra of the pillowcase</a></span>
-        <span class="entry-note">For the pretzel family P(−2,3,q) the rank of instanton knot homology I♮ is q+2, and naive pillowcase Floer homology misses it by exactly one differential, with the sign set by the determinant. The bounding cochains that repair the deficiency are computed — the first explicitly nonzero ones in pillowcase Floer theory, realizing both directions of the conjectured correction inside a single family. <a href="https://arxiv.org/abs/2607.26096">arXiv:2607.26096</a> · <a href="https://github.com/bwuebben/pillowcase-bounding-cochain">code</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://arxiv.org/abs/2607.26095">Traceless SU(2) characters and ℤ/4 instanton gradings for two-bridge and (3,n)-torus knots</a></span>
-        <span class="entry-note">The traceless SU(2) character varieties and their ℤ/4 instanton gradings, computed explicitly for the two-bridge and (3,n)-torus families. These are the input on which the pretzel-knot bounding-cochain computation rests. <a href="https://arxiv.org/abs/2607.26095">arXiv:2607.26095</a> · <a href="https://github.com/bwuebben/pillowcase-bounding-cochain">code</a></span>
-      </li>
-    </ul>
-
-    <h4>Algebraic geometry and mirror symmetry</h4>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://arxiv.org/abs/2608.20411">Slope stability of tangent bundles of smooth toric Fano varieties</a></span>
-        <span class="entry-note">A Klyachko-criterion sweep with exact certificates over all 8,630 smooth toric Fano varieties in dimensions three through six. Every Kähler–Einstein variety in the census has polystable tangent bundle, but not conversely — 102 of the 109 five-folds with stable tangent bundle are not Kähler–Einstein. <a href="https://arxiv.org/abs/2608.20411">arXiv:2608.20411</a> · <a href="https://github.com/bwuebben/toric-tangent-stability">certificates and data</a></span>
-      </li>
-      <li id="calabi-yau-smoothability">
-        <span class="entry-title"><a href="https://github.com/bwuebben/calabi-yau-smoothability">Smoothability of Calabi–Yau threefolds</a></span>
-        <span class="entry-note">Five papers on smoothability of singular Calabi–Yau threefolds, from explicit toric hypersurfaces to a mixed local-to-global criterion. Paper 1 constructs threefolds with a single nonsmoothable cone point, including a locally deformable example, and classifies 217 isolated toric germs with bounded primitive edge vectors. A scan finds its local obstruction in 39,175,536 Kreuzer–Skarke polytopes (approximately 8.27%); the complete input copy has been verified for reflexivity and absence of repetitions up to lattice equivalence. Paper 3 classifies 590 polytopes whose two Batyrev hypersurfaces have at most isolated singularities, including the unique F₁-cone mirror pair. Paper 2 constructs ambient toric-pair smoothings under a sharp dual-edge condition. Paper 4 proves a vanishing-cycle obstruction that rules out smoothing one member of the distinguished mirror pair even though every singularity is locally smoothable. Paper 5 gives a necessary and sufficient criterion for projective threefolds with nodes and the stated exact anticanonical cone germs: degrees 5, 6 and 7, and ℙ¹×ℙ¹. Selected deformation bases are smooth under its nonzero degree-six projection hypothesis. The examples include a nonsmoothable threefold with four smooth deformation components and the smooth 30-dimensional deformation base of X₁₉. Five manuscripts, revised 9 September 2026 · <a href="https://github.com/bwuebben/calabi-yau-smoothability">papers, code and data</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/open-fjrw-scattering">Wall crossing, factorization, and annular scattering in open FJRW theory</a></span>
-        <span class="entry-note">A three-paper series on genus-zero open FJRW theory for xʳ + yˢ. Paper 1 locates the exact primary wall-crossing threshold at central charge one — independence of canonical boundary conditions holds precisely for the simple Fermat singularities — classifies the first walls, and identifies their generators as Hamiltonian vector fields in a graded subalgebra of the tropical vertex Lie algebra. Paper 2 proves unique increasing-slope factorization of primary transitions, and coefficientwise factorization for descendents over finite divisor-closed windows; it constructs the two extremal boundary systems, reconstructs every open potential from initial coefficients, and realizes each finite factorization by Gross–Kelly–Tessler canonical homotopies. Paper 3 develops the quartic descendent theory on an affine annulus: compact rational PL bordism classes and a relative residue trace recover the two cotangent-line recursions and identify the annular ends with the extremal boundary systems, while the theta local system yields consistent scattering diagrams at every finite deformation order and separated logarithmic compactifications. Three manuscripts · <a href="https://github.com/bwuebben/open-fjrw-scattering">papers and exact verification code</a></span>
-      </li>
-    </ul>
-
-    <h4>Donaldson theory and the Atiyah–Floer program</h4>
-    <p class="subsection-note">Gauge-theoretic compactification, gluing, and operations in four-manifold and Floer theory. <a href="https://github.com/bwuebben/donaldson-atiyah-floer">PDFs, LaTeX sources, and project repository</a>.</p>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf">Point operations and matching-line bubbles in the Atiyah–Floer comparison</a></span>
-        <span class="entry-note">Daemi–Fukaya–Lipyanskiy’s admissible SO(3) Atiyah–Floer comparison intertwines the surface and loop operations; this paper supplies the point-class calculation. Matching-line bubbling produces a universal genus-dependent scalar correction — nonzero in genera one and two — and thereby gives the full corrected observable-algebra action. Research manuscript, August 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf">One-bubble neighborhoods of Seiberg–Witten strata in SO(3)-monopole moduli spaces</a></span>
-        <span class="entry-note">Feehan and Leness’s level-one SO(3)-monopole link calculation uses neighborhood properties left as a hypothesis; this paper proves them for one bubble over an arbitrary compact, regular Seiberg–Witten moduli space whose solutions have nonzero spinor. Global equivariant finite-dimensional stabilization, a scale-uniform parametrix, parameter recovery, a two-sided neck estimate, reverse gluing, and determinant-line excision identify the actual and virtual links as oriented cycles. The result removes the neighborhood-theorem input from the arbitrary-dimensional level-one pairing and gives its Jacobi-polynomial formula, with the zero-dimensional and low-degree formulas as corollaries. Research manuscript, August 2026</span>
-      </li>
-    </ul>
-
-    <h4>Moduli spaces and geometric analysis</h4>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/inverse-moduli-theory/blob/main/paper/inverse-moduli-theory.pdf">Inverse Moduli Theory: Realizability of Degeneration Data by Compactified Moduli Spaces</a></span>
-        <span class="entry-note">An inverse problem for Floer and related theories: realizing prescribed gluing data and algebraic identities by compactified moduli spaces, and determining when those realizations arise from geometric Fredholm problems. The principal result gives an obstruction to extending prescribed compatible stabilizing bundles across the pentagon associahedron: a reflected endpoint identification creates a nonorientable boundary bundle, while doubling the datum removes the obstruction. Chain and higher associativity identities become oriented filling conditions in dimension one, with higher extensions governed by smooth bordism. The analytic realization criteria remain conditional. Research manuscript, August 2026 · <a href="https://github.com/bwuebben/inverse-moduli-theory">paper source and finite calculations</a></span>
-      </li>
-    </ul>
-
-    <h3>Theoretical physics</h3>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf">Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua</a></span>
-        <span class="entry-note">Which local Higgs directions survive when their singularities belong to one compact Calabi–Yau threefold? Wrapped M2-brane charges and compact divisor pairings determine a shared Abelian gauging matrix for conifold and E₁–E₄ sectors: degrees 8 (ℙ¹×ℙ¹), 7, 6 and 5. Its branchwise kernel is the invariant-coordinate image of the rigid moment-map zero locus and, under the stated exact-germ and projective crepant-resolution hypotheses, the global first-order deformation image. Combined with the mixed smoothing theorem, this gives an exact geometric existence criterion: the kernel must contain a vector outside every local discriminant. At E₄, an integral identification with the SU(5) diagonal coordinates gives five separate nonzero conic-pencil conditions. Degrees 1–4 remain outside this mixed comparison. Selected deformation bases are smooth when the relation space projects nontrivially to each selected E₃ summand. Examples distinguish cooperative Higgsing in X₉, sectors forced to remain undeformed, and nonzero E₃ deformations forced to retain a singularity. The finite-Planck scalar metric is not determined. Paper 1, revised 7 September 2026 · <a href="https://github.com/bwuebben/global-higgs-branch/tree/main/papers/01-global-constraints">source and guide</a> · <a href="https://github.com/bwuebben/global-higgs-branch">three-paper collection and verification code</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf">Bulk Gauging and Quantum Couplings across a Compact Higgs Transition</a></span>
-        <span class="entry-note">In X₉, two conifold sectors and one E₂ sector can Higgs only together, through an explicit compact transition from Hodge numbers (6,122) to (3,123). Existence also follows from the exact mixed smoothing criterion; the explicit construction identifies the smooth phase needed for the charge and quantum calculations. The paper determines the primitive surviving charge lattice and cubic couplings, and proves that the shared flavor gauging becomes non-dynamical in every gravity-decoupling limit with bounded local Kähler scales. At finite auxiliary-circle radius, four conifold states span a primitive rank-three electric lattice. Laurent mutation and continuation of all eight regular periods identify the surviving genus-zero prepotential with that of the smooth phase on the marked branch, including its integral normalization and constant term. The four-state description is not uniform in the five-dimensional limit. Paper 2, revised 7 September 2026 · <a href="https://github.com/bwuebben/global-higgs-branch/tree/main/papers/02-quantum-transition">source and guide</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://github.com/bwuebben/global-higgs-branch/blob/main/papers/03-magnetic-sheaves/paper.pdf">Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition</a></span>
-        <span class="entry-note">Magnetic objects probe the same compact transition through sheaf counts and stability constraints. Fixed-support Hilbert schemes on the rigid F₁ and ℙ² surfaces give rank-one numerical Donaldson–Thomas contributions; two isolated sheaves on a reducible moving divisor each contribute +1 and remain Gieseker stable along ample polarizations approaching the contraction. Their vanishing deformation and obstruction groups also imply local persistence, with the same isolated contributions, in smooth polarized deformations of the resolved threefold. This does not transport the sheaves through the singular transition. The continued periods of Paper 2 constrain constituent phases and light electric-particle emission near the marked transition, while the probe charges carry confined magnetic flux after Higgsing. The physical BPS spectrum at the endpoint remains undetermined. Paper 3, supporting technical note, revised 6 September 2026 · <a href="https://github.com/bwuebben/global-higgs-branch/tree/main/papers/03-magnetic-sheaves">source and guide</a></span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372958">The Page Curve Through the Transition: Testing the Diagonal Approximation Against the Exact Replica Spectrum</a></span>
-        <span class="entry-note">Both sides of the diagonal approximation are computable in the west-coast model, so this computes them. It reproduces the shape of the broadened crossover to about one per cent of the curve’s amplitude but overstates the entropy deficit at the transition by roughly ten per cent, and summing all non-crossing permutations rather than the two dominant saddles yields a Marchenko–Pastur law for the radiation spectrum. SSRN, March 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372978">The Page Curve in Higher Dimensions: Phase Transitions, Critical Phenomena, and Universal Broadening</a></span>
-        <span class="entry-note">The width of the Page transition is set by the square root of the heat capacity — a result derived away from criticality, which an AdS black hole violates, since it has a phase diagram. The width proves independent of spacetime dimension for large Schwarzschild–AdS, is parametrically enhanced near the Hawking–Page transition, and diverges with a different exponent at the Reissner–Nordström critical point — so the broadening discriminates between the two transitions. SSRN, March 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6521478">The Page Curve is not Enough: Universality, Ensemble Dependence, and Microscopic Ambiguity in Black Hole Information Recovery</a></span>
-        <span class="entry-note">Reproducing a Page curve does not identify the microscopic resolution of the information paradox. A four-level universality hierarchy separates what is forced from what is diagnostic: any two scrambling dynamics forming approximate unitary designs with matching thermodynamics agree on everything through level three, so fuzzballs, islands, random unitary evolution, state-dependent interiors and ER=EPR are indistinguishable there and diverge only at the fine-grained fourth level. SSRN, April 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7151179">Informational Singularities and the Completion of Gravity: Replica Wormholes, Indeterminism, and Cosmic Censorship</a></span>
-        <span class="entry-note">Replica wormholes restore a coherent map from initial to final states without removing any curvature singularity — informational completion without geometric completion. Making that distinction precise yields the notion of an informational singularity, logically independent of the geometric one and coming apart from it in both directions, and motivates recasting strong cosmic censorship as a claim about coherent state maps rather than about Cauchy horizons. SSRN, August 2026</span>
-      </li>
-    </ul>
-
-    <h3>AI and the machine economy</h3>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6561300">Prediction Markets as the Informational Substrate of the Machine Economy</a></span>
-        <span class="entry-note">The three institutional gaps blocking autonomous machine-to-machine commerce — adjudication, reputation, and liability — share one root: there is no market price for agent performance risk, deliverable quality, or failure correlation. Five prediction-market mechanisms are designed to supply those signals, with the instrument delimited as carefully as it is developed: an informational deficit can be priced, but a primitive needing an agreed vocabulary rather than a resolving fact needs coordination instead. SSRN, April 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372838">The Institutional Plumbing for a Machine Economy: A Readiness Assessment of Building Blocks, Missing Infrastructure, and Commercial Opportunities</a></span>
-        <span class="entry-note">Software agents can now pay, but paying is not economic agency: open exchange between agents with no prior relationship also needs identity, delegated authority, bonding, verification, adjudication, settlement, portable reputation, and somewhere for residual loss to land. Auditing that stack against what actually shipped through 2026 — where roughly two-thirds of settlements moved inside linked clusters and a fifth were fictitious — gives the conclusion that machine commerce expands along a verification-and-risk frontier, not a payment frontier. SSRN, March 2026</span>
-      </li>
-    </ul>
-
-    <h3>International relations and politics</h3>
-    <ul class="entries">
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6481923">Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order</a></span>
-        <span class="entry-note">Prevailing accounts treat AI as an informational technology; deployment at scale instead re-centres physical constraint, since it depends on energy, transmission, cooling, and critical materials that expand slowly and unevenly. The paper defines material deployment power — the capacity to mobilize those physical systems under rivalry — and shows it shapes trade policy and alliance behaviour independently of innovation leadership. SSRN, April 2026</span>
-      </li>
-      <li>
-        <span class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6482039">Algorithmic Plausible Deniability: The Structural Erosion of Deterrence in the Age of Artificial Intelligence</a></span>
-        <span class="entry-note">Delegating decisions to machines generates persistent uncertainty over authorship and intent, weakening deterrence even between rational states that prefer stability; unlike strategic ambiguity it is not chosen, but emerges from the delegation itself. The effects are asymmetric — hostile acts become more deniable while signals of restraint become less credible, which undermines escalation control. SSRN, April 2026</span>
-      </li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Elsewhere</h2>
     <ul class="contact">
       <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/berndwuebben/">linkedin.com/in/berndwuebben</a></li>
@@ -235,6 +129,6 @@
     © Bernd Johannes Wuebben · New York, NY · Southampton, NY · Palm Beach, FL
   </footer>
 
-</div>
+</main>
 </body>
 </html>

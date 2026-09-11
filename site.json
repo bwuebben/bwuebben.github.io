@@ -1,0 +1,13 @@
+{
+  "navigation": [
+    { "label": "Home", "href": "/" },
+    { "label": "Papers", "href": "/papers/" },
+    {
+      "label": "Misc",
+      "children": [
+        { "label": "Mathematics & AI", "href": "/math-and-ai/" },
+        { "label": "Entropy", "href": "/poem.html" }
+      ]
+    }
+  ]
+}

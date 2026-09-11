@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bwuebben.github.io/sitemap.xml
