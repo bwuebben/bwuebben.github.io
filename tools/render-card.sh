@@ -1,12 +1,18 @@
 #!/bin/bash
-# Regenerate assets/social-card.jpg from tools/social-card.html.
+# Regenerate the link-preview cards in assets/ from their sources in tools/.
 set -e
 cd "$(dirname "$0")/.."
 CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-"$CHROME" --headless --disable-gpu --hide-scrollbars \
-  --window-size=1200,630 --screenshot=/tmp/social-card.png \
-  "file://$PWD/tools/social-card.html" 2>/dev/null
-sips -s format jpeg -s formatOptions 86 /tmp/social-card.png \
-  --out assets/social-card.jpg >/dev/null
-rm -f /tmp/social-card.png
-echo "assets/social-card.jpg $(sips -g pixelWidth -g pixelHeight assets/social-card.jpg | tail -2 | tr -d ' \n')"
+
+render() {  # render <source.html> <target.jpg>
+  local png
+  png="$(mktemp -t social-card).png"
+  "$CHROME" --headless --disable-gpu --hide-scrollbars \
+    --window-size=1200,630 --screenshot="$png" "file://$PWD/$1" 2>/dev/null
+  sips -s format jpeg -s formatOptions 86 "$png" --out "$2" >/dev/null
+  rm -f "$png"
+  echo "$2 $(sips -g pixelWidth -g pixelHeight "$2" | tail -2 | tr -d ' \n')"
+}
+
+render tools/social-card.html       assets/social-card.jpg
+render tools/social-card-essay.html assets/social-card-essay.jpg

@@ -5,9 +5,10 @@ Source for my personal site, published by GitHub Pages at
 
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
-HTML and CSS; there is no server-side code or runtime JavaScript. The checked-in
-pages are ready to serve. A small Python helper updates shared navigation and
-stylesheet links when the site's configuration changes.
+HTML and CSS; there is no server-side code or runtime JavaScript (the landing
+page carries a JSON-LD `Person` block, which browsers do not execute). The
+checked-in pages are ready to serve. A small Python helper updates shared
+navigation and stylesheet links when the site's configuration changes.
 
 ## Layout
 
@@ -15,14 +16,16 @@ stylesheet links when the site's configuration changes.
 index.html              the landing page
 papers/index.html       research papers, grouped by subject
 math-and-ai/index.html   When Mathematics Outgrows Its Gatekeepers
-poem.html               Gradient of Mind (Entropy in the navigation)
+poem.html               Gradient of Mind (a poem)
 site.json               navigation labels, groups, order, and destinations
 templates/navigation.html shared navigation markup
 templates/page.html     starting point for additional pages
 assets/theme.css        shared fonts, colours, and reading width
 assets/style.css        shared layout and page styles
-assets/bernd_dark1.jpg   masthead portrait
+assets/bernd_dark1.jpg   portrait at full size (the masthead loads the
+                         -384 and -576 renditions through srcset)
 assets/social-card.jpg  1200x630 link preview (generated — see below)
+assets/social-card-essay.jpg  the essay's own text card (generated)
 tools/                  site helpers and link-preview tools
 .nojekyll               serve files as-is, skipping Jekyll processing
 ```
@@ -30,11 +33,14 @@ tools/                  site helpers and link-preview tools
 ## Link preview
 
 `assets/social-card.jpg` is what LinkedIn, Slack, and iMessage show when the
-site is shared. It is generated, not hand-edited — the portrait on its own is
-2:3, and unfurlers crop to roughly 1.91:1, which would slice straight through
-the face. `tools/social-card.html` composes it against the dark field instead.
+site, the papers page, or the poem is shared. It is generated, not hand-edited:
+the portrait on its own is 2:3, and unfurlers crop to roughly 1.91:1, which
+would slice straight through the face. `tools/social-card.html` composes it
+against the dark field instead. The essay has its own text card,
+`assets/social-card-essay.jpg`, composed by `tools/social-card-essay.html`.
 
-After changing the portrait, the name, or the tagline, re-render it:
+After changing the portrait, the name, the tagline, or the essay title,
+re-render both:
 
 ```sh
 tools/render-card.sh
@@ -58,9 +64,9 @@ are kept there. Layout, navigation, responsive rules, and essay styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, and Misc.
-Misc's `children` list contains Mathematics & AI and Entropy. Groups use a
-native HTML disclosure: click or tap the label, or focus it and press Enter or
+`templates/navigation.html`. The top level contains Home, Papers, and Writing.
+Writing's `children` list contains Mathematics & AI and Gradient of Mind.
+Groups use a native HTML disclosure: click or tap the label, or focus it and press Enter or
 Space, to open or close its submenu. Then run after configuration changes:
 
 ```sh
@@ -70,7 +76,9 @@ python3 tools/update-site.py --check
 
 Run this after stylesheet changes too. It propagates navigation to every page
 with the shared markers, sets the active-page link, resolves relative paths,
-and versions both stylesheets by content hash so browsers fetch changed CSS.
+versions both stylesheets by content hash so browsers fetch changed CSS, and
+writes the two `theme-color` metas from the light and dark `--bg` values in
+`assets/theme.css`.
 Navigation is ordinary HTML and works without JavaScript. The helper updates
 only the marked navigation and stylesheet blocks; page content stays editable.
 
@@ -127,16 +135,21 @@ runtime JavaScript and depends on no CDN — only `assets/katex/katex.min.css`
 and the woff2 fonts beside it (324 KB in total, and the `.woff`/`.ttf` fallback
 URLs are stripped from the CSS because they are not shipped).
 
-To change a formula, edit `tools/render-poem-math.js` and re-run it:
+Each formula is emitted as HTML for sighted readers plus MathML for screen
+readers; the KaTeX stylesheet hides the MathML visually. That stylesheet also
+prefixes a few generic KaTeX class names (`base`, `strut`, `sizing`, ...) with
+`katex-`, and the script renames its output to match. To change a formula,
+edit its TeX in `tools/render-poem-math.js` and re-run the script. It writes
+the markup straight into the `.pmath` blocks of `poem.html`, matched by their
+`data-formula` attributes:
 
 ```sh
-npm install katex        # once, anywhere
+npm install katex        # once, anywhere on NODE_PATH
 node tools/render-poem-math.js
 ```
 
-then paste the regenerated markup into `poem.html`. KaTeX colours itself from
-the inherited CSS `color`, so the maths follows light and dark mode with no
-extra work.
+KaTeX colours itself from the inherited CSS `color`, so the maths follows light
+and dark mode with no extra work.
 
 ## Search discovery
 

@@ -23,6 +23,14 @@ def main():
     styles = ["assets/theme.css", "assets/style.css"]
     versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
                 for name in styles}
+    # theme.css declares --bg twice: the light value first, the dark one inside
+    # the prefers-color-scheme block. Browsers tint their chrome to match.
+    backgrounds = re.findall(r"--bg:\s*(#[0-9a-fA-F]{6})", (ROOT / "assets/theme.css").read_text())
+    if len(backgrounds) != 2:
+        raise ValueError("assets/theme.css: expected a light and a dark --bg value")
+    theme_metas = "\n".join(
+        f'<meta name="theme-color" content="{colour}" media="(prefers-color-scheme: {scheme})">'
+        for colour, scheme in zip(backgrounds, ("light", "dark")))
     pending = []
     for page in sorted(ROOT.rglob("*.html")):
         relative = page.relative_to(ROOT).as_posix()
@@ -72,7 +80,7 @@ def main():
         navigation = template.replace("{{links}}", "\n".join(links))
         stylesheet_links = "\n".join(
             f'<link rel="stylesheet" href="{local_url("/" + name)}?v={versions[name]}">'
-            for name in styles)
+            for name in styles) + "\n" + theme_metas
         output = NAV.sub(lambda _: f"<!-- site:navigation -->\n{navigation}\n<!-- /site:navigation -->", source)
         output = STYLES.sub(lambda _: f"<!-- site:styles -->\n{stylesheet_links}\n<!-- /site:styles -->", output)
         if output != source:
