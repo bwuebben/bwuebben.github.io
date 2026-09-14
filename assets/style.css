@@ -580,13 +580,12 @@ footer {
    ================================================================== */
 
 .portrait-page { text-align: center; }
-.portrait-page .tagline { margin-bottom: 2rem; }
 
 .portrait-full img {
   display: block;
   width: auto;
   max-width: 100%;
-  max-height: max(24rem, calc(100vh - 15rem));
+  max-height: max(24rem, calc(100vh - 11.5rem));
   margin: 0 auto;
   border-radius: 2px;
   background: #0d0d0f;        /* matches the photo's own falloff */

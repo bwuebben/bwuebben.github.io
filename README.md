@@ -165,8 +165,8 @@ public pages to the sitemap when adding them. Preserve
 The portrait page exists so that Google Images can find the full-length
 photograph: Google indexes pictures it finds in `img` elements on crawled
 pages, not files that are merely linked. `portrait/index.html` embeds
-`assets/bernd_full_noir.jpg` with the name in the title, heading, alt text,
-and caption, carries an `ImageObject` block, and is listed in `sitemap.xml`
+`assets/bernd_full_noir.jpg` with the name in the title, alt text, and
+caption, carries an `ImageObject` block, and is listed in `sitemap.xml`
 with an image entry. It is not in `site.json`, so it appears in no
 navigation; the masthead portrait click on the landing page is its one
 internal link, which is what keeps it from being an orphan page. The landing
