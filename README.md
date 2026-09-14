@@ -22,8 +22,10 @@ templates/navigation.html shared navigation markup
 templates/page.html     starting point for additional pages
 assets/theme.css        shared fonts, colours, and reading width
 assets/style.css        shared layout and page styles
-assets/bernd_dark1.jpg   portrait at full size (the masthead loads the
-                         -384 and -576 renditions through srcset)
+assets/bernd_full_noir.jpg  full-length portrait the masthead links to
+                         (opens full size in a new tab)
+assets/bernd_dark1.jpg   masthead headshot at full size (the masthead loads
+                         the -384 and -576 renditions through srcset)
 assets/social-card.jpg  1200x630 link preview (generated — see below)
 assets/social-card-essay.jpg  the essay's own text card (generated)
 tools/                  site helpers and link-preview tools
