@@ -17,13 +17,14 @@ index.html              the landing page
 papers/index.html       research papers, grouped by subject
 math-and-ai/index.html   When Mathematics Outgrows Its Gatekeepers
 poem.html               Gradient of Mind (a poem)
+portrait/index.html     the portrait at full size (the masthead links here;
+                         deliberately absent from the navigation)
 site.json               navigation labels, groups, order, and destinations
 templates/navigation.html shared navigation markup
 templates/page.html     starting point for additional pages
 assets/theme.css        shared fonts, colours, and reading width
 assets/style.css        shared layout and page styles
-assets/bernd_full_noir.jpg  full-length portrait the masthead links to
-                         (opens full size in a new tab)
+assets/bernd_full_noir.jpg  full-length portrait shown on the portrait page
 assets/bernd_dark1.jpg   masthead headshot at full size (the masthead loads
                          the -384 and -576 renditions through srcset)
 assets/social-card.jpg  1200x630 link preview (generated — see below)
@@ -158,12 +159,23 @@ and dark mode with no extra work.
 The paper titles and full descriptions are ordinary HTML, reachable through
 the Papers link on every page. Each page has a canonical URL and descriptive
 metadata. `robots.txt` allows crawling and advertises `sitemap.xml`; add new
-public pages to the sitemap when adding them to the navigation. Preserve
+public pages to the sitemap when adding them. Preserve
 `google5536594b14b40920.html`, the existing Google verification file.
 
+The portrait page exists so that Google Images can find the full-length
+photograph: Google indexes pictures it finds in `img` elements on crawled
+pages, not files that are merely linked. `portrait/index.html` embeds
+`assets/bernd_full_noir.jpg` with the name in the title, heading, alt text,
+and caption, carries an `ImageObject` block, and is listed in `sitemap.xml`
+with an image entry. It is not in `site.json`, so it appears in no
+navigation; the masthead portrait click on the landing page is its one
+internal link, which is what keeps it from being an orphan page. The landing
+page's `Person` block lists the same photograph first in its `image` field.
+
 After publishing, submit `https://bwuebben.github.io/sitemap.xml` in Google
-Search Console. Inspect `https://bwuebben.github.io/papers/` there and request
-indexing, then monitor the Page Indexing report. Crawling and indexing are
+Search Console. Inspect `https://bwuebben.github.io/papers/` and
+`https://bwuebben.github.io/portrait/` there and request indexing, then
+monitor the Page Indexing report. Crawling and indexing are
 Google's decisions; these files make discovery possible but do not guarantee
 indexing or rankings.
 

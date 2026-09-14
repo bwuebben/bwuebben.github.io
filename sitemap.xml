@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://bwuebben.github.io/</loc></url>
   <url><loc>https://bwuebben.github.io/papers/</loc></url>
   <url><loc>https://bwuebben.github.io/math-and-ai/</loc></url>
   <url><loc>https://bwuebben.github.io/poem.html</loc></url>
+  <url>
+    <loc>https://bwuebben.github.io/portrait/</loc>
+    <image:image><image:loc>https://bwuebben.github.io/assets/bernd_full_noir.jpg</image:loc></image:image>
+  </url>
 </urlset>

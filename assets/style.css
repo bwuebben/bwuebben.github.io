@@ -350,8 +350,9 @@ header.masthead::after { content: ""; display: block; clear: both; }
   margin: 0.35rem 0 1.1rem 2.25rem;
 }
 
-/* the portrait opens full size in a new tab; zoom-in is the only
-   affordance telling a visitor it is clickable at all */
+/* the portrait links to its own page, /portrait/, where it shows at
+   full size; zoom-in is the only affordance telling a visitor it is
+   clickable at all */
 .portrait a {
   display: block;
   border-bottom: none;
@@ -568,6 +569,54 @@ footer {
   h1 { font-size: 1.7rem; }
   .contact li { display: block; }
   .contact .label { display: block; }
+}
+
+
+/* ==================================================================
+   Portrait page — /portrait/
+   The masthead thumbnail links here. One photograph, centred and fitted
+   to the viewport so the whole figure is visible without scrolling; on
+   narrow screens it fills the width instead.
+   ================================================================== */
+
+.portrait-page { text-align: center; }
+.portrait-page .tagline { margin-bottom: 2rem; }
+
+.portrait-full img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: max(24rem, calc(100vh - 15rem));
+  margin: 0 auto;
+  border-radius: 2px;
+  background: #0d0d0f;        /* matches the photo's own falloff */
+  box-shadow:
+    0 1px 2px rgba(20, 18, 15, 0.10),
+    0 10px 26px -8px rgba(20, 18, 15, 0.26);
+}
+
+@media (prefers-color-scheme: dark) {
+  .portrait-full img {
+    box-shadow: none;
+    outline: 1px solid var(--rule);
+    outline-offset: -1px;
+  }
+}
+
+.portrait-full figcaption {
+  margin-top: 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: var(--ink-faint);
+}
+.portrait-full figcaption a { color: var(--ink-soft); }
+.portrait-full figcaption a:hover { color: var(--accent); }
+
+.portrait-page footer { text-align: left; }
+
+@media (max-width: 46rem) {
+  .portrait-full img { width: 100%; max-height: none; }
 }
 
 
