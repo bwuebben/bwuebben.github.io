@@ -95,6 +95,15 @@ Edit paper entries here. Its subject groupings, descriptions, and links are
 preserved, with heading levels adjusted for a standalone page. Preview it at
 <http://127.0.0.1:8000/papers/>.
 
+The toric stability entries share the
+[toric-tangent-stability repository](https://github.com/bwuebben/toric-tangent-stability).
+Paper 2, *Tangent stability on toric Fano blowups and bundles*, links directly to
+its PDF and [separate guide](https://github.com/bwuebben/toric-tangent-stability/tree/main/paper2).
+Its summary distinguishes the blowup-tree theorem from the sharp extremum within
+the stated bundle class, identifies the computer-assisted proof components, and
+leaves the unrestricted Picard bound open. Keep these qualifications when updating
+the entry; Paper 2 is a separate preprint, not a replacement for Paper 1.
+
 The Calabi–Yau smoothability entry links to the
 [five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability).
 The summary distinguishes explicit examples from computer-assisted database
