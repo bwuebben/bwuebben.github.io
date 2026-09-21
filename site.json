@@ -2,6 +2,11 @@
   "navigation": [
     { "label": "Home", "href": "/" },
     { "label": "Papers", "href": "/papers/" },
-    { "label": "Poem", "href": "/poem.html" }
+    {
+      "label": "Writing",
+      "children": [
+        { "label": "Entropy", "href": "/poem.html" }
+      ]
+    }
   ]
 }

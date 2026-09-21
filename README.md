@@ -62,8 +62,9 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, and Poem.
-An item with a `children` list becomes a group, rendered as a native HTML
+`templates/navigation.html`. The top level contains Home, Papers, and Writing.
+Writing's `children` list contains Entropy, which opens the poem *Gradient of
+Mind*. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
 open or close its submenu. Then run after configuration changes:
 
