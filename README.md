@@ -15,7 +15,6 @@ navigation and stylesheet links when the site's configuration changes.
 ```
 index.html              the landing page
 papers/index.html       research papers, grouped by subject
-math-and-ai/index.html   When Mathematics Outgrows Its Gatekeepers
 poem.html               Gradient of Mind (a poem)
 portrait/index.html     the portrait at full size (the masthead links here;
                          deliberately absent from the navigation)
@@ -28,7 +27,6 @@ assets/bernd_full_noir.jpg  full-length portrait shown on the portrait page
 assets/bernd_dark1.jpg   masthead headshot at full size (the masthead loads
                          the -384 and -576 renditions through srcset)
 assets/social-card.jpg  1200x630 link preview (generated — see below)
-assets/social-card-essay.jpg  the essay's own text card (generated)
 tools/                  site helpers and link-preview tools
 .nojekyll               serve files as-is, skipping Jekyll processing
 ```
@@ -39,11 +37,9 @@ tools/                  site helpers and link-preview tools
 site, the papers page, or the poem is shared. It is generated, not hand-edited:
 the portrait on its own is 2:3, and unfurlers crop to roughly 1.91:1, which
 would slice straight through the face. `tools/social-card.html` composes it
-against the dark field instead. The essay has its own text card,
-`assets/social-card-essay.jpg`, composed by `tools/social-card-essay.html`.
+against the dark field instead.
 
-After changing the portrait, the name, the tagline, or the essay title,
-re-render both:
+After changing the portrait, the name, or the tagline, re-render it:
 
 ```sh
 tools/render-card.sh
@@ -57,20 +53,19 @@ Preview the checked-in pages without installing any dependencies:
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Visit <http://127.0.0.1:8000/> or the essay at
-<http://127.0.0.1:8000/math-and-ai/>. Refresh after edits. Stop the server with
+Visit <http://127.0.0.1:8000/>. Refresh after edits. Stop the server with
 Ctrl+C. This serves only on your computer; it does not publish anything.
 
 **Theme:** edit `assets/theme.css` for fonts, light/dark colours, and reading
 width. The existing Iowan/Palatino/Georgia stack and the poem's Palatino setting
-are kept there. Layout, navigation, responsive rules, and essay styles live in
+are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, and Writing.
-Writing's `children` list contains Mathematics & AI and Gradient of Mind.
-Groups use a native HTML disclosure: click or tap the label, or focus it and press Enter or
-Space, to open or close its submenu. Then run after configuration changes:
+`templates/navigation.html`. The top level contains Home, Papers, and Poem.
+An item with a `children` list becomes a group, rendered as a native HTML
+disclosure: click or tap the label, or focus it and press Enter or Space, to
+open or close its submenu. Then run after configuration changes:
 
 ```sh
 python3 tools/update-site.py
@@ -110,30 +105,6 @@ The summary distinguishes explicit examples from computer-assisted database
 classifications using the verified input copy, and states the degree and
 projection hypotheses of the mixed criterion. Keep this summary aligned with the
 repository's paper guides when the manuscripts change.
-
-## The essay page
-
-`math-and-ai/index.html` contains the full text of *When Mathematics Outgrows Its
-Gatekeepers*, including linked author–year citations and the complete bibliography.
-The source is `../papers_ai_1/math_and_ai/main.tex` (formerly referred to as
-`essay.tex`); the LaTeX build writes `essay.bbl` and `essay.pdf` beside it.
-
-To refresh the essay after changing and building that source:
-
-```sh
-python3 tools/import-essay.py ../papers_ai_1/math_and_ai/main.tex
-python3 tools/update-site.py
-```
-
-The importer reads the source and its built `essay.bbl`; it never edits them.
-It supports the TeX commands used in this essay and stops on unsupported
-commands. Rebuild the LaTeX bibliography before importing citation changes.
-The HTML title, subtitle, date, and page metadata are maintained separately.
-The expandable “The argument at a glance” overview is also maintained in the
-HTML, between the `essay:overview` markers. It sits outside `essay:content`,
-so importing the LaTeX preserves its thirteen points and section links.
-Review the resulting diff and local page after each import. The public page is
-self-contained; readers and GitHub Pages do not need the research repository.
 
 ## The poem page
 

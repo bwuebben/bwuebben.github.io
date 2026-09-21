@@ -15,4 +15,3 @@ render() {  # render <source.html> <target.jpg>
 }
 
 render tools/social-card.html       assets/social-card.jpg
-render tools/social-card-essay.html assets/social-card-essay.jpg

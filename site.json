@@ -2,12 +2,6 @@
   "navigation": [
     { "label": "Home", "href": "/" },
     { "label": "Papers", "href": "/papers/" },
-    {
-      "label": "Writing",
-      "children": [
-        { "label": "Mathematics & AI", "href": "/math-and-ai/" },
-        { "label": "Gradient of Mind", "href": "/poem.html" }
-      ]
-    }
+    { "label": "Poem", "href": "/poem.html" }
   ]
 }
