@@ -463,8 +463,6 @@ footer {
   line-height: 1.5;
   color: var(--ink-faint);
 }
-.portrait-full figcaption a { color: var(--ink-soft); }
-.portrait-full figcaption a:hover { color: var(--accent); }
 
 .portrait-page footer { text-align: left; }
 
