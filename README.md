@@ -100,12 +100,14 @@ the stated bundle class, identifies the computer-assisted proof components, and
 leaves the unrestricted Picard bound open. Keep these qualifications when updating
 the entry; Paper 2 is a separate preprint, not a replacement for Paper 1.
 
-The Calabi–Yau smoothability entry links to the
-[five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability).
-The summary distinguishes explicit examples from computer-assisted database
-classifications using the verified input copy, and states the degree and
-projection hypotheses of the mixed criterion. Keep this summary aligned with the
-repository's paper guides when the manuscripts change.
+The Calabi–Yau smoothability and open FJRW papers each have their own
+subsection, with one entry per paper linking to its PDF and source directory in
+the [five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability)
+and the [three-paper repository](https://github.com/bwuebben/open-fjrw-scattering).
+The Calabi–Yau subsection note states that database-wide counts use the verified
+Kreuzer–Skarke input copy, and Paper 5's entry states its degree and projection
+hypotheses. Keep these entries aligned with the repositories' paper guides when
+the manuscripts change.
 
 ## The poem page
 
