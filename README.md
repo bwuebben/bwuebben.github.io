@@ -104,6 +104,8 @@ The Calabi–Yau smoothability and open FJRW papers each have their own
 subsection, with one entry per paper linking to its PDF and source directory in
 the [five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability)
 and the [three-paper repository](https://github.com/bwuebben/open-fjrw-scattering).
+Once a paper is on arXiv, its title links to the arXiv abstract instead and the
+note adds the arXiv identifier (Calabi–Yau Paper 1 is arXiv:2609.28499).
 The Calabi–Yau subsection note states that database-wide counts use the verified
 Kreuzer–Skarke input copy, and Paper 5's entry states its degree and projection
 hypotheses. Keep these entries aligned with the repositories' paper guides when
