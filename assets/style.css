@@ -314,6 +314,19 @@ h4, h3.paper-topic {
 }
 h3 + h4, .paper-category + .paper-topic { margin-top: 0; }
 
+/* A paper series inside a topic (papers page, third level). */
+h4.paper-series {
+  font-family: var(--serif);
+  font-size: 0.98rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-soft);
+  margin: 1.2rem 0 0.35rem;
+}
+.paper-topic + .paper-series { margin-top: 0.35rem; }
+
 .subsection-note {
   max-width: 34rem;
   margin: -0.15rem 0 0.35rem;
