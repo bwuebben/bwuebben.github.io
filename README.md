@@ -102,7 +102,7 @@ the entry; Paper 2 is a separate preprint, not a replacement for Paper 1.
 
 The Calabi–Yau smoothability and open FJRW papers each have their own
 subsection, with one entry per paper linking to its PDF and source directory in
-the [five-paper repository](https://github.com/bwuebben/calabi-yau-smoothability)
+the [six-paper repository](https://github.com/bwuebben/calabi-yau-smoothability)
 and the [three-paper repository](https://github.com/bwuebben/open-fjrw-scattering).
 Once a paper is on arXiv, its title links to the arXiv abstract instead and the
 note adds the arXiv identifier (Calabi–Yau Paper 1 is arXiv:2609.28499).
