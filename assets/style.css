@@ -336,6 +336,7 @@ h4.paper-series {
   line-height: 1.5;
   color: var(--ink-faint);
 }
+.paper-topic + .subsection-note { margin-top: -0.45rem; }
 .subsection-note a { color: var(--ink-soft); }
 .subsection-note a:hover { color: var(--accent); }
 
