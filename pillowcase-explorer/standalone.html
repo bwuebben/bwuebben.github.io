@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f6f2">
+  <meta name="description" content="Cut a trefoil into tangles, explore the SU(2) pillowcase, and match curve intersections with Floer generators in a guided visual laboratory.">
+  <title>Pillowcase Explorer — the knot Atiyah–Floer picture</title>
+  <style>
+:root{--paper:#f5f6f2;--white:#fff;--ink:#202c29;--muted:#66736b;--line:#dce1d9;--sage:#e7ede2;--teal:#24695c;--amber:#ad6826;--blue:#506e98;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6}button,input,a{-webkit-tap-highlight-color:transparent}button{font:inherit;color:inherit;cursor:pointer}button:disabled{cursor:default;opacity:.4}button:focus-visible,a:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid #506e98;outline-offset:4px}button{transition:background .16s,color .16s,transform .16s}button:hover:not(:disabled){filter:brightness(.97)}a{color:var(--teal)}.math{font-family:var(--serif);font-size:1.13em}.muted{color:var(--muted)}.site-header{height:80px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 5vw}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--ink);font-size:11px;letter-spacing:2px}.brand svg{width:38px;height:38px;color:var(--teal)}.brand b{font-weight:400;color:var(--muted)}.header-actions{display:flex;align-items:center;gap:26px}.private-badge{border:1px solid var(--line);border-radius:30px;padding:5px 12px;font-size:11px;white-space:nowrap}.private-badge span{color:var(--teal);font-size:9px;margin-right:5px}.text-button{background:none;border:0;padding:0;color:var(--ink);font-size:12px}.text-button:hover{text-decoration:underline;text-underline-offset:4px}.header-actions .text-button{font-size:13px}.eyebrow{font-size:10px;font-weight:600;letter-spacing:1.65px;color:var(--muted)}main{max-width:1500px;margin:auto;padding:40px 5vw 0}.intro{display:flex;justify-content:space-between;gap:35px;align-items:center;margin-bottom:35px}.intro h1{font-family:var(--serif);font-size:clamp(34px,3.1vw,50px);line-height:1.12;font-weight:400;letter-spacing:-1.6px;margin:13px 0 12px}.intro p{font-size:13px;color:var(--muted);margin:0}.example-stamp{display:flex;gap:15px;align-items:center;border-left:1px solid var(--line);padding-left:28px;flex-shrink:0}.example-stamp svg{width:60px;color:var(--teal)}.example-stamp span{font-size:9px;letter-spacing:1.6px;color:var(--muted)}.example-stamp strong{display:block;font-family:var(--serif);font-size:23px;letter-spacing:0;color:var(--ink);font-weight:400}.example-stamp strong span{font-size:20px;letter-spacing:0;color:var(--ink)}.example-stamp small{display:block;font-size:10px;letter-spacing:0}.workspace{display:grid;grid-template-columns:245px minmax(0,1fr);gap:30px}.journey{padding-top:14px}.journey-label{display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.4px;color:var(--muted);padding:0 12px 20px}.journey-label span{font-size:9px;letter-spacing:0}.step{border:0;background:transparent;text-align:left;display:flex;align-items:center;gap:13px;padding:17px 12px;border-radius:7px;width:100%;margin-bottom:8px;position:relative}.step:hover{background:#ecefe8}.step.active{background:var(--sage)}.step.active::before{content:'';position:absolute;width:3px;height:24px;background:var(--teal);left:0;border-radius:3px}.step-number{font-family:var(--serif);font-size:16px;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--muted);flex-shrink:0}.step.active .step-number{color:#fff;background:var(--teal);border-color:var(--teal)}.step.completed .step-number{color:var(--teal);border-color:#b9cdbf}.step b{font-size:12px;font-weight:550;display:block}.step small{font-size:10px;color:var(--muted);display:block;margin-top:3px}.journey-note{border-top:1px solid var(--line);margin:27px 12px 0;padding-top:24px}.tiny-pillow{font-family:var(--serif);font-size:26px;font-style:italic;color:var(--teal)}.journey-note p{font-size:11px;color:var(--muted);margin:8px 0 20px}.keyboard-note{font-size:10px;color:var(--muted);margin:40px 12px 0;display:flex;align-items:center;gap:5px}kbd{font:10px var(--sans);border:1px solid var(--line);background:white;border-radius:3px;padding:1px 5px}.keyboard-note kbd:last-of-type{margin-right:4px}.explorer{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 35px #2b402405}.stage-header{padding:25px 30px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px}.stage-header h2{font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.25;margin:7px 0 0;letter-spacing:-.5px}.model-tag{font-size:8px;letter-spacing:1.1px;border:1px solid var(--line);padding:5px 9px;border-radius:4px;color:var(--muted);white-space:nowrap}.stage{background:linear-gradient(135deg,#fbfcf9,#f6f8f3);border-top:1px solid #edf0e9;position:relative;min-height:220px}.stage svg{display:block;width:100%;height:auto;max-height:490px;overflow:visible}.diagram-caption{text-align:center;font-size:10px;color:var(--muted);padding:0 20px 15px;min-height:30px}.controls{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:73px;flex-wrap:wrap}.button{font-size:11px;padding:9px 16px;border:1px solid transparent;border-radius:5px;white-space:nowrap}.primary{background:var(--teal);color:#fff}.secondary{background:white;border-color:var(--line)}.primary:hover{background:#1b584c}.control-note{font-size:11px;color:var(--muted);line-height:1.5;max-width:350px}.status-chip{font-size:10px;border:1px solid #cad9cd;padding:4px 9px;border-radius:5px;color:var(--teal);background:#f4f8f2}.insight-grid{display:grid;grid-template-columns:1.1fr 1fr;padding:23px 30px;gap:28px;min-height:211px}.insight h3{font-family:var(--serif);font-size:20px;font-weight:400;line-height:1.3;margin:10px 0 8px}.insight p{font-size:12px;color:var(--muted);margin:0 0 9px;line-height:1.7}.readout{border-left:1px solid var(--line);padding-left:25px}.readout .eyebrow{margin-bottom:13px}.dictionary-row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:11px;padding:7px 0;border-bottom:1px solid #edf0e9}.dictionary-row:last-child{border-bottom:0}.dictionary-row .math{color:var(--ink);font-size:16px}.dictionary-row span:last-child{color:var(--muted);text-align:right}.formula{font-family:var(--serif);font-size:17px;margin:7px 0 9px;line-height:1.5}.small-note{font-size:10px;color:var(--muted);line-height:1.55}.definition{border:0;border-bottom:1px dotted #799b8a;background:none;display:inline;padding:0;line-height:inherit;font:inherit;color:var(--teal)}.definition:hover{background:#edf3e9}.step-footer{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 30px;border-top:1px solid var(--line)}.step-footer>span{font-size:10px;color:var(--muted)}.step-footer>div{display:flex;gap:8px}.perspective{display:flex;align-items:center;gap:25px;padding:34px 0;margin-top:12px;border-bottom:1px solid var(--line)}.perspective-icon{font-family:var(--serif);font-size:51px;color:#b9caba;line-height:1}.perspective p{font-family:var(--serif);font-size:20px;margin:8px 0 0;line-height:1.4}.perspective p span{font-size:15px;color:var(--muted)}.perspective .text-button{margin-left:auto}.site-footer{max-width:1500px;margin:auto;display:flex;justify-content:space-between;gap:20px;padding:23px 5vw 30px;font-size:10px;color:var(--muted)}.site-footer .text-button{font-size:10px;color:var(--muted)}.slider-block{display:flex;align-items:center;gap:10px;font-size:11px;flex:1;min-width:185px}.slider-block label{white-space:nowrap}.slider-block input{accent-color:var(--teal);width:125px;min-width:80px;cursor:pointer}.slider-block output{font-variant-numeric:tabular-nums;min-width:39px;font-size:10px}.segmented{display:inline-flex;border:1px solid var(--line);padding:3px;border-radius:6px;gap:2px}.segmented button{background:none;border:0;border-radius:4px;padding:6px 10px;font-size:10px;white-space:nowrap}.segmented button.selected{background:var(--sage);color:var(--teal)}.legend{display:flex;align-items:center;gap:16px;font-size:10px}.legend-item{display:flex;align-items:center;gap:7px;white-space:nowrap}.swatch{width:22px;height:3px;background:var(--teal)}.swatch.amber{height:0;background:none;border-top:3px dashed var(--amber)}.generator-buttons{display:flex;gap:5px}.generator-button{border:1px solid var(--line);border-radius:5px;background:white;padding:5px 12px;font-family:var(--serif);font-size:16px}.generator-button.selected{background:var(--ink);color:white;border-color:var(--ink)}.generator-title{display:flex;align-items:center;gap:10px;margin-bottom:5px}.generator-title .math{font-size:27px;color:var(--ink)}.generator-title small{font-size:10px;color:var(--muted)}.quaternion-grid{display:grid;grid-template-columns:1fr 1fr;gap:5px;font-size:12px;font-family:var(--serif);padding:7px 0}.validation-line{font-size:10px;color:var(--teal);margin-top:10px}.toggle-group{display:flex;gap:12px;font-size:10px}.toggle-group label{display:flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}.toggle-group input{accent-color:var(--teal)}.count-badge{color:var(--ink);font-size:11px;font-variant-numeric:tabular-nums}.count-badge strong{font-size:19px;font-family:var(--serif);font-weight:400;margin-right:5px}.warning-chip{border-color:#e2d4b9;color:#8a5b23;background:#faf6ed}.tooltip{position:fixed;max-width:300px;background:var(--ink);color:#f6f7f3;border-radius:7px;padding:12px 15px;box-shadow:0 8px 28px #14262124;font-size:12px;line-height:1.6;z-index:100;pointer-events:none}.tooltip b{display:block;color:#c6ddc7;font-family:var(--serif);font-size:16px;font-weight:400;margin-bottom:4px}[hidden]{display:none!important}dialog{border:1px solid var(--line);border-radius:14px;padding:30px;max-width:660px;width:calc(100% - 32px);max-height:85vh;color:var(--ink);background:#fcfdfb;box-shadow:0 25px 100px #15271d35}dialog::backdrop{background:#17271dc0;backdrop-filter:blur(3px)}.dialog-header{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}.dialog-header h2{font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.25;margin:8px 0 0}.icon-button{background:white;border:1px solid var(--line);border-radius:50%;width:32px;height:32px;font-size:22px;line-height:1}.glossary-list{margin-bottom:24px}.glossary-item{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:13px 0;border-top:1px solid var(--line)}.glossary-item b{font-family:var(--serif);font-size:17px;font-weight:400}.glossary-item p{font-size:12px;color:var(--muted);margin:0}.source-formulas{background:var(--sage);padding:17px 20px;border-radius:7px;margin:20px 0}.source-formulas b{font-size:11px}.source-formulas p{margin:5px 0 12px}.source-formulas small{font-size:11px;color:var(--muted);display:block}dialog>p{font-size:12px;color:var(--muted)}.reference-list{padding-left:20px}.reference-list li{padding:9px 0;font-size:12px}.reference-list p{font-size:11px;color:var(--muted);margin:5px 0}.noscript{padding:30px}.svg-button{cursor:pointer}.svg-button:focus{outline:none}.svg-button:focus-visible circle:first-of-type{stroke:var(--blue);stroke-width:5}.svg-button:hover{filter:brightness(.88)}.svg-type{font-family:Georgia,'Times New Roman',serif}.svg-ui{font-family:Arial,sans-serif}.controls .full-row{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px}.reduced-motion-note{display:none}
+.expand-button{position:absolute;right:12px;top:9px;z-index:2;border:1px solid var(--line);border-radius:4px;background:#fffffff0;font-size:9px;color:var(--muted);padding:3px 8px}.diagram-dialog{max-width:1040px}.diagram-scroll{overflow:auto;background:#f7faf3;border:1px solid var(--line);border-radius:7px;margin-bottom:20px}.diagram-scroll svg{display:block;width:100%;min-width:850px;height:auto}.tooltip{z-index:1000}
+@media(min-width:1600px){main{padding-top:50px}.stage svg{max-height:520px}.intro{margin-bottom:45px}}
+@media(max-width:1100px){.workspace{grid-template-columns:200px minmax(0,1fr);gap:20px}.stage-header,.controls,.step-footer{padding-left:22px;padding-right:22px}.insight-grid{padding:22px;gap:20px}.step{gap:9px;padding-left:9px;padding-right:8px}.step small{font-size:9px}.example-stamp{padding-left:18px}.intro p{max-width:550px}.model-tag{display:none}.legend{gap:10px}.header-actions{gap:18px}}
+@media(max-width:800px){.site-header{height:67px;padding:0 5vw}.private-badge{display:none}.header-actions{gap:17px}.brand{letter-spacing:1.2px;font-size:9px}.brand svg{width:30px}.brand b{display:none}main{padding-top:28px}.intro{align-items:flex-start;margin-bottom:25px}.intro .eyebrow{font-size:8px}.intro h1{font-size:36px}.intro p{font-size:12px}.example-stamp{display:none}.workspace{display:block}.journey{padding:0;margin-bottom:20px}.journey-label,.journey-note,.keyboard-note{display:none}#step-navigation{display:flex;gap:5px}.step{margin:0;padding:9px 6px;justify-content:center;gap:6px;flex:1}.step-number{width:24px;height:24px;font-size:13px}.step b{font-size:9px}.step small{display:none}.step.active::before{height:16px}.stage-header{padding-top:20px}.stage-header h2{font-size:24px}.stage{min-height:0}.controls{padding:14px 18px;gap:14px}.control-note{font-size:10px;max-width:230px}.insight-grid{padding:20px;min-height:0}.readout{padding-left:17px}.insight h3{font-size:18px}.insight p{font-size:11px}.perspective{gap:16px;padding:27px 0}.perspective p{font-size:17px}.perspective p span{font-size:12px}.perspective .text-button{display:none}.site-footer{display:block;font-size:9px}.site-footer>span{display:block;margin-bottom:7px}.slider-block input{width:115px}.controls .full-row{flex-wrap:wrap}}
+@media(max-width:520px){.brand span{font-size:9px;letter-spacing:1px}.header-actions .text-button{font-size:11px}.header-actions{gap:13px}.step{flex-direction:column;gap:4px;padding:8px 2px}.step b{font-size:8px;white-space:nowrap}.step.active::before{height:15px}.intro h1{font-size:32px;letter-spacing:-1px}.intro p{line-height:1.7}.stage-header h2{font-size:23px}.stage-header{padding-left:18px;padding-right:18px}.insight-grid{display:block;padding:20px}.readout{border-left:0;border-top:1px solid var(--line);padding:17px 0 0;margin-top:16px}.insight h3{font-size:20px}.insight p{font-size:12px}.step-footer{padding:14px 18px}.step-footer .button{font-size:10px;padding:8px 11px}.step-footer>span{font-size:9px}.button{padding:9px 12px}.slider-block{min-width:140px}.slider-block input{width:90px}.legend{font-size:9px;gap:12px}.toggle-group{font-size:9px;gap:10px}.glossary-item{grid-template-columns:1fr;gap:5px}.dialog-header h2{font-size:24px}dialog{padding:24px}.perspective-icon{font-size:40px}.perspective p{font-size:16px}.stage svg{min-height:210px}.quaternion-grid{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+</style>
+
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="Pillowcase Explorer home" id="home-link"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 10 Q20 5 32 10 Q36 20 32 30 Q20 35 8 30 Q4 20 8 10Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10L32 30M32 10L8 30" stroke="currentColor" stroke-width="1"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>PILLOWCASE <b>EXPLORER</b></span></a>
+    <div class="header-actions"><span class="private-badge"><span>●</span> Interactive geometry</span><button class="text-button" id="glossary-open">Glossary</button><button class="text-button" id="sources-open">Sources <span aria-hidden="true">↗</span></button></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div><div class="eyebrow">A VISUAL LABORATORY IN LOW-DIMENSIONAL TOPOLOGY</div><h1>From a knot to a complex.</h1><p>Cut. Restrict. Intersect. Follow the knot-version Atiyah–Floer picture, one geometric move at a time.</p></div>
+      <div class="example-stamp"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8C55 8 62 46 43 50C24 54 12 16 25 12C45 6 59 42 45 52C26 65 1 39 13 24C25 9 49 31 35 48C23 62 4 35 17 20C30 6 51 29 39 44" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span>WORKED EXAMPLE<strong>Trefoil <span class="math">3₁</span></strong><small>Two-bridge model K(3, 1)</small></span></div>
+    </section>
+    <div class="workspace">
+      <aside class="journey" aria-label="Guided journey">
+        <div class="journey-label">THE FIVE MOVES <span>01—05</span></div>
+        <nav id="step-navigation">
+          <button class="step active" data-step="0" aria-current="step"><span class="step-number">01</span><span><b>Cut the knot</b><small>One knot, two tangles</small></span></button>
+          <button class="step" data-step="1"><span class="step-number">02</span><span><b>Meet the pillowcase</b><small>Boundary data, modulo symmetry</small></span></button>
+          <button class="step" data-step="2"><span class="step-number">03</span><span><b>Trace the two curves</b><small>Restriction becomes geometry</small></span></button>
+          <button class="step" data-step="3"><span class="step-number">04</span><span><b>Match the intersections</b><small>Compatible data, one generator</small></span></button>
+          <button class="step" data-step="4"><span class="step-number">05</span><span><b>Build the complex</b><small>Generators are the beginning</small></span></button>
+        </nav>
+        <div class="journey-note"><div class="tiny-pillow">P = T² / ±1</div><p>Two faces. Four corners.<br>A shared space for both tangles.</p><button class="text-button" id="reset-button">↺ Restart journey</button></div>
+        <div class="keyboard-note"><kbd>←</kbd><kbd>→</kbd> move between steps</div>
+      </aside>
+      <section class="explorer" aria-label="Interactive explorer">
+        <div class="stage-header"><div><div class="eyebrow" id="step-kicker">MOVE 01 / 05</div><h2 id="step-title">A sphere makes the cut.</h2></div><span class="model-tag" id="model-tag">TANGLE DECOMPOSITION</span></div>
+        <div class="stage" id="stage"><button class="expand-button" id="diagram-expand" aria-label="Enlarge current diagram">Enlarge ↗</button><svg id="diagram" viewBox="0 0 900 440" role="group" aria-labelledby="diagram-title diagram-description"><title id="diagram-title">Trefoil decomposition</title><desc id="diagram-description">Interactive trefoil diagram.</desc><g id="diagram-content"></g></svg><div class="diagram-caption" id="diagram-caption"></div></div>
+        <div class="controls" id="controls"></div>
+        <div class="insight-grid">
+          <article class="insight"><div class="eyebrow">WHAT YOU ARE SEEING</div><h3 id="insight-title"></h3><div id="insight-body"></div></article>
+          <article class="readout"><div class="eyebrow" id="readout-kicker">THE GEOMETRIC DICTIONARY</div><div id="readout-body"></div></article>
+        </div>
+        <div class="step-footer"><span id="step-progress">Step 1 of 5</span><div><button class="button secondary" id="previous-button" disabled>← Back</button><button class="button primary" id="next-button">Meet the pillowcase →</button></div></div>
+      </section>
+    </div>
+    <section class="perspective"><span class="perspective-icon">≃</span><div><div class="eyebrow">THE STRUCTURAL IDEA</div><p>Three-dimensional gauge theory leaves a two-dimensional shadow.<br><span>The shared boundary turns gluing into an intersection problem.</span></p></div><button class="text-button" data-go="4">See the comparison →</button></section>
+  </main>
+  <footer class="site-footer"><span>Pillowcase Explorer <span class="muted">/</span> A guided mathematical model</span><span>Explicit trefoil curves · F₂ coefficients · <button id="footer-sources" class="text-button">Model & references</button></span></footer>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <dialog id="diagram-dialog" class="diagram-dialog" aria-labelledby="diagram-dialog-title"><div class="dialog-header"><div><div class="eyebrow">DIAGRAM DETAIL · SCROLL HORIZONTALLY ON SMALL SCREENS</div><h2 id="diagram-dialog-title">A closer look.</h2></div><button class="icon-button" data-close="diagram-dialog" aria-label="Close enlarged diagram">×</button></div><div class="diagram-scroll" id="zoom-content"></div><button class="button secondary" data-close="diagram-dialog">Back to exploring</button></dialog>
+  <dialog id="glossary-dialog" aria-labelledby="glossary-title"><div class="dialog-header"><div><div class="eyebrow">QUICK REFERENCE</div><h2 id="glossary-title">A small geometric vocabulary.</h2></div><button class="icon-button" data-close="glossary-dialog" aria-label="Close glossary">×</button></div><div id="glossary-list" class="glossary-list"></div><button class="button secondary" data-close="glossary-dialog">Back to exploring</button></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><div class="eyebrow">MODEL & REFERENCES</div><h2 id="sources-title">What is exact. What is schematic.</h2></div><button class="icon-button" data-close="sources-dialog" aria-label="Close sources">×</button></div><p>The curves and their intersections use explicit formulas. The knot drawing is a planar braid-closure model; the bigon animation is a separate local schematic. This is a teaching explorer, not an arbitrary-knot character-variety solver.</p><div class="source-formulas"><b>Coordinate convention (HHK)</b><p class="math">a = i, b = e<sup>γk</sup>i, c = e<sup>θk</sup>i, d = e<sup>(θ−γ)k</sup>i; ba = cd.</p><b>Trefoil boundary curve</b><p class="math">L₁(t) = (t, −2t), 0 ≤ t ≤ π.</p><b>Earring & holonomy-perturbed trivial tangle</b><p class="math">L₀(β) = (β + π/2 + ε sin β, β + π/2 − ε sin β).</p><small>The slider uses 0.02 ≤ ε ≤ 0.22 radians, plus a degenerate ε = 0 comparison. Intersections solve 3β + 3π/2 + ε sin β = 2πn, n = 1, 2, 3. Labels x₁ and x₂ distinguish branches; they do not assert an absolute grading or the authors’ ± convention.</small></div><ol class="reference-list"><li><a href="https://arxiv.org/abs/1301.0164" target="_blank" rel="noopener">Hedden–Herald–Kirk · Pillowcase and perturbations (2014) ↗</a><p>Proposition 3.1, Theorem 7.1 and the two-bridge tangle calculation: coordinates, quotient and explicit curves.</p></li><li><a href="https://arxiv.org/abs/1501.00028" target="_blank" rel="noopener">Hedden–Herald–Kirk · A Lagrangian–Floer theory (2018) ↗</a><p>Surface Floer theory, relative gradings, and §7: the two-bridge complexes have zero differential and agree with reduced singular instanton homology.</p></li><li><a href="https://arxiv.org/abs/2010.04320" target="_blank" rel="noopener">Cazassus–Herald–Kirk–Kotelskiy · The earring tangle (2022) ↗</a><p>Why marking, immersed correspondences and bubbling matter in a broader gluing theory.</p></li><li><a href="https://arxiv.org/abs/2407.11247" target="_blank" rel="noopener">Herald–Kirk · An endomorphism on immersed curves (2024) ↗</a><p>Doubling and figure-eight operations associated with marked tangle correspondences.</p></li></ol><button class="button secondary" data-close="sources-dialog">Back to exploring</button></dialog>
+  <noscript><p class="noscript">This explorer needs JavaScript for its diagrams and controls. Enable JavaScript and reload.</p></noscript>
+<script>
+(function (root) {
+  'use strict';
+  const PI = Math.PI, TAU = 2 * PI;
+  const mod = (x, n = TAU) => ((x % n) + n) % n;
+  function canonical(gamma, theta) {
+    let g = mod(gamma), t = mod(theta);
+    if (g > PI) { g = TAU - g; t = mod(-t); }
+    if (Math.abs(g) < 1e-10) g = 0;
+    if (Math.abs(g - PI) < 1e-10) g = PI;
+    if (Math.abs(t) < 1e-10 || Math.abs(t - TAU) < 1e-10) t = 0;
+    if ((g === 0 || g === PI) && t > PI) t = TAU - t;
+    if (Math.abs(t - PI) < 1e-10) t = PI;
+    return { gamma: g, theta: t, face: t <= PI ? 0 : 1, y: t <= PI ? t : TAU - t };
+  }
+  function l0(beta, epsilon) {
+    return { gamma: beta + PI / 2 + epsilon * Math.sin(beta), theta: beta + PI / 2 - epsilon * Math.sin(beta) };
+  }
+  function l1(t) { return { gamma: t, theta: -2 * t }; }
+  function intersections(epsilon) {
+    if (epsilon <= 0) return [];
+    const result = [];
+    for (let n = 1; n <= 3; n++) {
+      let lo = 0, hi = TAU;
+      for (let k = 0; k < 55; k++) {
+        const mid = (lo + hi) / 2;
+        if (3 * mid + 3 * PI / 2 + epsilon * Math.sin(mid) < TAU * n) lo = mid;
+        else hi = mid;
+      }
+      const beta = (lo + hi) / 2, lift = l0(beta, epsilon), point = canonical(lift.gamma, lift.theta);
+      result.push({ id: n === 3 ? 'r' : 'x' + n, label: n === 3 ? 'r' : 'x' + n,
+        beta, ...point, t: point.gamma,
+        residual: Math.abs(Math.sin((point.theta + 2 * point.gamma) / 2)),
+        transverse: 3 + epsilon * Math.cos(beta) });
+    }
+    return result.sort((a, b) => a.id === 'r' ? -1 : b.id === 'r' ? 1 : a.id.localeCompare(b.id));
+  }
+  function quaternionMultiply(a, b) {
+    const [w,x,y,z] = a, [v,r,s,t] = b;
+    return [w*v-x*r-y*s-z*t, w*r+x*v+y*t-z*s, w*s-x*t+y*v+z*r, w*t+x*s-y*r+z*v];
+  }
+  function holonomies(gamma, theta) {
+    const q = a => [0, Math.cos(a), Math.sin(a), 0];
+    const a = q(0), b = q(gamma), c = q(theta), d = q(theta-gamma);
+    const ba = quaternionMultiply(b,a), cd = quaternionMultiply(c,d);
+    return { a,b,c,d, error: Math.max(...ba.map((v,i)=>Math.abs(v-cd[i]))) };
+  }
+  function segmentedPath(fn, start, end, samples, face, ox, oy, size) {
+    let path = '', previous = null;
+    for (let i = 0; i <= samples; i++) {
+      const v = fn(start + (end-start)*i/samples), c = canonical(v.gamma,v.theta);
+      if (c.face !== face) { previous = null; continue; }
+      const x = ox + c.gamma/PI*size, y = oy+size-c.y/PI*size;
+      const jump = previous && Math.hypot(x-previous.x,y-previous.y) > size/6;
+      path += (previous && !jump ? 'L' : 'M') + x.toFixed(2) + ',' + y.toFixed(2);
+      previous = {x,y};
+    }
+    return path;
+  }
+  const api = {PI,TAU,mod,canonical,l0,l1,intersections,holonomies,quaternionMultiply,segmentedPath};
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+  root.PillowcaseModel = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this);
+
+</script>
+<script>
+(() => {
+  'use strict';
+  const M = PillowcaseModel, {PI,TAU} = M;
+  const $ = id => document.getElementById(id);
+  const colors = {ink:'#202c29',muted:'#66736b',teal:'#24695c',amber:'#ad6826',blue:'#506e98',line:'#dce1d9'};
+  const state = {step:0,cut:false,gamma:.68*PI,theta:.42*PI,epsilon:.16,show0:true,show1:true,selected:'x1',toy:false,playing:false};
+  let animation = null, tooltipTarget = null;
+  const definitions = {
+    tangle:['2-tangle','Two properly embedded arcs in a 3-ball, with four endpoints on its boundary. Their embedding and the boundary marking carry the information.'],
+    conway:['Conway sphere','A sphere meeting the knot transversely in four points. Removing those points leaves the common four-punctured boundary.'],
+    meridian:['Meridian','A small loop encircling one strand once. Its holonomy records parallel transport around that strand.'],
+    su2:['SU(2)','The group of 2 × 2 unitary complex matrices with determinant 1. Equivalently, the unit quaternions.'],
+    traceless:['Traceless holonomy','Trace zero in SU(2) means a purely imaginary unit quaternion. It is a point of S²; its eigenvalues are +i and −i.'],
+    character:['Character variety','Representations of a fundamental group into SU(2), subject to the prescribed meridian conditions, modulo simultaneous conjugation.'],
+    conjugation:['Simultaneous conjugation','Replace every holonomy h by uhu⁻¹ using the same u. This changes the frame, not the boundary character.'],
+    pillowcase:['Pillowcase','The torus (R/2πZ)² modulo (γ, θ) ↦ (−γ, −θ). It is a sphere with four orbifold corners; the smooth part is a symplectic surface.'],
+    corner:['Orbifold corner','A fixed point of the involution: γ and θ are each 0 or π. These characters are reducible; the local quotient is R²/±1.'],
+    restriction:['Restriction map','A representation of a tangle complement restricts to its boundary group. The two tangles therefore map into the same pillowcase.'],
+    lagrangian:['Lagrangian curve','In a symplectic surface, a smooth immersed curve is Lagrangian because its tangent is one-dimensional. Tangle moduli need regularity or perturbations to give such curves.'],
+    immersion:['Immersed curve','A parametrized curve with nonzero derivative. Different parameter values may map to the same point. Keep track of branches at a self-intersection.'],
+    earring:['Earring marking','A small meridional circle and marking arc placed on the trivial tangle, with the corresponding bundle data used for reduced singular instanton theory. It changes the moduli problem.'],
+    perturbation:['Holonomy perturbation','A controlled modification of the flatness/Chern–Simons equations. Here a small positive ε turns the marked trivial-tangle moduli into an immersed circle transverse to L₁.'],
+    transverse:['Transverse intersection','The tangent directions of L₀ and L₁ are distinct. The intersection is isolated and can serve as a Floer generator.'],
+    generator:['Floer generator','A basis element of the chain group. Here it is a branch-aware intersection of two boundary restriction objects. A generator is not automatically a homology class.'],
+    bigon:['Bigon','A disk with two marked corners and one boundary arc on each curve. In surface Floer theory, eligible index-one bigons represent strip contributions to the differential.'],
+    instanton:['Instanton trajectory','An anti-self-dual gauge-theoretic trajectory on the relevant four-dimensional cylinder, subject to knot singularity and perturbation conditions. These define the instanton differential.'],
+    bounding:['Bounding cochain','Additional deformation data for an immersed Lagrangian, satisfying a Maurer–Cartan equation that controls disk-bubbling obstructions. It is not chosen or computed by this explorer.'],
+    ainfinity:['A∞ structure','A hierarchy of higher composition operations satisfying coherent relations. A natural chain/A∞ comparison carries more information than equality of homology ranks.']
+  };
+  const def = (key,label) => `<button class="definition" data-def="${key}" aria-describedby="tooltip">${label || definitions[key][0]}</button>`;
+  const fmt = value => (value/PI).toFixed(3)+'π';
+  const text = (x,y,value,size=12,fill=colors.muted,extra='') => `<text x="${x}" y="${y}" fill="${fill}" font-family="Arial,sans-serif" font-size="${size}" ${extra}>${value}</text>`;
+  const math = (x,y,value,size=20,fill=colors.ink,extra='') => `<text x="${x}" y="${y}" fill="${fill}" font-family="Georgia,serif" font-size="${size}" ${extra}>${value}</text>`;
+  const line = (x1,y1,x2,y2,stroke=colors.line,extra='') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${stroke}" ${extra}/>`;
+  const circle = (x,y,r,fill,extra='') => `<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}" ${extra}/>`;
+  const path = (d,color,width=3,extra='') => `<path d="${d}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
+  const tipGroup = (key,content) => `<g data-def="${key}" tabindex="0" role="button" aria-label="Define ${definitions[key][0]}" aria-describedby="tooltip">${content}</g>`;
+  function svgDefs() { return `<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="${colors.muted}"/></marker><pattern id="grid" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" stroke="#e9eee5" stroke-width=".8"/></pattern></defs>`; }
+  function puncture(x,y,label) {return tipGroup('meridian',circle(x,y,6,'#fff',`stroke="${colors.ink}" stroke-width="1.5"`)+math(x+(label==='a'||label==='d'?-22:14),y+4,label,17));}
+  function braid(xl,xr,top,bottom,n=3) {
+    let out=''; const height=(bottom-top)/n;
+    for(let k=0;k<n;k++) {
+      const y=top+k*height, end=y+height, mid=y+height/2;
+      const over=`M${xl},${y} C${xl},${mid} ${xr},${mid} ${xr},${end}`;
+      const under=`M${xr},${y} C${xr},${mid} ${xl},${mid} ${xl},${end}`;
+      out+=path(under,colors.amber,5)+path(over,colors.amber,5);
+      let bridge='';
+      for(let u=.43;u<=.5701;u+=.01){const bx=xl+(xr-xl)*(3*u*u-2*u*u*u),by=y+height*(1.5*u-1.5*u*u+u*u*u);bridge+=(bridge?'L':'M')+bx.toFixed(2)+','+by.toFixed(2);}
+      out+=path(bridge,'#f8faf5',12)+path(bridge,colors.amber,5);
+    }
+    return out;
+  }
+  function drawKnot() {
+    if(!state.cut) {
+      const top=85,bottom=315,xl=330,xr=450;
+      let out=`<circle cx="390" cy="200" r="130" fill="#edf2e8" stroke="#a6b9a4" stroke-width="1.4" stroke-dasharray="5 5"/>`;
+      out+=path(`M${xl},${top} C175,35 175,365 ${xl},${bottom}`,colors.teal,5);
+      out+=path(`M${xr},${top} C605,35 605,365 ${xr},${bottom}`,colors.teal,5);
+      out+=braid(xl,xr,top,bottom);
+      out+=puncture(xl,top,'a')+puncture(xr,top,'b')+puncture(xr,bottom,'c')+puncture(xl,bottom,'d');
+      out+=text(155,205,'T₀',15,colors.teal)+text(380,205,'T₁',15,colors.amber);
+      out+=line(518,174,665,128,colors.muted,'stroke-width="1"')+tipGroup('conway',text(677,121,'Conway sphere',14,colors.ink)+text(677,143,'four punctures on the boundary',10));
+      out+=math(390,378,'Trefoil 3₁',25,colors.ink,'text-anchor="middle"')+text(390,401,'The sphere encloses the three-crossing tangle.',11,colors.muted,'text-anchor="middle"');
+      return out;
+    }
+    let out='';
+    out+=`<circle cx="230" cy="215" r="130" fill="#edf4eb" stroke="#b5cbb6"/><circle cx="650" cy="215" r="130" fill="#f6efe2" stroke="#d9c6a9"/>`;
+    out+=path('M170,100 C80,135 80,295 170,330',colors.teal,5)+path('M290,100 C380,135 380,295 290,330',colors.teal,5);
+    out+=braid(590,710,100,330);
+    for(const x of [170,590])out+=puncture(x,100,'a')+puncture(x+120,100,'b')+puncture(x+120,330,'c')+puncture(x,330,'d');
+    out+=line(385,216,485,216,colors.muted,'stroke-dasharray="4 5" marker-end="url(#arrow)"')+text(435,197,'same boundary',10,colors.muted,'text-anchor="middle"');
+    out+=math(230,382,'T₀ · the trivial tangle',23,colors.teal,'text-anchor="middle"')+math(650,382,'T₁ · the rational tangle',23,colors.amber,'text-anchor="middle"');
+    out+=text(230,405,'Two unknotted arcs; retain the boundary marking.',10,colors.muted,'text-anchor="middle"')+text(650,405,'The twists become a different boundary restriction.',10,colors.muted,'text-anchor="middle"');
+    return out;
+  }
+  function squareFace(x,y,size,face,labels=true) {
+    let out=`<rect x="${x}" y="${y}" width="${size}" height="${size}" fill="${face?'#f1f4ed':'#fafcf7'}" stroke="#b7c5b2" stroke-width="1.3"/>`;
+    out+=`<rect x="${x}" y="${y}" width="${size}" height="${size}" fill="url(#grid)"/>`;
+    out+=line(x,y+size/2,x+size,y+size/2,'#e0e7da','stroke-dasharray="3 4"')+line(x+size/2,y,x+size/2,y+size,'#e0e7da','stroke-dasharray="3 4"');
+    for (const [dx,dy] of [[0,0],[size,0],[size,size],[0,size]]) out+=tipGroup('corner',circle(x+dx,y+dy,4,colors.ink));
+    if(labels){out+=text(x+size/2,y-19,face?'BACK FACE':'FRONT FACE',10,colors.muted,'text-anchor="middle" letter-spacing="1.5"');
+      out+=math(x-15,y+5,'π',13,colors.muted,'text-anchor="end"')+math(x-15,y+size+4,face?'2π':'0',13,colors.muted,'text-anchor="end"');
+      out+=math(x,y+size+23,'0',13,colors.muted,'text-anchor="middle"')+math(x+size,y+size+23,'π',13,colors.muted,'text-anchor="middle"')+math(x+size/2,y+size+24,'γ',15,colors.muted,'text-anchor="middle"');
+      out+=math(x-32,y+size/2,face?'2π−θ':'θ',13,colors.muted,'text-anchor="middle"');}
+    return out;
+  }
+  function drawQuotient() {
+    const x=65,y=67,s=286,g=M.mod(state.gamma),t=M.mod(state.theta),c=M.canonical(g,t);
+    let out=text(x+s/2,38,'TORUS COVER',10,colors.muted,'text-anchor="middle" letter-spacing="1.5"');
+    out+=`<rect x="${x}" y="${y}" width="${s}" height="${s}" fill="#f8faf4" stroke="#b7c5b2"/><rect x="${x}" y="${y}" width="${s}" height="${s}" fill="url(#grid)"/>`;
+    out+=line(x+s/2,y,x+s/2,y+s,colors.line,'stroke-dasharray="4 4"')+line(x,y+s/2,x+s,y+s/2,colors.line,'stroke-dasharray="4 4"');
+    for(const [gx,ty] of [[0,0],[PI,0],[0,PI],[PI,PI]])out+=circle(x+gx/TAU*s,y+s-ty/TAU*s,4,colors.ink);
+    const px=x+g/TAU*s,py=y+s-t/TAU*s, qx=x+M.mod(-g)/TAU*s,qy=y+s-M.mod(-t)/TAU*s;
+    out+=line(px,py,qx,qy,'#a8bca5','stroke-dasharray="3 5"')+circle(qx,qy,8,'white',`stroke="${colors.teal}" stroke-width="2"`)+circle(px,py,8,colors.teal);
+    out+=text(px+13,py-12,'(γ, θ)',12,colors.teal)+text(qx+13,qy-12,'(−γ, −θ)',12,colors.teal);
+    out+=math(x-15,y+5,'2π',13,colors.muted,'text-anchor="end"')+math(x-15,y+s+5,'0',13,colors.muted,'text-anchor="end"')+math(x,y+s+23,'0',13,colors.muted,'text-anchor="middle"')+math(x+s,y+s+23,'2π',13,colors.muted,'text-anchor="middle"');
+    out+=line(375,197,435,197,colors.muted,'marker-end="url(#arrow)"')+math(405,174,'/ ±1',18,colors.ink,'text-anchor="middle"');
+    const size=157,fy=116,fx=[490,700];
+    fx.forEach((ox,face)=>{out+=squareFace(ox,fy,size,face);if(c.face===face || c.gamma<1e-9 || Math.abs(c.gamma-PI)<1e-9 || c.y<1e-9 || Math.abs(c.y-PI)<1e-9){out+=circle(ox+c.gamma/PI*size,fy+size-c.y/PI*size,9,'#dce9d6')+circle(ox+c.gamma/PI*size,fy+size-c.y/PI*size,5,colors.teal);}});
+    out+=path('M520,310 Q672,338 820,310','#adbba8',1.3,'stroke-dasharray="3 4"');
+    out+=tipGroup('pillowcase',text(672,349,'Two squares, glued along all four edges.',11,colors.ink,'text-anchor="middle"'));
+    out+=text(208,402,'Opposite edges are periodic; the involution pairs the two dots.',11,colors.muted,'text-anchor="middle"')+text(674,402,'The paired dots are one boundary character.',11,colors.teal,'text-anchor="middle"');
+    return out;
+  }
+  const faceLayout = [{x:108,y:60,s:280},{x:528,y:60,s:280}];
+  function drawCurves() {
+    let out='';
+    faceLayout.forEach(({x,y,s},face)=>{
+      out+=squareFace(x,y,s,face);
+      if(state.epsilon===0 && state.show0){out+=path(`M${x},${y+s}L${x+s},${y}`,colors.teal,4,'stroke-dasharray="4 5"');}
+      else if(state.show0){out+=path(M.segmentedPath(b=>M.l0(b,state.epsilon),0,TAU,1600,face,x,y,s),colors.teal,3.4);}
+      if(state.show1)out+=path(M.segmentedPath(M.l1,0,PI,800,face,x,y,s),colors.amber,3,'stroke-dasharray="8 5"');
+      if(state.show0 && state.epsilon>0 && face===0){out+=tipGroup('immersion',circle(x+s/2,y+s/2,6,'#fff',`stroke="#81937c" stroke-width="1.2"`));}
+    });
+    if(state.epsilon>0 && state.show0 && state.show1){
+      M.intersections(state.epsilon).forEach(point=>{
+        const f=faceLayout[point.face],x=f.x+point.gamma/PI*f.s,y=f.y+f.s-point.y/PI*f.s,selected=state.step>=3 && state.selected===point.id;
+        out+=`<g class="svg-button" role="button" tabindex="0" data-generator="${point.id}" aria-label="Select generator ${point.id==='r'?'r':point.id==='x1'?'x one':'x two'}"><circle cx="${x}" cy="${y}" r="${selected?15:12}" fill="${selected?'#dbe8d4':'#f7f9f3'}" stroke="${selected?colors.ink:colors.line}" stroke-width="1"/><circle cx="${x}" cy="${y}" r="5.5" fill="${colors.ink}"/>${math(x+(point.id==='x2'?-17:17),y+(point.id==='x2'?21:-9),point.id==='r'?'r':point.id==='x1'?'x₁':'x₂',19,colors.ink,`text-anchor="${point.id==='x2'?'end':'start'}"`)}</g>`;
+      });
+    }
+    if(state.epsilon===0 && state.show0 && state.show1){const f=faceLayout[0];out+=circle(f.x+f.s*2/3,f.y+f.s/3,8,'#fff',`stroke="${colors.ink}" stroke-width="1.8"`)+text(380,198,'two branches coincide',10,colors.muted);out+=text(458,402,'ε = 0: a corner and coincident branches. This is not a transverse generator set.',11,colors.amber,'text-anchor="middle"');}
+    else{out+=path('M404,78Q458,51 512,78','#b2c0ac',1.2,'stroke-dasharray="3 4"')+text(458,40,'shared seam',9,colors.muted,'text-anchor="middle"');out+=text(458,402,state.step===3?'Click an intersection, or select its generator below.':'Solid L₀ and dashed L₁ live on the same glued surface.',11,colors.muted,'text-anchor="middle"');}
+    return out;
+  }
+  function generatorCard(x,y,id,label,subtitle) {
+    const selected=state.selected===id;
+    return `<g class="svg-button" role="button" tabindex="0" data-generator="${id}" aria-label="Select generator ${id}"><rect x="${x}" y="${y}" width="174" height="72" rx="7" fill="${selected?'#e7eee1':'#fff'}" stroke="${selected?'#9fb799':colors.line}"/>${math(x+22,y+33,label,24)}${text(x+22,y+55,subtitle,10)}</g>`;
+  }
+  function drawComplex() {
+    if(state.toy) {
+      const progress=state.playing?state.animationProgress||0:0;
+      let out=text(450,40,'LOCAL SCHEMATIC · NOT THE TREFOIL',10,colors.muted,'text-anchor="middle" letter-spacing="1.5"');
+      out+=path('M100,220H590',colors.teal,3.5)+path('M140,220Q345,0 550,220',colors.amber,3,'stroke-dasharray="8 5"');
+      // The shaded bigon is bounded by the horizontal L0 arc and upper L1 arc only.
+      out+=`<path d="M140,220 Q345,0 550,220 L140,220Z" fill="#d5e4c9" opacity=".9"/>`;
+      out+=path('M100,220H590',colors.teal,3.5)+path('M140,220Q345,0 550,220',colors.amber,3,'stroke-dasharray="8 5"');
+      out+=circle(140,220,7,colors.ink)+circle(550,220,7,colors.ink)+math(140,255,'u',22,colors.ink,'text-anchor="middle"')+math(550,255,'v',22,colors.ink,'text-anchor="middle"');
+      out+=text(112,206,'L₀',14,colors.teal)+text(355,96,'L₁',14,colors.amber)+tipGroup('bigon',math(345,183,'an index-one bigon',19,colors.teal,'text-anchor="middle"'));
+      if(state.playing){const ax=140+410*progress,ay=220-55*Math.sin(PI*progress);out+=circle(ax,ay,9,'#fff',`stroke="${colors.teal}" stroke-width="2"`);}
+      out+=line(642,110,642,315,colors.line)+math(679,156,'∂u = v',26)+math(679,206,'∂v = 0',26)+text(679,253,'One eligible contribution',11)+text(679,274,'counted modulo 2.',11);
+      out+=text(450,382,'The moving dot illustrates a strip contribution; it does not solve a PDE.',11,colors.muted,'text-anchor="middle"');
+      return out;
+    }
+    let out=text(450,39,'THE SAME THREE GENERATORS, TWO DIFFERENT KINDS OF TRAJECTORY',10,colors.muted,'text-anchor="middle" letter-spacing="1.1"');
+    out+=text(86,89,'GAUGE THEORY',10,colors.teal,'letter-spacing="1.2"')+math(86,120,'CI♮(3₁)',23,colors.teal)+text(86,144,'critical points',10);
+    out+=generatorCard(270,90,'r','r','abelian-limit generator')+generatorCard(463,90,'x1','x₁','first split branch')+generatorCard(656,90,'x2','x₂','second split branch');
+    [357,550,743].forEach(x=>{out+=line(x,178,x,233,'#adbaa6','marker-end="url(#arrow)"');});
+    out+=text(87,235,'SURFACE GEOMETRY',10,colors.amber,'letter-spacing="1.2"')+math(86,266,'CF(L₀, L₁)',23,colors.amber)+text(86,290,'intersections',10);
+    out+=generatorCard(270,235,'r','r','L₀ ∩ L₁')+generatorCard(463,235,'x1','x₁','L₀ ∩ L₁')+generatorCard(656,235,'x2','x₂','L₀ ∩ L₁');
+    out+=`<rect x="267" y="344" width="563" height="45" rx="5" fill="#eaf0e4"/>`+math(548,373,'Trefoil model: ∂ = 0, so H ≅ F₂³.',22,colors.teal,'text-anchor="middle"');
+    out+=text(450,419,'A correspondence of bases is the starting point. Comparing trajectories is the deeper task.',11,colors.muted,'text-anchor="middle"');
+    return out;
+  }
+  const steps=[
+    {title:'A sphere makes the cut.',tag:'TANGLE DECOMPOSITION',desc:'A trefoil shown as a three-crossing two-strand braid closure. A Conway sphere separates its rational tangle from two trivial outside arcs.'},
+    {title:'Boundary data becomes a pillowcase.',tag:'TRACELESS SU(2) CHARACTERS',desc:'Two angular coordinates on a torus cover, paired by sign reversal. The quotient is displayed as a front and back square with corresponding edges glued.'},
+    {title:'Each tangle leaves a curve.',tag:'RESTRICTION MAPS',desc:'The explicit perturbed trivial-tangle curve L0 and rational trefoil-tangle curve L1 on both faces of the pillowcase.'},
+    {title:'An intersection is compatible data.',tag:'THREE TRANSVERSE GENERATORS',desc:'Three clickable intersection points representing compatible boundary characters of the two tangle objects.'},
+    {title:'A basis is only the beginning.',tag:'THE FLOER COMPARISON',desc:'Three corresponding gauge-theory and surface Floer generators. A separate local bigon schematic illustrates how a differential can arise.'}
+  ];
+  function controlsHTML() {
+    if(state.step===0) return `<button class="button primary" id="cut-button">${state.cut?'Glue the tangles back ↺':'Cut along the sphere →'}</button><span class="control-note">${state.cut?'The knot information is retained by the tangles and their marked gluing.':'Try the cut. The four punctures belong to both boundary spheres.'}</span><span class="status-chip">${state.cut?'Two tangles · one boundary':'Trefoil · 3 crossings'}</span>`;
+    if(state.step===1) return `<div class="slider-block"><label for="gamma-slider" class="math">γ</label><input id="gamma-slider" type="range" min="0" max="2" step="0.01" value="${state.gamma/PI}" aria-label="Gamma angle in multiples of pi"><output id="gamma-output">${fmt(state.gamma)}</output></div><div class="slider-block"><label for="theta-slider" class="math">θ</label><input id="theta-slider" type="range" min="0" max="2" step="0.01" value="${state.theta/PI}" aria-label="Theta angle in multiples of pi"><output id="theta-output">${fmt(state.theta)}</output></div><button class="button secondary" id="equivalent-button">Swap equivalent lift ↔</button>`;
+    if(state.step===2 || state.step===3) return `<div class="full-row"><div class="legend"><span class="legend-item"><i class="swatch"></i> L₀ · marked trivial tangle</span><span class="legend-item"><i class="swatch amber"></i> L₁ · trefoil tangle</span></div><span class="count-badge" id="intersection-count"></span></div><div class="slider-block"><label for="epsilon-slider" class="math">Perturbation ε</label><input id="epsilon-slider" type="range" min="0.02" max="0.22" step="0.01" value="${Math.max(.02,state.epsilon)}" aria-label="Perturbation epsilon in radians" ${state.epsilon===0?'disabled':''}><output id="epsilon-output">${state.epsilon.toFixed(2)}</output></div>${state.step===2?`<div class="toggle-group"><label><input id="show-l0" type="checkbox" ${state.show0?'checked':''}> Show L₀</label><label><input id="show-l1" type="checkbox" ${state.show1?'checked':''}> Show L₁</label></div><button class="button secondary" id="degenerate-button">${state.epsilon===0?'Restore perturbation':'Compare ε = 0'}</button>`:`<div class="generator-buttons" aria-label="Choose a generator">${['r','x1','x2'].map(id=>`<button class="generator-button ${state.selected===id?'selected':''}" data-generator="${id}" aria-pressed="${state.selected===id}">${id==='r'?'r':id==='x1'?'x₁':'x₂'}</button>`).join('')}</div>`}`;
+    return `<div class="segmented" aria-label="Complex view"><button data-complex="trefoil" class="${!state.toy?'selected':''}" aria-pressed="${!state.toy}">Trefoil complex</button><button data-complex="toy" class="${state.toy?'selected':''}" aria-pressed="${state.toy}">How a differential works</button></div>${state.toy?'<button id="animate-button" class="button primary">Animate the contribution →</button>':'<span class="status-chip">3 generators · ∂ = 0 · rank H = 3</span>'}`;
+  }
+  function insightHTML() {
+    if(state.step===0) return {title:state.cut?'The pieces share a four-punctured sphere.':'Cut the space, not just the drawing.',body:`<p>A ${def('conway')} meets the trefoil in four points. Each side is a ${def('tangle')}; the outside arcs form T₀ and the twists form T₁.</p><p>Remove the punctures. This common boundary is where the two sides must agree when you glue them back.</p>`,readout:`<div class="dictionary-row"><span class="math">(S³, K)</span><span>one knot in three-space</span></div><div class="dictionary-row"><span class="math">(B₀, T₀) ∪ (B₁, T₁)</span><span>two marked tangle pairs</span></div><div class="dictionary-row"><span class="math">S² ∖ {a, b, c, d}</span><span>their shared boundary</span></div>`};
+    if(state.step===1) {
+      const h=M.holonomies(state.gamma,state.theta),c=M.canonical(state.gamma,state.theta);
+      const qvalue=q=>`${q[1].toFixed(2)}i ${q[2]<0?'−':'+'} ${Math.abs(q[2]).toFixed(2)}j`;
+      return {title:'Two dots, one character.',body:`<p>Assign ${def('traceless','traceless')} ${def('su2')} holonomies to the four ${def('meridian','meridians')}, and impose ba = cd. Quotient by ${def('conjugation')}. The resulting ${def('character')} is the ${def('pillowcase')}.</p><p>Move the angles. The paired lifts represent the same point. The four ${def('corner','corners')} are fixed by the involution.</p>`,readout:`<div class="quaternion-grid"><span>a = i</span><span>b = ${qvalue(h.b)}</span><span>c = ${qvalue(h.c)}</span><span>d = ${qvalue(h.d)}</span></div><div class="dictionary-row"><span class="math">(γ, θ) ∼ (−γ, −θ)</span><span>modulo 2π</span></div><div class="dictionary-row"><span>Quotient point</span><span>${fmt(c.gamma)}, ${fmt(c.theta)} · ${c.face?'back':'front'}</span></div><div class="validation-line">✓ Boundary relation ba = cd is satisfied.</div>`};
+    }
+    if(state.step===2) return {title:state.epsilon===0?'The limit loses transversality.':'Restriction turns tangle data into geometry.',body:`<p>Each ${def('restriction')} gives an object in the same surface. L₁ is an embedded arc. The ${def('earring','earring-marked')} trivial tangle, with a ${def('perturbation')}, gives the ${def('immersion','immersed')} circle L₀.</p><p>On the smooth surface these are ${def('lagrangian','Lagrangian curves')}. The small open circle is L₀’s self-crossing, not an L₀–L₁ intersection.</p>`,readout:`<div class="small-note math">L₁ : R(B₁,T₁) → P &nbsp; · &nbsp; L₀ : R♮<sub>π</sub>(B₀,T₀) → P</div><div class="formula">L₁(t) = (t, −2t)</div><div class="small-note">0 ≤ t ≤ π; then pass to the quotient.</div><div class="formula">L₀(β) = (β + π/2 + ε sin β,<br>β + π/2 − ε sin β)</div><div class="small-note">β ∈ R/2πZ. At ε = 0, the circle doubles the diagonal arc and reaches the corners.</div>`};
+    if(state.step===3){
+      const point=M.intersections(state.epsilon).find(p=>p.id===state.selected),label=point.id==='r'?'r':point.id==='x1'?'x₁':'x₂';
+      return {title:'The two restrictions agree here.',body:`<p>A ${def('transverse','transverse')} intersection matches one branch from each side. Compatible boundary characters glue; in this marked, perturbed model the three matches give ${def('generator','generators')} of the reduced singular instanton chain group.</p><p>Select a point. Its β-value identifies a branch of L₀, while t identifies the point on L₁. Counting image crossings alone can lose branch information.</p>`,readout:`<div class="generator-title"><span class="math">${label}</span><small>${point.id==='r'?'Approaches the abelian corner as ε → 0':'One of the two branches split from the interior match'}</small></div><div class="dictionary-row"><span>Boundary character</span><span>(${fmt(point.gamma)}, ${fmt(point.theta)})</span></div><div class="dictionary-row"><span>L₀ branch β</span><span>${fmt(point.beta)}</span></div><div class="dictionary-row"><span>L₁ parameter t</span><span>${fmt(point.t)}</span></div><div class="validation-line">✓ Same boundary character · distinct tangent directions</div>`};
+    }
+    if(state.toy)return {title:'Trajectories turn a vector space into a complex.',body:`<p>In this separate local model, the ${def('bigon')} connects u to v. Its two boundary arcs lie on different curves. An eligible index-one contribution gives ∂u = v over F₂.</p><p>The gauge-theory counterpart counts ${def('instanton','instanton trajectories')}. Identifying those two counts is much deeper than matching generators.</p>`,readout:`<div class="formula">C<sub>toy</sub> = F₂⟨u, v⟩</div><div class="formula">∂u = v, &nbsp; ∂v = 0</div><div class="small-note">This schematic assumes one eligible bigon. Both generators form a cancelling pair; the toy homology is zero. It is not a disk count for the trefoil.</div>`};
+    return {title:'The trefoil is a clean first example.',body:`<p>Here CF(L₀, L₁) = F₂⟨r, x₁, x₂⟩. In this two-bridge model there are no eligible ${def('bigon','bigons')}, so ∂ = 0. The rank-three pillowcase homology agrees with reduced singular instanton homology.</p><p>A general comparison should respect gradings and gluing at the chain or ${def('ainfinity','A∞')} level. More complicated immersed objects can require ${def('bounding','bounding cochains')}.</p>`,readout:`<div class="formula">CI♮(K) ≃ CF(L₀, L₁; b)</div><div class="small-note">General research target with appropriate hypotheses and deformation data; not established by this visualization.</div><div class="dictionary-row"><span>Worked trefoil</span><span>rank C = rank H = 3</span></div><div class="dictionary-row"><span>What still carries structure</span><span>gradings · trajectories · gluing</span></div>`};
+  }
+  function render(rebuild=true) {
+    hideTooltip();
+    if(state.step===3 && state.epsilon===0) state.epsilon=.16;
+    if(state.step===3){state.show0=true;state.show1=true;}
+    const config=steps[state.step],info=insightHTML();
+    $('step-kicker').textContent=`MOVE 0${state.step+1} / 05`;
+    $('step-title').textContent=config.title;$('model-tag').textContent=config.tag;
+    $('diagram-title').textContent=config.title;$('diagram-description').textContent=config.desc;
+    $('diagram-content').innerHTML=svgDefs()+[drawKnot,drawQuotient,drawCurves,drawCurves,drawComplex][state.step]();
+    $('diagram-caption').textContent=[state.cut?'The two boundary spheres are identified; the endpoint labels retain the gluing data.':'A planar trefoil model. The dashed circle represents the cutting sphere.',
+      'Front: 0 ≤ θ ≤ π. Back: π ≤ θ ≤ 2π, drawn with height 2π−θ. All corresponding edges are glued.',
+      'The repeated corner dots represent four reducible characters on the glued surface.',
+      'Each dark point pairs branches from different restriction objects.',
+      state.toy?'Shaded disk: a local differential schematic, separate from the trefoil.':'The generator dictionary is concrete; the general trajectory comparison is a research problem.'][state.step];
+    if(rebuild)$('controls').innerHTML=controlsHTML();
+    if($('gamma-output'))$('gamma-output').textContent=fmt(state.gamma);
+    if($('theta-output'))$('theta-output').textContent=fmt(state.theta);
+    if($('epsilon-output'))$('epsilon-output').textContent=state.epsilon.toFixed(2);
+    if($('intersection-count'))$('intersection-count').innerHTML=state.epsilon===0?'<span class="status-chip warning-chip">Degenerate limit</span>':(!state.show0||!state.show1?'<span class="small-note">Both curves needed to see matches</span>':'<strong>3</strong> intersections');
+    $('insight-title').textContent=info.title;$('insight-body').innerHTML=info.body;$('readout-body').innerHTML=info.readout;
+    $('readout-kicker').textContent=['THE GEOMETRIC DICTIONARY','LIVE BOUNDARY HOLONOMIES','THE EXPLICIT CURVE MODEL','SELECTED GENERATOR','THE CHAIN GROUP & ITS DIFFERENTIAL'][state.step];
+    document.querySelectorAll('.step').forEach((el,i)=>{el.classList.toggle('active',i===state.step);el.classList.toggle('completed',i<state.step);if(i===state.step)el.setAttribute('aria-current','step');else el.removeAttribute('aria-current');});
+    $('step-progress').textContent=`Step ${state.step+1} of 5`;$('previous-button').disabled=state.step===0;
+    $('next-button').textContent=['Meet the pillowcase →','Trace the curves →','Match intersections →','Build the complex →','Restart journey ↺'][state.step];
+    if($('diagram-dialog').open)updateZoom();
+  }
+  function stopAnimation(){if(animation!==null)cancelAnimationFrame(animation);animation=null;state.playing=false;state.animationProgress=0;}
+  function go(step){stopAnimation();state.step=Math.max(0,Math.min(4,step));render();}
+  function reset(){stopAnimation();Object.assign(state,{step:0,cut:false,gamma:.68*PI,theta:.42*PI,epsilon:.16,show0:true,show1:true,selected:'x1',toy:false});render();}
+  function hideTooltip(){ $('tooltip').hidden=true;tooltipTarget=null; }
+  function showTooltip(target){
+    const key=target.dataset.def;if(!definitions[key])return;
+    tooltipTarget=target;const tooltip=$('tooltip'),host=document.querySelector('dialog[open]')||document.body;
+    if(tooltip.parentElement!==host)host.appendChild(tooltip);
+    tooltip.innerHTML=`<b>${definitions[key][0]}</b>${definitions[key][1]}`;tooltip.hidden=false;
+    const r=target.getBoundingClientRect(),width=Math.min(300,window.innerWidth-24);
+    tooltip.style.maxWidth=width+'px';tooltip.style.left=Math.max(12,Math.min(window.innerWidth-width-12,r.left))+'px';
+    tooltip.style.top=Math.max(12,Math.min(window.innerHeight-tooltip.offsetHeight-12,r.bottom+9))+'px';
+  }
+  function updateZoom(){$('diagram-dialog-title').textContent=steps[state.step].title;$('zoom-content').innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" role="group" aria-label="Enlarged interactive diagram">${$('diagram-content').innerHTML}</svg>`;}
+  function openDialog(id){hideTooltip();if(id==='diagram-dialog')updateZoom();$(id).showModal();}
+  function animate(){
+    stopAnimation();state.playing=true;const start=performance.now();
+    const frame=now=>{state.animationProgress=Math.min(1,(now-start)/2200);$('diagram-content').innerHTML=svgDefs()+drawComplex();if($('diagram-dialog').open)updateZoom();
+      if(state.animationProgress<1)animation=requestAnimationFrame(frame);else{animation=null;state.playing=false;}};
+    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches){state.animationProgress=1;$('diagram-content').innerHTML=svgDefs()+drawComplex();state.playing=false;return;}
+    animation=requestAnimationFrame(frame);
+  }
+  document.addEventListener('click',event=>{
+    const target=event.target.closest('button,[data-generator],[data-def],[data-go]');
+    if(!target){hideTooltip();return;}
+    if(target.dataset.def){showTooltip(target);return;}
+    hideTooltip();
+    if(target.dataset.step!==undefined){go(Number(target.dataset.step));return;}
+    if(target.dataset.go!==undefined){go(Number(target.dataset.go));return;}
+    if(target.dataset.generator){state.selected=target.dataset.generator;if(state.step===2)state.step=3;render();return;}
+    if(target.dataset.close){$(target.dataset.close).close();return;}
+    if(target.dataset.complex){stopAnimation();state.toy=target.dataset.complex==='toy';render();return;}
+    switch(target.id){
+      case 'cut-button':state.cut=!state.cut;render();break;
+      case 'previous-button':go(state.step-1);break;
+      case 'next-button':if(state.step===4)reset();else go(state.step+1);break;
+      case 'reset-button':reset();break;
+      case 'glossary-open':openDialog('glossary-dialog');break;
+      case 'diagram-expand':openDialog('diagram-dialog');break;
+      case 'sources-open':case 'footer-sources':openDialog('sources-dialog');break;
+      case 'equivalent-button':state.gamma=M.mod(-state.gamma);state.theta=M.mod(-state.theta);render();break;
+      case 'degenerate-button':state.epsilon=state.epsilon===0?.16:0;render();break;
+      case 'animate-button':animate();break;
+    }
+  });
+  $('home-link').addEventListener('click',event=>{event.preventDefault();reset();});
+  document.addEventListener('input',event=>{
+    switch(event.target.id){case 'gamma-slider':state.gamma=Number(event.target.value)*PI;break;case 'theta-slider':state.theta=Number(event.target.value)*PI;break;case 'epsilon-slider':state.epsilon=Number(event.target.value);break;default:return;}render(false);
+  });
+  document.addEventListener('change',event=>{if(event.target.id==='show-l0')state.show0=event.target.checked;else if(event.target.id==='show-l1')state.show1=event.target.checked;else return;render(false);});
+  document.addEventListener('pointerover',event=>{const target=event.target.closest('[data-def]');if(target)showTooltip(target);});
+  document.addEventListener('pointerout',event=>{const target=event.target.closest('[data-def]');if(target && !target.contains(event.relatedTarget))hideTooltip();});
+  document.addEventListener('focusin',event=>{const target=event.target.closest('[data-def]');if(target)showTooltip(target);});
+  document.addEventListener('focusout',hideTooltip);
+  window.addEventListener('resize',hideTooltip);
+  window.addEventListener('scroll',hideTooltip,{passive:true});
+  document.addEventListener('keydown',event=>{
+    if(event.key==='Escape'){hideTooltip();return;}
+    if(document.querySelector('dialog[open]'))return;
+    if(/INPUT|SELECT|TEXTAREA/.test(event.target.tagName))return;
+    if(event.key==='ArrowRight'){event.preventDefault();go(Math.min(4,state.step+1));}
+    else if(event.key==='ArrowLeft'){event.preventDefault();go(Math.max(0,state.step-1));}
+    else if((event.key==='Enter'||event.key===' ') && event.target.matches('[data-generator],[data-def]') && event.target.tagName!=='BUTTON'){event.preventDefault();event.target.click();}
+  });
+  $('glossary-list').innerHTML=Object.entries(definitions).map(([key,[title,body]])=>`<div class="glossary-item" id="definition-${key}"><b>${title}</b><p>${body}</p></div>`).join('');
+  render();
+  // Expose a read-only snapshot for deterministic, browser-independent interaction checks.
+  window.PillowcaseExplorer={snapshot:()=>({...state,intersections:M.intersections(state.epsilon)}),exportDiagram:()=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440">${$('diagram-content').innerHTML}</svg>`};
+})();
+
+</script>
+</body>
+</html>

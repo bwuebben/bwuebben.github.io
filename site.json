@@ -3,6 +3,12 @@
     { "label": "Home", "href": "/" },
     { "label": "Papers", "href": "/papers/" },
     {
+      "label": "Explorers",
+      "children": [
+        { "label": "Pillow Case", "href": "/pillowcase-explorer/" }
+      ]
+    },
+    {
       "label": "Writing",
       "children": [
         { "label": "Entropy", "href": "/poem.html" }

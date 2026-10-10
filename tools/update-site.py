@@ -83,6 +83,12 @@ def main():
             for name in styles) + "\n" + theme_metas
         output = NAV.sub(lambda _: f"<!-- site:navigation -->\n{navigation}\n<!-- /site:navigation -->", source)
         output = STYLES.sub(lambda _: f"<!-- site:styles -->\n{stylesheet_links}\n<!-- /site:styles -->", output)
+        if relative == "pillowcase-explorer/index.html":
+            for name in ("styles.css", "site.css", "model.js", "app.js"):
+                version = hashlib.sha256((page.parent / name).read_bytes()).hexdigest()[:12]
+                output = re.sub(
+                    rf'((?:href|src)="){re.escape(name)}(?:\?v=[^"]*)?(")',
+                    lambda match: match[1] + name + "?v=" + version + match[2], output)
         if output != source:
             pending.append((page, output))
     for page, output in pending:

@@ -5,7 +5,8 @@ Source for my personal site, published by GitHub Pages at
 
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
-HTML and CSS; there is no server-side code or runtime JavaScript (the landing
+HTML, CSS, and the Pillowcase Explorer's client-side JavaScript; there is no
+server-side code. The other pages require no runtime JavaScript (the landing
 page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
@@ -15,6 +16,7 @@ navigation and stylesheet links when the site's configuration changes.
 ```
 index.html              the landing page
 papers/index.html       research papers, grouped by subject
+pillowcase-explorer/    interactive trefoil and pillowcase diagrams
 poem.html               Gradient of Mind (a poem)
 portrait/index.html     the portrait at full size (the masthead links here;
                          deliberately absent from the navigation)
@@ -62,7 +64,8 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, and Writing.
+`templates/navigation.html`. The top level contains Home, Papers, Explorers, and Writing.
+Explorers contains Pillow Case; add future explorers to that group's `children` list.
 Writing's `children` list contains Entropy, which opens the poem *Gradient of
 Mind*. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
@@ -83,6 +86,23 @@ only the marked navigation and stylesheet blocks; page content stays editable.
 
 Keep changes local while reviewing. Publishing is a separate, deliberate Git
 commit and push of the reviewed files to GitHub Pages.
+
+## The Pillowcase Explorer
+
+`pillowcase-explorer/index.html` is a guided, interactive trefoil example, linked
+from the shared navigation and the instanton-knot papers. Preview it at
+<http://127.0.0.1:8000/pillowcase-explorer/>. Its five steps cover cutting the knot,
+boundary characters, immersed curves, intersections, and the chain complex.
+
+The page uses the shared site navigation, fonts, and light/dark theme. Its styles
+are scoped to `.pillowcase-app`; `site.css` provides theme adjustments, while the
+SVG diagrams retain their light paper background. `model.js` contains the
+mathematical model and `app.js` handles interaction. No build step or external
+runtime dependencies are required. Run `python3 tools/update-site.py` after
+editing these assets too: it versions their URLs by content hash.
+
+`standalone.html` preserves the original portable export, without the site's
+navigation or theme. The integrated page also needs the parent `assets/` folder.
 
 ## The papers page
 

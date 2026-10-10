@@ -1,0 +1,50 @@
+/* The shared theme surrounds a wider workspace; SVGs retain their paper palette. */
+.pillowcase-app {
+  --paper: var(--bg);
+  --ink: inherit;
+  --muted: var(--ink-soft);
+  --line: var(--rule);
+  --sage: var(--bg-panel);
+  --serif: inherit;
+  --sans: inherit;
+}
+
+.pillowcase-app .explorer-header {
+  max-width: 1500px;
+  margin: auto;
+  border-bottom: 0;
+}
+.pillowcase-app main { padding-top: 24px; }
+.pillowcase-app .stage .diagram-caption { color: #66736b; }
+.pillowcase-app .tooltip { background: #202c29; }
+.pillowcase-app .explorer-footer a { color: var(--accent); }
+
+@media (prefers-color-scheme: dark) {
+  .pillowcase-app {
+    --white: var(--bg-panel);
+    --teal: #8bc6b6;
+    --amber: #dba569;
+    --blue: #91aed4;
+  }
+  .pillowcase-app .step:hover,
+  .pillowcase-app .definition:hover { background: var(--bg-panel); }
+  .pillowcase-app .primary,
+  .pillowcase-app .step.active .step-number { color: var(--bg); }
+  .pillowcase-app .primary:hover { background: #a4d8ca; }
+  .pillowcase-app .secondary,
+  .pillowcase-app .generator-button,
+  .pillowcase-app .icon-button,
+  .pillowcase-app kbd,
+  .pillowcase-app dialog { background: var(--bg-panel); }
+  .pillowcase-app .generator-button.selected { background: var(--ink); color: var(--bg); }
+  .pillowcase-app .status-chip { background: var(--bg); border-color: var(--rule); }
+  .pillowcase-app .warning-chip { color: var(--amber); }
+  .pillowcase-app .source-formulas { background: var(--bg); }
+}
+
+@media (max-width: 520px) {
+  .pillowcase-app .explorer-header { gap: 12px; }
+  .pillowcase-app .step b { white-space: normal; }
+  .pillowcase-app .step-footer { flex-wrap: wrap; }
+  .pillowcase-app .step-footer > div { margin-left: auto; }
+}

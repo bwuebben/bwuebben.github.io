@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cut a trefoil into tangles, explore the SU(2) pillowcase, and match curve intersections with Floer generators in a guided visual laboratory.">
+  <title>Pillowcase Explorer — Bernd Johannes Wuebben</title>
+  <meta name="author" content="Bernd Johannes Wuebben">
+  <link rel="canonical" href="https://bwuebben.github.io/pillowcase-explorer/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pillowcase Explorer — the knot Atiyah–Floer picture">
+  <meta property="og:description" content="Cut a trefoil into tangles, explore the SU(2) pillowcase, and match curve intersections with Floer generators in a guided visual laboratory.">
+  <meta property="og:url" content="https://bwuebben.github.io/pillowcase-explorer/">
+  <meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Bernd Johannes Wuebben">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=25c543827f0c">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+  <link rel="stylesheet" href="styles.css?v=f6b7311f349f">
+  <link rel="stylesheet" href="site.css?v=98e045d6f0da">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
+  <script defer src="model.js?v=cbfa8d5b3505"></script>
+  <script defer src="app.js?v=85b57a1d3e76"></script>
+</head>
+<body>
+  <!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../papers/">Papers</a></li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="./" aria-current="page">Pillow Case</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../poem.html">Entropy</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+  <div class="pillowcase-app">
+  <header class="explorer-header">
+    <a href="#" class="brand" aria-label="Pillowcase Explorer home" id="home-link"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 10 Q20 5 32 10 Q36 20 32 30 Q20 35 8 30 Q4 20 8 10Z" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 10L32 30M32 10L8 30" stroke="currentColor" stroke-width="1"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>PILLOWCASE <b>EXPLORER</b></span></a>
+    <div class="header-actions"><span class="private-badge"><span>●</span> Interactive geometry</span><button class="text-button" id="glossary-open">Glossary</button><button class="text-button" id="sources-open">Sources <span aria-hidden="true">↗</span></button></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="intro">
+      <div><div class="eyebrow">A VISUAL LABORATORY IN LOW-DIMENSIONAL TOPOLOGY</div><h1>From a knot to a complex.</h1><p>Cut. Restrict. Intersect. Follow the knot-version Atiyah–Floer picture, one geometric move at a time.</p></div>
+      <div class="example-stamp"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8C55 8 62 46 43 50C24 54 12 16 25 12C45 6 59 42 45 52C26 65 1 39 13 24C25 9 49 31 35 48C23 62 4 35 17 20C30 6 51 29 39 44" fill="none" stroke="currentColor" stroke-width="2.5"/></svg><span>WORKED EXAMPLE<strong>Trefoil <span class="math">3₁</span></strong><small>Two-bridge model K(3, 1)</small></span></div>
+    </section>
+    <div class="workspace">
+      <aside class="journey" aria-label="Guided journey">
+        <div class="journey-label">THE FIVE MOVES <span>01—05</span></div>
+        <nav id="step-navigation">
+          <button class="step active" data-step="0" aria-current="step"><span class="step-number">01</span><span><b>Cut the knot</b><small>One knot, two tangles</small></span></button>
+          <button class="step" data-step="1"><span class="step-number">02</span><span><b>Meet the pillowcase</b><small>Boundary data, modulo symmetry</small></span></button>
+          <button class="step" data-step="2"><span class="step-number">03</span><span><b>Trace the two curves</b><small>Restriction becomes geometry</small></span></button>
+          <button class="step" data-step="3"><span class="step-number">04</span><span><b>Match the intersections</b><small>Compatible data, one generator</small></span></button>
+          <button class="step" data-step="4"><span class="step-number">05</span><span><b>Build the complex</b><small>Generators are the beginning</small></span></button>
+        </nav>
+        <div class="journey-note"><div class="tiny-pillow">P = T² / ±1</div><p>Two faces. Four corners.<br>A shared space for both tangles.</p><button class="text-button" id="reset-button">↺ Restart journey</button></div>
+        <div class="keyboard-note"><kbd>←</kbd><kbd>→</kbd> move between steps</div>
+      </aside>
+      <section class="explorer" aria-label="Interactive explorer">
+        <div class="stage-header"><div><div class="eyebrow" id="step-kicker">MOVE 01 / 05</div><h2 id="step-title">A sphere makes the cut.</h2></div><span class="model-tag" id="model-tag">TANGLE DECOMPOSITION</span></div>
+        <div class="stage" id="stage"><button class="expand-button" id="diagram-expand" aria-label="Enlarge current diagram">Enlarge ↗</button><svg id="diagram" viewBox="0 0 900 440" role="group" aria-labelledby="diagram-title diagram-description"><title id="diagram-title">Trefoil decomposition</title><desc id="diagram-description">Interactive trefoil diagram.</desc><g id="diagram-content"></g></svg><div class="diagram-caption" id="diagram-caption"></div></div>
+        <div class="controls" id="controls"></div>
+        <div class="insight-grid">
+          <article class="insight"><div class="eyebrow">WHAT YOU ARE SEEING</div><h3 id="insight-title"></h3><div id="insight-body"></div></article>
+          <article class="readout"><div class="eyebrow" id="readout-kicker">THE GEOMETRIC DICTIONARY</div><div id="readout-body"></div></article>
+        </div>
+        <div class="step-footer"><span id="step-progress">Step 1 of 5</span><div><button class="button secondary" id="previous-button" disabled>← Back</button><button class="button primary" id="next-button">Meet the pillowcase →</button></div></div>
+      </section>
+    </div>
+    <section class="perspective"><span class="perspective-icon">≃</span><div><div class="eyebrow">THE STRUCTURAL IDEA</div><p>Three-dimensional gauge theory leaves a two-dimensional shadow.<br><span>The shared boundary turns gluing into an intersection problem.</span></p></div><button class="text-button" data-go="4">See the comparison →</button></section>
+  </main>
+  <footer class="explorer-footer"><span>Pillowcase Explorer <span class="muted">/</span> A guided mathematical model · <a href="../papers/#knot-instanton-homology">Related papers</a></span><span>Explicit trefoil curves · F₂ coefficients · <button id="footer-sources" class="text-button">Model & references</button></span></footer>
+  <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+  <dialog id="diagram-dialog" class="diagram-dialog" aria-labelledby="diagram-dialog-title"><div class="dialog-header"><div><div class="eyebrow">DIAGRAM DETAIL · SCROLL HORIZONTALLY ON SMALL SCREENS</div><h2 id="diagram-dialog-title">A closer look.</h2></div><button class="icon-button" data-close="diagram-dialog" aria-label="Close enlarged diagram">×</button></div><div class="diagram-scroll" id="zoom-content"></div><button class="button secondary" data-close="diagram-dialog">Back to exploring</button></dialog>
+  <dialog id="glossary-dialog" aria-labelledby="glossary-title"><div class="dialog-header"><div><div class="eyebrow">QUICK REFERENCE</div><h2 id="glossary-title">A small geometric vocabulary.</h2></div><button class="icon-button" data-close="glossary-dialog" aria-label="Close glossary">×</button></div><div id="glossary-list" class="glossary-list"></div><button class="button secondary" data-close="glossary-dialog">Back to exploring</button></dialog>
+  <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><div class="eyebrow">MODEL & REFERENCES</div><h2 id="sources-title">What is exact. What is schematic.</h2></div><button class="icon-button" data-close="sources-dialog" aria-label="Close sources">×</button></div><p>The curves and their intersections use explicit formulas. The knot drawing is a planar braid-closure model; the bigon animation is a separate local schematic. This is a teaching explorer, not an arbitrary-knot character-variety solver.</p><div class="source-formulas"><b>Coordinate convention (HHK)</b><p class="math">a = i, b = e<sup>γk</sup>i, c = e<sup>θk</sup>i, d = e<sup>(θ−γ)k</sup>i; ba = cd.</p><b>Trefoil boundary curve</b><p class="math">L₁(t) = (t, −2t), 0 ≤ t ≤ π.</p><b>Earring & holonomy-perturbed trivial tangle</b><p class="math">L₀(β) = (β + π/2 + ε sin β, β + π/2 − ε sin β).</p><small>The slider uses 0.02 ≤ ε ≤ 0.22 radians, plus a degenerate ε = 0 comparison. Intersections solve 3β + 3π/2 + ε sin β = 2πn, n = 1, 2, 3. Labels x₁ and x₂ distinguish branches; they do not assert an absolute grading or the authors’ ± convention.</small></div><ol class="reference-list"><li><a href="https://arxiv.org/abs/1301.0164" target="_blank" rel="noopener">Hedden–Herald–Kirk · Pillowcase and perturbations (2014) ↗</a><p>Proposition 3.1, Theorem 7.1 and the two-bridge tangle calculation: coordinates, quotient and explicit curves.</p></li><li><a href="https://arxiv.org/abs/1501.00028" target="_blank" rel="noopener">Hedden–Herald–Kirk · A Lagrangian–Floer theory (2018) ↗</a><p>Surface Floer theory, relative gradings, and §7: the two-bridge complexes have zero differential and agree with reduced singular instanton homology.</p></li><li><a href="https://arxiv.org/abs/2010.04320" target="_blank" rel="noopener">Cazassus–Herald–Kirk–Kotelskiy · The earring tangle (2022) ↗</a><p>Why marking, immersed correspondences and bubbling matter in a broader gluing theory.</p></li><li><a href="https://arxiv.org/abs/2407.11247" target="_blank" rel="noopener">Herald–Kirk · An endomorphism on immersed curves (2024) ↗</a><p>Doubling and figure-eight operations associated with marked tangle correspondences.</p></li></ol><button class="button secondary" data-close="sources-dialog">Back to exploring</button></dialog>
+  <noscript><p class="noscript">This explorer needs JavaScript for its diagrams and controls. Enable JavaScript and reload.</p></noscript>
+  </div>
+</body>
+</html>

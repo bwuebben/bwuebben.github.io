@@ -1,0 +1,244 @@
+/* Scoped to the explorer so its controls cannot restyle the shared navigation. */
+.pillowcase-app section { margin-top: 0; }
+.pillowcase-app h2, .pillowcase-app h3 { border: 0; padding: 0; color: var(--ink); text-transform: none; letter-spacing: normal; }
+.pillowcase-app footer { margin-top: 0; border-top: 0; }
+.pillowcase-app a { border-bottom: 0; }
+.pillowcase-app {--paper:#f5f6f2;--white:#fff;--ink:#202c29;--muted:#66736b;--line:#dce1d9;--sage:#e7ede2;--teal:#24695c;--amber:#ad6826;--blue:#506e98;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.pillowcase-app * {box-sizing:border-box}
+.pillowcase-app {margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.6}
+.pillowcase-app button, .pillowcase-app input, .pillowcase-app a {-webkit-tap-highlight-color:transparent}
+.pillowcase-app button {font:inherit;color:inherit;cursor:pointer}
+.pillowcase-app button:disabled {cursor:default;opacity:.4}
+.pillowcase-app button:focus-visible, .pillowcase-app a:focus-visible, .pillowcase-app input:focus-visible, .pillowcase-app [tabindex]:focus-visible {outline:3px solid #506e98;outline-offset:4px}
+.pillowcase-app button {transition:background .16s,color .16s,transform .16s}
+.pillowcase-app button:hover:not(:disabled) {filter:brightness(.97)}
+.pillowcase-app a {color:var(--teal)}
+.pillowcase-app .math {font-family:var(--serif);font-size:1.13em}
+.pillowcase-app .muted {color:var(--muted)}
+.pillowcase-app .explorer-header {height:80px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 5vw}
+.pillowcase-app .brand {display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--ink);font-size:11px;letter-spacing:2px}
+.pillowcase-app .brand svg {width:38px;height:38px;color:var(--teal)}
+.pillowcase-app .brand b {font-weight:400;color:var(--muted)}
+.pillowcase-app .header-actions {display:flex;align-items:center;gap:26px}
+.pillowcase-app .private-badge {border:1px solid var(--line);border-radius:30px;padding:5px 12px;font-size:11px;white-space:nowrap}
+.pillowcase-app .private-badge span {color:var(--teal);font-size:9px;margin-right:5px}
+.pillowcase-app .text-button {background:none;border:0;padding:0;color:var(--ink);font-size:12px}
+.pillowcase-app .text-button:hover {text-decoration:underline;text-underline-offset:4px}
+.pillowcase-app .header-actions .text-button {font-size:13px}
+.pillowcase-app .eyebrow {font-size:10px;font-weight:600;letter-spacing:1.65px;color:var(--muted)}
+.pillowcase-app main {max-width:1500px;margin:auto;padding:40px 5vw 0}
+.pillowcase-app .intro {display:flex;justify-content:space-between;gap:35px;align-items:center;margin-bottom:35px}
+.pillowcase-app .intro h1 {font-family:var(--serif);font-size:clamp(34px,3.1vw,50px);line-height:1.12;font-weight:400;letter-spacing:-1.6px;margin:13px 0 12px}
+.pillowcase-app .intro p {font-size:13px;color:var(--muted);margin:0}
+.pillowcase-app .example-stamp {display:flex;gap:15px;align-items:center;border-left:1px solid var(--line);padding-left:28px;flex-shrink:0}
+.pillowcase-app .example-stamp svg {width:60px;color:var(--teal)}
+.pillowcase-app .example-stamp span {font-size:9px;letter-spacing:1.6px;color:var(--muted)}
+.pillowcase-app .example-stamp strong {display:block;font-family:var(--serif);font-size:23px;letter-spacing:0;color:var(--ink);font-weight:400}
+.pillowcase-app .example-stamp strong span {font-size:20px;letter-spacing:0;color:var(--ink)}
+.pillowcase-app .example-stamp small {display:block;font-size:10px;letter-spacing:0}
+.pillowcase-app .workspace {display:grid;grid-template-columns:245px minmax(0,1fr);gap:30px}
+.pillowcase-app .journey {padding-top:14px}
+.pillowcase-app .journey-label {display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.4px;color:var(--muted);padding:0 12px 20px}
+.pillowcase-app .journey-label span {font-size:9px;letter-spacing:0}
+.pillowcase-app .step {border:0;background:transparent;text-align:left;display:flex;align-items:center;gap:13px;padding:17px 12px;border-radius:7px;width:100%;margin-bottom:8px;position:relative}
+.pillowcase-app .step:hover {background:#ecefe8}
+.pillowcase-app .step.active {background:var(--sage)}
+.pillowcase-app .step.active::before {content:'';position:absolute;width:3px;height:24px;background:var(--teal);left:0;border-radius:3px}
+.pillowcase-app .step-number {font-family:var(--serif);font-size:16px;width:28px;height:28px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--muted);flex-shrink:0}
+.pillowcase-app .step.active .step-number {color:#fff;background:var(--teal);border-color:var(--teal)}
+.pillowcase-app .step.completed .step-number {color:var(--teal);border-color:#b9cdbf}
+.pillowcase-app .step b {font-size:12px;font-weight:550;display:block}
+.pillowcase-app .step small {font-size:10px;color:var(--muted);display:block;margin-top:3px}
+.pillowcase-app .journey-note {border-top:1px solid var(--line);margin:27px 12px 0;padding-top:24px}
+.pillowcase-app .tiny-pillow {font-family:var(--serif);font-size:26px;font-style:italic;color:var(--teal)}
+.pillowcase-app .journey-note p {font-size:11px;color:var(--muted);margin:8px 0 20px}
+.pillowcase-app .keyboard-note {font-size:10px;color:var(--muted);margin:40px 12px 0;display:flex;align-items:center;gap:5px}
+.pillowcase-app kbd {font:10px var(--sans);border:1px solid var(--line);background:white;border-radius:3px;padding:1px 5px}
+.pillowcase-app .keyboard-note kbd:last-of-type {margin-right:4px}
+.pillowcase-app .explorer {background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 8px 35px #2b402405}
+.pillowcase-app .stage-header {padding:25px 30px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.pillowcase-app .stage-header h2 {font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.25;margin:7px 0 0;letter-spacing:-.5px}
+.pillowcase-app .model-tag {font-size:8px;letter-spacing:1.1px;border:1px solid var(--line);padding:5px 9px;border-radius:4px;color:var(--muted);white-space:nowrap}
+.pillowcase-app .stage {background:linear-gradient(135deg,#fbfcf9,#f6f8f3);border-top:1px solid #edf0e9;position:relative;min-height:220px}
+.pillowcase-app .stage svg {display:block;width:100%;height:auto;max-height:490px;overflow:visible}
+.pillowcase-app .diagram-caption {text-align:center;font-size:10px;color:var(--muted);padding:0 20px 15px;min-height:30px}
+.pillowcase-app .controls {display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);min-height:73px;flex-wrap:wrap}
+.pillowcase-app .button {font-size:11px;padding:9px 16px;border:1px solid transparent;border-radius:5px;white-space:nowrap}
+.pillowcase-app .primary {background:var(--teal);color:#fff}
+.pillowcase-app .secondary {background:white;border-color:var(--line)}
+.pillowcase-app .primary:hover {background:#1b584c}
+.pillowcase-app .control-note {font-size:11px;color:var(--muted);line-height:1.5;max-width:350px}
+.pillowcase-app .status-chip {font-size:10px;border:1px solid #cad9cd;padding:4px 9px;border-radius:5px;color:var(--teal);background:#f4f8f2}
+.pillowcase-app .insight-grid {display:grid;grid-template-columns:1.1fr 1fr;padding:23px 30px;gap:28px;min-height:211px}
+.pillowcase-app .insight h3 {font-family:var(--serif);font-size:20px;font-weight:400;line-height:1.3;margin:10px 0 8px}
+.pillowcase-app .insight p {font-size:12px;color:var(--muted);margin:0 0 9px;line-height:1.7}
+.pillowcase-app .readout {border-left:1px solid var(--line);padding-left:25px}
+.pillowcase-app .readout .eyebrow {margin-bottom:13px}
+.pillowcase-app .dictionary-row {display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:11px;padding:7px 0;border-bottom:1px solid #edf0e9}
+.pillowcase-app .dictionary-row:last-child {border-bottom:0}
+.pillowcase-app .dictionary-row .math {color:var(--ink);font-size:16px}
+.pillowcase-app .dictionary-row span:last-child {color:var(--muted);text-align:right}
+.pillowcase-app .formula {font-family:var(--serif);font-size:17px;margin:7px 0 9px;line-height:1.5}
+.pillowcase-app .small-note {font-size:10px;color:var(--muted);line-height:1.55}
+.pillowcase-app .definition {border:0;border-bottom:1px dotted #799b8a;background:none;display:inline;padding:0;line-height:inherit;font:inherit;color:var(--teal)}
+.pillowcase-app .definition:hover {background:#edf3e9}
+.pillowcase-app .step-footer {display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 30px;border-top:1px solid var(--line)}
+.pillowcase-app .step-footer>span {font-size:10px;color:var(--muted)}
+.pillowcase-app .step-footer>div {display:flex;gap:8px}
+.pillowcase-app .perspective {display:flex;align-items:center;gap:25px;padding:34px 0;margin-top:12px;border-bottom:1px solid var(--line)}
+.pillowcase-app .perspective-icon {font-family:var(--serif);font-size:51px;color:#b9caba;line-height:1}
+.pillowcase-app .perspective p {font-family:var(--serif);font-size:20px;margin:8px 0 0;line-height:1.4}
+.pillowcase-app .perspective p span {font-size:15px;color:var(--muted)}
+.pillowcase-app .perspective .text-button {margin-left:auto}
+.pillowcase-app .explorer-footer {max-width:1500px;margin:auto;display:flex;justify-content:space-between;gap:20px;padding:23px 5vw 30px;font-size:10px;color:var(--muted)}
+.pillowcase-app .explorer-footer .text-button {font-size:10px;color:var(--muted)}
+.pillowcase-app .slider-block {display:flex;align-items:center;gap:10px;font-size:11px;flex:1;min-width:185px}
+.pillowcase-app .slider-block label {white-space:nowrap}
+.pillowcase-app .slider-block input {accent-color:var(--teal);width:125px;min-width:80px;cursor:pointer}
+.pillowcase-app .slider-block output {font-variant-numeric:tabular-nums;min-width:39px;font-size:10px}
+.pillowcase-app .segmented {display:inline-flex;border:1px solid var(--line);padding:3px;border-radius:6px;gap:2px}
+.pillowcase-app .segmented button {background:none;border:0;border-radius:4px;padding:6px 10px;font-size:10px;white-space:nowrap}
+.pillowcase-app .segmented button.selected {background:var(--sage);color:var(--teal)}
+.pillowcase-app .legend {display:flex;align-items:center;gap:16px;font-size:10px}
+.pillowcase-app .legend-item {display:flex;align-items:center;gap:7px;white-space:nowrap}
+.pillowcase-app .swatch {width:22px;height:3px;background:var(--teal)}
+.pillowcase-app .swatch.amber {height:0;background:none;border-top:3px dashed var(--amber)}
+.pillowcase-app .generator-buttons {display:flex;gap:5px}
+.pillowcase-app .generator-button {border:1px solid var(--line);border-radius:5px;background:white;padding:5px 12px;font-family:var(--serif);font-size:16px}
+.pillowcase-app .generator-button.selected {background:var(--ink);color:white;border-color:var(--ink)}
+.pillowcase-app .generator-title {display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.pillowcase-app .generator-title .math {font-size:27px;color:var(--ink)}
+.pillowcase-app .generator-title small {font-size:10px;color:var(--muted)}
+.pillowcase-app .quaternion-grid {display:grid;grid-template-columns:1fr 1fr;gap:5px;font-size:12px;font-family:var(--serif);padding:7px 0}
+.pillowcase-app .validation-line {font-size:10px;color:var(--teal);margin-top:10px}
+.pillowcase-app .toggle-group {display:flex;gap:12px;font-size:10px}
+.pillowcase-app .toggle-group label {display:flex;align-items:center;gap:5px;cursor:pointer;white-space:nowrap}
+.pillowcase-app .toggle-group input {accent-color:var(--teal)}
+.pillowcase-app .count-badge {color:var(--ink);font-size:11px;font-variant-numeric:tabular-nums}
+.pillowcase-app .count-badge strong {font-size:19px;font-family:var(--serif);font-weight:400;margin-right:5px}
+.pillowcase-app .warning-chip {border-color:#e2d4b9;color:#8a5b23;background:#faf6ed}
+.pillowcase-app .tooltip {position:fixed;max-width:300px;background:var(--ink);color:#f6f7f3;border-radius:7px;padding:12px 15px;box-shadow:0 8px 28px #14262124;font-size:12px;line-height:1.6;z-index:100;pointer-events:none}
+.pillowcase-app .tooltip b {display:block;color:#c6ddc7;font-family:var(--serif);font-size:16px;font-weight:400;margin-bottom:4px}
+.pillowcase-app [hidden] {display:none!important}
+.pillowcase-app dialog {border:1px solid var(--line);border-radius:14px;padding:30px;max-width:660px;width:calc(100% - 32px);max-height:85vh;color:var(--ink);background:#fcfdfb;box-shadow:0 25px 100px #15271d35}
+.pillowcase-app dialog::backdrop {background:#17271dc0;backdrop-filter:blur(3px)}
+.pillowcase-app .dialog-header {display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}
+.pillowcase-app .dialog-header h2 {font-family:var(--serif);font-size:27px;font-weight:400;line-height:1.25;margin:8px 0 0}
+.pillowcase-app .icon-button {background:white;border:1px solid var(--line);border-radius:50%;width:32px;height:32px;font-size:22px;line-height:1}
+.pillowcase-app .glossary-list {margin-bottom:24px}
+.pillowcase-app .glossary-item {display:grid;grid-template-columns:150px 1fr;gap:20px;padding:13px 0;border-top:1px solid var(--line)}
+.pillowcase-app .glossary-item b {font-family:var(--serif);font-size:17px;font-weight:400}
+.pillowcase-app .glossary-item p {font-size:12px;color:var(--muted);margin:0}
+.pillowcase-app .source-formulas {background:var(--sage);padding:17px 20px;border-radius:7px;margin:20px 0}
+.pillowcase-app .source-formulas b {font-size:11px}
+.pillowcase-app .source-formulas p {margin:5px 0 12px}
+.pillowcase-app .source-formulas small {font-size:11px;color:var(--muted);display:block}
+.pillowcase-app dialog>p {font-size:12px;color:var(--muted)}
+.pillowcase-app .reference-list {padding-left:20px}
+.pillowcase-app .reference-list li {padding:9px 0;font-size:12px}
+.pillowcase-app .reference-list p {font-size:11px;color:var(--muted);margin:5px 0}
+.pillowcase-app .noscript {padding:30px}
+.pillowcase-app .svg-button {cursor:pointer}
+.pillowcase-app .svg-button:focus {outline:none}
+.pillowcase-app .svg-button:focus-visible circle:first-of-type {stroke:var(--blue);stroke-width:5}
+.pillowcase-app .svg-button:hover {filter:brightness(.88)}
+.pillowcase-app .svg-type {font-family:Georgia,'Times New Roman',serif}
+.pillowcase-app .svg-ui {font-family:Arial,sans-serif}
+.pillowcase-app .controls .full-row {width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.pillowcase-app .reduced-motion-note {display:none}
+.pillowcase-app .expand-button {position:absolute;right:12px;top:9px;z-index:2;border:1px solid var(--line);border-radius:4px;background:#fffffff0;font-size:9px;color:var(--muted);padding:3px 8px}
+.pillowcase-app .diagram-dialog {max-width:1040px}
+.pillowcase-app .diagram-scroll {overflow:auto;background:#f7faf3;border:1px solid var(--line);border-radius:7px;margin-bottom:20px}
+.pillowcase-app .diagram-scroll svg {display:block;width:100%;min-width:850px;height:auto}
+.pillowcase-app .tooltip {z-index:1000}
+@media(min-width:1600px) {
+.pillowcase-app main {padding-top:50px}
+.pillowcase-app .stage svg {max-height:520px}
+.pillowcase-app .intro {margin-bottom:45px}
+}
+@media(max-width:1100px) {
+.pillowcase-app .workspace {grid-template-columns:200px minmax(0,1fr);gap:20px}
+.pillowcase-app .stage-header, .pillowcase-app .controls, .pillowcase-app .step-footer {padding-left:22px;padding-right:22px}
+.pillowcase-app .insight-grid {padding:22px;gap:20px}
+.pillowcase-app .step {gap:9px;padding-left:9px;padding-right:8px}
+.pillowcase-app .step small {font-size:9px}
+.pillowcase-app .example-stamp {padding-left:18px}
+.pillowcase-app .intro p {max-width:550px}
+.pillowcase-app .model-tag {display:none}
+.pillowcase-app .legend {gap:10px}
+.pillowcase-app .header-actions {gap:18px}
+}
+@media(max-width:800px) {
+.pillowcase-app .explorer-header {height:67px;padding:0 5vw}
+.pillowcase-app .private-badge {display:none}
+.pillowcase-app .header-actions {gap:17px}
+.pillowcase-app .brand {letter-spacing:1.2px;font-size:9px}
+.pillowcase-app .brand svg {width:30px}
+.pillowcase-app .brand b {display:none}
+.pillowcase-app main {padding-top:28px}
+.pillowcase-app .intro {align-items:flex-start;margin-bottom:25px}
+.pillowcase-app .intro .eyebrow {font-size:8px}
+.pillowcase-app .intro h1 {font-size:36px}
+.pillowcase-app .intro p {font-size:12px}
+.pillowcase-app .example-stamp {display:none}
+.pillowcase-app .workspace {display:block}
+.pillowcase-app .journey {padding:0;margin-bottom:20px}
+.pillowcase-app .journey-label, .pillowcase-app .journey-note, .pillowcase-app .keyboard-note {display:none}
+.pillowcase-app #step-navigation {display:flex;gap:5px}
+.pillowcase-app .step {margin:0;padding:9px 6px;justify-content:center;gap:6px;flex:1}
+.pillowcase-app .step-number {width:24px;height:24px;font-size:13px}
+.pillowcase-app .step b {font-size:9px}
+.pillowcase-app .step small {display:none}
+.pillowcase-app .step.active::before {height:16px}
+.pillowcase-app .stage-header {padding-top:20px}
+.pillowcase-app .stage-header h2 {font-size:24px}
+.pillowcase-app .stage {min-height:0}
+.pillowcase-app .controls {padding:14px 18px;gap:14px}
+.pillowcase-app .control-note {font-size:10px;max-width:230px}
+.pillowcase-app .insight-grid {padding:20px;min-height:0}
+.pillowcase-app .readout {padding-left:17px}
+.pillowcase-app .insight h3 {font-size:18px}
+.pillowcase-app .insight p {font-size:11px}
+.pillowcase-app .perspective {gap:16px;padding:27px 0}
+.pillowcase-app .perspective p {font-size:17px}
+.pillowcase-app .perspective p span {font-size:12px}
+.pillowcase-app .perspective .text-button {display:none}
+.pillowcase-app .explorer-footer {display:block;font-size:9px}
+.pillowcase-app .explorer-footer>span {display:block;margin-bottom:7px}
+.pillowcase-app .slider-block input {width:115px}
+.pillowcase-app .controls .full-row {flex-wrap:wrap}
+}
+@media(max-width:520px) {
+.pillowcase-app .brand span {font-size:9px;letter-spacing:1px}
+.pillowcase-app .header-actions .text-button {font-size:11px}
+.pillowcase-app .header-actions {gap:13px}
+.pillowcase-app .step {flex-direction:column;gap:4px;padding:8px 2px}
+.pillowcase-app .step b {font-size:8px;white-space:nowrap}
+.pillowcase-app .step.active::before {height:15px}
+.pillowcase-app .intro h1 {font-size:32px;letter-spacing:-1px}
+.pillowcase-app .intro p {line-height:1.7}
+.pillowcase-app .stage-header h2 {font-size:23px}
+.pillowcase-app .stage-header {padding-left:18px;padding-right:18px}
+.pillowcase-app .insight-grid {display:block;padding:20px}
+.pillowcase-app .readout {border-left:0;border-top:1px solid var(--line);padding:17px 0 0;margin-top:16px}
+.pillowcase-app .insight h3 {font-size:20px}
+.pillowcase-app .insight p {font-size:12px}
+.pillowcase-app .step-footer {padding:14px 18px}
+.pillowcase-app .step-footer .button {font-size:10px;padding:8px 11px}
+.pillowcase-app .step-footer>span {font-size:9px}
+.pillowcase-app .button {padding:9px 12px}
+.pillowcase-app .slider-block {min-width:140px}
+.pillowcase-app .slider-block input {width:90px}
+.pillowcase-app .legend {font-size:9px;gap:12px}
+.pillowcase-app .toggle-group {font-size:9px;gap:10px}
+.pillowcase-app .glossary-item {grid-template-columns:1fr;gap:5px}
+.pillowcase-app .dialog-header h2 {font-size:24px}
+.pillowcase-app dialog {padding:24px}
+.pillowcase-app .perspective-icon {font-size:40px}
+.pillowcase-app .perspective p {font-size:16px}
+.pillowcase-app .stage svg {min-height:210px}
+.pillowcase-app .quaternion-grid {font-size:14px}
+}
+@media(prefers-reduced-motion:reduce) {
+.pillowcase-app * {scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
