@@ -5,7 +5,8 @@
     {
       "label": "Explorers",
       "children": [
-        { "label": "Pillow Case", "href": "/pillowcase-explorer/" }
+        { "label": "Pillow Case", "href": "/pillowcase-explorer/" },
+        { "label": "Conifold Transitions", "href": "/conifold-lab/" }
       ]
     },
     {
