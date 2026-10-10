@@ -10,7 +10,9 @@ A dependency-free visual laboratory for conifold transitions, with local surgery
 
 ## Integration
 
-Copy the four files in `dist` (`index.html`, `styles.css`, `model.js`, `app.js`) into a folder on your existing website. All assets use relative URLs and there are no runtime dependencies, remote fonts, analytics, or server-side calls. Embed the folder's index page in an iframe, or link to it. Keep iframe controls accessible and give the iframe a descriptive title. These files also work by opening index.html locally in a modern browser.
+The page at `/conifold-lab/` uses this website's shared navigation, fonts, and light/dark theme from `../assets/`. Its page title is *Calabi–Yau Geometry at the Threshold*. The explorer styles are scoped to `.conifold-app`, and the canvas and SVG palette comes from the shared theme. The diagram colors refresh when the preferred color scheme changes.
+
+From the repository root, run `python3 -m http.server 8000 --bind 127.0.0.1` and visit <http://127.0.0.1:8000/conifold-lab/>. After editing the page or explorer assets, run `python3 tools/update-site.py` and `python3 tools/update-site.py --check`. This refreshes navigation, theme metadata, and asset versions. There are no external runtime dependencies, remote fonts, analytics, or server-side calls.
 
 Do not copy `.openai/hosting.json` into your existing website: it is Sites deployment configuration. For an existing React or other component application, isolate the explorer in an iframe to keep its global document listeners and styles separate. The equations and lattice routines are also available independently as `ConifoldModel` from model.js.
 

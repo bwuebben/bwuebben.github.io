@@ -1,7 +1,14 @@
 (function(){
   'use strict';
   const M=ConifoldModel, $=id=>document.getElementById(id), all=s=>document.querySelectorAll(s);
-  const palette={blue:'#a9cfff',lime:'#d5e6a2',ink:'#edf2f5',muted:'#9daebd',line:'#344959',orange:'#f5c498'};
+  const appRoot=document.querySelector('.conifold-app'),palette={};
+  function updateTheme(){
+    const style=getComputedStyle(appRoot);
+    for(const [name,variable] of Object.entries({blue:'--accent',lime:'--cycle-secondary',ink:'--ink',muted:'--ink-soft',line:'--rule',orange:'--cycle-warning',bg:'--bg',panel:'--bg-panel',sans:'--sans',serif:'--serif'})){
+      palette[name]=style.getPropertyValue(variable).trim();
+    }
+  }
+  updateTheme();
   const state={mode:'local',phase:-100,yaw:20,pitch:-18,slice:false,ruling:'kernel',orbit:false,playing:false,ledger:'quintic',n:16,k:1,ledgerProgress:0,ledgerPlaying:false,example:'x9',lift:'base',relationProgress:0,relationPlaying:false,relationPreview:false,coeff:[1,-1,-1,1],weights:[3,2,1],node:null};
   const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const canvas=$('geometry-canvas'), ctx=canvas.getContext('2d');
@@ -22,8 +29,8 @@
   };
   const term=(key,label)=>`<button class="term" data-def="${key}">${label}</button>`;
   const fmt=n=>n>0?'+'+n:String(n), sub=n=>String(n).replace(/\d/g,d=>'₀₁₂₃₄₅₆₇₈₉'[d]);
-  const text=(x,y,value,size=14,color=palette.ink,anchor='start',family='Arial, sans-serif')=>`<text x="${x}" y="${y}" fill="${color}" font-size="${size}" text-anchor="${anchor}" font-family="${family}">${value}</text>`;
-  const serif=(x,y,value,size=25,color=palette.ink,anchor='start')=>text(x,y,value,size,color,anchor,'Georgia, serif');
+  const text=(x,y,value,size=14,color=palette.ink,anchor='start',family=palette.sans)=>`<text x="${x}" y="${y}" fill="${color}" font-size="${size}" text-anchor="${anchor}" font-family="${family.replaceAll('"','&quot;')}">${value}</text>`;
+  const serif=(x,y,value,size=25,color=palette.ink,anchor='start')=>text(x,y,value,size,color,anchor,palette.serif);
   const line=(x,y,a,b,color=palette.line,dash='')=>`<path d="M${x} ${y}L${a} ${b}" stroke="${color}" fill="none" ${dash?`stroke-dasharray="${dash}"`:''}/>`;
   function select(attribute,value){const key=attribute.replace(/-([a-z])/g,(_,c)=>c.toUpperCase());all(`[data-${attribute}]`).forEach(el=>{const on=el.dataset[key]===value;el.classList.toggle('selected',on);el.setAttribute('aria-pressed',String(on));});}
   function setMode(mode){if(mode!==state.mode){stopPlay();stopLedger();stopRelation();cancelAnimationFrame(frame);frame=0;lastTime=0;hideTip();}state.mode=mode;select('mode',mode);['local','topology','relations'].forEach(m=>$(m+'-panel').hidden=m!==mode);render();}
@@ -125,7 +132,7 @@
     paths.sort((a,b)=>a.z-b.z);for(const seg of paths){ctx.globalAlpha=seg.alpha*Math.max(.25,Math.min(1,.68+seg.z*.1));ctx.strokeStyle=seg.color;ctx.lineWidth=seg.width;ctx.setLineDash(seg.dashed?[4,5]:[]);ctx.beginPath();ctx.moveTo(seg.a.x,seg.a.y);ctx.lineTo(seg.b.x,seg.b.y);ctx.stroke();}
     ctx.globalAlpha=1;ctx.setLineDash([]);
     if(phase===0){const p=project([0,0,0]);ctx.fillStyle=palette.ink;ctx.shadowColor=palette.blue;ctx.shadowBlur=18;ctx.beginPath();ctx.arc(p.x,p.y,4,0,M.TAU);ctx.fill();ctx.shadowBlur=0;}
-    ctx.font='10px Arial';ctx.fillStyle=palette.muted;ctx.textAlign='right';ctx.fillText(phase<0?(state.slice?'REAL SLICE · 2D':'PROJECTED CORE · S³'):phase>0?'EXCEPTIONAL CORE · S²':'REAL SLICE · 2D',w-20,h-19);
+    ctx.font='10px '+palette.sans;ctx.fillStyle=palette.muted;ctx.textAlign='right';ctx.fillText(phase<0?(state.slice?'REAL SLICE · 2D':'PROJECTED CORE · S³'):phase>0?'EXCEPTIONAL CORE · S²':'REAL SLICE · 2D',w-20,h-19);
   }
 
   function renderLedger(){
@@ -151,7 +158,7 @@
       s+='</g>';
     }
     s+=serif(450,140+rows*22,`${state.n} local ${stage==='nodes'?'nodes':'cores'}`,19,palette.ink,'middle');
-    function card(x,color,title,pair,euler,active){return `<rect x="${x}" y="110" width="260" height="184" rx="8" fill="#172532" stroke="${active?color:palette.line}" stroke-width="${active?1.5:1}"/>`+text(x+22,138,'ENDPOINT HODGE NUMBERS',9,palette.muted)+serif(x+22,180,pair,fixed?36:23,color)+text(x+22,210,'(h¹¹, h²¹)',12,palette.muted)+line(x+22,228,x+238,228)+text(x+22,257,title,12,palette.muted)+text(x+238,257,euler,18,color,'end');}
+    function card(x,color,title,pair,euler,active){return `<rect x="${x}" y="110" width="260" height="184" rx="8" fill="${palette.panel}" stroke="${active?color:palette.line}" stroke-width="${active?1.5:1}"/>`+text(x+22,138,'ENDPOINT HODGE NUMBERS',9,palette.muted)+serif(x+22,180,pair,fixed?36:23,color)+text(x+22,210,'(h¹¹, h²¹)',12,palette.muted)+line(x+22,228,x+238,228)+text(x+22,257,title,12,palette.muted)+text(x+238,257,euler,18,color,'end');}
     s+=card(35,palette.lime,'Euler characteristic',fixed?'(2, 86)':'(h¹¹, h²¹)',fixed?'−168':'χ',stage==='resolution');
     s+=card(605,palette.blue,'Euler characteristic',fixed?'(1, 101)':`(h¹¹ − ${L.k}, h²¹ + ${L.c})`,fixed?'−200':`χ − ${2*L.n}`,stage==='smoothing');
     if(state.ledgerPlaying&&stage!=='nodes'){const q=stage==='resolution'?p/.4:(p-.6)/.4,x=stage==='resolution'?310+q*65:525+q*65;s+=`<circle cx="${x}" cy="188" r="3" fill="${stage==='resolution'?palette.lime:palette.blue}"/>`;}
@@ -200,9 +207,9 @@
       if(i===active||forced)s+=`<circle class="lift-halo" cx="${x}" cy="${y}" r="${35+3*Math.sin(state.relationProgress*M.TAU*5)}" fill="none" stroke="${color}" stroke-width="2" opacity="${forced?.6:1}" ${forced?'stroke-dasharray="3 5"':''}/>`;
     }
     if(selected)s+=`<circle cx="${x}" cy="${y}" r="39" fill="none" stroke="${palette.ink}" stroke-width="1.5" stroke-dasharray="3 4"/>`;
-    if(state.lift==='base')s+=`<circle cx="${x}" cy="${y}" r="28" fill="#1b2d3a" stroke="${color}" ${c===0?'stroke-dasharray="4 4"':''}/>`;
-    else if(state.lift==='curves'){s+=`<circle cx="${x}" cy="${y}" r="28" fill="#1b2d3a" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="28" ry="9" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="10" ry="28" fill="none" stroke="${color}" opacity=".4"/>`;}
-    else{const spin=state.relationPreview?state.relationProgress*260:0;s+=`<ellipse cx="${x}" cy="${y}" rx="31" ry="18" transform="rotate(${-25+spin} ${x} ${y})" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="31" ry="18" transform="rotate(${25+spin} ${x} ${y})" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="31" ry="11" transform="rotate(${90+spin} ${x} ${y})" fill="#1b2d3a" fill-opacity=".6" stroke="${color}"/>`;}
+    if(state.lift==='base')s+=`<circle cx="${x}" cy="${y}" r="28" fill="${palette.panel}" stroke="${color}" ${c===0?'stroke-dasharray="4 4"':''}/>`;
+    else if(state.lift==='curves'){s+=`<circle cx="${x}" cy="${y}" r="28" fill="${palette.panel}" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="28" ry="9" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="10" ry="28" fill="none" stroke="${color}" opacity=".4"/>`;}
+    else{const spin=state.relationPreview?state.relationProgress*260:0;s+=`<ellipse cx="${x}" cy="${y}" rx="31" ry="18" transform="rotate(${-25+spin} ${x} ${y})" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="31" ry="18" transform="rotate(${25+spin} ${x} ${y})" fill="none" stroke="${color}"/><ellipse cx="${x}" cy="${y}" rx="31" ry="11" transform="rotate(${90+spin} ${x} ${y})" fill="${palette.panel}" fill-opacity=".6" stroke="${color}"/>`;}
     s+=serif(x,y+7,fmt(c),22,color,'middle')+text(x,y+49,`q${sub(i+1)}${forced?' · forced zero':''}`,forced?10:12,forced?palette.orange:palette.muted,'middle');
     if(forced)s+=line(x-23,y-23,x+23,y+23,palette.orange);
     return s+'</g>';
@@ -212,8 +219,8 @@
     let s=text(35,31,`${e.label} · ${symbol}`,10,palette.muted)+text(865,31,'CLICK A NODE TO INSPECT',9,palette.muted,'end');
     if(state.example==='x9'){
       const points=[[285,145],[615,145],[285,345],[615,345]],boundary='M285 145L615 145L615 345L285 345Z';
-      if(state.lift!=='base'){const depth=state.relationPreview&&state.lift==='curves'?ease((state.relationProgress-.32)/.25):1,dx=45*depth,dy=-50*depth;s+=`<path class="lift-volume" d="M285 145L${285+dx} ${145+dy}L${615+dx} ${145+dy}L${615+dx} ${345+dy}L615 345M${285+dx} ${145+dy}L${285+dx} ${345+dy}L285 345M${285+dx} ${345+dy}L${615+dx} ${345+dy}" fill="none" stroke="${palette.line}" stroke-dasharray="4 5"/><path d="${boundary}" fill="${R.valid?'#1f3b45':'#352d2b'}" fill-opacity=".45" stroke="${R.valid?palette.blue:palette.orange}" stroke-opacity=".4"/>`;}
-      else s+=`<path d="${boundary}" fill="#203c48" fill-opacity=".5" stroke="${R.valid?palette.blue:palette.orange}" stroke-width="2"/>`;
+      if(state.lift!=='base'){const depth=state.relationPreview&&state.lift==='curves'?ease((state.relationProgress-.32)/.25):1,dx=45*depth,dy=-50*depth;s+=`<path class="lift-volume" d="M285 145L${285+dx} ${145+dy}L${615+dx} ${145+dy}L${615+dx} ${345+dy}L615 345M${285+dx} ${145+dy}L${285+dx} ${345+dy}L285 345M${285+dx} ${345+dy}L${615+dx} ${345+dy}" fill="none" stroke="${palette.line}" stroke-dasharray="4 5"/><path d="${boundary}" fill="${R.valid?palette.panel:palette.orange}" fill-opacity=".45" stroke="${R.valid?palette.blue:palette.orange}" stroke-opacity=".4"/>`;}
+      else s+=`<path d="${boundary}" fill="${palette.panel}" fill-opacity=".5" stroke="${R.valid?palette.blue:palette.orange}" stroke-width="2"/>`;
       if(state.relationPreview&&state.lift==='base'){const progress=clamp(state.relationProgress/.28),total=1060,travel=progress*total;let x,y;if(travel<=330){x=285+travel;y=145;}else if(travel<=530){x=615;y=145+travel-330;}else if(travel<=860){x=615-(travel-530);y=345;}else{x=285;y=345-(travel-860);}s+=`<path class="belt-trace" d="${boundary}" fill="none" stroke="${palette.lime}" stroke-width="3" stroke-dasharray="${travel} ${total}"/><circle class="belt-traveller" cx="${x}" cy="${y}" r="5" fill="${palette.ink}"/>`;}
       s+=line(350,179,550,179,palette.line,'3 6')+line(350,315,550,315,palette.line,'3 6');
       for(let j=0;j<3;j++){const x=385+j*65;if(state.lift==='base'){s+=`<path d="M${x} 261L${x+24} 230M${x+13} 234L${x+24} 230L${x+23} 241" fill="none" stroke="${palette.lime}" opacity=".7"/>`;}else if(state.lift==='spheres'){const t=state.relationPreview?(state.relationProgress-.64)*M.TAU*5+j*1.2:0;s+=`<ellipse cx="${x}" cy="247" rx="21" ry="10" fill="none" stroke="${palette.blue}" opacity=".65"/><ellipse cx="${x}" cy="247" rx="11" ry="10" fill="none" stroke="${palette.blue}" opacity=".4"/>`;if(state.relationPreview)s+=`<circle class="fibre-traveller" cx="${x+21*Math.cos(t)}" cy="${247+10*Math.sin(t)}" r="2.5" fill="${palette.blue}"/>`;}}
@@ -223,14 +230,14 @@
       s+=text(450,435,R.valid?'The oriented coefficients cancel in the circuit map.':'A broken coefficient leaves a nonzero circuit residual.',12,R.valid?palette.muted:palette.orange,'middle');
     }else{
       const cols=state.example==='x19'?4:5,rows=Math.ceil(e.nodes/cols),width=cols===4?560:650,left=(900-width)/2,spacing=width/(cols-1),height=275,top=100;
-      s+=`<rect x="${left-52}" y="57" width="${width+104}" height="${height+92}" rx="18" fill="#1b303e" fill-opacity=".4" stroke="${palette.line}" ${state.lift!=='base'?'stroke-dasharray="5 7"':''}/>`;
+      s+=`<rect x="${left-52}" y="57" width="${width+104}" height="${height+92}" rx="18" fill="${palette.panel}" fill-opacity=".4" stroke="${palette.line}" ${state.lift!=='base'?'stroke-dasharray="5 7"':''}/>`;
       R.coeff.forEach((c,i)=>{const x=left+i%cols*spacing,y=top+Math.floor(i/cols)*height/(rows-1);s+=nodeGlyph(x,y,i,c,R.forced.includes(i));});
       s+=text(450,450,R.forced.length?'q₁ and q₆ are zero in every listed basis vector.':'Default weights show that full support exists in this lattice.',12,R.forced.length?palette.orange:palette.muted,'middle');
     }
     $('relation-diagram').innerHTML=s;
   }
 
-  function showTip(el){const entry=definitions[el.dataset.def];if(!entry)return;tipTarget=el;const tip=$('tooltip'),dialog=el.closest('dialog[open]');(dialog||document.body).appendChild(tip);tip.innerHTML=`<b>${entry[0]}</b>${entry[1]}`;tip.hidden=false;const rect=el.getBoundingClientRect();tip.style.left=Math.max(12,Math.min(rect.left,window.innerWidth-312))+'px';tip.style.top=Math.max(12,Math.min(rect.bottom+10,window.innerHeight-tip.offsetHeight-12))+'px';el.setAttribute('aria-describedby','tooltip');}
+  function showTip(el){const entry=definitions[el.dataset.def];if(!entry)return;tipTarget=el;const tip=$('tooltip'),dialog=el.closest('dialog[open]');(dialog||appRoot).appendChild(tip);tip.innerHTML=`<b>${entry[0]}</b>${entry[1]}`;tip.hidden=false;const rect=el.getBoundingClientRect();tip.style.left=Math.max(12,Math.min(rect.left,window.innerWidth-312))+'px';tip.style.top=Math.max(12,Math.min(rect.bottom+10,window.innerHeight-tip.offsetHeight-12))+'px';el.setAttribute('aria-describedby','tooltip');}
   function hideTip(){if(tipTarget)tipTarget.removeAttribute('aria-describedby');tipTarget=null;$('tooltip').hidden=true;}
   function openDialog(id){hideTip();$(id).showModal();}
   $('glossary-list').innerHTML=Object.values(definitions).map(([name,body])=>`<div class="glossary-item"><b>${name}</b><p>${body}</p></div>`).join('');
@@ -269,8 +276,9 @@
   canvas.addEventListener('pointermove',e=>{if(!drag)return;state.yaw=((drag.yaw+(e.clientX-drag.x)*.4+180)%360+360)%360-180;state.pitch=Math.max(-70,Math.min(70,drag.pitch+(e.clientY-drag.y)*.3));renderLocal();drawGeometry();});
   const endDrag=()=>drag=null;canvas.addEventListener('pointerup',endDrag);canvas.addEventListener('pointercancel',endDrag);
   window.addEventListener('resize',()=>{hideTip();if(state.mode==='local')drawGeometry();});
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{updateTheme();render();});
   if(reduced){$('auto-rotate').checked=false;$('play-transition').textContent='Show the singular threshold →';$('ledger-play').textContent='Show the smoothing →';$('relation-play').textContent='Show the mirror lift →';}
   // Test/export surface: state is copied so callers cannot mutate the application.
-  window.ConifoldLab={snapshot:()=>JSON.parse(JSON.stringify({...state,...relationStatus(),ledgerData:M.ledger(state.n,state.k)})),exportDiagram:(name='relations')=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 ${name==='topology'?430:470}" width="900" height="${name==='topology'?430:470}"><rect width="100%" height="100%" fill="#14212c"/>${$(name==='topology'?'topology-diagram':'relation-diagram').innerHTML}</svg>`};
+  window.ConifoldLab={snapshot:()=>JSON.parse(JSON.stringify({...state,...relationStatus(),ledgerData:M.ledger(state.n,state.k)})),exportDiagram:(name='relations')=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 ${name==='topology'?430:470}" width="900" height="${name==='topology'?430:470}"><rect width="100%" height="100%" fill="${palette.panel}"/>${$(name==='topology'?'topology-diagram':'relation-diagram').innerHTML}</svg>`};
   render();
 })();

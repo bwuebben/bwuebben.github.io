@@ -1,7 +1,394 @@
-:root{--bg:#10161d;--panel:#151e27;--raised:#1a2632;--line:#2b3945;--ink:#edf2f5;--muted:#9daebd;--blue:#a9cfff;--lime:#d5e6a2;--red:#f5c498;--serif:Georgia,'Times New Roman',serif;--sans:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 var(--sans)}button,input,a{-webkit-tap-highlight-color:transparent}button,input{font:inherit}button{cursor:pointer;color:inherit}button:disabled,input:disabled{opacity:.45;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--blue);outline-offset:5px}button{transition:background .15s,color .15s}a{color:var(--blue)}.header{height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;gap:20px}.brand{color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:2.5px}.brand svg{width:36px;color:var(--blue)}.brand b{font-weight:400;color:var(--muted)}.header-right{display:flex;align-items:center;gap:25px}.site-tag{display:flex;align-items:center;gap:7px;font-size:10px;color:var(--muted);border:1px solid var(--line);padding:5px 11px;border-radius:20px}.site-tag i{width:5px;height:5px;background:var(--lime);border-radius:50%}.text-button{background:none;border:0;padding:0;font-size:11px;color:var(--muted)}.text-button:hover{color:var(--ink);text-decoration:underline;text-underline-offset:5px}main{max-width:1550px;margin:auto;padding:43px 5vw 0}.intro{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-bottom:35px}.eyebrow{font-size:9px;letter-spacing:1.7px;color:var(--muted);font-weight:550}.intro h1{font-family:var(--serif);font-weight:400;font-size:clamp(37px,3.6vw,56px);line-height:1.12;letter-spacing:-1.5px;margin:11px 0 13px}.intro p{font-size:13px;color:var(--muted);margin:0}.dimension{display:flex;align-items:center;gap:18px;padding-left:25px;border-left:1px solid var(--line)}.dimension>b{font-family:var(--serif);font-size:59px;font-weight:400;line-height:1;color:var(--blue)}.dimension span{font-size:9px;letter-spacing:1.4px;color:var(--muted)}.dimension strong{font-size:11px;letter-spacing:0;font-weight:400;color:var(--ink)}.mode-nav{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:25px}.mode-button{padding:17px 19px;border:1px solid var(--line);border-radius:8px;background:#131c24;display:flex;gap:17px;text-align:left;align-items:center}.mode-button>span:first-child{font-family:var(--serif);font-size:21px;color:#758998}.mode-button b{font-size:12px;font-weight:500;display:block}.mode-button small{display:block;font-size:10px;color:var(--muted);margin-top:3px}.mode-arrow{margin-left:auto;color:#738da1}.mode-button.selected{background:#1b2a37;border-color:#6483a0}.mode-button.selected>span:first-child,.mode-button.selected .mode-arrow{color:var(--blue)}.mode-button:hover{background:#1b2732}.panel{animation:reveal .2s ease-out}.local-layout{display:grid;grid-template-columns:minmax(0,1fr) 295px;gap:24px}.viewport-card{border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#111922}.viewport-top{height:53px;display:flex;align-items:center;gap:13px;padding:0 20px;border-bottom:1px solid #253440}.geometry-badge{font-size:8px;letter-spacing:1.3px;color:var(--blue);background:#21374a;border:1px solid #35516a;border-radius:4px;padding:4px 7px}.viewport-top>span:nth-child(2){font-size:9px;color:var(--muted)}.viewport-top>.text-button{margin-left:auto;font-size:9px}.canvas-wrap{position:relative;height:430px;overflow:hidden;background:radial-gradient(ellipse at 48% 48%,#1e3040 0%,#111923 67%)}#geometry-canvas{display:block;width:100%;height:100%;touch-action:none;cursor:grab}#geometry-canvas:active{cursor:grabbing}.viewport-label{position:absolute;top:24px;left:26px;pointer-events:none}.viewport-label .eyebrow{font-size:8px;letter-spacing:1.4px;color:#b0c3d3}.viewport-label h2{font-family:var(--serif);font-weight:400;font-size:25px;letter-spacing:-.5px;margin:5px 0 5px;line-height:1.25}.viewport-label p{font-size:10px;margin:0;color:var(--muted);max-width:420px}.drag-hint{position:absolute;bottom:17px;left:26px;font-size:9px;color:#8498aa;pointer-events:none}.drag-hint span{margin:0 7px}.viewport-bottom{padding:13px 20px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #253440;gap:15px}.view-key{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:9px}.view-key i{display:inline-block;width:16px;height:2px;background:var(--blue)}.view-key i.lime{background:var(--lime);margin-left:10px}.rotation-toggle{display:flex;align-items:center;gap:6px;font-size:9px;color:var(--muted);cursor:pointer}.rotation-toggle input,input[type=checkbox]{accent-color:var(--blue)}.local-details{padding:13px 0 0}.local-details h2{font-family:var(--serif);font-weight:400;line-height:1.3;font-size:25px;margin:10px 0 15px;letter-spacing:-.4px}.equation{font-family:var(--serif);font-size:19px;color:var(--blue);padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);line-height:1.5}.equation.small{font-size:18px}.metric-pair{display:grid;grid-template-columns:1fr 1fr;margin:17px 0 20px;gap:18px}.metric-pair span{font-size:8px;letter-spacing:1.3px;display:block;color:var(--muted)}.metric-pair b{display:block;font-family:var(--serif);font-size:31px;font-weight:400;line-height:1.35;margin-top:3px}.local-details p{font-size:11px;line-height:1.8;color:var(--muted);margin:0 0 12px}.term{padding:0;background:none;border:0;border-bottom:1px dotted #6386a4;font:inherit;line-height:inherit;color:var(--blue)}.term:hover{color:var(--ink)}.dimension-note{border-top:1px solid var(--line);padding-top:14px;margin-top:18px}.dimension-note>span{font-size:8px;letter-spacing:1.6px;color:var(--muted)}.dimension-note p{font-size:10px;line-height:1.7;margin:6px 0 0}.view-controls{margin-top:18px}.view-controls label{font-size:10px;display:flex;align-items:center;gap:7px;color:var(--ink)}.view-controls p{font-size:9px;margin:6px 0 0}.ruling-controls{padding:10px 0}.ruling-controls>span{font-size:9px;color:var(--muted);display:block;margin-bottom:8px}.ruling-controls p{font-family:var(--serif);font-size:15px;margin:8px 0 0;color:var(--lime)}.segmented{display:inline-flex;gap:2px;border:1px solid var(--line);padding:3px;border-radius:5px;background:#121c25}.segmented button{background:none;border:0;padding:7px 11px;font-size:10px;white-space:nowrap;color:var(--muted);border-radius:3px}.segmented button.selected{background:#2b4052;color:var(--blue)}.transition-controls{border:1px solid var(--line);border-radius:8px;padding:19px 24px;margin-top:20px;background:#141e28}.transition-labels{display:flex;align-items:center;justify-content:space-between}.transition-labels button{background:none;border:0;font-size:11px;color:var(--muted);padding:0}.transition-labels button:first-child{color:var(--blue)}.transition-labels button:last-child{color:var(--lime)}.transition-labels span{font-family:var(--serif);margin-left:8px;font-size:17px}.transition-controls>input{width:100%;margin:15px 0 2px;accent-color:var(--blue);cursor:pointer;height:20px}.transition-axis{display:flex;justify-content:space-between;font-size:8px;color:var(--muted)}.transition-tools{display:flex;justify-content:flex-start;align-items:center;gap:8px;margin-top:20px}.button{padding:9px 15px;font-size:10px;border:1px solid transparent;border-radius:5px;white-space:nowrap}.primary{background:var(--blue);color:#162638}.primary:hover{background:#c1ddff}.secondary{background:#172530;border-color:#3a4d5e;color:var(--muted)}.secondary:hover{color:var(--ink);background:#223442}.camera-controls{margin-left:auto;display:flex;align-items:center;gap:22px}.camera-controls label{display:flex;align-items:center;gap:10px;font-size:9px;color:var(--muted)}.camera-controls input{width:100px;accent-color:#89aeca;cursor:pointer}.local-story{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:26px}.local-story article{padding:18px 0 0;border-top:1px solid var(--line);position:relative}.story-number{font-family:var(--serif);font-size:18px;color:var(--muted)}h3{font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.3;margin:7px 0 9px}.local-story p{font-size:11px;color:var(--muted);line-height:1.8;margin:0}.section-top{display:flex;align-items:center;justify-content:space-between;gap:30px;margin:34px 0 25px}.section-top h2{font-family:var(--serif);font-size:32px;font-weight:400;letter-spacing:-.6px;margin:9px 0 8px;line-height:1.2}.section-top p{font-size:12px;color:var(--muted);margin:0;max-width:800px}.section-top .segmented{flex-shrink:0}.topology-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:28px}.diagram-card{border:1px solid var(--line);background:linear-gradient(135deg,#172431,#111a23);border-radius:10px;overflow:hidden}.diagram-card svg{display:block;width:100%;height:auto}.ledger-details{padding-top:12px}.ledger-row{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0;font-size:11px;color:var(--muted)}.ledger-row strong{font-family:var(--serif);font-size:23px;font-weight:400;color:var(--ink)}.ledger-formula{font-family:var(--serif);font-size:28px;color:var(--blue);margin-top:16px}.ledger-details p{font-size:11px;color:var(--muted);line-height:1.7}.ledger-inputs{margin:20px 0;display:grid;gap:13px}.ledger-inputs label{font-size:10px;color:var(--muted)}.ledger-inputs output{float:right;color:var(--ink)}.ledger-inputs input{width:100%;accent-color:var(--blue);cursor:pointer;display:block;margin-top:7px}.small-note{font-size:10px;color:var(--muted);line-height:1.7}.topology-bottom{display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:30px 0;margin-top:4px}.topology-bottom article{padding-top:20px;border-top:1px solid var(--line)}.surgery-equation{font-family:var(--serif);font-size:28px;line-height:1.4;margin:13px 0}.surgery-equation span{color:var(--muted);margin:0 18px}.topology-bottom p,.relation-bottom p{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 10px}.relation-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:7px;margin:25px 0}.stat{padding:15px 21px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat small{display:block;font-size:8px;letter-spacing:1.2px;color:var(--muted)}.stat b{font-family:var(--serif);font-size:29px;font-weight:400;display:block;margin:3px 0 0;line-height:1.2}.stat b.yes{color:var(--lime)}.stat b.no{color:var(--red)}.relation-layout{display:grid;grid-template-columns:minmax(0,1fr) 295px;gap:26px}.relation-card{padding-top:16px}.relation-view-nav{margin:0 20px 4px}.diagram-foot{font-size:9px;color:var(--muted);text-align:center;margin:0 24px 18px;line-height:1.7}.relation-details{padding-top:8px}.coeff-row{display:grid;grid-template-columns:27px 1fr 25px;gap:10px;align-items:center;margin-top:14px;font-size:12px}.coeff-row label{font-family:var(--serif);font-size:16px;color:var(--blue)}.coeff-row input{width:100%;accent-color:var(--blue);cursor:pointer}.coeff-row output{font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}.relation-actions{display:flex;gap:7px;margin:23px 0 16px;flex-wrap:wrap}.relation-actions .button{font-size:9px;padding:8px 10px}.relation-result{border-top:1px solid var(--line);padding-top:15px}.relation-result h3{font-size:20px;color:var(--lime);margin:0 0 8px}.relation-result.invalid h3{color:var(--red)}.relation-result p{font-size:11px;color:var(--muted);line-height:1.7;margin:0 0 9px}.residual{font-family:var(--serif);font-size:14px;color:var(--red);word-break:break-word}.subtle-note{font-size:9px;color:var(--muted);line-height:1.7;border-top:1px solid var(--line);padding-top:14px;margin-top:18px}.relation-equation{background:#1b2b36;border:1px solid #354c5c;border-radius:7px;font-family:var(--serif);font-size:23px;line-height:1.5;padding:20px 24px;margin-top:23px;text-align:center;overflow-wrap:anywhere;color:var(--blue)}.relation-equation .sub{font-family:var(--sans);font-size:9px;line-height:1.8;margin-top:8px;display:block;color:var(--muted)}.relation-bottom{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:30px}.relation-bottom article{padding-top:20px;border-top:1px solid var(--line)}.closing{display:flex;align-items:center;gap:25px;border-bottom:1px solid var(--line);padding:34px 0;margin-top:24px}.math-mark{font-family:var(--serif);font-size:67px;color:#6c8a9f;line-height:1}.closing p{font-family:var(--serif);font-size:21px;line-height:1.5;margin:8px 0 0}.closing p span{font-size:16px;color:var(--muted)}.closing .text-button{margin-left:auto}footer{display:flex;justify-content:space-between;gap:20px;padding:24px 5vw 30px;max-width:1550px;margin:auto;font-size:9px;color:var(--muted)}.muted{color:#647f91}dialog{border:1px solid #455d72;border-radius:12px;background:#15222e;color:var(--ink);max-width:720px;width:calc(100% - 32px);padding:30px;max-height:85vh;box-shadow:0 30px 100px #0008}dialog::backdrop{background:#071018d0;backdrop-filter:blur(4px)}.dialog-header{display:flex;justify-content:space-between;align-items:flex-start;gap:25px;margin-bottom:25px}.dialog-header h2{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.3;margin:8px 0 0}.close{width:32px;height:32px;background:#1b2d3c;border:1px solid #405c71;border-radius:50%;font-size:21px;flex-shrink:0}.glossary-item{display:grid;grid-template-columns:145px 1fr;gap:20px;border-top:1px solid var(--line);padding:14px 0}.glossary-item b{font-family:var(--serif);font-size:18px;font-weight:400}.glossary-item p,.source-body p{font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 14px}.source-body h3{font-size:21px;margin-top:25px}.source-body li{font-size:12px;padding:5px 0}.source-body{margin-bottom:25px}.tooltip{position:fixed;max-width:300px;background:#dce9f3;color:#172936;border-radius:7px;box-shadow:0 8px 28px #0006;padding:12px 15px;font-size:11px;line-height:1.7;z-index:100;pointer-events:none}.tooltip b{display:block;font-family:var(--serif);font-size:18px;font-weight:400;margin-bottom:4px}.svg-action{cursor:pointer}.svg-action:hover{filter:brightness(1.22)}.svg-action:focus-visible{outline:2px solid var(--blue)}[hidden]{display:none!important}.noscript{padding:35px}@keyframes reveal{from{opacity:.5}to{opacity:1}}
-@media(max-width:1150px){.local-layout{grid-template-columns:minmax(0,1fr) 265px;gap:20px}.canvas-wrap{height:410px}.viewport-label{left:20px}.viewport-label h2{font-size:22px}.viewport-label p{max-width:360px;font-size:9px}.viewport-top{padding:0 15px;gap:10px}.viewport-top>span:nth-child(2){font-size:8px}.local-details h2{font-size:23px}.equation{font-size:17px}.topology-layout,.relation-layout{grid-template-columns:minmax(0,1fr) 265px;gap:22px}.mode-button{padding:15px;gap:12px}.mode-button small{font-size:9px}.mode-button b{font-size:11px}.section-top h2{font-size:29px}.camera-controls{gap:15px}.camera-controls input{width:85px}}
-@media(max-width:850px){.header{height:67px}.header-right{gap:18px}.site-tag{display:none}.brand{font-size:10px;letter-spacing:2px}.brand svg{width:29px}main{padding-top:30px}.intro{margin-bottom:28px}.intro h1{font-size:39px}.intro p{font-size:12px}.dimension{display:none}.mode-nav{gap:7px;margin-bottom:20px}.mode-button{padding:13px 11px;gap:9px}.mode-arrow{display:none}.mode-button b{font-size:10px}.mode-button small{font-size:8px}.mode-button>span:first-child{font-size:17px}.local-layout,.topology-layout,.relation-layout{display:block}.canvas-wrap{height:440px}.local-details{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:20px;padding-top:8px}.local-details>.eyebrow,.local-details>h2,.local-details>.equation{grid-column:1/3}.local-details>.metric-pair{margin:17px 0}.local-details>.dimension-note{margin-top:10px}.local-details p{font-size:12px}.local-details h2{font-size:25px;margin-top:6px}.view-controls{margin-top:8px}.viewport-label p{max-width:480px;font-size:10px}.viewport-label h2{font-size:25px}.viewport-top>span:nth-child(2){font-size:9px}.camera-controls{gap:18px}.local-story{gap:22px}.local-story h3{font-size:19px}.local-story p{font-size:10px}.section-top{margin-top:26px;align-items:flex-start;gap:18px}.section-top .segmented button{padding:6px 8px;font-size:9px}.section-top h2{font-size:28px}.ledger-details{display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:15px}.ledger-details>.eyebrow,.ledger-details>.small-note{grid-column:1/3}.ledger-details>p{margin:0}.ledger-formula{margin-top:15px}.ledger-inputs{grid-column:2;grid-row:2/4}.topology-bottom,.relation-bottom{gap:30px}.stat{padding:12px 15px}.stat small{font-size:7px}.stat b{font-size:26px}.relation-details{margin-top:25px}.relation-details #coefficient-controls{display:grid;grid-template-columns:1fr 1fr;gap:0 30px}.relation-actions{margin-top:20px}.relation-result p{font-size:12px}.relation-note{font-size:10px}.relation-equation{font-size:21px}.closing p{font-size:19px}.closing p span{font-size:14px}.closing .text-button{display:none}}
-@media(max-width:540px){.header-right{gap:14px}.header-right .text-button{font-size:9px}.brand{font-size:9px;gap:7px}.brand svg{width:27px}.brand b{display:none}.intro h1{font-size:34px;letter-spacing:-1px}.intro .eyebrow{font-size:8px}.mode-nav{gap:5px}.mode-button{flex-direction:column;align-items:flex-start;padding:11px 9px;gap:6px}.mode-button small{display:none}.mode-button b{font-size:9px}.mode-button>span:first-child{font-size:15px}.canvas-wrap{height:365px}.viewport-top{height:47px;padding:0 12px;gap:8px}.viewport-top>span:nth-child(2){display:none}.viewport-label{top:21px;left:18px}.viewport-label h2{font-size:22px;max-width:290px}.viewport-label p{font-size:9px;max-width:290px}.viewport-label .eyebrow{font-size:7px}.drag-hint{left:18px;font-size:8px;max-width:260px}.viewport-bottom{padding:12px}.view-key{font-size:8px;gap:5px}.view-key i{width:12px}.view-key i.lime{margin-left:5px}.rotation-toggle{font-size:8px;gap:3px}.local-details{display:block;padding-top:8px}.local-details h2{font-size:25px}.equation{font-size:21px}.local-details>.metric-pair{margin:18px 0}.local-details p{font-size:12px}.dimension-note p{font-size:10px}.view-controls p{font-size:10px}.transition-controls{padding:17px 15px}.transition-labels button{font-size:9px}.transition-labels span{margin-left:4px;font-size:15px}.transition-axis{font-size:7px}.transition-tools{flex-wrap:wrap;gap:8px}.camera-controls{width:100%;margin:9px 0 0;justify-content:space-between;gap:14px}.camera-controls input{width:100px}.local-story{display:block}.local-story article{margin-top:22px;padding-top:14px}.local-story h3{font-size:22px}.local-story p{font-size:12px}.story-number{float:right}.section-top{display:block}.section-top .segmented{margin-top:20px}.section-top h2{font-size:28px}.section-top p{font-size:11px}.diagram-card{overflow-x:auto}.topology-layout .diagram-card svg{min-width:640px}.relation-card svg{min-width:640px}.ledger-details{display:block;margin-top:20px}.ledger-inputs{margin:18px 0}.topology-bottom,.relation-bottom{display:block}.topology-bottom article,.relation-bottom article{margin-top:22px}.topology-bottom h3,.relation-bottom h3{font-size:23px}.relation-stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}.stat small{font-size:8px}.stat b{font-size:27px}.relation-view-nav{margin:0 12px 4px}.relation-view-nav button{font-size:9px;padding:6px 8px}.relation-details #coefficient-controls{gap:0 20px}.relation-equation{font-size:19px;padding:17px 15px}.relation-equation .sub{font-size:9px}.closing{gap:18px;padding:28px 0}.math-mark{font-size:54px}.closing p{font-size:17px}.closing p span{font-size:12px}footer{display:block;font-size:8px}footer>span{display:block;margin-bottom:6px}.glossary-item{display:block}.glossary-item b{display:block;margin-bottom:7px}dialog{padding:25px}.dialog-header h2{font-size:26px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-.diagram-card{overflow:hidden}.diagram-scroll{overflow-x:auto}.animation-strip{border-top:1px solid var(--line);padding:17px 21px 19px;background:#15222c}.animation-heading{display:flex;align-items:center;gap:8px}.animation-heading .eyebrow{margin-right:auto;font-size:8px}.animation-heading .button{font-size:9px;padding:8px 11px}.animation-strip>input{width:100%;display:block;margin:13px 0 12px;accent-color:var(--blue);cursor:pointer}.animation-steps{display:flex;justify-content:space-between;gap:10px;margin-top:17px}.animation-steps button{border:0;background:none;padding:0;color:var(--muted);font-size:9px}.animation-steps button.selected{color:var(--blue)}.animation-steps button:first-child.selected{color:var(--lime)}.animation-readout strong{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--ink)}.animation-readout p{font-size:10px;color:var(--muted);margin:5px 0 0;line-height:1.7;min-height:34px}.relation-card .diagram-foot{margin-bottom:17px}.relation-card .animation-strip{margin-top:0}
-@media(max-width:540px){.animation-strip{padding:16px 14px}.animation-heading{flex-wrap:wrap}.animation-heading .eyebrow{width:100%;margin-bottom:5px}.animation-steps{gap:8px}.animation-steps button{font-size:8px}.animation-readout strong{font-size:19px}.animation-readout p{font-size:10px}}
+/* The site's theme supplies page colors, typography, and the primary diagram color. */
+.conifold-app {
+  --panel: var(--bg-panel);
+  --raised: var(--bg-panel);
+  --line: var(--rule);
+  --muted: var(--ink-soft);
+  --blue: var(--accent);
+  --lime: var(--cycle-secondary);
+  --red: var(--cycle-warning);
+  --cycle-secondary: #776235;
+  --cycle-warning: #985523;
+  --on-accent: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  .conifold-app {
+    --cycle-secondary: #c9bc97;
+    --cycle-warning: #d6ae83;
+  }
+}
+/* Prevent the application layout from changing shared navigation and page styles. */
+.conifold-app section { margin-top: 0; }
+.conifold-app h2, .conifold-app h3 { color: var(--ink); border: 0; padding: 0; text-transform: none; letter-spacing: normal; }
+.conifold-app footer { border-top: 0; margin-top: 0; }
+.conifold-app a { border-bottom: 0; }
+.conifold-app * {box-sizing:border-box}
+.conifold-app {margin:0;background:var(--bg);color:var(--ink);font:14px/1.6 var(--sans)}
+.conifold-app button, .conifold-app input, .conifold-app a {-webkit-tap-highlight-color:transparent}
+.conifold-app button, .conifold-app input {font:inherit}
+.conifold-app button {cursor:pointer;color:inherit}
+.conifold-app button:disabled, .conifold-app input:disabled {opacity:.45;cursor:default}
+.conifold-app button:focus-visible, .conifold-app a:focus-visible, .conifold-app input:focus-visible, .conifold-app [tabindex]:focus-visible {outline:2px solid var(--blue);outline-offset:5px}
+.conifold-app button {transition:background .15s,color .15s}
+.conifold-app a {color:var(--blue)}
+.conifold-app .header {height:78px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 5vw;gap:20px}
+.conifold-app .brand {color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:12px;font-size:11px;letter-spacing:2.5px}
+.conifold-app .brand svg {width:36px;color:var(--blue)}
+.conifold-app .brand b {font-weight:400;color:var(--muted)}
+.conifold-app .header-right {display:flex;align-items:center;gap:25px}
+.conifold-app .site-tag {display:flex;align-items:center;gap:7px;font-size:10px;color:var(--muted);border:1px solid var(--line);padding:5px 11px;border-radius:20px}
+.conifold-app .site-tag i {width:5px;height:5px;background:var(--lime);border-radius:50%}
+.conifold-app .text-button {background:none;border:0;padding:0;font-size:11px;color:var(--muted)}
+.conifold-app .text-button:hover {color:var(--ink);text-decoration:underline;text-underline-offset:5px}
+.conifold-app main {max-width:1550px;margin:auto;padding:43px 5vw 0}
+.conifold-app .intro {display:flex;align-items:center;justify-content:space-between;gap:30px;margin-bottom:35px}
+.conifold-app .eyebrow {font-size:9px;letter-spacing:1.7px;color:var(--muted);font-weight:550}
+.conifold-app .intro h1 {font-family:var(--serif);font-weight:400;font-size:clamp(37px,3.6vw,56px);line-height:1.12;letter-spacing:-1.5px;margin:11px 0 13px}
+.conifold-app .intro p {font-size:13px;color:var(--muted);margin:0}
+.conifold-app .dimension {display:flex;align-items:center;gap:18px;padding-left:25px;border-left:1px solid var(--line)}
+.conifold-app .dimension>b {font-family:var(--serif);font-size:59px;font-weight:400;line-height:1;color:var(--blue)}
+.conifold-app .dimension span {font-size:9px;letter-spacing:1.4px;color:var(--muted)}
+.conifold-app .dimension strong {font-size:11px;letter-spacing:0;font-weight:400;color:var(--ink)}
+.conifold-app .mode-nav {display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:25px}
+.conifold-app .mode-button {padding:17px 19px;border:1px solid var(--line);border-radius:8px;background:var(--bg-panel);display:flex;gap:17px;text-align:left;align-items:center}
+.conifold-app .mode-button>span:first-child {font-family:var(--serif);font-size:21px;color:var(--ink-soft)}
+.conifold-app .mode-button b {font-size:12px;font-weight:500;display:block}
+.conifold-app .mode-button small {display:block;font-size:10px;color:var(--muted);margin-top:3px}
+.conifold-app .mode-arrow {margin-left:auto;color:var(--ink-soft)}
+.conifold-app .mode-button.selected {background:var(--bg-panel);border-color:var(--accent)}
+.conifold-app .mode-button.selected>span:first-child, .conifold-app .mode-button.selected .mode-arrow {color:var(--blue)}
+.conifold-app .mode-button:hover {background:var(--bg-panel)}
+.conifold-app .panel {animation:conifold-reveal .2s ease-out}
+.conifold-app .local-layout {display:grid;grid-template-columns:minmax(0,1fr) 295px;gap:24px}
+.conifold-app .viewport-card {border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg-panel)}
+.conifold-app .viewport-top {height:53px;display:flex;align-items:center;gap:13px;padding:0 20px;border-bottom:1px solid var(--rule)}
+.conifold-app .geometry-badge {font-size:8px;letter-spacing:1.3px;color:var(--blue);background:var(--bg-panel);border:1px solid var(--accent);border-radius:4px;padding:4px 7px}
+.conifold-app .viewport-top>span:nth-child(2) {font-size:9px;color:var(--muted)}
+.conifold-app .viewport-top>.text-button {margin-left:auto;font-size:9px}
+.conifold-app .canvas-wrap {position:relative;height:430px;overflow:hidden;background:radial-gradient(ellipse at 48% 48%,var(--bg-panel) 0%,var(--bg) 67%)}
+.conifold-app #geometry-canvas {display:block;width:100%;height:100%;touch-action:none;cursor:grab}
+.conifold-app #geometry-canvas:active {cursor:grabbing}
+.conifold-app .viewport-label {position:absolute;top:24px;left:26px;pointer-events:none}
+.conifold-app .viewport-label .eyebrow {font-size:8px;letter-spacing:1.4px;color:var(--ink-soft)}
+.conifold-app .viewport-label h2 {font-family:var(--serif);font-weight:400;font-size:25px;letter-spacing:-.5px;margin:5px 0 5px;line-height:1.25}
+.conifold-app .viewport-label p {font-size:10px;margin:0;color:var(--muted);max-width:420px}
+.conifold-app .drag-hint {position:absolute;bottom:17px;left:26px;font-size:9px;color:var(--ink-soft);pointer-events:none}
+.conifold-app .drag-hint span {margin:0 7px}
+.conifold-app .viewport-bottom {padding:13px 20px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--rule);gap:15px}
+.conifold-app .view-key {display:flex;align-items:center;gap:7px;color:var(--muted);font-size:9px}
+.conifold-app .view-key i {display:inline-block;width:16px;height:2px;background:var(--blue)}
+.conifold-app .view-key i.lime {background:var(--lime);margin-left:10px}
+.conifold-app .rotation-toggle {display:flex;align-items:center;gap:6px;font-size:9px;color:var(--muted);cursor:pointer}
+.conifold-app .rotation-toggle input, .conifold-app input[type=checkbox] {accent-color:var(--blue)}
+.conifold-app .local-details {padding:13px 0 0}
+.conifold-app .local-details h2 {font-family:var(--serif);font-weight:400;line-height:1.3;font-size:25px;margin:10px 0 15px;letter-spacing:-.4px}
+.conifold-app .equation {font-family:var(--serif);font-size:19px;color:var(--blue);padding:16px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);line-height:1.5}
+.conifold-app .equation.small {font-size:18px}
+.conifold-app .metric-pair {display:grid;grid-template-columns:1fr 1fr;margin:17px 0 20px;gap:18px}
+.conifold-app .metric-pair span {font-size:8px;letter-spacing:1.3px;display:block;color:var(--muted)}
+.conifold-app .metric-pair b {display:block;font-family:var(--serif);font-size:31px;font-weight:400;line-height:1.35;margin-top:3px}
+.conifold-app .local-details p {font-size:11px;line-height:1.8;color:var(--muted);margin:0 0 12px}
+.conifold-app .term {padding:0;background:none;border:0;border-bottom:1px dotted var(--accent);font:inherit;line-height:inherit;color:var(--blue)}
+.conifold-app .term:hover {color:var(--ink)}
+.conifold-app .dimension-note {border-top:1px solid var(--line);padding-top:14px;margin-top:18px}
+.conifold-app .dimension-note>span {font-size:8px;letter-spacing:1.6px;color:var(--muted)}
+.conifold-app .dimension-note p {font-size:10px;line-height:1.7;margin:6px 0 0}
+.conifold-app .view-controls {margin-top:18px}
+.conifold-app .view-controls label {font-size:10px;display:flex;align-items:center;gap:7px;color:var(--ink)}
+.conifold-app .view-controls p {font-size:9px;margin:6px 0 0}
+.conifold-app .ruling-controls {padding:10px 0}
+.conifold-app .ruling-controls>span {font-size:9px;color:var(--muted);display:block;margin-bottom:8px}
+.conifold-app .ruling-controls p {font-family:var(--serif);font-size:15px;margin:8px 0 0;color:var(--lime)}
+.conifold-app .segmented {display:inline-flex;gap:2px;border:1px solid var(--line);padding:3px;border-radius:5px;background:var(--bg-panel)}
+.conifold-app .segmented button {background:none;border:0;padding:7px 11px;font-size:10px;white-space:nowrap;color:var(--muted);border-radius:3px}
+.conifold-app .segmented button.selected {background:var(--bg-panel);color:var(--blue)}
+.conifold-app .transition-controls {border:1px solid var(--line);border-radius:8px;padding:19px 24px;margin-top:20px;background:var(--bg-panel)}
+.conifold-app .transition-labels {display:flex;align-items:center;justify-content:space-between}
+.conifold-app .transition-labels button {background:none;border:0;font-size:11px;color:var(--muted);padding:0}
+.conifold-app .transition-labels button:first-child {color:var(--blue)}
+.conifold-app .transition-labels button:last-child {color:var(--lime)}
+.conifold-app .transition-labels span {font-family:var(--serif);margin-left:8px;font-size:17px}
+.conifold-app .transition-controls>input {width:100%;margin:15px 0 2px;accent-color:var(--blue);cursor:pointer;height:20px}
+.conifold-app .transition-axis {display:flex;justify-content:space-between;font-size:8px;color:var(--muted)}
+.conifold-app .transition-tools {display:flex;justify-content:flex-start;align-items:center;gap:8px;margin-top:20px}
+.conifold-app .button {padding:9px 15px;font-size:10px;border:1px solid transparent;border-radius:5px;white-space:nowrap}
+.conifold-app .primary {background:var(--blue);color:var(--on-accent)}
+.conifold-app .primary:hover {background:var(--accent-lit)}
+.conifold-app .secondary {background:var(--bg-panel);border-color:var(--rule);color:var(--muted)}
+.conifold-app .secondary:hover {color:var(--ink);background:var(--bg-panel)}
+.conifold-app .camera-controls {margin-left:auto;display:flex;align-items:center;gap:22px}
+.conifold-app .camera-controls label {display:flex;align-items:center;gap:10px;font-size:9px;color:var(--muted)}
+.conifold-app .camera-controls input {width:100px;accent-color:var(--accent);cursor:pointer}
+.conifold-app .local-story {display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:26px}
+.conifold-app .local-story article {padding:18px 0 0;border-top:1px solid var(--line);position:relative}
+.conifold-app .story-number {font-family:var(--serif);font-size:18px;color:var(--muted)}
+.conifold-app h3 {font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.3;margin:7px 0 9px}
+.conifold-app .local-story p {font-size:11px;color:var(--muted);line-height:1.8;margin:0}
+.conifold-app .section-top {display:flex;align-items:center;justify-content:space-between;gap:30px;margin:34px 0 25px}
+.conifold-app .section-top h2 {font-family:var(--serif);font-size:32px;font-weight:400;letter-spacing:-.6px;margin:9px 0 8px;line-height:1.2}
+.conifold-app .section-top p {font-size:12px;color:var(--muted);margin:0;max-width:800px}
+.conifold-app .section-top .segmented {flex-shrink:0}
+.conifold-app .topology-layout {display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:28px}
+.conifold-app .diagram-card {border:1px solid var(--line);background:linear-gradient(135deg,var(--bg-panel),var(--bg-panel));border-radius:10px;overflow:hidden}
+.conifold-app .diagram-card svg {display:block;width:100%;height:auto}
+.conifold-app .ledger-details {padding-top:12px}
+.conifold-app .ledger-row {display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0;font-size:11px;color:var(--muted)}
+.conifold-app .ledger-row strong {font-family:var(--serif);font-size:23px;font-weight:400;color:var(--ink)}
+.conifold-app .ledger-formula {font-family:var(--serif);font-size:28px;color:var(--blue);margin-top:16px}
+.conifold-app .ledger-details p {font-size:11px;color:var(--muted);line-height:1.7}
+.conifold-app .ledger-inputs {margin:20px 0;display:grid;gap:13px}
+.conifold-app .ledger-inputs label {font-size:10px;color:var(--muted)}
+.conifold-app .ledger-inputs output {float:right;color:var(--ink)}
+.conifold-app .ledger-inputs input {width:100%;accent-color:var(--blue);cursor:pointer;display:block;margin-top:7px}
+.conifold-app .small-note {font-size:10px;color:var(--muted);line-height:1.7}
+.conifold-app .topology-bottom {display:grid;grid-template-columns:1fr 1fr;gap:50px;padding:30px 0;margin-top:4px}
+.conifold-app .topology-bottom article {padding-top:20px;border-top:1px solid var(--line)}
+.conifold-app .surgery-equation {font-family:var(--serif);font-size:28px;line-height:1.4;margin:13px 0}
+.conifold-app .surgery-equation span {color:var(--muted);margin:0 18px}
+.conifold-app .topology-bottom p, .conifold-app .relation-bottom p {font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 10px}
+.conifold-app .relation-stats {display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:7px;margin:25px 0}
+.conifold-app .stat {padding:15px 21px;border-right:1px solid var(--line)}
+.conifold-app .stat:last-child {border-right:0}
+.conifold-app .stat small {display:block;font-size:8px;letter-spacing:1.2px;color:var(--muted)}
+.conifold-app .stat b {font-family:var(--serif);font-size:29px;font-weight:400;display:block;margin:3px 0 0;line-height:1.2}
+.conifold-app .stat b.yes {color:var(--lime)}
+.conifold-app .stat b.no {color:var(--red)}
+.conifold-app .relation-layout {display:grid;grid-template-columns:minmax(0,1fr) 295px;gap:26px}
+.conifold-app .relation-card {padding-top:16px}
+.conifold-app .relation-view-nav {margin:0 20px 4px}
+.conifold-app .diagram-foot {font-size:9px;color:var(--muted);text-align:center;margin:0 24px 18px;line-height:1.7}
+.conifold-app .relation-details {padding-top:8px}
+.conifold-app .coeff-row {display:grid;grid-template-columns:27px 1fr 25px;gap:10px;align-items:center;margin-top:14px;font-size:12px}
+.conifold-app .coeff-row label {font-family:var(--serif);font-size:16px;color:var(--blue)}
+.conifold-app .coeff-row input {width:100%;accent-color:var(--blue);cursor:pointer}
+.conifold-app .coeff-row output {font-variant-numeric:tabular-nums;text-align:right;color:var(--ink)}
+.conifold-app .relation-actions {display:flex;gap:7px;margin:23px 0 16px;flex-wrap:wrap}
+.conifold-app .relation-actions .button {font-size:9px;padding:8px 10px}
+.conifold-app .relation-result {border-top:1px solid var(--line);padding-top:15px}
+.conifold-app .relation-result h3 {font-size:20px;color:var(--lime);margin:0 0 8px}
+.conifold-app .relation-result.invalid h3 {color:var(--red)}
+.conifold-app .relation-result p {font-size:11px;color:var(--muted);line-height:1.7;margin:0 0 9px}
+.conifold-app .residual {font-family:var(--serif);font-size:14px;color:var(--red);word-break:break-word}
+.conifold-app .subtle-note {font-size:9px;color:var(--muted);line-height:1.7;border-top:1px solid var(--line);padding-top:14px;margin-top:18px}
+.conifold-app .relation-equation {background:var(--bg-panel);border:1px solid var(--rule);border-radius:7px;font-family:var(--serif);font-size:23px;line-height:1.5;padding:20px 24px;margin-top:23px;text-align:center;overflow-wrap:anywhere;color:var(--blue)}
+.conifold-app .relation-equation .sub {font-family:var(--sans);font-size:9px;line-height:1.8;margin-top:8px;display:block;color:var(--muted)}
+.conifold-app .relation-bottom {display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:30px}
+.conifold-app .relation-bottom article {padding-top:20px;border-top:1px solid var(--line)}
+.conifold-app .closing {display:flex;align-items:center;gap:25px;border-bottom:1px solid var(--line);padding:34px 0;margin-top:24px}
+.conifold-app .math-mark {font-family:var(--serif);font-size:67px;color:var(--ink-soft);line-height:1}
+.conifold-app .closing p {font-family:var(--serif);font-size:21px;line-height:1.5;margin:8px 0 0}
+.conifold-app .closing p span {font-size:16px;color:var(--muted)}
+.conifold-app .closing .text-button {margin-left:auto}
+.conifold-app footer {display:flex;justify-content:space-between;gap:20px;padding:24px 5vw 30px;max-width:1550px;margin:auto;font-size:9px;color:var(--muted)}
+.conifold-app .muted {color:var(--ink-soft)}
+.conifold-app dialog {border:1px solid var(--rule);border-radius:12px;background:var(--bg-panel);color:var(--ink);max-width:720px;width:calc(100% - 32px);padding:30px;max-height:85vh;box-shadow:0 30px 100px #0008}
+.conifold-app dialog::backdrop {background:rgba(20,18,15,.65);backdrop-filter:blur(4px)}
+.conifold-app .dialog-header {display:flex;justify-content:space-between;align-items:flex-start;gap:25px;margin-bottom:25px}
+.conifold-app .dialog-header h2 {font-family:var(--serif);font-size:28px;font-weight:400;line-height:1.3;margin:8px 0 0}
+.conifold-app .close {width:32px;height:32px;background:var(--bg-panel);border:1px solid var(--rule);border-radius:50%;font-size:21px;flex-shrink:0}
+.conifold-app .glossary-item {display:grid;grid-template-columns:145px 1fr;gap:20px;border-top:1px solid var(--line);padding:14px 0}
+.conifold-app .glossary-item b {font-family:var(--serif);font-size:18px;font-weight:400}
+.conifold-app .glossary-item p, .conifold-app .source-body p {font-size:12px;color:var(--muted);line-height:1.8;margin:0 0 14px}
+.conifold-app .source-body h3 {font-size:21px;margin-top:25px}
+.conifold-app .source-body li {font-size:12px;padding:5px 0}
+.conifold-app .source-body {margin-bottom:25px}
+.conifold-app .tooltip {position:fixed;max-width:300px;background:var(--bg-panel);color:var(--ink);border-radius:7px;box-shadow:0 8px 28px #0006;padding:12px 15px;font-size:11px;line-height:1.7;z-index:100;pointer-events:none}
+.conifold-app .tooltip b {display:block;font-family:var(--serif);font-size:18px;font-weight:400;margin-bottom:4px}
+.conifold-app .svg-action {cursor:pointer}
+.conifold-app .svg-action:hover {filter:brightness(1.22)}
+.conifold-app .svg-action:focus-visible {outline:2px solid var(--blue)}
+.conifold-app [hidden] {display:none!important}
+.conifold-app .noscript {padding:35px}
+@keyframes conifold-reveal {from{opacity:.5}to{opacity:1}}
+@media(max-width:1150px) {
+.conifold-app .local-layout {grid-template-columns:minmax(0,1fr) 265px;gap:20px}
+.conifold-app .canvas-wrap {height:410px}
+.conifold-app .viewport-label {left:20px}
+.conifold-app .viewport-label h2 {font-size:22px}
+.conifold-app .viewport-label p {max-width:360px;font-size:9px}
+.conifold-app .viewport-top {padding:0 15px;gap:10px}
+.conifold-app .viewport-top>span:nth-child(2) {font-size:8px}
+.conifold-app .local-details h2 {font-size:23px}
+.conifold-app .equation {font-size:17px}
+.conifold-app .topology-layout, .conifold-app .relation-layout {grid-template-columns:minmax(0,1fr) 265px;gap:22px}
+.conifold-app .mode-button {padding:15px;gap:12px}
+.conifold-app .mode-button small {font-size:9px}
+.conifold-app .mode-button b {font-size:11px}
+.conifold-app .section-top h2 {font-size:29px}
+.conifold-app .camera-controls {gap:15px}
+.conifold-app .camera-controls input {width:85px}
+}
+@media(max-width:850px) {
+.conifold-app .header {height:67px}
+.conifold-app .header-right {gap:18px}
+.conifold-app .site-tag {display:none}
+.conifold-app .brand {font-size:10px;letter-spacing:2px}
+.conifold-app .brand svg {width:29px}
+.conifold-app main {padding-top:30px}
+.conifold-app .intro {margin-bottom:28px}
+.conifold-app .intro h1 {font-size:39px}
+.conifold-app .intro p {font-size:12px}
+.conifold-app .dimension {display:none}
+.conifold-app .mode-nav {gap:7px;margin-bottom:20px}
+.conifold-app .mode-button {padding:13px 11px;gap:9px}
+.conifold-app .mode-arrow {display:none}
+.conifold-app .mode-button b {font-size:10px}
+.conifold-app .mode-button small {font-size:8px}
+.conifold-app .mode-button>span:first-child {font-size:17px}
+.conifold-app .local-layout, .conifold-app .topology-layout, .conifold-app .relation-layout {display:block}
+.conifold-app .canvas-wrap {height:440px}
+.conifold-app .local-details {display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:20px;padding-top:8px}
+.conifold-app .local-details>.eyebrow, .conifold-app .local-details>h2, .conifold-app .local-details>.equation {grid-column:1/3}
+.conifold-app .local-details>.metric-pair {margin:17px 0}
+.conifold-app .local-details>.dimension-note {margin-top:10px}
+.conifold-app .local-details p {font-size:12px}
+.conifold-app .local-details h2 {font-size:25px;margin-top:6px}
+.conifold-app .view-controls {margin-top:8px}
+.conifold-app .viewport-label p {max-width:480px;font-size:10px}
+.conifold-app .viewport-label h2 {font-size:25px}
+.conifold-app .viewport-top>span:nth-child(2) {font-size:9px}
+.conifold-app .camera-controls {gap:18px}
+.conifold-app .local-story {gap:22px}
+.conifold-app .local-story h3 {font-size:19px}
+.conifold-app .local-story p {font-size:10px}
+.conifold-app .section-top {margin-top:26px;align-items:flex-start;gap:18px}
+.conifold-app .section-top .segmented button {padding:6px 8px;font-size:9px}
+.conifold-app .section-top h2 {font-size:28px}
+.conifold-app .ledger-details {display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-top:15px}
+.conifold-app .ledger-details>.eyebrow, .conifold-app .ledger-details>.small-note {grid-column:1/3}
+.conifold-app .ledger-details>p {margin:0}
+.conifold-app .ledger-formula {margin-top:15px}
+.conifold-app .ledger-inputs {grid-column:2;grid-row:2/4}
+.conifold-app .topology-bottom, .conifold-app .relation-bottom {gap:30px}
+.conifold-app .stat {padding:12px 15px}
+.conifold-app .stat small {font-size:7px}
+.conifold-app .stat b {font-size:26px}
+.conifold-app .relation-details {margin-top:25px}
+.conifold-app .relation-details #coefficient-controls {display:grid;grid-template-columns:1fr 1fr;gap:0 30px}
+.conifold-app .relation-actions {margin-top:20px}
+.conifold-app .relation-result p {font-size:12px}
+.conifold-app .relation-note {font-size:10px}
+.conifold-app .relation-equation {font-size:21px}
+.conifold-app .closing p {font-size:19px}
+.conifold-app .closing p span {font-size:14px}
+.conifold-app .closing .text-button {display:none}
+}
+@media(max-width:540px) {
+.conifold-app .header-right {gap:14px}
+.conifold-app .header-right .text-button {font-size:9px}
+.conifold-app .brand {font-size:9px;gap:7px}
+.conifold-app .brand svg {width:27px}
+.conifold-app .brand b {display:none}
+.conifold-app .intro h1 {font-size:34px;letter-spacing:-1px}
+.conifold-app .intro .eyebrow {font-size:8px}
+.conifold-app .mode-nav {gap:5px}
+.conifold-app .mode-button {flex-direction:column;align-items:flex-start;padding:11px 9px;gap:6px}
+.conifold-app .mode-button small {display:none}
+.conifold-app .mode-button b {font-size:9px}
+.conifold-app .mode-button>span:first-child {font-size:15px}
+.conifold-app .canvas-wrap {height:365px}
+.conifold-app .viewport-top {height:47px;padding:0 12px;gap:8px}
+.conifold-app .viewport-top>span:nth-child(2) {display:none}
+.conifold-app .viewport-label {top:21px;left:18px}
+.conifold-app .viewport-label h2 {font-size:22px;max-width:290px}
+.conifold-app .viewport-label p {font-size:9px;max-width:290px}
+.conifold-app .viewport-label .eyebrow {font-size:7px}
+.conifold-app .drag-hint {left:18px;font-size:8px;max-width:260px}
+.conifold-app .viewport-bottom {padding:12px}
+.conifold-app .view-key {font-size:8px;gap:5px}
+.conifold-app .view-key i {width:12px}
+.conifold-app .view-key i.lime {margin-left:5px}
+.conifold-app .rotation-toggle {font-size:8px;gap:3px}
+.conifold-app .local-details {display:block;padding-top:8px}
+.conifold-app .local-details h2 {font-size:25px}
+.conifold-app .equation {font-size:21px}
+.conifold-app .local-details>.metric-pair {margin:18px 0}
+.conifold-app .local-details p {font-size:12px}
+.conifold-app .dimension-note p {font-size:10px}
+.conifold-app .view-controls p {font-size:10px}
+.conifold-app .transition-controls {padding:17px 15px}
+.conifold-app .transition-labels button {font-size:9px}
+.conifold-app .transition-labels span {margin-left:4px;font-size:15px}
+.conifold-app .transition-axis {font-size:7px}
+.conifold-app .transition-tools {flex-wrap:wrap;gap:8px}
+.conifold-app .camera-controls {width:100%;margin:9px 0 0;justify-content:space-between;gap:14px}
+.conifold-app .camera-controls input {width:100px}
+.conifold-app .local-story {display:block}
+.conifold-app .local-story article {margin-top:22px;padding-top:14px}
+.conifold-app .local-story h3 {font-size:22px}
+.conifold-app .local-story p {font-size:12px}
+.conifold-app .story-number {float:right}
+.conifold-app .section-top {display:block}
+.conifold-app .section-top .segmented {margin-top:20px}
+.conifold-app .section-top h2 {font-size:28px}
+.conifold-app .section-top p {font-size:11px}
+.conifold-app .diagram-card {overflow-x:auto}
+.conifold-app .topology-layout .diagram-card svg {min-width:640px}
+.conifold-app .relation-card svg {min-width:640px}
+.conifold-app .ledger-details {display:block;margin-top:20px}
+.conifold-app .ledger-inputs {margin:18px 0}
+.conifold-app .topology-bottom, .conifold-app .relation-bottom {display:block}
+.conifold-app .topology-bottom article, .conifold-app .relation-bottom article {margin-top:22px}
+.conifold-app .topology-bottom h3, .conifold-app .relation-bottom h3 {font-size:23px}
+.conifold-app .relation-stats {grid-template-columns:1fr 1fr}
+.conifold-app .stat:nth-child(2) {border-right:0}
+.conifold-app .stat:nth-child(1), .conifold-app .stat:nth-child(2) {border-bottom:1px solid var(--line)}
+.conifold-app .stat small {font-size:8px}
+.conifold-app .stat b {font-size:27px}
+.conifold-app .relation-view-nav {margin:0 12px 4px}
+.conifold-app .relation-view-nav button {font-size:9px;padding:6px 8px}
+.conifold-app .relation-details #coefficient-controls {gap:0 20px}
+.conifold-app .relation-equation {font-size:19px;padding:17px 15px}
+.conifold-app .relation-equation .sub {font-size:9px}
+.conifold-app .closing {gap:18px;padding:28px 0}
+.conifold-app .math-mark {font-size:54px}
+.conifold-app .closing p {font-size:17px}
+.conifold-app .closing p span {font-size:12px}
+.conifold-app footer {display:block;font-size:8px}
+.conifold-app footer>span {display:block;margin-bottom:6px}
+.conifold-app .glossary-item {display:block}
+.conifold-app .glossary-item b {display:block;margin-bottom:7px}
+.conifold-app dialog {padding:25px}
+.conifold-app .dialog-header h2 {font-size:26px}
+}
+@media(prefers-reduced-motion:reduce) {
+.conifold-app * {animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+.conifold-app .diagram-card {overflow:hidden}
+.conifold-app .diagram-scroll {overflow-x:auto}
+.conifold-app .animation-strip {border-top:1px solid var(--line);padding:17px 21px 19px;background:var(--bg-panel)}
+.conifold-app .animation-heading {display:flex;align-items:center;gap:8px}
+.conifold-app .animation-heading .eyebrow {margin-right:auto;font-size:8px}
+.conifold-app .animation-heading .button {font-size:9px;padding:8px 11px}
+.conifold-app .animation-strip>input {width:100%;display:block;margin:13px 0 12px;accent-color:var(--blue);cursor:pointer}
+.conifold-app .animation-steps {display:flex;justify-content:space-between;gap:10px;margin-top:17px}
+.conifold-app .animation-steps button {border:0;background:none;padding:0;color:var(--muted);font-size:9px}
+.conifold-app .animation-steps button.selected {color:var(--blue)}
+.conifold-app .animation-steps button:first-child.selected {color:var(--lime)}
+.conifold-app .animation-readout strong {font-family:var(--serif);font-size:19px;font-weight:400;color:var(--ink)}
+.conifold-app .animation-readout p {font-size:10px;color:var(--muted);margin:5px 0 0;line-height:1.7;min-height:34px}
+.conifold-app .relation-card .diagram-foot {margin-bottom:17px}
+.conifold-app .relation-card .animation-strip {margin-top:0}
+@media(max-width:540px) {
+.conifold-app .animation-strip {padding:16px 14px}
+.conifold-app .animation-heading {flex-wrap:wrap}
+.conifold-app .animation-heading .eyebrow {width:100%;margin-bottom:5px}
+.conifold-app .animation-steps {gap:8px}
+.conifold-app .animation-steps button {font-size:8px}
+.conifold-app .animation-readout strong {font-size:19px}
+.conifold-app .animation-readout p {font-size:10px}
+}
+
+.conifold-app .header { max-width: 1550px; margin: auto; border-bottom: 0; }
+.conifold-app main { padding-top: 24px; }
+.conifold-app .intro h1 { max-width: 52rem; text-wrap: balance; }
+.conifold-app .mode-button.selected { border-color: var(--accent); }
+.conifold-app .mode-button:hover { border-color: var(--accent-lit); }
+.conifold-app .geometry-badge { border-color: var(--rule); }
+.conifold-app .secondary { color: var(--ink-soft); }
+.conifold-app .tooltip { background: var(--ink); color: var(--bg); }
+.conifold-app .svg-action:hover { filter: none; opacity: .8; }
+@media (max-width: 540px) {
+  .conifold-app .viewport-label { right: 18px; }
+  .conifold-app .drag-hint { bottom: 36px; max-width: calc(100% - 36px); }
+}

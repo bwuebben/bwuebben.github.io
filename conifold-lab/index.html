@@ -1,10 +1,56 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="An interactive conifold laboratory: collapse a vanishing sphere, resolve a node, track topology, and explore tropical relation lattices from Bernd Wuebben’s manuscript."><meta name="theme-color" content="#10161d"><title>Conifold Lab — Geometry at the threshold</title><link rel="stylesheet" href="styles.css"><script defer src="model.js"></script><script defer src="app.js"></script></head>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="An interactive conifold laboratory: collapse a vanishing sphere, resolve a node, track topology, and explore tropical relation lattices from Bernd Wuebben’s manuscript."><title>Calabi–Yau Geometry at the Threshold — Bernd Johannes Wuebben</title>
+<meta name="author" content="Bernd Johannes Wuebben">
+<link rel="canonical" href="https://bwuebben.github.io/conifold-lab/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Calabi–Yau Geometry at the Threshold">
+<meta property="og:description" content="Explore conifold transitions through local surgery, compact topology, and relations among vanishing spheres.">
+<meta property="og:url" content="https://bwuebben.github.io/conifold-lab/">
+<meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+<meta property="og:image:alt" content="Bernd Johannes Wuebben">
+<meta name="twitter:card" content="summary_large_image">
+<!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=25c543827f0c">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
+<link rel="stylesheet" href="styles.css?v=b7874ca34a97"><script defer src="model.js?v=bcdb0bdcf786"></script><script defer src="app.js?v=692f6b60f869"></script></head>
 <body>
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../papers/">Papers</a></li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../pillowcase-explorer/">Pillow Case</a></li>
+            <li><a href="./" aria-current="page">Conifold Transitions</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../poem.html">Entropy</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<div class="conifold-app">
   <header class="header"><a id="home" href="#" class="brand"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 7L35 33M35 7L5 33M5 7Q20 15 35 7M5 33Q20 25 35 33" stroke="currentColor" fill="none" stroke-width="1.3"/><circle cx="20" cy="20" r="3" fill="currentColor"/></svg><span>CONIFOLD <b>LAB</b></span></a><div class="header-right"><span class="site-tag"><i></i> Interactive geometry</span><button id="glossary-open" class="text-button">Glossary</button><button id="sources-open" class="text-button">Model & sources ↗</button></div></header>
-  <main>
-    <section class="intro"><div><div class="eyebrow">A CALABI–YAU TRANSITION LABORATORY</div><h1>Geometry at the threshold.</h1><p>A sphere disappears. Another takes its place. The global story lives in the relations.</p></div><div class="dimension"><b>3</b><span>COMPLEX DIMENSIONS<br><strong>6 real dimensions</strong></span></div></section>
+  <main id="main" tabindex="-1">
+    <section class="intro"><div><div class="eyebrow">A CALABI–YAU TRANSITION LABORATORY</div><h1>Calabi–Yau Geometry at the Threshold.</h1><p>A sphere disappears. Another takes its place. The global story lives in the relations.</p></div><div class="dimension"><b>3</b><span>COMPLEX DIMENSIONS<br><strong>6 real dimensions</strong></span></div></section>
     <nav class="mode-nav" aria-label="Explorer modes"><button data-mode="local" class="mode-button selected" aria-pressed="true"><span>01</span><div><b>The local surgery</b><small>Smoothing · node · resolution</small></div><span class="mode-arrow">↗</span></button><button data-mode="topology" class="mode-button" aria-pressed="false"><span>02</span><div><b>The topology ledger</b><small>How a compact threefold changes</small></div><span class="mode-arrow">↗</span></button><button data-mode="relations" class="mode-button" aria-pressed="false"><span>03</span><div><b>The relation lattice</b><small>Tropical cycles · mirror spheres</small></div><span class="mode-arrow">↗</span></button></nav>
     <section id="local-panel" class="panel">
       <div class="local-layout"><div class="viewport-card"><div class="viewport-top"><span id="geometry-badge" class="geometry-badge">SMOOTHING</span><span id="view-label">S³ via a stereographic Hopf-fibre picture</span><button class="text-button" id="camera-reset">Reset view ↺</button></div><div class="canvas-wrap"><canvas id="geometry-canvas" aria-label="Rotatable geometric visualization of vanishing and exceptional cycles. Use the camera sliders as a keyboard alternative to dragging."></canvas><div class="viewport-label"><span class="eyebrow">THE SURGERY CORE</span><h2 id="cycle-title">A three-sphere waiting to vanish.</h2><p id="cycle-subtitle">Each linked circle is a Hopf fibre on S³, projected into R³.</p></div><div class="drag-hint">Drag to orbit <span>·</span> use sliders below for keyboard control</div></div><div class="viewport-bottom"><span class="view-key"><i class="blue"></i> smoothing / S³ <i class="lime"></i> resolution / S²</span><label class="rotation-toggle"><input type="checkbox" id="auto-rotate"> Auto orbit</label></div></div>
@@ -25,9 +71,10 @@
     </section>
     <section class="closing"><span class="math-mark">∂</span><div><div class="eyebrow">THE IDEA BEHIND THE PICTURE</div><p>Local models tell you what can change.<br><span>Relations tell you whether the global geometry allows it.</span></p></div><button class="text-button" id="about-open">Read the mathematical framing ↗</button></section>
   </main>
-  <footer><span>Conifold Lab <span class="muted">/</span> A visual mathematical laboratory</span><a class="text-button" href="conifold-lab.zip" download>Download portable files ↓</a><span>Exact equations · computed lattice data · clearly labelled projections</span></footer>
+  <footer><span>Conifold Lab <span class="muted">/</span> A visual mathematical laboratory</span><a class="text-button" href="../papers/#calabi-yau-smoothability-paper6">Related paper</a><span>Exact equations · computed lattice data · clearly labelled projections</span></footer>
   <div id="tooltip" class="tooltip" role="tooltip" hidden></div>
   <dialog id="glossary-dialog" aria-labelledby="glossary-title"><div class="dialog-header"><div><div class="eyebrow">A FEW GEOMETRIC WORDS</div><h2 id="glossary-title">Objects before jargon.</h2></div><button data-close="glossary-dialog" class="close" aria-label="Close glossary">×</button></div><div id="glossary-list"></div><button data-close="glossary-dialog" class="button secondary">Back to the laboratory</button></dialog>
   <dialog id="sources-dialog" aria-labelledby="sources-title"><div class="dialog-header"><div><div class="eyebrow">MATHEMATICAL FRAMING</div><h2 id="sources-title">A precise model, with visible limits.</h2></div><button data-close="sources-dialog" class="close" aria-label="Close sources">×</button></div><div class="source-body"><p>A Calabi–Yau threefold has complex dimension three and real dimension six. The canvas shows core cycles, projections, and an explicitly specified real slice. It does not render an entire compact threefold or compute a Ricci-flat metric.</p><h3>The local model</h3><p class="equation small">Σ zⱼ² = μ, &nbsp; z = x + iy</p><p>For real μ &gt; 0, x·y = 0 and |x|² − |y|² = μ. Set u = x/|x|: y is tangent to the unit S³, giving the cotangent-bundle topology. The zero-section y = 0 is the vanishing sphere of radius √μ in the quadric coordinates.</p><p>The slice sets z₁ = u, z₂ = v, z₃ = iw, z₄ = 0, with u,v,w real; it satisfies u² + v² − w² = μ. At μ = 0 its drawing is a real two-dimensional double cone, not the six-dimensional conifold.</p><p>The small resolution is modelled by det A = xy − zw = 0, A = [[x,z],[w,y]], together with a kernel line or cokernel line in P¹. At A = 0 the fibre is all of P¹. The area A in the control is a separate Kähler parameter; it is not a continuation of the complex smoothing μ.</p><h3>The animations</h3><p>The topology movie depicts local exceptional curves collapsing to nodes, followed by vanishing spheres appearing on the smoothing. Endpoint Hodge numbers remain integers and are not interpolated. The tropical movie traces the belt, sketches the chain lifts and highlights coefficient support. Moving dots and changing diagram depth are visual guides, not a computed metric or a continuous deformation between mirror spaces.</p><h3>The projections</h3><p>The S³ view samples actual Hopf fibres on the unit sphere in C² and stereographically projects them into R³, scaling the picture by √μ. Only a finite collection of fibres is drawn. The S² view displays the exceptional core with latitude/longitude curves. Camera perspective is a visual aid.</p><h3>Example data and attribution</h3><p>Bernd Johannes Wuebben, <i>Tropical 2-cycles and relations among vanishing spheres in Batyrev mirror families</i>, manuscript dated September 25, 2026; §11.1, §11.2 and Table 1 of the manuscript. X₉’s circuit matrix and all three example bases are transcribed from those sections. Diagram layouts are schematic and do not reproduce the complete affine base or prove the lifting theorem. Relative tropical cycles supply the mirror 4-chain. The explicit tropical 3-chain lift on the resolution uses the stricter CBM cycle conditions; membership in K always gives an abstract homology relation there. The manuscript’s stated results are illustrated under its hypotheses, rather than independently verified here.</p><p>X₉ uses direct coefficients to test the circuit equation. X₁₉ and X₂₀ use combinations of the listed basis vectors, so those selected vectors always lie in K. A zero in one selected vector is different from a coordinate forced to be zero throughout K.</p><h3>Primary references</h3><ol><li><a href="https://arxiv.org/abs/math/0209319" target="_blank" rel="noopener">Smith–Thomas–Yau · Symplectic conifold transitions ↗</a></li><li><a href="https://arxiv.org/abs/math/0412514" target="_blank" rel="noopener">Rossi · Geometric transitions ↗</a></li><li><a href="https://arxiv.org/abs/1301.2930" target="_blank" rel="noopener">Castaño-Bernard–Matessi · Conifold transitions via affine geometry and mirror symmetry ↗</a></li><li><a href="https://arxiv.org/abs/1502.03277" target="_blank" rel="noopener">Lee–Lin–Wang · Towards A + B theory in conifold transitions ↗</a></li></ol></div><button data-close="sources-dialog" class="button secondary">Back to the laboratory</button></dialog>
   <noscript><p class="noscript">Enable JavaScript to use the diagrams, transition controls, and relation calculations.</p></noscript>
+</div>
 </body></html>

@@ -106,6 +106,16 @@ editing these assets too: it versions their URLs by content hash.
 `standalone.html` preserves the original portable export, without the site's
 navigation or theme. The integrated page also needs the parent `assets/` folder.
 
+## The Conifold Explorer
+
+`conifold-lab/index.html`, titled *Calabi–Yau Geometry at the Threshold*, is linked
+under Explorers → Conifold Transitions. It uses the shared navigation and site
+theme, including fonts, backgrounds, text, and burgundy accents in light and dark
+mode. Its canvas and SVG drawings read their colors from the same theme; a muted
+ochre distinguishes the exceptional curves. Styles are scoped to `.conifold-app`.
+Preview it at <http://127.0.0.1:8000/conifold-lab/> and run
+`python3 tools/update-site.py` after editing its assets to refresh their versions.
+
 ## The papers page
 
 `papers/index.html` holds the Papers section formerly on the landing page.
