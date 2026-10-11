@@ -32,10 +32,10 @@ const chapters=[
 ];
 const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const state={chapter:0,motion:!reduced,playing:false,phase:0,slice:.18,yaw:-.24,tilt:.85,genus:2,boundary:false,handle:2,basis:0,broken:false,vector:[1,1],route:0,collapse:.43,bridge:'collapse',neck:false,glue:.2,field:'F2',sign:1};
-const svg=(body,label)=>`<svg viewBox="0 0 680 360" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#eaf2f8"/><stop offset="1" stop-color="#c5ddec"/></linearGradient><linearGradient id="copper" x1="0" x2="1"><stop stop-color="#f1dbc9"/><stop offset="1" stop-color="#faf5ef"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#326e97" stroke-width="1"/></marker><marker id="arrowO" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="#a65c32" stroke-width="1"/></marker></defs>${body}</svg>`;
+const svg=(body,label)=>`<svg viewBox="0 0 680 360" role="img" aria-label="${label}" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="wash" x1="0" x2="1" y1="0" y2="1"><stop stop-color="var(--diagram-panel, #eaf2f8)"/><stop offset="1" stop-color="var(--diagram-wash, #c5ddec)"/></linearGradient><linearGradient id="copper" x1="0" x2="1"><stop stop-color="var(--diagram-secondary-wash, #f1dbc9)"/><stop offset="1" stop-color="var(--diagram-paper, #faf5ef)"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="var(--diagram-accent, #326e97)" stroke-width="1"/></marker><marker id="arrowO" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="var(--diagram-secondary, #a65c32)" stroke-width="1"/></marker></defs>${body}</svg>`;
 const text=(x,y,s,c='label',extra='')=>`<text x="${x}" y="${y}" class="${c}" ${extra}>${s}</text>`;
 const line=(x1,y1,x2,y2,c='line',extra='')=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${c}" ${extra}/>`;
-const circle=(x,y,r=4,fill='#30698e')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}"/>`;
+const circle=(x,y,r=4,fill='var(--diagram-accent, #30698e)')=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${fill}"/>`;
 const mat=A=>`<span class="math-matrix" aria-label="matrix ${A.flat().join(', ')}">${A.flat().map(x=>`<span>${x}</span>`).join('')}</span>`;
 const vector=v=>`(${v.join(', ')})`;
 function seg(name,values,current){return `<div class="segment" aria-label="${name}">${values.map(([v,label])=>`<button data-${name}="${v}" aria-pressed="${v===current}">${label}</button>`).join('')}</div>`;}
@@ -68,6 +68,26 @@ function surfaceScene(){
  drawSurface();
 }
 const slices=Array.from({length:49},(_,i)=>M.contour(i/48,50));
+// Canvas colors follow the same CSS tokens as the SVG diagrams.
+function readSurfaceTheme(){
+ const style=getComputedStyle(document.querySelector('.cobordism-app')||document.documentElement);
+ const color=(name,fallback)=>style.getPropertyValue(name).trim()||fallback;
+ return {
+  grid:color('--diagram-grid','#d6e3ec'),
+  accent:color('--diagram-accent','#407799'),
+  wire:color('--diagram-wire','#80acc9'),
+  sliceFill:color('--diagram-slice-fill','#b0784420'),
+  sliceEdge:color('--diagram-slice-edge','#ac774b66'),
+  secondary:color('--diagram-secondary','#a35e35'),
+  muted:color('--diagram-muted','#5d788b'),
+  font:color('--sans','"DM Sans", sans-serif')
+ };
+}
+let surfaceTheme=readSurfaceTheme();
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{
+ surfaceTheme=readSurfaceTheme();
+ if(state.chapter===0)drawSurface();
+});
 function drawSurface(){
  const canvas=$('cobordism-canvas');if(!canvas)return;
  const w=canvas.clientWidth||680,h=canvas.clientHeight||360,dpr=Math.min(window.devicePixelRatio||1,2);canvas.width=w*dpr;canvas.height=h*dpr;
@@ -76,14 +96,14 @@ function drawSurface(){
  const project=(t,u,v)=>{let x=(t-.5)*6.4,y=u,z=v;const X=x*Math.cos(yaw)+y*Math.sin(yaw),Y=-x*Math.sin(yaw)+y*Math.cos(yaw),Z=z*Math.cos(tilt)-Y*Math.sin(tilt);return [w*.5+X*scale,h*.5-Z*scale+Y*scale*.12];};
  const strokeSegments=(segments,t,color,width)=>{ctx.strokeStyle=color;ctx.lineWidth=width;ctx.beginPath();for(const s of segments){const p=project(t,...s[0]),q=project(t,...s[1]);ctx.moveTo(...p);ctx.lineTo(...q);}ctx.stroke();};
  // A faint floor keeps the drawing spatial without inventing a metric.
- ctx.strokeStyle='#d6e3ec';ctx.lineWidth=.6;for(let t=0;t<=1;t+=.1){let p=project(t,-1.9,-1.75),q=project(t,1.9,-1.75);ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.stroke();}
- for(let j=0;j<49;j++)strokeSegments(slices[j],j/48,j===0||j===48?'#407799':'#80acc9',j===0||j===48?1.9:.7);
- const corners=[[-1.85,-1.65],[1.85,-1.65],[1.85,1.65],[-1.85,1.65]].map(q=>project(state.slice,...q));ctx.beginPath();ctx.moveTo(...corners[0]);corners.slice(1).forEach(q=>ctx.lineTo(...q));ctx.closePath();ctx.fillStyle='#b0784420';ctx.fill();ctx.strokeStyle='#ac774b66';ctx.lineWidth=.7;ctx.stroke();
- strokeSegments(M.contour(state.slice,65),state.slice,'#a35e35',2.4);
+ ctx.strokeStyle=surfaceTheme.grid;ctx.lineWidth=.6;for(let t=0;t<=1;t+=.1){let p=project(t,-1.9,-1.75),q=project(t,1.9,-1.75);ctx.beginPath();ctx.moveTo(...p);ctx.lineTo(...q);ctx.stroke();}
+ for(let j=0;j<49;j++)strokeSegments(slices[j],j/48,j===0||j===48?surfaceTheme.accent:surfaceTheme.wire,j===0||j===48?1.9:.7);
+ const corners=[[-1.85,-1.65],[1.85,-1.65],[1.85,1.65],[-1.85,1.65]].map(q=>project(state.slice,...q));ctx.beginPath();ctx.moveTo(...corners[0]);corners.slice(1).forEach(q=>ctx.lineTo(...q));ctx.closePath();ctx.fillStyle=surfaceTheme.sliceFill;ctx.fill();ctx.strokeStyle=surfaceTheme.sliceEdge;ctx.lineWidth=.7;ctx.stroke();
+ strokeSegments(M.contour(state.slice,65),state.slice,surfaceTheme.secondary,2.4);
  const b=1.35-.62*Math.sin(PI*state.slice)**2,n=b>.9?1:2;
- ctx.font='10px "DM Sans", sans-serif';ctx.textAlign='center';ctx.fillStyle='#5d788b';
- let p=project(0,0,-1.6),q=project(1,0,-1.6);ctx.fillText('INCOMING CIRCLE',p[0],h-14);ctx.fillText('OUTGOING CIRCLE',q[0],h-14);
- ctx.fillStyle='#a05d34';ctx.font='12px "DM Sans", sans-serif';ctx.fillText(`${n===1?'One circle':'Two circles'} at this slice`,w*.5,29);
+ ctx.font='10px '+surfaceTheme.font;ctx.textAlign='center';ctx.fillStyle=surfaceTheme.muted;
+ let p=project(0,0,-1.6),q=project(1,0,-1.6);ctx.fillText('INCOMING CIRCLE',p[0],h-34);ctx.fillText('OUTGOING CIRCLE',q[0],h-34);
+ ctx.fillStyle=surfaceTheme.secondary;ctx.font='12px '+surfaceTheme.font;ctx.fillText(`${n===1?'One circle':'Two circles'} at this slice`,w*.5,29);
  $('slice-value').textContent=state.slice.toFixed(2);
  $('insight').innerHTML=n===1?'<strong>One connected slice.</strong> The two ends are circles. Between them, the surface carries a handle.':'<strong>Two intermediate circles.</strong> Passing a saddle changes the slice topology. A second saddle joins the two circles again.';
 }
@@ -91,17 +111,17 @@ function setupDrag(){const c=$('cobordism-canvas');let down=null;c.addEventListe
 function languageScene(){
  const active=state.boundary,shift=active?1:0;
  let s=text(145,35,'THREE-MANIFOLD Y','tiny','text-anchor="middle"')+text(503,35,'BOUNDARY MODULI ℳh','tiny','text-anchor="middle"');
- s+=`<ellipse cx="145" cy="162" rx="101" ry="99" fill="url(#wash)" stroke="#8aadc4"/><path d="M45 162 C95 126 193 126 246 162 C193 198 95 198 45 162" fill="#eaf3f9" stroke="#406f8f" stroke-width="1.7"/>`;
+ s+=`<ellipse cx="145" cy="162" rx="101" ry="99" fill="url(#wash)" stroke="var(--diagram-wire, #8aadc4)"/><path d="M45 162 C95 126 193 126 246 162 C193 198 95 198 45 162" fill="var(--diagram-panel, #eaf3f9)" stroke="var(--diagram-accent, #406f8f)" stroke-width="1.7"/>`;
  for(let i=0;i<8;i++)s+=`<path d="M${62+i*11} ${108+i*3} Q145 ${52+i*9} ${228-i*11} ${108+i*3}" class="thin"/>`;
  s+=text(145,113,'H₀','large','text-anchor="middle"')+text(145,220,'H₁','large','text-anchor="middle"')+text(145,165,'Σ','large','text-anchor="middle"')+text(145,288,'Cut along a surface','label','text-anchor="middle"');
  s+=`<path d="M270 165 H365" class="${active?'flow':'guide'}" marker-end="url(#arrow)"/>`+text(320,142,'restrict','tiny','text-anchor="middle"');
- s+=`<path d="M390 88 Q515 57 630 108 L609 249 Q503 282 383 237Z" fill="url(#wash)" stroke="#b3cbdc"/>`;
+ s+=`<path d="M390 88 Q515 57 630 108 L609 249 Q503 282 383 237Z" fill="url(#wash)" stroke="var(--diagram-wire, #b3cbdc)"/>`;
  for(let j=0;j<6;j++)s+=`<path d="M${391+j*41} ${89+j*3} L${383+j*43} ${237+j*1.4}" class="thin"/>`;
  for(let j=0;j<5;j++)s+=`<path d="M388 ${102+j*30} Q510 ${80+j*33} 620 ${119+j*28}" class="thin"/>`;
- s+=`<path d="M404 212 C423 122 486 117 601 198" stroke="#a65c32" stroke-width="3" fill="none"/><path d="M403 133 C468 257 526 251 601 110" stroke="#30698e" stroke-width="3" stroke-dasharray="8 4" fill="none"/>`;
+ s+=`<path d="M404 212 C423 122 486 117 601 198" stroke="var(--diagram-secondary, #a65c32)" stroke-width="3" fill="none"/><path d="M403 133 C468 257 526 251 601 110" stroke="var(--diagram-accent, #30698e)" stroke-width="3" stroke-dasharray="8 4" fill="none"/>`;
  s+=text(591,218,'L(C₀)','orange')+text(600,94,'L(C₁)','blue')+text(504,288,'Extend into both pieces','label','text-anchor="middle"');
- const pts=[[427,169],[565,177]];pts.forEach(([x,y],i)=>{s+=circle(x,y,active?7:4,'#172b39')+`<circle cx="${x}" cy="${y}" r="${active?14:9}" fill="none" stroke="#172b39" stroke-opacity=".2"/>`+text(x+10,y-14,`x${i+1}`,'serif');});
- if(active){const t=state.phase%1;s+=circle(270+t*95,165,4,'#a65c32');s+=text(500,322,'Intersections → generators; strips → differential','tiny','text-anchor="middle"');}
+ const pts=[[427,169],[565,177]];pts.forEach(([x,y],i)=>{s+=circle(x,y,active?7:4,'var(--diagram-ink, #172b39)')+`<circle cx="${x}" cy="${y}" r="${active?14:9}" fill="none" stroke="var(--diagram-ink, #172b39)" stroke-opacity=".2"/>`+text(x+10,y-14,`x${i+1}`,'serif');});
+ if(active){const t=state.phase%1;s+=circle(270+t*95,165,4,'var(--diagram-secondary, #a65c32)');s+=text(500,322,'Intersections → generators; strips → differential','tiny','text-anchor="middle"');}
  else s+=text(340,326,'Flat boundary data that extend over Ci form L(Ci).','tiny','text-anchor="middle"');
  $('scene').innerHTML=svg(s,'A Heegaard splitting and a schematic target with two intersecting Lagrangians');
  $('insight').innerHTML=active?`<strong>Shared boundary data become intersections.</strong> At h = ${state.genus}, these are ${3*state.genus-3}-dimensional Lagrangians in a ${6*state.genus-6}-dimensional target. The curves are a schematic.`:chapters[1].insight;
@@ -111,26 +131,26 @@ function handlesScene(){
  const rules={1:['S⁰ × D³ → D¹ × S²','A compression cup creates the handle contribution.','U꜀ : HF(Y) → HF(Y # (S¹ × S²))','Two auxiliary top classes are inputs.'],2:['S¹ × D² → D² × S¹','A framed-link surgery is encoded by a triangle map.','S₂(x) = μ(x, θ)','The auxiliary class θ has maximal relative grading.'],3:['S² × D¹ → D³ × S⁰','The compression cap is the transpose of the cup.','V꜀ : HF(Y # (S¹ × S²)) → HF(Y)','The reflected construction supplies the three-handle map.']};
  $('handle-rule').textContent=`Boundary replacement: ${rules[k][0]}`;$('insight').textContent=rules[k][1];$('formula').innerHTML=rules[k][2]+`<small>${rules[k][3]}</small>`;
  let s=text(340,22,k===2?'A TRIANGLE WITH ONE FIXED AUXILIARY INPUT':'A FOLDED TRIANGLE IN A PRODUCT TARGET','tiny','text-anchor="middle"');
- s+=`<path d="M155 271 Q160 108 340 65 Q515 115 528 271 Q343 292 155 271Z" fill="url(#wash)" stroke="#abc7da"/>`;
- s+=`<path d="M155 271 Q160 108 340 65" fill="none" stroke="#30698e" stroke-width="3" stroke-dasharray="8 4"/><path d="M340 65 Q515 115 528 271" fill="none" stroke="#a65c32" stroke-width="3"/><path d="M528 271 Q343 292 155 271" fill="none" stroke="#526e81" stroke-width="3"/>`;
+ s+=`<path d="M155 271 Q160 108 340 65 Q515 115 528 271 Q343 292 155 271Z" fill="url(#wash)" stroke="var(--diagram-wire, #abc7da)"/>`;
+ s+=`<path d="M155 271 Q160 108 340 65" fill="none" stroke="var(--diagram-accent, #30698e)" stroke-width="3" stroke-dasharray="8 4"/><path d="M340 65 Q515 115 528 271" fill="none" stroke="var(--diagram-secondary, #a65c32)" stroke-width="3"/><path d="M528 271 Q343 292 155 271" fill="none" stroke="var(--diagram-muted, #526e81)" stroke-width="3"/>`;
  for(let i=1;i<7;i++){let f=i/7;s+=`<path d="M${155+185*f} ${271-206*f} Q340 ${312-160*f} ${528-188*f} ${271-206*f}" class="thin"/>`;}
- s+=circle(155,271,6)+circle(340,65,6,'#a65c32')+circle(528,271,6,'#172b39');
+ s+=circle(155,271,6)+circle(340,65,6,'var(--diagram-secondary, #a65c32)')+circle(528,271,6,'var(--diagram-ink, #172b39)');
  s+=text(127,289,k===2?'x':'θ₀','large','text-anchor="end"')+text(340,52,k===2?'θ':'θ₁','large','text-anchor="middle"')+text(553,288,k===3?'x':'y','large');
  s+=text(165,162,k===2?'L₀':'A₀','label','text-anchor="end"')+text(511,161,k===2?'L₁':'L꜀','orange')+text(340,310,k===2?'L₂':'A₁','label','text-anchor="middle"');
- const f=state.phase%1,px=155+373*f,py=271-104*Math.sin(PI*f);s+=circle(px,py,5,'#a65c32')+`<path d="M155 271 Q340 64 528 271" class="guide"/>`;
+ const f=state.phase%1,px=155+373*f,py=271-104*Math.sin(PI*f);s+=circle(px,py,5,'var(--diagram-secondary, #a65c32)')+`<path d="M155 271 Q340 64 528 271" class="guide"/>`;
  s+=text(340,220,k===2?'μ(x, θ)':'compression '+(k===1?'cup':'cap'),'large','text-anchor="middle"');
  s+=text(340,345,k===2?'Count isolated holomorphic triangles modulo two.':'The compression correspondence is one boundary condition.','tiny','text-anchor="middle"');
  $('scene').innerHTML=svg(s,'Schematic holomorphic triangle domain with labelled inputs and output');
 }
 function squareScene(){
  const q=M.square(state.basis,state.broken,state.vector),same=M.equal(q.top,q.bottom);
- const node=(x,y,label,sub)=>`<rect x="${x-82}" y="${y-36}" width="164" height="72" rx="3" fill="#f9fcfe" stroke="#9ab9ce"/>`+text(x,y-2,label,'large','text-anchor="middle"')+text(x,y+21,sub,'tiny','text-anchor="middle"');
+ const node=(x,y,label,sub)=>`<rect x="${x-82}" y="${y-36}" width="164" height="72" rx="3" fill="var(--diagram-paper, #f9fcfe)" stroke="var(--diagram-wire, #9ab9ce)"/>`+text(x,y-2,label,'large','text-anchor="middle"')+text(x,y+21,sub,'tiny','text-anchor="middle"');
  let s=node(161,89,'I♯(Y₀)','GAUGE · INPUT')+node(519,89,'I♯(Y₁)','GAUGE · OUTPUT')+node(161,260,'HF♯(Y₀)','SYMPLECTIC · INPUT')+node(519,260,'HF♯(Y₁)','SYMPLECTIC · OUTPUT');
  s+=line(255,89,425,89,'flow','marker-end="url(#arrow)"')+line(161,136,161,211,'flow-orange','marker-end="url(#arrowO)"')+line(519,136,519,211,'flow','marker-end="url(#arrow)"')+line(255,260,425,260,'flow-orange','marker-end="url(#arrowO)"');
  s+=text(340,65,'F = I♯(W)','serif','text-anchor="middle"')+text(340,293,'S(W)','serif','text-anchor="middle"')+text(127,184,'N₀','large','text-anchor="middle"')+text(550,184,'N₁','large','text-anchor="middle"');
  s+=text(340,161,q.commutes?'COMMUTES':'MAPS DIFFER','tiny','text-anchor="middle"')+text(340,194,q.commutes?'Δ = 0':'Δ ≠ 0','large','text-anchor="middle"');
  s+=text(70,37,`v = ${vector(state.vector)}`,'label')+text(340,334,`Upper route: ${vector(q.top)}   ${same?'=':'≠'}   Lower route: ${vector(q.bottom)}`,'label','text-anchor="middle"');
- if(state.route>0){let f=Math.min(state.route,1),a,b;if(f<.5){a=[255+170*f*2,89];b=[161,136+75*f*2];}else{a=[519,136+75*(f-.5)*2];b=[255+170*(f-.5)*2,260];}s+=circle(...a,7,'#30698e')+circle(...b,7,'#a65c32');}
+ if(state.route>0){let f=Math.min(state.route,1),a,b;if(f<.5){a=[255+170*f*2,89];b=[161,136+75*f*2];}else{a=[519,136+75*(f-.5)*2];b=[255+170*(f-.5)*2,260];}s+=circle(...a,7,'var(--diagram-accent, #30698e)')+circle(...b,7,'var(--diagram-secondary, #a65c32)');}
  $('scene').innerHTML=svg(s,'Commuting comparison square with computed vector outputs');
  $('insight').innerHTML=q.commutes?'<strong>The square commutes for every vector.</strong> Changing the comparison basis changes S, while the compatibility is preserved.':same?'<strong>This vector misses the defect.</strong> Its two outputs agree, but Δ ≠ 0: the maps do not commute. Try another input.':'<strong>The two routes now disagree.</strong> The altered map fails the comparison. A matching source and target alone are not enough.';
  $('formula').innerHTML=`<div class="matrix-strip"><span><span class="matrix-label">S = </span>${mat(q.S)}</span><span><span class="matrix-label">Δ = </span>${mat(q.residual)}</span></div><small>Δ = N₁F − SN₀ &nbsp; · &nbsp; all entries modulo two.</small>`;
@@ -142,17 +162,17 @@ function collapseScene(){
  let s=text(340,31,state.neck?'SHRINKING GEOMETRY BECOMES A LONG NECK':'THE STRIP REMAINS WHILE THE COMPRESSION BODY SHRINKS','tiny','text-anchor="middle"');
  if(!state.neck){
    const depth=lim?0:100*Math.pow(c.epsilon,.27),seam=173;
-   s+=`<path d="M135 72 L532 72 L550 ${seam} L117 ${seam}Z" fill="url(#wash)" stroke="#8daec5"/>`;
+   s+=`<path d="M135 72 L532 72 L550 ${seam} L117 ${seam}Z" fill="url(#wash)" stroke="var(--diagram-wire, #8daec5)"/>`;
    for(let j=0;j<7;j++)s+=`<path d="M${145+j*59} 72 Q${120+j*66} 120 ${125+j*67} ${seam}" class="thin"/>`;
    s+=text(337,108,'holomorphic strip','label','text-anchor="middle"')+text(337,134,'∂̄Ju = 0','large','text-anchor="middle"');
-   if(!lim){s+=`<path d="M117 ${seam} L550 ${seam} L567 ${seam+depth} Q339 ${seam+depth+25} 99 ${seam+depth}Z" fill="url(#copper)" stroke="#c09575"/>`;for(let j=0;j<9;j++)s+=`<path d="M${123+j*53} ${seam} Q${120+j*55} ${seam+depth*.65} ${106+j*56} ${seam+depth+5}" fill="none" stroke="#bf9271" stroke-width=".6"/>`;s+=text(337,seam+depth*.52+6,'I × C','large','text-anchor="middle"');}
-   s+=line(117,seam,550,seam,'','stroke="#a65c32" stroke-width="3"')+text(337,lim?seam+30:seam+depth+49,lim?'L(C) boundary condition':'compression rectangle','label','text-anchor="middle"');
-   [117,550].forEach(x=>{s+=`<circle cx="${x}" cy="${seam}" r="${8+9*t}" fill="#edf3f7" stroke="#356e94" stroke-width="2"/>`+`<path d="M${x} ${seam+17} V${seam+53}" class="${t>.7?'flow':'guide'}"/>`+text(x,seam+70,'mixed end','tiny','text-anchor="middle"');});
+   if(!lim){s+=`<path d="M117 ${seam} L550 ${seam} L567 ${seam+depth} Q339 ${seam+depth+25} 99 ${seam+depth}Z" fill="url(#copper)" stroke="var(--diagram-secondary, #c09575)"/>`;for(let j=0;j<9;j++)s+=`<path d="M${123+j*53} ${seam} Q${120+j*55} ${seam+depth*.65} ${106+j*56} ${seam+depth+5}" fill="none" stroke="var(--diagram-secondary, #bf9271)" stroke-width=".6"/>`;s+=text(337,seam+depth*.52+6,'I × C','large','text-anchor="middle"');}
+   s+=line(117,seam,550,seam,'','stroke="var(--diagram-secondary, #a65c32)" stroke-width="3"')+text(337,lim?seam+30:seam+depth+49,lim?'L(C) boundary condition':'compression rectangle','label','text-anchor="middle"');
+   [117,550].forEach(x=>{s+=`<circle cx="${x}" cy="${seam}" r="${8+9*t}" fill="var(--diagram-panel, #edf3f7)" stroke="var(--diagram-accent, #356e94)" stroke-width="2"/>`+`<path d="M${x} ${seam+17} V${seam+53}" class="${t>.7?'flow':'guide'}"/>`+text(x,seam+70,'mixed end','tiny','text-anchor="middle"');});
  }else{
    const len=lim?188:45+143*t;
-   s+=`<rect x="127" y="75" width="426" height="65" rx="2" fill="url(#wash)" stroke="#8dafc6"/>`+text(340,112,'holomorphic strip','large','text-anchor="middle"');
-   [145,535].forEach(x=>{s+=`<rect x="${x-20}" y="140" width="40" height="${len}" fill="url(#copper)" stroke="#b17e56"/>`;for(let j=0;j<11;j++)s+=`<ellipse cx="${x}" cy="${148+j*len/11}" rx="20" ry="5" fill="none" stroke="#c4a185" stroke-width=".65"/>`;s+=text(x,lim?346:155+len,'C','serif','text-anchor="middle"');});
-   s+=line(167,141,512,141,'','stroke="#a65c32" stroke-width="3"')+text(340,170,'L(C)','large','text-anchor="middle"')+text(340,238,lim?'ℓ → ∞':`ℓ = ${c.neck.toFixed(2)}`,'large','text-anchor="middle"')+text(340,263,'ℓ = log(1/ε)','label','text-anchor="middle"');
+   s+=`<rect x="127" y="75" width="426" height="65" rx="2" fill="url(#wash)" stroke="var(--diagram-wire, #8dafc6)"/>`+text(340,112,'holomorphic strip','large','text-anchor="middle"');
+   [145,535].forEach(x=>{s+=`<rect x="${x-20}" y="140" width="40" height="${len}" fill="url(#copper)" stroke="var(--diagram-secondary, #b17e56)"/>`;for(let j=0;j<11;j++)s+=`<ellipse cx="${x}" cy="${148+j*len/11}" rx="20" ry="5" fill="none" stroke="var(--diagram-secondary, #c4a185)" stroke-width=".65"/>`;s+=text(x,lim?346:155+len,'C','serif','text-anchor="middle"');});
+   s+=line(167,141,512,141,'','stroke="var(--diagram-secondary, #a65c32)" stroke-width="3"')+text(340,170,'L(C)','large','text-anchor="middle"')+text(340,238,lim?'ℓ → ∞':`ℓ = ${c.neck.toFixed(2)}`,'large','text-anchor="middle"')+text(340,263,'ℓ = log(1/ε)','label','text-anchor="middle"');
  }
  s+=text(340,339,state.neck?'The drawn length is bounded; the limiting neck is infinite.':lim?'The limiting boundary retains the extension condition.':`Metric multiplier ε² = ${c.metric.toFixed(5)}`,'tiny','text-anchor="middle"');
  $('scene').innerHTML=svg(s,'Compression rectangle collapses to a Lagrangian boundary condition with two mixed ends');
@@ -163,11 +183,11 @@ function excisionScene(){
  $('scene-kind').textContent='Torus excision · Theorem C';$('epsilon-value').textContent=`ℓ ${Math.round(state.collapse*100)}%`;
  const t=state.collapse,gap=30+150*t,left=340-gap/2,right=340+gap/2;
  let s=text(340,30,'A TORUS FIBRE OVER A STRETCHING PLANAR DOMAIN','tiny','text-anchor="middle"');
- s+=`<path d="M100 95 Q${left} 90 ${left} 150 L${left} 205 Q${left} 267 100 269" fill="none" stroke="#386e91" stroke-width="2"/><path d="M580 95 Q${right} 90 ${right} 150 L${right} 205 Q${right} 267 580 269" fill="none" stroke="#a65c32" stroke-width="2"/>`;
- s+=`<rect x="${left}" y="149" width="${gap}" height="57" fill="url(#wash)" stroke="#87acc5"/>`;
+ s+=`<path d="M100 95 Q${left} 90 ${left} 150 L${left} 205 Q${left} 267 100 269" fill="none" stroke="var(--diagram-accent, #386e91)" stroke-width="2"/><path d="M580 95 Q${right} 90 ${right} 150 L${right} 205 Q${right} 267 580 269" fill="none" stroke="var(--diagram-secondary, #a65c32)" stroke-width="2"/>`;
+ s+=`<rect x="${left}" y="149" width="${gap}" height="57" fill="url(#wash)" stroke="var(--diagram-wire, #87acc5)"/>`;
  for(let j=0;j<9;j++){const x=left+gap*j/8;s+=`<ellipse cx="${x}" cy="178" rx="6" ry="28" class="thin"/>`;}
  s+=text(340,132,'T² × long strip','label','text-anchor="middle"')+text(340,244,'ℳodd(T²) = {point}','large','text-anchor="middle"');
- s+=text(101,74,'mixed end','tiny','text-anchor="middle"')+text(579,74,'mixed end','tiny','text-anchor="middle"')+circle(100,95,6)+circle(580,95,6,'#a65c32')+circle(100,269,6)+circle(580,269,6,'#a65c32');
+ s+=text(101,74,'mixed end','tiny','text-anchor="middle"')+text(579,74,'mixed end','tiny','text-anchor="middle"')+circle(100,95,6)+circle(580,95,6,'var(--diagram-secondary, #a65c32)')+circle(100,269,6)+circle(580,269,6,'var(--diagram-secondary, #a65c32)');
  s+=text(165,185,'N₋','large','text-anchor="middle"')+text(515,185,'N₊','large','text-anchor="middle"')+text(340,311,'Compatible matching lets the folded comparison factor.','tiny','text-anchor="middle"');
  $('scene').innerHTML=svg(s,'Schematic torus-fibre domain stretching between two mixed pieces');
  $('insight').innerHTML='<strong>The odd torus has only one flat-connection class.</strong> The matching data simplify enough to compare excision with the tensor product of the two mixed maps.';
@@ -177,13 +197,13 @@ function compositionScene(){
  const t=state.glue,gap=58*(1-t),left=340-gap/2,right=340+gap/2;
  let s=text(340,31,'GLUING IN GEOMETRY · COMPOSITION IN ALGEBRA','tiny','text-anchor="middle"');
  const tube=(a,b,color,fill,label)=>`<path d="M${a} 92 Q${(a+b)/2} 140 ${b} 92 L${b} 200 Q${(a+b)/2} 152 ${a} 200Z" fill="${fill}" stroke="${color}"/><ellipse cx="${a}" cy="146" rx="14" ry="54" fill="${fill}" stroke="${color}"/><ellipse cx="${b}" cy="146" rx="14" ry="54" fill="none" stroke="${color}"/>`+text((a+b)/2,150,label,'large','text-anchor="middle"');
- s+=tube(86,left,'#4b7e9e','url(#wash)','W₀₁')+tube(right,594,'#a0714e','url(#copper)','W₁₂');
+ s+=tube(86,left,'var(--diagram-accent, #4b7e9e)','url(#wash)','W₀₁')+tube(right,594,'var(--diagram-secondary, #a0714e)','url(#copper)','W₁₂');
  s+=text(86,224,'Y₀','label','text-anchor="middle"')+text(340,225,t>.95?'glued along Y₁':'match Y₁ boundaries','label','text-anchor="middle"')+text(594,224,'Y₂','label','text-anchor="middle"');
  if(t>.95)s+=line(340,92,340,200,'guide');
  s+=text(238,265,'N₂ F₁₂','large','text-anchor="middle"')+text(350,265,'N₁⁻¹ N₁','large','text-anchor="middle"')+text(467,265,'F₀₁ N₀⁻¹','large','text-anchor="middle"');
- if(t>.5)s+=line(306,259,394,259,'','stroke="#a65c32" stroke-width="1.5"');
+ if(t>.5)s+=line(306,259,394,259,'','stroke="var(--diagram-secondary, #a65c32)" stroke-width="1.5"');
  const count=M.signedCount(state.sign,state.field),terms=state.field==='F2'?['1','1','1']:count.terms.map(x=>x>0?'+1':'−1');
- s+=text(125,328,'ILLUSTRATIVE COUNT','tiny');terms.forEach((v,i)=>{s+=`<circle cx="${350+i*55}" cy="322" r="17" fill="#f9fcfe" stroke="#9ab6c9"/>`+text(350+i*55,327,v,'serif','text-anchor="middle"');});s+=text(512,329,`= ${count.total}`,'large');
+ s+=text(125,328,'ILLUSTRATIVE COUNT','tiny');terms.forEach((v,i)=>{s+=`<circle cx="${350+i*55}" cy="322" r="17" fill="var(--diagram-paper, #f9fcfe)" stroke="var(--diagram-muted, #9ab6c9)"/>`+text(350+i*55,327,v,'serif','text-anchor="middle"');});s+=text(512,329,`= ${count.total}`,'large');
  $('scene').innerHTML=svg(s,'Two schematic cobordism pieces gluing and cancellation of the intermediate comparison');
  $('count-result').textContent=state.field==='F2'?`Three points give parity ${count.total}. Overall sign is invisible.`:`Signed count ${count.total}. One overall sign changes every point together.`;
  $('insight').innerHTML=state.field==='Z'?'<strong>Over ℤ, orientations matter.</strong> Reversing an overall orientation changes the signed map by −1. Paper II preserves the comparison up to this overall ambiguity.':t>.95?'<strong>The middle comparison cancels.</strong> N₁⁻¹N₁ = id. The composite inherits compatibility, and the symplectic maps inherit functoriality.':chapters[5].insight;

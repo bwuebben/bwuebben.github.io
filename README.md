@@ -66,7 +66,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 
 **Navigation:** edit the links in `site.json` or their outer markup in
 `templates/navigation.html`. The top level contains Home, Papers, Explorers, and Writing.
-Explorers contains Pillow Case and Conifold Transitions; add future explorers
+Explorers contains Pillow Case, Conifold Transitions, and Atiyah–Floer Cobordism; add future explorers
 to that group's `children` list.
 Writing's `children` list contains Entropy, which opens the poem *Gradient of
 Mind*. An item with a `children` list becomes a group, rendered as a native HTML
@@ -116,18 +116,28 @@ ochre distinguishes the exceptional curves. Styles are scoped to `.conifold-app`
 Preview it at <http://127.0.0.1:8000/conifold-lab/> and run
 `python3 tools/update-site.py` after editing its assets to refresh their versions.
 
-## The Cobordism Explorer
+## The Atiyah–Floer Cobordism Explorer
 
 `cobordism-explorer/index.html`, titled *Four Dimensions, Two Languages*, is linked
-under Explorers → Cobordisms and from the corresponding Paper I entry. Six chapters
+under Explorers → Atiyah–Floer Cobordism and from the corresponding Paper I entry. Six chapters
 explore cobordisms, the Atiyah–Floer dictionary, handle maps, a commuting square,
 compression-body collapse, and composition with orientation signs.
 
-The page uses the shared navigation; `site.css` scopes the original blue paper
-design to `.cobordism-app`. `standalone.html` uses `style.css` and can be copied
+The page uses the shared navigation without page-specific positioning, and its
+explorer header and introductory spacing follow the other explorers. It uses
+the shared fonts and warm neutral and burgundy theme in light and dark mode.
+`site.css` scopes the design to `.cobordism-app`; the
+canvas and SVG diagrams use the same theme, with ochre for the second family
+of geometric objects. `standalone.html` uses `style.css` and can be copied
 with `app.js` and `math.js` to any static host, or opened locally. There is no build
 step and no JavaScript dependency. Google Fonts are optional; local fallbacks work
 offline. Run `python3 tools/update-site.py` after editing the integrated assets.
+
+All three integrated explorers end with a “From picture to paper” section:
+five knot-instanton papers, six Calabi–Yau smoothability papers, and the two
+cobordism papers respectively. Titles and PDF links follow `papers/index.html`;
+update the relevant explorer when a catalogue title or PDF destination changes.
+The common reading-section layout lives in `assets/style.css`.
 
 The geometry is schematic and the finite-dimensional algebra is an illustrative
 model, not a computation of instanton homology. The on-page source guide records
