@@ -116,6 +116,24 @@ ochre distinguishes the exceptional curves. Styles are scoped to `.conifold-app`
 Preview it at <http://127.0.0.1:8000/conifold-lab/> and run
 `python3 tools/update-site.py` after editing its assets to refresh their versions.
 
+## The Cobordism Explorer
+
+`cobordism-explorer/index.html`, titled *Four Dimensions, Two Languages*, is linked
+under Explorers → Cobordisms and from the corresponding Paper I entry. Six chapters
+explore cobordisms, the Atiyah–Floer dictionary, handle maps, a commuting square,
+compression-body collapse, and composition with orientation signs.
+
+The page uses the shared navigation; `site.css` scopes the original blue paper
+design to `.cobordism-app`. `standalone.html` uses `style.css` and can be copied
+with `app.js` and `math.js` to any static host, or opened locally. There is no build
+step and no JavaScript dependency. Google Fonts are optional; local fallbacks work
+offline. Run `python3 tools/update-site.py` after editing the integrated assets.
+
+The geometry is schematic and the finite-dimensional algebra is an illustrative
+model, not a computation of instanton homology. The on-page source guide records
+the distinction and the scope of Papers I and II, including the overall sign in
+the integral comparison.
+
 ## The papers page
 
 `papers/index.html` holds the Papers section formerly on the landing page.

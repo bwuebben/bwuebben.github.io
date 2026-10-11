@@ -84,6 +84,7 @@ def main():
         output = NAV.sub(lambda _: f"<!-- site:navigation -->\n{navigation}\n<!-- /site:navigation -->", source)
         output = STYLES.sub(lambda _: f"<!-- site:styles -->\n{stylesheet_links}\n<!-- /site:styles -->", output)
         explorer_assets = {
+            "cobordism-explorer/index.html": ("site.css", "math.js", "app.js"),
             "pillowcase-explorer/index.html": ("styles.css", "site.css", "model.js", "app.js"),
             "conifold-lab/index.html": ("styles.css", "model.js", "app.js"),
         }

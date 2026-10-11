@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5f5">
+  <meta name="description" content="An interactive mathematical journey through four-dimensional cobordisms and the Atiyah–Floer comparison. Explore handles, commuting maps, compression-body collapse, and composition.">
+  <meta name="robots" content="noindex">
+  <title>Four Dimensions, Two Languages · Cobordism Explorer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23182632'/%3E%3Cpath d='M8 12H32M8 28H32M12 8V32M28 8V32' stroke='%23a9d4ef' fill='none' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./math.js"></script><script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#laboratory">Skip to explorer</a>
+  <header class="masthead">
+    <a class="brand" href="https://bwuebben.github.io/" aria-label="Bernd Johannes Wuebben home"><span class="brand-mark">W</span><span>BERND JOHANNES WUEBBEN<span class="brand-sub">MATHEMATICAL EXPLORERS</span></span></a>
+    <nav aria-label="Resources"><button class="text-button" data-dialog="glossary">Field guide <span>＋</span></button><button class="text-button" data-dialog="sources">Model & sources <span>↗</span></button><a class="paper-link" href="https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf" target="_blank" rel="noopener">Read the paper ↗</a></nav>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow"><span class="status-dot"></span> THE ATIYAH–FLOER COBORDISM EXPLORER</p><h1 id="page-title">Four dimensions.<br><em>Two languages.</em></h1></div>
+      <div class="intro-copy"><p>A cobordism changes a space.<br>A comparison changes its mathematical language.</p><p class="muted">Explore why the order of these operations agrees, from the first handle to the geometry of the proof.</p><a href="#laboratory" class="journey-link">Begin the journey <span>↓</span></a></div>
+    </section>
+    <section id="laboratory" class="laboratory" aria-label="Interactive six-step journey">
+      <div class="journey-bar"><span>SIX MOVES · ONE COMPARISON</span><span class="keyboard-hint">Use <kbd>←</kbd> <kbd>→</kbd> to explore</span><button id="motion-toggle" class="text-button" aria-pressed="false">Pause motion Ⅱ</button></div>
+      <nav id="chapters" class="chapters" aria-label="Journey chapters"></nav>
+      <div class="workbench">
+        <div class="visual-column">
+          <div class="visual-heading"><span id="scene-kind" class="tag"></span><button id="enlarge-diagram" class="text-button">Enlarge ↗</button><span id="scene-counter" class="counter"></span></div>
+          <div id="scene" class="scene" tabindex="0" aria-label="Interactive geometry diagram"></div>
+          <div id="scene-controls" class="scene-controls"></div>
+          <p id="scene-caption" class="scene-caption"></p>
+        </div>
+        <aside class="story-column" aria-labelledby="chapter-title">
+          <p id="chapter-kicker" class="eyebrow"></p><h2 id="chapter-title"></h2><p id="chapter-description" class="chapter-description"></p>
+          <div id="insight" class="insight" aria-live="polite"></div>
+          <div id="formula" class="formula"></div>
+          <div id="try-this" class="try-this"></div>
+          <details class="math-details"><summary>The mathematics underneath <span>＋</span></summary><div id="chapter-math"></div></details>
+        </aside>
+      </div>
+      <div class="journey-footer"><button id="previous" class="nav-button">← Previous</button><span id="step-status" aria-live="polite"></span><button id="next" class="nav-button primary">Two languages →</button></div>
+    </section>
+    <section class="takeaway">
+      <p class="eyebrow">THE STRUCTURAL IDEA</p><p>Spaces have invariants.<br><em>Transformations have maps.</em></p><div>The comparison must respect both.<br><button data-go="3" class="journey-link">Explore the commuting square <span>↗</span></button></div>
+    </section>
+    <section class="reading" aria-labelledby="reading-title"><div><p class="eyebrow">FROM PICTURE TO PAPER</p><h2 id="reading-title">Keep the geometry.<br>Follow the argument.</h2></div><div class="reading-list"><a href="https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf" target="_blank" rel="noopener"><span>01 · THE COMPARISON OVER 𝔽₂</span><strong>Cobordism maps and Atiyah–Floer isomorphisms I</strong><span>Bernd Johannes Wuebben · 7 October 2026 ↗</span></a><a href="https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf" target="_blank" rel="noopener"><span>02 · ORIENTATIONS AND INTEGER COEFFICIENTS</span><strong>Cobordism maps and Atiyah–Floer isomorphisms II</strong><span>Bernd Johannes Wuebben · 8 October 2026 ↗</span></a></div></section>
+  </main>
+  <footer><span>An interactive companion to research manuscripts.<br>Exact algebra · schematic geometry · explicit scope.</span><nav aria-label="Other explorers"><a href="https://bwuebben.github.io/pillowcase-explorer/">Pillowcase Explorer ↗</a><a href="https://bwuebben.github.io/conifold-lab/">Conifold Lab ↗</a><a href="https://bwuebben.github.io/papers/">All papers ↗</a></nav></footer>
+  <dialog id="guide-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><p class="eyebrow">A CLOSER LOOK</p><button id="close-dialog" class="icon-button" aria-label="Close dialog">×</button></div><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+  <noscript><div class="noscript">Enable JavaScript to use the diagrams and controls. The papers linked above contain the full mathematical statements.</div></noscript>
+</body>
+</html>
