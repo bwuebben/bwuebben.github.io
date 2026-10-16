@@ -202,6 +202,7 @@ html:has(.portfolio-app) { scroll-padding-top: 25px; }
   .portfolio-app .hero {grid-template-columns:1fr;padding:40px 0;gap:35px}
   .portfolio-app .hero h1 {font-size:44px}
   .portfolio-app .hero-art {max-width:520px}
+  .portfolio-app .art-labels {font-size:16px}
   .portfolio-app .hero p {font-size:15px}
   .portfolio-app .section-heading {align-items:start;gap:10px}
   .portfolio-app h2 {font-size:28px}

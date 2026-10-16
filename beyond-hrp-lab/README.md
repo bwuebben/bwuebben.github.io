@@ -34,7 +34,9 @@ written as `var(--chart-…, #original)`: `site.css` sets the variables, and the
 standalone page falls back to the original colors. HRP is the neutral grey
 baseline, HRP-μ ochre, HRP-Σμ blue, and CRISP the site's burgundy accent. These
 colors were checked for colorblind separation of neighbouring bars in both modes.
-The lab ends with the shared “From picture to paper” section; update it if the
+Charts are drawn at their on-screen width, up to 740 units, so labels keep their
+size on phones; they redraw when the layout width changes. The lab ends with the
+shared “From picture to paper” section; update it if the
 paper's title or links change.
 
 Edit navigation in `../site.json`. Run `python3 tools/update-site.py` from the
