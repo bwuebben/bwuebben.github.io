@@ -18,6 +18,8 @@ index.html              the landing page
 papers/index.html       research papers, grouped by subject
 pillowcase-explorer/    interactive trefoil and pillowcase diagrams
 conifold-lab/           interactive conifold transitions laboratory
+cobordism-explorer/     interactive Atiyah–Floer cobordism explorer
+beyond-hrp-lab/         interactive signal-aware portfolio laboratory
 poem.html               Gradient of Mind (a poem)
 portrait/index.html     the portrait at full size (the masthead links here;
                          deliberately absent from the navigation)
@@ -66,7 +68,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 
 **Navigation:** edit the links in `site.json` or their outer markup in
 `templates/navigation.html`. The top level contains Home, Papers, Explorers, and Writing.
-Explorers contains Pillow Case, Conifold Transitions, and Atiyah–Floer Cobordism; add future explorers
+Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, and Beyond HRP; add future explorers
 to that group's `children` list.
 Writing's `children` list contains Entropy, which opens the poem *Gradient of
 Mind*. An item with a `children` list becomes a group, rendered as a native HTML
@@ -133,16 +135,32 @@ with `app.js` and `math.js` to any static host, or opened locally. There is no b
 step and no JavaScript dependency. Google Fonts are optional; local fallbacks work
 offline. Run `python3 tools/update-site.py` after editing the integrated assets.
 
-All three integrated explorers end with a “From picture to paper” section:
-five knot-instanton papers, six Calabi–Yau smoothability papers, and the two
-cobordism papers respectively. Titles and PDF links follow `papers/index.html`;
-update the relevant explorer when a catalogue title or PDF destination changes.
+All four integrated explorers end with a “From picture to paper” section:
+five knot-instanton papers, six Calabi–Yau smoothability papers, the two
+cobordism papers, and the Beyond HRP paper with its replication code
+respectively. Titles and PDF links follow `papers/index.html`; update the
+relevant explorer when a catalogue title or PDF destination changes.
 The common reading-section layout lives in `assets/style.css`.
 
 The geometry is schematic and the finite-dimensional algebra is an illustrative
 model, not a computation of instanton homology. The on-page source guide records
 the distinction and the scope of Papers I and II, including the overall sign in
 the integral comparison.
+
+## The Beyond HRP Portfolio Lab
+
+`beyond-hrp-lab/index.html`, titled *Give the hierarchy an expected return*, is
+linked under Explorers → Beyond HRP and from the paper's entry on the papers page
+(`papers/#beyond-hrp`). Four tabs compare HRP, HRP-μ, HRP-Σμ, and CRISP on eight
+illustrative assets: live forecasts, the allocation tree, the CRISP sweeps, and a
+seeded estimation-noise experiment. Every weight is computed in the browser.
+
+Styles are scoped to `.portfolio-app` in `site.css` and follow the site's fonts and
+light/dark theme. The chart colors are theme variables, with CRISP in the burgundy
+accent. `standalone.html` keeps the original portable design with `style.css`.
+Preview it at <http://127.0.0.1:8000/beyond-hrp-lab/> and run
+`python3 tools/update-site.py` after editing its assets. Its own README records the
+file layout and the scope of the illustration: it is educational, not a backtest.
 
 ## The papers page
 

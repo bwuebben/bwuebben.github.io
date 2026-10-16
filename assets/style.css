@@ -33,7 +33,7 @@ a:focus-visible,
 .site-nav summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
 /* Paper companions at the foot of each integrated explorer. */
-:is(.pillowcase-app, .conifold-app, .cobordism-app) .explorer-reading {
+:is(.pillowcase-app, .conifold-app, .cobordism-app, .portfolio-app) .explorer-reading {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
   gap: 55px;
@@ -49,7 +49,7 @@ a:focus-visible,
   line-height: 1.6;
   letter-spacing: 1.6px;
 }
-:is(.pillowcase-app, .conifold-app, .cobordism-app) .explorer-reading h2 {
+:is(.pillowcase-app, .conifold-app, .cobordism-app, .portfolio-app) .explorer-reading h2 {
   margin: 15px 0 0;
   padding: 0;
   border: 0;
@@ -63,7 +63,7 @@ a:focus-visible,
   color: var(--ink-soft);
   font-size: 13px;
 }
-:is(.pillowcase-app, .conifold-app, .cobordism-app) .reading-catalogue {
+:is(.pillowcase-app, .conifold-app, .cobordism-app, .portfolio-app) .reading-catalogue {
   font-size: 12px;
   color: var(--accent);
 }
@@ -106,12 +106,12 @@ a:focus-visible,
   outline-offset: 4px;
 }
 @media (max-width: 760px) {
-  :is(.pillowcase-app, .conifold-app, .cobordism-app) .explorer-reading {
+  :is(.pillowcase-app, .conifold-app, .cobordism-app, .portfolio-app) .explorer-reading {
     grid-template-columns: minmax(0, 1fr);
     gap: 30px;
     padding: 35px 0;
   }
-  :is(.pillowcase-app, .conifold-app, .cobordism-app) .explorer-reading h2 {
+  :is(.pillowcase-app, .conifold-app, .cobordism-app, .portfolio-app) .explorer-reading h2 {
     font-size: 31px;
   }
   .explorer-reading .reading-list strong { font-size: 13px; }

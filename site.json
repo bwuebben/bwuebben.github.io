@@ -7,7 +7,8 @@
       "children": [
         { "label": "Pillow Case", "href": "/pillowcase-explorer/" },
         { "label": "Conifold Transitions", "href": "/conifold-lab/" },
-        { "label": "Atiyah–Floer Cobordism", "href": "/cobordism-explorer/" }
+        { "label": "Atiyah–Floer Cobordism", "href": "/cobordism-explorer/" },
+        { "label": "Beyond HRP", "href": "/beyond-hrp-lab/" }
       ]
     },
     {

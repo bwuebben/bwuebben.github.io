@@ -1,0 +1,247 @@
+/* Integrated explorer: shared site fonts and light/dark colors, scoped to .portfolio-app.
+   style.css keeps the original design for standalone.html. */
+.portfolio-app {
+  color-scheme: light dark;
+  --muted: var(--ink-soft);
+  --line: var(--rule);
+  /* Method colors: HRP stays a neutral, signal-blind baseline; CRISP takes the
+     site accent. Checked for colorblind separation of neighbouring bars. */
+  --chart-hrp: #9aa3ad;
+  --chart-mu: #cf8a2a;
+  --chart-sigmamu: #25689a;
+  --chart-crisp: var(--accent);
+  --chart-iterate: var(--chart-sigmamu);
+  --chart-heat: var(--chart-sigmamu);
+  --chart-grid: var(--rule);
+  --chart-axis: var(--ink-faint);
+  --chart-faint: var(--ink-faint);
+  --chart-label: var(--ink-soft);
+  --chart-ink: var(--ink);
+  --chart-wire: color-mix(in srgb, var(--ink-faint) 70%, var(--bg));
+  --chart-node: var(--bg-panel);
+  --chart-node-line: var(--ink-faint);
+  --chart-line: var(--accent);
+  --chart-select: var(--accent);
+  --chart-select-line: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  .portfolio-app {
+    --chart-hrp: #a3a9b1;
+    --chart-mu: #bb8530;
+    --chart-sigmamu: #3c86c8;
+  }
+}
+html:has(.portfolio-app) { scroll-padding-top: 25px; }
+@media (prefers-reduced-motion: no-preference) {
+  html:has(.portfolio-app) { scroll-behavior: smooth; }
+}
+
+/* Keep the shared page styles out of the application layout. */
+.portfolio-app section { margin: 0; }
+.portfolio-app h1, .portfolio-app h2, .portfolio-app h3 { padding: 0; border: 0; text-transform: none; color: var(--ink); font-family: var(--serif); font-weight: 400; }
+.portfolio-app a, .portfolio-app a:hover { border-bottom: 0; color: inherit; text-decoration: none; }
+
+.portfolio-app * {box-sizing:border-box}
+.portfolio-app {background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:normal}
+.portfolio-app button, .portfolio-app input, .portfolio-app select {font:inherit}
+.portfolio-app button, .portfolio-app a, .portfolio-app input, .portfolio-app select {touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+.portfolio-app button {cursor:pointer;color:inherit}
+.portfolio-app button:disabled {opacity:.4;cursor:default}
+.portfolio-app button:focus-visible, .portfolio-app a:focus-visible, .portfolio-app input:focus-visible, .portfolio-app select:focus-visible, .portfolio-app summary:focus-visible {outline:3px solid var(--accent);outline-offset:3px}
+
+.portfolio-app .explorer-header {height:80px;margin:0 auto;max-width:1440px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--line)}
+.portfolio-app .brand {display:flex;align-items:center;font-weight:650;font-size:14px;letter-spacing:1.4px;gap:12px}
+.portfolio-app .brand svg {width:29px;height:29px;fill:none;stroke:var(--accent);stroke-width:2.3}
+.portfolio-app .brand span {border-left:1px solid var(--line);padding-left:14px;font-size:9px;letter-spacing:2px;color:var(--muted)}
+.portfolio-app .explorer-header nav {display:flex;align-items:center;gap:30px;font-size:13px}
+.portfolio-app .explorer-header nav a:hover {color:var(--accent)}
+.portfolio-app .paper-link {border:1px solid var(--line);padding:9px 15px;font-size:12px}
+.portfolio-app .paper-link:hover {background:var(--bg-panel)}
+
+.portfolio-app main {max-width:1440px;margin:auto;padding:0 48px}
+.portfolio-app .hero {display:grid;grid-template-columns:1.1fr 1fr;gap:55px;align-items:center;padding:56px 0 64px}
+.portfolio-app .eyebrow {font-size:10px;font-weight:650;letter-spacing:1.6px;line-height:1.6;display:flex;align-items:center;gap:8px}
+.portfolio-app .dot {width:6px;height:6px;background:var(--accent);border-radius:50%}
+.portfolio-app h1 {font-size:clamp(38px,4.2vw,62px);line-height:1.08;letter-spacing:-1.5px;margin:22px 0}
+.portfolio-app h1 em {color:var(--accent)}
+.portfolio-app .hero p {max-width:450px;color:var(--muted);font-size:16px;line-height:1.7}
+.portfolio-app .button {display:inline-flex;align-items:center;justify-content:center;gap:20px;padding:12px 17px;border:1px solid var(--line);border-radius:4px;background:var(--bg);font-size:12px;font-weight:600}
+.portfolio-app .button:hover:not(:disabled) {border-color:var(--ink)}
+.portfolio-app .dark {background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.portfolio-app .dark:hover:not(:disabled), .portfolio-app a.dark:hover {background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.portfolio-app .hero .button {margin-top:16px;padding:15px 21px}
+.portfolio-app .hero-note {font:10px var(--mono);color:var(--muted);margin-top:20px}
+.portfolio-app .hero-art {background:var(--bg-panel);border:1px solid var(--line);padding:25px 25px 20px;position:relative;border-radius:6px}
+.portfolio-app .art-top, .portfolio-app .art-bottom {display:flex;justify-content:space-between;font:9px var(--mono);letter-spacing:1px;color:var(--ink-soft)}
+.portfolio-app .art-top span {font:18px var(--serif)}
+.portfolio-app .hero-art svg {width:100%;margin:20px 0}
+.portfolio-app .art-lines {fill:none;stroke:var(--ink-faint);stroke-width:1.5}
+.portfolio-app .art-points {fill:var(--bg);stroke:var(--ink-soft);stroke-width:2}
+.portfolio-app .art-points circle:last-child {fill:var(--accent);stroke:var(--accent)}
+.portfolio-app .art-labels {font:10px var(--mono);fill:var(--ink-soft);text-anchor:middle}
+.portfolio-app .art-bottom {border-top:1px solid var(--line);padding-top:19px}
+
+.portfolio-app .lab {padding:35px 0 70px;border-top:1px solid var(--line);scroll-margin-top:15px}
+.portfolio-app .section-heading {display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}
+.portfolio-app h2 {font-size:34px;letter-spacing:-.5px;line-height:1.2;margin:12px 0 0}
+.portfolio-app .text-button {background:transparent;border:0;color:var(--muted);font-size:12px;padding:10px}
+.portfolio-app .text-button:hover {color:var(--ink)}
+.portfolio-app .tabs {display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);gap:3px}
+.portfolio-app .tabs button {padding:18px 7px;text-align:left;background:transparent;border:0;border-bottom:3px solid transparent;color:var(--ink-faint);font:10px var(--mono)}
+.portfolio-app .tabs button span {margin-left:8px;font:13px var(--sans);color:var(--muted)}
+.portfolio-app .tabs button:hover span {color:var(--ink)}
+.portfolio-app .tabs button[aria-selected=true] {border-bottom-color:var(--accent);color:var(--accent)}
+.portfolio-app .tabs button[aria-selected=true] span {color:var(--ink);font-weight:650}
+.portfolio-app .workspace {display:grid;grid-template-columns:260px 1fr;background:var(--bg);border:1px solid var(--line);border-top:0;border-radius:0 0 6px 6px;min-height:730px}
+.portfolio-app aside {padding:24px;background:var(--bg-panel);border-right:1px solid var(--line)}
+.portfolio-app .control-title {font:9px var(--mono);letter-spacing:1px;display:flex;justify-content:space-between;margin-bottom:25px}
+.portfolio-app .control-title span {color:var(--accent)}
+.portfolio-app label {display:block;font-size:11px;font-weight:600;margin:15px 0 9px}
+.portfolio-app label>span {float:right;font-family:var(--mono);color:var(--accent)}
+.portfolio-app select {width:100%;padding:10px 7px;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);font-size:12px}
+.portfolio-app .signal-row {display:grid;grid-template-columns:23px 1fr 45px;align-items:center;gap:8px;margin:11px 0}
+.portfolio-app .signal-row label {margin:0;font:10px var(--mono);color:var(--muted)}
+.portfolio-app .signal-row output {font:10px var(--mono);text-align:right}
+.portfolio-app input[type=range] {width:100%;accent-color:var(--accent);cursor:pointer;min-width:0;height:16px;margin:0}
+.portfolio-app .range-ends {display:flex;justify-content:space-between;font:9px var(--mono);color:var(--muted);margin-top:4px}
+.portfolio-app .control-help {font-size:10px;color:var(--muted);line-height:1.55;margin:12px 0 20px}
+.portfolio-app .control-divider {border-top:1px solid var(--line);margin:22px 0}
+.portfolio-app .export {width:100%;font-size:10px;margin-top:10px;background:transparent}
+.portfolio-app .stage {min-width:0;padding:29px}
+.portfolio-app .panel[hidden] {display:none}
+.portfolio-app .panel-heading {display:flex;align-items:flex-start;justify-content:space-between;gap:15px}
+.portfolio-app h3 {font-size:21px;letter-spacing:-.2px;line-height:1.3;margin:0 0 9px}
+.portfolio-app .panel-heading p {font-size:12px;color:var(--muted);margin:0;line-height:1.6}
+.portfolio-app .small-tag {font:8px var(--mono);white-space:nowrap;padding:6px;background:var(--bg-panel);border:1px solid var(--line);border-radius:3px}
+.portfolio-app .chart {margin-top:25px;width:100%}
+.portfolio-app .chart svg, .portfolio-app #residual-chart svg, .portfolio-app #noise-chart svg, .portfolio-app #tree-diagram svg {display:block;width:100%;height:auto;overflow:visible}
+.portfolio-app .legend {display:flex;gap:18px;justify-content:center;font-size:10px;flex-wrap:wrap;margin:5px 0 22px}
+.portfolio-app .legend span {display:flex;align-items:center;gap:6px}
+.portfolio-app .legend i {display:block;width:9px;height:9px}
+.portfolio-app i.hrp {background:var(--chart-hrp)}
+.portfolio-app i.mu {background:var(--chart-mu)}
+.portfolio-app i.sigmamu {background:var(--chart-sigmamu)}
+.portfolio-app i.crisp {background:var(--chart-crisp)}
+.portfolio-app .data-table {width:100%;border-collapse:collapse;font-size:10px;font-family:var(--mono)}
+.portfolio-app .data-table th {font-size:9px;text-align:right;font-weight:400;color:var(--muted);padding:12px 6px;background:var(--bg-panel)}
+.portfolio-app .data-table td {padding:11px 6px;text-align:right;border-bottom:1px solid var(--line)}
+.portfolio-app .data-table th:first-child, .portfolio-app .data-table td:first-child {text-align:left}
+.portfolio-app .data-table td:first-child {font-family:var(--sans);font-weight:500}
+.portfolio-app .reading {background:var(--bg-panel);border-left:2px solid var(--accent);padding:16px 19px;margin-top:23px}
+.portfolio-app .reading>span {font:8px var(--mono);letter-spacing:1.2px;color:var(--accent)}
+.portfolio-app .reading p {margin:7px 0 0;font-size:12px;line-height:1.7;color:var(--ink)}
+.portfolio-app details {margin-top:21px}
+.portfolio-app summary {font-size:11px;cursor:pointer;color:var(--muted)}
+.portfolio-app summary:hover {color:var(--ink)}
+.portfolio-app .footnote {font-size:10px;line-height:1.7;color:var(--muted);margin-top:15px}
+.portfolio-app .matrix {width:100%;border-collapse:separate;border-spacing:3px;font:9px var(--mono);margin-top:16px}
+.portfolio-app .matrix td {padding:8px 3px;text-align:center}
+.portfolio-app .matrix th {font-weight:400;font-size:9px;color:var(--muted)}
+.portfolio-app .panel-heading select {width:130px;flex-shrink:0}
+.portfolio-app .node-picker {display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:20px 0}
+.portfolio-app .node-picker button {border:1px solid var(--line);background:var(--bg);padding:6px 10px;border-radius:3px;font:10px var(--mono)}
+.portfolio-app .node-picker button:hover {border-color:var(--ink)}
+.portfolio-app .node-picker button.selected {background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.portfolio-app .node-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}
+.portfolio-app .node-grid div {padding:15px;background:var(--bg-panel)}
+.portfolio-app .node-grid span {font:9px var(--mono);color:var(--muted)}
+.portfolio-app .node-grid strong {display:block;font:20px var(--mono);margin-top:10px}
+.portfolio-app .node-detail-copy {font-size:12px;line-height:1.7;color:var(--muted)}
+.portfolio-app .formula {background:var(--bg-panel);padding:20px;text-align:center;font:21px var(--serif);margin:23px 0}
+.portfolio-app .formula span {font:11px var(--sans);color:var(--muted);margin:0 12px}
+.portfolio-app .formula.compact {font-size:17px}
+.portfolio-app .solver-toolbar {display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.portfolio-app .solver-toolbar label {margin:0 0 0 auto;font-size:11px}
+.portfolio-app .solver-toolbar output {font:18px var(--mono);margin-left:6px}
+.portfolio-app .solver-stats {display:grid;grid-template-columns:repeat(3,1fr);padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:20px 0}
+.portfolio-app .solver-stats span {font:8px var(--mono);color:var(--muted)}
+.portfolio-app .solver-stats strong {display:block;font:19px var(--mono);margin-top:9px}
+.portfolio-app .noise-controls {display:flex;gap:15px;align-items:end;margin:12px 0 25px}
+.portfolio-app .noise-controls label {flex:1;font-size:10px;line-height:1.6}
+.portfolio-app .noise-controls select {margin-top:6px}
+.portfolio-app .noise-controls button {margin-bottom:9px;white-space:nowrap}
+
+.portfolio-app .ideas {padding:62px 0 55px;border-top:1px solid var(--line)}
+.portfolio-app .ideas h2 {font-size:44px;margin:20px 0 40px}
+.portfolio-app .idea-row {display:grid;grid-template-columns:60px 220px 1fr;gap:20px;padding:27px 0;border-top:1px solid var(--line)}
+.portfolio-app .idea-row>span {font:12px var(--mono);color:var(--ink-faint);padding-top:6px}
+.portfolio-app .idea-row h3 {font-size:28px}
+.portfolio-app .idea-row p {font-size:14px;line-height:1.7;margin:0 0 10px;max-width:650px}
+.portfolio-app .subtle {color:var(--muted)!important;font-size:12px!important}
+.portfolio-app .explorer-reading {border-top:1px solid var(--line)}
+.portfolio-app footer {margin:0;border-top:1px solid var(--line);padding:30px 0 42px;display:flex;gap:55px;align-items:start;font-family:var(--sans);font-size:inherit;color:inherit}
+.portfolio-app footer>span {font:9px var(--mono);white-space:nowrap}
+.portfolio-app footer p {margin:0;max-width:780px;font-size:10px;line-height:1.7;color:var(--muted)}
+.portfolio-app svg text {font-family:var(--mono)}
+
+@media (min-width:1500px) {
+  .portfolio-app .hero {padding:72px 0}
+  .portfolio-app .workspace {grid-template-columns:285px 1fr}
+  .portfolio-app .stage {padding:35px}
+}
+@media (max-width:1100px) {
+  .portfolio-app main, .portfolio-app .explorer-header {padding:0 28px}
+  .portfolio-app .hero {gap:25px}
+  .portfolio-app h1 {font-size:45px}
+  .portfolio-app .workspace {grid-template-columns:230px 1fr}
+  .portfolio-app .stage {padding:22px}
+  .portfolio-app .small-tag {display:none}
+  .portfolio-app .tabs button span {font-size:11px}
+  .portfolio-app .noise-controls {flex-wrap:wrap}
+  .portfolio-app .noise-controls button {width:100%}
+  .portfolio-app .idea-row {grid-template-columns:40px 180px 1fr}
+}
+@media (max-width:760px) {
+  .portfolio-app main {padding:0 18px}
+  .portfolio-app .explorer-header {padding:0 18px;height:68px}
+  .portfolio-app .brand {font-size:12px;gap:8px}
+  .portfolio-app .brand span {display:none}
+  .portfolio-app .explorer-header nav {gap:16px;font-size:11px}
+  .portfolio-app .explorer-header nav a:first-child {display:none}
+  .portfolio-app .paper-link {padding:7px 10px;font-size:11px}
+  .portfolio-app .hero {grid-template-columns:1fr;padding:40px 0;gap:35px}
+  .portfolio-app .hero h1 {font-size:44px}
+  .portfolio-app .hero-art {max-width:520px}
+  .portfolio-app .hero p {font-size:15px}
+  .portfolio-app .section-heading {align-items:start;gap:10px}
+  .portfolio-app h2 {font-size:28px}
+  .portfolio-app .eyebrow {font-size:9px;letter-spacing:1px}
+  .portfolio-app .tabs {grid-template-columns:repeat(2,1fr)}
+  .portfolio-app .tabs button {padding:14px 4px}
+  .portfolio-app .tabs button span {font-size:12px}
+  .portfolio-app .workspace {grid-template-columns:1fr}
+  .portfolio-app aside {border-right:0;border-bottom:1px solid var(--line);padding:20px}
+  .portfolio-app .control-title {margin-bottom:15px}
+  .portfolio-app #signal-inputs {display:grid;grid-template-columns:repeat(2,1fr);column-gap:25px}
+  .portfolio-app .signal-row {grid-template-columns:22px 1fr 42px}
+  .portfolio-app .control-divider {margin:15px 0}
+  .portfolio-app .control-help {margin-bottom:12px}
+  .portfolio-app aside .export {margin-top:0}
+  .portfolio-app .stage {padding:21px 15px}
+  .portfolio-app .panel-heading {gap:10px}
+  .portfolio-app h3 {font-size:20px}
+  .portfolio-app .data-table {font-size:9px}
+  .portfolio-app .data-table th {font-size:8px}
+  .portfolio-app .legend {gap:12px;font-size:9px}
+  .portfolio-app .reading {padding:14px}
+  .portfolio-app .formula {font-size:16px;padding:16px 8px}
+  .portfolio-app .formula span {margin:0 5px}
+  .portfolio-app .solver-stats {gap:8px}
+  .portfolio-app .solver-stats span {font-size:7px}
+  .portfolio-app .solver-stats strong {font-size:15px}
+  .portfolio-app .solver-toolbar {gap:5px}
+  .portfolio-app .solver-toolbar .button {font-size:10px;padding:10px}
+  .portfolio-app .solver-toolbar label {margin-left:5px}
+  .portfolio-app .node-grid {gap:6px}
+  .portfolio-app .node-grid div {padding:10px}
+  .portfolio-app .node-grid strong {font-size:16px}
+  .portfolio-app .node-grid span {font-size:8px}
+  .portfolio-app .ideas {padding-top:40px}
+  .portfolio-app .ideas h2 {font-size:36px}
+  .portfolio-app .idea-row {grid-template-columns:25px 1fr;gap:12px}
+  .portfolio-app .idea-row>div {grid-column:2}
+  .portfolio-app .idea-row h3 {font-size:24px}
+  .portfolio-app footer {flex-direction:column;gap:15px}
+  .portfolio-app .matrix {font-size:7px;border-spacing:1px}
+  .portfolio-app .matrix td {padding:7px 1px}
+}
