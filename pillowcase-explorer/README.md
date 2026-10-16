@@ -19,7 +19,8 @@ Publishing remains a separate commit and push after local review.
 
 - `index.html`: integrated page, including the shared site markers and metadata.
 - `styles.css`: explorer layout, scoped to `.pillowcase-app`.
-- `site.css`: integration with the parent site's fonts and light/dark colors.
+- `site.css`: integration with the parent site's fonts and light/dark colors, including
+  the dark-mode diagram palette (`--diagram-*`; `app.js` falls back to the light paper colors).
 - `model.js`: quotient coordinates, quaternion holonomies, curves, and intersections.
 - `app.js`: SVG diagrams, controls, definitions, and the five-step journey.
 - `standalone.html`: the original portable export, with its own CSS and JavaScript.

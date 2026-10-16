@@ -99,8 +99,10 @@ from the shared navigation and the instanton-knot papers. Preview it at
 boundary characters, immersed curves, intersections, and the chain complex.
 
 The page uses the shared site navigation, fonts, and light/dark theme. Its styles
-are scoped to `.pillowcase-app`; `site.css` provides theme adjustments, while the
-SVG diagrams retain their light paper background. `model.js` contains the
+are scoped to `.pillowcase-app`; `site.css` provides theme adjustments. In light mode
+the SVG diagrams keep their sage paper palette; in dark mode `site.css` supplies a
+dark diagram palette through `--diagram-*` variables, which `app.js` reads with the
+light colors as fallbacks. `model.js` contains the
 mathematical model and `app.js` handles interaction. No build step or external
 runtime dependencies are required. Run `python3 tools/update-site.py` after
 editing these assets too: it versions their URLs by content hash.

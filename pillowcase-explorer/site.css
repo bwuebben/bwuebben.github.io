@@ -1,4 +1,5 @@
-/* The shared theme surrounds a wider workspace; SVGs retain their paper palette. */
+/* The shared theme surrounds a wider workspace. SVGs keep their paper palette in light
+   mode and take the --diagram-* palette below in dark mode. */
 .pillowcase-app {
   --paper: var(--bg);
   --ink: inherit;
@@ -25,7 +26,36 @@
     --teal: #8bc6b6;
     --amber: #dba569;
     --blue: #91aed4;
+    /* Diagram palette; without these, app.js falls back to the light paper colors. */
+    --diagram-stage: var(--bg);
+    --diagram-ink: var(--ink);
+    --diagram-muted: var(--ink-soft);
+    --diagram-teal: var(--teal);
+    --diagram-amber: var(--amber);
+    --diagram-blue: var(--blue);
+    --diagram-line: var(--rule);
+    --diagram-paper: color-mix(in srgb, var(--ink) 8%, var(--diagram-stage));
+    --diagram-gap: var(--diagram-wash);
+    --diagram-face-back: color-mix(in srgb, var(--teal) 3%, var(--diagram-stage));
+    --diagram-face: color-mix(in srgb, var(--teal) 7%, var(--diagram-stage));
+    --diagram-wash: color-mix(in srgb, var(--teal) 10%, var(--diagram-stage));
+    --diagram-wash-strong: color-mix(in srgb, var(--teal) 20%, var(--diagram-stage));
+    --diagram-wash-warm: color-mix(in srgb, var(--amber) 10%, var(--diagram-stage));
+    --diagram-grid: color-mix(in srgb, var(--teal) 14%, var(--diagram-stage));
+    --diagram-region: color-mix(in srgb, var(--teal) 22%, var(--diagram-stage));
+    --diagram-halo: color-mix(in srgb, var(--teal) 28%, var(--diagram-stage));
+    --diagram-wire: color-mix(in srgb, var(--teal) 35%, var(--diagram-stage));
+    --diagram-wire-warm: color-mix(in srgb, var(--amber) 40%, var(--diagram-stage));
+    --diagram-wire-strong: color-mix(in srgb, var(--teal) 55%, var(--diagram-stage));
   }
+  .pillowcase-app .stage {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--bg-panel) 40%, var(--bg)), var(--bg));
+    border-top-color: var(--rule);
+  }
+  .pillowcase-app .diagram-scroll { background: var(--diagram-stage); }
+  .pillowcase-app .expand-button { background: color-mix(in srgb, var(--bg-panel) 94%, transparent); }
+  .pillowcase-app .stage .diagram-caption { color: var(--ink-soft); }
+  .pillowcase-app .dictionary-row { border-bottom-color: var(--rule); }
   .pillowcase-app .step:hover,
   .pillowcase-app .definition:hover { background: var(--bg-panel); }
   .pillowcase-app .primary,
