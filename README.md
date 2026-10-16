@@ -171,6 +171,15 @@ Edit paper entries here. Its subject groupings, descriptions, and links are
 preserved, with heading levels adjusted for a standalone page. Preview it at
 <http://127.0.0.1:8000/papers/>.
 
+The exotic four-manifolds entry presents *Toward an exotic S²×S² and an
+exotic ℂP²#ℂP̄²*. Its title and PDF link point to `paper/main.pdf` in the
+[exotic-s2xs2 repository](https://github.com/bwuebben/exotic-s2xs2).
+The description states the complete group presentation and structural
+results while leaving the final filling question open. The repository
+contains the self-contained source and two Python standard-library
+verification scripts; keep these links and qualifications aligned with
+its README.
+
 The toric stability entries share the
 [toric-tangent-stability repository](https://github.com/bwuebben/toric-tangent-stability).
 Paper 2, *Tangent stability on toric Fano blowups and bundles*, links directly to
