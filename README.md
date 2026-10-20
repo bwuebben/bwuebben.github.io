@@ -172,7 +172,8 @@ preserved, with heading levels adjusted for a standalone page. Preview it at
 <http://127.0.0.1:8000/papers/>.
 
 The exotic four-manifolds entry presents *Toward an exotic S²×S² and an
-exotic ℂP²#ℂP̄²*. Its title and PDF link point to `paper/main.pdf` in the
+exotic ℂP²#ℂP̄²*. Its title links to [arXiv:2608.17267](https://arxiv.org/abs/2608.17267),
+and its current-version PDF link points to `paper/main.pdf` in the
 [exotic-s2xs2 repository](https://github.com/bwuebben/exotic-s2xs2).
 The description states the complete group presentation and structural
 results while leaving the final filling question open. The repository
