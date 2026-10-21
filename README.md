@@ -173,10 +173,14 @@ preserved, with heading levels adjusted for a standalone page. Preview it at
 
 The exotic four-manifolds entry presents *Toward an exotic S²×S² and an
 exotic ℂP²#ℂP̄²*. Its title links to [arXiv:2608.17267](https://arxiv.org/abs/2608.17267),
-and its current-version PDF link points to `paper/main.pdf` in the
+and its latest-version PDF link points to `paper/main.pdf` in the
 [exotic-s2xs2 repository](https://github.com/bwuebben/exotic-s2xs2).
 The description states the complete group presentation and structural
-results while leaving the final filling question open. The repository
+results while leaving the final filling question open. The October 21,
+2026 PDF is a 53-page working revision; its proposed Liouville and
+symplectic-homology additions await independent mathematical verification.
+Keep the title linked to arXiv and the latest-version link pointed at the
+repository PDF. The repository
 contains the self-contained source and two Python standard-library
 verification scripts; keep these links and qualifications aligned with
 its README.
