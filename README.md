@@ -177,8 +177,10 @@ and its latest-version PDF link points to `paper/main.pdf` in the
 [exotic-s2xs2 repository](https://github.com/bwuebben/exotic-s2xs2).
 The description states the complete group presentation and structural
 results while leaving the final filling question open. The October 21,
-2026 PDF is a 53-page working revision; its proposed Liouville and
-symplectic-homology additions await independent mathematical verification.
+2026 PDF is a 56-page working revision. Its proposed capacity obstruction,
+exact-torus transfer-kernel construction, and conditional symplectic-homology
+discussion await independent mathematical verification. The group-algebra
+criterion does not establish its required nonvanishing or decide the group.
 Keep the title linked to arXiv and the latest-version link pointed at the
 repository PDF. The repository
 contains the self-contained source and two Python standard-library
