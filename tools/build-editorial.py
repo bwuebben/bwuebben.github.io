@@ -15,6 +15,8 @@ BASE = "https://bwuebben.github.io"
 papers = json.loads((ROOT / "data/papers.json").read_text())["papers"]
 by_slug = {p["slug"]: p for p in papers}
 E = html.escape
+# Version the editorial stylesheet by content so browsers fetch changes immediately.
+EDITORIAL_CSS_VERSION = __import__("hashlib").sha256((ROOT / "assets/editorial.css").read_bytes()).hexdigest()[:12]
 
 def write(path, text):
     p = ROOT / path
@@ -107,7 +109,7 @@ def page(path, title, desc, body, extra="", image="drums", cls=""):
 <meta property="og:image" content="{BASE}{social_image}"><meta name="twitter:card" content="summary_large_image">
 <link rel="alternate" type="application/rss+xml" title="Bernd Wuebben — Updates" href="/feed.xml">
 <!-- site:styles --><!-- /site:styles -->
-<link rel="stylesheet" href="/assets/editorial.css">
+<link rel="stylesheet" href="/assets/editorial.css?v={EDITORIAL_CSS_VERSION}">
 {extra}</head><body class="editorial {cls}">
 <!-- site:navigation --><!-- /site:navigation -->
 <main id="main" class="edition" tabindex="-1">{body}{footer}</main></body></html>''')

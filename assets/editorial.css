@@ -92,6 +92,8 @@
 .about-grid img { display:block; width:100%; }
 .about-copy { max-width:42rem; }
 .about-copy p { font-size:1.1rem; }
+.about-copy p a { border-bottom:1px solid color-mix(in srgb, currentColor 45%, transparent); }
+.about-copy p a:hover { border-bottom-color:currentColor; }
 .about-copy h2 { font-size:2rem; margin-top:2.5rem; }
 .elsewhere { list-style:none; padding:0; margin:1.5rem 0; }
 .elsewhere li { border-bottom:1px solid var(--rule); padding:.8rem 0; display:flex; justify-content:space-between; gap:1rem; }
