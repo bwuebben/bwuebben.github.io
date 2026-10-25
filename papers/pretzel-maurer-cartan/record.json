@@ -1,0 +1,46 @@
+{
+  "slug": "pretzel-maurer-cartan",
+  "catalogue_title": "Maurer–Cartan elements in the pillowcase and the Bar-Natan invariant for the (−2,3,q) pretzel knots",
+  "catalogue_anchor": "pretzel-maurer-cartan",
+  "title": "Maurer–Cartan elements in the pillowcase and the Bar-Natan invariant for the (−2,3,q) pretzel knots",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Instanton homology of knots",
+  "status": "Preprint",
+  "publication_date": "2026-10-06",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643150",
+    "url": "https://zenodo.org/records/23643150"
+  },
+  "citation_doi": "10.5281/zenodo.23643150",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2b/pretzel-maurer-cartan.pdf"
+    },
+    {
+      "label": "source and code",
+      "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/paper2b"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Cazassus, Herald, Kirk and Kotelskiy conjectured that the reduced singular instanton homology of a knot is recovered from any decomposition along a Conway sphere by Lagrangian Floer homology in the pillowcase, once the immersed curves of the two tangles carry suitable bounding cochains. For Smith’s decomposition of the pretzel knots <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, which separates a rational tangle carrying the earring from the sum of two other rational tangles, zero bounding cochains give the wrong rank. Working in the algebraic model of Kotelskiy, Watson and Zibrowius, where the Maurer–Cartan equation is a finite identity, we construct for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> explicit Maurer–Cartan elements, each obtained by smoothing a model of Smith’s curve at a single self-intersection, that restore the rank. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, a second closure of the tangle selects one of them, conditionally on the conjecture and on a hypothesis about the support of the cochain. The resulting object is a rational arc together with a closed curve carrying a two-dimensional local system, and one further term near a corner turns it into the Bar-Natan invariant of the tangle. Granting one case of an intersection formula of Kotelskiy, Watson and Zibrowius, we show that no rational closure distinguishes the two. We ask whether the object that the conjecture assigns to this tangle is its Bar-Natan invariant, and record evidence on both sides.</p>",
+  "abstract_source": "https://zenodo.org/records/23643150",
+  "pdf": {
+    "sha256": "be947e455c790e7ed254854a575cd7e79c83f752826a8273b20b22025b85b66b",
+    "size_bytes": 593618,
+    "pages": 33,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper2b/pretzel-maurer-cartan.pdf",
+    "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2b/pretzel-maurer-cartan.pdf",
+    "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+    "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+    "source_path": "paper2b/pretzel-maurer-cartan.pdf"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "slug": "fjrw-annular-scattering",
+  "catalogue_title": "Annular scattering in quartic open FJRW theory",
+  "catalogue_anchor": "fjrw-annular-scattering",
+  "title": "Annular scattering in quartic open FJRW theory",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Wall crossing and scattering in open FJRW theory",
+  "status": "Preprint",
+  "publication_date": "2026-09-29",
+  "revision_date": "2026-10-11",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643219",
+    "url": "https://zenodo.org/records/23643219"
+  },
+  "citation_doi": "10.5281/zenodo.23643219",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/fjrw-annular-scattering/fjrw-annular-scattering.pdf"
+    },
+    {
+      "label": "source",
+      "url": "https://github.com/bwuebben/open-fjrw-scattering/tree/main/fjrw-annular-scattering"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>For the open FJRW theory of Gross, Kelly and Tessler attached to the quartic Fermat polynomial in two variables, we prove that, with its two monomials matched to toric divisors of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi mathvariant=\"double-struck\">P</mi><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, the smallest cover of the tropical base of Carl, Pumperla and Siebert on which the affine monodromy preserves the lattice spanned by the exponents of the base and of the first-descendent wall-crossing generators of twists <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>0</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is the double cover branched at two of its three singular points, an integral-affine annulus. Its core holonomy is hyperbolic, and lifting its transitions requires roots of the slab functions that generate an infinite Kummer extension under transport. The annulus carries a wall structure, consistent at its two joints in a sense weaker than that of Gross and Siebert, whose wall-crossing agrees with that of Gross, Kelly and Tessler between the extremal systems of invariants for a single marking but not for two; the difference does not change periods, and its removal from the annular structure is left open. The homotopies of boundary conditions realizing this wall-crossing ray by ray can be chosen compatibly for all markings.</p>",
+  "abstract_source": "https://zenodo.org/records/23643219",
+  "pdf": {
+    "sha256": "767263d24e31b0ac6c874fbfb1140f4f68d0b734495bae8c1aa8310c9a521c8d",
+    "size_bytes": 994076,
+    "pages": 85,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/open-fjrw-scattering/537bae45c44adfee1ba0cdcd31bd468bafb3297d/fjrw-annular-scattering/fjrw-annular-scattering.pdf",
+    "source_url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/fjrw-annular-scattering/fjrw-annular-scattering.pdf",
+    "source_commit": "537bae45c44adfee1ba0cdcd31bd468bafb3297d",
+    "source_repository": "https://github.com/bwuebben/open-fjrw-scattering",
+    "source_path": "fjrw-annular-scattering/fjrw-annular-scattering.pdf"
+  }
+}

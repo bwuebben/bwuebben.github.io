@@ -1,0 +1,46 @@
+{
+  "slug": "page-curve-transition",
+  "catalogue_title": "The Page Curve Through the Transition: An Order-One Correction to the Diagonal Approximation",
+  "catalogue_anchor": "page-curve-paper1",
+  "title": "The Page Curve Through the Transition: An Order-One Correction to the Diagonal Approximation",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Black hole information",
+  "status": "Preprint",
+  "publication_date": "2026-02-11",
+  "revision_date": "2026-10-09",
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6372958",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372958"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper1"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>In the west-coast model of black hole evaporation, the diagonal approximation computes the entropy of the radiation near the Page time by averaging the entropy of fixed-area states over the black hole’s fluctuating area. We show that this approximation, written level by level, misses an order-one constant: as the area distribution becomes broad, whatever its shape, the exact entropy exceeds it by <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mi>q</mi><mrow><mi mathvariant=\"normal\">log</mi><mo>&#8289;</mo></mrow><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">-q\\log q</annotation></semantics></math>, where <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>q</mi><annotation encoding=\"application/x-tex\">q</annotation></semantics></math> is the canonical probability that the black hole is larger than the radiation. The constant arises because the radiation, which has no energy of its own, can resolve area sectors only through the island, and so not those in which the black hole is larger than itself. For a symmetric distribution the excess is half of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">log</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">\\log 2</annotation></semantics></math> at the Page point and largest after it, so the exact transition is asymmetric. The proof reduces the entropy of the exact planar spectrum, a free multiplicative convolution, to a single integral. We compute the first correction and evaluate the constant in Jackiw–Teitelboim gravity. At fixed area, the two-saddle truncation misses the Rényi moments by Catalan factors.</p>",
+  "abstract_source": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf",
+  "pdf": {
+    "sha256": "1cbf385185768806b14311b85520b6d89867482652d1ae35278ae3192409a492",
+    "size_bytes": 858634,
+    "pages": 45,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper1/page-curve-transition.pdf",
+    "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf",
+    "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+    "source_repository": "https://github.com/bwuebben/page-curve-papers",
+    "source_path": "paper1/page-curve-transition.pdf"
+  }
+}

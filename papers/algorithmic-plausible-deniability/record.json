@@ -1,0 +1,29 @@
+{
+  "slug": "algorithmic-plausible-deniability",
+  "catalogue_title": "Algorithmic Plausible Deniability: The Structural Erosion of Deterrence in the Age of Artificial Intelligence",
+  "catalogue_anchor": "algorithmic-plausible-deniability",
+  "title": "Algorithmic Plausible Deniability: The Structural Erosion of Deterrence in the Age of Artificial Intelligence",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "International relations and politics",
+  "status": "Preprint",
+  "publication_date": "2026",
+  "revision_date": null,
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6482039",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6482039"
+  },
+  "citation_doi": "10.2139/ssrn.6482039",
+  "resources": [],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Classical deterrence theory assumes that hostile actions can be attributed to identifiable actors whose intentions can be inferred and who can be credibly threatened with punishment. This article introduces <i>Algorithmic Plausible Deniability</i> APD: a structural condition in which the delegation of decisions to artificial intelligence systems generates persistent uncertainty over authorship and intent, thereby weakening deterrence even when states act rationally and prefer stability. Unlike strategic ambiguity, which actors choose, APD emerges endogenously from algorithmic delegation and persists independently of deception or bad faith. The article develops three contributions. First, it provides a theoretical account of how AI systems degrade the informational foundations of deterrence through mechanisms of delegation, opacity, and emergent behavior. Second, it identifies an <i>Accountability Trilemma</i> in which states cannot simultaneously achieve operational effectiveness, strategic flexibility, and clear attribution. Third, it demonstrates that APD creates asymmetric effects: hostile actions become more deniable while signals of restraint become less credible, systematically undermining escalation control. The argument has implications for cyber conflict, autonomous weapons governance, and crisis stability among technologically advanced states.</p>",
+  "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6482039",
+  "pdf": null,
+  "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+}

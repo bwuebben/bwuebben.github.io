@@ -1,0 +1,46 @@
+{
+  "slug": "toric-tangent-blowups-bundles",
+  "catalogue_title": "Tangent stability on toric Fano blowups and bundles",
+  "catalogue_anchor": "toric-blowups-bundles",
+  "title": "Tangent stability on toric Fano blowups and bundles",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Tangent bundle stability of toric Fano varieties",
+  "status": "Preprint",
+  "publication_date": "2026-09-20",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643199",
+    "url": "https://zenodo.org/records/23643199"
+  },
+  "citation_doi": "10.5281/zenodo.23643199",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper2/paper/main.pdf"
+    },
+    {
+      "label": "source and exact proof data",
+      "url": "https://github.com/bwuebben/toric-tangent-stability/tree/main/paper2"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We study anticanonical slope stability of tangent bundles for two classes of smooth toric Fano varieties. For codimension-two blowups of products of projective spaces indexed by a tree, stability is equivalent to one divisor-degree inequality at each vertex. The exceptional contributions are mixed intersections on the blowup centres. Stability holds for every tree of maximum degree at most three whose nonleaf factor dimensions equal their valences, with arbitrary positive leaf dimensions. A specified degree-four neighbourhood forces instability; other degree-four and degree-five arrangements are stable. For locally trivial toric bundles with fibre a product of degree-six del Pezzo surfaces and base a product of projective spaces, the largest Picard number compatible with tangent stability in dimension <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x02265;</mo><mn>4</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0230A;</mi><mn>5</mn><mi>n</mi><mo>&#x0002F;</mo><mn>4</mn><mi>&#x0230B;</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, allowing arbitrary integral twists. Every fixed tree of maximum degree at most three with an edge yields bundles attaining this bound after sufficiently long independent edge subdivisions. Their number, up to isomorphism of toric fans, is unbounded as the dimension grows through multiples of four. The proofs use relative tangent bundles, ranks of subspaces spanned by rays, and integral comparisons. The bundle existence proofs also use finite exact rational calculations with uniform error estimates and induction.</p>",
+  "abstract_source": "https://zenodo.org/records/23643199",
+  "pdf": {
+    "sha256": "3a1e99a800b6918f24b0c247a78931cc54175faa7bd744f6dbdc805eebf54d80",
+    "size_bytes": 703700,
+    "pages": 74,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/toric-tangent-stability/285c43dcc4fea0a1d66292d1e4764b9d1ced4b25/paper2/paper/main.pdf",
+    "source_url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper2/paper/main.pdf",
+    "source_commit": "285c43dcc4fea0a1d66292d1e4764b9d1ced4b25",
+    "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
+    "source_path": "paper2/paper/main.pdf"
+  }
+}

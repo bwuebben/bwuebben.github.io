@@ -1,0 +1,42 @@
+{
+  "slug": "one-bubble-neighborhoods",
+  "catalogue_title": "One-bubble neighborhoods in SO(3)-monopole moduli spaces",
+  "catalogue_anchor": "one-bubble-neighborhoods",
+  "title": "One-bubble neighborhoods in SO(3)-monopole moduli spaces",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Donaldson theory and the Atiyah–Floer program",
+  "status": "Preprint",
+  "publication_date": "2026-09-09",
+  "revision_date": "2026-10-07",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643193",
+    "url": "https://zenodo.org/records/23643193"
+  },
+  "citation_doi": "10.5281/zenodo.23643193",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We prove an oriented neighborhood theorem at the first Uhlenbeck level of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>-monopole moduli spaces, over a compact regular Seiberg–Witten moduli space of arbitrary dimension whose solutions have nonzero spinor. A finite-dimensional obstruction model admits an equivariant compactified embedding that maps the obstruction zero set homeomorphically onto an Uhlenbeck-open neighborhood of the ideal stratum; its restriction to that zero set at positive scale is a diffeomorphism onto its image. The principal analytic step is a strong approximation theorem in critical norms for arbitrary convergent one-bubble monopole sequences. Uniform gauge estimates and summable decay along the neck recover the gluing parameters, including the relative frame, and give reverse uniqueness. A global equivariant stabilization treats the background family without requiring a constant-rank spectral cutoff. Comparison with Donaldson’s instanton-addition map identifies the induced orientation with the standard monopole orientation. Under the additional topological hypotheses of Feehan and Leness, the construction supplies the analytic neighborhood input to their level-one link pairing. We state the resulting polynomial formula and its low-degree consequences for Witten’s conjecture on abundant, effective manifolds of Seiberg–Witten simple type.</p>",
+  "abstract_source": "https://zenodo.org/records/23643193",
+  "pdf": {
+    "sha256": "5e0276ae9cbc5c5b24721746d1267cffdb623cf072cd32c3ad92f879bc955a46",
+    "size_bytes": 628056,
+    "pages": 58,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf",
+    "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf",
+    "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+    "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+    "source_path": "w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf"
+  }
+}

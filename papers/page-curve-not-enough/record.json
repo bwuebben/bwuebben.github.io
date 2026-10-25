@@ -1,0 +1,46 @@
+{
+  "slug": "page-curve-not-enough",
+  "catalogue_title": "The Page Curve Is Not Enough: Universality, Ensemble Dependence, and Microscopic Ambiguity in Black Hole Information Recovery",
+  "catalogue_anchor": "page-curve-paper3",
+  "title": "The Page Curve Is Not Enough: Universality, Ensemble Dependence, and Microscopic Ambiguity in Black Hole Information Recovery",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Black hole information",
+  "status": "Preprint",
+  "publication_date": "2026-04-04",
+  "revision_date": "2026-10-10",
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6521478",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6521478"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper3"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>A Page curve constrains radiation entanglement, but its implications for microscopic information recovery depend on which state, ensemble, and channel data are specified. We examine this dependence through explicit finite-dimensional constructions and controlled random-state limits. Two density-matrix ensembles can have the same averaged spectral measure, every averaged replica moment, and the same mean von Neumann entropy, while their entropy and purity fluctuations differ. Fixed Marchenko–Pastur spectra and normalized Wishart spectra give a related large-dimension comparison. At the channel level, an isometry and a replacement channel can reproduce the complete nested radiation trajectory for one input while having different correlations with an external reference. For normalized states, annealed and quenched Rényi entropies have the same von Neumann limit; the derivative of their finite-order difference measures the entropy variance. We derive normalized replica-covariance identities and illustrate their normalization with the standard Haar purity covariance, separating these quantities from entropy of an averaged state. Finally, Gaussian and quartic fluctuations with equal variance give different entropy-transition profiles, illustrating the additional role of joint branch fluctuations and reservoir constraints. These calculations delimit what entropy and spectral agreement establish and specify further comparisons needed in gravitational models.</p>",
+  "abstract_source": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf",
+  "pdf": {
+    "sha256": "dec8ec36d22bb55df3d34e20554c15df4e2ce30d717982608417aec1208e579c",
+    "size_bytes": 738721,
+    "pages": 44,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper3/page-curve-not-enough.pdf",
+    "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf",
+    "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+    "source_repository": "https://github.com/bwuebben/page-curve-papers",
+    "source_path": "paper3/page-curve-not-enough.pdf"
+  }
+}

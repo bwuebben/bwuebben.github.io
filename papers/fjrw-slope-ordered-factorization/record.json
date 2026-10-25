@@ -1,0 +1,46 @@
+{
+  "slug": "fjrw-slope-ordered-factorization",
+  "catalogue_title": "Slope-ordered factorization of wall-crossing in two-variable open FJRW theory",
+  "catalogue_anchor": "fjrw-slope-ordered-factorization",
+  "title": "Slope-ordered factorization of wall-crossing in two-variable open FJRW theory",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Wall crossing and scattering in open FJRW theory",
+  "status": "Preprint",
+  "publication_date": "2026-08-24",
+  "revision_date": "2026-10-11",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643215",
+    "url": "https://zenodo.org/records/23643215"
+  },
+  "citation_doi": "10.5281/zenodo.23643215",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/slope-ordered-factorization/slope-ordered-factorization.pdf"
+    },
+    {
+      "label": "source",
+      "url": "https://github.com/bwuebben/open-fjrw-scattering/tree/main/slope-ordered-factorization"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>For the genus-zero open FJRW invariants of Gross, Kelly and Tessler attached to a two-variable Fermat polynomial, we prove that the wall-crossing transformation between the two extremal systems of invariants factors uniquely, in every finite truncation, into automorphisms supported on rays in the quadrant of boundary-marking numbers, ordered by slope. In these two systems, within each set of invariants mixed by wall-crossing, all vanish except the one with the fewest, respectively most, boundary markings of the first type. Each critical graph contributes a generator on the ray of its boundary-marking numbers, the only ray whose monomials that generator fixes. The proof combines the Kontsevich–Soibelman ordered-product lemma, run with a filtration in place of a grading, with the simply transitive action of the wall-crossing group enlarged by a torus direction. The factorization is realized ray by ray by concatenated homotopies of boundary conditions, though in general not by a single homotopy from the extension lemma of Gross, Kelly and Tessler. Finally, in each truncation the potentials between consecutive rays are transported from one set of initial coefficients, analogous to theta-function coefficients, which can be nonzero on terms with several internal markings.</p>",
+  "abstract_source": "https://zenodo.org/records/23643215",
+  "pdf": {
+    "sha256": "70464378cd4c4a81956d7f900efae2c3d6903efc987891eb97d1e58f33a40a47",
+    "size_bytes": 591708,
+    "pages": 37,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/open-fjrw-scattering/537bae45c44adfee1ba0cdcd31bd468bafb3297d/slope-ordered-factorization/slope-ordered-factorization.pdf",
+    "source_url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/slope-ordered-factorization/slope-ordered-factorization.pdf",
+    "source_commit": "537bae45c44adfee1ba0cdcd31bd468bafb3297d",
+    "source_repository": "https://github.com/bwuebben/open-fjrw-scattering",
+    "source_path": "slope-ordered-factorization/slope-ordered-factorization.pdf"
+  }
+}

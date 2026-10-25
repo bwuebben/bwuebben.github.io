@@ -1,0 +1,46 @@
+{
+  "slug": "cy-vanishing-cycle",
+  "catalogue_title": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+  "catalogue_anchor": "calabi-yau-smoothability-paper4",
+  "title": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Smoothability of Calabi–Yau threefolds",
+  "status": "Preprint",
+  "publication_date": "2026-08-27",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643204",
+    "url": "https://zenodo.org/records/23643204"
+  },
+  "citation_doi": "10.5281/zenodo.23643204",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper4/cy-vanishing-cycle.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper4"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We prove a homological obstruction to smoothing projective Calabi–Yau threefolds with nodes and anticanonical cones over smooth del Pezzo surfaces of degrees six and seven. On a crepant resolution that is small over the nodes and blows up the cone vertices, any smoothing forces a relation among link classes bounding in the local Milnor fibers. The relation is nonzero at every node and degree-seven point, and at each degree-six point smoothed through the one-dimensional component. The proof uses vanishing periods and applies to smoothing arcs of arbitrary contact order, extending the necessity direction of Friedman’s criterion. We apply the obstruction to a Batyrev hypersurface whose thirty singularities are individually smoothable but which admits no smoothing, even formally. On its mirror partner, two nodes cannot be smoothed by any analytic deformation, independently of a locally nonsmoothable cone point.</p>",
+  "abstract_source": "https://zenodo.org/records/23643204",
+  "pdf": {
+    "sha256": "485979e209071349046846c7a91f8ac2ebfbfb64c587209b610f55306ad594b5",
+    "size_bytes": 523681,
+    "pages": 34,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper4/cy-vanishing-cycle.pdf",
+    "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper4/cy-vanishing-cycle.pdf",
+    "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+    "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+    "source_path": "paper4/cy-vanishing-cycle.pdf"
+  }
+}

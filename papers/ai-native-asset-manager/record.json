@@ -1,0 +1,29 @@
+{
+  "slug": "ai-native-asset-manager",
+  "catalogue_title": "The AI-Native Asset Manager: Institutional Cognition as Competitive Advantage",
+  "catalogue_anchor": "ai-native-asset-manager",
+  "title": "The AI-Native Asset Manager: Institutional Cognition as Competitive Advantage",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Markets and quantitative finance",
+  "status": "Preprint",
+  "publication_date": "2026",
+  "revision_date": null,
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6487798",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6487798"
+  },
+  "citation_doi": "10.2139/ssrn.6487798",
+  "resources": [],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>The asset management industry faces a structural inversion. As information becomes abundant, analysis cheap, and first-pass portfolio construction partially commoditized, the scarce resource shifts from intelligence to institutional epistemology-the architecture by which a firm generates, challenges, sizes, and learns from investment beliefs. This paper argues that the next generation of dominant asset managers will not be firms with better models in the narrow sense, but firms that have built a superior epistemic operating system: a machine-augmented cognitive architecture organized around the lifecycle of belief under uncertainty. We introduce a three-engine frameworknarrative intelligence for beta, statistical intelligence for cross-sectional alpha, and causal issuer intelligence for idiosyncratic opportunities-and show how AI enables their coordination into a single adaptive capital-allocation organism. We provide a concrete organizational blueprint, define new institutional performance metrics, and identify the governance constraints required to prevent epistemic pathologies in AI-augmented firms.</p>",
+  "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6487798",
+  "pdf": null,
+  "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+}

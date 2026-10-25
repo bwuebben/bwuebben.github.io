@@ -1,0 +1,46 @@
+{
+  "slug": "compact-higgs-global-constraints",
+  "catalogue_title": "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua",
+  "catalogue_anchor": "compact-higgs-global-constraints",
+  "title": "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Compact Higgs transitions",
+  "status": "Preprint",
+  "publication_date": "2026-09-07",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643227",
+    "url": "https://zenodo.org/records/23643227"
+  },
+  "citation_doi": "10.5281/zenodo.23643227",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/01-global-constraints"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Complex deformations of noncompact canonical Calabi–Yau threefold singularities encode Higgs-branch renormalization-group flows of five-dimensional theories. We determine which such flows remain available when several singularities occur in one compact Calabi–Yau threefold. The local sectors are conifold points supporting free hypermultiplets and cones over smooth del Pezzo surfaces of degrees five, six and seven, and over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>1</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>1</mn></msup></mrow></math> of degree eight, engineering the rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>4</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>3</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>2</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>1</mn></msub></mrow></math> fixed points. We identify their deformation coordinates with flavor moment maps and derive a compact Abelian gauging matrix from wrapped-M2 charges and divisor pairings. On every choice of local Higgs components, we prove that the invariant deformation-coordinate values attained on the triplet moment-map zero locus in the rigid description are precisely the kernel of this matrix. For connected normal projective threefolds with these exact analytic germs, trivial canonical bundle, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mn>1</mn></msup><mo stretchy=\"false\">&#x00028;</mo><mi mathvariant=\"script\">O</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>0</mn></mrow></math>, and a smooth projective crepant resolution of the specified local type, the same kernel is the image of the global first-order deformation space. Combining this identification with the mixed smoothing theorem gives a necessary and sufficient criterion: the kernel must meet the complement of every local discriminant. On the two-dimensional <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> component this requires three separate nonzero coefficients; at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>4</mn></msub></mrow></math> it requires five nonzero conic-pencil pairings, identified integrally with the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>U</mi><mo stretchy=\"false\">&#x00028;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> diagonal moment-map coordinates. The selected global deformation base is smooth when its relation space projects nontrivially to each selected <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> summand; every tangent on that base integrates to a convergent deformation. Examples distinguish a joint conifold–<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> transition, sectors forced to remain undeformed, and nonzero <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> deformations forced to retain a singularity. These results concern geometric smoothing and invariant moment-map coordinates, not the full finite-Planck hypermultiplet geometry.</p>",
+  "abstract_source": "https://zenodo.org/records/23643227",
+  "pdf": {
+    "sha256": "6af14980cd73c117260cd31509995e6fd7bb2cf805dcee4ec2bd4f13c1c9b480",
+    "size_bytes": 497578,
+    "pages": 41,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/01-global-constraints/paper.pdf",
+    "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf",
+    "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+    "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+    "source_path": "papers/01-global-constraints/paper.pdf"
+  }
+}

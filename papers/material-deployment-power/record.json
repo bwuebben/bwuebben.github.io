@@ -1,0 +1,29 @@
+{
+  "slug": "material-deployment-power",
+  "catalogue_title": "Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order",
+  "catalogue_anchor": "material-deployment-power",
+  "title": "Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "International relations and politics",
+  "status": "Preprint",
+  "publication_date": "2026",
+  "revision_date": null,
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6481923",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6481923"
+  },
+  "citation_doi": "10.2139/ssrn.6481923",
+  "resources": [],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>\n Prevailing accounts of artificial intelligence in international relations treat AI primarily as an informational or cognitive technology, emphasizing data, algorithms, and innovation capacity as the central sources of advantage. This article challenges that view by arguing that large-scale AI deployment re-centers physical constraint as a determinant of power. Although AI expands informational capacity at unprecedented speed, its deployment depends on infrastructural systems - energy generation, transmission, conversion, cooling, and critical materials - that expand slowly, are politically mediated, and are unevenly distributed. As a result, competition over AI moves international politics into a constraint-dominated phase in which power is conditioned by the ability to convert technological potential into sustained economic and military capability.\n</p>\n\n<p>\n The article advances four contributions. First, it introduces the concept of  material deployment power MDP, defined as the capacity to mobilize and scale the physical systems necessary to operationalize advanced technologies under conditions of rivalry - a concept distinct from Michael Mann's institutional \"infrastructural power.\" Second, it develops a theoretical account of how material constraints generate systematic patterns of coercion, state - firm fusion, and selective cooperation, explaining the resurgence of mercantilist policies and supply-security clubs in the AI era. Third, it demonstrates through comparative analysis and detailed process tracing - examining cases including semiconductor export controls, hyperscaler energy strategies, and rare earth processing - that variation in material deployment capacity shapes AI deployment outcomes, trade and industrial policy, and alliance behavior independently of innovation leadership. Fourth, it extends the analysis to two underexplored domains: the emergence of energy-backed digital assets as instruments of monetary sovereignty, and the domestic political consequences of capital-intensive technological transitions that concentrate returns while displacing labor.\n</p>\n\n<p>\n The argument has broader implications for international order. By binding advanced capabilities to slow-moving physical systems, AI re-materializes global politics, increasing sensitivity to chokepoints, fragmenting interdependence, and reshaping the foundations of deterrence and cooperation. Understanding the geopolitics of artificial intelligence therefore requires rethinking prevailing assumptions about scalability, substitution, and the relationship between technology and power in the twenty-first century.\n</p>",
+  "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6481923",
+  "pdf": null,
+  "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+}

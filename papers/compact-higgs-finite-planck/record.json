@@ -1,0 +1,46 @@
+{
+  "slug": "compact-higgs-finite-planck",
+  "catalogue_title": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
+  "catalogue_anchor": "compact-higgs-finite-planck",
+  "title": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Compact Higgs transitions",
+  "status": "Preprint",
+  "publication_date": "2026-09",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643242",
+    "url": "https://zenodo.org/records/23643242"
+  },
+  "citation_doi": "10.5281/zenodo.23643242",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/04-finite-planck-vacua/paper.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/04-finite-planck-vacua"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>When a compact Calabi–Yau threefold degenerates, M-theory on it acquires light charged hypermultiplets whose condensation opens a Higgs branch, locally a hyperkähler quotient without gravity. At finite Planck mass the hypermultiplet moduli space is quaternionic Kähler, its metric is unknown, and its moment maps have no additive constant, hence no Fayet–Iliopoulos parameter. We prove a local normal form for quaternionic Kähler quotients near a fixed point at which the moment map vanishes, under a freeness condition on the normal representation: the quotient is locally the product of the fixed set with the flat hyperkähler quotient of that representation, with relative metric corrections of order <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></math> at distance <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>. Consequently, if exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> disjoint <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002C;</mo><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>-curves have zero area on a face of the nef cone with finite gauge couplings, and their classes satisfy one primitive relation <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mo>&#x02211;</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub><mo stretchy=\"false\">[</mo><msub><mi>C</mi><mi>i</mi></msub><mo stretchy=\"false\">]</mo><mo>&#x0003D;</mo><mn>0</mn></mrow></math> with all <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&#x02260;</mo><mn>0</mn></mrow></math>, then, under a regularity hypothesis on the effective supergravity, the Higgs branch opened by the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> light hypermultiplets is locally a smooth factor times <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mi>m</mi></msub></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>m</mi><mo>&#x0003D;</mo><msub><mo>&#x02211;</mo><mi>i</mi></msub><mo stretchy=\"false\">&#x0007C;</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy=\"false\">&#x0007C;</mo></mrow></math>, as without gravity. Transverse to the smooth factor, the order-<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></math> correction is the curvature of the hypermultiplet manifold restricted to a quaternionic line. A transition with two nodes and a cone over the degree-seven del Pezzo surface has such a face with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi><mo>&#x0003D;</mo><mn>4</mn></mrow></math>, giving <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mn>4</mn></msub></mrow></math>; where the del Pezzo surface collapses, the Higgs branch defined as the metric completion of the vacua on the smoothed threefold is again of this form. In type IIA string theory, under corresponding hypotheses, the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mi>k</mi></msub></mrow></math> point that Greene, Morrison and Vafa expected near <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> homologous vanishing three-cycles persists at finite Planck mass for these smoothings. A census of toric hypersurfaces finds 5605 faces whose light spectrum has one relation, 372 with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi><mo>&#x02265;</mo><mn>3</mn></mrow></math>, all with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>m</mi><mo>&#x0003D;</mo><mi>k</mi></mrow></math>.</p>",
+  "abstract_source": "https://zenodo.org/records/23643242",
+  "pdf": {
+    "sha256": "cc0ee843cc153681b0a93325e28c94105699e145b5ad080d683537e807f39b98",
+    "size_bytes": 525055,
+    "pages": 45,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/04-finite-planck-vacua/paper.pdf",
+    "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/04-finite-planck-vacua/paper.pdf",
+    "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+    "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+    "source_path": "papers/04-finite-planck-vacua/paper.pdf"
+  }
+}

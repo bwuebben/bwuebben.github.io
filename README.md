@@ -24,6 +24,8 @@ navigation and stylesheet links when the site's configuration changes.
 ```
 index.html              the landing page
 papers/index.html       research papers, grouped by subject
+papers/<slug>/           individual paper pages, PDFs, citations, and provenance
+data/papers.json         verified paper metadata and public PDF sources
 pillowcase-explorer/    interactive trefoil and pillowcase diagrams
 conifold-lab/           interactive conifold transitions laboratory
 cobordism-explorer/     interactive Atiyah–Floer cobordism explorer
@@ -36,8 +38,10 @@ portrait/index.html     the portrait at full size (the masthead links here;
 site.json               navigation labels, groups, order, and destinations
 templates/navigation.html shared navigation markup
 templates/page.html     starting point for additional pages
+templates/paper.html    shared individual paper page template
 assets/theme.css        shared fonts, colours, and reading width
 assets/style.css        shared layout and page styles
+assets/paper.css        individual paper page layout
 assets/bernd_full_noir.jpg  full-length portrait shown on the portrait page
 assets/bernd_dark1.jpg   masthead headshot at full size (the masthead loads
                          the -384 and -576 renditions through srcset)
@@ -115,8 +119,8 @@ Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status 
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
 canonical page list current when adding or removing public pages. It currently
-covers the nine main pages, not standalone explorer copies, templates, tools,
-verification files, or external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
+covers the nine main pages and all 39 individual paper pages. It excludes standalone explorer copies, templates,
+tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
 
@@ -124,6 +128,46 @@ A valid sitemap and successful live test do not guarantee indexing. Record any
 remaining fetch errors or pending requests accurately, and allow time for Google
 to crawl and update its reports. See Google's [URL Inspection guide](https://support.google.com/webmasters/answer/12482179)
 and [Sitemaps report guide](https://support.google.com/webmasters/answer/7451001).
+
+### Individual paper pages
+
+Each catalogue title opens a stable `/papers/<slug>/` page. The shared template
+contains the full author-written abstract, Scholar citation tags, ORCID and
+archive links, and a BibTeX download. Mathematical notation is static MathML;
+the page, abstract, and navigation require no JavaScript. Thirty-three pages
+currently serve verified public PDFs. Six SSRN-only papers have their complete
+registered abstracts and a **Read on SSRN** link while PDF downloads are blocked;
+their missing mirrors are tracked in TODO.md and the catalogue data. Do not
+advertise a local PDF or emit `citation_pdf_url` when no local PDF exists.
+
+Edit `data/papers.json`, `templates/paper.html`, and `assets/paper.css`, rather
+than generated page files. Each `record.json` is a generated copy of the paper's
+metadata, including its public source and PDF checksum. Manuscript dates,
+revision dates, and archive deposit dates are distinct. Stable slugs and existing
+catalogue anchors must survive title changes.
+
+```sh
+python3 tools/update-papers.py
+python3 tools/update-papers.py --check
+```
+
+The generator updates pages, citations, provenance, catalogue title links,
+sitemap entries, shared navigation, and stylesheet versions. It checks PDF
+checksums before writing. `--fetch-pdfs` retrieves a **missing** PDF from its
+reviewed public URL and accepts it only if its checksum matches the catalogue;
+it does not silently update a manuscript to a new version. The generator uses
+only the Python standard library.
+
+For a paper revision, download the latest released public PDF, verify it, and
+update the local PDF and its catalogue record together: full abstract, title,
+authors, dates, source commit, checksum, page count, and archive identity. Keep
+`current version (PDF)` linked to the public repository. Archive links remain
+visible even when that archive contains an older revision. Only use
+`citation_doi` when it identifies the version described by the page; otherwise
+the suggested citation uses the stable manuscript page URL. Do not rebuild or
+change the manuscript as part of a website refresh. Preview representative long
+titles, mathematical abstracts, and archive-only pages at desktop and phone
+widths. Actual Scholar inclusion remains a separate verification.
 
 ## The Pillowcase Explorer
 

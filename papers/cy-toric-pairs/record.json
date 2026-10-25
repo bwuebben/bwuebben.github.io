@@ -1,0 +1,46 @@
+{
+  "slug": "cy-toric-pairs",
+  "catalogue_title": "Deformations of toric pairs and the smoothing of Batyrev Calabi–Yau threefolds",
+  "catalogue_anchor": "calabi-yau-smoothability-paper2",
+  "title": "Deformations of toric pairs and the smoothing of Batyrev Calabi–Yau threefolds",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Smoothability of Calabi–Yau threefolds",
+  "status": "Preprint",
+  "publication_date": "2026-08-15",
+  "revision_date": null,
+  "archive": {
+    "name": "arXiv",
+    "doi": "10.48550/arXiv.2610.06884",
+    "url": "https://arxiv.org/abs/2610.06884"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper2"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Let <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi mathvariant=\"normal\">Δ</mi><annotation encoding=\"application/x-tex\">\\Delta</annotation></semantics></math> be a reflexive four-polytope with primitive edges. We construct deformations of the toric fourfold defined by its face fan that smooth the singularities of a generic anticanonical Calabi–Yau hypersurface over a chosen two-dimensional face. The construction applies when the face cone is smoothable and the dual edge has an interior lattice point; its equations are trinomials in Cox coordinates. It gives a smoothing of the hypersurface when this is the only face whose cone is singular. If every singular face satisfies these conditions, simultaneous smoothing follows in the nodal case and, in general, under irreducibility of the semiuniversal deformation space. A seven-vertex example with one ordinary double point and no smoothing shows that the dual-edge condition is sharp. A scan of the Kreuzer–Skarke classification shows that the facewise criterion accounts for 3,774 of the 30,241 smoothings in the Batyrev–Kreuzer census; the other 26,467 require relations among exceptional curve classes from different faces.</p>",
+  "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf",
+  "pdf": {
+    "sha256": "ceb3fbea70da78c6b2c463cb37f95b22b394240c125a917873bb1adf9d9969e7",
+    "size_bytes": 421681,
+    "pages": 18,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper2/cy-toric-pairs.pdf",
+    "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf",
+    "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+    "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+    "source_path": "paper2/cy-toric-pairs.pdf"
+  }
+}

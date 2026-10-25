@@ -1,0 +1,42 @@
+{
+  "slug": "af-point-operations",
+  "catalogue_title": "Point operations and matching-line bubbles in the Atiyah–Floer comparison",
+  "catalogue_anchor": "af-point-operations",
+  "title": "Point operations and matching-line bubbles in the Atiyah–Floer comparison",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Donaldson theory and the Atiyah–Floer program",
+  "status": "Preprint",
+  "publication_date": "2026-09-08",
+  "revision_date": "2026-09-23",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643185",
+    "url": "https://zenodo.org/records/23643185"
+  },
+  "citation_doi": "10.5281/zenodo.23643185",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We prove compatibility of the integral point operations in the admissible <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> Atiyah–Floer comparison of Daemi, Fukaya, and Lipyanskiy, in their embedded-Lagrangian setting. In the positive <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>p</mi><mn>1</mn></msub></mrow></math> normalization, the symplectic point operation is shifted by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>8</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> according as the marked component has genus one, two, or at least three. One coherent orientation system works for both matching components. Together with the known surface and loop comparisons and integral operation relations, this gives the corrected observable-algebra action over every commutative coefficient ring. When four is invertible, quarter-Pontryagin normalization gives the shifts <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math>.</p>\n<p>An index-four mixed sequence can develop a matching bubble of normalized energy one-half. Holomorphic doubling and the converse estimates identify compact limiting models: degree-one stable families and single elementary modifications of constant families. A Dirichlet construction reconstructs these models and glues them to regular index-zero mixed solutions. Converse gluing and the incidence conditions identify every bubbling end of the chosen point cut. The relative incidence degrees are eight and four in genera one and two. Comparing the actual gluing derivative with determinant-line excision determines their signs. Ordinary reference orientations agree for the two homologous matching surfaces; a local sphere comparison and a stabilized torus example fix the genus-two normalization even when the ambient rational Floer homology vanishes. The resulting boundary identity uses the original integral geometric count as its homotopy.</p>",
+  "abstract_source": "https://zenodo.org/records/23643185",
+  "pdf": {
+    "sha256": "3e11f8165950841b69d9f0f0e77e810283bf77f5bf77d2cac09eedcfd8477f26",
+    "size_bytes": 1451046,
+    "pages": 219,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/af-ops/point-operations-and-matching-line-bubbles.pdf",
+    "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf",
+    "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+    "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+    "source_path": "af-ops/point-operations-and-matching-line-bubbles.pdf"
+  }
+}

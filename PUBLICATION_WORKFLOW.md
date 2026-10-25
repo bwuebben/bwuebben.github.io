@@ -44,6 +44,15 @@ a one-time cleanup.
    the version/concept DOI history in the ledger. Keep an existing Zenodo link
    when an arXiv link is later added. Distinguish pending submissions from public
    papers. Do not put private package paths or draft URLs on pages.
+   Maintain the paper's stable `/papers/<slug>/` page through `data/papers.json`
+   and `templates/paper.html`: full manuscript abstract, actual title/authors,
+   manuscript and revision dates, archive links, and a verified public PDF copy.
+   Record the source commit and SHA-256; update metadata and PDF together.
+   Use a citation DOI only for the corresponding version, while keeping older
+   archive links visible as archives. If the public PDF cannot be retrieved,
+   record that explicitly and show an archive reading link without a fictitious
+   `citation_pdf_url`. Run `python3 tools/update-papers.py` and its `--check`
+   mode; it also maintains catalogue title links, the sitemap, and shared styles.
 7. Follow the current authorization for commit/push/deploy. Local preparation
    stays local when requested. For authorized site publication, run
    `python3 tools/update-site.py --check`, stage only intended files, check the

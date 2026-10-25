@@ -1,0 +1,42 @@
+{
+  "slug": "validation-bottleneck",
+  "catalogue_title": "The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free",
+  "catalogue_anchor": "validation-bottleneck",
+  "title": "The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Markets and quantitative finance",
+  "status": "Preprint",
+  "publication_date": "2026-07-24",
+  "revision_date": null,
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.7180460",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7180460"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "replication code",
+      "url": "https://github.com/bwuebben/validation-bottleneck"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Large language models have made investment hypotheses effectively free, moving the binding constraint on alpha discovery from generation to validation. Restricting a model’s data feed does not restrict its knowledge: it has read the anomaly literature, so its training cutoff is the only valid out-of-sample boundary. Put the two facts together and the strategies tested multiply without limit while the evidence that can judge them accrues at one year per year. Three consequences follow. The smallest alpha an allocator can certify rises with the logarithm of the number of strategies the industry tests, because the luckiest fluke among them looks better the more are tried. Alpha that decays faster than the evidence accrues cannot be certified within its own lifetime. And firms drawing hypotheses from the same model correlate their discoveries, on that model’s most celebrated ideas, before either holds a position. Two pre-registered experiments then measure the contamination and the bind. Told to propose predictors not yet in the literature as of a past date, five models across three lineages return that literature anyway: 26–55% of their “novel” proposals match predictors already in the library. Convergent rediscovery could explain that; it cannot explain the sign. The predictors they propose most often are those that performed worse afterward (combined z = −3.88). They reproduce fame, not future returns. Evaluated strictly after verified cutoffs, none of the roughly 900 evaluable strategies clears false-discovery control, and no model’s best pick beats the best of an equal number of random draws from the same restricted language; two of the three do worse. The models’ own stated predictions about their mechanisms held 39% of the time, against 70% for mechanisms already documented as true put through the same tests—and 46% against 86% on the one window long enough to test structure. By the second consequence, no window available today could certify a true strategy either: the nulls measure the window’s width, not the models’ quality. Hypotheses are free, and worth what they cost until validated.</p>",
+  "abstract_source": "https://github.com/bwuebben/validation-bottleneck/blob/main/validation-bottleneck.pdf",
+  "pdf": {
+    "sha256": "411511507fc58269a3b49353a5a85cb5749d260390086862935c9584663047d6",
+    "size_bytes": 547597,
+    "pages": 39,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/validation-bottleneck/e5e39bf8536cccec78b59cb1dd6e39b2ca4ef8f4/validation-bottleneck.pdf",
+    "source_url": "https://github.com/bwuebben/validation-bottleneck/blob/main/validation-bottleneck.pdf",
+    "source_commit": "e5e39bf8536cccec78b59cb1dd6e39b2ca4ef8f4",
+    "source_repository": "https://github.com/bwuebben/validation-bottleneck",
+    "source_path": "validation-bottleneck.pdf"
+  }
+}

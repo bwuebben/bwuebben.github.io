@@ -1,0 +1,46 @@
+{
+  "slug": "toric-tangent-stability",
+  "catalogue_title": "Slope stability of tangent bundles of smooth toric Fano varieties",
+  "catalogue_anchor": "toric-tangent-stability",
+  "title": "Slope stability of tangent bundles of smooth toric Fano varieties",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Tangent bundle stability of toric Fano varieties",
+  "status": "Preprint",
+  "publication_date": "2026-08-13",
+  "revision_date": "2026-09-20",
+  "archive": {
+    "name": "arXiv",
+    "doi": "10.48550/arXiv.2608.20411",
+    "url": "https://arxiv.org/abs/2608.20411"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf"
+    },
+    {
+      "label": "certificates and data",
+      "url": "https://github.com/bwuebben/toric-tangent-stability"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We construct smooth toric Fano <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi><annotation encoding=\"application/x-tex\">n</annotation></semantics></math>-folds of Picard number <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">n+2</annotation></semantics></math> whose tangent bundles are slope-stable with respect to the anticanonical polarization, for every <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">n\\ge4</annotation></semantics></math>. The construction gives toric fibrations with fibre the del Pezzo surface of degree six over products of projective lines, parametrized by multisets of roots of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding=\"application/x-tex\">A_2</annotation></semantics></math>. Every nonempty multiset of nonzero roots with vanishing sum yields a stable tangent bundle. Among these multisets, the resulting variety is Kähler–Einstein if and only if the multiset is invariant under negation or under the order-three rotation of the root hexagon. We also construct stable, non-Kähler–Einstein examples with nonzero twist sum in every even dimension at least four. The proofs reduce slope inequalities and barycenter computations to integrals over the moment hexagon.</p>\n<p>For a smooth toric Fano variety with strictly semistable tangent bundle, we prove that polystability is equivalent to decomposition as a nontrivial product of smooth toric Fano varieties with anticanonically stable tangent bundles. Exact evaluation of Klyachko’s criterion extends the stability classification to dimensions five and six, recovering the classifications of Steffens and Reynolds in dimensions three and four. Together with the product criterion, this determines polystability for all <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>630</mn></mrow><annotation encoding=\"application/x-tex\">8{,}630</annotation></semantics></math> varieties in dimensions three through six, and hence the existence of Hermitian–Einstein metrics on their tangent bundles with respect to an anticanonical Kähler form.</p>",
+  "abstract_source": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf",
+  "pdf": {
+    "sha256": "c6a801d8d54db0c46056305a50f272c82be714e4b6bd9fb59d6564ed02d349b3",
+    "size_bytes": 473798,
+    "pages": 26,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/toric-tangent-stability/285c43dcc4fea0a1d66292d1e4764b9d1ced4b25/paper/toric-tangent-stability.pdf",
+    "source_url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf",
+    "source_commit": "285c43dcc4fea0a1d66292d1e4764b9d1ced4b25",
+    "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
+    "source_path": "paper/toric-tangent-stability.pdf"
+  }
+}

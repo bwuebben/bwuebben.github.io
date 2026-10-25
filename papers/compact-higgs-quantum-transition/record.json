@@ -1,0 +1,46 @@
+{
+  "slug": "compact-higgs-quantum-transition",
+  "catalogue_title": "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition",
+  "catalogue_anchor": "compact-higgs-quantum-transition",
+  "title": "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Compact Higgs transitions",
+  "status": "Preprint",
+  "publication_date": "2026-09-07",
+  "revision_date": "2026-09-23",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643235",
+    "url": "https://zenodo.org/records/23643235"
+  },
+  "citation_doi": "10.5281/zenodo.23643235",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/02-quantum-transition"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We study an explicit compact Calabi–Yau transition in which two conifold sectors and a rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> sector can Higgs only together. The integral relation between their curve classes determines two shared Abelian gaugings and a transition from Hodge numbers <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>6</mn><mo>&#x0002C;</mo><mn>122</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>123</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. We compute the primitive surviving charge lattice and its cubic couplings, and show that the flavor gauging cannot remain dynamical in a gravity-decoupling limit with bounded local Kähler scales. On an auxiliary circle the quantum transition contains four conifold states spanning a primitive rank-three electric lattice. Their one-loop thresholds reproduce the integral conifold monodromies. An explicit Laurent mutation and analytic continuation of all eight regular periods identify the genus-zero prepotential of the surviving vectors with that of the smooth phase, including the integral normalization and constant term, and hence its scalar and electromagnetic couplings. At fixed five-dimensional Planck scale the auxiliary-circle limit retains finite bulk gauging, but its closing Kaluza–Klein gap leaves the four conifold states no radius-independent energy range. This limit ends where the del Pezzo surface collapses. On the adjacent face of the nef cone, where only the two nodal curves and two exceptional curves of the del Pezzo surface have zero area, the same four states are massless hypermultiplets of five-dimensional M-theory. The K3 and elliptic fibrations identify a dilaton gauging, an anomaly-consistent six-dimensional <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>U</mi><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> phase and equal compact images of two E-string roots. An exact volume bound excludes the six-dimensional limit on the transition face. A heterotic K3 candidate and topological data are obtained; the global bundle construction and the finite-Planck hypermultiplet geometry remain open.</p>",
+  "abstract_source": "https://zenodo.org/records/23643235",
+  "pdf": {
+    "sha256": "c86d1096fa655d49d9e6ec1f30232a0fa2f9f6ea7f5a004abb3b0988bce60d7e",
+    "size_bytes": 563408,
+    "pages": 57,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/02-quantum-transition/paper.pdf",
+    "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf",
+    "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+    "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+    "source_path": "papers/02-quantum-transition/paper.pdf"
+  }
+}

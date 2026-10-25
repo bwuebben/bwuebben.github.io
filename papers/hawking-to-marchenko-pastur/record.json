@@ -1,0 +1,46 @@
+{
+  "slug": "hawking-to-marchenko-pastur",
+  "catalogue_title": "From Hawking to Marchenko–Pastur: A Guide to the Page Curve and Beyond",
+  "catalogue_anchor": "page-curve-paper4",
+  "title": "From Hawking to Marchenko–Pastur: A Guide to the Page Curve and Beyond",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Black hole information",
+  "status": "Preprint",
+  "publication_date": "2026-10-10",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643250",
+    "url": "https://zenodo.org/records/23643250"
+  },
+  "citation_doi": "10.5281/zenodo.23643250",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper4/hawking-to-marchenko-pastur.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper4"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>This tutorial develops the Page curve program from quantum entanglement and Hawking radiation to holographic entropy, replica wormholes, and random matrix theory. We derive the normalized random-state benchmark and its Marchenko–Pastur limit, explaining the roles of non-crossing partitions and spectral resolvents. We then distinguish averaging conditional entropies from calculating the entropy of a state with fluctuating energy or area. Gaussian broadening, finite reservoirs, and a quartic critical model illustrate how the preparation and the fluctuation law enter this distinction. Exact finite-dimensional examples separate averaged spectra from ensemble fluctuations and radiation data for one input from information about a quantum channel. Normalized annealed and quenched Rényi entropies have a common von Neumann limit, while their finite-order difference and connected replica moments measure additional ensemble information. Throughout, explicit calculations are distinguished from gravitational applications that require further assumptions. The resulting account provides a self-contained introduction to the established methods and to the remaining questions about microscopic information recovery.</p>",
+  "abstract_source": "https://zenodo.org/records/23643250",
+  "pdf": {
+    "sha256": "9cfb648febc15568f4f3ea3802c2f116622bd67bd71517c4361529b0b43f2231",
+    "size_bytes": 1482144,
+    "pages": 131,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper4/hawking-to-marchenko-pastur.pdf",
+    "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper4/hawking-to-marchenko-pastur.pdf",
+    "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+    "source_repository": "https://github.com/bwuebben/page-curve-papers",
+    "source_path": "paper4/hawking-to-marchenko-pastur.pdf"
+  }
+}

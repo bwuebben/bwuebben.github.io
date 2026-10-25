@@ -1,0 +1,46 @@
+{
+  "slug": "cy-conifold-relations",
+  "catalogue_title": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
+  "catalogue_anchor": "calabi-yau-smoothability-paper6",
+  "title": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Smoothability of Calabi–Yau threefolds",
+  "status": "Preprint",
+  "publication_date": "2026-09-29",
+  "revision_date": "2026-10-25",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643206",
+    "url": "https://zenodo.org/records/23643206"
+  },
+  "citation_doi": "10.5281/zenodo.23643206",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper6/cy-vanishing-spheres.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper6"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>For a class of Batyrev mirror families, we establish Morrison’s predicted codimension for nodal degenerations and strengthen it to an equality of integral relation lattices. The result holds on every connected component of the nodal coefficient locus meeting our construction near the maximally degenerate limit. After marking and orienting the nodes, the relations among exceptional curves of the original small resolution coincide with those among mirror vanishing three-spheres, which generate a torsion-free subgroup. Each such component is smooth of codimension equal to the relative Picard number. We realise every relation near the limit by an integral four-chain lifted from a tropical two-cycle relative to the discriminant on Gross’s degeneration base. The comparison characterises smoothability of the nodal partial resolution and, when it is smoothable, yields a symplectic conifold transition on the mirror. We treat specified projective toric partial resolutions of hypersurfaces with nodes and degree-six or degree-seven del Pezzo cone points. In an explicit four-node family, every member of the unique codimension-three nodal component admits a projective small resolution. For general members, these resolutions are birational to Batyrev mirrors of smoothings of the original nodal threefold, giving the reversed transition predicted by Morrison in this family.</p>",
+  "abstract_source": "https://zenodo.org/records/23643206",
+  "pdf": {
+    "sha256": "f74aa704ac4317335550ace1649c68c0b19cd7ca2e507ad583433feddf553aae",
+    "size_bytes": 1902034,
+    "pages": 234,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper6/cy-vanishing-spheres.pdf",
+    "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper6/cy-vanishing-spheres.pdf",
+    "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+    "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+    "source_path": "paper6/cy-vanishing-spheres.pdf"
+  }
+}

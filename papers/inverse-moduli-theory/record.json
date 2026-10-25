@@ -1,0 +1,46 @@
+{
+  "slug": "inverse-moduli-theory",
+  "catalogue_title": "Inverse Moduli Theory: Realizability of Degeneration Data by Compactified Moduli Spaces",
+  "catalogue_anchor": "inverse-moduli-theory",
+  "title": "Inverse Moduli Theory: Realizability of Degeneration Data by Compactified Moduli Spaces",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Moduli spaces and geometric analysis",
+  "status": "Preprint",
+  "publication_date": "2026-08-22",
+  "revision_date": "2026-09-05",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23643225",
+    "url": "https://zenodo.org/records/23643225"
+  },
+  "citation_doi": "10.5281/zenodo.23643225",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/inverse-moduli-theory/blob/main/paper/inverse-moduli-theory.pdf"
+    },
+    {
+      "label": "paper source and finite calculations",
+      "url": "https://github.com/bwuebben/inverse-moduli-theory"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Donaldson, Seiberg–Witten, Floer, and Gromov–Witten theories extract invariants or algebraic structures from compactified moduli spaces. We study the inverse problem: which prescribed gluing data and algebraic identities can be realized by compactified moduli spaces, and when can such a realization arise from Fredholm geometry? The formulation uses decorated Feynman categories, marked realization categories, and smoothing profiles that distinguish boundary, real-normal, and complex-normal degenerations.</p>\n<p>The principal result is an obstruction to extending stabilizing bundles across the associahedron <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow></math>. A compatible family over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>2</mn></msub></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>3</mn></msub></mrow></math> extends if and only if its glued boundary bundle extends over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow></math>; reflecting one endpoint identification produces a Möbius summand on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02202;</mo><msub><mi>K</mi><mn>4</mn></msub></mrow></math> and hence a nonextendable datum. We also prove that the equations <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#x0003D;</mo><mn>0</mn></mrow></math> and the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>A</mi><mo>&#x0221E;</mo></msub></mrow></math> relations are precisely oriented filling conditions in dimension one, with higher extensions obstructed by ordinary smooth <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B8;</mi></mrow></math>-bordism classes. Realization categories form fibers of a cartesian fibration over gluing data, and rigid realizations satisfy descent over overlapping color sets.</p>\n<p>Family-index, compactness, and determinant-line conditions yield further obstructions to Fredholm realization; we examine them in flow, planar, stable-curve, and stable-disk examples. The resulting framework is a sequence of realization and obstruction problems, not a universal existence theorem.</p>",
+  "abstract_source": "https://zenodo.org/records/23643225",
+  "pdf": {
+    "sha256": "4681aad4ec3d8cc377c915cc0227a3713cac6ec20c97fbdc7442ed41c56b5878",
+    "size_bytes": 1038990,
+    "pages": 106,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/inverse-moduli-theory/8c7ddcba92ef853365d5f4f4e84b71afa8c3e61f/paper/inverse-moduli-theory.pdf",
+    "source_url": "https://github.com/bwuebben/inverse-moduli-theory/blob/main/paper/inverse-moduli-theory.pdf",
+    "source_commit": "8c7ddcba92ef853365d5f4f4e84b71afa8c3e61f",
+    "source_repository": "https://github.com/bwuebben/inverse-moduli-theory",
+    "source_path": "paper/inverse-moduli-theory.pdf"
+  }
+}

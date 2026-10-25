@@ -1,0 +1,1690 @@
+{
+  "schema_version": 1,
+  "papers": [
+    {
+      "slug": "validation-bottleneck",
+      "catalogue_title": "The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free",
+      "catalogue_anchor": "validation-bottleneck",
+      "title": "The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Markets and quantitative finance",
+      "status": "Preprint",
+      "publication_date": "2026-07-24",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.7180460",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7180460"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "replication code",
+          "url": "https://github.com/bwuebben/validation-bottleneck"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Large language models have made investment hypotheses effectively free, moving the binding constraint on alpha discovery from generation to validation. Restricting a model’s data feed does not restrict its knowledge: it has read the anomaly literature, so its training cutoff is the only valid out-of-sample boundary. Put the two facts together and the strategies tested multiply without limit while the evidence that can judge them accrues at one year per year. Three consequences follow. The smallest alpha an allocator can certify rises with the logarithm of the number of strategies the industry tests, because the luckiest fluke among them looks better the more are tried. Alpha that decays faster than the evidence accrues cannot be certified within its own lifetime. And firms drawing hypotheses from the same model correlate their discoveries, on that model’s most celebrated ideas, before either holds a position. Two pre-registered experiments then measure the contamination and the bind. Told to propose predictors not yet in the literature as of a past date, five models across three lineages return that literature anyway: 26–55% of their “novel” proposals match predictors already in the library. Convergent rediscovery could explain that; it cannot explain the sign. The predictors they propose most often are those that performed worse afterward (combined z = −3.88). They reproduce fame, not future returns. Evaluated strictly after verified cutoffs, none of the roughly 900 evaluable strategies clears false-discovery control, and no model’s best pick beats the best of an equal number of random draws from the same restricted language; two of the three do worse. The models’ own stated predictions about their mechanisms held 39% of the time, against 70% for mechanisms already documented as true put through the same tests—and 46% against 86% on the one window long enough to test structure. By the second consequence, no window available today could certify a true strategy either: the nulls measure the window’s width, not the models’ quality. Hypotheses are free, and worth what they cost until validated.</p>",
+      "abstract_source": "https://github.com/bwuebben/validation-bottleneck/blob/main/validation-bottleneck.pdf",
+      "pdf": {
+        "sha256": "411511507fc58269a3b49353a5a85cb5749d260390086862935c9584663047d6",
+        "size_bytes": 547597,
+        "pages": 39,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/validation-bottleneck/e5e39bf8536cccec78b59cb1dd6e39b2ca4ef8f4/validation-bottleneck.pdf",
+        "source_url": "https://github.com/bwuebben/validation-bottleneck/blob/main/validation-bottleneck.pdf",
+        "source_commit": "e5e39bf8536cccec78b59cb1dd6e39b2ca4ef8f4",
+        "source_repository": "https://github.com/bwuebben/validation-bottleneck",
+        "source_path": "validation-bottleneck.pdf"
+      }
+    },
+    {
+      "slug": "ai-native-asset-manager",
+      "catalogue_title": "The AI-Native Asset Manager: Institutional Cognition as Competitive Advantage",
+      "catalogue_anchor": "ai-native-asset-manager",
+      "title": "The AI-Native Asset Manager: Institutional Cognition as Competitive Advantage",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Markets and quantitative finance",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6487798",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6487798"
+      },
+      "citation_doi": "10.2139/ssrn.6487798",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>The asset management industry faces a structural inversion. As information becomes abundant, analysis cheap, and first-pass portfolio construction partially commoditized, the scarce resource shifts from intelligence to institutional epistemology-the architecture by which a firm generates, challenges, sizes, and learns from investment beliefs. This paper argues that the next generation of dominant asset managers will not be firms with better models in the narrow sense, but firms that have built a superior epistemic operating system: a machine-augmented cognitive architecture organized around the lifecycle of belief under uncertainty. We introduce a three-engine frameworknarrative intelligence for beta, statistical intelligence for cross-sectional alpha, and causal issuer intelligence for idiosyncratic opportunities-and show how AI enables their coordination into a single adaptive capital-allocation organism. We provide a concrete organizational blueprint, define new institutional performance metrics, and identify the governance constraints required to prevent epistemic pathologies in AI-augmented firms.</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6487798",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    },
+    {
+      "slug": "beyond-de-prado-and-cotton",
+      "catalogue_title": "Beyond De Prado and Cotton: Hierarchical and Iterative Methods for General Mean-Variance Portfolios",
+      "catalogue_anchor": "beyond-hrp",
+      "title": "Beyond De Prado and Cotton: Hierarchical and Iterative Methods for General Mean-Variance Portfolios",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Markets and quantitative finance",
+      "status": "Preprint",
+      "publication_date": "2026-04-11",
+      "revision_date": null,
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2604.23833",
+        "url": "https://arxiv.org/abs/2604.23833"
+      },
+      "citation_doi": "10.48550/arXiv.2604.23833",
+      "resources": [
+        {
+          "label": "replication code",
+          "url": "https://github.com/bwuebben/beyond_hrp_and_cotton"
+        }
+      ],
+      "related": [
+        {
+          "label": "Beyond HRP Portfolio Lab",
+          "url": "https://bwuebben.github.io/beyond-hrp-lab/"
+        }
+      ],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Hierarchical Risk Parity [López de Prado, 2016] and the Schur-complement generalisation of [Cotton, 2024] are among the most widely adopted regularised portfolio construction methods, yet both are signal-blind: they solve only the minimum-variance problem and cannot accommodate an arbitrary expected-return forecast. This paper introduces three methods that incorporate alpha signals into hierarchical and regularised portfolio construction.</p>\n<p><strong>HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>μ</mi><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math></strong> is a hierarchical allocator that accepts an arbitrary signal <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>μ</mi><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math> and nests standard HRP when <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding=\"application/x-tex\">\\gamma = 0</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo>=</mo><mn mathvariant=\"bold\">𝟏</mn></mrow><annotation encoding=\"application/x-tex\">\\mu=\\mathbf{1}</annotation></semantics></math>. It preserves the tree-based structure of HRP while extending it beyond the minimum-variance setting. <strong>HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma\\mu</annotation></semantics></math></strong> strengthens this construction by replacing inverse-variance representatives with recursive local mean–variance optima, thereby using richer within-cluster covariance information at the same <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">O(N^2)</annotation></semantics></math> asymptotic cost.</p>\n<p><strong>CRISP</strong> (Correlation-Regularised Iterative Shrinkage Portfolios) is an iterative solver for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>P</mi><mi>γ</mi></msub><mi>w</mi><mo>=</mo><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">P_\\gamma w = \\mu</annotation></semantics></math> with <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>P</mi><mi>γ</mi></msub><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>γ</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mrow><mi mathvariant=\"normal\">diag</mi><mo>&#8289;</mo></mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mi mathvariant=\"normal\">Σ</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>+</mo><mi>γ</mi><mi mathvariant=\"normal\">Σ</mi></mrow><annotation encoding=\"application/x-tex\">P_\\gamma = (1-\\gamma)\\operatorname{diag}(\\Sigma) + \\gamma \\Sigma</annotation></semantics></math>, so that <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>γ</mi><annotation encoding=\"application/x-tex\">\\gamma</annotation></semantics></math> interpolates between a diagonal portfolio rule and full Markowitz. At convergence, CRISP is Markowitz applied to a variance-preserving shrunk covariance—diagonal variances unchanged, off-diagonal correlations shrunk—with <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>γ</mi><annotation encoding=\"application/x-tex\">\\gamma</annotation></semantics></math> tuned for out-of-sample Sharpe rather than covariance-estimation loss.</p>\n<p>In Monte Carlo experiments across multiple covariance regimes and estimation ratios, HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>μ</mi><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math> and HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma\\mu</annotation></semantics></math> both outperform plain HRP—not only on general expected-return forecasts, where HRP is signal-blind, but also on the minimum-variance problem <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>μ</mi><mo>=</mo><mn mathvariant=\"bold\">𝟏</mn></mrow><annotation encoding=\"application/x-tex\">\\mu = \\mathbf{1}</annotation></semantics></math> that is HRP’s home territory—with HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">Σ</mi><mi>μ</mi></mrow><annotation encoding=\"application/x-tex\">\\Sigma\\mu</annotation></semantics></math> consistently improving on HRP-<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>μ</mi><annotation encoding=\"application/x-tex\">\\mu</annotation></semantics></math>. CRISP at intermediate <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>γ</mi><annotation encoding=\"application/x-tex\">\\gamma</annotation></semantics></math> is the dominant method in both regimes, outperforming HRP, Cotton, Ledoit–Wolf shrinkage, direct Markowitz, and the signal-aware hierarchical methods at every sample size tested.</p>\n<p><strong>Keywords:</strong> portfolio optimization, hierarchical risk parity, Schur complement, signal-dependent allocation, covariance shrinkage, out-of-sample evaluation</p>\n<p><strong>JEL Classification:</strong> G11, C61, C63, C55</p>\n<p><strong>Code:</strong> All code, data, and reproduction scripts are available at <a href=\"https://github.com/bwuebben/beyond_hrp_and_cotton\" class=\"uri\">https://github.com/bwuebben/beyond_hrp_and_cotton</a>.</p>",
+      "abstract_source": "https://arxiv.org/pdf/2604.23833",
+      "pdf": {
+        "sha256": "053867e3fe5cea478bfa51d055509163450099a2b1cda087dc1abb5ac57e3cd7",
+        "size_bytes": 1456791,
+        "pages": 93,
+        "download_url": "https://arxiv.org/pdf/2604.23833v1",
+        "source_url": "https://arxiv.org/abs/2604.23833v1"
+      }
+    },
+    {
+      "slug": "traceless-characters-instanton-gradings",
+      "catalogue_title": "Traceless characters and instanton gradings for 2-bridge and (3,n) knots",
+      "catalogue_anchor": "traceless-characters-gradings",
+      "title": "Traceless SU(2) characters and ℤ/4 instanton gradings for two-bridge and (3,n)-torus knots",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Instanton homology of knots",
+      "status": "Preprint",
+      "publication_date": "2026-07-27",
+      "revision_date": "2026-10-06",
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2607.26095",
+        "url": "https://arxiv.org/abs/2607.26095"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper1/traceless-gradings.pdf"
+        },
+        {
+          "label": "code",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/pillowcase"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For every torus knot, the rank of the differential of the Daemi–Scaduto S-complex of singular instanton homology is determined by the signature and the Alexander polynomial; this follows from theorems of Li–Ye and Daemi–Scaduto. For the torus knots <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>n</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(3,n)</annotation></semantics></math> the differential has rank zero or one according to <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi><annotation encoding=\"application/x-tex\">n</annotation></semantics></math> modulo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn><annotation encoding=\"application/x-tex\">6</annotation></semantics></math>, and its rank equals Daemi and Scaduto’s Frøyshov-type invariant; they proved this in two of the four residue classes and for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">n=4,5</annotation></semantics></math>, and Hedden, Herald and Kirk computed it for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≤</mo><mn>38</mn></mrow><annotation encoding=\"application/x-tex\">n\\le38</annotation></semantics></math>. Following Lewallen, Klassen and Hedden–Herald–Kirk, we describe the generators of the instanton complexes and their <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">ℤ</mi><mi>/</mi><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}/4</annotation></semantics></math> gradings for two-bridge knots, whose irreducible traceless characters are all binary dihedral, and for <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>n</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(3,n)</annotation></semantics></math>, where at most one is. We also give a proof through Khovanov homology, using Schütz’s computation for three-braids, of Li and Ye’s computation of the rank of the instanton homology of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>n</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(3,n)</annotation></semantics></math>, and compare the differential of the knot <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mn>8</mn><mn>19</mn></msub><annotation encoding=\"application/x-tex\">8_{19}</annotation></semantics></math> with the single pillowcase bigon of Hedden, Herald and Kirk.</p>",
+      "abstract_source": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper1/traceless-gradings.pdf",
+      "pdf": {
+        "sha256": "cee77baa669d91c28ce66ffc960c0b59227b8140a22672297fabfd9f68843937",
+        "size_bytes": 418841,
+        "pages": 15,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper1/traceless-gradings.pdf",
+        "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper1/traceless-gradings.pdf",
+        "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+        "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+        "source_path": "paper1/traceless-gradings.pdf"
+      }
+    },
+    {
+      "slug": "pretzel-instanton-pillowcase",
+      "catalogue_title": "Instanton and pillowcase homology of the (−2,3,q) pretzel knots",
+      "catalogue_anchor": "pretzel-instanton-pillowcase",
+      "title": "Instanton and pillowcase homology of the (−2,3,q) pretzel knots",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Instanton homology of knots",
+      "status": "Preprint",
+      "publication_date": "2026-07-27",
+      "revision_date": "2026-10-06",
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2607.26096",
+        "url": "https://arxiv.org/abs/2607.26096"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2/pretzel-instanton-pillowcase.pdf"
+        },
+        {
+          "label": "code",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/paper2/code"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Hedden, Herald and Kirk conjectured that every knot admits a decomposition along a Conway sphere for which the Lagrangian Floer homology of the two associated immersed curves in the pillowcase recovers Kronheimer and Mrowka’s reduced singular instanton homology. We prove the conjecture for the hyperbolic pretzel knots <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>q</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(-2,3,q)</annotation></semantics></math>; it was previously known for two-bridge knots and for some torus knots. The decomposition is obtained from Hedden, Herald and Kirk’s decomposition of the torus knot <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(3,5)</annotation></semantics></math> by Dehn twists along the Conway sphere, which act on the pillowcase by a linear shear. Building on our analysis of the torus knots <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>,</mo><mi>n</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">T(3,n)</annotation></semantics></math>, we compute the Floer complex and its <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"double-struck\">ℤ</mi><mi>/</mi><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">\\mathbb{Z}/4</annotation></semantics></math> grading by hand; its differential is nonzero for every member of the family except <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(-2,3,7)</annotation></semantics></math>. The same method proves the conjecture for a family of twisted torus knots, under a hypothesis on the chirality of the torus-knot decomposition. On the instanton side, we show that the instanton homology of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo stretchy=\"false\" form=\"prefix\">(</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>q</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">P(-2,3,q)</annotation></semantics></math> is free abelian of rank <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">q+2</annotation></semantics></math> for every odd <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>≥</mo><mn>3</mn></mrow><annotation encoding=\"application/x-tex\">q\\ge3</annotation></semantics></math>, extending Lobb and Zentner’s rational computation to the integers by means of Manion’s integral Khovanov homology; for the hyperbolic members this also follows from work of Daemi and Scaduto.</p>",
+      "abstract_source": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2/pretzel-instanton-pillowcase.pdf",
+      "pdf": {
+        "sha256": "ac61efd58c5a89c05569740e080f14dc64db97a19c57964759ba2e235b27e1df",
+        "size_bytes": 652666,
+        "pages": 37,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper2/pretzel-instanton-pillowcase.pdf",
+        "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2/pretzel-instanton-pillowcase.pdf",
+        "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+        "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+        "source_path": "paper2/pretzel-instanton-pillowcase.pdf"
+      }
+    },
+    {
+      "slug": "pretzel-maurer-cartan",
+      "catalogue_title": "Maurer–Cartan elements in the pillowcase and the Bar-Natan invariant for the (−2,3,q) pretzel knots",
+      "catalogue_anchor": "pretzel-maurer-cartan",
+      "title": "Maurer–Cartan elements in the pillowcase and the Bar-Natan invariant for the (−2,3,q) pretzel knots",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Instanton homology of knots",
+      "status": "Preprint",
+      "publication_date": "2026-10-06",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643150",
+        "url": "https://zenodo.org/records/23643150"
+      },
+      "citation_doi": "10.5281/zenodo.23643150",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2b/pretzel-maurer-cartan.pdf"
+        },
+        {
+          "label": "source and code",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/paper2b"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Cazassus, Herald, Kirk and Kotelskiy conjectured that the reduced singular instanton homology of a knot is recovered from any decomposition along a Conway sphere by Lagrangian Floer homology in the pillowcase, once the immersed curves of the two tangles carry suitable bounding cochains. For Smith’s decomposition of the pretzel knots <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, which separates a rational tangle carrying the earring from the sum of two other rational tangles, zero bounding cochains give the wrong rank. Working in the algebraic model of Kotelskiy, Watson and Zibrowius, where the Maurer–Cartan equation is a finite identity, we construct for <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> explicit Maurer–Cartan elements, each obtained by smoothing a model of Smith’s curve at a single self-intersection, that restore the rank. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>P</mi><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>2</mn><mo>&#x0002C;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>7</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, a second closure of the tangle selects one of them, conditionally on the conjecture and on a hypothesis about the support of the cochain. The resulting object is a rational arc together with a closed curve carrying a two-dimensional local system, and one further term near a corner turns it into the Bar-Natan invariant of the tangle. Granting one case of an intersection formula of Kotelskiy, Watson and Zibrowius, we show that no rational closure distinguishes the two. We ask whether the object that the conjecture assigns to this tangle is its Bar-Natan invariant, and record evidence on both sides.</p>",
+      "abstract_source": "https://zenodo.org/records/23643150",
+      "pdf": {
+        "sha256": "be947e455c790e7ed254854a575cd7e79c83f752826a8273b20b22025b85b66b",
+        "size_bytes": 593618,
+        "pages": 33,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper2b/pretzel-maurer-cartan.pdf",
+        "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper2b/pretzel-maurer-cartan.pdf",
+        "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+        "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+        "source_path": "paper2b/pretzel-maurer-cartan.pdf"
+      }
+    },
+    {
+      "slug": "s-complex-torus-knots",
+      "catalogue_title": "The S-complex differential of torus knots",
+      "catalogue_anchor": "s-complex-torus-knots",
+      "title": "The S-complex differential of torus knots",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Instanton homology of knots",
+      "status": "Preprint",
+      "publication_date": "2026-10-02",
+      "revision_date": "2026-10-06",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643177",
+        "url": "https://zenodo.org/records/23643177"
+      },
+      "citation_doi": "10.5281/zenodo.23643177",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper4/s-complex-torus-knots.pdf"
+        },
+        {
+          "label": "source",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/paper4"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For a torus knot <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>K</mi><mo>&#x0003D;</mo><mi>T</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> the traceless <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">U</mi></mrow><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> character variety is finite and nondegenerate, so Daemi and Scaduto’s S-complex for singular instanton homology can be built on it. The resulting complex has rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>&#x003C3;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>K</mi><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"false\">&#x0007C;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003C3;</mi></mrow></math> is the signature, and by theorems of Li and Ye and of Kronheimer and Mrowka its homology <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>I</mi><mrow><mi>&#x0266E;</mi></mrow></msup><mo stretchy=\"false\">&#x00028;</mo><mi>K</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> has rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><msub><mi>&#x00394;</mi><mi>K</mi></msub><msub><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mn>1</mn></msub></mrow></math>, the sum of the absolute values of the coefficients of the Alexander polynomial; so the differential has rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>R</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>&#x003C3;</mi><mo stretchy=\"false\">&#x0007C;</mo><mo>&#x02212;</mo><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mi>&#x00394;</mi><msub><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mn>1</mn></msub><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. We express <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>R</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> through floor sums and show that, for coprime <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mo>&#x02264;</mo><mi>p</mi><mo>&#x0003C;</mo><mi>q</mi></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>R</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02265;</mo><mi>&#x0230A;</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x02212;</mo><mn>2</mn><mi>b</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup><mo>&#x0002F;</mo><mn>4</mn><mi>&#x0230B;</mi></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>b</mi><mo>&#x02208;</mo><mo stretchy=\"false\">&#x0007B;</mo><mn>1</mn><mo>&#x0002C;</mo><mo>&#x02026;</mo><mo>&#x0002C;</mo><mi>p</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x0007D;</mo></mrow></math> is the inverse of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>q</mi></mrow></math> modulo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi></mrow></math>, and that the differential vanishes if and only if <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo>&#x0003D;</mo><mn>2</mn></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi></mrow></math> is odd and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>q</mi><mo>&#x02261;</mo><mn>2</mn></mrow></math> or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>q</mi><mo>&#x02261;</mo><mi>p</mi><mo>&#x0002B;</mo><mn>2</mn><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>1</mn><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002F;</mo><mn>2</mn></mrow></msup><mspace width=\"1em\" /><mo>&#x00028;</mo><mi>mod</mi><mspace width=\"0.333em\" /><mrow><mn>2</mn><mi>p</mi></mrow><mo>&#x00029;</mo></mrow></math>; the ‘if’ direction is due to Daemi and Scaduto. By a result of Daemi and Scaduto, the component of the differential to the reducible generator is nonzero over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0211A;</mi></mrow></math> exactly when their invariant <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>h</mi></mrow></math> is positive. We show that the components from degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>3</mn></mrow></math> to degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn></mrow></math> and from degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math> to degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> have ranks <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0230A;</mi><mi>R</mi><mo>&#x0002F;</mo><mn>2</mn><mi>&#x0230B;</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x02308;</mi><mi>R</mi><mo>&#x0002F;</mo><mn>2</mn><mi>&#x02309;</mi></mrow></math>, independently of the choices in the construction. In particular the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x02124;</mi><mo>&#x0002F;</mo><mn>4</mn></mrow></math>-graded group <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>I</mi><mrow><mi>&#x0266E;</mi></mrow></msup><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00028;</mo><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi><mo stretchy=\"false\">&#x00029;</mo><mi>;</mi><mi>&#x0211A;</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> depends only on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003C3;</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mi>&#x00394;</mi><msub><mo fence=\"false\" stretchy=\"false\">&#x02016;</mo><mn>1</mn></msub></mrow></math>, and we give it explicitly. In each small-perturbation pillowcase computation of Hedden, Herald and Kirk, a bigon ends at the reducible generator exactly when <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>h</mi><mo>&#x0003E;</mo><mn>0</mn></mrow></math>. We formulate a chain-level conjecture identifying the two complexes over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>2</mn></msub></mrow></math>; it predicts this pattern whenever the map to the reducible is nonzero modulo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn></mrow></math>.</p>",
+      "abstract_source": "https://zenodo.org/records/23643177",
+      "pdf": {
+        "sha256": "de99ec779d6507566348b74d20df9a4d4c3de370d93c1ccdbc2bf7944d6df5bd",
+        "size_bytes": 411885,
+        "pages": 12,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper4/s-complex-torus-knots.pdf",
+        "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper4/s-complex-torus-knots.pdf",
+        "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+        "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+        "source_path": "paper4/s-complex-torus-knots.pdf"
+      }
+    },
+    {
+      "slug": "pillowcase-torus-knots",
+      "catalogue_title": "Pillowcase Floer homology of the torus knots T(3,n)",
+      "catalogue_anchor": "pillowcase-torus-knots",
+      "title": "Pillowcase Floer homology of the torus knots T(3,n)",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Instanton homology of knots",
+      "status": "Preprint",
+      "publication_date": "2026-10-02",
+      "revision_date": "2026-10-06",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643181",
+        "url": "https://zenodo.org/records/23643181"
+      },
+      "citation_doi": "10.5281/zenodo.23643181",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper5/pillowcase-torus-knots.pdf"
+        },
+        {
+          "label": "code",
+          "url": "https://github.com/bwuebben/pillowcase-bounding-cochain/tree/master/paper5/code"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Hedden, Herald and Kirk defined a Lagrangian Floer homology in the pillowcase from a tangle decomposition of a knot and conjectured that, for a suitable decomposition, it recovers reduced singular instanton homology. We compute this homology for every torus knot <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>T</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo>&#x0002C;</mo><mi>n</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, using their decomposition. For all sufficiently small holonomy perturbations in an explicit closed cone, the immersed curves are restricted and the complex has <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mo>&#x0002B;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>&#x003C3;</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></math> generators, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003C3;</mi></mrow></math> is the signature. There is no differential when <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x02261;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn><mspace width=\"1em\" /><mo>&#x00028;</mo><mi>mod</mi><mspace width=\"0.333em\" /><mn>6</mn><mo>&#x00029;</mo></mrow></math> and exactly one, to the generator of the abelian representation, when <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x02261;</mo><mn>4</mn><mo>&#x0002C;</mo><mn>5</mn><mspace width=\"1em\" /><mo>&#x00028;</mo><mi>mod</mi><mspace width=\"0.333em\" /><mn>6</mn><mo>&#x00029;</mo></mrow></math>. The <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi mathvariant=\"double-struck\">Z</mi><mo>&#x0002F;</mo><mn>4</mn></mrow></math>-graded homology has the graded dimensions of reduced instanton homology. This verifies the conjecture of Hedden, Herald and Kirk for this infinite family, and, combined with a cobordism inequality of Daemi and Scaduto, shows that over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>2</mn></msub></mrow></math> the pillowcase complex is S-chain homotopy equivalent to their singular instanton S-complex. The proof rests on an explicit description of the traceless character variety and the strict monotonicity of an angle function along its components; three inequalities are verified by interval arithmetic. For a different decomposition of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>T</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>4</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> in the same family, a numerical computation gives homology of rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>7</mn></mrow></math> rather than <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>5</mn></mrow></math> with zero bounding cochain.</p>",
+      "abstract_source": "https://zenodo.org/records/23643181",
+      "pdf": {
+        "sha256": "0d9e8f03450e637bcde4df61aa36392f7db9dffa50145d21fc55cf605f08e054",
+        "size_bytes": 656574,
+        "pages": 40,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/pillowcase-bounding-cochain/038b61e285837323fb87a142adc66047dbab2967/paper5/pillowcase-torus-knots.pdf",
+        "source_url": "https://github.com/bwuebben/pillowcase-bounding-cochain/blob/master/paper5/pillowcase-torus-knots.pdf",
+        "source_commit": "038b61e285837323fb87a142adc66047dbab2967",
+        "source_repository": "https://github.com/bwuebben/pillowcase-bounding-cochain",
+        "source_path": "paper5/pillowcase-torus-knots.pdf"
+      }
+    },
+    {
+      "slug": "af-point-operations",
+      "catalogue_title": "Point operations and matching-line bubbles in the Atiyah–Floer comparison",
+      "catalogue_anchor": "af-point-operations",
+      "title": "Point operations and matching-line bubbles in the Atiyah–Floer comparison",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Donaldson theory and the Atiyah–Floer program",
+      "status": "Preprint",
+      "publication_date": "2026-09-08",
+      "revision_date": "2026-09-23",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643185",
+        "url": "https://zenodo.org/records/23643185"
+      },
+      "citation_doi": "10.5281/zenodo.23643185",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We prove compatibility of the integral point operations in the admissible <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> Atiyah–Floer comparison of Daemi, Fukaya, and Lipyanskiy, in their embedded-Lagrangian setting. In the positive <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>p</mi><mn>1</mn></msub></mrow></math> normalization, the symplectic point operation is shifted by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>8</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> according as the marked component has genus one, two, or at least three. One coherent orientation system works for both matching components. Together with the known surface and loop comparisons and integral operation relations, this gives the corrected observable-algebra action over every commutative coefficient ring. When four is invertible, quarter-Pontryagin normalization gives the shifts <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math>.</p>\n<p>An index-four mixed sequence can develop a matching bubble of normalized energy one-half. Holomorphic doubling and the converse estimates identify compact limiting models: degree-one stable families and single elementary modifications of constant families. A Dirichlet construction reconstructs these models and glues them to regular index-zero mixed solutions. Converse gluing and the incidence conditions identify every bubbling end of the chosen point cut. The relative incidence degrees are eight and four in genera one and two. Comparing the actual gluing derivative with determinant-line excision determines their signs. Ordinary reference orientations agree for the two homologous matching surfaces; a local sphere comparison and a stabilized torus example fix the genus-two normalization even when the ambient rational Floer homology vanishes. The resulting boundary identity uses the original integral geometric count as its homotopy.</p>",
+      "abstract_source": "https://zenodo.org/records/23643185",
+      "pdf": {
+        "sha256": "3e11f8165950841b69d9f0f0e77e810283bf77f5bf77d2cac09eedcfd8477f26",
+        "size_bytes": 1451046,
+        "pages": 219,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/af-ops/point-operations-and-matching-line-bubbles.pdf",
+        "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf",
+        "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+        "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+        "source_path": "af-ops/point-operations-and-matching-line-bubbles.pdf"
+      }
+    },
+    {
+      "slug": "af-cobordism-i",
+      "catalogue_title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology I",
+      "catalogue_anchor": "cobordism-maps-atiyah-floer",
+      "title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology I",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Donaldson theory and the Atiyah–Floer program",
+      "status": "Preprint",
+      "publication_date": "2026-09-25",
+      "revision_date": "2026-10-19",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643187",
+        "url": "https://zenodo.org/records/23643187"
+      },
+      "citation_doi": "10.5281/zenodo.23643187",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf"
+        }
+      ],
+      "related": [
+        {
+          "label": "Atiyah–Floer Cobordism Explorer",
+          "url": "https://bwuebben.github.io/cobordism-explorer/"
+        }
+      ],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We prove that isomorphisms of the type constructed by Daemi, Fukaya and Lipyanskiy, between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting, intertwine the cobordism maps of Kronheimer and Mrowka with maps defined by holomorphic curves alone, over the field of two elements. This holds for every connected cobordism between connected three-manifolds carrying a framed arc between its ends and an <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. The symplectic maps count holomorphic triangles in moduli spaces of flat connections on surfaces, with the correspondence of a compression body as boundary condition for one- and three-handles. Consequently these maps are independent of the handle decomposition and of the Heegaard data, and form a functor isomorphic to framed instanton homology; where both are defined, our isomorphisms agree with those of Daemi, Fukaya and Lipyanskiy modulo two. The proof rests on two analytic results for the mixed anti-self-duality and holomorphic curve equation: an adiabatic limit in which a compression body collapses next to a holomorphic strip and becomes the Lagrangian boundary condition of its flat connections, and an excision theorem along a torus.</p>",
+      "abstract_source": "https://zenodo.org/records/23643187",
+      "pdf": {
+        "sha256": "ad3821e2c5ea080e3997de2bc77ecce4dc655d389168f7d0c18c8fba2a6e723d",
+        "size_bytes": 1324240,
+        "pages": 155,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf",
+        "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf",
+        "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+        "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+        "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms.pdf"
+      }
+    },
+    {
+      "slug": "af-cobordism-ii",
+      "catalogue_title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology II",
+      "catalogue_anchor": "cobordism-maps-atiyah-floer-ii",
+      "title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology II",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Donaldson theory and the Atiyah–Floer program",
+      "status": "Preprint",
+      "publication_date": "2026-09-30",
+      "revision_date": "2026-10-19",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643189",
+        "url": "https://zenodo.org/records/23643189"
+      },
+      "citation_doi": "10.5281/zenodo.23643189",
+      "resources": [
+        {
+          "label": "Scope and source",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/PAPER-II.md"
+        },
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We prove that the mixed isomorphisms of Daemi, Fukaya and Lipyanskiy type between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting intertwine the integral instanton cobordism maps, oriented by almost-complex structures, with signed symplectic cobordism maps, up to chain homotopy and one overall sign for each cobordism. This holds for every connected cobordism between connected three-manifolds carrying a framed arc and an <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. Where the integral framed instanton homology is nonzero, the symplectic maps are signed counts of holomorphic triangles, with the Lagrangian correspondence of a compression body as one boundary condition for one- and three-handles. At three-manifolds whose integral framed instanton homology vanishes, the complexes are contractible and the maps are zero. The orientations are transported from the gauge theory through the mixed anti-self-duality and holomorphic curve equation. Consequently these maps form a projective functor on homology, independent of the handle decomposition up to sign. The unsigned analysis is that of the comparison modulo two; the new input is that two degenerations of the mixed equation, the collapse of a compression body and excision along a torus, preserve orientations. Where this homology is nonzero, we also prove that the sign by which the orientations change when a sphere is attached to a strip is constant under small perturbations and invariant under reversing the splitting. The relation with homology-oriented integral instanton maps is left open.</p>",
+      "abstract_source": "https://zenodo.org/records/23643189",
+      "pdf": {
+        "sha256": "b9eea82e5e53a6c61bf47c863eca774bb033a8d0a67175f1bd6fb91e73ff6f20",
+        "size_bytes": 938893,
+        "pages": 110,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
+        "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
+        "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+        "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+        "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
+      }
+    },
+    {
+      "slug": "one-bubble-neighborhoods",
+      "catalogue_title": "One-bubble neighborhoods in SO(3)-monopole moduli spaces",
+      "catalogue_anchor": "one-bubble-neighborhoods",
+      "title": "One-bubble neighborhoods in SO(3)-monopole moduli spaces",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Donaldson theory and the Atiyah–Floer program",
+      "status": "Preprint",
+      "publication_date": "2026-09-09",
+      "revision_date": "2026-10-07",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643193",
+        "url": "https://zenodo.org/records/23643193"
+      },
+      "citation_doi": "10.5281/zenodo.23643193",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We prove an oriented neighborhood theorem at the first Uhlenbeck level of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>-monopole moduli spaces, over a compact regular Seiberg–Witten moduli space of arbitrary dimension whose solutions have nonzero spinor. A finite-dimensional obstruction model admits an equivariant compactified embedding that maps the obstruction zero set homeomorphically onto an Uhlenbeck-open neighborhood of the ideal stratum; its restriction to that zero set at positive scale is a diffeomorphism onto its image. The principal analytic step is a strong approximation theorem in critical norms for arbitrary convergent one-bubble monopole sequences. Uniform gauge estimates and summable decay along the neck recover the gluing parameters, including the relative frame, and give reverse uniqueness. A global equivariant stabilization treats the background family without requiring a constant-rank spectral cutoff. Comparison with Donaldson’s instanton-addition map identifies the induced orientation with the standard monopole orientation. Under the additional topological hypotheses of Feehan and Leness, the construction supplies the analytic neighborhood input to their level-one link pairing. We state the resulting polynomial formula and its low-degree consequences for Witten’s conjecture on abundant, effective manifolds of Seiberg–Witten simple type.</p>",
+      "abstract_source": "https://zenodo.org/records/23643193",
+      "pdf": {
+        "sha256": "5e0276ae9cbc5c5b24721746d1267cffdb623cf072cd32c3ad92f879bc955a46",
+        "size_bytes": 628056,
+        "pages": 58,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf",
+        "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf",
+        "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+        "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+        "source_path": "w-glue-1/one-bubble-neighborhoods-of-seiberg-witten-strata.pdf"
+      }
+    },
+    {
+      "slug": "toric-tangent-stability",
+      "catalogue_title": "Slope stability of tangent bundles of smooth toric Fano varieties",
+      "catalogue_anchor": "toric-tangent-stability",
+      "title": "Slope stability of tangent bundles of smooth toric Fano varieties",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Tangent bundle stability of toric Fano varieties",
+      "status": "Preprint",
+      "publication_date": "2026-08-13",
+      "revision_date": "2026-09-20",
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2608.20411",
+        "url": "https://arxiv.org/abs/2608.20411"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf"
+        },
+        {
+          "label": "certificates and data",
+          "url": "https://github.com/bwuebben/toric-tangent-stability"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We construct smooth toric Fano <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi><annotation encoding=\"application/x-tex\">n</annotation></semantics></math>-folds of Picard number <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">n+2</annotation></semantics></math> whose tangent bundles are slope-stable with respect to the anticanonical polarization, for every <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>4</mn></mrow><annotation encoding=\"application/x-tex\">n\\ge4</annotation></semantics></math>. The construction gives toric fibrations with fibre the del Pezzo surface of degree six over products of projective lines, parametrized by multisets of roots of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding=\"application/x-tex\">A_2</annotation></semantics></math>. Every nonempty multiset of nonzero roots with vanishing sum yields a stable tangent bundle. Among these multisets, the resulting variety is Kähler–Einstein if and only if the multiset is invariant under negation or under the order-three rotation of the root hexagon. We also construct stable, non-Kähler–Einstein examples with nonzero twist sum in every even dimension at least four. The proofs reduce slope inequalities and barycenter computations to integrals over the moment hexagon.</p>\n<p>For a smooth toric Fano variety with strictly semistable tangent bundle, we prove that polystability is equivalent to decomposition as a nontrivial product of smooth toric Fano varieties with anticanonically stable tangent bundles. Exact evaluation of Klyachko’s criterion extends the stability classification to dimensions five and six, recovering the classifications of Steffens and Reynolds in dimensions three and four. Together with the product criterion, this determines polystability for all <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>630</mn></mrow><annotation encoding=\"application/x-tex\">8{,}630</annotation></semantics></math> varieties in dimensions three through six, and hence the existence of Hermitian–Einstein metrics on their tangent bundles with respect to an anticanonical Kähler form.</p>",
+      "abstract_source": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf",
+      "pdf": {
+        "sha256": "c6a801d8d54db0c46056305a50f272c82be714e4b6bd9fb59d6564ed02d349b3",
+        "size_bytes": 473798,
+        "pages": 26,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/toric-tangent-stability/285c43dcc4fea0a1d66292d1e4764b9d1ced4b25/paper/toric-tangent-stability.pdf",
+        "source_url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper/toric-tangent-stability.pdf",
+        "source_commit": "285c43dcc4fea0a1d66292d1e4764b9d1ced4b25",
+        "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
+        "source_path": "paper/toric-tangent-stability.pdf"
+      }
+    },
+    {
+      "slug": "toric-tangent-blowups-bundles",
+      "catalogue_title": "Tangent stability on toric Fano blowups and bundles",
+      "catalogue_anchor": "toric-blowups-bundles",
+      "title": "Tangent stability on toric Fano blowups and bundles",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Tangent bundle stability of toric Fano varieties",
+      "status": "Preprint",
+      "publication_date": "2026-09-20",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643199",
+        "url": "https://zenodo.org/records/23643199"
+      },
+      "citation_doi": "10.5281/zenodo.23643199",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper2/paper/main.pdf"
+        },
+        {
+          "label": "source and exact proof data",
+          "url": "https://github.com/bwuebben/toric-tangent-stability/tree/main/paper2"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We study anticanonical slope stability of tangent bundles for two classes of smooth toric Fano varieties. For codimension-two blowups of products of projective spaces indexed by a tree, stability is equivalent to one divisor-degree inequality at each vertex. The exceptional contributions are mixed intersections on the blowup centres. Stability holds for every tree of maximum degree at most three whose nonleaf factor dimensions equal their valences, with arbitrary positive leaf dimensions. A specified degree-four neighbourhood forces instability; other degree-four and degree-five arrangements are stable. For locally trivial toric bundles with fibre a product of degree-six del Pezzo surfaces and base a product of projective spaces, the largest Picard number compatible with tangent stability in dimension <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi><mo>&#x02265;</mo><mn>4</mn></mrow></math> is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x0230A;</mi><mn>5</mn><mi>n</mi><mo>&#x0002F;</mo><mn>4</mn><mi>&#x0230B;</mi><mo>&#x0002B;</mo><mn>1</mn></mrow></math>, allowing arbitrary integral twists. Every fixed tree of maximum degree at most three with an edge yields bundles attaining this bound after sufficiently long independent edge subdivisions. Their number, up to isomorphism of toric fans, is unbounded as the dimension grows through multiples of four. The proofs use relative tangent bundles, ranks of subspaces spanned by rays, and integral comparisons. The bundle existence proofs also use finite exact rational calculations with uniform error estimates and induction.</p>",
+      "abstract_source": "https://zenodo.org/records/23643199",
+      "pdf": {
+        "sha256": "3a1e99a800b6918f24b0c247a78931cc54175faa7bd744f6dbdc805eebf54d80",
+        "size_bytes": 703700,
+        "pages": 74,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/toric-tangent-stability/285c43dcc4fea0a1d66292d1e4764b9d1ced4b25/paper2/paper/main.pdf",
+        "source_url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper2/paper/main.pdf",
+        "source_commit": "285c43dcc4fea0a1d66292d1e4764b9d1ced4b25",
+        "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
+        "source_path": "paper2/paper/main.pdf"
+      }
+    },
+    {
+      "slug": "cy-non-smoothable",
+      "catalogue_title": "Non-smoothable Calabi–Yau threefolds from reflexive polytopes",
+      "catalogue_anchor": "calabi-yau-smoothability-paper1",
+      "title": "Non-smoothable Calabi–Yau threefolds from reflexive polytopes",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-09-09",
+      "revision_date": null,
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2609.28499",
+        "url": "https://arxiv.org/abs/2609.28499"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper1/cy-non-smoothable.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper1"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We construct projective Calabi–Yau threefolds with isolated Gorenstein canonical singularities that admit no smoothing, as anticanonical hypersurfaces in Gorenstein Fano toric fourfolds. One example has a unique singularity, the anticanonical cone over the first Hirzebruch surface. Another has a unique singularity whose reduced miniversal base is a smooth curve but whose deformations are all singular. The construction combines Altmann’s deformation theory with the smoothing criterion of Corti–Filip–Petracci: a two-dimensional face of the ambient fan polytope with primitive edges obstructs smoothing if it has no Minkowski decomposition into unit segments and unimodular triangles. We also classify the 217 isolated Gorenstein toric threefold singularities whose polygon edge vectors have coordinates in <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow><annotation encoding=\"application/x-tex\">[-2,2]</annotation></semantics></math> in some lattice basis, recording their deformation types and smoothing components. A scan of the Kreuzer–Skarke classification finds this obstruction in <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>39</mn><mo>,</mo><mn>175</mn><mo>,</mo><mn>536</mn></mrow><annotation encoding=\"application/x-tex\">39{,}175{,}536</annotation></semantics></math> of its <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>473</mn><mo>,</mo><mn>800</mn><mo>,</mo><mn>776</mn></mrow><annotation encoding=\"application/x-tex\">473{,}800{,}776</annotation></semantics></math> polytopes (approximately <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8.27</mn><mi>%</mi></mrow><annotation encoding=\"application/x-tex\">8.27\\%</annotation></semantics></math>), whose generic anticanonical hypersurfaces therefore admit no smoothing.</p>",
+      "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper1/cy-non-smoothable.pdf",
+      "pdf": {
+        "sha256": "fc28f5ed2bd2ee2f070606d79cdc863d11f4921cd98b1b4867c79ea3b1e8797f",
+        "size_bytes": 386076,
+        "pages": 18,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper1/cy-non-smoothable.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper1/cy-non-smoothable.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper1/cy-non-smoothable.pdf"
+      }
+    },
+    {
+      "slug": "cy-toric-pairs",
+      "catalogue_title": "Deformations of toric pairs and the smoothing of Batyrev Calabi–Yau threefolds",
+      "catalogue_anchor": "calabi-yau-smoothability-paper2",
+      "title": "Deformations of toric pairs and the smoothing of Batyrev Calabi–Yau threefolds",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-08-15",
+      "revision_date": null,
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2610.06884",
+        "url": "https://arxiv.org/abs/2610.06884"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper2"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Let <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi mathvariant=\"normal\">Δ</mi><annotation encoding=\"application/x-tex\">\\Delta</annotation></semantics></math> be a reflexive four-polytope with primitive edges. We construct deformations of the toric fourfold defined by its face fan that smooth the singularities of a generic anticanonical Calabi–Yau hypersurface over a chosen two-dimensional face. The construction applies when the face cone is smoothable and the dual edge has an interior lattice point; its equations are trinomials in Cox coordinates. It gives a smoothing of the hypersurface when this is the only face whose cone is singular. If every singular face satisfies these conditions, simultaneous smoothing follows in the nodal case and, in general, under irreducibility of the semiuniversal deformation space. A seven-vertex example with one ordinary double point and no smoothing shows that the dual-edge condition is sharp. A scan of the Kreuzer–Skarke classification shows that the facewise criterion accounts for 3,774 of the 30,241 smoothings in the Batyrev–Kreuzer census; the other 26,467 require relations among exceptional curve classes from different faces.</p>",
+      "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf",
+      "pdf": {
+        "sha256": "ceb3fbea70da78c6b2c463cb37f95b22b394240c125a917873bb1adf9d9969e7",
+        "size_bytes": 421681,
+        "pages": 18,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper2/cy-toric-pairs.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper2/cy-toric-pairs.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper2/cy-toric-pairs.pdf"
+      }
+    },
+    {
+      "slug": "cy-mirror-pairs",
+      "catalogue_title": "Doubly isolated Batyrev mirror pairs and non-smoothable Calabi–Yau threefolds",
+      "catalogue_anchor": "calabi-yau-smoothability-paper3",
+      "title": "Doubly isolated Batyrev mirror pairs and non-smoothable Calabi–Yau threefolds",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-08-15",
+      "revision_date": null,
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2610.03753",
+        "url": "https://arxiv.org/abs/2610.03753"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper3/cy-mirror-pairs.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper3"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We classify reflexive four-polytopes for which the generic anticanonical hypersurfaces associated with the face fans of the polytope and its polar both have at most isolated singularities. There are exactly 590 such polytopes up to lattice equivalence in the Kreuzer–Skarke classification. Their two-dimensional faces belong to twelve lattice-isomorphism classes, all triangles, zonotopes, or reflexive polygons. The only nonsmoothable local models are the cyclic quotients <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\frac13(1,1,1)</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">\\frac15(1,1,3)</annotation></semantics></math> and the anticanonical cone over the first Hirzebruch surface; no singularity has a positive-dimensional reduced deformation space without a smoothing component. Within this classification, the Hirzebruch cone occurs in a unique mirror pair, associated with polytopes having 22 and 26 vertices. We exhibit this pair explicitly: one hypersurface is nonsmoothable, while all singularities of its mirror are locally smoothable. The crepant resolutions have Hodge numbers <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>20</mn><mo>,</mo><mn>26</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(20,26)</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>26</mn><mo>,</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow><annotation encoding=\"application/x-tex\">(26,20)</annotation></semantics></math>. At the opposite extreme, the self-dual 24-cell is the unique member of the classification for which both hypersurfaces are smooth before crepant resolution.</p>",
+      "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper3/cy-mirror-pairs.pdf",
+      "pdf": {
+        "sha256": "01a12cb25e05f34f7f6181561442d795ebd7a35af60cf4072701cd2c43ba77cb",
+        "size_bytes": 338002,
+        "pages": 11,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper3/cy-mirror-pairs.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper3/cy-mirror-pairs.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper3/cy-mirror-pairs.pdf"
+      }
+    },
+    {
+      "slug": "cy-vanishing-cycle",
+      "catalogue_title": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+      "catalogue_anchor": "calabi-yau-smoothability-paper4",
+      "title": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-08-27",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643204",
+        "url": "https://zenodo.org/records/23643204"
+      },
+      "citation_doi": "10.5281/zenodo.23643204",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper4/cy-vanishing-cycle.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper4"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We prove a homological obstruction to smoothing projective Calabi–Yau threefolds with nodes and anticanonical cones over smooth del Pezzo surfaces of degrees six and seven. On a crepant resolution that is small over the nodes and blows up the cone vertices, any smoothing forces a relation among link classes bounding in the local Milnor fibers. The relation is nonzero at every node and degree-seven point, and at each degree-six point smoothed through the one-dimensional component. The proof uses vanishing periods and applies to smoothing arcs of arbitrary contact order, extending the necessity direction of Friedman’s criterion. We apply the obstruction to a Batyrev hypersurface whose thirty singularities are individually smoothable but which admits no smoothing, even formally. On its mirror partner, two nodes cannot be smoothed by any analytic deformation, independently of a locally nonsmoothable cone point.</p>",
+      "abstract_source": "https://zenodo.org/records/23643204",
+      "pdf": {
+        "sha256": "485979e209071349046846c7a91f8ac2ebfbfb64c587209b610f55306ad594b5",
+        "size_bytes": 523681,
+        "pages": 34,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper4/cy-vanishing-cycle.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper4/cy-vanishing-cycle.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper4/cy-vanishing-cycle.pdf"
+      }
+    },
+    {
+      "slug": "cy-mixed-smoothing",
+      "catalogue_title": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+      "catalogue_anchor": "calabi-yau-smoothability-paper5",
+      "title": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Calabi–Yau smoothability · Paper 5",
+      "status": "Preprint",
+      "publication_date": "2026-09-07",
+      "revision_date": "2026-10-07",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23642520",
+        "url": "https://zenodo.org/records/23642520"
+      },
+      "citation_doi": "10.5281/zenodo.23642520",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper5/cy-mixed-smoothing.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper5"
+        }
+      ],
+      "related": [
+        {
+          "label": "Conifold Lab",
+          "url": "https://bwuebben.github.io/conifold-lab/"
+        }
+      ],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We give a necessary and sufficient homological criterion for smoothing projective Calabi–Yau threefolds with nodes and anticanonical cones over smooth del Pezzo surfaces of degrees five, six and seven, or over a smooth quadric surface. For some choice of local smoothing components, the criterion requires a relation on a crepant resolution among link classes whose associated local parameters avoid every discriminant. The complexified relation space describes first-order deformations modulo locally trivial ones. Necessity follows from local period and vanishing-cycle arguments; sufficiency applies Friedman's unobstructedness theorem to a crepant partial resolution. Whenever the criterion holds, the deformation space on the chosen components is smooth. A nonsmoothable example, whose deformation space is reduced with four smooth components, shows why nonvanishing at every singular point is insufficient. We also construct a smoothable Batyrev hypersurface admitting no smoothing induced by proper ambient families obtained from Minkowski decompositions at a single lattice degree.</p>",
+      "abstract_source": "https://zenodo.org/records/23642520",
+      "pdf": {
+        "sha256": "a0ddb588b84ba33276b3fee55c9a449a336a106651f3e1bfe4f595d4d1cb59f8",
+        "size_bytes": 691283,
+        "pages": 62,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper5/cy-mixed-smoothing.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper5/cy-mixed-smoothing.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper5/cy-mixed-smoothing.pdf"
+      }
+    },
+    {
+      "slug": "cy-conifold-relations",
+      "catalogue_title": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
+      "catalogue_anchor": "calabi-yau-smoothability-paper6",
+      "title": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-09-29",
+      "revision_date": "2026-10-25",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643206",
+        "url": "https://zenodo.org/records/23643206"
+      },
+      "citation_doi": "10.5281/zenodo.23643206",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper6/cy-vanishing-spheres.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper6"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For a class of Batyrev mirror families, we establish Morrison’s predicted codimension for nodal degenerations and strengthen it to an equality of integral relation lattices. The result holds on every connected component of the nodal coefficient locus meeting our construction near the maximally degenerate limit. After marking and orienting the nodes, the relations among exceptional curves of the original small resolution coincide with those among mirror vanishing three-spheres, which generate a torsion-free subgroup. Each such component is smooth of codimension equal to the relative Picard number. We realise every relation near the limit by an integral four-chain lifted from a tropical two-cycle relative to the discriminant on Gross’s degeneration base. The comparison characterises smoothability of the nodal partial resolution and, when it is smoothable, yields a symplectic conifold transition on the mirror. We treat specified projective toric partial resolutions of hypersurfaces with nodes and degree-six or degree-seven del Pezzo cone points. In an explicit four-node family, every member of the unique codimension-three nodal component admits a projective small resolution. For general members, these resolutions are birational to Batyrev mirrors of smoothings of the original nodal threefold, giving the reversed transition predicted by Morrison in this family.</p>",
+      "abstract_source": "https://zenodo.org/records/23643206",
+      "pdf": {
+        "sha256": "f74aa704ac4317335550ace1649c68c0b19cd7ca2e507ad583433feddf553aae",
+        "size_bytes": 1902034,
+        "pages": 234,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper6/cy-vanishing-spheres.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper6/cy-vanishing-spheres.pdf",
+        "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "paper6/cy-vanishing-spheres.pdf"
+      }
+    },
+    {
+      "slug": "fjrw-central-charge-threshold",
+      "catalogue_title": "The central-charge threshold for wall-crossing in two-variable open FJRW theory",
+      "catalogue_anchor": "fjrw-central-charge-threshold",
+      "title": "The central-charge threshold for wall-crossing in two-variable open FJRW theory",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Wall crossing and scattering in open FJRW theory",
+      "status": "Preprint",
+      "publication_date": "2026-08-24",
+      "revision_date": "2026-10-11",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643211",
+        "url": "https://zenodo.org/records/23643211"
+      },
+      "citation_doi": "10.5281/zenodo.23643211",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/central-charge-threshold/central-charge-threshold.pdf"
+        },
+        {
+          "label": "source",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/tree/main/central-charge-threshold"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For the genus-zero open FJRW theory of Gross, Kelly and Tessler attached to a two-variable Fermat polynomial, we prove, as they predicted, that the primary invariants do not depend on the choice of symmetric canonical boundary conditions exactly for the simple singularities, of types <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>A</mi></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>D</mi><mn>4</mn></msub></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>6</mn></msub></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>8</mn></msub></mrow></math>, that is, if and only if the central charge is less than one. The proof bounds the critical graphs, which carry the jumps, by the central charge and passes to the invariants through the wall-crossing group. Whenever a critical graph has one boundary marking of each type, this group acts simply transitively only after the vector field of the anti-diagonal torus action is adjoined. Beyond the simple range, dependence first appears with two interior insertions when both exponents are at least four and with three otherwise, while one insertion of descendent degree one produces wall-crossing for every pair. At central charge one every primary wall generator is a multiple of the torus vector field. A B-model analogue, for open Saito potentials, is due to Maher.</p>",
+      "abstract_source": "https://zenodo.org/records/23643211",
+      "pdf": {
+        "sha256": "f78f1f794a5b618466dd3c411445c97e4c1a0736e3a639a0564c03f02f8a8510",
+        "size_bytes": 410551,
+        "pages": 15,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/open-fjrw-scattering/537bae45c44adfee1ba0cdcd31bd468bafb3297d/central-charge-threshold/central-charge-threshold.pdf",
+        "source_url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/central-charge-threshold/central-charge-threshold.pdf",
+        "source_commit": "537bae45c44adfee1ba0cdcd31bd468bafb3297d",
+        "source_repository": "https://github.com/bwuebben/open-fjrw-scattering",
+        "source_path": "central-charge-threshold/central-charge-threshold.pdf"
+      }
+    },
+    {
+      "slug": "fjrw-slope-ordered-factorization",
+      "catalogue_title": "Slope-ordered factorization of wall-crossing in two-variable open FJRW theory",
+      "catalogue_anchor": "fjrw-slope-ordered-factorization",
+      "title": "Slope-ordered factorization of wall-crossing in two-variable open FJRW theory",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Wall crossing and scattering in open FJRW theory",
+      "status": "Preprint",
+      "publication_date": "2026-08-24",
+      "revision_date": "2026-10-11",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643215",
+        "url": "https://zenodo.org/records/23643215"
+      },
+      "citation_doi": "10.5281/zenodo.23643215",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/slope-ordered-factorization/slope-ordered-factorization.pdf"
+        },
+        {
+          "label": "source",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/tree/main/slope-ordered-factorization"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For the genus-zero open FJRW invariants of Gross, Kelly and Tessler attached to a two-variable Fermat polynomial, we prove that the wall-crossing transformation between the two extremal systems of invariants factors uniquely, in every finite truncation, into automorphisms supported on rays in the quadrant of boundary-marking numbers, ordered by slope. In these two systems, within each set of invariants mixed by wall-crossing, all vanish except the one with the fewest, respectively most, boundary markings of the first type. Each critical graph contributes a generator on the ray of its boundary-marking numbers, the only ray whose monomials that generator fixes. The proof combines the Kontsevich–Soibelman ordered-product lemma, run with a filtration in place of a grading, with the simply transitive action of the wall-crossing group enlarged by a torus direction. The factorization is realized ray by ray by concatenated homotopies of boundary conditions, though in general not by a single homotopy from the extension lemma of Gross, Kelly and Tessler. Finally, in each truncation the potentials between consecutive rays are transported from one set of initial coefficients, analogous to theta-function coefficients, which can be nonzero on terms with several internal markings.</p>",
+      "abstract_source": "https://zenodo.org/records/23643215",
+      "pdf": {
+        "sha256": "70464378cd4c4a81956d7f900efae2c3d6903efc987891eb97d1e58f33a40a47",
+        "size_bytes": 591708,
+        "pages": 37,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/open-fjrw-scattering/537bae45c44adfee1ba0cdcd31bd468bafb3297d/slope-ordered-factorization/slope-ordered-factorization.pdf",
+        "source_url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/slope-ordered-factorization/slope-ordered-factorization.pdf",
+        "source_commit": "537bae45c44adfee1ba0cdcd31bd468bafb3297d",
+        "source_repository": "https://github.com/bwuebben/open-fjrw-scattering",
+        "source_path": "slope-ordered-factorization/slope-ordered-factorization.pdf"
+      }
+    },
+    {
+      "slug": "fjrw-annular-scattering",
+      "catalogue_title": "Annular scattering in quartic open FJRW theory",
+      "catalogue_anchor": "fjrw-annular-scattering",
+      "title": "Annular scattering in quartic open FJRW theory",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Wall crossing and scattering in open FJRW theory",
+      "status": "Preprint",
+      "publication_date": "2026-09-29",
+      "revision_date": "2026-10-11",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643219",
+        "url": "https://zenodo.org/records/23643219"
+      },
+      "citation_doi": "10.5281/zenodo.23643219",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/fjrw-annular-scattering/fjrw-annular-scattering.pdf"
+        },
+        {
+          "label": "source",
+          "url": "https://github.com/bwuebben/open-fjrw-scattering/tree/main/fjrw-annular-scattering"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>For the open FJRW theory of Gross, Kelly and Tessler attached to the quartic Fermat polynomial in two variables, we prove that, with its two monomials matched to toric divisors of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi mathvariant=\"double-struck\">P</mi><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, the smallest cover of the tropical base of Carl, Pumperla and Siebert on which the affine monodromy preserves the lattice spanned by the exponents of the base and of the first-descendent wall-crossing generators of twists <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002C;</mo><mn>0</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mo>&#x0002C;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is the double cover branched at two of its three singular points, an integral-affine annulus. Its core holonomy is hyperbolic, and lifting its transitions requires roots of the slab functions that generate an infinite Kummer extension under transport. The annulus carries a wall structure, consistent at its two joints in a sense weaker than that of Gross and Siebert, whose wall-crossing agrees with that of Gross, Kelly and Tessler between the extremal systems of invariants for a single marking but not for two; the difference does not change periods, and its removal from the annular structure is left open. The homotopies of boundary conditions realizing this wall-crossing ray by ray can be chosen compatibly for all markings.</p>",
+      "abstract_source": "https://zenodo.org/records/23643219",
+      "pdf": {
+        "sha256": "767263d24e31b0ac6c874fbfb1140f4f68d0b734495bae8c1aa8310c9a521c8d",
+        "size_bytes": 994076,
+        "pages": 85,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/open-fjrw-scattering/537bae45c44adfee1ba0cdcd31bd468bafb3297d/fjrw-annular-scattering/fjrw-annular-scattering.pdf",
+        "source_url": "https://github.com/bwuebben/open-fjrw-scattering/blob/main/fjrw-annular-scattering/fjrw-annular-scattering.pdf",
+        "source_commit": "537bae45c44adfee1ba0cdcd31bd468bafb3297d",
+        "source_repository": "https://github.com/bwuebben/open-fjrw-scattering",
+        "source_path": "fjrw-annular-scattering/fjrw-annular-scattering.pdf"
+      }
+    },
+    {
+      "slug": "small-dolbeault-eigenvalues",
+      "catalogue_title": "Small Dolbeault eigenvalues along Hermitian Yang–Mills flow",
+      "catalogue_anchor": "small-dolbeault-eigenvalues",
+      "title": "Small Dolbeault eigenvalues along Hermitian Yang–Mills flow",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Moduli spaces and geometric analysis",
+      "status": "Preprint",
+      "publication_date": "2026-09-20",
+      "revision_date": "2026-09-30",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643223",
+        "url": "https://zenodo.org/records/23643223"
+      },
+      "citation_doi": "10.5281/zenodo.23643223",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/small-dolbeault-eigenvalues/blob/main/paper/small-dolbeault-eigenvalues.pdf"
+        },
+        {
+          "label": "paper source and verification code",
+          "url": "https://github.com/bwuebben/small-dolbeault-eigenvalues"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We study the small eigenvalues of the Dolbeault Laplacian on trace-free endomorphisms of a semistable holomorphic bundle along Hermitian Yang–Mills flow, normalized as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup><msub><mo>&#x02202;</mo><mi>&#x003C4;</mi></msub><mi>h</mi><mo>&#x0003D;</mo><mo>&#x02212;</mo><mn>2</mn><mo stretchy=\"false\">&#x00028;</mo><msub><mi>K</mi><mi>h</mi></msub><mo>&#x02212;</mo><mi>&#x003BA;</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mi>h</mi></msub></mrow></math> the mean curvature and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003BA;</mi></mrow></math> its average. The bundles considered are simple bundles on a compact curve whose Jordan–Hölder factors are pairwise nonisomorphic, and extensions of one polystable bundle by another on compact Kähler manifolds, again with pairwise nonisomorphic stable factors. From every smooth initial metric, each small eigenvalue is asymptotic to an eigenvalue of a weighted graph Laplacian, whose conductances evolve by an explicit finite-dimensional flow; the relative error tends to zero. The graph records which stable factors are joined by nonzero extension classes. The asymptotics are governed by the weight grading of Haiden, Katzarkov, Kontsevich, and Pandit, the solution of a quadratic program on this graph. Suppose some Lagrange multiplier vector of this program is strictly positive on every active constraint. We then determine the decay exponent and the leading coefficient of every small eigenvalue, and the limits of the spectral subspaces. The eigenvalues of order <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>&#x003C4;</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup></mrow></math> have coefficients independent of the initial metric, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></math> is always one of them. At each faster rate the coefficients depend on the initial metric, and their sum is unbounded over metrics on one fixed bundle. A key step shows that the bounded remainder in the asymptotics of the finite-dimensional flow converges. Examples include an eigenvalue decaying like <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>&#x003C4;</mi><mrow><mo>&#x02212;</mo><mn>4</mn><mo>&#x0002F;</mo><mn>3</mn></mrow></msup></mrow></math> and, without the positivity condition, an eigenvalue of order <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>&#x003C4;</mi><mi>log</mi><mi>&#x003C4;</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup></mrow></math>. We also treat families of harmonic extensions with fixed metrics, including repeated factors and recovery of the graded object, and we show that the constants in a slope inequality relating the lowest eigenvalue to the averaged trace-free mean curvature are sharp in every rank.</p>",
+      "abstract_source": "https://zenodo.org/records/23643223",
+      "pdf": {
+        "sha256": "73568fd6dbcc86e059fc150d543224c80cd1d54a5ef2076f2f4baffe5312678d",
+        "size_bytes": 571890,
+        "pages": 45,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/small-dolbeault-eigenvalues/47310f408eae8827ec46cad13fbd59cd57ac8693/paper/small-dolbeault-eigenvalues.pdf",
+        "source_url": "https://github.com/bwuebben/small-dolbeault-eigenvalues/blob/main/paper/small-dolbeault-eigenvalues.pdf",
+        "source_commit": "47310f408eae8827ec46cad13fbd59cd57ac8693",
+        "source_repository": "https://github.com/bwuebben/small-dolbeault-eigenvalues",
+        "source_path": "paper/small-dolbeault-eigenvalues.pdf"
+      }
+    },
+    {
+      "slug": "inverse-moduli-theory",
+      "catalogue_title": "Inverse Moduli Theory: Realizability of Degeneration Data by Compactified Moduli Spaces",
+      "catalogue_anchor": "inverse-moduli-theory",
+      "title": "Inverse Moduli Theory: Realizability of Degeneration Data by Compactified Moduli Spaces",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Moduli spaces and geometric analysis",
+      "status": "Preprint",
+      "publication_date": "2026-08-22",
+      "revision_date": "2026-09-05",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643225",
+        "url": "https://zenodo.org/records/23643225"
+      },
+      "citation_doi": "10.5281/zenodo.23643225",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/inverse-moduli-theory/blob/main/paper/inverse-moduli-theory.pdf"
+        },
+        {
+          "label": "paper source and finite calculations",
+          "url": "https://github.com/bwuebben/inverse-moduli-theory"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Donaldson, Seiberg–Witten, Floer, and Gromov–Witten theories extract invariants or algebraic structures from compactified moduli spaces. We study the inverse problem: which prescribed gluing data and algebraic identities can be realized by compactified moduli spaces, and when can such a realization arise from Fredholm geometry? The formulation uses decorated Feynman categories, marked realization categories, and smoothing profiles that distinguish boundary, real-normal, and complex-normal degenerations.</p>\n<p>The principal result is an obstruction to extending stabilizing bundles across the associahedron <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow></math>. A compatible family over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>2</mn></msub></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>3</mn></msub></mrow></math> extends if and only if its glued boundary bundle extends over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>K</mi><mn>4</mn></msub></mrow></math>; reflecting one endpoint identification produces a Möbius summand on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02202;</mo><msub><mi>K</mi><mn>4</mn></msub></mrow></math> and hence a nonextendable datum. We also prove that the equations <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>&#x0003D;</mo><mn>0</mn></mrow></math> and the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>A</mi><mo>&#x0221E;</mo></msub></mrow></math> relations are precisely oriented filling conditions in dimension one, with higher extensions obstructed by ordinary smooth <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B8;</mi></mrow></math>-bordism classes. Realization categories form fibers of a cartesian fibration over gluing data, and rigid realizations satisfy descent over overlapping color sets.</p>\n<p>Family-index, compactness, and determinant-line conditions yield further obstructions to Fredholm realization; we examine them in flow, planar, stable-curve, and stable-disk examples. The resulting framework is a sequence of realization and obstruction problems, not a universal existence theorem.</p>",
+      "abstract_source": "https://zenodo.org/records/23643225",
+      "pdf": {
+        "sha256": "4681aad4ec3d8cc377c915cc0227a3713cac6ec20c97fbdc7442ed41c56b5878",
+        "size_bytes": 1038990,
+        "pages": 106,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/inverse-moduli-theory/8c7ddcba92ef853365d5f4f4e84b71afa8c3e61f/paper/inverse-moduli-theory.pdf",
+        "source_url": "https://github.com/bwuebben/inverse-moduli-theory/blob/main/paper/inverse-moduli-theory.pdf",
+        "source_commit": "8c7ddcba92ef853365d5f4f4e84b71afa8c3e61f",
+        "source_repository": "https://github.com/bwuebben/inverse-moduli-theory",
+        "source_path": "paper/inverse-moduli-theory.pdf"
+      }
+    },
+    {
+      "slug": "exotic-four-manifolds",
+      "catalogue_title": "Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²",
+      "catalogue_anchor": "exotic-four-manifolds",
+      "title": "Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Exotic four-manifolds",
+      "status": "Working revision",
+      "publication_date": "2026-10-21",
+      "revision_date": null,
+      "archive": {
+        "name": "arXiv",
+        "doi": "10.48550/arXiv.2608.17267",
+        "url": "https://arxiv.org/abs/2608.17267"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "latest version (PDF)",
+          "url": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf"
+        },
+        {
+          "label": "paper source and exact algebra verification",
+          "url": "https://github.com/bwuebben/exotic-s2xs2"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "status_note": "The proposed geometric additions await independent mathematical verification. The final filling problem remains unresolved; the exotic homeomorphism conclusions are conditional.",
+      "abstract_html": "<p>We study a specified Luttinger filling in the construction of Lidman and Piccirillo whose simple connectivity would yield exotic <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>S</mi><mn>2</mn></msup><mo>×</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">S^2\\times S^2</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"double-struck\">ℂ</mi><mi mathvariant=\"double-struck\">ℙ</mi></mrow><mn>2</mn></msup><mi>#</mi><msup><mover><mrow><mi mathvariant=\"double-struck\">ℂ</mi><mi mathvariant=\"double-struck\">ℙ</mi></mrow><mo accent=\"true\">¯</mo></mover><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{CP}^2\\#\\overline{\\mathbb{CP}}^2</annotation></semantics></math>. An earlier version of this manuscript claimed simple connectivity from incorrectly derived group relations; that claim is withdrawn. We derive the complete fundamental-group presentation and express the group as a one-relator quotient of an iterated HNN extension containing the genus-two surface group. The filled group is trivial exactly when the final relation kills a specified fiber commutator. We also determine its universal central extension with cyclic kernel, construct geometric realizations of it, and extend the boundary involution over the filling. Proposed symplectic extensions construct a torus with a negative area–Maslov relation and exact tori detecting a nonzero transfer kernel for a choice of auxiliary handles. These constructions do not establish survival of the central element. The final filling problem remains unresolved.</p>",
+      "abstract_source": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf",
+      "pdf": {
+        "sha256": "2c9486ec0db5b4580814e7084696d63921ba6f5d4eef433abf53e9a50473044c",
+        "size_bytes": 624293,
+        "pages": 56,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/exotic-s2xs2/46a7cf95f300abfda9fda5fa1a9b48aa7109972c/paper/main.pdf",
+        "source_url": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf",
+        "source_commit": "46a7cf95f300abfda9fda5fa1a9b48aa7109972c",
+        "source_repository": "https://github.com/bwuebben/exotic-s2xs2",
+        "source_path": "paper/main.pdf"
+      }
+    },
+    {
+      "slug": "compact-higgs-global-constraints",
+      "catalogue_title": "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua",
+      "catalogue_anchor": "compact-higgs-global-constraints",
+      "title": "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Compact Higgs transitions",
+      "status": "Preprint",
+      "publication_date": "2026-09-07",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643227",
+        "url": "https://zenodo.org/records/23643227"
+      },
+      "citation_doi": "10.5281/zenodo.23643227",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/01-global-constraints"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Complex deformations of noncompact canonical Calabi–Yau threefold singularities encode Higgs-branch renormalization-group flows of five-dimensional theories. We determine which such flows remain available when several singularities occur in one compact Calabi–Yau threefold. The local sectors are conifold points supporting free hypermultiplets and cones over smooth del Pezzo surfaces of degrees five, six and seven, and over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>1</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>1</mn></msup></mrow></math> of degree eight, engineering the rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>4</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>3</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>2</mn></msub><mo>&#x0002C;</mo><msub><mi>E</mi><mn>1</mn></msub></mrow></math> fixed points. We identify their deformation coordinates with flavor moment maps and derive a compact Abelian gauging matrix from wrapped-M2 charges and divisor pairings. On every choice of local Higgs components, we prove that the invariant deformation-coordinate values attained on the triplet moment-map zero locus in the rigid description are precisely the kernel of this matrix. For connected normal projective threefolds with these exact analytic germs, trivial canonical bundle, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mn>1</mn></msup><mo stretchy=\"false\">&#x00028;</mo><mi mathvariant=\"script\">O</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mn>0</mn></mrow></math>, and a smooth projective crepant resolution of the specified local type, the same kernel is the image of the global first-order deformation space. Combining this identification with the mixed smoothing theorem gives a necessary and sufficient criterion: the kernel must meet the complement of every local discriminant. On the two-dimensional <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> component this requires three separate nonzero coefficients; at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>4</mn></msub></mrow></math> it requires five nonzero conic-pencil pairings, identified integrally with the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>U</mi><mo stretchy=\"false\">&#x00028;</mo><mn>5</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> diagonal moment-map coordinates. The selected global deformation base is smooth when its relation space projects nontrivially to each selected <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> summand; every tangent on that base integrates to a convergent deformation. Examples distinguish a joint conifold–<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> transition, sectors forced to remain undeformed, and nonzero <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>3</mn></msub></mrow></math> deformations forced to retain a singularity. These results concern geometric smoothing and invariant moment-map coordinates, not the full finite-Planck hypermultiplet geometry.</p>",
+      "abstract_source": "https://zenodo.org/records/23643227",
+      "pdf": {
+        "sha256": "6af14980cd73c117260cd31509995e6fd7bb2cf805dcee4ec2bd4f13c1c9b480",
+        "size_bytes": 497578,
+        "pages": 41,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/01-global-constraints/paper.pdf",
+        "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/01-global-constraints/paper.pdf",
+        "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+        "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+        "source_path": "papers/01-global-constraints/paper.pdf"
+      }
+    },
+    {
+      "slug": "compact-higgs-quantum-transition",
+      "catalogue_title": "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition",
+      "catalogue_anchor": "compact-higgs-quantum-transition",
+      "title": "Bulk Gauging and Quantum Couplings across a Compact Higgs Transition",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Compact Higgs transitions",
+      "status": "Preprint",
+      "publication_date": "2026-09-07",
+      "revision_date": "2026-09-23",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643235",
+        "url": "https://zenodo.org/records/23643235"
+      },
+      "citation_doi": "10.5281/zenodo.23643235",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/02-quantum-transition"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We study an explicit compact Calabi–Yau transition in which two conifold sectors and a rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> sector can Higgs only together. The integral relation between their curve classes determines two shared Abelian gaugings and a transition from Hodge numbers <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>6</mn><mo>&#x0002C;</mo><mn>122</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo>&#x0002C;</mo><mn>123</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. We compute the primitive surviving charge lattice and its cubic couplings, and show that the flavor gauging cannot remain dynamical in a gravity-decoupling limit with bounded local Kähler scales. On an auxiliary circle the quantum transition contains four conifold states spanning a primitive rank-three electric lattice. Their one-loop thresholds reproduce the integral conifold monodromies. An explicit Laurent mutation and analytic continuation of all eight regular periods identify the genus-zero prepotential of the surviving vectors with that of the smooth phase, including the integral normalization and constant term, and hence its scalar and electromagnetic couplings. At fixed five-dimensional Planck scale the auxiliary-circle limit retains finite bulk gauging, but its closing Kaluza–Klein gap leaves the four conifold states no radius-independent energy range. This limit ends where the del Pezzo surface collapses. On the adjacent face of the nef cone, where only the two nodal curves and two exceptional curves of the del Pezzo surface have zero area, the same four states are massless hypermultiplets of five-dimensional M-theory. The K3 and elliptic fibrations identify a dilaton gauging, an anomaly-consistent six-dimensional <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>U</mi><mo stretchy=\"false\">&#x00028;</mo><mn>2</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> phase and equal compact images of two E-string roots. An exact volume bound excludes the six-dimensional limit on the transition face. A heterotic K3 candidate and topological data are obtained; the global bundle construction and the finite-Planck hypermultiplet geometry remain open.</p>",
+      "abstract_source": "https://zenodo.org/records/23643235",
+      "pdf": {
+        "sha256": "c86d1096fa655d49d9e6ec1f30232a0fa2f9f6ea7f5a004abb3b0988bce60d7e",
+        "size_bytes": 563408,
+        "pages": 57,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/02-quantum-transition/paper.pdf",
+        "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/02-quantum-transition/paper.pdf",
+        "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+        "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+        "source_path": "papers/02-quantum-transition/paper.pdf"
+      }
+    },
+    {
+      "slug": "compact-higgs-magnetic-sheaves",
+      "catalogue_title": "Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition",
+      "catalogue_anchor": "compact-higgs-magnetic-sheaves",
+      "title": "Magnetic Sheaves and Stability Walls in a Compact Calabi–Yau Transition",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Compact Higgs transitions",
+      "status": "Preprint",
+      "publication_date": "2026-09-06",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643240",
+        "url": "https://zenodo.org/records/23643240"
+      },
+      "citation_doi": "10.5281/zenodo.23643240",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/03-magnetic-sheaves/paper.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/03-magnetic-sheaves"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>We study magnetic sheaves in a compact Calabi–Yau transition coupling two conifold sectors to a rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> sector. Fixed-support Hilbert schemes give rank-one numerical Donaldson–Thomas contributions on the rigid <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>1</mn></msub></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>2</mn></msup></mrow></math> surfaces on the two sides. On a reducible moving divisor, two dual-ideal sheaves are isolated and Gieseker stable, each contributing <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x0002B;</mo><mn>1</mn></mrow></math>; their stability persists along ample polarizations approaching the contraction. Their vanishing first and second self-Ext groups also imply local persistence in smooth polarized deformations of the resolved threefold, but not across its singular transition. An explicit magnetic splitting has one extension mode and a transverse phase alignment near large volume. Using the analytically continued periods of the companion paper, we determine the constituent phase sign at the marked quantum transition and exclude emission of the known light electric particles on a final specified segment. The probe charges nevertheless carry confined magnetic flux after Higgsing. These are component counts and partial wall constraints, not a determination of the physical BPS index at the endpoint. Counts involving complete moving pencils require a separate reduced-member hypothesis, stated in an appendix.</p>",
+      "abstract_source": "https://zenodo.org/records/23643240",
+      "pdf": {
+        "sha256": "2620fd0735bd1ccbcb293d6584f6cf39bd66bd222daf2ea060fe2d8b4de2fc08",
+        "size_bytes": 349004,
+        "pages": 24,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/03-magnetic-sheaves/paper.pdf",
+        "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/03-magnetic-sheaves/paper.pdf",
+        "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+        "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+        "source_path": "papers/03-magnetic-sheaves/paper.pdf"
+      }
+    },
+    {
+      "slug": "compact-higgs-finite-planck",
+      "catalogue_title": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
+      "catalogue_anchor": "compact-higgs-finite-planck",
+      "title": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Compact Higgs transitions",
+      "status": "Preprint",
+      "publication_date": "2026-09",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643242",
+        "url": "https://zenodo.org/records/23643242"
+      },
+      "citation_doi": "10.5281/zenodo.23643242",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/04-finite-planck-vacua/paper.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/04-finite-planck-vacua"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>When a compact Calabi–Yau threefold degenerates, M-theory on it acquires light charged hypermultiplets whose condensation opens a Higgs branch, locally a hyperkähler quotient without gravity. At finite Planck mass the hypermultiplet moduli space is quaternionic Kähler, its metric is unknown, and its moment maps have no additive constant, hence no Fayet–Iliopoulos parameter. We prove a local normal form for quaternionic Kähler quotients near a fixed point at which the moment map vanishes, under a freeness condition on the normal representation: the quotient is locally the product of the fixed set with the flat hyperkähler quotient of that representation, with relative metric corrections of order <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></math> at distance <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>r</mi></mrow></math>. Consequently, if exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> disjoint <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002C;</mo><mo>&#x02212;</mo><mn>1</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math>-curves have zero area on a face of the nef cone with finite gauge couplings, and their classes satisfy one primitive relation <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mo>&#x02211;</mo><mi>i</mi></msub><msub><mi>a</mi><mi>i</mi></msub><mo stretchy=\"false\">[</mo><msub><mi>C</mi><mi>i</mi></msub><mo stretchy=\"false\">]</mo><mo>&#x0003D;</mo><mn>0</mn></mrow></math> with all <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>&#x02260;</mo><mn>0</mn></mrow></math>, then, under a regularity hypothesis on the effective supergravity, the Higgs branch opened by the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> light hypermultiplets is locally a smooth factor times <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mi>m</mi></msub></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>m</mi><mo>&#x0003D;</mo><msub><mo>&#x02211;</mo><mi>i</mi></msub><mo stretchy=\"false\">&#x0007C;</mo><msub><mi>a</mi><mi>i</mi></msub><mo stretchy=\"false\">&#x0007C;</mo></mrow></math>, as without gravity. Transverse to the smooth factor, the order-<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>r</mi><mn>2</mn></msup></mrow></math> correction is the curvature of the hypermultiplet manifold restricted to a quaternionic line. A transition with two nodes and a cone over the degree-seven del Pezzo surface has such a face with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi><mo>&#x0003D;</mo><mn>4</mn></mrow></math>, giving <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mn>4</mn></msub></mrow></math>; where the del Pezzo surface collapses, the Higgs branch defined as the metric completion of the vacua on the smoothed threefold is again of this form. In type IIA string theory, under corresponding hypotheses, the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002F;</mo><msub><mi mathvariant=\"double-struck\">Z</mi><mi>k</mi></msub></mrow></math> point that Greene, Morrison and Vafa expected near <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> homologous vanishing three-cycles persists at finite Planck mass for these smoothings. A census of toric hypersurfaces finds 5605 faces whose light spectrum has one relation, 372 with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi><mo>&#x02265;</mo><mn>3</mn></mrow></math>, all with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>m</mi><mo>&#x0003D;</mo><mi>k</mi></mrow></math>.</p>",
+      "abstract_source": "https://zenodo.org/records/23643242",
+      "pdf": {
+        "sha256": "cc0ee843cc153681b0a93325e28c94105699e145b5ad080d683537e807f39b98",
+        "size_bytes": 525055,
+        "pages": 45,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/global-higgs-branch/18af678788cb3db132d3e8476dab821b9f0bcdeb/papers/04-finite-planck-vacua/paper.pdf",
+        "source_url": "https://github.com/bwuebben/global-higgs-branch/blob/main/papers/04-finite-planck-vacua/paper.pdf",
+        "source_commit": "18af678788cb3db132d3e8476dab821b9f0bcdeb",
+        "source_repository": "https://github.com/bwuebben/global-higgs-branch",
+        "source_path": "papers/04-finite-planck-vacua/paper.pdf"
+      }
+    },
+    {
+      "slug": "page-curve-transition",
+      "catalogue_title": "The Page Curve Through the Transition: An Order-One Correction to the Diagonal Approximation",
+      "catalogue_anchor": "page-curve-paper1",
+      "title": "The Page Curve Through the Transition: An Order-One Correction to the Diagonal Approximation",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Black hole information",
+      "status": "Preprint",
+      "publication_date": "2026-02-11",
+      "revision_date": "2026-10-09",
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6372958",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372958"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper1"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>In the west-coast model of black hole evaporation, the diagonal approximation computes the entropy of the radiation near the Page time by averaging the entropy of fixed-area states over the black hole’s fluctuating area. We show that this approximation, written level by level, misses an order-one constant: as the area distribution becomes broad, whatever its shape, the exact entropy exceeds it by <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>−</mi><mi>q</mi><mrow><mi mathvariant=\"normal\">log</mi><mo>&#8289;</mo></mrow><mi>q</mi></mrow><annotation encoding=\"application/x-tex\">-q\\log q</annotation></semantics></math>, where <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>q</mi><annotation encoding=\"application/x-tex\">q</annotation></semantics></math> is the canonical probability that the black hole is larger than the radiation. The constant arises because the radiation, which has no energy of its own, can resolve area sectors only through the island, and so not those in which the black hole is larger than itself. For a symmetric distribution the excess is half of <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mi mathvariant=\"normal\">log</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow><annotation encoding=\"application/x-tex\">\\log 2</annotation></semantics></math> at the Page point and largest after it, so the exact transition is asymmetric. The proof reduces the entropy of the exact planar spectrum, a free multiplicative convolution, to a single integral. We compute the first correction and evaluate the constant in Jackiw–Teitelboim gravity. At fixed area, the two-saddle truncation misses the Rényi moments by Catalan factors.</p>",
+      "abstract_source": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf",
+      "pdf": {
+        "sha256": "1cbf385185768806b14311b85520b6d89867482652d1ae35278ae3192409a492",
+        "size_bytes": 858634,
+        "pages": 45,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper1/page-curve-transition.pdf",
+        "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper1/page-curve-transition.pdf",
+        "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+        "source_repository": "https://github.com/bwuebben/page-curve-papers",
+        "source_path": "paper1/page-curve-transition.pdf"
+      }
+    },
+    {
+      "slug": "page-curve-higher-dimensions",
+      "catalogue_title": "The Page Curve in Higher Dimensions: Phase Transitions, Critical Phenomena, and Finite-Size Broadening",
+      "catalogue_anchor": "page-curve-paper2",
+      "title": "The Page Curve in Higher Dimensions: Phase Transitions, Critical Phenomena, and Finite-Size Broadening",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Black hole information",
+      "status": "Preprint",
+      "publication_date": "2026-02-11",
+      "revision_date": "2026-10-10",
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6372978",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372978"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper2/page-curve-higher-dimensions.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper2"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Thermodynamic fluctuations smooth Page transitions, but the usual Gaussian description fails at a black-hole critical point. We determine the resulting finite-size crossover in a canonical random-pure-state model whose density of states is specified by the Reissner–Nordström–AdS entropy. In four or more bulk dimensions, the critical fluctuations obey a quartic limiting law, and the transition width grows as the three-quarter power of the critical black-hole entropy. We derive the leading transition profile and its temperature dependence, and identify the reservoir heat capacity required to preserve the canonical critical behavior. Regular-phase examples provide a comparison with Gaussian fluctuations. The entanglement results hold in the planar limit of the specified random-state model; applications to gravitational entropy transitions require identifying the corresponding state and the fluctuating difference of generalized entropies.</p>",
+      "abstract_source": "https://github.com/bwuebben/page-curve-papers/blob/main/paper2/page-curve-higher-dimensions.pdf",
+      "pdf": {
+        "sha256": "0fcd3d559b36e5c331c6f60fb98b0d45c9f339e9c4a14923322ff54731bec177",
+        "size_bytes": 827439,
+        "pages": 41,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper2/page-curve-higher-dimensions.pdf",
+        "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper2/page-curve-higher-dimensions.pdf",
+        "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+        "source_repository": "https://github.com/bwuebben/page-curve-papers",
+        "source_path": "paper2/page-curve-higher-dimensions.pdf"
+      }
+    },
+    {
+      "slug": "page-curve-not-enough",
+      "catalogue_title": "The Page Curve Is Not Enough: Universality, Ensemble Dependence, and Microscopic Ambiguity in Black Hole Information Recovery",
+      "catalogue_anchor": "page-curve-paper3",
+      "title": "The Page Curve Is Not Enough: Universality, Ensemble Dependence, and Microscopic Ambiguity in Black Hole Information Recovery",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Black hole information",
+      "status": "Preprint",
+      "publication_date": "2026-04-04",
+      "revision_date": "2026-10-10",
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6521478",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6521478"
+      },
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper3"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>A Page curve constrains radiation entanglement, but its implications for microscopic information recovery depend on which state, ensemble, and channel data are specified. We examine this dependence through explicit finite-dimensional constructions and controlled random-state limits. Two density-matrix ensembles can have the same averaged spectral measure, every averaged replica moment, and the same mean von Neumann entropy, while their entropy and purity fluctuations differ. Fixed Marchenko–Pastur spectra and normalized Wishart spectra give a related large-dimension comparison. At the channel level, an isometry and a replacement channel can reproduce the complete nested radiation trajectory for one input while having different correlations with an external reference. For normalized states, annealed and quenched Rényi entropies have the same von Neumann limit; the derivative of their finite-order difference measures the entropy variance. We derive normalized replica-covariance identities and illustrate their normalization with the standard Haar purity covariance, separating these quantities from entropy of an averaged state. Finally, Gaussian and quartic fluctuations with equal variance give different entropy-transition profiles, illustrating the additional role of joint branch fluctuations and reservoir constraints. These calculations delimit what entropy and spectral agreement establish and specify further comparisons needed in gravitational models.</p>",
+      "abstract_source": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf",
+      "pdf": {
+        "sha256": "dec8ec36d22bb55df3d34e20554c15df4e2ce30d717982608417aec1208e579c",
+        "size_bytes": 738721,
+        "pages": 44,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper3/page-curve-not-enough.pdf",
+        "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper3/page-curve-not-enough.pdf",
+        "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+        "source_repository": "https://github.com/bwuebben/page-curve-papers",
+        "source_path": "paper3/page-curve-not-enough.pdf"
+      }
+    },
+    {
+      "slug": "hawking-to-marchenko-pastur",
+      "catalogue_title": "From Hawking to Marchenko–Pastur: A Guide to the Page Curve and Beyond",
+      "catalogue_anchor": "page-curve-paper4",
+      "title": "From Hawking to Marchenko–Pastur: A Guide to the Page Curve and Beyond",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Black hole information",
+      "status": "Preprint",
+      "publication_date": "2026-10-10",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23643250",
+        "url": "https://zenodo.org/records/23643250"
+      },
+      "citation_doi": "10.5281/zenodo.23643250",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper4/hawking-to-marchenko-pastur.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/page-curve-papers/tree/main/paper4"
+        }
+      ],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>This tutorial develops the Page curve program from quantum entanglement and Hawking radiation to holographic entropy, replica wormholes, and random matrix theory. We derive the normalized random-state benchmark and its Marchenko–Pastur limit, explaining the roles of non-crossing partitions and spectral resolvents. We then distinguish averaging conditional entropies from calculating the entropy of a state with fluctuating energy or area. Gaussian broadening, finite reservoirs, and a quartic critical model illustrate how the preparation and the fluctuation law enter this distinction. Exact finite-dimensional examples separate averaged spectra from ensemble fluctuations and radiation data for one input from information about a quantum channel. Normalized annealed and quenched Rényi entropies have a common von Neumann limit, while their finite-order difference and connected replica moments measure additional ensemble information. Throughout, explicit calculations are distinguished from gravitational applications that require further assumptions. The resulting account provides a self-contained introduction to the established methods and to the remaining questions about microscopic information recovery.</p>",
+      "abstract_source": "https://zenodo.org/records/23643250",
+      "pdf": {
+        "sha256": "9cfb648febc15568f4f3ea3802c2f116622bd67bd71517c4361529b0b43f2231",
+        "size_bytes": 1482144,
+        "pages": 131,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/page-curve-papers/392ddc054cf534d17ee7c295c0e5e1d0aacbc80a/paper4/hawking-to-marchenko-pastur.pdf",
+        "source_url": "https://github.com/bwuebben/page-curve-papers/blob/main/paper4/hawking-to-marchenko-pastur.pdf",
+        "source_commit": "392ddc054cf534d17ee7c295c0e5e1d0aacbc80a",
+        "source_repository": "https://github.com/bwuebben/page-curve-papers",
+        "source_path": "paper4/hawking-to-marchenko-pastur.pdf"
+      }
+    },
+    {
+      "slug": "informational-singularities",
+      "catalogue_title": "Informational Singularities and the Completion of Gravity: Replica Wormholes, Indeterminism, and Cosmic Censorship",
+      "catalogue_anchor": "informational-singularities",
+      "title": "Informational Singularities and the Completion of Gravity: Replica Wormholes, Indeterminism, and Cosmic Censorship",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Black hole information",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.7151179",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7151179"
+      },
+      "citation_doi": "10.2139/ssrn.7151179",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Replica wormholes provide the first concrete evidence that quantum gravity can achieve informational completion-restoring a unique, coherent mapping from initial to final quantum states-without achieving geometric completion, the removal or resolution of curvature singularities. I make this distinction precise and use it to extend the framework of generalized indeterminism developed by Azhar and Namjoo into the quantum-gravitational regime. I introduce the concept of an informational singularity: a configuration in which a physical theory fails to provide an existent, unique, and coherent mapping from initial to final quantum states. This concept is logically independent of the geometric singularities of general relativity. The two notions can come apart in both directions: a geometrically smooth region (such as the asymptotic radiation zone in Hawking's calculation) can be informationally singular, while a region with a curvature singularity (such as the interior of an evaporating black hole described by the Page curve) can be informationally complete. I show that the island formula and replica wormhole construction realize informational completion while leaving the geometric singularity untouched, and I confront the ensemble interpretation of the gravitational path integral as a possible obstruction to single-theory completion. Finally, I propose a reformulation of strong cosmic censorship as Informational Cosmic Censorship: the principle that the full quantumgravitational theory provides a coherent state map for generic initial data, regardless of the geometric fate of Cauchy horizons. I argue that this reformulation captures Penrose's original predictability motivation more faithfully than the standard geometric formulation.</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.7151179",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    },
+    {
+      "slug": "prediction-markets-machine-economy",
+      "catalogue_title": "Prediction Markets as the Informational Substrate of the Machine Economy",
+      "catalogue_anchor": "prediction-markets-machine-economy",
+      "title": "Prediction Markets as the Informational Substrate of the Machine Economy",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "AI and the machine economy",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6561300",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6561300"
+      },
+      "citation_doi": "10.2139/ssrn.6561300",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Wuebben [2026] identified six institutional primitives required for autonomous machine-to-machine commerce and showed that three-adjudication, reputation, and liability/insurance exhibit critical gaps that constrain the machine economy's emergence. This paper argues that all three gaps share a common root: the absence of market-generated price signals for agent performance risk, deliverable quality, and failure correlation. Meanwhile, the settlement layer has matured faster than anticipated: three competing protocol standards-Stripe's Agentic Commerce Protocol, Coinbase's x402, and the Machine Payments Protocol launched by Stripe and Tempo-have entered production within six months, confirming that the execution substrate for machine-to-machine payments is commoditizing rapidly. The widening asymmetry between settlement maturity and trust-layer immaturity sharpens the need for mechanisms that produce the missing information. We propose that prediction markets-generalized beyond event contracts to encompass continuous distributional forecasting in the spirit of Cotton [2022]-can serve as a cross-cutting informational layer that produces the missing inputs for the primitives that currently lack them. We design five specific market mechanisms, each targeting a gap in the original stack: Quality Adjudication Markets for escrowed deliverables, Agent Performance Futures for bonding and reputation, Correlation Discovery Markets for insurance pricing, Identity Assurance Markets for Sybil detection, and Primitive Readiness Markets for sequencing strategy. We analyze the incentive compatibility, liquidity requirements, manipulation resistance, and regulatory classification of each design. Drawing on Cotton [2022]'s microprediction architecture which collapses identity, reputation, and bonding into a single performance-scored object we propose a unified design pattern in which prediction market participation itself generates the data on which the institutional stack depends, partially dissolving the bootstrapping problem identified in the original paper. We assess the limits of the approach, identify the residual problems that prediction markets cannot solve, and propose a phased implementation path that builds directly on the settlement infrastructure now in production.</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6561300",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    },
+    {
+      "slug": "institutional-plumbing-machine-economy",
+      "catalogue_title": "The Institutional Plumbing for a Machine Economy: A Readiness Assessment of Building Blocks, Missing Infrastructure, and Commercial Opportunities",
+      "catalogue_anchor": "institutional-plumbing-machine-economy",
+      "title": "The Institutional Plumbing for a Machine Economy: A Readiness Assessment of Building Blocks, Missing Infrastructure, and Commercial Opportunities",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "AI and the machine economy",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6372838",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372838"
+      },
+      "citation_doi": "10.2139/ssrn.6372838",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Autonomous AI agents are approaching the capability threshold required to transact, negotiate, and settle economic obligations without human intermediation. But capability is not sufficiency. A functioning machine economy requires institutional infrastructure-identity, bonding, escrow, adjudication, settlement, reputation, and liability assignment-analogous to the legal and financial plumbing that enables human commerce. This paper audits each layer of that stack against current technological readiness, identifies the critical gaps, and evaluates where commercial opportunities lie: in the plumbing itself, or in the application layer above it. We find that of the six primitives required for a functioning machine economy, one is production-ready (settlement), two are close (identity, bonding infrastructure), and three have critical gaps (adjudication, reputation, liability/insurance). The binding constraints are on the \"trust layer\"-the primitives that enable agents to interact with counterparties they have no prior relationship with and no human intermediary to fall back on. We map commercial opportunities across both the infrastructure and application layers, and propose a phased strategy that captures near-term application-layer value while accumulating the data and expertise needed for plumbing-layer opportunities as the market matures.</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6372838",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    },
+    {
+      "slug": "material-deployment-power",
+      "catalogue_title": "Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order",
+      "catalogue_anchor": "material-deployment-power",
+      "title": "Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "International relations and politics",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6481923",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6481923"
+      },
+      "citation_doi": "10.2139/ssrn.6481923",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>\n Prevailing accounts of artificial intelligence in international relations treat AI primarily as an informational or cognitive technology, emphasizing data, algorithms, and innovation capacity as the central sources of advantage. This article challenges that view by arguing that large-scale AI deployment re-centers physical constraint as a determinant of power. Although AI expands informational capacity at unprecedented speed, its deployment depends on infrastructural systems - energy generation, transmission, conversion, cooling, and critical materials - that expand slowly, are politically mediated, and are unevenly distributed. As a result, competition over AI moves international politics into a constraint-dominated phase in which power is conditioned by the ability to convert technological potential into sustained economic and military capability.\n</p>\n\n<p>\n The article advances four contributions. First, it introduces the concept of  material deployment power MDP, defined as the capacity to mobilize and scale the physical systems necessary to operationalize advanced technologies under conditions of rivalry - a concept distinct from Michael Mann's institutional \"infrastructural power.\" Second, it develops a theoretical account of how material constraints generate systematic patterns of coercion, state - firm fusion, and selective cooperation, explaining the resurgence of mercantilist policies and supply-security clubs in the AI era. Third, it demonstrates through comparative analysis and detailed process tracing - examining cases including semiconductor export controls, hyperscaler energy strategies, and rare earth processing - that variation in material deployment capacity shapes AI deployment outcomes, trade and industrial policy, and alliance behavior independently of innovation leadership. Fourth, it extends the analysis to two underexplored domains: the emergence of energy-backed digital assets as instruments of monetary sovereignty, and the domestic political consequences of capital-intensive technological transitions that concentrate returns while displacing labor.\n</p>\n\n<p>\n The argument has broader implications for international order. By binding advanced capabilities to slow-moving physical systems, AI re-materializes global politics, increasing sensitivity to chokepoints, fragmenting interdependence, and reshaping the foundations of deterrence and cooperation. Understanding the geopolitics of artificial intelligence therefore requires rethinking prevailing assumptions about scalability, substitution, and the relationship between technology and power in the twenty-first century.\n</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6481923",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    },
+    {
+      "slug": "algorithmic-plausible-deniability",
+      "catalogue_title": "Algorithmic Plausible Deniability: The Structural Erosion of Deterrence in the Age of Artificial Intelligence",
+      "catalogue_anchor": "algorithmic-plausible-deniability",
+      "title": "Algorithmic Plausible Deniability: The Structural Erosion of Deterrence in the Age of Artificial Intelligence",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "International relations and politics",
+      "status": "Preprint",
+      "publication_date": "2026",
+      "revision_date": null,
+      "archive": {
+        "name": "SSRN",
+        "doi": "10.2139/ssrn.6482039",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6482039"
+      },
+      "citation_doi": "10.2139/ssrn.6482039",
+      "resources": [],
+      "related": [],
+      "verified_on": "2026-10-25",
+      "abstract_html": "<p>Classical deterrence theory assumes that hostile actions can be attributed to identifiable actors whose intentions can be inferred and who can be credibly threatened with punishment. This article introduces <i>Algorithmic Plausible Deniability</i> APD: a structural condition in which the delegation of decisions to artificial intelligence systems generates persistent uncertainty over authorship and intent, thereby weakening deterrence even when states act rationally and prefer stability. Unlike strategic ambiguity, which actors choose, APD emerges endogenously from algorithmic delegation and persists independently of deception or bad faith. The article develops three contributions. First, it provides a theoretical account of how AI systems degrade the informational foundations of deterrence through mechanisms of delegation, opacity, and emergent behavior. Second, it identifies an <i>Accountability Trilemma</i> in which states cannot simultaneously achieve operational effectiveness, strategic flexibility, and clear attribution. Third, it demonstrates that APD creates asymmetric effects: hostile actions become more deniable while signals of restraint become less credible, systematically undermining escalation control. The argument has implications for cyber conflict, autonomous weapons governance, and crisis stability among technologically advanced states.</p>",
+      "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6482039",
+      "pdf": null,
+      "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+    }
+  ]
+}

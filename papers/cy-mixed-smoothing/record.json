@@ -1,0 +1,51 @@
+{
+  "slug": "cy-mixed-smoothing",
+  "catalogue_title": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+  "catalogue_anchor": "calabi-yau-smoothability-paper5",
+  "title": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Calabi–Yau smoothability · Paper 5",
+  "status": "Preprint",
+  "publication_date": "2026-09-07",
+  "revision_date": "2026-10-07",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23642520",
+    "url": "https://zenodo.org/records/23642520"
+  },
+  "citation_doi": "10.5281/zenodo.23642520",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper5/cy-mixed-smoothing.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper5"
+    }
+  ],
+  "related": [
+    {
+      "label": "Conifold Lab",
+      "url": "https://bwuebben.github.io/conifold-lab/"
+    }
+  ],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>We give a necessary and sufficient homological criterion for smoothing projective Calabi–Yau threefolds with nodes and anticanonical cones over smooth del Pezzo surfaces of degrees five, six and seven, or over a smooth quadric surface. For some choice of local smoothing components, the criterion requires a relation on a crepant resolution among link classes whose associated local parameters avoid every discriminant. The complexified relation space describes first-order deformations modulo locally trivial ones. Necessity follows from local period and vanishing-cycle arguments; sufficiency applies Friedman's unobstructedness theorem to a crepant partial resolution. Whenever the criterion holds, the deformation space on the chosen components is smooth. A nonsmoothable example, whose deformation space is reduced with four smooth components, shows why nonvanishing at every singular point is insufficient. We also construct a smoothable Batyrev hypersurface admitting no smoothing induced by proper ambient families obtained from Minkowski decompositions at a single lattice degree.</p>",
+  "abstract_source": "https://zenodo.org/records/23642520",
+  "pdf": {
+    "sha256": "a0ddb588b84ba33276b3fee55c9a449a336a106651f3e1bfe4f595d4d1cb59f8",
+    "size_bytes": 691283,
+    "pages": 62,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/0f766471328392b96cc20739135fa7f22f356e2c/paper5/cy-mixed-smoothing.pdf",
+    "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper5/cy-mixed-smoothing.pdf",
+    "source_commit": "0f766471328392b96cc20739135fa7f22f356e2c",
+    "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+    "source_path": "paper5/cy-mixed-smoothing.pdf"
+  }
+}

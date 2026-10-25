@@ -1,0 +1,47 @@
+{
+  "slug": "exotic-four-manifolds",
+  "catalogue_title": "Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²",
+  "catalogue_anchor": "exotic-four-manifolds",
+  "title": "Toward an exotic S²×S² and an exotic ℂP²#ℂP̄²",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Exotic four-manifolds",
+  "status": "Working revision",
+  "publication_date": "2026-10-21",
+  "revision_date": null,
+  "archive": {
+    "name": "arXiv",
+    "doi": "10.48550/arXiv.2608.17267",
+    "url": "https://arxiv.org/abs/2608.17267"
+  },
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "latest version (PDF)",
+      "url": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf"
+    },
+    {
+      "label": "paper source and exact algebra verification",
+      "url": "https://github.com/bwuebben/exotic-s2xs2"
+    }
+  ],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "status_note": "The proposed geometric additions await independent mathematical verification. The final filling problem remains unresolved; the exotic homeomorphism conclusions are conditional.",
+  "abstract_html": "<p>We study a specified Luttinger filling in the construction of Lidman and Piccirillo whose simple connectivity would yield exotic <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>S</mi><mn>2</mn></msup><mo>×</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">S^2\\times S^2</annotation></semantics></math> and <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mi mathvariant=\"double-struck\">ℂ</mi><mi mathvariant=\"double-struck\">ℙ</mi></mrow><mn>2</mn></msup><mi>#</mi><msup><mover><mrow><mi mathvariant=\"double-struck\">ℂ</mi><mi mathvariant=\"double-struck\">ℙ</mi></mrow><mo accent=\"true\">¯</mo></mover><mn>2</mn></msup></mrow><annotation encoding=\"application/x-tex\">\\mathbb{CP}^2\\#\\overline{\\mathbb{CP}}^2</annotation></semantics></math>. An earlier version of this manuscript claimed simple connectivity from incorrectly derived group relations; that claim is withdrawn. We derive the complete fundamental-group presentation and express the group as a one-relator quotient of an iterated HNN extension containing the genus-two surface group. The filled group is trivial exactly when the final relation kills a specified fiber commutator. We also determine its universal central extension with cyclic kernel, construct geometric realizations of it, and extend the boundary involution over the filling. Proposed symplectic extensions construct a torus with a negative area–Maslov relation and exact tori detecting a nonzero transfer kernel for a choice of auxiliary handles. These constructions do not establish survival of the central element. The final filling problem remains unresolved.</p>",
+  "abstract_source": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf",
+  "pdf": {
+    "sha256": "2c9486ec0db5b4580814e7084696d63921ba6f5d4eef433abf53e9a50473044c",
+    "size_bytes": 624293,
+    "pages": 56,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/exotic-s2xs2/46a7cf95f300abfda9fda5fa1a9b48aa7109972c/paper/main.pdf",
+    "source_url": "https://github.com/bwuebben/exotic-s2xs2/blob/main/paper/main.pdf",
+    "source_commit": "46a7cf95f300abfda9fda5fa1a9b48aa7109972c",
+    "source_repository": "https://github.com/bwuebben/exotic-s2xs2",
+    "source_path": "paper/main.pdf"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "institutional-plumbing-machine-economy",
+  "catalogue_title": "The Institutional Plumbing for a Machine Economy: A Readiness Assessment of Building Blocks, Missing Infrastructure, and Commercial Opportunities",
+  "catalogue_anchor": "institutional-plumbing-machine-economy",
+  "title": "The Institutional Plumbing for a Machine Economy: A Readiness Assessment of Building Blocks, Missing Infrastructure, and Commercial Opportunities",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "AI and the machine economy",
+  "status": "Preprint",
+  "publication_date": "2026",
+  "revision_date": null,
+  "archive": {
+    "name": "SSRN",
+    "doi": "10.2139/ssrn.6372838",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6372838"
+  },
+  "citation_doi": "10.2139/ssrn.6372838",
+  "resources": [],
+  "related": [],
+  "verified_on": "2026-10-25",
+  "abstract_html": "<p>Autonomous AI agents are approaching the capability threshold required to transact, negotiate, and settle economic obligations without human intermediation. But capability is not sufficiency. A functioning machine economy requires institutional infrastructure-identity, bonding, escrow, adjudication, settlement, reputation, and liability assignment-analogous to the legal and financial plumbing that enables human commerce. This paper audits each layer of that stack against current technological readiness, identifies the critical gaps, and evaluates where commercial opportunities lie: in the plumbing itself, or in the application layer above it. We find that of the six primitives required for a functioning machine economy, one is production-ready (settlement), two are close (identity, bonding infrastructure), and three have critical gaps (adjudication, reputation, liability/insurance). The binding constraints are on the \"trust layer\"-the primitives that enable agents to interact with counterparties they have no prior relationship with and no human intermediary to fall back on. We map commercial opportunities across both the infrastructure and application layers, and propose a phased strategy that captures near-term application-layer value while accumulating the data and expertise needed for plumbing-layer opportunities as the market matures.</p>",
+  "abstract_source": "https://api.crossref.org/works/10.2139/ssrn.6372838",
+  "pdf": null,
+  "pdf_pending_reason": "SSRN automated download blocked; page uses the registered full abstract and links to SSRN."
+}
