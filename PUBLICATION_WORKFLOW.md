@@ -7,6 +7,12 @@ The canonical procedure is in the research repository:
 Read it before adding or updating a paper on this website. Research source lives
 in `papers_ai_1`; public paper mirrors and this website are release surfaces.
 
+**Open user-requested backlog:** see [TODO.md](TODO.md). The complete-Zenodo
+backlog explicitly includes existing arXiv/SSRN papers, as an exception to the
+default below when that task is carried out. ORCID verification remains mandatory
+after every public release, additional archive deposit, and revision; it is not
+a one-time cleanup.
+
 1. Identify the exact manuscript and existing archive identifiers. Decide whether
    it follows the SSRN or arXiv route, using the already agreed choice when known.
 2. For SSRN, publish/revise there and verify the public DOI. For an arXiv-bound

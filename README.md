@@ -8,6 +8,9 @@ The standing procedure covers SSRN/arXiv routing, Zenodo while arXiv-bound paper
 wait, version updates, and ORCID verification, with the canonical instructions
 in the sibling `papers_ai_1` research repository.
 
+**Publication and discoverability backlog:** [TODO.md](TODO.md) tracks complete
+Zenodo coverage, Zenodo search visibility, Google Scholar, and ongoing ORCID checks.
+
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
 HTML, CSS, and the explorers' client-side JavaScript; there is no
