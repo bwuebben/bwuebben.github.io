@@ -63,12 +63,12 @@
       ]
     },
     {
-      "label": "About",
-      "href": "/about/"
-    },
-    {
       "label": "Updates",
       "href": "/updates/"
+    },
+    {
+      "label": "About",
+      "href": "/about/"
     }
   ]
 }

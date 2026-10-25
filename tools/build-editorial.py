@@ -177,14 +177,23 @@ def research_cards():
     return '<div class="research-grid">'+''.join(f'''<article class="research-entry"><span class="number">0{i+1}</span><h3><a href="/research/{p["slug"]}/">{p["name"]}</a></h3><p class="small">{p["question"]}</p></article>''' for i,p in enumerate(programs))+'</div>'
 
 def build_home():
-    body='''<header class="intro-grid home-intro"><div><p class="kicker">Finance · Mathematics · Theoretical Physics</p><h1>Bernd Johannes<br>Wuebben</h1>
+    body='''<header class="home-intro"><p class="kicker">Finance · Mathematics · Theoretical Physics</p><h1>Bernd Johannes<br>Wuebben</h1>
+<div class="home-intro-copy"><figure><a href="/portrait/"><img src="/assets/bernd_dark1-576.jpg" width="576" height="864" alt="Bernd Wuebben" fetchpriority="high"></a></figure>
 <p class="intro">A price is a claim about the future that somebody was willing to fund. My research in finance asks what can be known about such claims: whether a model that earns is a model that explains, where compensation for risk ends and compensation for absorbing other people’s constraints begins, and what remains hidden in a record of success.</p>
-<p class="intro">In mathematics and theoretical physics, I pursue questions about geometry, topology, and information: how local structures constrain a whole, what survives a change of description, and how much of an object its invariants can reveal.</p>
-<p class="research-purpose">This site collects my <a href="/papers/">research papers</a> and essays, including work on AI, institutions, and international order.</p>
-<div class="entry-links"><a class="button" href="/papers/">Read the research papers <span class="arrow" aria-hidden="true">↗</span></a><a class="quiet-link" href="/research/">Research programs <span class="arrow" aria-hidden="true">↗</span></a></div></div>
-<figure><a href="/portrait/"><img src="/assets/bernd_dark1-576.jpg" width="576" height="864" alt="Bernd Wuebben" fetchpriority="high"></a><figcaption>MATHEMATICIAN · INVESTOR</figcaption></figure></header>'''
+<p class="intro">These questions lead outward: toward who is on the other side of a trade and what they are solving for, and toward markets as aggregation mechanisms that sometimes aggregate belief and sometimes only aggregate attention.</p>
+<p class="intro">In mathematics and theoretical physics, I pursue questions about geometry, topology, and information: how local structures constrain a whole, what survives a change of description, and how much of an object its invariants can reveal. My particular interests include four-manifolds, gauge and Floer theory, mirror symmetry, and moduli spaces.</p>
+<p class="research-purpose">This site collects my <a href="/papers/">research papers</a> and essays, including work on AI, institutions, and international order.</p></div>
+<div class="entry-links"><a class="button" href="/papers/">Read the research papers <span class="arrow" aria-hidden="true">↗</span></a><a class="quiet-link" href="/research/">Research programs <span class="arrow" aria-hidden="true">↗</span></a></div></header>'''
     body+='<section class="section-block home-papers" aria-labelledby="selected-papers"><div class="section-top"><div><p class="kicker">From the research</p><h2 id="selected-papers">Selected papers</h2></div>'+link("/papers/","Complete collection · 39 papers")+'</div><div class="paper-picks">'
-    for slug,desc in [("validation-bottleneck","An abundance of hypotheses meets a scarcity of independent evidence. The paper examines what that asymmetry means for the discovery and validation of alpha."),("cy-mixed-smoothing","Local smoothability does not settle the global question. The paper gives a criterion for specified classes of singular Calabi–Yau threefolds."),("page-curve-not-enough","An entropy curve can agree while ensemble fluctuations or microscopic channels differ. What, then, has the curve determined?")]:
+    selected_papers = [
+        ("validation-bottleneck", "An abundance of hypotheses meets a scarcity of independent evidence. The paper examines what that asymmetry means for the discovery and validation of alpha."),
+        ("cy-conifold-relations", "Mirror symmetry exchanges relations among exceptional curves and vanishing spheres. The paper establishes this correspondence for specified Batyrev families and nodal components."),
+        ("page-curve-not-enough", "An entropy curve can agree while ensemble fluctuations or microscopic channels differ. What, then, has the curve determined?"),
+        ("ai-native-asset-manager", "When analysis becomes abundant, how does an investment firm decide what to believe? The paper develops an organizational framework for generating, challenging, and learning from investment beliefs."),
+        ("af-cobordism-i", "The paper compares four-dimensional cobordism maps in instanton and Lagrangian Floer homology, proving compatibility over the field of two elements."),
+        ("compact-higgs-finite-planck", "What survives of a Higgs branch when gravity remains coupled? A local normal form describes the quotient geometry under specified freeness and regularity hypotheses."),
+    ]
+    for slug,desc in selected_papers:
         p=by_slug[slug]
         body+=f'<article><p class="kicker">{E(p["label"])}</p><h3><a href="/papers/{slug}/">{E(p["title"])}</a></h3><p class="small">{desc}</p></article>'
     body+='</div></section>'

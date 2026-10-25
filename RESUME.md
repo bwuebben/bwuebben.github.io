@@ -1,5 +1,14 @@
 # Resume: research-centered website redesign
 
+**Publication update, 25 October 2026:** Bernd approved the complete website and
+authorized deployment. The approved refinements were adopted onto current `main`
+in production commit `64be722`, which has been pushed for GitHub Pages publication.
+The production source excludes review tools and preview-only files; its RESUME.md
+contains the current maintenance instructions. This branch preserves the design
+review and should not replace production. This approval supersedes the earlier
+no-deployment statements below, which describe the historical handoff. Deployment
+verification is recorded under `~/.local/share/website-checks/site-redesign-2026-10-25/`.
+
 Handoff prepared **25 October 2026** for continuation on another machine.
 
 ## Read this first
@@ -126,7 +135,9 @@ explicitly links the research papers and has a prominent **Read the research
 papers** button. Homepage order is now:
 
 1. Intellectual introduction and direct paper links.
-2. Selected papers: Validation Bottleneck, mixed Calabi–Yau smoothing, Page Curve.
+2. Selected papers, now in two rows: Validation Bottleneck, Mirror Symmetry for
+   Conifold Relations, Page Curve; AI-Native Asset Manager, Cobordism Maps I,
+   and the Higgs Branch at Finite Planck Mass.
 3. Six research programs.
 4. Not Enough as a supporting essay.
 5. Visual companions to the research, reduced in visual dominance.
@@ -140,6 +151,48 @@ The latest share image has been regenerated. The existing approved essay bodies,
 manuscript abstracts, paper identities, and mathematical explorer engines were
 not rewritten in this editorial pass.
 
+## Follow-up layout revision, 25 October 2026
+
+Bernd requested that the homepage portrait sit inside the introductory text block
+on the right, with text flowing beside and below it; that its “Mathematician ·
+Investor” caption be removed; and that his name and other large headings be
+reduced slightly. These changes are implemented locally in the editorial builder
+and stylesheet. That layout pass preserved the introduction's prose. The portrait now floats
+within the copy, including at phone widths, and the principal editorial headings
+are smaller. No module has been selected for adoption or deployed.
+
+Verified the homepage at the desktop viewport and at 390 px, with no horizontal
+overflow at phone width. Shared-site and editorial checks pass. Current images:
+`review/screenshots/home-inline-portrait-desktop.jpg` and
+`review/screenshots/home-inline-portrait-phone.jpg`.
+
+Bernd then asked for a modest amount of material from the original homepage to
+fill out the text around the portrait. Added about 55 words: a short paragraph
+on trade counterparties and markets aggregating belief or attention, and a
+sentence naming his interests in four-manifolds, gauge and Floer theory, mirror
+symmetry, and moduli spaces. The text now continues beneath the portrait on
+desktop. Checked desktop and 390 px layouts, with no horizontal phone overflow;
+site/editorial checks pass. Latest screenshots:
+`review/screenshots/home-expanded-intro-desktop.jpg` and
+`review/screenshots/home-expanded-intro-phone.jpg`.
+
+Bernd next chose six homepage papers. The mirror symmetry paper
+(`cy-conifold-relations`) replaces the mixed-smoothing selection; a second row
+adds `ai-native-asset-manager`, `af-cobordism-i`, and `compact-higgs-finite-planck`,
+in that order. Titles and links come from the existing catalogue; short summaries
+preserve the manuscripts' scope. Desktop has two rows of three with a light rule
+between rows; at 390 px all six cards stack in one column without overflow.
+Paper metadata, PDFs, and archive identities are unchanged. Site, paper, and
+editorial checks pass. Screenshot:
+`review/screenshots/home-six-selected-papers-desktop.jpg`.
+
+Bernd also removed the Papers page's search/filter/compact-list toolbar and the
+introductory “Research by … Find a particular paper …” paragraph. The catalogue
+now opens with its title and subject links, followed by all paper entries. Its
+unused filtering script and styles are removed; the integration generator and
+review hub reflect this simpler version. “About” is the final item in the shared
+top navigation, after “Updates”. These remain local preview revisions.
+
 ## Six modules available for selective adoption
 
 | Module | Current implementation and routes |
@@ -147,7 +200,7 @@ not rewritten in this editorial pass.
 | Homepage | Research-first introduction, selected papers, six programs, supporting essays and illustrations; `/` |
 | Explorer gallery | Four existing explorers with context and links into the papers; `/explorers/` |
 | Research guides | `/research/` plus markets (3 papers), topology (10), calabi-yau (6), geometry (7), physics (9), ai-institutions (4); all 39 papers occur once |
-| Paper catalogue | Existing entries plus search, subject filter, compact view, query-string persistence; `/papers/` |
+| Paper catalogue | All existing entries and subject navigation, without search/filter controls or introductory paragraph; `/papers/` |
 | Writing | `/writing/`, existing Not Enough and Gradient of Mind, plus two new essay drafts: institutional-knowledge and physical-limits |
 | About and updates | `/about/`, `/updates/`, and `/feed.xml`; feed contains confirmed public additions only, not announcements of this preview |
 
@@ -166,8 +219,8 @@ gauge-theory scope boundaries intact. Design review is not mathematical clearanc
 | `content/institutional-knowledge.html`, `content/physical-limits.html` | New essay prose; `tools/build-essays.py` generates the pages and owns their title/metadata |
 | `assets/essay-models.js` | Pure numerical functions; meaningful boundary tests in `tools/check-essay-models.cjs` |
 | `assets/essay-experiments.js` | Essay controls, presets, displays, mobile summary |
-| `assets/catalogue.js`, `assets/catalogue.css` | Progressive enhancement of the original paper catalogue |
-| `tools/integrate-preview.py` | Proposed `site.json` navigation, catalogue toolbar, explorer paper links, share-image integration, new sitemap routes |
+| `assets/catalogue.css` | Catalogue layout and subject navigation |
+| `tools/integrate-preview.py` | Proposed `site.json` navigation, catalogue header, explorer paper links, share-image integration, new sitemap routes |
 | `tools/update-site.py` | Shared navigation/style propagation; preview adds nested-route active navigation handling |
 | `data/papers.json`, `templates/paper.html`, `tools/update-papers.py` | Existing authoritative paper metadata and generated individual paper pages; keep PDF hashes and identifiers intact |
 | `data/updates.json` | Confirmed publication/update entries; no invented release dates |
@@ -204,7 +257,6 @@ python3 tools/update-site.py --check
 python3 tools/update-papers.py --check
 python3 tools/check-editorial.py
 node tools/check-essay-models.cjs
-node --check assets/catalogue.js
 node --check assets/essay-experiments.js
 node --check assets/review.js
 git diff --check
@@ -217,7 +269,7 @@ Six SSRN records remain archive-only with no mirrored PDF; do not substitute
 private drafts. The catalogue/guide preservation check uses the fixed public
 baseline `8931bcd` so it remains meaningful after committing this branch.
 
-Prior browser review covered filtering and URL reloads, review-note persistence,
+Prior browser review covered the since-removed filtering and URL reloads, review-note persistence,
 model controls and boundary behavior, and all new routes at 390 px without
 horizontal overflow. The latest prose/layout revision was inspected on desktop
 and at 390 px for the homepage and revised introductions. These are browser

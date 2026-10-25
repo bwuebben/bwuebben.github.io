@@ -26,6 +26,19 @@ on 25 October 2026. This does not authorize merging it into main or deploying it
 Review at <http://127.0.0.1:8766/review/> after starting the local server. The latest
 revision makes research papers central and deepens the intellectual/philosophical
 tone. The six proposals and the two new essay drafts still await detailed review.
+Follow-up layout changes requested on 25 October are implemented locally: the
+homepage portrait sits within the introductory text with wrapping, its role caption
+is removed, and the name and large editorial headings are smaller. Desktop and
+390 px browser checks passed. A subsequent requested expansion adds about 55
+words from the original homepage so the text continues below the portrait.
+The homepage selection now contains six papers in two rows, including the
+requested mirror-symmetry replacement and AI-Native Asset Manager, Cobordism
+Maps I, and finite-Planck Higgs-branch additions.
+The Papers page's search/filter controls and introductory paragraph are removed;
+About now comes last in the shared top navigation.
+Bernd approved publication on 25 October. The approved design is now in production
+commit `64be722` on `main`; follow main's RESUME.md for maintenance and the local
+deployment receipt for live verification. This branch preserves the review history.
 
 - [ ] **Get all public papers onto Zenodo**, including papers already on arXiv
   or SSRN. Check existing records, exact versions, licenses, and existing DOIs

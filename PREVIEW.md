@@ -1,5 +1,10 @@
 # Website proposal — review before deployment
 
+**Historical review branch:** Bernd approved the complete design on 25 October
+2026. The final refinements have been adopted on `main` in release commit
+`64be722`. Continue website maintenance from main's RESUME.md. The earlier
+review and approval guards below describe the proposal before that authorization.
+
 Bernd requested the complete six-part proposal on 25 October 2026, with discussion
 and selective adoption before anything affects the public site. This unpublished
 worktree is on branch preview/site-direction-2026-10-25, based on
@@ -46,7 +51,7 @@ and visual companions support that work and appear later.
 | 1. Homepage | / | index.html; homepage function in tools/build-editorial.py |
 | 2. Explorer gallery | /explorers/ | explorers/index.html; gallery function; SVG illustrations |
 | 3. Research guides | /research/ and its six programs | research/; program definitions and paper descriptions in the editorial builder |
-| 4. Catalogue | /papers/ | papers/index.html, assets/catalogue.css, assets/catalogue.js |
+| 4. Catalogue | /papers/ | papers/index.html, assets/catalogue.css; subject links and full entries, without search/filter controls |
 | 5. Interactive writing | /writing/, /writing/institutional-knowledge/, /writing/physical-limits/ | content/*.html, tools/build-essays.py, assets/essay-models.js, assets/essay-experiments.js |
 | 6. About and ongoing work | /about/, /updates/, /feed.xml | About function, data/updates.json, update/feed function |
 
@@ -93,7 +98,6 @@ artwork or title. The portrait card remains the general site sharing image.
     python3 tools/update-papers.py --check
     python3 tools/check-editorial.py
     node tools/check-essay-models.cjs
-    node --check assets/catalogue.js
     node --check assets/essay-experiments.js
     node --check assets/review.js
     git diff --check
@@ -102,7 +106,7 @@ The checks cover paper metadata and PDF checksums, unchanged catalogue entries,
 internal links and anchors, one-to-one coverage of 39 papers by the six guides,
 RSS/sitemap parsing, and the substantive boundary cases of both models.
 Browser review covers desktop layouts, all new routes at 390 px, catalogue
-filtering and URL persistence, essay controls, and saved review notes.
+subject navigation and full paper visibility, essay controls, and saved review notes.
 No actual iPhone hardware or Google/Scholar indexing claim is implied.
 
 ## Adoption later
