@@ -284,6 +284,14 @@ navigation; the masthead portrait click on the landing page is its one
 internal link, which is what keeps it from being an orphan page. The landing
 page's `Person` block lists the same photograph first in its `image` field.
 
+Preserve both name forms: **Bernd Johannes Wuebben** and **Bernd Wuebben**.
+The portrait caption and papers-page author line show both names; the homepage,
+portrait, and papers metadata use the same `Person` identifier
+(`https://bwuebben.github.io/#person`) with `alternateName: "Bernd Wuebben"`.
+Keep image alt text descriptive and keep this identity metadata consistent.
+Do not add invisible keywords or text styled to match the background for search
+engines. Visible captions and accurate structured data provide the connection.
+
 After publishing, submit `https://bwuebben.github.io/sitemap.xml` in Google
 Search Console. Inspect `https://bwuebben.github.io/papers/` and
 `https://bwuebben.github.io/portrait/` there and request indexing, then
