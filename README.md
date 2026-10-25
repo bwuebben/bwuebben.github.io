@@ -6,7 +6,7 @@ Source for my personal site, published by GitHub Pages at
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
 HTML, CSS, and the explorers' client-side JavaScript; there is no
-server-side code. The other pages require no runtime JavaScript (the landing
+server-side code. Apart from the explorers and the essay *Not Enough*, the pages require no runtime JavaScript (the landing
 page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
@@ -20,6 +20,8 @@ pillowcase-explorer/    interactive trefoil and pillowcase diagrams
 conifold-lab/           interactive conifold transitions laboratory
 cobordism-explorer/     interactive Atiyah–Floer cobordism explorer
 beyond-hrp-lab/         interactive signal-aware portfolio laboratory
+not-enough.html         Not Enough, an essay with interactive figures (self-contained:
+                         its drum eigenmodes are embedded as data)
 poem.html               Gradient of Mind (a poem)
 portrait/index.html     the portrait at full size (the masthead links here;
                          deliberately absent from the navigation)
@@ -70,8 +72,8 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `templates/navigation.html`. The top level contains Home, Papers, Explorers, and Writing.
 Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, and Beyond HRP; add future explorers
 to that group's `children` list.
-Writing's `children` list contains Entropy, which opens the poem *Gradient of
-Mind*. An item with a `children` list becomes a group, rendered as a native HTML
+Writing's `children` list contains Not Enough, the essay, and Entropy, which
+opens the poem *Gradient of Mind*. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
 open or close its submenu. Then run after configuration changes:
 
