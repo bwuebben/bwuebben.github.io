@@ -28,8 +28,16 @@ in `papers_ai_1`; public paper mirrors and this website are release surfaces.
    preserving words, DOI links, and source provenance.
 6. Update the paper's website entry and relevant explorer references. Preserve
    the site's established author/year labels and linked `SSRN:<record number>`
-   convention. Keep stable archive links and distinguish pending submissions
-   from public papers. Do not put private package paths or draft URLs on pages.
+   convention. **Keep `current version (PDF)` pointing to the latest PDF in the
+   public paper repository.** For each paper archived on Zenodo, append a separate
+   `Zenodo:<record number>` link at the end of its description paragraph, pointing
+   to the published landing page `https://zenodo.org/records/<record number>`.
+   This is required for papers awaiting arXiv that are not already on arXiv or
+   SSRN; do not replace the current-PDF link with the archived PDF. On a new Zenodo
+   version, update this link and label to the latest published record and retain
+   the version/concept DOI history in the ledger. Keep an existing Zenodo link
+   when an arXiv link is later added. Distinguish pending submissions from public
+   papers. Do not put private package paths or draft URLs on pages.
 7. Follow the current authorization for commit/push/deploy. Local preparation
    stays local when requested. For authorized site publication, run
    `python3 tools/update-site.py --check`, stage only intended files, check the

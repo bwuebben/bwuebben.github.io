@@ -98,6 +98,30 @@ only the marked navigation and stylesheet blocks; page content stays editable.
 Keep changes local while reviewing. Publishing is a separate, deliberate Git
 commit and push of the reviewed files to GitHub Pages.
 
+## Google indexing
+
+Use the Search Console property `https://bwuebben.github.io/`. Under **Indexing →
+Pages**, inspect the indexed and not-indexed lists and their last-update dates.
+For a particular page, enter its full canonical URL in the top **URL inspection**
+bar. The indexed result and **Test live URL** answer different questions: the
+latter checks present accessibility, not whether the page is already indexed.
+After fixing a problem or publishing a significant update, use **Request indexing**
+for that page and verify that Google actually accepts the request.
+
+Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
+**Success**, not merely that submission was accepted. The live sitemap is
+<https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
+canonical page list current when adding or removing public pages. It currently
+covers the nine main pages, not standalone explorer copies, templates, tools,
+verification files, or external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
+and GitHub are outside this Search Console property's scope; the papers catalogue
+is one page on this domain.
+
+A valid sitemap and successful live test do not guarantee indexing. Record any
+remaining fetch errors or pending requests accurately, and allow time for Google
+to crawl and update its reports. See Google's [URL Inspection guide](https://support.google.com/webmasters/answer/12482179)
+and [Sitemaps report guide](https://support.google.com/webmasters/answer/7451001).
+
 ## The Pillowcase Explorer
 
 `pillowcase-explorer/index.html` is a guided, interactive trefoil example, linked
