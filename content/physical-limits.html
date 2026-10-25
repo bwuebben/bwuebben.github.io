@@ -1,0 +1,47 @@
+<p class="kicker">Interactive essay · Draft for discussion</p>
+<header class="essay-intro"><p class="kicker">AI · Infrastructure · Physical constraints</p><h1>The material conditions<br>of intelligence.</h1><p class="intro">The capacity to compute is a joint achievement of algorithms, machines, and the systems that sustain them. What follows when those systems become the limiting condition of a technology’s reach?</p><p class="small">Bernd Johannes Wuebben · An essay with an illustrative model</p></header>
+<figure class="essay-cover"><img src="/assets/illustrations/energy.svg" alt="Electrical power supplying an array of computing machines" width="800" height="500"></figure>
+<article><div class="reading">
+<p class="opening">Consider a fleet of computing machines, delivered and waiting. The chips exist. The software runs. There is work to do. Yet some of the machines cannot be switched on at the required load.</p>
+<p>The missing input might be electricity. It might be cooling. It might be the connection between a source of power and the building where the machines are installed. A capability can exist in one sense and remain unavailable in another.</p>
+<p>This is easy to overlook when the visible object is software. A model arrives as a file or a service. Its deployment arrives through power systems, equipment, buildings, and decisions about where those resources will be placed.</p>
+<h2>I · Find the smallest number.</h2>
+<p>Start with an intentionally simple facility. Every accelerator has the same assumed power draw. Available electricity and cooling each impose a maximum operating fleet. The number of machines that can run is the smallest of three capacities.</p>
+<p>Move the controls, or double the installed chips. Watch which changes create useful capacity and which leave the bottleneck untouched.</p></div>
+<section class="experiment" aria-labelledby="power-title">
+<p class="kicker">Experiment 02 · Capacity is a joint condition</p><h2 id="power-title">What is actually holding the fleet back?</h2>
+<p id="power-mobile" class="mobile-result" aria-hidden="true">171.4k active · 2.88m useful accelerator-hours / day</p>
+<div class="preset-row"><button data-power="200,100,200,70">Power constrained</button><button data-power="200,300,60,70">Cooling constrained</button><button data-power="60,300,200,70">Chip constrained</button><button data-power="200,200,120,70">Reset</button></div>
+<div class="experiment-layout"><div>
+<label class="control" for="chips"><span>Installed accelerators <output id="chips-out">200 thousand</output></span><input id="chips" type="range" min="20" max="600" step="10" value="200"></label>
+<label class="control" for="grid"><span>Available facility power <output id="grid-out">200 MW</output></span><input id="grid" type="range" min="20" max="500" step="10" value="200"></label>
+<label class="control" for="cooling"><span>Cooling capacity for IT load <output id="cooling-out">120 MW IT</output></span><input id="cooling" type="range" min="20" max="400" step="10" value="120"></label>
+<label class="control" for="utilization"><span>Useful utilization <output id="utilization-out">70%</output></span><input id="utilization" type="range" min="10" max="95" step="5" value="70"><small>Useful work per available accelerator-hour.</small></label>
+<button id="more-chips">Double the installed chips</button></div>
+<div><p class="small">Capacity supported by each resource, in accelerators. The shortest bar sets the operating fleet.</p>
+<div class="bar-chart"><div class="bar-row"><span>Chips</span><div class="bar-track"><div class="bar-fill" id="chips-bar" style="width:87.5%"></div></div><output id="chips-capacity-out">200k</output></div>
+<div class="bar-row"><span>Electricity</span><div class="bar-track"><div class="bar-fill green" id="power-bar" style="width:100%"></div></div><output id="power-out">229k</output></div>
+<div class="bar-row"><span>Cooling</span><div class="bar-track"><div class="bar-fill gold" id="cooling-bar" style="width:75%"></div></div><output id="cooling-capacity-out">171k</output></div></div>
+<div class="metrics"><div class="metric"><strong id="operating">171.4k</strong><span>accelerators able to operate</span></div><div class="metric"><strong id="useful-hours">2.88m</strong><span>useful accelerator-hours per day</span></div></div>
+<p id="power-conclusion" class="model-note" aria-live="polite">Cooling capacity limits the initial scenario. About 28.6 thousand installed accelerators cannot operate at the assumed load.</p></div></div>
+<details><summary>The calculation, units, and limits</summary>
+<p class="model-note">Assumed accelerator draw: 700 W. Assumed power usage effectiveness (PUE): 1.25, the ratio of total facility power to IT power. Electricity supports grid MW × 1,000,000 / (1.25 × 700) accelerators. Cooling supports cooling MW IT × 1,000,000 / 700. The operating fleet is the minimum of those two quantities and the installed chips. Useful hours per day equal that fleet × 24 × utilization. Fractional accelerators are a continuous planning approximation.</p>
+<p class="model-note">Every input is illustrative, not a specification for a particular product or facility. The model holds power draw and PUE fixed. It omits non-accelerator IT load, networks, water, reliability, construction time, financing, workload differences, and part-load power behavior. Accelerator-hours measure capacity in this model, not intelligence or economic value. Utilization changes useful work, not the assumed provisioning requirement.</p></details>
+<noscript><p class="model-note">The figures show the initial scenario. Enable JavaScript to change the experiment.</p></noscript>
+</section>
+<div class="reading"><h2>II · More of the wrong thing.</h2>
+<p>In the power-constrained scenario, doubling the chips changes the inventory without changing the operating fleet. In the chip-constrained scenario, more electricity has the same effect: it increases a capacity that was already sufficient.</p>
+<p>The lesson is elementary, and still consequential. An investment in one input has a different value depending on the others. The same shipment can be transformative at one site and largely idle at another.</p>
+<p>The controls also show something less obvious. A bottleneck can move. Expand the grid connection far enough and cooling becomes limiting. Expand cooling and the chips become limiting. Capacity planning is a sequence of changing constraints, rather than a single race to maximize one input.</p>
+<blockquote>Technical possibility becomes operational capacity only when its supporting systems meet.</blockquote>
+<h2>III · Useful work has another denominator.</h2>
+<p>The operating fleet is not the same as useful output. Move the utilization slider. The physical capacity stays fixed, but the useful hours change.</p>
+<p>That distinction leaves room for software and organization to matter enormously. Scheduling, reliability, workload choice, and the ability to keep a fleet productively occupied affect what a given physical system can deliver. Better algorithms can change the work accomplished per hour, a quantity this small model deliberately does not estimate.</p>
+<p>It would therefore be a mistake to read the diagram as a claim that intelligence reduces to electricity. The diagram isolates a constraint on deployment. It says nothing by itself about the quality of the model, the value of the task, or whether the task was worth doing.</p>
+<h2>IV · The geography of capability.</h2>
+<p>Once deployment depends on complementary physical systems, location matters. A place can have access to one necessary input and lack another. Connections between places matter too: a resource is useful only if it can reach the point of use under the conditions that actually prevail.</p>
+<p><a href="/papers/material-deployment-power/">Material Deployment Power in the Age of Artificial Intelligence</a> develops the political argument from this starting point. It asks how the ability to mobilize energy, infrastructure, and materials shapes the conversion of technological potential into sustained capability.</p>
+<p>The facility calculation does not prove that argument. It makes one of its premises concrete: owning a technical component and being able to deploy it are different conditions. The political questions begin when we ask who controls the complementary systems, who can expand them, and on what terms access is available.</p>
+<p>The language of AI often makes it sound weightless. At the scale where it changes institutions and economies, it acquires a geography, a maintenance schedule, and a power bill.</p>
+<div class="next-reading"><div><p class="kicker">The paper</p><h3><a href="/papers/material-deployment-power/">Material Deployment Power ↗</a></h3></div><div><p class="kicker">The research program</p><h3><a href="/research/ai-institutions/">AI, institutions &amp; power ↗</a></h3></div></div>
+</div></article>

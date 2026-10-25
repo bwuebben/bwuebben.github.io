@@ -1,22 +1,74 @@
 {
   "navigation": [
-    { "label": "Home", "href": "/" },
-    { "label": "Papers", "href": "/papers/" },
     {
-      "label": "Explorers",
-      "children": [
-        { "label": "Pillow Case", "href": "/pillowcase-explorer/" },
-        { "label": "Conifold Transitions", "href": "/conifold-lab/" },
-        { "label": "Atiyah–Floer Cobordism", "href": "/cobordism-explorer/" },
-        { "label": "Beyond HRP", "href": "/beyond-hrp-lab/" }
-      ]
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Papers",
+      "href": "/papers/"
+    },
+    {
+      "label": "Research guides",
+      "href": "/research/"
     },
     {
       "label": "Writing",
       "children": [
-        { "label": "Not Enough", "href": "/not-enough.html" },
-        { "label": "Entropy", "href": "/poem.html" }
+        {
+          "label": "Essays & poem",
+          "href": "/writing/"
+        },
+        {
+          "label": "Not Enough",
+          "href": "/not-enough.html"
+        },
+        {
+          "label": "Institutional knowledge",
+          "href": "/writing/institutional-knowledge/"
+        },
+        {
+          "label": "Physical limits",
+          "href": "/writing/physical-limits/"
+        },
+        {
+          "label": "Gradient of Mind",
+          "href": "/poem.html"
+        }
       ]
+    },
+    {
+      "label": "Explorers",
+      "children": [
+        {
+          "label": "Visual companions",
+          "href": "/explorers/"
+        },
+        {
+          "label": "Pillowcase",
+          "href": "/pillowcase-explorer/"
+        },
+        {
+          "label": "Conifold Transitions",
+          "href": "/conifold-lab/"
+        },
+        {
+          "label": "Atiyah–Floer Cobordism",
+          "href": "/cobordism-explorer/"
+        },
+        {
+          "label": "Beyond HRP",
+          "href": "/beyond-hrp-lab/"
+        }
+      ]
+    },
+    {
+      "label": "About",
+      "href": "/about/"
+    },
+    {
+      "label": "Updates",
+      "href": "/updates/"
     }
   ]
 }

@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-10-25T16:58:30.994447+00:00",
+  "base_commit": "8931bcd957786ef8e8c94c34cf804353a714b89a",
+  "branch": "preview/site-direction-2026-10-25",
+  "committed": false,
+  "pushed": false,
+  "public_site_changed": false,
+  "proposals": 6,
+  "paper_records_preserved": 39,
+  "pdf_hashes_verified": 33,
+  "research_guides": 6,
+  "interactive_essay_drafts": 2,
+  "html_pages_checked": 63,
+  "mobile_width": 390,
+  "mobile_horizontal_overflow": false,
+  "browser_errors_observed": 0,
+  "checks": [
+    "shared navigation and paper generation",
+    "all local links and anchors",
+    "unchanged catalogue entries and paper metadata",
+    "all 39 papers covered exactly once by research guides",
+    "RSS and sitemap XML",
+    "model endpoints, correlated errors, capacity bottlenecks, units, ties and utilization",
+    "catalogue filtering, compact view, URL reload persistence",
+    "review-note reload persistence",
+    "phone keyboard slider and preset interaction",
+    "new source whitespace"
+  ]
+}

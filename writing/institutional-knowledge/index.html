@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What does an institution know? — Bernd Johannes Wuebben</title><meta name="description" content="An interactive essay about shared evidence, agreement, and institutional learning.">
+<meta name="author" content="Bernd Johannes Wuebben"><link rel="canonical" href="https://bwuebben.github.io/writing/institutional-knowledge/">
+<meta property="og:title" content="What does an institution know?"><meta property="og:description" content="An interactive essay about shared evidence, agreement, and institutional learning.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://bwuebben.github.io/writing/institutional-knowledge/">
+<meta property="og:image" content="https://bwuebben.github.io/assets/share/institution.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Bernd Wuebben — Updates" href="/feed.xml">
+<!-- site:styles -->
+<link rel="stylesheet" href="../../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../../assets/style.css?v=acd4f5ed3e01">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="/assets/editorial.css">
+<script defer src="/assets/essay-models.js"></script><script defer src="/assets/essay-experiments.js"></script></head><body class="editorial ">
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../../">Home</a></li>
+      <li><a href="../../papers/">Papers</a></li>
+      <li><a href="../../research/">Research guides</a></li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../">Essays &amp; poem</a></li>
+            <li><a href="../../not-enough.html">Not Enough</a></li>
+            <li><a href="./" aria-current="page">Institutional knowledge</a></li>
+            <li><a href="../physical-limits/">Physical limits</a></li>
+            <li><a href="../../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../../explorers/">Visual companions</a></li>
+            <li><a href="../../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../../beyond-hrp-lab/">Beyond HRP</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../../about/">About</a></li>
+      <li><a href="../../updates/">Updates</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="edition" tabindex="-1"><p class="kicker">Interactive essay · Draft for discussion</p>
+<header class="essay-intro"><p class="kicker">Institutions · Evidence · Decisions</p><h1>What does an<br>institution know?</h1><p class="intro">Ten people agree. Have you learned ten things, or heard one thing ten times?</p><p class="small">Bernd Johannes Wuebben · An interactive essay</p></header>
+<figure class="essay-cover"><img src="/assets/illustrations/institution.svg" alt="Several paths of evidence merge into a single decision" width="800" height="500"></figure>
+<article><div class="reading">
+<p class="opening">A firm can employ brilliant people, buy excellent data, and run sophisticated models, yet still have difficulty answering a simple question: why do we believe this?</p>
+<p>One analyst has read a company’s announcement. A second has read a broker’s interpretation of it. A third has asked a language model to summarize the broker. By the time their views reach a meeting, the same observation may have acquired three authors and the appearance of a consensus.</p>
+<p>Agreement can contain information. But its value depends on how it was produced. A roomful of people who have independently checked different evidence is different from a roomful of people who have inherited the same premise.</p>
+<h2>I · Count the evidence.</h2>
+<p>Imagine that each analyst estimates the same unknown quantity. Each estimate is unbiased and has the same amount of noise. We average the estimates. If their errors are uncorrelated, averaging reduces uncertainty. If their errors move together, the reduction is smaller.</p>
+<p>The experiment below makes that distinction visible. Increase the number of analysts, then increase how strongly their errors are correlated.</p></div>
+<section class="experiment" aria-labelledby="evidence-title">
+<p class="kicker">Experiment 01 · The shape of agreement</p><h2 id="evidence-title">More voices. How much more evidence?</h2>
+<p id="evidence-mobile" class="mobile-result" aria-hidden="true">1.6 independent estimates · 2.5× precision overstatement</p>
+<div class="preset-row"><button data-evidence="10,0">Independent checks</button><button data-evidence="10,90">The echo chamber</button><button data-evidence="3,15">A smaller, varied team</button><button data-evidence="10,60">Reset</button></div>
+<div class="experiment-layout"><div>
+<label class="control" for="voices"><span>Number of estimates <output id="voices-out">10 voices</output></span><input id="voices" type="range" min="1" max="20" step="1" value="10"><small>Each estimate has the same individual error variance.</small></label>
+<label class="control" for="correlation"><span>Correlation of errors <output id="correlation-out">0.60</output></span><input id="correlation" type="range" min="0" max="100" step="5" value="60"><small>0: uncorrelated errors. 1: the same error in every estimate.</small></label>
+<button id="add-voices">Add five analysts</button><p class="model-note">The lines illustrate shared information. They are not a measured organizational network.</p></div>
+<div><svg id="evidence-network" viewBox="0 0 440 320" role="img" aria-label="Ten estimates share correlated errors"></svg>
+<div class="metrics"><div class="metric"><strong id="effective">1.6</strong><span>equivalent independent estimates</span></div><div class="metric"><strong id="overstatement">2.5×</strong><span>precision overstatement if correlation is ignored</span></div></div></div></div>
+<div class="bar-chart" aria-label="Uncertainty relative to one estimate"><p class="small">Standard error, relative to one estimate. Shorter means more precise.</p>
+<div class="bar-row"><span>Assume independence</span><div class="bar-track"><div class="bar-fill green" id="naive-bar" style="width:31.62%"></div></div><output id="naive-out">32%</output></div>
+<div class="bar-row"><span>Account for correlation</span><div class="bar-track"><div class="bar-fill" id="actual-bar" style="width:80%"></div></div><output id="actual-out">80%</output></div></div>
+<p id="evidence-conclusion" class="model-note" aria-live="polite">Ten estimates with correlation 0.60 have the averaging precision of 1.56 independent estimates.</p>
+<details><summary>The calculation and its assumptions</summary><p class="model-note">For n unbiased estimates with individual variance σ² and common pairwise correlation ρ, the variance of their mean is σ²[1 + (n − 1)ρ]/n. The equivalent independent sample size is n/[1 + (n − 1)ρ]. Standard errors are square roots of variances. This illustrative model assumes equal weights, equal variances, and 0 ≤ ρ ≤ 1. It does not model bias, expertise, incentives, or strategic behavior. Correlated errors need not come from a common source; the network is a visual analogy.</p></details>
+<noscript><p class="model-note">The figures show the initial scenario. Enable JavaScript to change the experiment.</p></noscript>
+</section>
+<div class="reading">
+<h2>II · Keep the trail.</h2>
+<p>At a correlation of one, adding analysts does not improve the average at all. That is the extreme case. The more interesting case is a little below it: the team feels larger, the presentation becomes more polished, and the extra precision is modest.</p>
+<p>The practical question is therefore not just how many people support a conclusion. It is which observations support it, how those observations depend on one another, and what would survive if a common assumption failed.</p>
+<p>A useful decision record keeps the evidence attached to the claim. What was observed? What was inferred? Which conclusions come from the same source? What would change our mind? These questions give disagreement somewhere productive to go.</p>
+<div class="flow" aria-label="A proposed decision process"><span>Observe</span><span>Trace the source</span><span>Challenge</span><span>Decide</span><span>Revisit</span></div>
+<h2>III · A belief is not yet a position.</h2>
+<p>Even a well-supported belief leaves decisions unresolved. How much does it matter? How uncertain is its magnitude? How does the decision interact with the other risks already being taken? A firm can be right about an issuer and wrong about the size or timing of the position.</p>
+<p>This is where the organization becomes part of the reasoning. Someone must translate evidence into a forecast, forecasts into a portfolio, and outcomes into an update. At each handoff, information can disappear. A probability can become an adjective. A conditional claim can become a headline. An uncertainty can become somebody else’s responsibility.</p>
+<blockquote>The quality of an institution’s thinking lives partly in what survives between its decisions.</blockquote>
+<p>The goal is not to make everyone agree. It is to make a decision whose reasons remain available when the result arrives.</p>
+<h2>IV · Remember before knowing the ending.</h2>
+<p>A successful outcome does not tell us which part of the reasoning was right. An unsuccessful one does not tell us that every part was wrong. Without a record of the original expectations, an organization can learn a story that fits the outcome and mistake it for an improvement in judgment.</p>
+<p>A useful memory records the forecast before the event, the alternatives that were considered, the uncertainty that was acknowledged, and the rule that turned the belief into an action. Later, the firm can ask whether its probabilities were calibrated, whether a forecast was useful, and whether its decision rule made sense under the information then available.</p>
+<p>AI makes it easier to generate and summarize analysis. It can also help preserve this chain. But speed increases the value of knowing where a claim came from: a mistaken premise can now travel farther before anyone pauses to inspect it.</p>
+<p>That is the question behind <a href="/papers/ai-native-asset-manager/">The AI-Native Asset Manager</a>. As analysis becomes easier to produce, the architecture that generates, challenges, sizes, and learns from investment beliefs becomes a central object of design.</p>
+<p>An institution knows something when it can do more than repeat a conclusion. It can recover the reasons, expose the dependencies, act proportionately, and change its mind.</p>
+<aside class="guide-aside"><p class="small">This essay develops an intuition from the paper. The experiment is a standard equal-correlation calculation, not an empirical estimate of analyst performance or evidence for a particular organizational blueprint.</p></aside>
+<div class="next-reading"><div><p class="kicker">The paper</p><h3><a href="/papers/ai-native-asset-manager/">The AI-Native Asset Manager ↗</a></h3></div><div><p class="kicker">Try the next step</p><h3><a href="/beyond-hrp-lab/">From forecasts to portfolio weights ↗</a></h3></div></div>
+</div></article>
+<footer class="edition-footer"><span>Bernd Johannes Wuebben<br>Finance · Mathematics · Theoretical Physics</span><nav aria-label="Footer"><a href="/about/">About &amp; contact</a><a href="/updates/">Updates</a><a href="/feed.xml">RSS</a><a href="https://scholar.google.com/citations?user=uCkoy4IAAAAJ">Google Scholar ↗</a></nav></footer></main></body></html>

@@ -38,8 +38,10 @@
 <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
 <!-- /site:styles -->
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
+<link rel="stylesheet" href="../assets/catalogue.css">
+<script defer src="../assets/catalogue.js"></script>
 </head>
-<body>
+<body class="catalogue">
 <!-- site:navigation -->
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
@@ -47,38 +49,43 @@
     <ul>
       <li><a href="../">Home</a></li>
       <li><a href="./" aria-current="page">Papers</a></li>
+      <li><a href="../research/">Research guides</a></li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../writing/">Essays &amp; poem</a></li>
+            <li><a href="../not-enough.html">Not Enough</a></li>
+            <li><a href="../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
       <li>
         <details class="nav-group">
           <summary>Explorers</summary>
           <ul class="nav-submenu">
-            <li><a href="../pillowcase-explorer/">Pillow Case</a></li>
+            <li><a href="../explorers/">Visual companions</a></li>
+            <li><a href="../pillowcase-explorer/">Pillowcase</a></li>
             <li><a href="../conifold-lab/">Conifold Transitions</a></li>
             <li><a href="../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
             <li><a href="../beyond-hrp-lab/">Beyond HRP</a></li>
           </ul>
         </details>
       </li>
-      <li>
-        <details class="nav-group">
-          <summary>Writing</summary>
-          <ul class="nav-submenu">
-            <li><a href="../not-enough.html">Not Enough</a></li>
-            <li><a href="../poem.html">Entropy</a></li>
-          </ul>
-        </details>
-      </li>
+      <li><a href="../about/">About</a></li>
+      <li><a href="../updates/">Updates</a></li>
     </ul>
   </nav>
 </header>
 <!-- /site:navigation -->
 <main id="main" class="wrap papers" tabindex="-1">
-  <header class="masthead">
-    <h1>Papers</h1>
-    <p class="lede">Research by Bernd Johannes Wuebben (Bernd Wuebben).</p>
-  </header>
+  <header class="masthead"><h1>Papers</h1><p class="catalogue-intro">Research by Bernd Johannes Wuebben (Bernd Wuebben). Find a particular paper below, or <a href="../research/">start with a guide to the research</a>.</p><nav class="catalogue-nav" aria-label="Paper subjects"><a href="#markets">Markets</a><a href="#mathematics">Mathematics</a><a href="#physics">Physics</a><a href="#ai">AI &amp; institutions</a><a href="#politics">International relations</a></nav></header>
+<form id="paper-filters" class="catalogue-tools" role="search" aria-label="Find papers" hidden><div class="tool-row"><label for="paper-search">Search the collection<input id="paper-search" type="search" placeholder="Title, idea, keyword…" autocomplete="off"></label><label for="paper-subject">Subject<select id="paper-subject"><option value="">All subjects</option><option value="markets">Markets &amp; finance</option><option value="mathematics">Mathematics</option><option value="physics">Theoretical physics</option><option value="ai">AI &amp; institutions</option><option value="politics">International relations</option></select></label></div><div class="tool-bottom"><span id="result-count" role="status" aria-live="polite">39 papers</span><label><input id="compact-view" type="checkbox"> Compact list</label><button id="clear-filters" type="button">Clear filters</button></div></form><p id="empty-results" hidden>No papers match those terms. Try a broader keyword or clear the filters.</p>
 
 
-    <h2 class="paper-category">Markets and quantitative finance</h2>
+    <h2 class="paper-category" id="markets">Markets and quantitative finance</h2>
     <ul class="entries">
       <li id="validation-bottleneck">
         <span class="entry-title"><a href="validation-bottleneck/">The Validation Bottleneck: Alpha Discovery When Hypotheses Are Free</a></span>
@@ -94,7 +101,7 @@
       </li>
     </ul>
 
-    <h2 class="paper-category">Mathematics</h2>
+    <h2 class="paper-category" id="mathematics">Mathematics</h2>
     <h3 class="paper-topic">Geometric topology and Floer theory</h3>
 
     <h4 class="paper-series" id="knot-instanton-homology">Instanton homology of knots</h4>
@@ -147,7 +154,7 @@
 
     <h3 class="paper-topic">Algebraic geometry and mirror symmetry</h3>
 
-    <h4 class="paper-series" id="toric-tangent-stability">Tangent bundle stability of toric Fano varieties</h4>
+    <h4 class="paper-series" id="toric-tangent-stability-series">Tangent bundle stability of toric Fano varieties</h4>
     <p class="subsection-note">Two papers on the slope stability of tangent bundles of smooth toric Fano varieties with respect to the anticanonical polarization: a complete census through dimension six, followed by blowups indexed by trees and toric bundles, constructions that show which geometric interactions decide stability. <a href="https://github.com/bwuebben/toric-tangent-stability">Papers, code, and data</a>.</p>
     <ul class="entries">
       <li id="toric-tangent-stability">
@@ -220,7 +227,7 @@
       </li>
     </ul>
 
-    <h3 class="paper-topic" id="exotic-four-manifolds">Exotic four-manifolds</h3>
+    <h3 class="paper-topic" id="exotic-four-manifolds-series">Exotic four-manifolds</h3>
     <p class="subsection-note">Fundamental groups and Luttinger fillings in Lidman and Piccirillo’s construction, with applications to the search for exotic smooth structures on S²×S² and ℂP²#ℂP̄².</p>
     <ul class="entries">
       <li id="exotic-four-manifolds">
@@ -229,7 +236,7 @@
       </li>
     </ul>
 
-    <h2 class="paper-category">Theoretical physics</h2>
+    <h2 class="paper-category" id="physics">Theoretical physics</h2>
 
     <h4 class="paper-series" id="compact-higgs-transitions">Compact Higgs transitions</h4>
     <p class="subsection-note">Four papers on how local Higgs branches change when their singular regions belong to one compact Calabi–Yau threefold. In M-theory, vector fields of the compactification can gauge flavor symmetries shared by several local sectors, so Higgs directions that exist in separate local models can be obstructed or become available only through a joint transition. Paper 1 develops the general gauging framework, Papers 2 and 3 study an explicit compact transition through its quantum couplings and its magnetic sheaves, and Paper 4 treats the Higgs branch at finite Planck mass. <a href="https://github.com/bwuebben/global-higgs-branch">Papers, sources, and verification code</a>.</p>
@@ -277,7 +284,7 @@
       </li>
     </ul>
 
-    <h2 class="paper-category">AI and the machine economy</h2>
+    <h2 class="paper-category" id="ai">AI and the machine economy</h2>
     <ul class="entries">
       <li id="prediction-markets-machine-economy">
         <span class="entry-title"><a href="prediction-markets-machine-economy/">Prediction Markets as the Informational Substrate of the Machine Economy</a></span>
@@ -289,7 +296,7 @@
       </li>
     </ul>
 
-    <h2 class="paper-category">International relations and politics</h2>
+    <h2 class="paper-category" id="politics">International relations and politics</h2>
     <ul class="entries">
       <li id="material-deployment-power">
         <span class="entry-title"><a href="material-deployment-power/">Material Deployment Power in the Age of Artificial Intelligence: How Physical Constraints Reshape International Order</a></span>

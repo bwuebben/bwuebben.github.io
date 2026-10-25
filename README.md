@@ -1,5 +1,10 @@
 # bwuebben.github.io
 
+**Preview branch: start with [RESUME.md](RESUME.md) and [PREVIEW.md](PREVIEW.md).**
+This is the complete six-part redesign awaiting review. Git backup is authorized;
+merging into main or deploying is not. The original-site documentation below is
+retained for reference; RESUME.md describes the new pages and generators.
+
 Source for my personal site, published by GitHub Pages at
 **<https://bwuebben.github.io/>**.
 

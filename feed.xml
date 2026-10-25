@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Bernd Wuebben — Updates</title>
+    <link>https://bwuebben.github.io/updates/</link>
+    <description>New papers, revised manuscripts, and additions to the website.</description>
+    <language>en</language>
+    <item>
+      <title>A page for every paper</title>
+      <link>https://bwuebben.github.io/papers/</link>
+      <guid>https://bwuebben.github.io/papers/#update-2026-10-25</guid>
+      <description>The 39-paper collection now has individual abstract pages, citation downloads, and archive links. Thirty-three papers also have verified PDF copies hosted here.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Mirror symmetry for conifold relations</title>
+      <link>https://bwuebben.github.io/papers/cy-conifold-relations/</link>
+      <guid>https://bwuebben.github.io/papers/cy-conifold-relations/#update-2026-10-25</guid>
+      <description>The current public manuscript is dated 25 October 2026. The paper page links its abstract, PDF, source, and archived version.</description>
+      <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

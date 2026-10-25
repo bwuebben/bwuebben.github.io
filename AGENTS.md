@@ -1,5 +1,17 @@
 # Website agent instructions
 
+Read [RESUME.md](RESUME.md) first, then [PREVIEW.md](PREVIEW.md). This branch contains
+a complete website proposal awaiting Bernd's review and partial or full adoption.
+On 25 October 2026 he authorized committing and pushing it for continuation on
+another machine. This does not authorize merging into main or deploying the
+redesign. Keep manuscript files and bibliographic identity intact.
+
+At the start of a new session, also read [TODO.md](TODO.md) and briefly remind
+Bernd of the publication/discoverability backlog, then follow his current request.
+The website's primary purpose is to disseminate his research papers and thinking.
+Keep papers prominent and use a substantive intellectual/philosophical register;
+the visual companions support the research. See RESUME.md for his exact feedback.
+
 Before adding or updating a public paper, read
 [PUBLICATION_WORKFLOW.md](PUBLICATION_WORKFLOW.md) and the canonical procedure in
 `../papers_ai_1/PUBLICATION_WORKFLOW.md`. This applies to every agent. The release

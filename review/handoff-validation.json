@@ -1,0 +1,34 @@
+{
+  "verified_at": "2026-10-25T19:17:31.101611+00:00",
+  "purpose": "Cross-machine handoff; preview branch push authorized, adoption and deployment not authorized",
+  "branch": "preview/site-direction-2026-10-25",
+  "public_content_base": "8931bcd957786ef8e8c94c34cf804353a714b89a",
+  "pages_source_verified": {
+    "branch": "main",
+    "path": "/",
+    "build_type": "legacy"
+  },
+  "complete_rebuild": "passed",
+  "shared_navigation_check": "passed",
+  "paper_pages": 39,
+  "verified_local_pdfs": 33,
+  "archive_only_records": 6,
+  "internal_links_and_anchors": "passed for 63 HTML pages",
+  "preservation_check": "39 catalogue entries and paper manifest equal fixed public baseline",
+  "research_guides": "6 guides cover 39 papers exactly once",
+  "rss_sitemap_xml": "passed",
+  "essay_model_boundary_checks": "passed",
+  "javascript_syntax_checks": [
+    "assets/catalogue.js",
+    "assets/essay-experiments.js",
+    "assets/review.js"
+  ],
+  "git_diff_check": "passed",
+  "review_form_at_handoff": "All six decisions Undecided; all notes empty",
+  "current_screenshots": [
+    "screenshots/home-research-first-desktop.png",
+    "screenshots/home-research-first-phone.png"
+  ],
+  "browser_validation": "Desktop and 390px viewport checks completed in preceding revision; not physical-device testing",
+  "git_receipt": "Use branch log and remote refs for final commit and push state; this file records pre-commit checks"
+}
