@@ -3,6 +3,11 @@
 Source for my personal site, published by GitHub Pages at
 **<https://bwuebben.github.io/>**.
 
+**Paper releases:** follow [PUBLICATION_WORKFLOW.md](PUBLICATION_WORKFLOW.md).
+The standing procedure covers SSRN/arXiv routing, Zenodo while arXiv-bound papers
+wait, version updates, and ORCID verification, with the canonical instructions
+in the sibling `papers_ai_1` research repository.
+
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
 HTML, CSS, and the explorers' client-side JavaScript; there is no
