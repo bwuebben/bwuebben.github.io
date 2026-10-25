@@ -124,10 +124,14 @@ def render(p, template, css_version):
         revised = p['revision_date']
         dates += f'<span class="date-separator" aria-hidden="true"> · </span><span>Revised <time datetime="{revised}">{pretty_date(revised)}</time></span>'
     pdf = p.get('pdf')
-    if pdf:
+    archive_link = f'<a class="paper-download" href="{esc(p["archive"]["url"])}">Read on {esc(p["archive"]["name"])} <span aria-hidden="true">&nbsp;↗</span></a>'
+    if pdf and p['archive']['name'] in ('arXiv', 'SSRN'):
+        # Lead with the archive, but keep the hosted copy linked so crawlers find the PDF.
+        read_link = archive_link + f'\n        <span class="paper-file-detail"><a href="paper.pdf">PDF on this site</a> · {pdf["pages"]} pages · {round(pdf["size_bytes"] / 1000):,} KB</span>'
+    elif pdf:
         read_link = f'<a class="paper-download" href="paper.pdf">Read paper (PDF) <span aria-hidden="true">&nbsp;↗</span></a>\n        <span class="paper-file-detail">{pdf["pages"]} pages · {round(pdf["size_bytes"] / 1000):,} KB</span>'
     else:
-        read_link = f'<a class="paper-download" href="{esc(p["archive"]["url"])}">Read on {esc(p["archive"]["name"])} <span aria-hidden="true">&nbsp;↗</span></a>'
+        read_link = archive_link
     archive = p['archive']
     identifier = archive['doi'].split('/')[-1].split('.', 1)[1] if archive['name'] in ('SSRN', 'arXiv') else archive['url'].rstrip('/').split('/')[-1]
     resources = p['resources'] + [{'label': archive['name'] + ':' + identifier, 'url': archive['url']}]
