@@ -90,8 +90,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 
 .chapter { margin-top: 7rem; }
 .chapter-head { max-width: var(--text); margin: 0 auto 2rem; }
-.chapter-num { display: block; margin-bottom: .6rem; font-size: 1.05rem; color: var(--accent); font-style: italic; }
-.chapter-head h2 { font-family: var(--serif); text-transform: none; color: var(--ink); padding: 0; border: 0; margin: 0; font-weight: 400; font-size: clamp(2.1rem, 5.6vw, 3.2rem); line-height: 1.05; letter-spacing: -0.012em; text-wrap: balance; }
+.chapter-num { flex: none; color: var(--accent); }
+.chapter-title { min-width: 0; }
+.chapter-head h2 { display: flex; align-items: baseline; gap: .4em; font-family: var(--serif); text-transform: none; color: var(--ink); padding: 0; border: 0; margin: 0; font-weight: 400; font-size: clamp(2.1rem, 5.6vw, 3.2rem); line-height: 1.05; letter-spacing: -0.012em; text-wrap: balance; }
 
 .ledger-line {
   max-width: var(--text); margin: 2.6rem auto 0; padding: .3rem 0 .3rem 1.1rem;
@@ -274,7 +275,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- I. MARKETS -->
 <section class="chapter" id="market" aria-labelledby="h-market">
-  <div class="chapter-head"><span class="chapter-num">I</span><h2 id="h-market">Two portfolios with the same past</h2></div>
+  <div class="chapter-head"><h2 id="h-market"><span class="chapter-num">I</span> <span class="chapter-title">Two portfolios with the same past</span></h2></div>
   <div class="prose">
     <p>A track record is the sound a strategy makes. It is the one thing an investor can hear clearly: a daily list of returns, compounded into a line that goes up or doesn’t. The temptation, always, is to read the strategy off the line.</p>
     <p>Below are two portfolios of the same two hundred stocks. For a hundred days their returns agree to the last digit a computer can represent. Not approximately: exactly. Now look at what they hold.</p>
@@ -305,7 +306,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- II. MACHINES -->
 <section class="chapter" id="machine" aria-labelledby="h-machine">
-  <div class="chapter-head"><span class="chapter-num">II</span><h2 id="h-machine">Ten thousand brilliant ideas</h2></div>
+  <div class="chapter-head"><h2 id="h-machine"><span class="chapter-num">II</span> <span class="chapter-title">Ten thousand brilliant ideas</span></h2></div>
   <div class="prose">
     <p>Now let ideas be cheap. A language model will propose ten thousand trading strategies before lunch, and a backtester will score all of them by dinner. Each idea makes a sound, its backtest, and we keep the one that sounds best.</p>
     <p>Every strategy below is pure noise: daily returns whose true average is exactly zero. Move the slider and test more of them.</p>
@@ -335,7 +336,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- III. BLACK HOLE -->
 <section class="chapter" id="blackhole" aria-labelledby="h-bh">
-  <div class="chapter-head"><span class="chapter-num">III</span><h2 id="h-bh">Same radiation, different fate</h2></div>
+  <div class="chapter-head"><h2 id="h-bh"><span class="chapter-num">III</span> <span class="chapter-title">Same radiation, different fate</span></h2></div>
   <div class="prose">
     <p>Black holes are the most unforgiving drums in physics. In 1974 Hawking showed that they glow, faintly, and slowly evaporate. The glow looks thermal, which is to say featureless, and that seemed to mean that whatever fell in, a diary or a star, is erased. If quantum mechanics is right, that cannot happen.</p>
     <p>In 1993 Don Page described what an information-preserving black hole would have to look like from outside. Track the entanglement entropy of the radiation: it rises as the hole evaporates, peaks at the Page time, when about half is gone, and falls back to zero. In 2019 semiclassical gravity was shown to reproduce this curve, through islands and replica wormholes, and the curve became the emblem of the paradox’s resolution.</p>
@@ -370,7 +371,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- IV. GEOMETRY -->
 <section class="chapter" id="geometry" aria-labelledby="h-geo">
-  <div class="chapter-head"><span class="chapter-num">IV</span><h2 id="h-geo">Every corner real</h2></div>
+  <div class="chapter-head"><h2 id="h-geo"><span class="chapter-num">IV</span> <span class="chapter-title">Every corner real</span></h2></div>
   <div class="prose">
     <p>Here is the picture that, for me, holds this whole page together.</p>
   </div>
@@ -420,7 +421,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- V. KNOTS -->
 <section class="chapter" id="knots" aria-labelledby="h-knot">
-  <div class="chapter-head"><span class="chapter-num">V</span><h2 id="h-knot">One knot, two cuts</h2></div>
+  <div class="chapter-head"><h2 id="h-knot"><span class="chapter-num">V</span> <span class="chapter-title">One knot, two cuts</span></h2></div>
   <div class="prose">
     <p>Knot theory has its own version of hearing the shape of a drum. There are two very different ways to count solutions attached to a knot. One counts instantons, solutions of the four-dimensional Yang–Mills equations, the physics of the strong force turned into geometry. The other cuts the knot in two and works in a small space called the pillowcase, a sphere with four corners shaped like a pillow, on which each half of the knot draws a curve. The crossings of the two curves are the candidates, and a Floer complex sorts out which of them survive. A conjecture of Hedden, Herald and Kirk, part of the Atiyah–Floer program, says the two counts agree.</p>
     <p>For the torus knots T(3,n) I computed the pillowcase side for every n and found that it matches the instanton side in every grading, including the cases where the complex has a nonzero differential, which is where agreement has teeth.</p>
@@ -455,7 +456,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 
 <!-- CODA -->
 <section class="chapter" id="coda" aria-labelledby="h-coda">
-  <div class="chapter-head"><span class="chapter-num">Coda</span><h2 id="h-coda">What the sound leaves out</h2></div>
+  <div class="chapter-head"><h2 id="h-coda"><span class="chapter-num">Coda</span> <span class="chapter-title">What the sound leaves out</span></h2></div>
   <div class="prose">
     <table class="ledger-table" id="ledger">
       <thead><tr><th scope="col">The sound</th><th scope="col">What it leaves out</th></tr></thead>
