@@ -567,6 +567,10 @@ let AC = null, master = null;
 function audio() {
   if (!AC) {
     const C = window.AudioContext || window.webkitAudioContext; if (!C) return null;
+    // Treat a drum tap as media playback so iOS Silent Mode does not mute it.
+    try {
+      if (navigator.audioSession) navigator.audioSession.type = "playback";
+    } catch (_) { /* Keep audio working if the optional session setting is unavailable. */ }
     AC = new C(); master = AC.createGain(); master.gain.value = 0.42;
     const comp = AC.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 4;
     master.connect(comp); comp.connect(AC.destination);
