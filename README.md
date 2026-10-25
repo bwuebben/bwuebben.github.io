@@ -14,10 +14,30 @@ Zenodo coverage, Zenodo search visibility, Google Scholar, and ongoing ORCID che
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
 HTML, CSS, and the explorers' client-side JavaScript; there is no
-server-side code. Apart from the explorers and the essay *Not Enough*, the pages require no runtime JavaScript (the landing
+server-side code. Apart from the explorers and interactive essays, the pages require no runtime JavaScript (the landing
 page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
+
+## Approved editorial website
+
+The redesigned site was approved for publication on 25 October 2026. Start with
+[RESUME.md](RESUME.md) for its source map, complete rebuild sequence, and checks.
+The review hub, preview server, and preserved old homepage are kept off the
+production branch. The two new essays are included as approved publications.
+
+The top navigation is Home, Papers, Research guides, Writing, Explorers, Updates,
+and About. The catalogue keeps subject navigation and complete descriptions;
+there are no search or filter controls. New routes include `/research/` and six
+subject guides, `/explorers/`, `/writing/` and its two interactive essays,
+`/about/`, `/updates/`, and `/feed.xml`.
+
+Edit `site.json` for navigation. Editorial page content comes from
+`tools/build-editorial.py`; the biography comes from `content/about.html` and
+identity metadata from `data/person.json`. The two essay sources live in
+`content/`. Do not edit their generated HTML directly. The complete rebuild ends
+with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
+keep the public sitemap and paper pages current.
 
 ## Layout
 
@@ -81,11 +101,10 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, Explorers, and Writing.
+`templates/navigation.html`. The top level contains Home, Papers, Research guides, Writing, Explorers, Updates, and About.
 Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, and Beyond HRP; add future explorers
 to that group's `children` list.
-Writing's `children` list contains Not Enough, the essay, and Entropy, which
-opens the poem *Gradient of Mind*. An item with a `children` list becomes a group, rendered as a native HTML
+Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
 open or close its submenu. Then run after configuration changes:
 
@@ -118,8 +137,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It currently
-covers the nine main pages and all 39 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 39 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -332,7 +350,7 @@ internal link, which is what keeps it from being an orphan page. The landing
 page's `Person` block lists the same photograph first in its `image` field.
 
 Preserve both name forms: **Bernd Johannes Wuebben** and **Bernd Wuebben**.
-The portrait caption and papers-page author line show both names; the homepage,
+The portrait caption and structured metadata preserve both names; the homepage,
 portrait, and papers metadata use the same `Person` identifier
 (`https://bwuebben.github.io/#person`) with `alternateName: "Bernd Wuebben"`.
 Keep image alt text descriptive and keep this identity metadata consistent.

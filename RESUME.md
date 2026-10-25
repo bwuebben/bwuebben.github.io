@@ -1,51 +1,72 @@
-# Resume the website redesign
+# Website maintenance
 
-Updated 25 October 2026. **The active design work is on
-`preview/site-direction-2026-10-25`, not this `main` branch.**
+Updated 25 October 2026. Bernd approved the complete redesigned website for
+publication, including the two new interactive essays. The approved design is
+maintained on `main`. The branch `preview/site-direction-2026-10-25` preserves
+the design review; do not use it as the current production source.
 
-Bernd asked for a complete six-part website proposal that he can preview,
-discuss, and adopt partially or fully without changing the public site. It has
-been built. His first feedback was to put research papers unmistakably first
-and give the prose greater intellectual and philosophical depth. That revision
-is also complete and awaits his next review.
+## Approved design
 
-He has now authorized committing and pushing everything so another machine and
-agent can continue. **This authorizes the Git handoff, not adoption or deployment
-of the preview.** GitHub Pages was verified on 25 October to publish `main` at `/`.
-Do not merge the preview into main, change Pages settings, or publish its essay
-drafts without his explicit instruction.
+The homepage puts research first, with its portrait floated into the introduction,
+smaller headings, and six selected papers in two rows. The selections are
+Validation Bottleneck, Mirror Symmetry for Conifold Relations, Page Curve,
+AI-Native Asset Manager, Cobordism Maps I, and the finite-Planck Higgs Branch paper.
+The Papers page has subject links and all 39 entries, without search/filter controls
+or the former introductory paragraph. About is last in the top navigation.
 
-## Open the actual work
+The release includes six research guides, the explorer gallery, Writing, About,
+Updates, RSS, and both approved essays: What does an institution know? and The
+material conditions of intelligence. Their models remain illustrative, with their
+assumptions and limitations stated. No manuscript, bibliography, archive identity,
+or public PDF has been revised by the redesign.
 
-The comprehensive handoff, including current design, exact editorial direction,
-file map, verification, remaining decisions, and next steps, is the
-[preview branch's RESUME.md](https://github.com/bwuebben/bwuebben.github.io/blob/preview/site-direction-2026-10-25/RESUME.md).
+## Source and rebuild
 
-For a new, separate checkout, run from your preferred parent directory:
+- `tools/build-editorial.py`: homepage, guides, gallery, writing index, updates,
+  RSS, and illustrations.
+- `content/about.html` and `data/person.json`: approved biography and identity.
+- `content/institutional-knowledge.html` and `content/physical-limits.html`:
+  essay sources; `tools/build-essays.py` generates their pages.
+- `site.json`: shared navigation; `assets/editorial.css` and
+  `assets/catalogue.css`: editorial and catalogue layout.
+- `tools/integrate-site.py`: catalogue header, companion paper links, sharing
+  images, and editorial sitemap entries.
+- `data/papers.json`, `templates/paper.html`, `tools/update-papers.py`: paper
+  metadata and generated individual pages. Follow PUBLICATION_WORKFLOW.md.
+
+Run in this order:
 
 ```sh
-git clone --branch preview/site-direction-2026-10-25 https://github.com/bwuebben/bwuebben.github.io.git bwuebben-site-preview
-cd bwuebben-site-preview
-cat RESUME.md
-python3 tools/serve-preview.py
+python3 tools/build-editorial.py
+python3 tools/build-essays.py
+python3 tools/integrate-site.py
+python3 tools/update-papers.py
+python3 tools/update-site.py --check
+python3 tools/update-papers.py --check
+python3 tools/check-editorial.py
+node tools/check-essay-models.cjs
+node --check assets/essay-experiments.js
+git diff --check
 ```
 
-Open <http://127.0.0.1:8766/> and <http://127.0.0.1:8766/review/>. Python 3 is
-sufficient to view the committed pages. Node.js is needed only for the JavaScript
-checks. The full preview does not require the research monorepo to run.
+The preservation check currently compares paper records and catalogue entries
+with the pre-redesign public baseline `8931bcd`. Revise that explicit baseline
+when a later authorized paper release changes those records.
 
-If you already have a clean website clone, fetch origin and use a separate
-worktree for the remote preview branch. Do not overwrite local work or assume
-the original machine's worktree paths exist. The detailed handoff gives commands.
+Preview locally with `python3 -m http.server 8000 --bind 127.0.0.1`.
+GitHub Pages publishes `main` at `/`. After an authorized push, verify the Pages
+build commit and the live HTML, assets, sitemap, and representative PDF bytes.
+Deployment receipts are kept outside the repository under
+`~/.local/share/website-checks/site-redesign-2026-10-25/`.
 
-## Other pending work
+The sitemap is `https://bwuebben.github.io/sitemap.xml`; submit that URL in Google
+Search Console. A valid sitemap and deployed pages are preparation for indexing,
+not evidence that Google or Scholar has indexed them.
 
-Read [TODO.md](TODO.md) and briefly remind Bernd of the publication/discoverability
-backlog, then follow his current request. Zenodo visibility, remaining archive
-coverage, Scholar inclusion, six missing public SSRN PDF mirrors, and Search
-Console follow-up remain open; ORCID verification is an ongoing release task.
-The matching TODO changes are also being committed in `papers_ai_1` on `main`.
+## Remaining work
 
-This main-branch handoff changes documentation only. The deployed HTML, CSS,
-JavaScript, paper records, PDFs, and sitemap remain at the public design based on
-`8931bcd957786ef8e8c94c34cf804353a714b89a`.
+Read TODO.md at session start and briefly remind Bernd of the open publication and
+discoverability tasks: Zenodo coverage/visibility, Scholar inclusion, six missing
+SSRN PDF mirrors, Search Console follow-up, and ongoing ORCID verification.
+Preserve these tasks separately from the completed design work. New edits stay
+local unless their publication is authorized.

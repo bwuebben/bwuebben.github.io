@@ -1,8 +1,9 @@
 # Website agent instructions
 
-Read [RESUME.md](RESUME.md) first for the active website redesign and its separate
-preview branch. A push for cross-machine handoff does not authorize adopting or
-deploying the redesign to the public site.
+Read [RESUME.md](RESUME.md) first for the current site architecture and build
+commands. Bernd approved publication of the complete redesigned website on
+25 October 2026. The adopted design is maintained on `main`; the old preview
+branch is historical. Future changes need their own publication authorization.
 
 At the start of each new session in this repository, read [TODO.md](TODO.md)
 and briefly remind Bernd of the outstanding tasks and the next useful action.

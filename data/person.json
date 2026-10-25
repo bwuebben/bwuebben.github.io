@@ -1,0 +1,26 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://bwuebben.github.io/#person",
+  "name": "Bernd Johannes Wuebben",
+  "alternateName": "Bernd Wuebben",
+  "url": "https://bwuebben.github.io/",
+  "image": [
+    "https://bwuebben.github.io/assets/bernd_full_noir.jpg",
+    "https://bwuebben.github.io/assets/bernd_dark1.jpg"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/berndwuebben/",
+    "https://orcid.org/0009-0002-4588-3284",
+    "https://github.com/bwuebben",
+    "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=2997887",
+    "https://arxiv.org/search/?searchtype=author&query=Wuebben%2C+Bernd+Johannes"
+  ],
+  "knowsAbout": [
+    "Asset pricing theory",
+    "Artificial intelligence",
+    "Mathematics",
+    "Theoretical physics",
+    "International relations"
+  ]
+}

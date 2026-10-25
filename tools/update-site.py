@@ -64,7 +64,10 @@ def main():
         links = []
         for item in config["navigation"]:
             if "children" in item:
-                active = any(child["href"] == route for child in item["children"])
+                active = any(child["href"] == route or
+                             (child["href"] != "/" and child["href"].endswith("/")
+                              and route.startswith(child["href"]))
+                             for child in item["children"])
                 classes = "nav-group is-current" if active else "nav-group"
                 children = "\n".join(f'            <li>{render_link(child)}</li>'
                                      for child in item["children"])

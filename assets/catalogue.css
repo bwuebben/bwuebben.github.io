@@ -1,0 +1,8 @@
+.catalogue .site-header { max-width:64rem; }
+.catalogue .wrap { max-width:64rem; padding-top:3rem; }
+.catalogue .masthead h1 { font:4rem/1.1 var(--serif); letter-spacing:-.035em; margin-bottom:1rem; }
+.catalogue .entry-note { font-size:.92rem; line-height:1.7; color:var(--ink-soft); }
+.catalogue .entry-title { font-size:1.18rem; line-height:1.4; }
+.catalogue .entries li { padding:1.3rem 0; }
+.catalogue-nav { display:flex; flex-wrap:wrap; gap:.6rem 1.4rem; margin-top:1.5rem; font:.82rem/1.5 var(--sans); }
+@media(max-width:620px) { .catalogue .masthead h1 { font-size:3.3rem; } }

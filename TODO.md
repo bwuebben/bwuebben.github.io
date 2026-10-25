@@ -18,14 +18,14 @@ dated baselines, not guarantees about future releases or crawler inclusion.
 
 ## Open work
 
-Website redesign: a complete six-part proposal is ready for review on branch
-`preview/site-direction-2026-10-25`, originally in `../bwuebben-site-preview`.
-Start with [RESUME.md](RESUME.md), then the preview branch's RESUME.md and PREVIEW.md.
-Bernd authorized committing and pushing that branch for cross-machine continuation
-on 25 October 2026. This does not authorize merging it into main or deploying it.
-Review at <http://127.0.0.1:8766/review/> after starting the local server. The latest
-revision makes research papers central and deepens the intellectual/philosophical
-tone. The six proposals and the two new essay drafts still await detailed review.
+Website redesign: Bernd approved the complete design for publication on
+25 October 2026. This production source incorporates the final portrait/text
+layout, smaller headings, six selected papers, simplified Papers page, and About
+as the last navigation item. It also includes the research guides, gallery,
+Writing, About, Updates/RSS, and both new essays. The preview review hub and
+local-only server are excluded. See RESUME.md for the production build procedure.
+The new sitemap includes every public page; Search Console acceptance and actual
+indexing remain separate follow-ups below.
 
 - [ ] **Get all public papers onto Zenodo**, including papers already on arXiv
   or SSRN. Check existing records, exact versions, licenses, and existing DOIs
