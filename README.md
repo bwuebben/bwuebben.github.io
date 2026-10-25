@@ -53,7 +53,7 @@ beyond-hrp-lab/         interactive signal-aware portfolio laboratory
 not-enough.html         Not Enough, an essay with interactive figures (self-contained:
                          its drum eigenmodes are embedded as data)
 poem.html               Gradient of Mind (a poem)
-portrait/index.html     the portrait at full size (the masthead links here;
+portrait/index.html     the portrait at full size (the About page's portrait links here;
                          deliberately absent from the navigation)
 site.json               navigation labels, groups, order, and destinations
 templates/navigation.html shared navigation markup
@@ -345,8 +345,8 @@ pages, not files that are merely linked. `portrait/index.html` embeds
 `assets/bernd_full_noir.jpg` with the name in the title, alt text, and
 caption, carries an `ImageObject` block, and is listed in `sitemap.xml`
 with an image entry. It is not in `site.json`, so it appears in no
-navigation; the masthead portrait click on the landing page is its one
-internal link, which is what keeps it from being an orphan page. The landing
+navigation; the portrait on the About page is its one internal link, which
+keeps it from being an orphan page. The landing-page portrait links to About. The landing
 page's `Person` block lists the same photograph first in its `image` field.
 
 Preserve both name forms: **Bernd Johannes Wuebben** and **Bernd Wuebben**.

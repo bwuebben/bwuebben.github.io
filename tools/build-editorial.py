@@ -178,7 +178,7 @@ def research_cards():
 
 def build_home():
     body='''<header class="home-intro"><p class="kicker">Finance · Mathematics · Theoretical Physics</p><h1>Bernd Johannes<br>Wuebben</h1>
-<div class="home-intro-copy"><figure><a href="/portrait/"><img src="/assets/bernd_dark1-576.jpg" width="576" height="864" alt="Bernd Wuebben" fetchpriority="high"></a></figure>
+<div class="home-intro-copy"><figure><a href="/about/"><img src="/assets/bernd_dark1-576.jpg" width="576" height="864" alt="Bernd Wuebben" fetchpriority="high"></a></figure>
 <p class="intro">A price is a claim about the future that somebody was willing to fund. My research in finance asks what can be known about such claims: whether a model that earns is a model that explains, where compensation for risk ends and compensation for absorbing other people’s constraints begins, and what remains hidden in a record of success.</p>
 <p class="intro">These questions lead outward: toward who is on the other side of a trade and what they are solving for, and toward markets as aggregation mechanisms that sometimes aggregate belief and sometimes only aggregate attention.</p>
 <p class="intro">In mathematics and theoretical physics, I pursue questions about geometry, topology, and information: how local structures constrain a whole, what survives a change of description, and how much of an object its invariants can reveal. My particular interests include four-manifolds, gauge and Floer theory, mirror symmetry, and moduli spaces.</p>
