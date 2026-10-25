@@ -25,8 +25,16 @@ or public PDF has been revised by the redesign.
 - `tools/build-editorial.py`: homepage, guides, gallery, writing index, updates,
   RSS, and illustrations.
 - `content/about.html` and `data/person.json`: approved biography and identity.
-- `content/institutional-knowledge.html` and `content/physical-limits.html`:
-  essay sources; `tools/build-essays.py` generates their pages.
+- `content/<slug>.html`: essay sources; `tools/build-essays.py` generates
+  `writing/<slug>/`, and `python3 tools/build-essays.py <slug>` rebuilds one.
+  The first two essays share `assets/essay-models.js` and
+  `assets/essay-experiments.js`. Each later essay has its own
+  `assets/essays/<slug>-model.js`, `<slug>.js` and `<slug>.css`, a cover in
+  `assets/illustrations/`, a sharing card in `assets/share/` rendered from
+  `tools/share-card.html`, and model checks in `tools/essay-checks/`. Build a
+  new essay's page before running the editorial build, which refuses
+  navigation links to missing pages. Bernd authorized publication of eight
+  further essays, drafted on branch `essays-2026-10-25`, on 25 October 2026.
 - `site.json`: shared navigation; `assets/editorial.css` and
   `assets/catalogue.css`: editorial and catalogue layout.
 - `tools/integrate-site.py`: catalogue header, companion paper links, sharing
@@ -45,6 +53,8 @@ python3 tools/update-site.py --check
 python3 tools/update-papers.py --check
 python3 tools/check-editorial.py
 node tools/check-essay-models.cjs
+for f in tools/essay-checks/*.cjs; do node "$f"; done
+for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
 git diff --check
 ```

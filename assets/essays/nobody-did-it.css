@@ -1,0 +1,28 @@
+/* Nobody did it: figures for the attribution and trilemma experiments. */
+.nd-figure svg { display:block; width:100%; height:auto; overflow:visible; }
+.nd-figure figcaption { font:.74rem/1.5 var(--sans); color:var(--ink-soft); margin-top:.6rem; }
+.nd-figure .nd-label { font:13px var(--sans); fill:var(--ink-soft); }
+.nd-figure .nd-tick { font:11px var(--sans); fill:var(--ink-faint); }
+.nd-figure .nd-key { font:600 12px var(--sans); letter-spacing:.04em; }
+.nd-figure .nd-gold { fill:var(--gold); }
+.nd-figure .nd-accent { fill:var(--accent); }
+.nd-figure .nd-faint { fill:var(--ink-faint); }
+.nd-axis { display:flex; justify-content:space-between; gap:1rem; font:.74rem/1.4 var(--sans); color:var(--ink-soft); margin-top:.3rem; }
+.nd-key-gold { color:var(--gold); font-weight:600; }
+.nd-key-accent { color:var(--accent); font-weight:600; }
+.nd-results { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.15fr); gap:3rem; align-items:start; margin-top:2rem; padding-top:1.5rem; border-top:1px solid var(--rule); }
+.nd-results .metrics { border-top:0; padding-top:0; }
+.nd-results .metric strong { font-size:2.6rem; }
+.nd-roc-figure { max-width:20rem; }
+.nd-tri { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.2fr); gap:3rem; align-items:center; }
+.nd-tri-figure { max-width:20rem; }
+.nd-tri-verdict strong { display:block; font:2.2rem/1.15 var(--serif); color:var(--accent); letter-spacing:-.03em; margin-bottom:.6rem; }
+.nd-tri-verdict p { font:.92rem/1.6 var(--sans); color:var(--ink-soft); margin:0; }
+.nd-nowrap { white-space:nowrap; }
+.nd-formula { margin:1.5rem 0; overflow-x:auto; font-size:1.05rem; }
+@media(max-width:620px) {
+ .nd-results,.nd-tri { grid-template-columns:1fr; gap:1.5rem; }
+ .nd-roc-figure,.nd-tri-figure { max-width:17rem; margin:0 auto; }
+ .nd-results .metric strong { font-size:2.2rem; }
+ #nd-evidence .nd-label { font-size:19px; }
+}

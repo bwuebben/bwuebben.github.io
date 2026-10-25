@@ -1,0 +1,30 @@
+/* The balance point of a hexagon: figure styles, scoped to the experiment and to bp- classes in the essay. */
+.bp-nw { white-space:nowrap; }
+.reading .bp-formula { text-align:center; }
+.bp-app .bp-ring { position:relative; width:100%; max-width:19rem; aspect-ratio:1; margin:0 auto .5rem; }
+.bp-app .bp-ring svg { position:absolute; left:14%; top:14%; width:72%; height:72%; overflow:visible; }
+.bp-app .bp-root { position:absolute; transform:translate(-50%,-50%); min-width:3.1rem; padding:.45rem .5rem; text-align:center; font:500 .85rem/1.2 var(--serif); background:var(--bg); }
+.bp-app .bp-root:disabled { opacity:.5; cursor:not-allowed; }
+.bp-app .bp-count { display:block; min-height:.9rem; font:.68rem/1.3 var(--sans); color:var(--accent); }
+.bp-app .bp-zero { display:block; margin:0 auto 1.2rem; }
+.bp-app .bp-zero .bp-count { display:inline; min-height:0; margin-left:.3rem; }
+.bp-app .bp-spoke { stroke:var(--rule); stroke-width:1; }
+.bp-app .bp-step { fill:none; stroke:var(--gold); stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; }
+.bp-app .bp-loop { fill:var(--gold); fill-opacity:.13; stroke:none; }
+.bp-app .bp-gap { stroke:var(--accent); stroke-width:1.6; stroke-dasharray:4 4; }
+.bp-app .bp-start { fill:var(--bg); stroke:var(--ink-soft); stroke-width:1.5; }
+.bp-app .bp-chips { display:flex; flex-wrap:wrap; gap:.4rem; min-height:2.2rem; align-items:center; }
+.bp-app .bp-chip { padding:.35rem .6rem; font:.78rem/1.3 var(--sans); }
+.bp-app .bp-actions { display:flex; gap:.5rem; margin:.9rem 0 0; }
+.bp-app .bp-hex { display:block; width:100%; max-width:24rem; margin:0 auto; }
+.bp-app .bp-cell { fill:var(--accent); stroke:none; shape-rendering:crispEdges; }
+.bp-app .bp-outline { fill:none; stroke:var(--accent); stroke-width:.014; }
+.bp-app .bp-cross { stroke:var(--ink-soft); stroke-width:.012; }
+.bp-app .bp-drift { stroke:var(--ink); stroke-width:.01; stroke-dasharray:.03 .025; }
+.bp-app .bp-dot { fill:var(--ink); stroke:var(--bg); stroke-width:.014; }
+.bp-app .bp-lens { fill:var(--bg); stroke:var(--ink-faint); stroke-width:.008; }
+.bp-app .bp-lens-label { font-family:var(--sans); font-size:.07px; fill:var(--ink-soft); text-anchor:middle; }
+.bp-app .metric strong { font-size:2.4rem; }
+.bp-app .bp-dims { font:.78rem/1.5 var(--sans); color:var(--ink-soft); text-align:center; margin:.4rem 0 1rem; }
+.bp-app .bar-row { grid-template-columns:9rem 1fr 4rem; }
+@media(max-width:620px) { .bp-app .metric strong { font-size:2rem; } .bp-app .bar-row { grid-template-columns:6.4rem 1fr 3.4rem; } .bp-app .bp-root { min-width:2.7rem; padding:.4rem .35rem; font-size:.8rem; } }

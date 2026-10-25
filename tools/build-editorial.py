@@ -239,6 +239,14 @@ def build_writing_updates():
     essays=[("not-enough.html","drums","Interactive essay","Not Enough","Two drums, two portfolios, and the information that lives only in the whole."),
             ("writing/institutional-knowledge/","institution","Interactive essay","What does an institution know?","When ten agreeing voices are one piece of evidence, repeated ten times."),
             ("writing/physical-limits/","energy","Essay","The material conditions of intelligence","How physical constraints shape the passage from computational possibility to sustained capability."),
+            ("writing/one-law/","one-law","Interactive essay","The same law in a black hole and a stock market","A few hundred stocks of pure noise and an evaporating black hole share one spectrum."),
+            ("writing/one-year-per-year/","one-year-per-year","Interactive essay","One year per year","When hypotheses are free, the scarce input is the calendar."),
+            ("writing/nobody-did-it/","nobody-did-it","Interactive essay","Nobody did it","Deterrence assumes an author. Delegation to machines can remove one."),
+            ("writing/broken-things/","broken-things","Interactive essay","Why broken things make invariants","Modern geometry counts with the ways its solutions fall apart."),
+            ("writing/who-vouches/","who-vouches","Interactive essay","Who vouches for a machine?","Machines can already pay one another. Trusting one another is harder."),
+            ("writing/two-failures/","two-failures","Interactive essay","Two ways for a theory to fail","A dome, a black hole, and the difference between a broken geometry and a lost answer."),
+            ("writing/balance-point/","balance-point","Interactive essay","The balance point of a hexagon","Six roots, one centre of gravity, and when a space admits its best metric."),
+            ("writing/nothing-condenses-alone/","nothing-condenses-alone","Interactive essay","Nothing condenses alone","In a compact universe, gravity turns a local symmetry into a shared constraint."),
             ("poem.html","geometry","Poem","Gradient of Mind","A reflection on awareness, energy, and the forms that intelligence takes.")]
     body='''<header class="page-intro"><p class="kicker">Essays &amp; perspectives</p><h1>On knowledge,<br>structure, and explanation.</h1><p class="intro">What does a successful description establish? How does an institution acquire knowledge rather than merely agreement? What becomes of an apparently immaterial technology when its deployment depends on physical systems? These essays develop questions that run through the research, using explicit examples where they sharpen the argument.</p><p class="small"><a href="/papers/">Research papers ↗</a></p></header><div class="visual-grid">'''
     for route,img,kind,title,desc in essays:

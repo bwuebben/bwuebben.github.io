@@ -24,17 +24,17 @@ navigation and stylesheet links when the site's configuration changes.
 The redesigned site was approved for publication on 25 October 2026. Start with
 [RESUME.md](RESUME.md) for its source map, complete rebuild sequence, and checks.
 The review hub, preview server, and preserved old homepage are kept off the
-production branch. The two new essays are included as approved publications.
+production branch. The essays are included as approved publications.
 
 The top navigation is Home, Papers, Research guides, Writing, Explorers, Updates,
 and About. The catalogue keeps subject navigation and complete descriptions;
 there are no search or filter controls. New routes include `/research/` and six
-subject guides, `/explorers/`, `/writing/` and its two interactive essays,
+subject guides, `/explorers/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
 
 Edit `site.json` for navigation. Editorial page content comes from
 `tools/build-editorial.py`; the biography comes from `content/about.html` and
-identity metadata from `data/person.json`. The two essay sources live in
+identity metadata from `data/person.json`. The essay sources live in
 `content/`. Do not edit their generated HTML directly. The complete rebuild ends
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
 keep the public sitemap and paper pages current.
@@ -104,7 +104,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `templates/navigation.html`. The top level contains Home, Papers, Research guides, Writing, Explorers, Updates, and About.
 Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, and Beyond HRP; add future explorers
 to that group's `children` list.
-Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
+Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
 open or close its submenu. Then run after configuration changes:
 

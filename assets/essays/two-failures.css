@@ -1,0 +1,31 @@
+/* Two ways for a theory to fail: scoped to the essay's own elements. */
+.tf .tf-display { text-align:center; font-size:1.25rem; margin:1.4rem 0; font-variant-numeric:tabular-nums; }
+.tf svg.tf-side,.tf svg.tf-chart { display:block; width:100%; height:auto; }
+.tf svg.tf-chart { margin-top:.5rem; }
+.tf svg.tf-top { display:block; width:9rem; height:9rem; margin:1.5rem 0 0; }
+.tf .tf-axis { font:11px var(--sans); fill:var(--ink-soft); }
+.tf #tf-play { min-width:6rem; }
+.tf .tf-math { margin:1.5rem 0; }
+.tf .tf-math p { font-size:.95rem; line-height:1.65; color:var(--ink-soft); }
+.tf .tf-grid { display:grid; grid-template-columns:8rem 1fr 1fr; gap:.6rem; margin:1rem 0 1.5rem; }
+.tf .tf-head { font:500 .68rem/1.4 var(--sans); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); align-self:end; }
+.tf .tf-head-row { align-self:center; }
+.tf .tf-cell { display:flex; flex-direction:column; align-items:flex-start; gap:.35rem; text-align:left; min-height:9.5rem; padding:1rem; background:var(--bg); }
+.tf .tf-cell strong { font:400 1.15rem/1.3 var(--serif); color:var(--ink); }
+.tf .tf-cell[aria-pressed=true] strong { color:var(--accent); }
+.tf .tf-ex { font:.78rem/1.45 var(--sans); color:var(--ink-soft); }
+.tf .tf-tags { display:none; font:500 .62rem/1.4 var(--sans); letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
+.tf .tf-token { display:none; margin-top:auto; padding:.25rem .55rem; border:1px solid var(--accent); color:var(--accent); font:600 .72rem/1.3 var(--sans); }
+.tf .tf-token::before { content:""; display:inline-block; width:.55rem; height:.55rem; margin-right:.45rem; border-radius:50%; background:var(--accent); vertical-align:-.02rem; }
+.tf .tf-cell.tf-home .tf-token { display:inline-block; }
+.tf .tf-cell-text { font:.92rem/1.65 var(--sans); color:var(--ink); max-width:46rem; min-height:6.5rem; }
+@media(max-width:620px) {
+ .tf .tf-grid { grid-template-columns:1fr; }
+ .tf .tf-head { display:none; }
+ .tf .tf-tags { display:block; }
+ .tf .tf-cell { min-height:0; }
+ .tf svg.tf-top { width:7.5rem; height:7.5rem; }
+ .tf .tf-display { font-size:1.08rem; }
+ .tf .tf-axis { font-size:15px; }
+ .tf .tf-cell-text { min-height:0; }
+}

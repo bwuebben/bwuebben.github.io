@@ -1,0 +1,29 @@
+/* One year per year: styles scoped to this essay. */
+.oyp-display { font-size:1.2rem; text-align:center; margin:1.6rem 0; font-variant-numeric:tabular-nums; color:var(--ink); letter-spacing:.01em; }
+.oyp-display sub, .oyp-display sup { font-size:.7em; }
+#oyp-chart { display:block; width:100%; height:auto; overflow:visible; }
+#oyp-chart text { font-family:var(--sans); }
+#oyp-chart .oyp-tick { font-size:11px; fill:var(--ink-soft); }
+#oyp-chart .oyp-axis-label { font-size:11px; fill:var(--ink-soft); letter-spacing:.02em; }
+#oyp-chart .oyp-grid { stroke:var(--rule); stroke-width:1; }
+#oyp-chart .oyp-axis { stroke:var(--ink-faint); stroke-width:1; }
+#oyp-chart .oyp-band { fill:var(--ink-faint); opacity:.16; }
+#oyp-chart .oyp-win { fill:var(--green); opacity:.22; stroke:none; }
+#oyp-chart .oyp-ref { fill:none; stroke:var(--ink-faint); stroke-width:1.4; stroke-dasharray:3 5; }
+#oyp-chart .oyp-curve { fill:none; stroke:var(--accent); stroke-width:2.6; stroke-linejoin:round; }
+#oyp-chart .oyp-bar { stroke:var(--gold); stroke-width:1.8; stroke-dasharray:7 5; }
+#oyp-chart .oyp-bar-label { font-size:11.5px; fill:var(--gold); font-weight:600; }
+#oyp-chart .oyp-peak { fill:var(--bg); stroke:var(--accent); stroke-width:2.2; }
+#oyp-chart .oyp-peak-label { font-size:11.5px; fill:var(--accent); font-weight:600; }
+#oyp-chart .oyp-cert { fill:var(--green); }
+#oyp-chart .oyp-cert-line { stroke:var(--green); stroke-width:1.2; stroke-dasharray:2 4; }
+.oyp-legend { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; margin:.6rem 0 0; font:.74rem/1.4 var(--sans); color:var(--ink-soft); }
+.oyp-legend span::before { content:""; display:inline-block; width:1.4rem; height:0; margin-right:.45rem; vertical-align:middle; border-top:2.6px solid var(--accent); }
+.oyp-legend .oyp-key-ref::before { border-top:1.4px dashed var(--ink-faint); }
+.oyp-legend .oyp-key-bar::before { border-top:1.8px dashed var(--gold); }
+.oyp-legend .oyp-key-band::before { height:.7rem; border:0; background:var(--ink-faint); opacity:.3; }
+.oyp-math { margin:2.5rem 0; padding:1.4rem 1.5rem; background:var(--bg-panel); font:.86rem/1.7 var(--sans); color:var(--ink-soft); }
+.oyp-math p { margin:.6rem 0; }
+.oyp-math .kicker { margin-bottom:.4rem; }
+.oyp-math .oyp-display { font-size:1rem; text-align:left; margin:.8rem 0; }
+@media(max-width:620px) { .oyp-display { font-size:1.05rem; } .oyp-math { padding:1.1rem; } }

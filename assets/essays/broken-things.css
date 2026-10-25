@@ -1,0 +1,43 @@
+/* "Why broken things make invariants": figures scoped to .bt-* classes. */
+.bt-figure svg { display:block; width:100%; height:auto; }
+.bt-figure #bt-torus { cursor:pointer; touch-action:manipulation; }
+.bt-quadrant { fill:var(--accent); opacity:.05; }
+.bt-edge { fill:none; stroke:var(--ink-faint); stroke-width:1.2; stroke-dasharray:5 5; }
+.bt-contour { fill:none; stroke:var(--rule); stroke-width:1; }
+.bt-contour-zero { stroke:var(--ink-faint); stroke-dasharray:2 4; }
+.bt-family { fill:none; stroke:var(--accent); stroke-width:.8; opacity:.22; }
+.bt-index1 { fill:none; stroke:var(--ink-faint); stroke-width:1.4; opacity:.6; }
+.bt-index1.bt-used { opacity:0; }
+.bt-end { fill:none; stroke-width:4; stroke-linejoin:round; stroke-linecap:round; }
+.bt-end-0 { stroke:var(--green); }
+.bt-end-1 { stroke:var(--gold); }
+.bt-current { fill:none; stroke:var(--accent); stroke-width:2.6; stroke-linejoin:round; }
+.bt-current-broken { stroke-dasharray:7 5; }
+.bt-crit { stroke:var(--ink); stroke-width:1.5; fill:var(--bg); }
+.bt-max { fill:var(--accent); stroke:var(--accent); }
+.bt-min { fill:var(--ink); }
+.bt-label { font:11px/1 var(--sans); fill:var(--ink-soft); }
+.bt-sign { font:600 11px/1 var(--sans); fill:var(--ink-faint); font-variant-numeric:tabular-nums; }
+.bt-sign.bt-used { fill:var(--accent); }
+.bt-complex { font:.82rem/1.6 var(--sans); font-variant-numeric:tabular-nums; color:var(--ink); padding:.9rem 0 0; border-top:1px solid var(--rule); margin:0; }
+.bt-key { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font:.74rem/1.5 var(--sans); color:var(--ink-soft); margin:.6rem 0 0; }
+.bt-key span::before { content:""; display:inline-block; width:1.4rem; height:3px; vertical-align:middle; margin-right:.45rem; background:currentColor; }
+.bt-key .bt-key-line::before { background:var(--accent); }
+.bt-key .bt-key-s1::before { background:var(--green); height:4px; }
+.bt-key .bt-key-s2::before { background:var(--gold); height:4px; }
+.bt-axis,.bt-axis-tick { fill:none; stroke:var(--ink-faint); stroke-width:1; }
+.bt-energy { fill:none; stroke:var(--accent); stroke-width:2.4; stroke-linejoin:round; }
+.bt-energy-fill { fill:var(--gold); opacity:.22; }
+.bt-ball { fill:var(--green); opacity:.12; }
+.bt-ball-label { fill:var(--green); }
+.bt-clip { fill:var(--accent); }
+.bt-math { border-left:2px solid var(--rule); padding-left:1.2rem; margin:2rem 0; }
+.bt-math summary { font:.85rem/1.5 var(--sans); }
+.bt-math p, .bt-math li { font-size:.98rem; line-height:1.65; }
+.bt-sources p { font:.82rem/1.6 var(--sans); color:var(--ink-soft); margin:.6rem 0; }
+.bt-sources h3 { font-size:1.15rem; margin:1.4rem 0 .4rem; }
+@media(max-width:620px) {
+  .bt-label { font-size:15px; }
+  .bt-sign { font-size:15px; }
+  .bt-complex { font-size:.76rem; }
+}

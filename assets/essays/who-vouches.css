@@ -1,0 +1,38 @@
+/* "Who vouches for a machine?": styles scoped to .wv. */
+.wv-readiness { margin:2.2rem 0; }
+.wv-readiness ol { list-style:none; margin:0; padding:0; border-top:1px solid var(--rule); }
+.wv-readiness li { display:grid; grid-template-columns:minmax(0,1fr) auto 6.5rem; align-items:center; gap:1rem; padding:.55rem 0; border-bottom:1px solid var(--rule); font:.85rem/1.4 var(--sans); }
+.wv-readiness .wv-pips { display:flex; gap:.3rem; }
+.wv-readiness .wv-pips i { display:block; width:.85rem; height:.85rem; border:1px solid var(--ink-faint); border-radius:50%; }
+.wv-readiness .wv-pips i.on { background:var(--green); border-color:var(--green); }
+.wv-readiness .wv-trust .wv-pips i.on { background:var(--accent); border-color:var(--accent); }
+.wv-readiness .wv-trust .wv-prim { color:var(--accent); }
+.wv-readiness .wv-level { color:var(--ink-soft); font-size:.78rem; text-align:right; }
+.wv-readiness figcaption { margin-top:.8rem; }
+.wv-display { margin:1.4rem 0; overflow-x:auto; font-size:1.15rem; }
+.wv-display math { margin:0 auto; }
+.wv-nw { white-space:nowrap; }
+.wv .wv-buttons { display:flex; flex-wrap:wrap; gap:.5rem; margin-top:1.5rem; }
+.wv .wv-buttons button:disabled { opacity:.5; cursor:default; }
+.wv .wv-grid { display:block; width:100%; max-width:17rem; margin:0 auto 1.2rem; }
+.wv .wv-grid .wv-ok { fill:var(--bg); stroke:var(--green); stroke-width:2; }
+.wv .wv-grid .wv-failed { fill:var(--accent); stroke:var(--accent); stroke-width:2; }
+.wv .wv-history { display:block; width:100%; height:5rem; }
+.wv .wv-history line { vector-effect:non-scaling-stroke; }
+.wv .wv-axis { stroke:var(--ink-faint); stroke-width:1; }
+.wv .wv-mean { stroke:var(--ink-faint); stroke-width:1; stroke-dasharray:3 4; }
+.wv .wv-bar { fill:var(--ink-faint); opacity:.55; }
+.wv .wv-bar-now { fill:var(--accent); }
+.wv .wv-legend { margin:.4rem 0 0; font-size:.74rem; }
+.wv .wv-curve { display:block; width:100%; height:auto; }
+.wv .wv-curve text { font:13px var(--sans); fill:var(--ink-soft); }
+.wv .wv-grid-line { stroke:var(--rule); stroke-width:1; }
+.wv .wv-curve-line { fill:none; stroke:var(--accent); stroke-width:2.5; }
+.wv .wv-drop { stroke:var(--accent); stroke-width:1; stroke-dasharray:3 3; opacity:.7; }
+.wv .wv-marker { fill:var(--bg); stroke:var(--accent); stroke-width:2.5; }
+.wv .bar-fill { min-width:2px; }
+@media(max-width:620px) {
+  .wv-readiness li { grid-template-columns:minmax(0,1fr) auto; gap:.3rem .8rem; }
+  .wv-readiness .wv-level { grid-column:1 / -1; text-align:left; margin-top:-.2rem; }
+  .wv .wv-grid { max-width:14rem; }
+}

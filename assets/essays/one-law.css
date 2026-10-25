@@ -1,0 +1,35 @@
+/* "The same law in a black hole and a stock market": scoped to this essay. */
+.essay-one-law .ol-display { text-align:center; font-size:1.25rem; margin:1.6rem 0; font-variant-numeric:tabular-nums; }
+.essay-one-law .ol-modes { display:flex; flex-wrap:wrap; gap:0; margin:1.2rem 0 0; }
+.essay-one-law .ol-modes button { flex:1 1 12rem; font-weight:500; }
+.essay-one-law .ol-modes button + button { border-left-width:0; }
+.essay-one-law .ol-modes button[aria-pressed=true] { background:var(--accent); border-color:var(--accent); color:var(--bg); }
+.essay-one-law .ol-modes button[aria-pressed=true] + button { border-left-width:1px; }
+.essay-one-law .ol-chart { display:block; width:100%; height:auto; overflow:visible; }
+.essay-one-law .ol-axis-title { font:.78rem/1.5 var(--sans); color:var(--ink-soft); margin:.3rem 0 0; text-align:center; }
+.essay-one-law #ol-redraw { margin-top:.4rem; }
+.essay-one-law .ol-chart text { font-family:var(--sans); font-size:13px; }
+.ol-chart .ol-band { fill:var(--gold); opacity:.12; }
+.ol-chart .ol-bar { fill:var(--accent); opacity:.42; }
+.ol-chart .ol-curve { fill:none; stroke:var(--ink); stroke-width:2.2; stroke-linejoin:round; }
+.ol-chart .ol-truth { stroke:var(--green); stroke-width:2; stroke-dasharray:5 5; }
+.ol-chart .ol-axis { stroke:var(--ink-faint); stroke-width:1; }
+.ol-chart .ol-tick { fill:var(--ink-soft); text-anchor:middle; }
+.ol-chart .ol-label { fill:var(--ink-soft); }
+.ol-chart .ol-truth-label { fill:var(--green); }
+.ol-chart .ol-zero { stroke:var(--accent); stroke-width:3; }
+.ol-chart .ol-zero-dot { fill:var(--accent); }
+.ol-chart .ol-tent { fill:none; stroke:var(--ink-faint); stroke-width:1.2; stroke-dasharray:2 5; }
+.ol-chart .ol-hawking { fill:none; stroke:var(--ink-soft); stroke-width:1.8; stroke-dasharray:8 6; }
+.ol-chart .ol-page { fill:none; stroke:var(--accent); stroke-width:3; stroke-linejoin:round; }
+.ol-chart .ol-guide { stroke:var(--rule); stroke-width:1.5; }
+.ol-chart .ol-now { fill:var(--accent); stroke:var(--bg-panel); stroke-width:3; }
+.ol-chart .ol-page-label { fill:var(--accent); }
+.ol-chart .ol-hawking-label { text-anchor:end; }
+.essay-one-law details.ol-math,.essay-one-law details.ol-sources { background:var(--bg-panel); border-left:2px solid var(--accent); padding:.3rem 1.2rem; margin:1.8rem 0; }
+.essay-one-law .ol-math-body p { font:.86rem/1.7 var(--sans); color:var(--ink-soft); margin:.8rem 0; }
+@media(max-width:620px) {
+ .essay-one-law .ol-display { font-size:1.08rem; }
+ .essay-one-law .ol-chart text { font-size:19px; }
+ .essay-one-law details.ol-math,.essay-one-law details.ol-sources { padding:.3rem .9rem; }
+}
