@@ -1,6 +1,54 @@
 [
   {
     "date": "2026-10-25",
+    "title": "The same law in a black hole and a stock market",
+    "url": "/writing/one-law/",
+    "description": "An interactive essay: the Marchenko–Pastur law, written down in 1967 for neither, governs the noise in a correlation matrix and the radiation of an evaporating black hole."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "One year per year",
+    "url": "/writing/one-year-per-year/",
+    "description": "An interactive essay on alpha discovery when hypotheses are free and the evidence that judges them still arrives at the speed of the calendar."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Nobody did it",
+    "url": "/writing/nobody-did-it/",
+    "description": "An interactive essay on deterrence when delegating decisions to machines produces acts with no author."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Why broken things make invariants",
+    "url": "/writing/broken-things/",
+    "description": "An interactive essay on how gauge theory and Floer theory build invariants from the ways their solutions break."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Who vouches for a machine?",
+    "url": "/writing/who-vouches/",
+    "description": "An interactive essay on the trust layer machine commerce still lacks: a court, a ledger, an underwriter, and the prices that would feed them."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Two ways for a theory to fail",
+    "url": "/writing/two-failures/",
+    "description": "An interactive essay on geometric and informational singularities, from Norton’s dome to the island formula."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "The balance point of a hexagon",
+    "url": "/writing/balance-point/",
+    "description": "An interactive essay on slope stability, Kähler–Einstein metrics, and six arrows that balance on average and still lean."
+  },
+  {
+    "date": "2026-10-25",
+    "title": "Nothing condenses alone",
+    "url": "/writing/nothing-condenses-alone/",
+    "description": "An interactive essay on Higgs transitions in compact Calabi–Yau threefolds, where gravity turns local symmetries into shared constraints."
+  },
+  {
+    "date": "2026-10-25",
     "title": "A page for every paper",
     "url": "/papers/",
     "description": "The 39-paper collection now has individual abstract pages, citation downloads, and archive links. Thirty-three papers also have verified PDF copies hosted here."
