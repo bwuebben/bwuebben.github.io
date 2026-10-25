@@ -1,5 +1,16 @@
 # Website agent instructions
 
+Read [RESUME.md](RESUME.md) first for the active website redesign and its separate
+preview branch. A push for cross-machine handoff does not authorize adopting or
+deploying the redesign to the public site.
+
+At the start of each new session in this repository, read [TODO.md](TODO.md)
+and briefly remind Bernd of the outstanding tasks and the next useful action.
+Bernd explicitly requested this reminder on 25 October 2026. Keep the reminder
+short, then continue with the current request; it does not authorize executing
+the entire backlog. Update the list as work is completed and distinguish
+confirmed indexing from preparation for indexing.
+
 Before adding or updating a public paper, read
 [PUBLICATION_WORKFLOW.md](PUBLICATION_WORKFLOW.md) and the canonical procedure in
 `../papers_ai_1/PUBLICATION_WORKFLOW.md`. This applies to every agent. The release
