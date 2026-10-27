@@ -672,6 +672,10 @@
         {
           "label": "Small Dolbeault eigenvalues",
           "url": "https://bwuebben.github.io/papers/small-dolbeault-eigenvalues/"
+        },
+        {
+          "label": "Small Dolbeault eigenvalues near stability walls",
+          "url": "https://bwuebben.github.io/papers/small-dolbeault-stability-walls/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1142,6 +1146,10 @@
         {
           "label": "Local stability chambers for toric tangent bundles",
           "url": "https://bwuebben.github.io/papers/toric-local-stability-chambers/"
+        },
+        {
+          "label": "Small Dolbeault eigenvalues near stability walls",
+          "url": "https://bwuebben.github.io/papers/small-dolbeault-stability-walls/"
         }
       ],
       "verified_on": "2026-10-25",
@@ -1156,6 +1164,65 @@
         "source_commit": "47310f408eae8827ec46cad13fbd59cd57ac8693",
         "source_repository": "https://github.com/bwuebben/small-dolbeault-eigenvalues",
         "source_path": "paper/small-dolbeault-eigenvalues.pdf"
+      }
+    },
+    {
+      "slug": "small-dolbeault-stability-walls",
+      "catalogue_title": "Small Dolbeault eigenvalues near stability walls",
+      "catalogue_anchor": "small-dolbeault-stability-walls",
+      "title": "Small Dolbeault eigenvalues near stability walls",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Moduli spaces and geometric analysis",
+      "status": "Preprint",
+      "publication_date": "2026-10-27",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23682045",
+        "url": "https://zenodo.org/records/23682045"
+      },
+      "citation_doi": "10.5281/zenodo.23682045",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/small-dolbeault-eigenvalues/blob/main/paper3/paper/main.pdf"
+        },
+        {
+          "label": "paper source and exact matrix computations",
+          "url": "https://github.com/bwuebben/small-dolbeault-eigenvalues/tree/main/paper3"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & Moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/"
+        },
+        {
+          "label": "Local stability chambers for toric tangent bundles",
+          "url": "https://bwuebben.github.io/papers/toric-local-stability-chambers/"
+        },
+        {
+          "label": "Small Dolbeault eigenvalues along Hermitian Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/small-dolbeault-eigenvalues/"
+        }
+      ],
+      "verified_on": "2026-10-27",
+      "abstract_source": "https://github.com/bwuebben/small-dolbeault-eigenvalues/blob/75f5bae32abcec8006165eee8bff5306fb78e5ff/paper3/paper/main.tex",
+      "abstract_html": "<p>We determine the small spectrum of the Dolbeault Laplacian on trace-free endomorphisms of Hermitian–Einstein bundles near intersections of slope-stability walls. On a compact Kähler manifold of dimension at least two, consider an extension of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msubsup><mi>&#x02A01;</mi><mrow><mi>j</mi><mo>&#x0003D;</mo><mn>1</mn></mrow><mi>k</mi></msubsup><msub><mi>F</mi><mi>j</mi></msub></mrow></math> by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>F</mi><mn>0</mn></msub></mrow></math>, where the factors are pairwise nonisomorphic and stable of equal slope at the limiting Kähler class, and every extension component is nonzero. Write <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>&#x0003D;</mo><mo>rk</mo><msub><mi>F</mi><mi>i</mi></msub></mrow></math> and let <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>&#x003F5;</mi><mi>j</mi></msub></mrow></math> be the Einstein constant of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>F</mi><mi>j</mi></msub></mrow></math> minus that of the extension. In the chamber <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>&#x003F5;</mi><mi>j</mi></msub><mo>&#x0003E;</mo><mn>0</mn></mrow></math>, exactly <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math> eigenvalues tend to zero. They agree, to relative error <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><msub><mo>&#x02211;</mo><mi>j</mi></msub><msub><mi>&#x003F5;</mi><mi>j</mi></msub><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, with the eigenvalues of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>diag</mo><mo stretchy=\"false\">&#x00028;</mo><msub><mi>&#x003F5;</mi><mn>1</mn></msub><mo>&#x0002C;</mo><mi>&#x02026;</mi><mo>&#x0002C;</mo><msub><mi>&#x003F5;</mi><mi>k</mi></msub><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002B;</mo><msubsup><mi>r</mi><mn>0</mn><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msubsup><mi>v</mi><msup><mi>v</mi><mo>&#x0002A;</mo></msup></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>v</mi><mi>j</mi></msub><mo>&#x0003D;</mo><msqrt><mrow><msub><mi>r</mi><mi>j</mi></msub><msub><mi>&#x003F5;</mi><mi>j</mi></msub></mrow></msqrt></mrow></math>. The estimate is uniform in all positive ratios of the slope gaps. Thus the ranks and slopes determine the leading spectrum even when the gaps vanish at arbitrarily different rates.</p><p>For two factors we obtain <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>&#x003BB;</mi><mn>1</mn></msub><mo>&#x0003D;</mo><mi>&#x003B4;</mi><mo>&#x02212;</mo><mi>D</mi><msup><mi>&#x003B4;</mi><mn>2</mn></msup><mo>&#x0002B;</mo><mi>o</mi><mo stretchy=\"false\">&#x00028;</mo><msup><mi>&#x003B4;</mi><mn>2</mn></msup><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B4;</mi><mo>&#x0003E;</mo><mn>0</mn></mrow></math> is the quotient Einstein constant minus the subbundle Einstein constant and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>D</mi><mo>&#x02265;</mo><mn>0</mn></mrow></math> is given by the Green operator of the graded connection. We also determine the first eigensection through order <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003B4;</mi></mrow></math> in every spatial <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>C</mi><mi>m</mi></msup></mrow></math> norm. Toric tangent bundles provide examples with arbitrarily many independently varying small eigenvalues.</p>",
+      "pdf": {
+        "sha256": "0c1444ed200d9e1d7c75cea78e5d4785e103cac93673ba52be9a32ab14bf16d3",
+        "size_bytes": 350095,
+        "pages": 13,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/small-dolbeault-eigenvalues/75f5bae32abcec8006165eee8bff5306fb78e5ff/paper3/paper/main.pdf",
+        "source_url": "https://github.com/bwuebben/small-dolbeault-eigenvalues/blob/main/paper3/paper/main.pdf",
+        "source_commit": "75f5bae32abcec8006165eee8bff5306fb78e5ff",
+        "source_repository": "https://github.com/bwuebben/small-dolbeault-eigenvalues",
+        "source_path": "paper3/paper/main.pdf"
       }
     },
     {

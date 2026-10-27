@@ -33,6 +33,10 @@
     {
       "label": "Local stability chambers for toric tangent bundles",
       "url": "https://bwuebben.github.io/papers/toric-local-stability-chambers/"
+    },
+    {
+      "label": "Small Dolbeault eigenvalues near stability walls",
+      "url": "https://bwuebben.github.io/papers/small-dolbeault-stability-walls/"
     }
   ],
   "verified_on": "2026-10-25",

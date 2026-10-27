@@ -11,7 +11,7 @@ The homepage puts research first, with its portrait floated into the introductio
 smaller headings, and six selected papers in two rows. The selections are
 Validation Bottleneck, Mirror Symmetry for Conifold Relations, Page Curve,
 AI-Native Asset Manager, Cobordism Maps I, and the finite-Planck Higgs Branch paper.
-The Papers page has subject links and all 40 entries, without search/filter controls
+The Papers page has subject links and all 41 entries, without search/filter controls
 or the former introductory paragraph. About is last in the top navigation.
 
 The release includes six research guides, the explorer gallery, Writing, About,

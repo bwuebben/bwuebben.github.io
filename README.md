@@ -22,7 +22,12 @@ navigation and stylesheet links when the site's configuration changes.
 Paper 3, *Local stability chambers for toric tangent bundles*, was released on
 26 October 2026. Its individual page, the papers catalogue, the Geometry & Moduli
 guide, related-paper links, Updates/RSS, and sitemap are maintained together.
-The catalogue now has 40 papers and 34 verified PDF mirrors.
+The spectral companion, *Small Dolbeault eigenvalues near stability walls*,
+was released on 27 October 2026 with
+[Zenodo:23682045](https://zenodo.org/records/23682045). Its paper page,
+catalogue entry, Geometry & Moduli reading sequence, related-paper links,
+Updates/RSS and sitemap are maintained together. The catalogue now has
+41 papers and 35 verified PDF mirrors; both new preprints await arXiv.
 
 ## Approved editorial website
 

@@ -2,7 +2,7 @@
 
 Requested by Bernd on 25 October 2026. These items are pending; recording them
 does not mean that deposits or indexing have been completed. Scope: all publicly
-released papers listed on the website, currently 40, not private research drafts.
+released papers listed on the website, currently 41, not private research drafts.
 
 ## Next-session reminder
 
@@ -18,7 +18,11 @@ dated baselines, not guarantees about future releases or crawler inclusion.
 
 Paper 3 was added on 26 October 2026 with Zenodo record 23681809 and verified
 public ORCID coverage. The current inventory is 40 paper pages, 34 PDF mirrors,
-and 22 Zenodo archives. The 18 older archive deposits and six SSRN PDF mirrors
+and 22 Zenodo archives at that point. The spectral companion, *Small Dolbeault
+eigenvalues near stability walls*, was added on 27 October 2026 with Zenodo
+record 23682045 and verified public ORCID coverage. The current inventory is
+41 paper pages, 35 PDF mirrors and 23 Zenodo archives. Both new papers remain pending arXiv submission. The 18 older
+archive deposits and six SSRN PDF mirrors
 listed below remain pending.
 
 ## Open work
