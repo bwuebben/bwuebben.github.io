@@ -17,7 +17,8 @@ URLs. All 39 papers were also verified in the public ORCID record. These are
 dated baselines, not guarantees about future releases or crawler inclusion.
 
 Paper 3 was added on 26 October 2026 with Zenodo record 23681809 and verified
-public ORCID coverage. The current inventory is 40 paper pages, 34 PDF mirrors,
+public ORCID coverage. Its 27 October link correction is archived as
+Zenodo:23682140; the earlier version remains available. The inventory was 40 paper pages, 34 PDF mirrors,
 and 22 Zenodo archives at that point. The spectral companion, *Small Dolbeault
 eigenvalues near stability walls*, was added on 27 October 2026 with Zenodo
 record 23682045 and verified public ORCID coverage. The current inventory is
