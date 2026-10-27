@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-26",
+    "title": "Local stability chambers for toric tangent bundles",
+    "url": "/papers/toric-local-stability-chambers/",
+    "description": "A new paper classifies tangent stability for a family of toric projective bundles, constructs local chambers with arbitrarily many independent boundaries, and determines nearby stable polarizations in the 31 indecomposable semistable census cases. Includes the full manuscript and exact computations."
+  },
+  {
     "date": "2026-10-25",
     "title": "The same law in a black hole and a stock market",
     "url": "/writing/one-law/",

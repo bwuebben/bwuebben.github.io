@@ -19,6 +19,11 @@ page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
 
+Paper 3, *Local stability chambers for toric tangent bundles*, was released on
+26 October 2026. Its individual page, the papers catalogue, the Geometry & Moduli
+guide, related-paper links, Updates/RSS, and sitemap are maintained together.
+The catalogue now has 40 papers and 34 verified PDF mirrors.
+
 ## Approved editorial website
 
 The redesigned site was approved for publication on 25 October 2026. Start with
@@ -137,7 +142,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 39 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 40 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -152,7 +157,7 @@ and [Sitemaps report guide](https://support.google.com/webmasters/answer/7451001
 Each catalogue title opens a stable `/papers/<slug>/` page. The shared template
 contains the full author-written abstract, Scholar citation tags, ORCID and
 archive links, and a BibTeX download. Mathematical notation is static MathML;
-the page, abstract, and navigation require no JavaScript. Thirty-three pages
+the page, abstract, and navigation require no JavaScript. Thirty-four pages
 currently serve verified public PDFs. Six SSRN-only papers have their complete
 registered abstracts and a **Read on SSRN** link while PDF downloads are blocked;
 their missing mirrors are tracked in TODO.md and the catalogue data. Do not

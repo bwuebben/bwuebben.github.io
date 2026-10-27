@@ -30,17 +30,25 @@ for path in pages:
   if not target.exists():errors.append(rel+": missing "+url)
   if parts.fragment and target.is_file() and target.suffix==".html":
    if unquote(parts.fragment) not in Page(target.read_text()).ids:errors.append(rel+": missing fragment "+url)
-# Preserve all entries and published manuscript metadata exactly.
+# Preserve existing catalogue entries and manuscript metadata as new papers are added.
 before=subprocess.check_output(["git","show",BASE+":papers/index.html"],cwd=ROOT,text=True)
 after=(ROOT/"papers/index.html").read_text()
 entry=re.compile(r'<li id="[^"]+">\s*<span class="entry-title">.*?</li>',re.S)
-assert entry.findall(before)==entry.findall(after),"Existing paper catalogue entries changed"
-assert subprocess.check_output(["git","show",BASE+":data/papers.json"],cwd=ROOT)==(ROOT/"data/papers.json").read_bytes(),"Paper manifest changed"
+old_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(before)}
+new_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(after)}
+assert all(new_entries.get(k)==v for k,v in old_entries.items()),"Existing paper catalogue entries changed"
 papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
+old_papers=json.loads(subprocess.check_output(["git","show",BASE+":data/papers.json"],cwd=ROOT))["papers"]
+by_slug={p["slug"]:p for p in papers}
+for p in old_papers:
+ current=by_slug[p["slug"]]
+ assert {k:v for k,v in p.items() if k!="related"}=={k:v for k,v in current.items() if k!="related"},"Existing manuscript metadata changed: "+p["slug"]
+ assert all(r in current["related"] for r in p["related"]),"Existing related links removed: "+p["slug"]
+assert set(new_entries)=={p["catalogue_anchor"] for p in papers},"Catalogue and manifest differ"
 guide_links=[]
 for guide in (ROOT/"research").glob("*/index.html"):
  guide_links+=re.findall(r'<h3><a href="/papers/([^/]+)/">',guide.read_text())
-assert len(guide_links)==39 and set(guide_links)=={p["slug"] for p in papers},"Research guides must cover all 39 papers once"
+assert len(guide_links)==len(papers) and set(guide_links)=={p["slug"] for p in papers},"Research guides must cover every paper exactly once"
 ET.fromstring((ROOT/"feed.xml").read_text())
 tree=ET.fromstring((ROOT/"sitemap.xml").read_text())
 locations=[n[0].text for n in tree]
@@ -48,4 +56,4 @@ assert len(locations)==len(set(locations)),"Duplicate sitemap URLs"
 assert not any("/review/" in x or "/tools/" in x for x in locations),"Review tools must not enter the sitemap"
 if errors:
  print("\n".join(errors));raise SystemExit(1)
-print(f"{len(pages)} pages checked; links and IDs resolve; all 39 catalogue entries and paper metadata preserved; six guides cover 39 papers; RSS and sitemap parse.")
+print(f"{len(pages)} pages checked; links and IDs resolve; {len(old_papers)} existing catalogue entries and manuscript records preserved; six guides cover all {len(papers)} papers; RSS and sitemap parse.")

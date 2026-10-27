@@ -1,0 +1,63 @@
+{
+  "slug": "toric-local-stability-chambers",
+  "catalogue_title": "Local stability chambers for toric tangent bundles",
+  "catalogue_anchor": "toric-local-stability-chambers",
+  "title": "Local stability chambers for toric tangent bundles",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Tangent bundle stability of toric Fano varieties",
+  "status": "Preprint",
+  "publication_date": "2026-10-26",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23681809",
+    "url": "https://zenodo.org/records/23681809"
+  },
+  "citation_doi": "10.5281/zenodo.23681809",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper3/paper/main.pdf"
+    },
+    {
+      "label": "source and exact computations",
+      "url": "https://github.com/bwuebben/toric-tangent-stability/tree/main/paper3"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & Moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/"
+    },
+    {
+      "label": "Anticanonical stability census",
+      "url": "https://bwuebben.github.io/papers/toric-tangent-stability/"
+    },
+    {
+      "label": "Toric Fano blowups and bundles",
+      "url": "https://bwuebben.github.io/papers/toric-tangent-blowups-bundles/"
+    },
+    {
+      "label": "Small Dolbeault eigenvalues",
+      "url": "https://bwuebben.github.io/papers/small-dolbeault-eigenvalues/"
+    }
+  ],
+  "verified_on": "2026-10-27",
+  "abstract_html": "<p>We classify the anticanonical slope stability of the tangent bundles of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>X</mi><mrow><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi></mrow></msub><mo>&#x0003D;</mo><msub><mi>&#x02119;</mi><mrow><mo stretchy=\"false\">&#x00028;</mo><msup><mi>&#x02119;</mi><mn>1</mn></msup><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mi>p</mi><mo>&#x0002B;</mo><mi>q</mi></mrow></msup></mrow></msub><mo stretchy=\"false\">&#x00028;</mo><mi mathvariant=\"script\">O</mi><mo>&#x02295;</mo><mi mathvariant=\"script\">O</mi><mo stretchy=\"false\">&#x00028;</mo><msup><mn>1</mn><mi>p</mi></msup><mo>&#x0002C;</mo><mo>&#x02212;</mo><msup><mn>1</mn><mi>q</mi></msup><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo>&#x0002C;</mo><mi>q</mi></mrow></math> are nonnegative integers and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo>&#x0002B;</mo><mi>q</mi><mo>&#x02265;</mo><mn>1</mn></mrow></math>. The tangent bundle is stable when <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo>&#x0003D;</mo><mi>q</mi></mrow></math>, strictly semistable when <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x0007C;</mo><mi>p</mi><mo>&#x02212;</mo><mi>q</mi><mo stretchy=\"false\">&#x0007C;</mo><mo>&#x0003D;</mo><mn>1</mn></mrow></math>, and unstable otherwise. For <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi><mo>&#x0003D;</mo><mi>k</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>q</mi><mo>&#x0003D;</mo><mi>k</mi><mo>&#x02212;</mo><mn>1</mn></mrow></math>, the germ of the semistable polarization locus at the anticanonical class is real analytically equivalent to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">[</mo><mn>0</mn><mo>&#x0002C;</mo><mo>&#x0221E;</mo><msup><mo stretchy=\"false\">&#x00029;</mo><mi>k</mi></msup><mo>&#x000D7;</mo><msup><mi>&#x0211D;</mi><mi>k</mi></msup></mrow></math>, with stable locus <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>0</mn><mo>&#x0002C;</mo><mo>&#x0221E;</mo><msup><mo stretchy=\"false\">&#x00029;</mo><mi>k</mi></msup><mo>&#x000D7;</mo><msup><mi>&#x0211D;</mi><mi>k</mi></msup></mrow></math>. In particular, the number of independent local chamber boundaries is unbounded.</p><p>For a smooth projective toric variety whose tangent bundle is semistable at a polarization <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow></math>, we describe the local chamber at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>H</mi><mn>0</mn></msub></mrow></math> by the order ideals of a finite poset determined by the equal-slope ray subspaces. If each such subspace is spanned by the rays it contains in every maximal cone, nearby stable polarizations exist precisely when the variety is not a nontrivial toric product. Applied to the existing anticanonical census in dimensions three through six, this criterion gives nearby stability in all 31 indecomposable strictly semistable cases, whose local chambers have one, two, or three independent boundaries. We determine locally free, pairwise nonisomorphic Jordan–Hölder factors both for these cases and for the family <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>X</mi><mrow><mi>k</mi><mo>&#x0002C;</mo><mi>k</mi><mo>&#x02212;</mo><mn>1</mn></mrow></msub></mrow></math>.</p>",
+  "abstract_source": "https://github.com/bwuebben/toric-tangent-stability/blob/21637a3c43b32b28e9c6b0a442946ae2f3adc3af/paper3/paper/main.tex",
+  "pdf": {
+    "sha256": "3c57288dfecc6f12fdfa0062cd301b8477f53156601cb4e2c1230c15ac0eff6c",
+    "size_bytes": 370101,
+    "pages": 17,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/toric-tangent-stability/21637a3c43b32b28e9c6b0a442946ae2f3adc3af/paper3/paper/main.pdf",
+    "source_url": "https://github.com/bwuebben/toric-tangent-stability/blob/main/paper3/paper/main.pdf",
+    "source_commit": "21637a3c43b32b28e9c6b0a442946ae2f3adc3af",
+    "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
+    "source_path": "paper3/paper/main.pdf"
+  }
+}

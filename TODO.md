@@ -2,7 +2,7 @@
 
 Requested by Bernd on 25 October 2026. These items are pending; recording them
 does not mean that deposits or indexing have been completed. Scope: all publicly
-released papers listed on the website, currently 39, not private research drafts.
+released papers listed on the website, currently 40, not private research drafts.
 
 ## Next-session reminder
 
@@ -15,6 +15,11 @@ Completed on 25 October 2026: all 39 individual paper pages and 33 verified PDF
 copies were deployed in website commit `8931bcd`; the live sitemap contains 48
 URLs. All 39 papers were also verified in the public ORCID record. These are
 dated baselines, not guarantees about future releases or crawler inclusion.
+
+Paper 3 was added on 26 October 2026 with Zenodo record 23681809 and verified
+public ORCID coverage. The current inventory is 40 paper pages, 34 PDF mirrors,
+and 22 Zenodo archives. The 18 older archive deposits and six SSRN PDF mirrors
+listed below remain pending.
 
 ## Open work
 

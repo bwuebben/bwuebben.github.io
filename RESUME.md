@@ -11,7 +11,7 @@ The homepage puts research first, with its portrait floated into the introductio
 smaller headings, and six selected papers in two rows. The selections are
 Validation Bottleneck, Mirror Symmetry for Conifold Relations, Page Curve,
 AI-Native Asset Manager, Cobordism Maps I, and the finite-Planck Higgs Branch paper.
-The Papers page has subject links and all 39 entries, without search/filter controls
+The Papers page has subject links and all 40 entries, without search/filter controls
 or the former introductory paragraph. About is last in the top navigation.
 
 The release includes six research guides, the explorer gallery, Writing, About,
@@ -59,9 +59,11 @@ node --check assets/essay-experiments.js
 git diff --check
 ```
 
-The preservation check currently compares paper records and catalogue entries
-with the pre-redesign public baseline `8931bcd`. Revise that explicit baseline
-when a later authorized paper release changes those records.
+The preservation check compares existing manuscript metadata and catalogue
+entries with the pre-redesign public baseline `8931bcd`. New paper records
+and related links can be added; every existing record and link is preserved.
+It derives catalogue and guide counts from `data/papers.json`. Change the explicit
+baseline when an authorized revision changes an existing manuscript record.
 
 Preview locally with `python3 -m http.server 8000 --bind 127.0.0.1`.
 GitHub Pages publishes `main` at `/`. After an authorized push, verify the Pages
