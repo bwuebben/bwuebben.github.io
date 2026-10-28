@@ -9,8 +9,8 @@ released papers listed on the website, currently 44, not private research drafts
 - Calabi–Yau Papers IV and V are public as [arXiv:2610.35911](https://arxiv.org/abs/2610.35911) and [arXiv:2610.35915](https://arxiv.org/abs/2610.35915). Their arXiv landing pages and DOIs now take precedence on the website and in citations; Zenodo remains archival history.
 - The [expanded Calabi–Yau reading guide](https://bwuebben.github.io/research/calabi-yau/) is live, with six mathematical papers and four optional physics companions.
 - All **44** website papers match exactly one public ORCID work group each, including the three stability-degeneration papers and their revised archives. No recent paper needs to be added as a duplicate.
-- Paper V’s new arXiv DOI has reached its ORCID group. Paper IV’s arXiv identifier and preferred arXiv account records remain pending ORCID sign-in. Both new DOI resolver URLs still returned 404 at verification; the arXiv pages themselves are live.
-- Verification and resume details: `../papers_ai_1/cy_smoothing/release_arxiv_20261027/README.md`. The dated inventories below retain their historical scope.
+- Both new arXiv identifiers and DOIs are now present in ORCID and their author-supplied arXiv records are the preferred sources (put-codes 231462659 and 231462966). Existing Zenodo/DataCite assertions remain grouped. Public verification still finds exactly 44 work groups. Both arXiv DOI resolver URLs now return HTTP 200 and lead to the correct arXiv landing pages; the earlier activation delay has cleared.
+- Verification details: `../papers_ai_1/cy_smoothing/release_arxiv_20261027/README.md`. The dated inventories below retain their historical scope.
 
 ## Next-session reminder
 
