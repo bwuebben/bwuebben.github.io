@@ -4,6 +4,20 @@ Requested by Bernd on 25 October 2026. These items are pending; recording them
 does not mean that deposits or indexing have been completed. Scope: all publicly
 released papers listed on the website, currently 45, not private research drafts.
 
+## Research-programme sections — 28 October 2026
+
+Branch `research-programmes-2026-10-28` added programme sections to the
+research guides, a redesigned research index and programme links on the papers
+page and paper pages (see RESUME.md). All site checks passed.
+
+- [x] Reviewed locally; Bernd authorized publication on 28 October 2026.
+- [ ] Optional: rename the physics guide ("Geometry, gravity & information"),
+  which readers miss next to "Geometry & moduli". Deferred by Bernd.
+- [ ] *Informational Singularities*: the website abstract is the earlier SSRN
+  version, which is stronger than the unpublished 11 October revision the
+  `two-failures` essay follows. Decide whether to release the revision through
+  the publication workflow; the site metadata was left unchanged.
+
 ## Singular quotient-metric paper — 28 October 2026
 
 The paper *Relative metric estimates near reducible Yang–Mills connections* is

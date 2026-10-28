@@ -71,6 +71,10 @@
 .paper-page .paper-citation a { overflow-wrap: anywhere; }
 .paper-page .paper-bibtex { font: 0.8rem/1.5 var(--sans); }
 .paper-page .paper-related { margin: 2rem 0 0; color: var(--ink-soft); font: 0.8rem/1.6 var(--sans); }
+.paper-page .paper-context { margin: 1.6rem 0 0; padding: 0.75rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); color: var(--ink-soft); font: 0.8rem/1.6 var(--sans); }
+.paper-page .paper-context a { font-weight: 500; }
+.paper-page .paper-context-detail { display: block; }
+.paper-page .paper-context-status { color: var(--ink); }
 @media (max-width: 480px) {
   .site-header ~ .paper-page { padding-top: 1.3rem; }
   .paper-page .paper-back { margin-bottom: 1.15rem; }

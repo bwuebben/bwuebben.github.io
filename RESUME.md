@@ -36,6 +36,19 @@ guide links to the paper as a mathematical companion. Its section source is
 `content/singular-quotient-metrics.html`. ORCID contains the version and concept
 DOIs in one public work group. arXiv submission is pending.
 
+Also on 28 October, local branch `research-programmes-2026-10-28` added
+programme sections to the research guides, following an outside structural
+review: Atiyah–Floer comparisons and two wider four-manifold problems
+(topology), open FJRW scattering and inverse moduli (geometry), compact Higgs
+transitions and black-hole information (physics), evidence-based capital
+allocation (markets) and a mirror-transition subsection (Calabi–Yau). The
+research index gained "Where the work stands" and "Local pieces, global
+objects". Each section was written against the released PDFs. The research
+index shows one row per guide and a table of programme stages, without paper
+counts; the papers page and every paper page link to the programme sections.
+Bernd authorized publication on 28 October 2026, and the work was merged
+into `main`.
+
 ## Source and rebuild
 
 - `tools/build-editorial.py`: homepage, guides, gallery, writing index, updates,
@@ -51,6 +64,22 @@ DOIs in one public work group. arXiv submission is pending.
   new essay's page before running the editorial build, which refuses
   navigation links to missing pages. Bernd authorized publication of eight
   further essays, drafted on branch `essays-2026-10-25`, on 25 October 2026.
+- Research-guide programme sections: `content/<stem>.html`, listed per guide in
+  `FOCUS` in `tools/build-editorial.py` and placed, in order, before the manuscripts.
+  Each is a `<section>` with an `id`, an `h2`, an optional `data-question` and
+  an optional status badge: Integrated programme, Developing programme,
+  Exploratory frontier or Proposed agenda. A badged section also carries
+  `data-remains`, one sentence on what remains. The research index shows one
+  row per guide, then a table of badged sections ("Where the work stands"); `content/research-connections.html`
+  is its cross-programme section. `GROUPS` divides a guide's manuscript list by
+  programme and must list the guide's slugs in order. `COMPANIONS` lists, briefly
+  and without abstracts, papers whose full entry lives in another guide (the
+  compact-Higgs papers under the Calabi–Yau manuscripts).
+  Each paper page's "In the research guides" line comes from
+  `paper_contexts()` in `tools/build-editorial.py`, which `tools/update-papers.py`
+  imports: the paper's home guide, its programme section and its status. Change
+  the guides, then rerun both scripts; the line cannot be edited per paper. Keep paper links out of
+  `<h3>` in these sections: the coverage check counts `<h3>` paper links.
 - `site.json`: shared navigation; `assets/editorial.css` and
   `assets/catalogue.css`: editorial and catalogue layout.
 - `tools/integrate-site.py`: catalogue header, companion paper links, sharing

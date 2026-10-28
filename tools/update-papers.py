@@ -107,7 +107,24 @@ def pdf_bytes(p, fetch):
     return target, data
 
 
-def render(p, template, css_version):
+def research_contexts():
+    """Each paper's home guide and programme section, taken from the guide builder itself."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location('build_editorial', ROOT / 'tools/build-editorial.py')
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module.paper_contexts()
+
+
+def context_line(c):
+    link = f'<a href="../..{esc(c["url"])}">{esc(c["section"] or c["guide"])}</a>'
+    detail = esc(c['guide']) if c['section'] else ''
+    if c['status']:
+        detail += f' · <span class="paper-context-status">{esc(c["status"])}</span>'
+    return f'    <p class="paper-context">In the research guides: {link}' + (f'<span class="paper-context-detail">{detail}</span>' if detail else '') + '</p>'
+
+
+def render(p, template, css_version, context):
     canonical = f'{BASE}/papers/{p["slug"]}/'
     author_names = ', '.join(a['name'] for a in p['authors'])
     metas = [('citation_title', p['title'])]
@@ -163,7 +180,8 @@ def render(p, template, css_version):
         authors=authors, dates=dates, read_link=read_link, abstract_html=p['abstract_html'],
         status_note=f'<p class="paper-status-note">{esc(p["status_note"])}</p>' if p.get('status_note') else '',
         resources=links, citation_status=esc(p['status']), year=year,
-        citation_link=f'<a href="{esc(citation_url)}">{esc(citation_label)}</a>', related=related)
+        citation_link=f'<a href="{esc(citation_url)}">{esc(citation_label)}</a>', related=related,
+        context=context_line(context))
     bib_title = p.get('bibtex_title', p['title'])
     for char in ('&', '%', '#', '_'):
         bib_title = bib_title.replace(char, '\\' + char)
@@ -223,6 +241,7 @@ def main():
     validate(papers)
     template = string.Template((ROOT / 'templates/paper.html').read_text())
     css_version = hashlib.sha256((ROOT / 'assets/paper.css').read_bytes()).hexdigest()[:12]
+    contexts = research_contexts()
     pending = []
     for p in papers:
         directory = ROOT / 'papers' / p['slug']
@@ -230,7 +249,7 @@ def main():
             target, pdf = pdf_bytes(p, args.fetch_pdfs)
             if not target.exists():
                 pending.append((target, pdf))
-        page, bib = render(p, template, css_version)
+        page, bib = render(p, template, css_version, contexts[p['slug']])
         existing = directory / 'index.html'
         if existing.exists():
             shared = {m[1]: m[0] for m in SHARED.finditer(existing.read_text())}

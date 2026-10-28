@@ -150,9 +150,9 @@ roles={
  "toric-tangent-stability":"Constructions of toric Fano varieties with stable tangent bundles, compared with Kähler–Einstein conditions.",
  "toric-tangent-blowups-bundles":"Stability criteria for specified blowups and locally trivial toric bundles.",
  "toric-local-stability-chambers":"Varying the polarization: an all-dimensional projective-bundle classification with arbitrarily many chamber boundaries, a geometric criterion, and local chambers for the 31 indecomposable semistable census cases.",
- "fjrw-central-charge-threshold":"When primary invariants become independent of symmetric canonical boundary conditions in two-variable Fermat theory.",
- "fjrw-slope-ordered-factorization":"A slope-ordered factorization of wall crossing, constructed in finite truncations.",
- "fjrw-annular-scattering":"An integral-affine annulus and its monodromy in the quartic open FJRW comparison.",
+ "fjrw-central-charge-threshold":"Where wall crossing begins: primary invariants are independent of symmetric canonical boundary conditions exactly in the simple cases, ĉ below 1.",
+ "fjrw-slope-ordered-factorization":"How it factors: a unique slope-ordered factorization in every finite truncation, realized ray by ray by homotopies of boundary conditions.",
+ "fjrw-annular-scattering":"Where it lives: an integral-affine annulus for x⁴ + y⁴, a wall structure consistent at its two joints, and a period-invisible discrepancy with Gross–Kelly–Tessler for two markings.",
  "small-dolbeault-stability-walls":"From stability chambers to the equilibrium spectrum: every small Hermitian–Einstein eigenvalue is determined to uniform relative error by ranks and slope gaps, even at arbitrarily separated scales.",
  "small-dolbeault-eigenvalues":"Small spectral modes along Hermitian Yang–Mills flow, described by evolving weighted graph Laplacians in specified bundle classes.",
  "relative-metrics-reducible-yang-mills":"Relative surface gauge quotient-metric and small-spectrum estimates, uniform across changing stabilizers and arbitrarily separated scales.",
@@ -177,6 +177,74 @@ roles={
  "cy-mixed-smoothing":"A criterion: combine the relation space with the allowed local smoothing components.",
  "cy-conifold-relations":"Mirror relations: compare integral relation lattices in specified Batyrev families."
 }
+
+# Focus sections are kept in content/<stem>.html. Each is a <section> with an id, an h2,
+# an optional data-question and an optional status badge, which the research index collects.
+FOCUS={
+ "markets":["markets-evidence-allocation"],
+ "topology":["topology-atiyah-floer","topology-wider-problems"],
+ "calabi-yau":["calabi-yau-reading-guide","calabi-yau-physics-companions"],
+ "geometry":["geometry-stability-degeneration","singular-quotient-metrics","geometry-fjrw-scattering","geometry-inverse-moduli"],
+ "physics":["physics-compact-higgs","physics-black-hole-information"],
+}
+STATUS_ORDER=[
+ ("Integrated programme","Results proved apart have been joined by a theorem."),
+ ("Developing programme","Established results, and a precisely identified missing bridge."),
+ ("Exploratory frontier","First results, and a problem much larger than anything yet proved."),
+ ("Proposed agenda","A question connecting existing work that no paper has yet answered."),
+]
+# The research index pairs each guide with an illustration; physics uses the essay art for its spectral law.
+INDEX_ART={"physics":"one-law"}
+# Manuscript groups: (label, focus-section id, slugs). Together they must list a guide's slugs in order.
+GROUPS={
+ "topology":[("Knots and the pillowcase","atiyah-floer",["traceless-characters-instanton-gradings","s-complex-torus-knots","pillowcase-torus-knots","pretzel-instanton-pillowcase","pretzel-maurer-cartan"]),
+             ("Atiyah–Floer comparisons","atiyah-floer",["af-point-operations","af-cobordism-i","af-cobordism-ii"]),
+             ("Four-manifolds","wider-problems",["one-bubble-neighborhoods","exotic-four-manifolds"])],
+ "geometry":[("Stability walls and geometric degeneration","stability-degeneration",["toric-tangent-stability","toric-tangent-blowups-bundles","toric-local-stability-chambers","small-dolbeault-stability-walls","small-dolbeault-eigenvalues","uniform-hermitian-einstein-spectra","nonsimplicial-toric-stability-chambers","metric-response-hym-flow"]),
+             ("Singular quotient metrics","singular-quotient-metrics",["relative-metrics-reducible-yang-mills"]),
+             ("Open FJRW theory","fjrw-scattering",["fjrw-central-charge-threshold","fjrw-slope-ordered-factorization","fjrw-annular-scattering"]),
+             ("Realization of moduli structures","inverse-moduli",["inverse-moduli-theory"])],
+ "physics":[("Compact Higgs transitions","compact-higgs",["compact-higgs-global-constraints","compact-higgs-quantum-transition","compact-higgs-magnetic-sheaves","compact-higgs-finite-planck"]),
+            ("Black-hole information","black-hole-information",["page-curve-transition","page-curve-higher-dimensions","page-curve-not-enough","hawking-to-marchenko-pastur","informational-singularities"])],
+}
+# Papers whose full entry lives in another guide, listed briefly under a guide's own manuscripts:
+# (label, local section id, home-guide URL, slugs).
+COMPANIONS={
+ "calabi-yau":("Physics companions","physics-companions","/research/physics/#manuscripts",["compact-higgs-global-constraints","compact-higgs-quantum-transition","compact-higgs-magnetic-sheaves","compact-higgs-finite-planck"]),
+}
+
+def focus_sections(stems):
+    out=[]
+    for stem in stems:
+        text=(ROOT/f"content/{stem}.html").read_text()
+        status=re.search(r'<span class="status[^"]*">([^<]+)</span>',text)
+        question=re.search(r'data-question="([^"]+)"',text)
+        remains=re.search(r'data-remains="([^"]+)"',text)
+        out.append(dict(id=re.search(r'<section\b[^>]*\bid="([^"]+)"',text)[1],
+                        title=re.sub(r"<[^>]+>","",re.search(r"<h2[^>]*>(.*?)</h2>",text,re.S)[1]).strip(),
+                        status=status[1] if status else None,
+                        question=html.unescape(question[1]) if question else "",
+                        remains=html.unescape(remains[1]) if remains else "",
+                        text=text))
+    assert all(s["status"] in (None,*[x for x,_ in STATUS_ORDER]) for s in out),"Unknown focus status"
+    return out
+
+def paper_contexts():
+    """Map each paper to its home guide and programme section; tools/update-papers.py links paper pages to it."""
+    result={}
+    for p in programs:
+        sections={s["id"]:s for s in focus_sections(FOCUS.get(p["slug"],[]))}
+        default=next((s["id"] for s in sections.values() if s["status"]),None)
+        for _,anchor,slugs in GROUPS.get(p["slug"],[(None,default,p["slugs"])]):
+            s=sections.get(anchor)
+            for slug in slugs:
+                result[slug]=dict(guide=p["name"],url=f'/research/{p["slug"]}/'+(f'#{anchor}' if s else ''),
+                                  section=s["title"].rstrip(".") if s else None,status=s["status"] if s else None)
+    assert set(result)=={x["slug"] for x in papers},"Every paper needs one home guide"
+    return result
+
+def status_badge(status):
+    return f'<span class="status {status.split()[0].lower()}">{status}</span>'
 
 def explorer_card(x):
     route,img,kicker,title,desc,meta=x
@@ -220,10 +288,36 @@ def build_explorers():
     body+='''<aside class="guide-aside"><p>A place to start.</p><p class="small">The <a href="/beyond-hrp-lab/">portfolio lab</a> starts with familiar decisions about risk and return. The <a href="/pillowcase-explorer/">pillowcase explorer</a> builds its geometry one move at a time. For a tour across the subjects, start with <a href="/not-enough.html">Not Enough</a>.</p></aside>'''
     page("explorers/index.html","Explorers","Four interactive laboratories in geometry, topology, and portfolio construction.",body,image="conifold")
 
+def guide_rows():
+    body='<section class="guide-rows" aria-label="The six guides">'
+    for i,p in enumerate(programs):
+        sections=[x for x in focus_sections(FOCUS.get(p["slug"],[])) if x["status"]]
+        items=''.join(f'<li><a href="/research/{p["slug"]}/#{x["id"]}">{E(x["title"].rstrip("."))}</a>{status_badge(x["status"])}</li>' for x in sections) or ''.join(f'<li><span>{E(t)}</span></li>' for t,_ in p["themes"])
+        art=INDEX_ART.get(p["slug"],p["image"])
+        body+=f'''<article class="guide-row"><a class="guide-row-art" href="/research/{p["slug"]}/" aria-label="{E(p["name"])}"><img src="/assets/illustrations/{art}.svg" alt="" width="800" height="500" loading="lazy"></a><div><p class="kicker">0{i+1} · {E(p["name"])}</p><h2><a href="/research/{p["slug"]}/">{E(p["question"])}</a></h2><p class="guide-row-intro">{p["intro"]}</p><ul class="guide-programmes">{items}</ul>{link("/research/"+p["slug"]+"/","Open the guide")}</div></article>'''
+    return body+'</section>'
+
+def stage_table():
+    body='<section class="section-block" id="where-the-work-stands"><p class="kicker">Programmes within the guides</p><h2>Where the work stands.</h2><p class="focus-lede">The programmes differ in how far each argument has reached.</p><table class="stage-table"><thead><tr><th scope="col">Programme</th><th scope="col">Stage</th><th scope="col">What remains</th></tr></thead><tbody>'
+    sections=[(p,x) for p in programs for x in focus_sections(FOCUS.get(p["slug"],[])) if x["status"]]
+    for status,definition in STATUS_ORDER:
+        for p,x in sections:
+            if x["status"]!=status:continue
+            assert x["remains"],"Programme section needs data-remains: "+x["id"]
+            body+=f'<tr><td><a href="/research/{p["slug"]}/#{x["id"]}">{E(x["title"].rstrip("."))}</a><span class="stage-guide">{E(p["name"])}</span></td><td><span title="{E(definition,quote=True)}">{status_badge(status)}</span></td><td>{E(x["remains"])}</td></tr>'
+    return body+'</tbody></table></section>'
+
 def build_research():
-    page("research/index.html","Research","Reading guides to six strands of research by Bernd Wuebben.",'''<header class="page-intro"><p class="kicker">Research programs</p><h1>The questions<br>behind the papers.</h1><p class="intro">A paper isolates one question, sharply enough that an argument becomes possible. The sharpening has a price: the paper stops saying which constructions it borrowed, which distinctions it exposed for its neighbours, and what it left unresolved. These guides put that context back.</p><p><a class="button" href="/papers/">Complete collection of research papers ↗</a></p></header>'''+research_cards()+'''<aside class="guide-aside"><p class="small">The <a href="/papers/">complete catalogue</a> contains all ''' + str(len(papers)) + ''' papers, their current versions, and archive links.</p></aside>''',image="geometry")
+    page("research/index.html","Research","Reading guides to six strands of research by Bernd Wuebben.",'''<header class="page-intro"><p class="kicker">Research programs</p><h1>The questions<br>behind the papers.</h1><p class="intro">A paper isolates one question, sharply enough that an argument becomes possible. The sharpening has a price: the paper stops saying which constructions it borrowed, which distinctions it exposed for its neighbours, and what it left unresolved. These guides put that context back.</p><p><a class="button" href="/papers/">Complete collection of research papers ↗</a></p></header>'''+guide_rows()+stage_table()+(ROOT/"content/research-connections.html").read_text(),image="geometry")
     for p in programs:
-        body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / {E(p["name"])}</p><h1>{p["question"]}</h1><p class="intro">{p["intro"]}</p></div><img src="/assets/illustrations/{p["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(p["name"])}"></header><section class="section-block"><p class="kicker">A route through the subject</p><h2>{p["name"]}</h2><div class="reading-path">'''
+        focus=focus_sections(FOCUS.get(p["slug"],[]))
+        body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / {E(p["name"])}</p><h1>{p["question"]}</h1><p class="intro">{p["intro"]}</p></div><img src="/assets/illustrations/{p["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(p["name"])}"></header>'''
+        if focus:
+            body+='<nav class="page-contents" aria-label="On this page"><p class="kicker">On this page</p><ol>'
+            for s in focus+[dict(id="manuscripts",title="The manuscripts.",status=None)]:
+                body+=f'<li><a href="#{s["id"]}">{E(s["title"].rstrip("."))}</a>'+(status_badge(s["status"]) if s["status"] else "")+'</li>'
+            body+='</ol></nav>'
+        body+=f'''<section class="section-block"><p class="kicker">A route through the subject</p><h2>{p["name"]}</h2><div class="reading-path">'''
         for i,(title,desc) in enumerate(p["themes"]):
             body+=f'<div><p class="kicker">0{i+1}</p><h3>{title}</h3><p class="small">{desc}</p></div>'
         body+='</div><div class="prose-columns"><div><h3>'+p["start_text"]+'</h3><p>'
@@ -233,21 +327,27 @@ def build_research():
             body+=link('/papers/'+p["start"]+'/',E(by_slug[p["start"]]["title"]))+'</p>'
         body+='<p class="small">A manuscript to begin with: <a href="/papers/'+p["start"]+'/">'+E(by_slug[p["start"]]["title"])+'</a>.</p>'
         body+='</div><div><h3>Scope of the work</h3><p class="small">'+p["scope"]+'</p></div></div></section>'
-        if p["slug"] == "calabi-yau":
-            body+=(ROOT/"content/calabi-yau-reading-guide.html").read_text()
-        if p["slug"] == "physics":
-            body+='<aside class="guide-aside"><h3>Compact Calabi–Yau transitions</h3><p>The <a href="/research/calabi-yau/#six-paper-guide">six-paper mathematical reading guide</a> follows the geometric argument from local singularities to mirror relations. Its <a href="/research/calabi-yau/#physics-companions">optional physics route</a> connects that geometry to the four compact-Higgs papers below.</p><p class="small">A mathematical companion on <a href="/papers/relative-metrics-reducible-yang-mills/">metrics near reducible Yang–Mills connections</a> compares the orbit operator with explicit curved quaternionic quotients, including stabilizer changes.</p></aside>'
-        if p["slug"] == "geometry":
-            body+='<section class="section-block" id="stability-degeneration"><p class="kicker">Stability walls and geometric degeneration</p><h2>From realizable chambers to metrics and flows.</h2><div class="prose-columns"><div><h3>The geometric route</h3><p>Begin with the toric tangent stability papers, then <a href="/papers/toric-local-stability-chambers/">local stability chambers</a>. Continue to <a href="/papers/nonsimplicial-toric-stability-chambers/">nonsimplicial tangent chambers</a>, which constructs genuine weak-Fano examples and determines their accessible slope parameters.</p></div><div><h3>The analytic route</h3><p>Begin with <a href="/papers/small-dolbeault-stability-walls/">eigenvalues near stability walls</a>, then <a href="/papers/uniform-hermitian-einstein-spectra/">uniform spectra for bipartite extensions</a>. The earlier <a href="/papers/small-dolbeault-eigenvalues/">HYM-flow paper</a> supplies the dynamical entry point.</p></div></div><aside class="guide-aside"><h3>Where the routes meet</h3><p><a href="/papers/metric-response-hym-flow/">Metric response and Hermitian Yang–Mills flow for two-step extensions</a> brings the independently proved geometry and spectral mechanism together with metric-response, inverse and actual-flow results on the same tangent bundles. The spectral paper does not depend on these particular examples, and the geometric paper does not depend on the spectral analysis.</p><p class="small">The broader programme asks for repeated-factor and higher-step extensions, singular graded objects and moduli-metric degeneration. Those require further theorems. Cycles can retain harmonic extension data, and flows can retain initial-metric information.</p></aside></section>'
-        if p["slug"] == "geometry":
-            body+=(ROOT/"content/singular-quotient-metrics.html").read_text()
-        body+=f'<section><p class="kicker">{len(p["slugs"])} papers · Suggested reading sequence</p><h2>The manuscripts.</h2><ol class="program-papers">'
-        for i,slug in enumerate(p["slugs"]):
-            item=by_slug[slug]
-            body+=f'''<li><span class="paper-number">{i+1:02}</span><div><h3><a href="/papers/{slug}/">{E(item["title"])}</a></h3><p class="small">{E(roles.get(slug,item["label"]))}</p><p class="small">{E(item["status"])} · {item["publication_date"][:4]} · <a href="/papers/{slug}/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary>{item["abstract_html"]}</details></div></li>'''
-        body+='</ol></section>'
-        if p["slug"] == "calabi-yau":
-            body+=(ROOT/"content/calabi-yau-physics-companions.html").read_text()
+        body+="".join(s["text"] for s in focus)
+        body+=f'<section class="section-block" id="manuscripts"><p class="kicker">{len(p["slugs"])} papers · Suggested reading sequence</p><h2>The manuscripts.</h2>'
+        groups=GROUPS.get(p["slug"],[(None,None,p["slugs"])])
+        assert [s for g in groups for s in g[2]]==p["slugs"],"Manuscript groups must list the guide's papers in order: "+p["slug"]
+        i=0
+        for label,anchor,slugs in groups:
+            if label:
+                count=f'{len(slugs)} paper'+('s' if len(slugs)>1 else '')
+                body+=f'<p class="paper-group">{E(label)} · {count}<a href="#{anchor}">The programme ↑</a></p>'
+            body+=f'<ol class="program-papers" start="{i+1}">'
+            for slug in slugs:
+                i+=1
+                item=by_slug[slug]
+                body+=f'''<li><span class="paper-number">{i:02}</span><div><h3><a href="/papers/{slug}/">{E(item["title"])}</a></h3><p class="small">{E(roles.get(slug,item["label"]))}</p><p class="small">{E(item["status"])} · {item["publication_date"][:4]} · <a href="/papers/{slug}/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary>{item["abstract_html"]}</details></div></li>'''
+            body+='</ol>'
+        if p["slug"] in COMPANIONS:
+            label,anchor,home,slugs=COMPANIONS[p["slug"]]
+            body+=f'<p class="paper-group">{E(label)} · {len(slugs)} papers<a href="#{anchor}">Reading notes ↑</a></p><ul class="companion-papers">'
+            body+="".join(f'<li><a href="/papers/{slug}/">{E(by_slug[slug]["title"])}</a><span class="small">{E(roles.get(slug,""))}</span></li>' for slug in slugs)
+            body+=f'</ul><p class="small">Full entries, with abstracts, are in the <a href="{home}">physics guide</a>.</p>'
+        body+='</section>'
         page(f'research/{p["slug"]}/index.html',p["name"],p["intro"],body,image=p["image"])
 
 def build_about():
