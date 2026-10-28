@@ -6,7 +6,12 @@ from urllib.parse import urlsplit, unquote
 import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
-CATALOGUE_CROSSLINKS={"toric-local-stability-chambers", "small-dolbeault-stability-walls"}
+AUTHORIZED_CATALOGUE_UPDATES={"toric-local-stability-chambers", "small-dolbeault-stability-walls"}
+# The 27 October abstract review authorizes prose changes for these two entries
+# and a new manuscript/archive version only for the spectral companion.
+REVISED_METADATA={"small-dolbeault-stability-walls": {
+ "abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "citation_doi"
+}}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)
@@ -37,17 +42,22 @@ after=(ROOT/"papers/index.html").read_text()
 entry=re.compile(r'<li id="[^"]+">\s*<span class="entry-title">.*?</li>',re.S)
 old_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(before)}
 new_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(after)}
-assert all(new_entries.get(k)==v for k,v in old_entries.items() if k not in CATALOGUE_CROSSLINKS),"Unrelated paper catalogue entries changed"
-for key in CATALOGUE_CROSSLINKS:
+assert all(new_entries.get(k)==v for k,v in old_entries.items() if k not in AUTHORIZED_CATALOGUE_UPDATES),"Unrelated paper catalogue entries changed"
+for key in AUTHORIZED_CATALOGUE_UPDATES:
  old=old_entries[key];new=new_entries[key]
  assert re.search(r'<span class="entry-title">.*?</span>',old,re.S)[0]==re.search(r'<span class="entry-title">.*?</span>',new,re.S)[0],"Existing title changed"
- assert set(re.findall(r'href="([^"]+)"',old)) <= set(re.findall(r'href="([^"]+)"',new)),"Existing paper resource removed"
+ old_links=set(re.findall(r'href="([^"]+)"',old));new_links=set(re.findall(r'href="([^"]+)"',new))
+ if key in REVISED_METADATA:
+  old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
+  assert len(re.findall(r'href="https://zenodo.org/records/\d+"',new))==1,"Expected one current archive link"
+ assert old_links <= new_links,"Existing paper resource removed"
 papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
 old_papers=json.loads(subprocess.check_output(["git","show",BASE+":data/papers.json"],cwd=ROOT))["papers"]
 by_slug={p["slug"]:p for p in papers}
 for p in old_papers:
  current=by_slug[p["slug"]]
- assert {k:v for k,v in p.items() if k!="related"}=={k:v for k,v in current.items() if k!="related"},"Existing manuscript metadata changed: "+p["slug"]
+ allowed=REVISED_METADATA.get(p["slug"],set()) | {"related"}
+ assert {k:v for k,v in p.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed},"Existing manuscript metadata changed: "+p["slug"]
  assert all(r in current["related"] for r in p["related"]),"Existing related links removed: "+p["slug"]
 assert set(new_entries)=={p["catalogue_anchor"] for p in papers},"Catalogue and manifest differ"
 guide_links=[]
@@ -61,4 +71,4 @@ assert len(locations)==len(set(locations)),"Duplicate sitemap URLs"
 assert not any("/review/" in x or "/tools/" in x for x in locations),"Review tools must not enter the sitemap"
 if errors:
  print("\n".join(errors));raise SystemExit(1)
-print(f"{len(pages)} pages checked; links and IDs resolve; {len(old_papers)} existing catalogue entries and manuscript records preserved; six guides cover all {len(papers)} papers; RSS and sitemap parse.")
+print(f"{len(pages)} pages checked; links and IDs resolve; {len(old_papers)} baseline entries checked with scoped authorized exceptions; six guides cover all {len(papers)} papers; RSS and sitemap parse.")

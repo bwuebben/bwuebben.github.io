@@ -26,7 +26,7 @@ Its 27 October revision adds the repository URL and supplement path in the PDF;
 the latest archive is [Zenodo:23682140](https://zenodo.org/records/23682140).
 The spectral companion, *Small Dolbeault eigenvalues near stability walls*,
 was released on 27 October 2026 with
-[Zenodo:23682045](https://zenodo.org/records/23682045). Its paper page,
+[Zenodo:23717764](https://zenodo.org/records/23717764). Its paper page,
 catalogue entry, Geometry & Moduli reading sequence, related-paper links,
 Updates/RSS and sitemap are maintained together. Both preprints await arXiv.
 
@@ -37,7 +37,7 @@ Moduli spaces and geometric analysis section. The catalogue now has 44 papers
 and 38 verified PDF mirrors. Bernd explicitly chose website publication first,
 then a bounded determinant investigation, then Zenodo deposits and DOI retrieval.
 The determinant extension is included in Paper III. All three released PDFs are
-archived on Zenodo (23717123, 23717178, 23717290), with corresponding DOI citations
+archived on Zenodo (23717660, 23717722, 23717742), with corresponding DOI citations
 and verified public ORCID entries. arXiv submissions remain queued; see TODO.md.
 
 ## Approved editorial website
@@ -409,3 +409,10 @@ of this repository.
 To move the site to a domain of your own, add a `CNAME` file containing the bare
 domain, point the DNS records at GitHub, and enable *Enforce HTTPS* in the
 repository's Pages settings.
+
+On 27 October 2026, five newly released abstracts and catalogue descriptions
+were reviewed. The trilogy abstracts were revised, the earlier spectral
+abstract gained the rescaled/unitary eigensection qualifier, and the toric
+local-chamber abstract was retained. All five catalogue paragraphs were
+revised. The four revised PDFs, full abstracts, archive versions and citation
+metadata are synchronized; mathematical text and computation code are unchanged.
