@@ -60,6 +60,8 @@
 .research-entry { padding:1.75rem 0; border-bottom:1px solid var(--rule); }
 .research-entry .number { font:.72rem var(--sans); color:var(--accent); }
 .research-entry h3 { font-size:1.6rem; }
+.research-entry .research-question { font:italic 1.08rem/1.45 var(--serif); color:var(--ink); margin:.2rem 0 .7rem; }
+.research-entry .small { font-size:.88rem; margin:0; }
 .paper-picks { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem; border-top:1px solid var(--rule); }
 .paper-picks article { padding-top:1.5rem; }
 .paper-picks h3 { font-size:1.4rem; letter-spacing:-.015em; }

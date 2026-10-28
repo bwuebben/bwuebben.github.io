@@ -250,8 +250,19 @@ def explorer_card(x):
     route,img,kicker,title,desc,meta=x
     return f'''<a class="visual-link" href="/{route}/"><div class="art-panel"><img src="/assets/illustrations/{img}.svg" alt="" width="800" height="500" loading="lazy"></div><p class="kicker">{kicker}</p><h3>{title} <span class="arrow" aria-hidden="true">↗</span></h3><p>{desc}</p><p class="small">{meta}</p></a>'''
 
+# Homepage summaries: what each guide's work does, without counts. The guides' own intros appear on /research/.
+HOME_SUMMARY={
+ "markets":"A model that earns has not thereby explained anything. The papers ask what discovery means once language models make hypotheses free while evidence still arrives one year per year, how a portfolio should respond to a forecast, and how a firm should form, test and revise its beliefs.",
+ "topology":"Cut a space along a surface and a hard question becomes a comparison between simpler pieces. The papers compare two Floer theories, one built from instantons and one from holomorphic curves, exactly for families of knots and for the maps that four-dimensional cobordisms induce.",
+ "calabi-yau":"A singular threefold can be smoothable at every singular point and still admit no smoothing at all. The papers find the global relations that decide when local smoothings coexist, and show how mirror symmetry trades relations among curves for relations among vanishing spheres.",
+ "geometry":"As a bundle approaches a stability wall, its metric loses rigidity, and small eigenvalues record the scale of the loss. The papers connect stability chambers to spectra, metrics and geometric flows, and ask how wall crossing becomes geometry in open FJRW theory and which algebra a moduli space can realize.",
+ "physics":"In a compact universe, singularities that could each change on their own may only change together; the papers work out which transitions the geometry allows. For black holes, they ask how much an entropy curve, even computed exactly, reveals about the quantum process behind it.",
+ "ai-institutions":"Abundant analysis does not abolish the need for institutions, infrastructure or someone who answers for a decision; it moves the scarcity onto them. The papers follow that shift into markets between machines, the physical systems that sustain deployment, and the attribution of responsibility when decisions are delegated to algorithms.",
+}
+
 def research_cards():
-    return '<div class="research-grid">'+''.join(f'''<article class="research-entry"><span class="number">0{i+1}</span><h3><a href="/research/{p["slug"]}/">{p["name"]}</a></h3><p class="small">{p["question"]}</p></article>''' for i,p in enumerate(programs))+'</div>'
+    assert set(HOME_SUMMARY)=={p["slug"] for p in programs},"Every guide needs a homepage summary"
+    return '<div class="research-grid">'+''.join(f'''<article class="research-entry"><span class="number">0{i+1}</span><h3><a href="/research/{p["slug"]}/">{p["name"]}</a></h3><p class="research-question">{p["question"]}</p><p class="small">{E(HOME_SUMMARY[p["slug"]])}</p></article>''' for i,p in enumerate(programs))+'</div>'
 
 def build_home():
     body='''<header class="home-intro"><p class="kicker">Finance · Mathematics · Theoretical Physics</p><h1>Bernd Johannes<br>Wuebben</h1>
