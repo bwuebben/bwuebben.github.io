@@ -12,7 +12,7 @@
   "label": "Stability walls and geometric degeneration",
   "status": "Preprint",
   "publication_date": "2026-10-27",
-  "revision_date": null,
+  "revision_date": "2026-10-27",
   "archive": null,
   "citation_doi": null,
   "resources": [
@@ -40,15 +40,15 @@
     }
   ],
   "verified_on": "2026-10-27",
-  "abstract_html": "<p>We determine the complete small spectrum of Hermitian–Einstein bundles near intersections of slope-stability walls. Consider a fixed extension of one direct sum of stable bundles by another, with pairwise nonisomorphic factors of equal slope at the reference Kähler form. Assume that its nonzero extension components have connected support. In the local stable chamber, the small eigenvalues of the Dolbeault Laplacian on trace-free endomorphisms agree with those of a balanced, rank-weighted graph Laplacian to relative error <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>O</mi><mo>(</mo><mi>σ</mi><mo>)</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>σ</mi></mrow></math> is the total balanced conductance. The estimate holds for every small eigenvalue, uniformly through arbitrary positive ratios of the stability margins, and the remaining spectrum has a uniform gap.</p><p>The construction uses exact curvature identities on graph cuts. These control the nonlinear error relative to each cut capacity and give an actual Hermitian–Einstein metric even when the ordinary inverse of the finite Laplacian is unbounded. We also obtain a relative metric approximation, coefficient-stability estimates, and a spanning-tree formula for the product of the small eigenvalues. Trees have slope-determined leading weights, whereas cyclic supports retain harmonic extension data.</p>",
-  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.tex",
+  "abstract_html": "<p>We determine the complete small spectrum of Hermitian–Einstein bundles near intersections of slope-stability walls. Consider a fixed extension of one direct sum of stable bundles by another, with pairwise nonisomorphic factors of equal slope at the reference Kähler form. Assume that its nonzero extension components have connected support. In the local stable chamber, the small eigenvalues of the Dolbeault Laplacian on trace-free endomorphisms agree with those of a balanced, rank-weighted graph Laplacian to relative error <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>O</mi><mo>(</mo><mi>σ</mi><mo>)</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>σ</mi></mrow></math> is the total balanced conductance. The estimate holds for every small eigenvalue, uniformly through arbitrary positive ratios of the stability margins, and the remaining spectrum has a uniform gap.</p><p>The construction uses exact curvature identities on graph cuts. These control the nonlinear error relative to each cut capacity and give an actual Hermitian–Einstein metric even when the ordinary inverse of the finite Laplacian is unbounded. We also obtain a relative metric approximation, coefficient-stability estimates, and spanning-tree formulas for the small-spectrum product and the leading factor of the full zeta-regularized determinant. Trees have slope-determined leading weights, whereas cyclic supports retain harmonic extension data.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/f5767539b3127014bd0917fc7f061d19afdf3642/papers/iii/paper.tex",
   "pdf": {
-    "sha256": "e6b2fe6254e94a4f7178775c649ef71f0ba2730a8f0fad0b957465ec797172a3",
-    "size_bytes": 401492,
-    "pages": 21,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.pdf",
+    "sha256": "845cb69126b849b1f562dd161ce4333e7d7f441bc3f60865b3b0ae31d3a0cbbc",
+    "size_bytes": 410874,
+    "pages": 22,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/f5767539b3127014bd0917fc7f061d19afdf3642/papers/iii/paper.pdf",
     "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf",
-    "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+    "source_commit": "f5767539b3127014bd0917fc7f061d19afdf3642",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/iii/paper.pdf"
   }
