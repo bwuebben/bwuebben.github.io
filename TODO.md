@@ -77,6 +77,17 @@ and included in Paper III before archival.
 - [ ] Submit the trilogy to arXiv when scheduled; verify current submission
   rules and capacity then. No submission has been made.
 
+Sitemap audit on 27 October 2026: the local and live `sitemap.xml` are identical
+and contain all 71 public canonical pages, including all 41 paper pages, with
+no missing or duplicate entries. Validation against the official sitemap and
+Google image sitemap XML schemas passed. All 71 pages and the portrait image
+returned HTTP 200 without redirects and matched local files; the pages have
+matching canonical URLs and no `noindex` directives. The live `robots.txt`
+allows crawling and advertises the sitemap. No sitemap changes were needed.
+Search Console acceptance and Google/Scholar indexing were not checked.
+Local audit receipt:
+`~/.local/share/website-checks/sitemap-audit-20261027T112010Z/report.json`.
+
 ## Open work
 
 Website redesign: Bernd approved the complete design for publication on
