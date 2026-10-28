@@ -45,6 +45,13 @@ paper’s arXiv page, identifier and DOI take precedence over Zenodo in website
 reading links and citations. Keep the public-repository PDF link; preserve Zenodo
 as archival history. See [the publication procedure](PUBLICATION_WORKFLOW.md).
 
+The 28 October 2026 release, *Relative metric estimates near reducible
+Yang–Mills connections*, adds a Singular quotient metrics subsection to the
+catalogue and Geometry & moduli guide, with reciprocal links to the HE spectrum
+and finite-Planck Higgs papers. Its archive is
+[Zenodo:23740619](https://zenodo.org/records/23740619). The catalogue now has
+45 papers and 39 verified PDF mirrors. arXiv submission is pending.
+
 ## Approved editorial website
 
 The redesigned site was approved for publication on 25 October 2026. Start with

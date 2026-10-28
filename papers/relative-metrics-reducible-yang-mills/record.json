@@ -1,0 +1,60 @@
+{
+  "slug": "relative-metrics-reducible-yang-mills",
+  "catalogue_title": "Relative metric estimates near reducible Yang–Mills connections",
+  "catalogue_anchor": "relative-metrics-reducible-yang-mills",
+  "title": "Relative metric estimates near reducible Yang–Mills connections",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Singular quotient metrics",
+  "status": "Preprint",
+  "publication_date": "2026-10-28",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23740619",
+    "url": "https://zenodo.org/records/23740619",
+    "deposited_at": "2026-10-28T18:11:09.687408+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23740619",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/singular-quotient-metrics/blob/main/main.pdf"
+    },
+    {
+      "label": "source and exact finite calculations",
+      "url": "https://github.com/bwuebben/singular-quotient-metrics"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#singular-quotient-metrics"
+    },
+    {
+      "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+      "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+    },
+    {
+      "label": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
+      "url": "https://bwuebben.github.io/papers/compact-higgs-finite-planck/"
+    }
+  ],
+  "verified_on": "2026-10-28",
+  "abstract_source": "https://github.com/bwuebben/singular-quotient-metrics/blob/d6a9239f40e3dba4eb43b74eaa27068b992aef1c/main.tex",
+  "abstract_html": "<p>We study the natural <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msup><mi>L</mi><mn>2</mn></msup></math> metric near a central Yang–Mills connection on a closed surface. In the classical quadratic symplectic model, we prove a relative metric estimate with error quadratic in the harmonic deformation parameter, uniformly across all stabilizer types. We also compute the leading metric correction using the Green operators of the reference connection. The proof first eliminates the gauge directions with a fixed positive spectral gap and then minimizes over the remaining finite-dimensional orbit; it requires no lower bound on a positive orbit eigenvalue. The same argument compares every small eigenvalue of the gauge Laplacian with the infinitesimal stabilizer-action operator, including at changes of kernel dimension. As a curved finite-dimensional comparison, quaternionic projective and hyperbolic reductions admit exact orbit-metric formulas on their flat moment-map zero cone. A four-cycle is realized in both settings with independently vanishing weights. The resulting estimates distinguish uniform control of the quotient metric from estimates that depend on the smallest orbit scale.</p>",
+  "pdf": {
+    "sha256": "e7a003f4b125bcf625899940324d52f8cd14aa9b15c5f45515ea6930bab1c875",
+    "size_bytes": 373567,
+    "pages": 14,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/singular-quotient-metrics/d6a9239f40e3dba4eb43b74eaa27068b992aef1c/main.pdf",
+    "source_url": "https://github.com/bwuebben/singular-quotient-metrics/blob/main/main.pdf",
+    "source_commit": "d6a9239f40e3dba4eb43b74eaa27068b992aef1c",
+    "source_repository": "https://github.com/bwuebben/singular-quotient-metrics",
+    "source_path": "main.pdf"
+  }
+}

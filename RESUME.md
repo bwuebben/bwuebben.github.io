@@ -11,7 +11,7 @@ The homepage puts research first, with its portrait floated into the introductio
 smaller headings, and six selected papers in two rows. The selections are
 Validation Bottleneck, Mirror Symmetry for Conifold Relations, Page Curve,
 AI-Native Asset Manager, Cobordism Maps I, and the finite-Planck Higgs Branch paper.
-The Papers page has subject links and all 44 entries, without search/filter controls
+The Papers page has subject links and all 45 entries, without search/filter controls
 or the former introductory paragraph. About is last in the top navigation.
 
 The release includes six research guides, the explorer gallery, Writing, About,
@@ -28,6 +28,13 @@ attempt and subsequent Zenodo/DOI work. The determinant extension is now include
 in Paper III; the three Zenodo archives and public ORCID checks are complete.
 The citation pages use the corresponding version DOIs. arXiv submissions remain
 pending in the project release queue. See TODO.md.
+
+On 28 October, the singular quotient-metric paper was added beside the stability
+programme, with its own catalogue subsection, individual page, public repository
+and Zenodo archive 23740619. Geometry & moduli now has 13 papers; the physics
+guide links to the paper as a mathematical companion. Its section source is
+`content/singular-quotient-metrics.html`. ORCID contains the version and concept
+DOIs in one public work group. arXiv submission is pending.
 
 ## Source and rebuild
 

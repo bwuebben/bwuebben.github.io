@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Relative metric estimates near reducible Yang–Mills connections</title>
+      <link>https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/</link>
+      <guid>https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/#update-2026-10-28</guid>
+      <description>A new paper compares surface Yang–Mills quotient metrics and the complete small gauge spectrum with a finite-dimensional model, uniformly across changing stabilizers and arbitrarily separated scales. It includes a leading metric correction and explicit quaternionic comparisons. The manuscript, source and finite calculations are public, with a Zenodo archive.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Stability walls and geometric degeneration</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-27</guid>

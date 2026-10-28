@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-28",
+    "title": "Relative metric estimates near reducible Yang–Mills connections",
+    "url": "/papers/relative-metrics-reducible-yang-mills/",
+    "description": "A new paper compares surface Yang–Mills quotient metrics and the complete small gauge spectrum with a finite-dimensional model, uniformly across changing stabilizers and arbitrarily separated scales. It includes a leading metric correction and explicit quaternionic comparisons. The manuscript, source and finite calculations are public, with a Zenodo archive."
+  },
+  {
     "date": "2026-10-27",
     "title": "Stability walls and geometric degeneration",
     "url": "/research/geometry/#stability-degeneration",

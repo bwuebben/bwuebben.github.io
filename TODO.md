@@ -2,7 +2,20 @@
 
 Requested by Bernd on 25 October 2026. These items are pending; recording them
 does not mean that deposits or indexing have been completed. Scope: all publicly
-released papers listed on the website, currently 44, not private research drafts.
+released papers listed on the website, currently 45, not private research drafts.
+
+## Singular quotient-metric paper — 28 October 2026
+
+The paper *Relative metric estimates near reducible Yang–Mills connections* is
+archived as [Zenodo:23740619](https://zenodo.org/records/23740619), with matching
+public-repository and website PDFs. Public ORCID verification finds the version
+and concept DOI assertions grouped as one preprint with the correct title.
+The new page, catalogue subsection, Geometry & moduli section, related-paper
+links and Updates/RSS bring the inventory to 45 papers and 39 PDF mirrors.
+
+- [ ] Submit the paper to arXiv when scheduled; no submission has been made.
+- [ ] Check actual search indexing after release; deployment alone does not
+  establish indexing.
 
 ## Current archive and ORCID check — 27 October 2026
 
