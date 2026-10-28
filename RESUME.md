@@ -80,6 +80,9 @@ into `main`.
   imports: the paper's home guide, its programme section and its status. Change
   the guides, then rerun both scripts; the line cannot be edited per paper. Keep paper links out of
   `<h3>` in these sections: the coverage check counts `<h3>` paper links.
+- `data/updates.json`: the Updates page, the RSS feed and the homepage's three
+  most recent additions, which are generated from it. Add an entry there for
+  each release; never edit the homepage list by hand.
 - `site.json`: shared navigation; `assets/editorial.css` and
   `assets/catalogue.css`: editorial and catalogue layout.
 - `tools/integrate-site.py`: catalogue header, companion paper links, sharing
