@@ -36,8 +36,9 @@ form a named programme within the Geometry & moduli guide and the catalogue's
 Moduli spaces and geometric analysis section. The catalogue now has 44 papers
 and 38 verified PDF mirrors. Bernd explicitly chose website publication first,
 then a bounded determinant investigation, then Zenodo deposits and DOI retrieval.
-Those archive identifiers, arXiv queue actions and ORCID verification are pending
-for these three papers. Their citation pages use stable manuscript URLs meanwhile.
+The determinant extension is included in Paper III. All three released PDFs are
+archived on Zenodo (23717123, 23717178, 23717290), with corresponding DOI citations
+and verified public ORCID entries. arXiv submissions remain queued; see TODO.md.
 
 ## Approved editorial website
 
@@ -172,7 +173,7 @@ and [Sitemaps report guide](https://support.google.com/webmasters/answer/7451001
 Each catalogue title opens a stable `/papers/<slug>/` page. The shared template
 contains the full author-written abstract, Scholar citation tags, ORCID and
 archive links, and a BibTeX download. Mathematical notation is static MathML;
-the page, abstract, and navigation require no JavaScript. Thirty-five pages
+the page, abstract, and navigation require no JavaScript. Thirty-eight pages
 currently serve verified public PDFs. Six SSRN-only papers have their complete
 registered abstracts and a **Read on SSRN** link while PDF downloads are blocked;
 their missing mirrors are tracked in TODO.md and the catalogue data. Do not

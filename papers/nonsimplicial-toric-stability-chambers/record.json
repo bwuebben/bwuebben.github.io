@@ -13,8 +13,13 @@
   "status": "Preprint",
   "publication_date": "2026-10-27",
   "revision_date": null,
-  "archive": null,
-  "citation_doi": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23717178",
+    "url": "https://zenodo.org/records/23717178",
+    "deposited_at": "2026-10-28T01:01:09.251665+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23717178",
   "resources": [
     {
       "label": "current version (PDF)",

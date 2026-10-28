@@ -26,19 +26,21 @@ record 23682045 and verified public ORCID coverage. The inventory at that point 
 archive deposits and six SSRN PDF mirrors
 listed below remain pending.
 
-The stability-degeneration trilogy brings the catalogue to 44 papers and 38 PDF
-mirrors. The existing 23 Zenodo archives are unchanged. For these three new
-papers, Bernd explicitly requested website publication, a bounded determinant
-investigation, and then Zenodo upload and DOI retrieval, in that order.
+The stability-degeneration trilogy brings the catalogue to 44 papers, 38 PDF
+mirrors and 26 Zenodo archives. The bounded determinant extension was accepted
+and included in Paper III before archival.
 
-- [ ] Archive the final versions of the uniform HE spectra, nonsimplicial toric
-  chambers, and metric-response/HYM papers after the determinant investigation;
-  verify each DOI and downloaded PDF, then add the three archive links and
-  version-appropriate citation identifiers.
-- [ ] Verify ORCID coverage for all three new manuscripts and subsequent
-  versions; coordinate the additions with the final DOI records.
-- [ ] Add the trilogy to the arXiv queue and verify current submission capacity
-  when scheduling; no arXiv submission is implied by website publication.
+- [x] Archive the final PDFs: III [23717123](https://zenodo.org/records/23717123),
+  IV [23717178](https://zenodo.org/records/23717178),
+  V [23717290](https://zenodo.org/records/23717290). All version and concept DOIs
+  resolve, and every downloaded PDF matches its released checksum.
+- [x] Add separate catalogue archive links and version-specific citation DOIs.
+- [x] Verify public ORCID coverage: DataCite supplied one work group per paper,
+  with version and concept assertions grouped and readable titles. Checked
+  28 October 2026 UTC (27 October in New York).
+- [x] Record the trilogy in the project's arXiv queue.
+- [ ] Submit the trilogy to arXiv when scheduled; verify current submission
+  rules and capacity then. No submission has been made.
 
 ## Open work
 

@@ -24,9 +24,10 @@ On 27 October, the stability-degeneration trilogy was added as a named programme
 within Geometry & moduli: the three new papers remain together in the catalogue,
 with geometric and analytic reading routes in the guide. The guide now has
 12 papers. Bernd requested website publication before the determinant extension
-attempt and subsequent Zenodo/DOI work; the three archives and ORCID checks remain
-pending. See TODO.md. The page generator supports a verified PDF without an
-archive identifier and uses the stable manuscript URL for its citation.
+attempt and subsequent Zenodo/DOI work. The determinant extension is now included
+in Paper III; the three Zenodo archives and public ORCID checks are complete.
+The citation pages use the corresponding version DOIs. arXiv submissions remain
+pending in the project release queue. See TODO.md.
 
 ## Source and rebuild
 
