@@ -29,7 +29,12 @@
       "url": "https://github.com/bwuebben/global-higgs-branch/tree/main/papers/03-magnetic-sheaves"
     }
   ],
-  "related": [],
+  "related": [
+    {
+      "label": "Calabi–Yau geometry and physics reading guide",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#physics-companions"
+    }
+  ],
   "verified_on": "2026-10-25",
   "abstract_html": "<p>We study magnetic sheaves in a compact Calabi–Yau transition coupling two conifold sectors to a rank-one <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>E</mi><mn>2</mn></msub></mrow></math> sector. Fixed-support Hilbert schemes give rank-one numerical Donaldson–Thomas contributions on the rigid <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi mathvariant=\"double-struck\">F</mi><mn>1</mn></msub></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>2</mn></msup></mrow></math> surfaces on the two sides. On a reducible moving divisor, two dual-ideal sheaves are isolated and Gieseker stable, each contributing <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x0002B;</mo><mn>1</mn></mrow></math>; their stability persists along ample polarizations approaching the contraction. Their vanishing first and second self-Ext groups also imply local persistence in smooth polarized deformations of the resolved threefold, but not across its singular transition. An explicit magnetic splitting has one extension mode and a transverse phase alignment near large volume. Using the analytically continued periods of the companion paper, we determine the constituent phase sign at the marked quantum transition and exclude emission of the known light electric particles on a final specified segment. The probe charges nevertheless carry confined magnetic flux after Higgsing. These are component counts and partial wall constraints, not a determination of the physical BPS index at the endpoint. Counts involving complete moving pencils require a separate reduced-member hypothesis, stated in an appendix.</p>",
   "abstract_source": "https://zenodo.org/records/23643240",

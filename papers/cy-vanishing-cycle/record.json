@@ -29,7 +29,12 @@
       "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper4"
     }
   ],
-  "related": [],
+  "related": [
+    {
+      "label": "Six-paper reading guide",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#six-paper-guide"
+    }
+  ],
   "verified_on": "2026-10-27",
   "abstract_html": "<p>We prove a homological obstruction to smoothing projective Calabi–Yau threefolds with nodes and anticanonical cones over smooth del Pezzo surfaces of degrees six and seven. On a crepant resolution that is small over the nodes and blows up the cone vertices, any smoothing forces a relation among link classes bounding in the local Milnor fibers. The relation is nonzero at every node and degree-seven point, and at each degree-six point smoothed through the one-dimensional component. The proof uses vanishing periods and applies to smoothing arcs of arbitrary contact order, extending the necessity direction of Friedman’s criterion. We apply the obstruction to a Batyrev hypersurface whose thirty singularities are individually smoothable but which admits no smoothing, even formally. On its mirror partner, two nodes cannot be smoothed by any analytic deformation, independently of a locally nonsmoothable cone point.</p>",
   "abstract_source": "https://arxiv.org/abs/2610.35911",

@@ -421,3 +421,13 @@ abstract gained the rescaled/unitary eigensection qualifier, and the toric
 local-chamber abstract was retained. All five catalogue paragraphs were
 revised. The four revised PDFs, full abstracts, archive versions and citation
 metadata are synchronized; mathematical text and computation code are unchanged.
+
+## Calabi–Yau reading guide — 27 October 2026
+
+The [Calabi–Yau guide](https://bwuebben.github.io/research/calabi-yau/) now gives
+separate routes through the six mathematical papers, with the four compact-Higgs
+papers as optional physics companions. The main physics sequence is 1 → 2 → 4;
+Paper 3 is a specialist branch after 2. Its source fragments are
+`content/calabi-yau-reading-guide.html` and
+`content/calabi-yau-physics-companions.html`, rendered by `tools/build-editorial.py`.
+Maintain the reached-component and physical-model qualifications.

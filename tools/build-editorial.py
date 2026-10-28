@@ -232,6 +232,10 @@ def build_research():
             body+=link('/papers/'+p["start"]+'/',E(by_slug[p["start"]]["title"]))+'</p>'
         body+='<p class="small">A manuscript to begin with: <a href="/papers/'+p["start"]+'/">'+E(by_slug[p["start"]]["title"])+'</a>.</p>'
         body+='</div><div><h3>Scope of the work</h3><p class="small">'+p["scope"]+'</p></div></div></section>'
+        if p["slug"] == "calabi-yau":
+            body+=(ROOT/"content/calabi-yau-reading-guide.html").read_text()
+        if p["slug"] == "physics":
+            body+='<aside class="guide-aside"><h3>Compact Calabi–Yau transitions</h3><p>The <a href="/research/calabi-yau/#six-paper-guide">six-paper mathematical reading guide</a> follows the geometric argument from local singularities to mirror relations. Its <a href="/research/calabi-yau/#physics-companions">optional physics route</a> connects that geometry to the four compact-Higgs papers below.</p></aside>'
         if p["slug"] == "geometry":
             body+='<section class="section-block" id="stability-degeneration"><p class="kicker">Stability walls and geometric degeneration</p><h2>From realizable chambers to metrics and flows.</h2><div class="prose-columns"><div><h3>The geometric route</h3><p>Begin with the toric tangent stability papers, then <a href="/papers/toric-local-stability-chambers/">local stability chambers</a>. Continue to <a href="/papers/nonsimplicial-toric-stability-chambers/">nonsimplicial tangent chambers</a>, which constructs genuine weak-Fano examples and determines their accessible slope parameters.</p></div><div><h3>The analytic route</h3><p>Begin with <a href="/papers/small-dolbeault-stability-walls/">eigenvalues near stability walls</a>, then <a href="/papers/uniform-hermitian-einstein-spectra/">uniform spectra for bipartite extensions</a>. The earlier <a href="/papers/small-dolbeault-eigenvalues/">HYM-flow paper</a> supplies the dynamical entry point.</p></div></div><aside class="guide-aside"><h3>Where the routes meet</h3><p><a href="/papers/metric-response-hym-flow/">Metric response and Hermitian Yang–Mills flow for two-step extensions</a> brings the independently proved geometry and spectral mechanism together with metric-response, inverse and actual-flow results on the same tangent bundles. The spectral paper does not depend on these particular examples, and the geometric paper does not depend on the spectral analysis.</p><p class="small">The broader programme asks for repeated-factor and higher-step extensions, singular graded objects and moduli-metric degeneration. Those require further theorems. Cycles can retain harmonic extension data, and flows can retain initial-metric information.</p></aside></section>'
         body+=f'<section><p class="kicker">{len(p["slugs"])} papers · Suggested reading sequence</p><h2>The manuscripts.</h2><ol class="program-papers">'
@@ -239,6 +243,8 @@ def build_research():
             item=by_slug[slug]
             body+=f'''<li><span class="paper-number">{i+1:02}</span><div><h3><a href="/papers/{slug}/">{E(item["title"])}</a></h3><p class="small">{E(roles.get(slug,item["label"]))}</p><p class="small">{E(item["status"])} · {item["publication_date"][:4]} · <a href="/papers/{slug}/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary>{item["abstract_html"]}</details></div></li>'''
         body+='</ol></section>'
+        if p["slug"] == "calabi-yau":
+            body+=(ROOT/"content/calabi-yau-physics-companions.html").read_text()
         page(f'research/{p["slug"]}/index.html',p["name"],p["intro"],body,image=p["image"])
 
 def build_about():

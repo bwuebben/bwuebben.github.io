@@ -29,7 +29,12 @@
       "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/paper1"
     }
   ],
-  "related": [],
+  "related": [
+    {
+      "label": "Six-paper reading guide",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#six-paper-guide"
+    }
+  ],
   "verified_on": "2026-10-25",
   "abstract_html": "<p>We construct projective Calabi–Yau threefolds with isolated Gorenstein canonical singularities that admit no smoothing, as anticanonical hypersurfaces in Gorenstein Fano toric fourfolds. One example has a unique singularity, the anticanonical cone over the first Hirzebruch surface. Another has a unique singularity whose reduced miniversal base is a smooth curve but whose deformations are all singular. The construction combines Altmann’s deformation theory with the smoothing criterion of Corti–Filip–Petracci: a two-dimensional face of the ambient fan polytope with primitive edges obstructs smoothing if it has no Minkowski decomposition into unit segments and unimodular triangles. We also classify the 217 isolated Gorenstein toric threefold singularities whose polygon edge vectors have coordinates in <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow><annotation encoding=\"application/x-tex\">[-2,2]</annotation></semantics></math> in some lattice basis, recording their deformation types and smoothing components. A scan of the Kreuzer–Skarke classification finds this obstruction in <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>39</mn><mo>,</mo><mn>175</mn><mo>,</mo><mn>536</mn></mrow><annotation encoding=\"application/x-tex\">39{,}175{,}536</annotation></semantics></math> of its <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>473</mn><mo>,</mo><mn>800</mn><mo>,</mo><mn>776</mn></mrow><annotation encoding=\"application/x-tex\">473{,}800{,}776</annotation></semantics></math> polytopes (approximately <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8.27</mn><mi>%</mi></mrow><annotation encoding=\"application/x-tex\">8.27\\%</annotation></semantics></math>), whose generic anticanonical hypersurfaces therefore admit no smoothing.</p>",
   "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/paper1/cy-non-smoothable.pdf",
