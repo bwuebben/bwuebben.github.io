@@ -14,7 +14,7 @@ The page at `/conifold-lab/` uses this website's shared navigation, fonts, and l
 
 From the repository root, run `python3 -m http.server 8000 --bind 127.0.0.1` and visit <http://127.0.0.1:8000/conifold-lab/>. After editing the page or explorer assets, run `python3 tools/update-site.py` and `python3 tools/update-site.py --check`. This refreshes navigation, theme metadata, and asset versions. There are no external runtime dependencies, remote fonts, analytics, or server-side calls.
 
-Do not copy `.openai/hosting.json` into your existing website: it is Sites deployment configuration. For an existing React or other component application, isolate the explorer in an iframe to keep its global document listeners and styles separate. The equations and lattice routines are also available independently as `ConifoldModel` from model.js.
+For an existing React or other component application, isolate the explorer in an iframe to keep its global document listeners and styles separate. The equations and lattice routines are also available independently as `ConifoldModel` from model.js.
 
 ## Mathematical scope
 
@@ -26,9 +26,9 @@ The relation tab transcribes X₉, X₁₉ and X₂₀ from §11.1, §11.2 and T
 
 ## Validation
 
-Run `node tests/validate.cjs`. The validation harness uses the actual app listeners and renderer with a minimal DOM and a native offline canvas. In this environment, the native canvas and SVG rasterizer are installed in the Codex primary runtime. Mathematical assertions cover ranks, full support, forced zeros, circuit residuals, local quadric identities, Hopf fibre identities and topology formulas. Interaction assertions cover all modes, sliders, phase/ruling controls, playback, camera, node selection and dialogs.
+Run `node tests/validate.cjs`. The validation harness uses the actual app listeners and renderer with a minimal DOM and a native offline canvas. Mathematical assertions cover ranks, full support, forced zeros, circuit residuals, local quadric identities, Hopf fibre identities and topology formulas. Interaction assertions cover all modes, sliders, phase/ruling controls, playback, camera, node selection and dialogs.
 
-Browser layout, native pointer capture and browser rendering were not tested in the managed Sites environment. Offline canvas and SVG frames were inspected. Reduced motion substitutes static threshold, smoothing and mirror-lift actions for the three movies; phase, stage and lift buttons remain available. Leaving a mode stops its animation.
+Browser layout, native pointer capture and browser rendering are not covered by the offline harness. Offline canvas and SVG frames were inspected. Reduced motion substitutes static threshold, smoothing and mirror-lift actions for the three movies; phase, stage and lift buttons remain available. Leaving a mode stops its animation.
 
 ## Primary references
 

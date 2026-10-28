@@ -3,13 +3,7 @@
 Source for my personal site, published by GitHub Pages at
 **<https://bwuebben.github.io/>**.
 
-**Paper releases:** follow [PUBLICATION_WORKFLOW.md](PUBLICATION_WORKFLOW.md).
-The standing procedure covers SSRN/arXiv routing, Zenodo while arXiv-bound papers
-wait, version updates, and ORCID verification, with the canonical instructions
-in the sibling `papers_ai_1` research repository.
-
-**Publication and discoverability backlog:** [TODO.md](TODO.md) tracks complete
-Zenodo coverage, Zenodo search visibility, Google Scholar, and ongoing ORCID checks.
+Paper releases follow the release protocol kept in the papers repository.
 
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
@@ -19,49 +13,11 @@ page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
 
-Paper 3, *Local stability chambers for toric tangent bundles*, was released on
-26 October 2026. Its individual page, the papers catalogue, the Geometry & Moduli
-guide, related-paper links, Updates/RSS, and sitemap are maintained together.
-Its 27 October revision adds the repository URL and supplement path in the PDF;
-the latest archive is [Zenodo:23682140](https://zenodo.org/records/23682140).
-The spectral companion, *Small Dolbeault eigenvalues near stability walls*,
-was released on 27 October 2026 with
-[Zenodo:23717764](https://zenodo.org/records/23717764). Its paper page,
-catalogue entry, Geometry & Moduli reading sequence, related-paper links,
-Updates/RSS and sitemap are maintained together. Both preprints await arXiv.
-
-The stability-degeneration trilogy adds three papers on uniform HE spectra,
-nonsimplicial toric tangent chambers, and metric response and HYM flow. They
-form a named programme within the Geometry & moduli guide and the catalogue's
-Moduli spaces and geometric analysis section. The catalogue now has 44 papers
-and 38 verified PDF mirrors. Bernd explicitly chose website publication first,
-then a bounded determinant investigation, then Zenodo deposits and DOI retrieval.
-The determinant extension is included in Paper III. All three released PDFs are
-archived on Zenodo (23717660, 23717722, 23717742), with corresponding DOI citations
-and verified public ORCID entries. arXiv submissions remain queued; see TODO.md.
-
-**arXiv precedence — standing preference, 27 October 2026.** Once public, a
-paper’s arXiv page, identifier and DOI take precedence over Zenodo in website
-reading links and citations. Keep the public-repository PDF link; preserve Zenodo
-as archival history. See [the publication procedure](PUBLICATION_WORKFLOW.md).
-
-The 28 October 2026 release, *Relative metric estimates near reducible
-Yang–Mills connections*, adds a Singular quotient metrics subsection to the
-catalogue and Geometry & moduli guide, with reciprocal links to the HE spectrum
-and finite-Planck Higgs papers. Its archive is
-[Zenodo:23740619](https://zenodo.org/records/23740619). The catalogue now has
-45 papers and 39 verified PDF mirrors. arXiv submission is pending.
-
-## Approved editorial website
-
-The redesigned site was approved for publication on 25 October 2026. Start with
-[RESUME.md](RESUME.md) for its source map, complete rebuild sequence, and checks.
-The review hub, preview server, and preserved old homepage are kept off the
-production branch. The essays are included as approved publications.
+## Site structure
 
 The top navigation is Home, Papers, Research guides, Writing, Explorers, Updates,
 and About. The catalogue keeps subject navigation and complete descriptions;
-there are no search or filter controls. New routes include `/research/` and six
+there are no search or filter controls. Its routes include `/research/` and six
 subject guides, `/explorers/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
 
@@ -71,6 +27,27 @@ identity metadata from `data/person.json`. The essay sources live in
 `content/`. Do not edit their generated HTML directly. The complete rebuild ends
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
 keep the public sitemap and paper pages current.
+
+## Rebuilding and checks
+
+Run the whole sequence after any change to editorial sources, essays or paper
+data; intermediate states are not consistent, because later steps restore shared
+navigation and the sitemap.
+
+```sh
+python3 tools/build-editorial.py
+python3 tools/build-essays.py
+python3 tools/integrate-site.py
+python3 tools/update-papers.py
+python3 tools/update-site.py --check
+python3 tools/update-papers.py --check
+python3 tools/check-editorial.py
+node tools/check-essay-models.cjs
+for f in tools/essay-checks/*.cjs; do node "$f"; done
+for f in assets/essays/*.js; do node --check "$f"; done
+node --check assets/essay-experiments.js
+git diff --check
+```
 
 ## Layout
 
@@ -185,10 +162,10 @@ and [Sitemaps report guide](https://support.google.com/webmasters/answer/7451001
 Each catalogue title opens a stable `/papers/<slug>/` page. The shared template
 contains the full author-written abstract, Scholar citation tags, ORCID and
 archive links, and a BibTeX download. Mathematical notation is static MathML;
-the page, abstract, and navigation require no JavaScript. Thirty-eight pages
-currently serve verified public PDFs. Six SSRN-only papers have their complete
+the page, abstract, and navigation require no JavaScript. Most pages
+serve a verified public PDF. SSRN-only papers without a public PDF have their complete
 registered abstracts and a **Read on SSRN** link while PDF downloads are blocked;
-their missing mirrors are tracked in TODO.md and the catalogue data. Do not
+their missing mirrors are tracked in the catalogue data. Do not
 advertise a local PDF or emit `citation_pdf_url` when no local PDF exists.
 
 Edit `data/papers.json`, `templates/paper.html`, and `assets/paper.css`, rather
@@ -422,16 +399,9 @@ To move the site to a domain of your own, add a `CNAME` file containing the bare
 domain, point the DNS records at GitHub, and enable *Enforce HTTPS* in the
 repository's Pages settings.
 
-On 27 October 2026, five newly released abstracts and catalogue descriptions
-were reviewed. The trilogy abstracts were revised, the earlier spectral
-abstract gained the rescaled/unitary eigensection qualifier, and the toric
-local-chamber abstract was retained. All five catalogue paragraphs were
-revised. The four revised PDFs, full abstracts, archive versions and citation
-metadata are synchronized; mathematical text and computation code are unchanged.
+## Calabi–Yau reading guide
 
-## Calabi–Yau reading guide — 27 October 2026
-
-The [Calabi–Yau guide](https://bwuebben.github.io/research/calabi-yau/) now gives
+The [Calabi–Yau guide](https://bwuebben.github.io/research/calabi-yau/) gives
 separate routes through the six mathematical papers, with the four compact-Higgs
 papers as optional physics companions. The main physics sequence is 1 → 2 → 4;
 Paper 3 is a specialist branch after 2. Its source fragments are

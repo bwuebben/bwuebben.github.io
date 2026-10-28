@@ -325,6 +325,8 @@ def stage_table():
 
 def build_research():
     page("research/index.html","Research","Reading guides to six strands of research by Bernd Wuebben.",'''<header class="page-intro"><p class="kicker">Research programs</p><h1>The questions<br>behind the papers.</h1><p class="intro">A paper isolates one question, sharply enough that an argument becomes possible. The sharpening has a price: the paper stops saying which constructions it borrowed, which distinctions it exposed for its neighbours, and what it left unresolved. These guides put that context back.</p><p><a class="button" href="/papers/">Complete collection of research papers ↗</a></p></header>'''+guide_rows()+stage_table()+(ROOT/"content/research-connections.html").read_text(),image="geometry")
+    missing=[slug for p in programs for slug in p["slugs"] if slug not in roles]
+    assert not missing,"Every paper in a guide needs a one-line role in roles: "+", ".join(missing)
     for p in programs:
         focus=focus_sections(FOCUS.get(p["slug"],[]))
         body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / {E(p["name"])}</p><h1>{p["question"]}</h1><p class="intro">{p["intro"]}</p></div><img src="/assets/illustrations/{p["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(p["name"])}"></header>'''

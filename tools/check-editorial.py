@@ -51,7 +51,7 @@ for key in AUTHORIZED_CATALOGUE_UPDATES:
  old_links=set(re.findall(r'href="([^"]+)"',old));new_links=set(re.findall(r'href="([^"]+)"',new))
  if key in ARXIV_CATALOGUE_UPDATES:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
-  assert len(re.findall(r'href="https://arxiv.org/abs/2610\.359(?:11|15)"',new))==1,"Expected one primary arXiv link"
+  assert len(re.findall(r'href="https://arxiv\.org/abs/\d{4}\.\d{4,5}(?:v\d+)?"',new))==1,"Expected one primary arXiv link"
   assert "zenodo.org/records/" not in new,"arXiv must replace the visible Zenodo link"
  if key in REVISED_METADATA:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
@@ -70,6 +70,17 @@ guide_links=[]
 for guide in (ROOT/"research").glob("*/index.html"):
  guide_links+=re.findall(r'<h3><a href="/papers/([^/]+)/">',guide.read_text())
 assert len(guide_links)==len(papers) and set(guide_links)=={p["slug"] for p in papers},"Research guides must cover every paper exactly once"
+# Catalogue lists keep the shared entry styling (an unstyled list shows bullets).
+catalogue=(ROOT/"papers/index.html").read_text()
+assert not re.search(r'<ul(?![^>]*class="entries")[^>]*>',catalogue[catalogue.index("<main"):]),"Catalogue lists must use class=\"entries\""
+# Absolute links to this site in pages and data must resolve locally, including anchors.
+for path in pages+[ROOT/"data/papers.json",ROOT/"data/updates.json"]:
+ text=re.sub(r'<script type="application/ld\+json">.*?</script>','',path.read_text(),flags=re.S)
+ for url in re.findall(r'https://bwuebben\.github\.io(/[^"\'\s<>)]*)',text):
+  parts=urlsplit(url);target=ROOT/unquote(parts.path).lstrip("/")
+  if target.is_dir() or not parts.path.lstrip("/"):target/="index.html"
+  if not target.exists():errors.append(str(path.relative_to(ROOT))+": missing https://bwuebben.github.io"+url)
+  elif parts.fragment and target.suffix==".html" and unquote(parts.fragment) not in Page(target.read_text()).ids:errors.append(str(path.relative_to(ROOT))+": missing fragment https://bwuebben.github.io"+url)
 ET.fromstring((ROOT/"feed.xml").read_text())
 tree=ET.fromstring((ROOT/"sitemap.xml").read_text())
 locations=[n[0].text for n in tree]
