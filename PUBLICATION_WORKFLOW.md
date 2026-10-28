@@ -13,6 +13,13 @@ default below when that task is carried out. ORCID verification remains mandator
 after every public release, additional archive deposit, and revision; it is not
 a one-time cleanup.
 
+**Standing preference (27 October 2026):** once a paper is public on arXiv, its
+landing page, identifier and arXiv DOI take precedence over Zenodo on the website
+and in citations. Keep Zenodo as archival history, not the primary reading or
+citation destination. Retain the public-repository current-PDF link. A newly
+listed arXiv DOI may need time to resolve; record that delay and use the arXiv
+landing page for reading.
+
 1. Identify the exact manuscript and existing archive identifiers. Decide whether
    it follows the SSRN or arXiv route, using the already agreed choice when known.
 2. For SSRN, publish/revise there and verify the public DOI. For an arXiv-bound
@@ -41,8 +48,8 @@ a one-time cleanup.
    This is required for papers awaiting arXiv that are not already on arXiv or
    SSRN; do not replace the current-PDF link with the archived PDF. On a new Zenodo
    version, update this link and label to the latest published record and retain
-   the version/concept DOI history in the ledger. Keep an existing Zenodo link
-   when an arXiv link is later added. Distinguish pending submissions from public
+   the version/concept DOI history in the ledger. Retain Zenodo identifiers
+   in the archival ledger when an arXiv link replaces them. Distinguish pending submissions from public
    papers. Do not put private package paths or draft URLs on pages.
    Maintain the paper's stable `/papers/<slug>/` page through `data/papers.json`
    and `templates/paper.html`: full manuscript abstract, actual title/authors,

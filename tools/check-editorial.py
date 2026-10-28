@@ -6,12 +6,14 @@ from urllib.parse import urlsplit, unquote
 import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
-AUTHORIZED_CATALOGUE_UPDATES={"toric-local-stability-chambers", "small-dolbeault-stability-walls"}
+ARXIV_CATALOGUE_UPDATES={"calabi-yau-smoothability-paper4", "calabi-yau-smoothability-paper5"}
+AUTHORIZED_CATALOGUE_UPDATES={"toric-local-stability-chambers", "small-dolbeault-stability-walls"} | ARXIV_CATALOGUE_UPDATES
 # The 27 October abstract review authorizes prose changes for these two entries
 # and a new manuscript/archive version only for the spectral companion.
 REVISED_METADATA={"small-dolbeault-stability-walls": {
  "abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "citation_doi"
-}}
+}, "cy-vanishing-cycle": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"},
+ "cy-mixed-smoothing": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"}}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)
@@ -47,6 +49,10 @@ for key in AUTHORIZED_CATALOGUE_UPDATES:
  old=old_entries[key];new=new_entries[key]
  assert re.search(r'<span class="entry-title">.*?</span>',old,re.S)[0]==re.search(r'<span class="entry-title">.*?</span>',new,re.S)[0],"Existing title changed"
  old_links=set(re.findall(r'href="([^"]+)"',old));new_links=set(re.findall(r'href="([^"]+)"',new))
+ if key in ARXIV_CATALOGUE_UPDATES:
+  old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
+  assert len(re.findall(r'href="https://arxiv.org/abs/2610\.359(?:11|15)"',new))==1,"Expected one primary arXiv link"
+  assert "zenodo.org/records/" not in new,"arXiv must replace the visible Zenodo link"
  if key in REVISED_METADATA:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
   assert len(re.findall(r'href="https://zenodo.org/records/\d+"',new))==1,"Expected one current archive link"

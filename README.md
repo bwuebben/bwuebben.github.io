@@ -40,6 +40,11 @@ The determinant extension is included in Paper III. All three released PDFs are
 archived on Zenodo (23717660, 23717722, 23717742), with corresponding DOI citations
 and verified public ORCID entries. arXiv submissions remain queued; see TODO.md.
 
+**arXiv precedence — standing preference, 27 October 2026.** Once public, a
+paper’s arXiv page, identifier and DOI take precedence over Zenodo in website
+reading links and citations. Keep the public-repository PDF link; preserve Zenodo
+as archival history. See [the publication procedure](PUBLICATION_WORKFLOW.md).
+
 ## Approved editorial website
 
 The redesigned site was approved for publication on 25 October 2026. Start with
