@@ -2,7 +2,15 @@
 
 Requested by Bernd on 25 October 2026. These items are pending; recording them
 does not mean that deposits or indexing have been completed. Scope: all publicly
-released papers listed on the website, currently 41, not private research drafts.
+released papers listed on the website, currently 44, not private research drafts.
+
+## Current archive and ORCID check — 27 October 2026
+
+- Calabi–Yau Papers IV and V are public as [arXiv:2610.35911](https://arxiv.org/abs/2610.35911) and [arXiv:2610.35915](https://arxiv.org/abs/2610.35915). Their arXiv landing pages and DOIs now take precedence on the website and in citations; Zenodo remains archival history.
+- The [expanded Calabi–Yau reading guide](https://bwuebben.github.io/research/calabi-yau/) is live, with six mathematical papers and four optional physics companions.
+- All **44** website papers match exactly one public ORCID work group each, including the three stability-degeneration papers and their revised archives. No recent paper needs to be added as a duplicate.
+- Paper V’s new arXiv DOI has reached its ORCID group. Paper IV’s arXiv identifier and preferred arXiv account records remain pending ORCID sign-in. Both new DOI resolver URLs still returned 404 at verification; the arXiv pages themselves are live.
+- Verification and resume details: `../papers_ai_1/cy_smoothing/release_arxiv_20261027/README.md`. The dated inventories below retain their historical scope.
 
 ## Next-session reminder
 
