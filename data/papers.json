@@ -676,6 +676,10 @@
         {
           "label": "Small Dolbeault eigenvalues near stability walls",
           "url": "https://bwuebben.github.io/papers/small-dolbeault-stability-walls/"
+        },
+        {
+          "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+          "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1150,6 +1154,10 @@
         {
           "label": "Small Dolbeault eigenvalues near stability walls",
           "url": "https://bwuebben.github.io/papers/small-dolbeault-stability-walls/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
         }
       ],
       "verified_on": "2026-10-25",
@@ -1209,6 +1217,14 @@
         {
           "label": "Small Dolbeault eigenvalues along Hermitian Yang–Mills flow",
           "url": "https://bwuebben.github.io/papers/small-dolbeault-eigenvalues/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+          "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1223,6 +1239,171 @@
         "source_commit": "75f5bae32abcec8006165eee8bff5306fb78e5ff",
         "source_repository": "https://github.com/bwuebben/small-dolbeault-eigenvalues",
         "source_path": "paper3/paper/main.pdf"
+      }
+    },
+    {
+      "slug": "uniform-hermitian-einstein-spectra",
+      "catalogue_title": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+      "catalogue_anchor": "uniform-hermitian-einstein-spectra",
+      "title": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-27",
+      "revision_date": null,
+      "archive": null,
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iii"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+          "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        }
+      ],
+      "verified_on": "2026-10-27",
+      "abstract_html": "<p>We determine the complete small spectrum of Hermitian–Einstein bundles near intersections of slope-stability walls. Consider a fixed extension of one direct sum of stable bundles by another, with pairwise nonisomorphic factors of equal slope at the reference Kähler form. Assume that its nonzero extension components have connected support. In the local stable chamber, the small eigenvalues of the Dolbeault Laplacian on trace-free endomorphisms agree with those of a balanced, rank-weighted graph Laplacian to relative error <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>O</mi><mo>(</mo><mi>σ</mi><mo>)</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>σ</mi></mrow></math> is the total balanced conductance. The estimate holds for every small eigenvalue, uniformly through arbitrary positive ratios of the stability margins, and the remaining spectrum has a uniform gap.</p><p>The construction uses exact curvature identities on graph cuts. These control the nonlinear error relative to each cut capacity and give an actual Hermitian–Einstein metric even when the ordinary inverse of the finite Laplacian is unbounded. We also obtain a relative metric approximation, coefficient-stability estimates, and a spanning-tree formula for the product of the small eigenvalues. Trees have slope-determined leading weights, whereas cyclic supports retain harmonic extension data.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.tex",
+      "pdf": {
+        "sha256": "e6b2fe6254e94a4f7178775c649ef71f0ba2730a8f0fad0b957465ec797172a3",
+        "size_bytes": 401492,
+        "pages": 21,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf",
+        "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/iii/paper.pdf"
+      }
+    },
+    {
+      "slug": "nonsimplicial-toric-stability-chambers",
+      "catalogue_title": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "catalogue_anchor": "nonsimplicial-toric-stability-chambers",
+      "title": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-27",
+      "revision_date": null,
+      "archive": null,
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iv"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+          "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        }
+      ],
+      "verified_on": "2026-10-27",
+      "abstract_html": "<p>We construct smooth projective toric varieties whose tangent bundles have nonsimplicial local slope-stability chambers. For every positive integer <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math>, a double projective-line bundle over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mrow><mo>(</mo><msup><mi>ℙ</mi><mn>1</mn></msup><mo>)</mo></mrow><mrow><mn>2</mn><mi>k</mi></mrow></msup></mrow></math> has an ample real polarization at which the tangent bundle is strictly semistable. Its invariant saturated subsheaves of the same slope form the ideal lattice of the complete bipartite poset with two minimal and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>k</mi></mrow></math> maximal elements. The tangent bundle is an extension of a sum of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>k</mi></mrow></math> stable line bundles by a sum of two stable line bundles, with every component extension class nonzero. At the reference class all line factors have equal slope. Their slopes after subtracting the common mean give <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></mrow></math> independent local polarization parameters. The local semistable set is analytically equivalent to a pointed cone with section <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>Δ</mi><mn>1</mn></msup><mo>×</mo><msup><mi>Δ</mi><mrow><mn>2</mn><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></math>, times a line. The varieties are weak Fano and are not Fano. The four-dimensional example has an irrational reference polarization and attains the minimum dimension and Picard rank for a nonsimplicial chamber with a nearby stable locus.</p><p>For a smooth projective toric variety whose tangent bundle is semistable at an ample real class, its invariant saturated subsheaves of equal slope define a finite poset. We express the local semistable set by order-ideal slope inequalities restricted to the degree vectors obtained from polarizations, together with a vector-space factor. No local-freeness assumption on those subsheaves is required. We determine the ordinary local topology and localize the nearby Harder–Narasimhan filtrations to the original equality lattice. For the constructed family, the equality subbundles are relative tangent bundles of smooth projections.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iv/paper.tex",
+      "pdf": {
+        "sha256": "1a9856a2fd573dfe0b0f6df22b2a78027d8f844154406a3fafe652b7fb349dc2",
+        "size_bytes": 420392,
+        "pages": 19,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iv/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf",
+        "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/iv/paper.pdf"
+      }
+    },
+    {
+      "slug": "metric-response-hym-flow",
+      "catalogue_title": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+      "catalogue_anchor": "metric-response-hym-flow",
+      "title": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-27",
+      "revision_date": null,
+      "archive": null,
+      "citation_doi": null,
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/v"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+          "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+        },
+        {
+          "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+          "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+        }
+      ],
+      "verified_on": "2026-10-27",
+      "abstract_html": "<p>We study metric variation and Hermitian Yang–Mills flow near intersections of stability walls for an extension of one direct sum of stable bundles by another. The factors are pairwise nonisomorphic and have equal slope at the reference Kähler form, and the nonzero extension components have connected support. When the centered factor slopes give full local parameters, every singular value of the intrinsic Hermitian–Einstein metric derivative is relatively asymptotic to the reciprocal of an eigenvalue of a balanced, rank-weighted graph Laplacian. The error is uniform through arbitrarily separated positive distances to the walls. An exact Schur-complement formula separates the singular finite-dimensional contribution to the linearized inverse from a uniformly regular complement.</p><p>For the flow, we construct a finite-dimensional invariant manifold whose reduced evolution reconstructs exact HYM solutions. For any smooth initial-metric family and prescribed tolerance, we first choose a sufficiently large comparison time and then a parameter neighborhood. For every later time the actual metric remains multiplicatively close to a constant scalar multiple of the reconstructed solution, and each small eigenvalue of the Dolbeault Laplacian on trace-free endomorphisms has the prescribed relative accuracy. In the two-factor case, we give a uniform profile for the smallest such eigenvalue as the slope difference crosses zero, including exponential decay on the unstable side. Finally, for tangent bundles of explicit weak Fano toric varieties, a single theorem connects the realized chamber and tangent filtration to the finite operator, every small eigenvalue, metric degeneration, inverse and parameter response, and actual flow.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/v/paper.tex",
+      "pdf": {
+        "sha256": "3d6f4aadd9991a7b26d12ff3bb32dcdfb1ac17b9d4b3724e91b21836231c1a9c",
+        "size_bytes": 493227,
+        "pages": 27,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/v/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf",
+        "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/v/paper.pdf"
       }
     },
     {

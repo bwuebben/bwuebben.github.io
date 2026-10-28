@@ -21,10 +21,24 @@ public ORCID coverage. Its 27 October link correction is archived as
 Zenodo:23682140; the earlier version remains available. The inventory was 40 paper pages, 34 PDF mirrors,
 and 22 Zenodo archives at that point. The spectral companion, *Small Dolbeault
 eigenvalues near stability walls*, was added on 27 October 2026 with Zenodo
-record 23682045 and verified public ORCID coverage. The current inventory is
+record 23682045 and verified public ORCID coverage. The inventory at that point was
 41 paper pages, 35 PDF mirrors and 23 Zenodo archives. Both new papers remain pending arXiv submission. The 18 older
 archive deposits and six SSRN PDF mirrors
 listed below remain pending.
+
+The stability-degeneration trilogy brings the catalogue to 44 papers and 38 PDF
+mirrors. The existing 23 Zenodo archives are unchanged. For these three new
+papers, Bernd explicitly requested website publication, a bounded determinant
+investigation, and then Zenodo upload and DOI retrieval, in that order.
+
+- [ ] Archive the final versions of the uniform HE spectra, nonsimplicial toric
+  chambers, and metric-response/HYM papers after the determinant investigation;
+  verify each DOI and downloaded PDF, then add the three archive links and
+  version-appropriate citation identifiers.
+- [ ] Verify ORCID coverage for all three new manuscripts and subsequent
+  versions; coordinate the additions with the final DOI records.
+- [ ] Add the trilogy to the arXiv queue and verify current submission capacity
+  when scheduling; no arXiv submission is implied by website publication.
 
 ## Open work
 

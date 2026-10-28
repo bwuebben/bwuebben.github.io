@@ -1,0 +1,55 @@
+{
+  "slug": "uniform-hermitian-einstein-spectra",
+  "catalogue_title": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+  "catalogue_anchor": "uniform-hermitian-einstein-spectra",
+  "title": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-27",
+  "revision_date": null,
+  "archive": null,
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iii"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+    },
+    {
+      "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+      "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+    }
+  ],
+  "verified_on": "2026-10-27",
+  "abstract_html": "<p>We determine the complete small spectrum of Hermitian–Einstein bundles near intersections of slope-stability walls. Consider a fixed extension of one direct sum of stable bundles by another, with pairwise nonisomorphic factors of equal slope at the reference Kähler form. Assume that its nonzero extension components have connected support. In the local stable chamber, the small eigenvalues of the Dolbeault Laplacian on trace-free endomorphisms agree with those of a balanced, rank-weighted graph Laplacian to relative error <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>O</mi><mo>(</mo><mi>σ</mi><mo>)</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>σ</mi></mrow></math> is the total balanced conductance. The estimate holds for every small eigenvalue, uniformly through arbitrary positive ratios of the stability margins, and the remaining spectrum has a uniform gap.</p><p>The construction uses exact curvature identities on graph cuts. These control the nonlinear error relative to each cut capacity and give an actual Hermitian–Einstein metric even when the ordinary inverse of the finite Laplacian is unbounded. We also obtain a relative metric approximation, coefficient-stability estimates, and a spanning-tree formula for the product of the small eigenvalues. Trees have slope-determined leading weights, whereas cyclic supports retain harmonic extension data.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.tex",
+  "pdf": {
+    "sha256": "e6b2fe6254e94a4f7178775c649ef71f0ba2730a8f0fad0b957465ec797172a3",
+    "size_bytes": 401492,
+    "pages": 21,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/iii/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf",
+    "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/iii/paper.pdf"
+  }
+}

@@ -5,7 +5,8 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
 import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
-BASE="8931bcd957786ef8e8c94c34cf804353a714b89a"  # Fixed public baseline, not the mutable preview HEAD.
+BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
+CATALOGUE_CROSSLINKS={"toric-local-stability-chambers", "small-dolbeault-stability-walls"}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)
@@ -36,7 +37,11 @@ after=(ROOT/"papers/index.html").read_text()
 entry=re.compile(r'<li id="[^"]+">\s*<span class="entry-title">.*?</li>',re.S)
 old_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(before)}
 new_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(after)}
-assert all(new_entries.get(k)==v for k,v in old_entries.items()),"Existing paper catalogue entries changed"
+assert all(new_entries.get(k)==v for k,v in old_entries.items() if k not in CATALOGUE_CROSSLINKS),"Unrelated paper catalogue entries changed"
+for key in CATALOGUE_CROSSLINKS:
+ old=old_entries[key];new=new_entries[key]
+ assert re.search(r'<span class="entry-title">.*?</span>',old,re.S)[0]==re.search(r'<span class="entry-title">.*?</span>',new,re.S)[0],"Existing title changed"
+ assert set(re.findall(r'href="([^"]+)"',old)) <= set(re.findall(r'href="([^"]+)"',new)),"Existing paper resource removed"
 papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
 old_papers=json.loads(subprocess.check_output(["git","show",BASE+":data/papers.json"],cwd=ROOT))["papers"]
 by_slug={p["slug"]:p for p in papers}

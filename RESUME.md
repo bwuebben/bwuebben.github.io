@@ -11,7 +11,7 @@ The homepage puts research first, with its portrait floated into the introductio
 smaller headings, and six selected papers in two rows. The selections are
 Validation Bottleneck, Mirror Symmetry for Conifold Relations, Page Curve,
 AI-Native Asset Manager, Cobordism Maps I, and the finite-Planck Higgs Branch paper.
-The Papers page has subject links and all 41 entries, without search/filter controls
+The Papers page has subject links and all 44 entries, without search/filter controls
 or the former introductory paragraph. About is last in the top navigation.
 
 The release includes six research guides, the explorer gallery, Writing, About,
@@ -19,6 +19,14 @@ Updates, RSS, and both approved essays: What does an institution know? and The
 material conditions of intelligence. Their models remain illustrative, with their
 assumptions and limitations stated. No manuscript, bibliography, archive identity,
 or public PDF has been revised by the redesign.
+
+On 27 October, the stability-degeneration trilogy was added as a named programme
+within Geometry & moduli: the three new papers remain together in the catalogue,
+with geometric and analytic reading routes in the guide. The guide now has
+12 papers. Bernd requested website publication before the determinant extension
+attempt and subsequent Zenodo/DOI work; the three archives and ORCID checks remain
+pending. See TODO.md. The page generator supports a verified PDF without an
+archive identifier and uses the stable manuscript URL for its citation.
 
 ## Source and rebuild
 
@@ -59,11 +67,12 @@ node --check assets/essay-experiments.js
 git diff --check
 ```
 
-The preservation check compares existing manuscript metadata and catalogue
-entries with the pre-redesign public baseline `8931bcd`. New paper records
-and related links can be added; every existing record and link is preserved.
-It derives catalogue and guide counts from `data/papers.json`. Change the explicit
-baseline when an authorized revision changes an existing manuscript record.
+The preservation check compares paper records and catalogue entries with public
+baseline `d3e1bf2`. It permits the two authorized cross-link additions to the
+local-chambers and earlier equilibrium-spectrum entries, preserving their titles,
+existing resource links and manuscript metadata. It derives catalogue and guide
+counts from `data/papers.json`. Revise the baseline when a later authorized
+release changes existing manuscript metadata.
 
 Preview locally with `python3 -m http.server 8000 --bind 127.0.0.1`.
 GitHub Pages publishes `main` at `/`. After an authorized push, verify the Pages

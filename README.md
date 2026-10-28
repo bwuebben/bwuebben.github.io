@@ -28,8 +28,16 @@ The spectral companion, *Small Dolbeault eigenvalues near stability walls*,
 was released on 27 October 2026 with
 [Zenodo:23682045](https://zenodo.org/records/23682045). Its paper page,
 catalogue entry, Geometry & Moduli reading sequence, related-paper links,
-Updates/RSS and sitemap are maintained together. The catalogue now has
-41 papers and 35 verified PDF mirrors; both new preprints await arXiv.
+Updates/RSS and sitemap are maintained together. Both preprints await arXiv.
+
+The stability-degeneration trilogy adds three papers on uniform HE spectra,
+nonsimplicial toric tangent chambers, and metric response and HYM flow. They
+form a named programme within the Geometry & moduli guide and the catalogue's
+Moduli spaces and geometric analysis section. The catalogue now has 44 papers
+and 38 verified PDF mirrors. Bernd explicitly chose website publication first,
+then a bounded determinant investigation, then Zenodo deposits and DOI retrieval.
+Those archive identifiers, arXiv queue actions and ORCID verification are pending
+for these three papers. Their citation pages use stable manuscript URLs meanwhile.
 
 ## Approved editorial website
 
@@ -149,7 +157,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 41 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 44 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.

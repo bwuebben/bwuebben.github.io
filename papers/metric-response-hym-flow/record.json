@@ -1,0 +1,55 @@
+{
+  "slug": "metric-response-hym-flow",
+  "catalogue_title": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+  "catalogue_anchor": "metric-response-hym-flow",
+  "title": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-27",
+  "revision_date": null,
+  "archive": null,
+  "citation_doi": null,
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/v"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+      "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+    },
+    {
+      "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+    }
+  ],
+  "verified_on": "2026-10-27",
+  "abstract_html": "<p>We study metric variation and Hermitian Yang–Mills flow near intersections of stability walls for an extension of one direct sum of stable bundles by another. The factors are pairwise nonisomorphic and have equal slope at the reference Kähler form, and the nonzero extension components have connected support. When the centered factor slopes give full local parameters, every singular value of the intrinsic Hermitian–Einstein metric derivative is relatively asymptotic to the reciprocal of an eigenvalue of a balanced, rank-weighted graph Laplacian. The error is uniform through arbitrarily separated positive distances to the walls. An exact Schur-complement formula separates the singular finite-dimensional contribution to the linearized inverse from a uniformly regular complement.</p><p>For the flow, we construct a finite-dimensional invariant manifold whose reduced evolution reconstructs exact HYM solutions. For any smooth initial-metric family and prescribed tolerance, we first choose a sufficiently large comparison time and then a parameter neighborhood. For every later time the actual metric remains multiplicatively close to a constant scalar multiple of the reconstructed solution, and each small eigenvalue of the Dolbeault Laplacian on trace-free endomorphisms has the prescribed relative accuracy. In the two-factor case, we give a uniform profile for the smallest such eigenvalue as the slope difference crosses zero, including exponential decay on the unstable side. Finally, for tangent bundles of explicit weak Fano toric varieties, a single theorem connects the realized chamber and tangent filtration to the finite operator, every small eigenvalue, metric degeneration, inverse and parameter response, and actual flow.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/v/paper.tex",
+  "pdf": {
+    "sha256": "3d6f4aadd9991a7b26d12ff3bb32dcdfb1ac17b9d4b3724e91b21836231c1a9c",
+    "size_bytes": 493227,
+    "pages": 27,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9bdbb796049eb0b45210ca4451a17aebc49e1747/papers/v/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf",
+    "source_commit": "9bdbb796049eb0b45210ca4451a17aebc49e1747",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/v/paper.pdf"
+  }
+}
