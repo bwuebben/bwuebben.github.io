@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-29",
+    "title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+    "url": "/papers/repeated-factor-he-spectra/",
+    "description": "A new paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry & moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions."
+  },
+  {
+    "date": "2026-10-29",
     "title": "Toric tangent stability: complete census and geometric extensions",
     "url": "/research/geometry/#stability-degeneration",
     "description": "Two revised papers add a complete exact eightfold census and geometric criteria for tangent stability chambers. The census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. The chamber paper adds positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition. Both retain their original dates and display a separate version date."

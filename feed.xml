@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Uniform Hermitian–Einstein spectra with repeated stable factors</title>
+      <link>https://bwuebben.github.io/papers/repeated-factor-he-spectra/</link>
+      <guid>https://bwuebben.github.io/papers/repeated-factor-he-spectra/#update-2026-10-29</guid>
+      <description>A new paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry &amp; moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions.</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Toric tangent stability: complete census and geometric extensions</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-29</guid>

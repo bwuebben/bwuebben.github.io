@@ -1481,6 +1481,10 @@
         {
           "label": "Relative metric estimates near reducible Yang–Mills connections",
           "url": "https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1495,6 +1499,70 @@
         "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/iii/paper.pdf"
+      }
+    },
+    {
+      "slug": "repeated-factor-he-spectra",
+      "catalogue_title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+      "catalogue_anchor": "repeated-factor-he-spectra",
+      "title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-29",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23780241",
+        "url": "https://zenodo.org/records/23780241",
+        "deposited_at": "2026-10-29T21:13:25.971737+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23780241",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_spectra"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+          "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        },
+        {
+          "label": "Relative metric estimates near reducible Yang–Mills connections",
+          "url": "https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/"
+        }
+      ],
+      "verified_on": "2026-10-29",
+      "abstract_html": "<p>We prove uniform relative asymptotics for all small positive Dolbeault eigenvalues on trace-free endomorphism-valued zero-forms for Hermitian–Einstein metrics on simple two-step extensions near an equal-slope Kähler polarization. The stable factors may occur with arbitrary fixed multiplicities, with distinct isomorphism types in the two layers. The finite comparison operator is the commutator Laplacian on the full complex multiplicity algebra, evaluated at an independently balanced representative of the extension. Every small eigenvalue has relative error bounded by a fixed multiple of the total balanced extension energy, and the remaining spectrum has a uniform positive lower bound. No lower bound on positive eigenvalue ratios or stability margins is imposed. The main estimate bounds the curvature residual against every multiplicity projection by its crossing energy; a degree argument then compares the actual metric with the balanced metric without inverting a degenerating finite Hessian. A fixed rank-five bundle on a product of four projective lines exhibits six small modes and arbitrarily separated positive scales.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/4ce7547ec74d245e636d10416bde4e0939477492/papers/repeated_factor_spectra/main.tex",
+      "pdf": {
+        "sha256": "a54528e6aaad77be9ee7bcca8e09b55d9f0bcf444d53ffb52028851d4573a43d",
+        "size_bytes": 376534,
+        "pages": 18,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/4ce7547ec74d245e636d10416bde4e0939477492/papers/repeated_factor_spectra/main.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf",
+        "source_commit": "4ce7547ec74d245e636d10416bde4e0939477492",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/repeated_factor_spectra/main.pdf"
       }
     },
     {
@@ -1609,6 +1677,10 @@
         {
           "label": "Nonsimplicial local stability chambers of toric tangent bundles",
           "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1669,6 +1741,10 @@
         {
           "label": "The Higgs Branch of a Compact Calabi–Yau Transition at Finite Planck Mass",
           "url": "https://bwuebben.github.io/papers/compact-higgs-finite-planck/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
         }
       ],
       "verified_on": "2026-10-28",
