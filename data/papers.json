@@ -1038,14 +1038,14 @@
       "label": "Universal curve counting",
       "status": "Preprint",
       "publication_date": "2026-10-28",
-      "revision_date": null,
+      "revision_date": "2026-10-28",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23750047",
-        "url": "https://zenodo.org/records/23750047",
-        "deposited_at": "2026-10-29T00:28:00.454915+00:00"
+        "doi": "10.5281/zenodo.23750304",
+        "url": "https://zenodo.org/records/23750304",
+        "deposited_at": "2026-10-29T00:52:09.640936+00:00"
       },
-      "citation_doi": "10.5281/zenodo.23750047",
+      "citation_doi": "10.5281/zenodo.23750304",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1075,18 +1075,26 @@
         }
       ],
       "verified_on": "2026-10-28",
-      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/dc4158e385fafa38e8dadae2d861c4dfb9fc037c/paper/sections/abstract.tex",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/e46e7f672c525a97577787709759df18fe15f58a/paper/sections/abstract.tex",
       "abstract_html": "<p>For projective conifold transitions of Calabi–Yau threefolds, we lift the numerical degeneration formula to Pardon's rational universal curve-counting algebra. We assume a smoothing with smooth algebraic total space and torsion-free second homology at both endpoints. After removing the exceptional local-curve factors, effective lifts to the common blow-up give a support bound that makes specialization finite in every bounded target degree. We carry out this specialization completely in the primitive line class of a plane in the smoothing of a compact four-node transition. The source calculation uses an Euler-characteristic bound for pure curves on two intersecting rational surfaces, allowing arbitrary multiple exceptional components. Together with a finite genus-zero mirror calculation, this bound determines all 37 candidate universal coefficients: eight are nonzero, and their sum agrees with an independent stable-pair calculation on a plane in the smoothing. We also determine the smoothing coefficient in twice the line class. If the resolution has integral product exponents, then so does the smoothing.</p>",
       "pdf": {
-        "sha256": "4d8b6ec38834f76f8326560affc3bf546138d308dd30cbdfe70535ea3b6e75d8",
-        "size_bytes": 375148,
+        "sha256": "87f67b640c2bad3c295517fe680092f318cdeb163fcf7b6cf746ae0a57628692",
+        "size_bytes": 375652,
         "pages": 18,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/dc4158e385fafa38e8dadae2d861c4dfb9fc037c/paper/main.pdf",
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/e46e7f672c525a97577787709759df18fe15f58a/paper/main.pdf",
         "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/paper/main.pdf",
-        "source_commit": "dc4158e385fafa38e8dadae2d861c4dfb9fc037c",
+        "source_commit": "e46e7f672c525a97577787709759df18fe15f58a",
         "source_repository": "https://github.com/bwuebben/universal-curve-counting",
         "source_path": "paper/main.pdf"
-      }
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23750047",
+          "url": "https://zenodo.org/records/23750047",
+          "deposited_at": "2026-10-29T00:28:00.454915+00:00"
+        }
+      ]
     },
     {
       "slug": "universal-integrality-counterexample",
@@ -1102,14 +1110,14 @@
       "label": "Universal curve counting",
       "status": "Preprint",
       "publication_date": "2026-10-28",
-      "revision_date": null,
+      "revision_date": "2026-10-28",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23750049",
-        "url": "https://zenodo.org/records/23750049",
-        "deposited_at": "2026-10-29T00:28:01.472434+00:00"
+        "doi": "10.5281/zenodo.23750305",
+        "url": "https://zenodo.org/records/23750305",
+        "deposited_at": "2026-10-29T00:52:11.498760+00:00"
       },
-      "citation_doi": "10.5281/zenodo.23750049",
+      "citation_doi": "10.5281/zenodo.23750305",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1131,18 +1139,26 @@
         }
       ],
       "verified_on": "2026-10-28",
-      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/dc4158e385fafa38e8dadae2d861c4dfb9fc037c/paper2/sections/abstract.tex",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/e46e7f672c525a97577787709759df18fe15f58a/paper2/sections/abstract.tex",
       "abstract_html": "<p>We construct a smooth projective Calabi–Yau threefold with torsion-free second homology whose product expansion in Pardon's scalar equivariant local-curve generators has a nonintegral exponent. The genus-ten exponent at three times a primitive class has fractional part <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, disproving the integer-exponent assertion for these generators. The obstruction comes from an exact degree-three calculation in the local Gromov–Witten Frobenius algebra. Comparison with the integer elementary expansion of Ionel–Parker gives a necessary divisibility condition on the primitive genus-three count. We realize a count violating this condition on a first Hirzebruch surface in a compact toric hypersurface. A filtration by powers of the surface ideal controls transverse thickenings and disconnected products; the stable-pair moduli space at minimal Euler characteristic is a projective space of dimension thirteen, with virtual count <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mo>−</mo><mn>14</mn></math>. We also prove integrality in classes of divisibility at most two. The counterexample concerns the scalar local factors; the integer elementary expansion is an input to its proof.</p>",
       "pdf": {
-        "sha256": "907387ab4558c515fd37647bfa893ec75b492cc3f702eb895aea169d5aa8ebd3",
-        "size_bytes": 336333,
+        "sha256": "09b2fe2c1afe71091df4a14fc1d9fa6b566dd8ce49a665ed1b941dfadc2c8967",
+        "size_bytes": 336972,
         "pages": 13,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/dc4158e385fafa38e8dadae2d861c4dfb9fc037c/paper2/main.pdf",
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/e46e7f672c525a97577787709759df18fe15f58a/paper2/main.pdf",
         "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/paper2/main.pdf",
-        "source_commit": "dc4158e385fafa38e8dadae2d861c4dfb9fc037c",
+        "source_commit": "e46e7f672c525a97577787709759df18fe15f58a",
         "source_repository": "https://github.com/bwuebben/universal-curve-counting",
         "source_path": "paper2/main.pdf"
-      }
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23750049",
+          "url": "https://zenodo.org/records/23750049",
+          "deposited_at": "2026-10-29T00:28:01.472434+00:00"
+        }
+      ]
     },
     {
       "slug": "fjrw-central-charge-threshold",
