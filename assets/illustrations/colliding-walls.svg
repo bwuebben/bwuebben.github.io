@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<title>Two paths around intersecting walls, repaired by a third ray</title>
+<rect width="800" height="500" fill="#f3f1ec"/>
+<path d="M180 85L620 415" stroke="#7a2e2e" stroke-width="2"/>
+<path d="M290 85L510 415" stroke="#365e83" stroke-width="2"/>
+<path d="M400 250L235 85" stroke="#91671d" stroke-width="4"/>
+<path d="M110 250V150H690V250" stroke="#55524c" stroke-width="2" fill="none"/>
+<path d="M110 250V350H690V250" stroke="#55524c" stroke-width="2" stroke-dasharray="6 7" fill="none"/>
+<g fill="#f3f1ec" stroke="#55524c" stroke-width="1.5"><circle cx="110" cy="250" r="5"/><circle cx="690" cy="250" r="5"/><circle cx="400" cy="250" r="5"/></g>
+<circle cx="300" cy="150" r="17" fill="#91671d" opacity=".14"/><circle cx="300" cy="150" r="6" fill="#91671d"/>
+<g fill="#55524c" font-family="Georgia,serif" font-size="19"><text x="540" y="128">(8, 4)</text><text x="540" y="382">(8, 4)</text><text x="335" y="75" fill="#91671d">−3/4</text></g>
+</svg>

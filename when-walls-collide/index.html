@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When Walls Collide — Bernd Johannes Wuebben</title>
+<meta name="description" content="Take two paths. Get two answers. Find the missing wall. An exact interactive journey through quartic open FJRW wall crossing, annular holonomy, and the test that periods miss.">
+<meta name="author" content="Bernd Johannes Wuebben">
+<link rel="canonical" href="https://bwuebben.github.io/when-walls-collide/">
+<meta property="og:title" content="When Walls Collide — Bernd Johannes Wuebben">
+<meta property="og:description" content="Take two paths. Get two answers. Find the missing wall.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://bwuebben.github.io/when-walls-collide/">
+<meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+<!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=acd4f5ed3e01">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="style.css?v=bafa8e443610"><script defer src="model.js?v=2698dc6f7816"></script><script defer src="app.js?v=7920636eff47"></script>
+</head>
+<body>
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../papers/">Papers</a></li>
+      <li><a href="../research/">Research guides</a></li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../writing/">Essays &amp; poem</a></li>
+            <li><a href="../not-enough.html">Not Enough</a></li>
+            <li><a href="../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../writing/one-law/">Black holes &amp; markets</a></li>
+            <li><a href="../writing/one-year-per-year/">One year per year</a></li>
+            <li><a href="../writing/nobody-did-it/">Nobody did it</a></li>
+            <li><a href="../writing/broken-things/">Broken things</a></li>
+            <li><a href="../writing/who-vouches/">Who vouches</a></li>
+            <li><a href="../writing/two-failures/">Two ways to fail</a></li>
+            <li><a href="../writing/balance-point/">Balance point</a></li>
+            <li><a href="../writing/nothing-condenses-alone/">Nothing condenses alone</a></li>
+            <li><a href="../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../explorers/">Visual companions</a></li>
+            <li><a href="../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../beyond-hrp-lab/">Beyond HRP</a></li>
+            <li><a href="../at-the-wall/">At the Wall</a></li>
+            <li><a href="./" aria-current="page">When Walls Collide</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../updates/">Updates</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="collision-app" tabindex="-1">
+<header class="collision-hero"><div><p class="eyebrow">Geometry · Wall crossing · Open FJRW theory</p><h1>When walls<br><em>collide.</em></h1></div><div class="hero-copy"><p class="hero-line">Take two paths.<br>Get two answers.<br>Find the missing wall.</p><p>A wall changes the answer when you cross it. Cross two walls in a different order and the changes need not agree. A new wall can repair the disagreement. But consistency is only the first test.</p><a href="#paths" class="text-link">Follow the first path ↓</a></div></header>
+<nav class="chapter-nav" aria-label="Experiments"><a href="#paths"><span>01</span> Order matters</a><a href="#correction"><span>02</span> Find the wall</a><a href="#annulus"><span>03</span> The surface remembers</a><a href="#periods"><span>04</span> What periods miss</a></nav>
+<noscript><p class="notice">The explanations and paper links remain available. Enable JavaScript to follow paths and compute their exact wall-crossing operations.</p></noscript>
+
+<section id="paths" class="experiment" aria-labelledby="paths-title">
+ <div class="section-heading"><div><p class="eyebrow">01 · One beginning, one destination</p><h2 id="paths-title">The order matters.</h2></div><p>Follow the upper route, then the lower. Watch two coefficients change at the crossings. With just the two incoming walls, the routes disagree.</p></div>
+ <div class="path-workbench">
+  <div class="path-stage"><div class="panel-title"><h3>The crossing</h3><span id="wall-count">Two walls</span></div>
+   <div class="wall-legend"><span class="wall-one">Σ₁ · first wall</span><span class="wall-two">Σ₂ · second wall</span><span class="wall-mixed" id="mixed-legend" hidden>U · mixed wall</span></div>
+   <svg id="path-svg" viewBox="0 0 640 340" role="img" aria-label="Two controlled routes around a joint of wall supports"></svg>
+   <div class="route-picker" role="group" aria-label="Choose a route"><button type="button" data-route="upper" aria-pressed="true">Upper route</button><button type="button" data-route="lower" aria-pressed="false">Lower route</button><button type="button" id="reverse-path" aria-pressed="false">Reverse direction</button></div>
+   <div class="transport-controls"><button type="button" id="play-path" class="primary" aria-pressed="false">Follow the path</button><button type="button" id="step-path">Next crossing</button><button type="button" id="finish-path">To endpoint</button><button type="button" id="reset-path">Restart</button></div>
+   <label class="control" for="path-progress"><span>Journey <output id="progress-out" for="path-progress">0%</output></span><input id="path-progress" type="range" min="0" max="1000" step="1" value="0"></label>
+   <p class="micro">The point travels through a local affine chart. It changes the potential only at a crossing. The two routes avoid the joint.</p>
+  </div>
+  <div class="path-ledger"><p class="eyebrow">The live ledger</p><h3 id="ledger-title">Before the first crossing</h3><p class="ledger-intro">Coefficients of the two mixed terms</p>
+   <div class="coefficient-pair"><div><span>t₁t₂ xy⁵</span><strong id="current-a">12</strong></div><div><span>t₁t₂ x⁵y</span><strong id="current-b">0</strong></div></div>
+   <div class="crossing-ribbon" id="crossing-ribbon" aria-label="Crossings in chronological order"></div><p id="crossing-status" class="micro" aria-live="polite"></p>
+   <div class="endpoint-pairs"><p class="eyebrow">At the forward endpoints</p><div><span>Upper route</span><strong id="upper-pair">(2, 10)</strong></div><div><span>Lower route</span><strong id="lower-pair">(8, 4)</strong></div></div>
+   <p id="path-agreement" class="verdict" role="status">The paths disagree.</p>
+  </div>
+ </div>
+ <div class="observation"><span>The question</span><p>The start and finish are the same. Should the answer depend on which side of the joint you take? The missing information sits exactly where the two operations interact.</p></div>
+ <div class="explanation"><p>Open FJRW theory studies invariants of marked disks for a polynomial such as x⁴ + y⁴. Those invariants depend on boundary conditions. Changing the conditions acts on a <em>potential</em>, a polynomial whose coefficients record the invariants with their prescribed signs.</p><p>Here we follow one exact example with two distinct labels. Their variables satisfy t₁² = t₂² = 0, while t₁t₂ survives. A single label sees each wall separately. The product t₁t₂ detects their interaction.</p></div>
+ <details class="math-note"><summary>The exact example, operators, and path conventions</summary><div>
+  <p>Work in Q[x,y,t₁,t₂]/(t₁²,t₂²). The labels have twists (1,0) and (0,1), both with descendent degree one. Put X<sub>a,b</sub> = xᵃyᵇ((b+1)x∂<sub>x</sub> − (a+1)y∂<sub>y</sub>), Σ₁ = exp(−t₁X₁₀/2), Σ₂ = exp(−t₂X₀₁/2), and U<sub>c</sub> = exp(ct₁t₂X₁₁). Each exponential terminates after its linear term in this ring.</p>
+  <p>W<sup>min</sup> = x⁴ + y⁴ − 4t₁xy⁴ − 2t₂y⁵ + 12t₁t₂xy⁵. At the forward endpoints, write V(a,b) = x⁴ + y⁴ − 2t₁x⁵ − 4t₂x⁴y + t₁t₂(a xy⁵ + b x⁵y). The two numbers are potential coefficients, not an unqualified count of disks.</p>
+  <p>The supports have normals (3,4), (3,2), and (1,1); the mixed support is a ray in s₂ ≥ 0. The horizontal routes have s₂ = ±1/10, with common endpoints (−1/4,0) and (1/4,0). Their end connectors miss every support. These are shortened versions of the paper’s local test routes, with the same crossings and signs. The drawn axes use a common scale.</p>
+  <p>The ribbon lists crossings chronologically. An operator word acts rightmost first: the corrected upper route is Σ₂U<sub>c</sub>Σ₁, and the lower is Σ₁Σ₂. Reverse travel starts at that route’s own endpoint and applies the inverse crossings, recovering W<sup>min</sup>.</p>
+  <p>Current potential:</p><pre id="current-polynomial" class="polynomial" tabindex="0"></pre>
+ </div></details>
+</section>
+
+<section id="correction" class="experiment" aria-labelledby="correction-title">
+ <div class="section-heading"><div><p class="eyebrow">02 · Let consistency choose</p><h2 id="correction-title">Find the missing wall.</h2></div><p>Add a ray at the joint. Change its coefficient until the two paths give the same operation—not just the same value on one polynomial.</p></div>
+ <div class="correction-lab"><div class="dial-panel"><p class="eyebrow">The mixed-wall coefficient</p><strong id="coefficient-display" class="big-coefficient">0</strong><label class="control" for="wall-coefficient"><span>Coefficient c <output id="coefficient-out" for="wall-coefficient">0</output></span><input id="wall-coefficient" type="range" min="-6" max="4" step="1" value="0"><span class="range-caption"><span>−3/2</span><span>Exact quarter-steps</span><span>1</span></span></label><div class="toolbar"><button type="button" id="remove-wall">Remove the wall</button><button type="button" id="solve-wall">Use the consistent coefficient</button></div><p class="micro">This control also changes the ray and both endpoint ledgers above.</p><a class="text-link" href="#paths">Replay the paths with this wall ↑</a></div>
+  <div class="residual-panel"><div class="panel-title"><h3>The return test</h3><span>Exact arithmetic</span></div><div class="residual-grid"><div><span>Difference on x</span><strong id="residual-x">—</strong></div><div><span>Difference on y</span><strong id="residual-y">—</strong></div></div><p id="consistency-verdict" class="verdict" role="status"></p><div class="endpoint-comparison"><div><span>Upper answer</span><strong id="corrected-upper">—</strong></div><div class="equals-symbol" id="equality-symbol" aria-hidden="true">≠</div><div><span>Lower answer</span><strong id="corrected-lower">—</strong></div></div><p id="correction-reading" class="micro" aria-live="polite"></p></div>
+ </div>
+ <p class="section-reading">Consistency forces a correction. Its coefficient is determined by the failure of the original operations to commute. In a larger truncation, further interactions can force further walls.</p>
+ <details class="math-note"><summary>Why checking x and y is enough here</summary><div><p>The transformations fix t₁ and t₂ and are algebra automorphisms. Agreement on x and y therefore gives agreement on the entire coefficient ring. The comparison uses exact rational coefficients; no numerical tolerance is involved.</p><p>[X₁₀, X₀₁] = −3X₁₁, and Σ₂Σ₁ = U<sub>3/4</sub>Σ₁Σ₂. Thus Σ₂U<sub>−3/4</sub>Σ₁ = Σ₁Σ₂. On W<sup>min</sup>, the upper endpoint is V(2−8c,10+8c), and the lower is V(8,4).</p><p>Paper 2 organizes transformations into factors ordered by the slopes of their boundary rays in each finite truncation. The boundary ray for X<sub>k₁,k₂</sub> is spanned by (k₁+1,k₂+1); it is not automatically a direction in an affine base. The quartic paper supplies the cofactor placement used here. This explorer verifies the stated two-label model, not an arbitrary all-order scattering diagram.</p></div></details>
+</section>
+
+<section id="annulus" class="experiment" aria-labelledby="annulus-title">
+ <div class="section-heading"><div><p class="eyebrow">03 · Beyond the local joint</p><h2 id="annulus-title">The surface remembers.</h2></div><p>A local return test can close while a journey around the whole surface changes a lattice frame. Follow one specified core loop of the quartic annulus.</p></div>
+ <div class="annulus-lab"><div class="annulus-picture"><div class="panel-title"><h3>The annular cover</h3><span>Topological schematic</span></div><div class="toolbar view-picker" role="group" aria-label="Surface view"><button type="button" data-surface="annulus" aria-pressed="true">Annulus</button><button type="button" data-surface="cut" aria-pressed="false">Cut open</button></div><svg id="annulus-svg" viewBox="0 0 500 350" role="img" aria-label="Quartic annulus with four singular points and the specified core loop"></svg><div class="transport-controls"><button type="button" id="loop-forward">One circuit forward</button><button type="button" id="loop-back">One circuit back</button><button type="button" id="loop-reset">Reset frame</button></div><p class="micro">The loop separates Ã, B₀ from B₁, C̃. The cut-open view is topological, not an affine coordinate chart.</p></div>
+  <div class="frame-panel"><div class="panel-title"><h3>The returned frame</h3><span id="loop-label">0 circuits</span></div><svg id="frame-svg" viewBox="0 0 320 235" role="img" aria-label="Two exponent-lattice basis vectors after transport"></svg><div id="matrix-readout" class="matrix-readout"></div><p id="frame-reading" class="micro" aria-live="polite"></p><p class="micro">Both arrows use the same drawing scale. The numbers are the exact integer coordinates. We track an exponent frame in F-coordinates.</p></div>
+ </div>
+ <div class="observation"><span>Local versus global</span><p>The correction wall settles a local disagreement. It does not make the surface’s global holonomy disappear. For this core loop, K has trace 18 and eigenvalues 9 ± 4√5.</p></div>
+ <details class="math-note"><summary>What comes from the annular construction</summary><div><p>The affine base disk has singular points A, B, C. The parity character is 1 around A and C, and 0 around B. Cutting from A to C and gluing two copies crosswise gives an annulus. Its four singular points are Ã, B₀, B₁, C̃; the two lifts of B are focus–focus, while the branched germs at Ã and C̃ are different. The source figure’s relative placement is retained in the annulus view.</p><p>The selected core-loop class is γ<sub>C</sub>γ<sub>A</sub><sup>−1</sup>, based in sheet S₀. On the exponent lattice in the source’s F-coordinates it acts by K = [[−1,2],[−10,19]]. Its determinant is one. Other loops in the punctured annulus can have different holonomies, even if they become freely homotopic after forgetting the singular points.</p><p>The animation, where enabled, marks progress around the loop. The returned matrix is applied at the end of a circuit; no interpolated affine connection is being computed. A tangent-frame representation would use the inverse transpose. The two boundaries and the marked core curve are drawn schematically, not as a Euclidean metric model of the affine structure.</p></div></details>
+</section>
+
+<section id="periods" class="experiment" aria-labelledby="periods-title">
+ <div class="section-heading"><div><p class="eyebrow">04 · Consistency was only the first test</p><h2 id="periods-title">The test the periods miss.</h2></div><p>The locally consistent wall has coefficient −3/4. The Gross–Kelly–Tessler (GKT) transition needs 1/4. The two answers differ, but their relevant period classes agree.</p></div>
+ <div class="observable-toolbar"><div class="toolbar" role="group" aria-label="Choose what to compare"><button type="button" data-observable="coefficients" aria-pressed="true">Full coefficients</button><button type="button" data-observable="period" aria-pressed="false">Period class</button></div><span class="micro">A fixed comparison, independent of your coefficient dial above.</span></div>
+ <div class="period-comparison"><div><p class="eyebrow">Annular transport</p><h3 id="annular-result-title">The consistent wall</h3><p class="wall-coefficient-label">Mixed coefficient −3/4</p><div id="annular-observable" class="observable-value"></div><p id="annular-explanation" class="micro"></p></div><div class="comparison-divider" id="observable-sign" aria-hidden="true">≠</div><div><p class="eyebrow">The GKT transition</p><h3>The required endpoint</h3><p class="wall-coefficient-label">Mixed coefficient 1/4</p><div id="gkt-observable" class="observable-value"></div><p class="micro" id="gkt-explanation"></p></div></div>
+ <p id="period-reading" class="observation-copy" aria-live="polite"></p>
+ <div class="normal-form"><div><h3>A correction can be imposed.</h3><p>Apply the algebraic normal form to carry V(8,4) to V(0,12). The finite operation is explicit. Its intrinsic geometric origin is the open question.</p></div><button type="button" id="apply-normal-form" aria-pressed="false">Apply the normal form</button></div>
+ <div class="open-question"><p class="eyebrow">Where the explorer reaches the research frontier</p><h3>Can the surface supply its own correction?</h3><p>The missing construction is an operation intrinsic to the annulus, at its boundary, that produces the required normal form. Replacing a wall coefficient by the GKT value does not by itself solve the annular consistency problem.</p></div>
+ <details class="math-note"><summary>The discrepancy, period class, and imposed normal form</summary><div><p>Annular transport gives W<sup>tr</sup> = V(8,4), whereas W<sup>max</sup> = V(0,12). The two-label GKT transition is Σ₂U<sub>1/4</sub>Σ₁; the annular path word is Σ₂U<sub>−3/4</sub>Σ₁. They differ by U₁, so U₁W<sup>tr</sup> = W<sup>max</sup>.</p><p>The relevant t₁t₂ period class of V(a,b) is (6 − (a+b)/2)[xy], which vanishes for both endpoints. Here [xy] abbreviates the class of xy dx∧dy for the twisted differential ℏd + d(x⁴+y⁴)∧, after extracting the t₁t₂ coefficient of the exponential deformation. In the paper, the discrepancy has the relative primitive β = t₁t₂d(x²y²). This exact finite comparison explains why the period test loses information; it does not say that every observable or every period problem is identical.</p><p>U<sub>c</sub>V(a,b) = V(a−8c,b+8c), and the maximal normal form is U<sub>a/8</sub>V(a,b) = V(0,a+b). The final control applies this algebraic operation externally. It does not implement the missing boundary construction.</p></div></details>
+</section>
+
+<section class="threshold-section" aria-labelledby="threshold-title"><details id="threshold-details"><summary><span class="eyebrow">A companion experiment</span><span id="threshold-title">Why begin with the quartic?</span><span aria-hidden="true">+</span></summary><div class="threshold-lab"><div><svg id="threshold-svg" viewBox="0 0 360 350" role="img" aria-label="Central-charge threshold for integer Fermat exponents from two to twelve"></svg><p class="micro">Select a square or use the exponent controls. Pale squares have boundary-independent primary invariants; coloured squares admit primary wall crossing. The outlined square is your selection.</p></div><div class="threshold-controls"><div class="exponent-inputs"><label for="exponent-r">Exponent r<input type="number" id="exponent-r" min="2" max="12" step="1" value="4"></label><label for="exponent-s">Exponent s<input type="number" id="exponent-s" min="2" max="12" step="1" value="4"></label></div><fieldset><legend>Insertion type</legend><label><input type="radio" name="insertion" value="primary" checked> Primary</label><label><input type="radio" name="insertion" value="descendent"> Descendent degree one</label></fieldset><div class="threshold-value"><span>Central charge ĉ = 2 − 2/r − 2/s</span><strong id="central-charge">1</strong></div><p id="threshold-result" aria-live="polite"></p><p class="micro">The main explorer uses two descendent labels. Descendents allow wall crossing even below the primary threshold. The theorem concerns the stated Fermat theories and symmetric canonical boundary conditions.</p></div></div></details></section>
+
+<section id="papers" class="paper-reading" aria-labelledby="papers-title"><p class="eyebrow">From picture to paper</p><h2 id="papers-title">Three steps toward a geometric home.</h2><p>Exact finite computations support each experiment. The papers distinguish the threshold, formal factorization, annular construction, and the remaining geometric problem.</p>
+ <a class="paper-row" href="/papers/fjrw-central-charge-threshold/"><span>I · Where it begins</span><strong>The central-charge threshold for wall-crossing in two-variable open FJRW theory</strong><span aria-hidden="true">↗</span></a>
+ <a class="paper-row" href="/papers/fjrw-slope-ordered-factorization/"><span>II · How it factors</span><strong>Slope-ordered factorization of wall-crossing in two-variable open FJRW theory</strong><span aria-hidden="true">↗</span></a>
+ <a class="paper-row" href="/papers/fjrw-annular-scattering/"><span>III · Where it lives</span><strong>Annular scattering in quartic open FJRW theory</strong><span aria-hidden="true">↗</span></a>
+ <p class="reading-links"><a href="/research/geometry/#fjrw-scattering">The programme and its open construction ↗</a><a href="https://github.com/bwuebben/open-fjrw-scattering">Manuscripts and exact checks ↗</a><a href="/at-the-wall/">At the Wall: stability and spectra ↗</a></p><p class="micro">The “walls” in At the Wall concern bundle slopes. Here they describe transformations of open FJRW invariants. The shared vocabulary does not identify the two theories.</p>
+</section>
+<footer class="collision-footer"><span>Bernd Johannes Wuebben</span><a href="/explorers/">All explorers ↗</a><a href="#main">Back to the beginning ↑</a></footer>
+</main></body></html>

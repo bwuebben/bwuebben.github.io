@@ -43,7 +43,7 @@ for name in ["pillowcase-explorer","conifold-lab","cobordism-explorer","beyond-h
 ns="http://www.sitemaps.org/schemas/sitemap/0.9";ET.register_namespace("",ns)
 p=ROOT/"sitemap.xml";tree=ET.fromstring(p.read_text())
 existing={n.find("{"+ns+"}loc").text for n in tree}
-for folder in ["explorers","research","about","updates","writing","at-the-wall"]:
+for folder in ["explorers","research","about","updates","writing","at-the-wall","when-walls-collide"]:
  for f in sorted((ROOT/folder).rglob("index.html")):
   url="https://bwuebben.github.io/"+str(f.relative_to(ROOT)).removesuffix("index.html")
   if url not in existing:
