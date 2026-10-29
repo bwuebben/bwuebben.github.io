@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-28",
+    "title": "Universal curve counting across Calabi–Yau transitions",
+    "url": "/research/calabi-yau/#universal-curve-counting",
+    "description": "Two new papers establish rational universal conifold specialization with a complete compact calculation, and give a compact counterexample to general integrality for scalar local-curve factors. The Calabi–Yau guide introduces the programme and its remaining questions. Both manuscripts, their sources and exact calculations are public, with separate Zenodo archives."
+  },
+  {
+    "date": "2026-10-28",
     "title": "Research programmes within the guides",
     "url": "/research/#where-the-work-stands",
     "description": "The research guides now set out the programmes inside each subject: what the papers establish, the theorem or construction still missing, and why it would matter. New sections cover Atiyah–Floer comparisons, open FJRW scattering, compact Higgs transitions, black-hole information, inverse moduli theory and evidence-based capital allocation, each labelled by how far the work has come."
