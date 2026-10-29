@@ -590,9 +590,10 @@
       "publication_date": "2026-09-20",
       "revision_date": "2026-10-29",
       "archive": {
-        "name": "Zenodo (earlier version)",
-        "doi": "10.5281/zenodo.23643199",
-        "url": "https://zenodo.org/records/23643199"
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23774632",
+        "url": "https://zenodo.org/records/23774632",
+        "deposited_at": "2026-10-29T18:45:49.350605+00:00"
       },
       "resources": [
         {
@@ -622,7 +623,15 @@
         "source_commit": "e318a783a75ffd2516272512516d43ee7ef02acf",
         "source_repository": "https://github.com/bwuebben/toric-tangent-stability",
         "source_path": "paper2/paper/main.pdf"
-      }
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23643199",
+          "url": "https://zenodo.org/records/23643199"
+        }
+      ],
+      "citation_doi": "10.5281/zenodo.23774632"
     },
     {
       "slug": "toric-local-stability-chambers",
@@ -1504,10 +1513,10 @@
       "publication_date": "2026-10-27",
       "revision_date": "2026-10-29",
       "archive": {
-        "name": "Zenodo (earlier version)",
-        "doi": "10.5281/zenodo.23717722",
-        "url": "https://zenodo.org/records/23717722",
-        "deposited_at": "2026-10-28T01:43:11.309416+00:00"
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23774770",
+        "url": "https://zenodo.org/records/23774770",
+        "deposited_at": "2026-10-29T18:46:11.240880+00:00"
       },
       "resources": [
         {
@@ -1545,7 +1554,16 @@
         "source_commit": "93f91f743eb0a0fb16eda36b8b1e6b902a9f4b7e",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/iv/paper.pdf"
-      }
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23717722",
+          "url": "https://zenodo.org/records/23717722",
+          "deposited_at": "2026-10-28T01:43:11.309416+00:00"
+        }
+      ],
+      "citation_doi": "10.5281/zenodo.23774770"
     },
     {
       "slug": "metric-response-hym-flow",
