@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+<title>A point approaches a square chamber wall as a network develops three distinct spectral scales</title>
+<rect width="800" height="500" fill="#f3f1ec"/>
+<g fill="none" stroke="#426956"><path d="M85 135H305V355H85Z" fill="#426956" fill-opacity=".05" stroke-width="1.5"/><path d="M140 135V355M195 135V355M250 135V355M85 190H305M85 245H305M85 300H305" opacity=".18"/><path d="M105 240H195" stroke="#7a2e2e" stroke-dasharray="4 6"/></g>
+<circle cx="105" cy="240" r="18" fill="#7a2e2e" opacity=".1"/><circle cx="105" cy="240" r="6" fill="#7a2e2e"/>
+<path d="M340 245H395M383 237L395 245 383 253" stroke="#86827a" fill="none"/>
+<g stroke="#426956" fill="none"><path d="M450 155H650M450 155V335" stroke-width="1.5"/><path d="M650 155V335H450" stroke-width="7" opacity=".6"/></g>
+<g stroke="#f3f1ec" stroke-width="3"><circle cx="450" cy="155" r="17" fill="#7a2e2e"/><circle cx="650" cy="155" r="17" fill="#365e83"/><circle cx="650" cy="335" r="17" fill="#365e83"/><circle cx="450" cy="335" r="17" fill="#365e83"/></g>
+<g fill="none" stroke-width="2"><path d="M450 400H474" stroke="#7a2e2e"/><path d="M450 417H540" stroke="#365e83"/><path d="M450 434H650" stroke="#936b28"/></g>
+<g fill="#55524c" font-family="Georgia,serif" font-size="16"><text x="85" y="105">A chamber</text><text x="450" y="105">A soft direction</text></g>
+</svg>

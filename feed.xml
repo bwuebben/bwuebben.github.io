@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>At the Wall: how geometry loses rigidity</title>
+      <link>https://bwuebben.github.io/at-the-wall/</link>
+      <guid>https://bwuebben.github.io/at-the-wall/#update-2026-10-28</guid>
+      <description>A new explorer links stability chambers, weighted extension graphs, small eigenvalues and metric response. Four experiments follow three vanishing scales, compare trees with cycles, and examine the two-factor flow across a stability wall, with the finite calculations and their geometric scope explained alongside.</description>
+      <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Universal curve counting across Calabi–Yau transitions</title>
       <link>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting</link>
       <guid>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting#update-2026-10-28</guid>

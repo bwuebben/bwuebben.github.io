@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-28",
+    "title": "At the Wall: how geometry loses rigidity",
+    "url": "/at-the-wall/",
+    "description": "A new explorer links stability chambers, weighted extension graphs, small eigenvalues and metric response. Four experiments follow three vanishing scales, compare trees with cycles, and examine the two-factor flow across a stability wall, with the finite calculations and their geometric scope explained alongside."
+  },
+  {
+    "date": "2026-10-28",
     "title": "Universal curve counting across Calabi–Yau transitions",
     "url": "/research/calabi-yau/#universal-curve-counting",
     "description": "Two new papers establish rational universal conifold specialization with a complete compact calculation, and give a compact counterexample to general integrality for scalar local-curve factors. The Calabi–Yau guide introduces the programme and its remaining questions. Both manuscripts, their sources and exact calculations are public, with separate Zenodo archives."

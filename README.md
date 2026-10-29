@@ -43,6 +43,7 @@ python3 tools/update-site.py --check
 python3 tools/update-papers.py --check
 python3 tools/check-editorial.py
 node tools/check-essay-models.cjs
+node tools/check-at-the-wall.cjs
 for f in tools/essay-checks/*.cjs; do node "$f"; done
 for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
@@ -60,6 +61,7 @@ pillowcase-explorer/    interactive trefoil and pillowcase diagrams
 conifold-lab/           interactive conifold transitions laboratory
 cobordism-explorer/     interactive Atiyah–Floer cobordism explorer
 beyond-hrp-lab/         interactive signal-aware portfolio laboratory
+at-the-wall/            stability chambers, small spectra, metric response and flow
 not-enough.html         Not Enough, an essay with interactive figures (self-contained:
                          its drum eigenmodes are embedded as data)
 poem.html               Gradient of Mind (a poem)
@@ -112,7 +114,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 
 **Navigation:** edit the links in `site.json` or their outer markup in
 `templates/navigation.html`. The top level contains Home, Papers, Research guides, Writing, Explorers, Updates, and About.
-Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, and Beyond HRP; add future explorers
+Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, and At the Wall; add future explorers
 to that group's `children` list.
 Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to

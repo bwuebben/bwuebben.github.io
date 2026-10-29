@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>At the Wall — Bernd Johannes Wuebben</title>
+<meta name="description" content="Move toward a stability wall. Watch a chamber, a four-vertex network, and its small spectrum reveal how geometry loses rigidity.">
+<meta name="author" content="Bernd Johannes Wuebben">
+<link rel="canonical" href="https://bwuebben.github.io/at-the-wall/">
+<meta property="og:title" content="At the Wall — how geometry loses rigidity">
+<meta property="og:description" content="A small change. An enormous response. Four experiments in stability, spectra, and geometric flow.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bwuebben.github.io/at-the-wall/">
+<meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+<!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=acd4f5ed3e01">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="style.css?v=999fa2955856">
+<script defer src="model.js?v=b58bea30c7cc"></script>
+<script defer src="app.js?v=37243bf3fb8a"></script>
+</head>
+<body>
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li><a href="../papers/">Papers</a></li>
+      <li><a href="../research/">Research guides</a></li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../writing/">Essays &amp; poem</a></li>
+            <li><a href="../not-enough.html">Not Enough</a></li>
+            <li><a href="../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../writing/one-law/">Black holes &amp; markets</a></li>
+            <li><a href="../writing/one-year-per-year/">One year per year</a></li>
+            <li><a href="../writing/nobody-did-it/">Nobody did it</a></li>
+            <li><a href="../writing/broken-things/">Broken things</a></li>
+            <li><a href="../writing/who-vouches/">Who vouches</a></li>
+            <li><a href="../writing/two-failures/">Two ways to fail</a></li>
+            <li><a href="../writing/balance-point/">Balance point</a></li>
+            <li><a href="../writing/nothing-condenses-alone/">Nothing condenses alone</a></li>
+            <li><a href="../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../explorers/">Visual companions</a></li>
+            <li><a href="../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../beyond-hrp-lab/">Beyond HRP</a></li>
+            <li><a href="./" aria-current="page">At the Wall</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../updates/">Updates</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="wall-app" tabindex="-1">
+  <header class="wall-hero">
+    <div><p class="eyebrow">Geometry &amp; moduli · An interactive explorer</p><h1>At the wall.</h1><p class="hero-line">A small change.<br><em>An enormous response.</em></p></div>
+    <div class="hero-copy"><p>A geometric structure can be stable and still be close to losing its grip. Near the boundary, some changes cost almost no energy. Its metric becomes exquisitely sensitive.</p><p>Here a four-dimensional complex manifold leaves a surprisingly small footprint: four vertices, four edges, and three numbers tending to zero.</p><a class="text-link" href="#chamber">Move toward the wall <span aria-hidden="true">↓</span></a></div>
+  </header>
+  <nav class="chapter-nav" aria-label="Experiments"><a href="#chamber"><span>01</span> The chamber</a><a href="#scales"><span>02</span> Three scales</a><a href="#cycles"><span>03</span> What slopes forget</a><a href="#flow"><span>04</span> Across the wall</a></nav>
+  <noscript><p class="notice">The explanations and paper links are available below. Enable JavaScript to use the four experiments.</p></noscript>
+
+  <section id="chamber" class="experiment" aria-labelledby="chamber-title">
+    <div class="section-heading"><div><p class="eyebrow">01 · Geometry becomes a network</p><h2 id="chamber-title">Find the soft direction.</h2></div><p>Drag the point toward an edge. A connection weakens, a mode becomes cheaper, and the response grows.</p></div>
+    <div class="toolbar" aria-label="Chamber presets"><button type="button" data-preset="centre" aria-pressed="true">At the centre</button><button type="button" data-preset="edge" aria-pressed="false">Near a wall</button><button type="button" data-preset="corner" aria-pressed="false">Near a corner</button><button type="button" data-preset="boundary" aria-pressed="false">On the wall</button><span id="chamber-state" class="state-tag" role="status">Stable interior</span></div>
+    <div class="chamber-grid">
+      <div class="lab-panel"><div class="panel-title"><span>A</span><h3>The chamber</h3><span class="panel-meta">A square slice</span></div>
+        <svg id="chamber-svg" viewBox="0 0 320 300" role="img" aria-labelledby="chamber-svg-title chamber-svg-desc"><title id="chamber-svg-title">A square cross-section of the stable cone</title><desc id="chamber-svg-desc">Drag the point, or use the two sliders below. The interior is stable; the four edges are semistable boundaries.</desc></svg>
+        <label class="control" for="chamber-p"><span>Share at R₁ <output id="p-out" for="chamber-p">0.500</output></span><input id="chamber-p" type="range" min="0" max="1" step="any" value="0.5"></label>
+        <label class="control" for="chamber-q"><span>Share at Q₁ <output id="q-out" for="chamber-q">0.500</output></span><input id="chamber-q" type="range" min="0" max="1" step="any" value="0.5"></label>
+        <label class="control scale-control" for="chamber-scale"><span>Overall scale σ <output id="scale-out" for="chamber-scale">0.030</output></span><input id="chamber-scale" type="range" min="1" max="5" step="0.001" value="1.522879"><span class="range-caption"><span>Larger slice</span><span>Closer to the cone tip →</span></span></label>
+      </div>
+      <div class="lab-panel"><div class="panel-title"><span>B</span><h3>The network</h3><span class="panel-meta">Four stable factors</span></div>
+        <svg id="network-svg" viewBox="0 0 320 300" role="img" aria-label="Four factors joined by weighted extension edges"></svg>
+        <p class="legend"><span class="swatch positive"></span>Positive <span class="swatch negative"></span>Negative <span>mode amplitude</span></p>
+        <div class="mode-buttons" role="group" aria-label="Select a trace-free graph mode"><button type="button" data-mode="0" aria-pressed="true">Mode 1</button><button type="button" data-mode="1" aria-pressed="false">Mode 2</button><button type="button" data-mode="2" aria-pressed="false">Mode 3</button></div>
+        <button type="button" id="animate-mode" class="quiet-button" aria-pressed="false">Animate this mode</button>
+        <p class="micro">Edge width shows relative coupling. Vertex colour and signed labels show a unit mode. Animation is a visual aid, not geometric flow.</p>
+        <p id="mode-note" class="micro"></p>
+      </div>
+      <div class="lab-panel spectrum-panel"><div class="panel-title"><span>C</span><h3>The response</h3><span class="panel-meta">Leading model</span></div>
+        <p class="response-intro">Smaller eigenvalue.<br><em>Larger sensitivity.</em></p>
+        <div class="spectrum-head"><span>Mode / eigenvalue ν</span><span>Response 1/ν</span></div>
+        <div id="spectrum-rows"></div>
+        <div class="energy-readout"><span>Energy of the selected unit mode</span><strong id="mode-energy">—</strong></div>
+        <p class="micro">Bars share a fixed logarithmic scale from 10⁻¹⁰ to 1; each interval is a factor of ten. Response values are reciprocal eigenvalues of the finite model.</p>
+        <p id="response-note" class="micro"></p>
+      </div>
+    </div>
+    <div class="observation"><span>What to notice</span><p id="chamber-observation" aria-live="polite"></p></div>
+    <div class="explanation"><p>A vector bundle has a slope: degree per rank. Stability asks that every proper subsheaf have smaller slope than the whole. A <em>wall</em> is where one of those strict inequalities becomes an equality. Changing the polarization changes the slopes.</p><p>For this tangent bundle, four line factors and their extensions control what happens near a meeting of walls. The square above is a slice of its local chamber. The graph’s small eigenvalues measure the energy of relative changes between factors; their reciprocals describe the leading sensitivity of the Hermitian–Einstein metric.</p></div>
+    <details class="math-note"><summary>The geometry and the calculation</summary><div>
+      <p>The example is the tangent bundle of X = ℙ<sub>B</sub>(O ⊕ L) ×<sub>B</sub> ℙ<sub>B</sub>(O ⊕ L), with B = ℙ¹ × ℙ¹ and L = O(1, −1). This is a smooth projective weak-Fano fourfold, not a Fano fourfold. Its tangent sequence has factors R₁, R₂, Q₁, Q₂, all of rank one.</p>
+      <p>Set x = σ(p, 1 − p) and y = σ(q, 1 − q). The stable inequalities are x₁, x₂, y₁, y₂ &gt; 0, with x₁ + x₂ = y₁ + y₂ = σ. The leading edge weights are k<sub>ij</sub> = x<sub>i</sub>y<sub>j</sub>/σ. The explorer diagonalizes L = D diag(k) Dᵀ on the subspace whose coordinates sum to zero. All quantities displayed are computed from this finite operator.</p>
+      <p>For the actual Hermitian–Einstein metric in the strict chamber, λ<sub>j</sub> = ν<sub>j</sub>(L)(1 + O(σ)), j = 1, 2, 3, while the remaining spectrum has a uniform positive gap. In the paper’s slope coordinates and normalized L² norms, the three metric-response singular values are ν<sub>j</sub><sup>−1</sup>(1 + O(σ)). These are singular values, not an identification of every response direction with a plotted graph eigenvector.</p>
+      <p>The theorem is uniform through separated positive scales. It supplies no numerical value for the error constant displayed here, so σ is not a certified percentage error. On a nonsplit semistable boundary bundle this stationary Hermitian–Einstein metric is not asserted; boundary graphs are limiting finite models only. This is an endomorphism Dolbeault spectrum, not the full Yang–Mills Hessian.</p>
+    </div></details>
+  </section>
+
+  <section id="scales" class="experiment" aria-labelledby="scales-title">
+    <div class="section-heading"><div><p class="eyebrow">02 · One bundle, three different speeds</p><h2 id="scales-title">Three ways to lose rigidity.</h2></div><p>Follow one path toward the cone tip. The three small eigenvalues separate into three powers of the same parameter.</p></div>
+    <div class="split-lab"><div class="plot-panel"><svg id="scales-svg" viewBox="0 0 640 360" role="img" aria-label="Logarithmic plot of three graph eigenvalues along the geometric path"></svg><p class="plot-caption">Solid: computed graph eigenvalues. Dashed: leading powers. Both axes are logarithmic.</p></div><div class="side-panel">
+      <label class="control" for="path-t"><span>Path parameter t <output id="t-out" for="path-t">0.200</output></span><input id="path-t" type="range" min="0.04" max="0.3" step="0.001" value="0.2"><span class="range-caption"><span>← Toward the tip</span><span>Away from the tip</span></span></label>
+      <div class="power-readout"><p><i class="mode-one">1</i><span>ν₁ ∼ ⁴⁄₃t⁶</span><output id="path-v1">—</output></p><p><i class="mode-two">2</i><span>ν₂ ∼ ³⁄₂t⁴</span><output id="path-v2">—</output></p><p><i class="mode-three">3</i><span>ν₃ ∼ 2t²</span><output id="path-v3">—</output></p></div>
+      <p id="path-observation" class="side-reading" aria-live="polite"></p><button type="button" id="path-to-chamber">Show this point in the chamber ↑</button>
+    </div></div>
+    <p class="section-reading">The softest direction becomes softer much faster than the others. In the geometric theorem, the next eigenvalue stays bounded away from zero. The disappearing modes are a specific, finite part of the spectrum.</p>
+    <details class="math-note"><summary>The path is realized by polarizations</summary><div><p>Set x₁ = t⁶, x₂ = t², y₁ = t⁴, y₂ = t² − t⁴ + t⁶. These positive demands are realized by the paper’s ample chart on the fixed tangent bundle. Its actual eigenvalues satisfy λ₁ = (4/3)t⁶(1 + O(t²)), λ₂ = (3/2)t⁴(1 + O(t²)), λ₃ = 2t²(1 + O(t²)), and λ₄ ≥ γ &gt; 0. The plotted solid curves are graph eigenvalues; the dashed curves are their asymptotic leading terms. The wider end of the plot illustrates the finite model without asserting a numerical geometric error bound.</p></div></details>
+  </section>
+
+  <section id="cycles" class="experiment" aria-labelledby="cycles-title">
+    <div class="section-heading"><div><p class="eyebrow">03 · A separate extension experiment</p><h2 id="cycles-title">What the slopes forget.</h2></div><p>Keep the ranks and slope demands fixed. A tree has no freedom left. A cycle can remember more.</p></div>
+    <div class="cycle-control"><label class="control" for="cycle-ratio"><span>Harmonic cycle ratio θ <output id="cycle-out" for="cycle-ratio">1.00</output></span><input id="cycle-ratio" type="range" min="-3" max="3" step="0.01" value="0"><span class="range-caption"><span>0.001</span><span>1</span><span>1,000</span></span></label><p>The extra datum changes how the same demands are carried around the cycle.</p></div>
+    <div class="comparison-grid"><div class="lab-panel"><div class="panel-title"><span>A</span><h3>The tree</h3><span class="panel-meta">No cycle datum</span></div><svg id="tree-svg" viewBox="0 0 320 270" role="img" aria-label="Fixed three-edge tree with fixed demands"></svg><div id="tree-values" class="mini-values"></div><p class="micro">Removing the R₂–Q₁ edge leaves a connected path. Its three positive weights are forced by the demands.</p></div><div class="lab-panel"><div class="panel-title"><span>B</span><h3>The cycle</h3><span class="panel-meta">One extra datum</span></div><svg id="cycle-svg" viewBox="0 0 320 270" role="img" aria-label="Four-cycle whose weights vary with harmonic data"></svg><div id="cycle-values" class="mini-values"></div><p class="micro">All four edges remain present. Their balance is fixed; their cycle ratio can vary.</p></div></div>
+    <div class="observation"><span>Same slopes, different spectrum</span><p id="cycle-observation" aria-live="polite"></p></div>
+    <details class="math-note"><summary>Fixed demands and the missing datum</summary><div><p>Both graphs have unit vertex masses and demands b = ρ(2, 1, −1, −2), with ρ = 0.02. The tree weights are ρ(1, 1, 0, 1). For the cycle, k = ρ[[a, 2 − a], [1 − a, a]], where 0 &lt; a &lt; 1 solves a²/((2 − a)(1 − a)) = θ. Thus every row and column sum stays fixed.</p><p>The ratio θ = c₁₁c₂₂/(c₁₂c₂₁) comes from harmonic extension data, invariant under factor rescaling. This is an instance of Paper III’s general cyclic mechanism. It is not a free control on the fixed tangent bundle in experiments 1–2: that geometric example has a reference symmetry fixing its leading cycle ratio.</p></div></details>
+  </section>
+
+  <section id="flow" class="experiment" aria-labelledby="flow-title">
+    <div class="section-heading"><div><p class="eyebrow">04 · The two-factor flow</p><h2 id="flow-title">There is another side.</h2></div><p>Move the signed slope gap through zero. The long-time profile changes from a positive limit, to inverse-time decay, to exponential decay.</p></div>
+    <div class="split-lab"><div class="plot-panel"><div id="flow-legend" class="plot-legend" aria-label="Signed profiles"></div><svg id="flow-svg" viewBox="0 0 640 360" role="img" aria-label="Two-factor small-eigenvalue profiles in the stable, wall, and unstable regimes"></svg><p class="plot-caption">Three signed profiles, with your selected gap highlighted. Vertical axis logarithmic; time starts at τ = 1.</p></div><div class="side-panel">
+      <label class="control" for="flow-gap"><span>Signed slope gap δ <output id="gap-out" for="flow-gap">+0.020</output></span><input id="flow-gap" type="range" min="-0.03" max="0.03" step="0.001" value="0.02"><span class="range-caption"><span>Unstable</span><span>Wall</span><span>Stable</span></span></label>
+      <div class="toolbar flow-presets"><button type="button" data-gap="-0.02">Unstable</button><button type="button" data-gap="0">At the wall</button><button type="button" data-gap="0.02">Stable</button></div>
+      <label class="control" for="flow-time"><span>Time τ <output id="time-out" for="flow-time">80</output></span><input id="flow-time" type="range" min="1" max="200" step="1" value="80"></label>
+      <div class="profile-number"><span id="flow-state">Stable side</span><strong id="profile-value">—</strong><span>Small-eigenvalue profile P<sub>δ</sub>(τ)</span></div><p id="flow-observation" class="side-reading" aria-live="polite"></p>
+    </div></div>
+    <details class="math-note"><summary>The profile and what the flow theorem says</summary><div><p class="formula">P<sub>δ</sub>(τ) = δ / (1 − exp(−2δτ)), &nbsp; P₀(τ) = 1/(2τ).</p><p>These are exact evaluations of the profile in Paper V, not numerical solutions of the Hermitian Yang–Mills PDE. For the paper’s fixed two-factor extension and any smooth positive initial-metric family, each tolerance admits one sufficiently late time and then one parameter neighborhood such that the actual smallest eigenvalue divided by this profile stays within that tolerance for every subsequent time. Both signs of δ and δ = 0 are included.</p><p>For δ &gt; 0, P tends to δ. At the wall it equals 1/(2τ). For δ &lt; 0, P ∼ |δ| exp(−2|δ|τ). The experiment does not claim that a stationary Hermitian–Einstein metric continues across the wall, or that this scalar formula describes a general many-factor flow.</p></div></details>
+  </section>
+
+  <section id="papers" class="paper-reading" aria-labelledby="papers-title"><p class="eyebrow">From picture to paper</p><h2 id="papers-title">The geometry behind the controls.</h2><p>The finite models are computed in your browser. Their connection with bundles, metrics, and flow is proved under the hypotheses of the following preprints.</p>
+    <a class="paper-row" href="/papers/nonsimplicial-toric-stability-chambers/"><span>IV · The chamber</span><strong>Nonsimplicial local stability chambers of toric tangent bundles</strong><span aria-hidden="true">↗</span></a>
+    <a class="paper-row" href="/papers/uniform-hermitian-einstein-spectra/"><span>III · The spectrum</span><strong>Uniform Hermitian–Einstein spectra for bipartite two-step extensions</strong><span aria-hidden="true">↗</span></a>
+    <a class="paper-row" href="/papers/metric-response-hym-flow/"><span>V · Metrics and flow</span><strong>Metric response and Hermitian Yang–Mills flow for two-step extensions</strong><span aria-hidden="true">↗</span></a>
+    <p class="reading-links"><a href="/research/geometry/#stability-degeneration">The programme and reading routes ↗</a><a href="/writing/balance-point/">The balance point of a hexagon ↗</a><a href="https://github.com/bwuebben/stability-degeneration">Manuscripts and exact calculations ↗</a></p>
+  </section>
+  <footer class="wall-footer"><span>Bernd Johannes Wuebben</span><a href="/explorers/">All explorers ↗</a><a href="#main">Back to the beginning ↑</a></footer>
+</main>
+</body>
+</html>
