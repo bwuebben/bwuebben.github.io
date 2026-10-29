@@ -135,7 +135,7 @@ roles={
  "universal-conifold-counting":"Specialization: a rational universal transition formula and a complete compact source calculation with 37 candidates.",
  "universal-integrality-counterexample":"Arithmetic boundary: a compact scalar exponent with fractional part 2/3, alongside integrality through divisibility two.",
  'uniform-hermitian-einstein-spectra':'The spectral mechanism: relative estimates for every small eigenvalue on connected bipartite supports, uniformly through arbitrarily separated positive scales.',
- 'nonsimplicial-toric-stability-chambers':'Geometric realization: nonsimplicial chambers and full slope accessibility on genuine weak-Fano toric tangent bundles, proved independently of the spectral analysis.',
+ 'nonsimplicial-toric-stability-chambers':'Geometric realization: nonsimplicial tangent chambers, positive-spanning slope access without local freeness, and an explicit Calabi–Yau conifold transition.',
  'metric-response-hym-flow':'Metrics and flows: intrinsic response, singular inverses and actual HYM comparisons, culminating in the integrated theorem on the same tangent family.',
 
  "validation-bottleneck":"Discovery under multiple testing: why producing more hypotheses does not produce more independent evidence.",
@@ -152,7 +152,7 @@ roles={
  "one-bubble-neighborhoods":"An oriented neighborhood model at the first Uhlenbeck level of SO(3)-monopole moduli spaces under regularity hypotheses.",
  "exotic-four-manifolds":"A working revision deriving the full group presentation; the final filling question remains open.",
  "toric-tangent-stability":"Constructions of toric Fano varieties with stable tangent bundles, compared with Kähler–Einstein conditions.",
- "toric-tangent-blowups-bundles":"Stability criteria for specified blowups and locally trivial toric bundles.",
+ "toric-tangent-blowups-bundles":"Stability criteria for specified Fano blowups and bundles, with a complete exact census of Picard-number-ten eightfolds.",
  "toric-local-stability-chambers":"Varying the polarization: an all-dimensional projective-bundle classification with arbitrarily many chamber boundaries, a geometric criterion, and local chambers for the 31 indecomposable semistable census cases.",
  "fjrw-central-charge-threshold":"Where wall crossing begins: primary invariants are independent of symmetric canonical boundary conditions exactly in the simple cases, ĉ below 1.",
  "fjrw-slope-ordered-factorization":"How it factors: a unique slope-ordered factorization in every finite truncation, realized ray by ray by homotopies of boundary conditions.",

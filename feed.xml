@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Toric tangent stability: complete census and geometric extensions</title>
+      <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
+      <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-29</guid>
+      <description>Two revised papers add a complete exact eightfold census and geometric criteria for tangent stability chambers. The census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. The chamber paper adds positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition. Both retain their original dates and display a separate version date.</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>When Walls Collide: find the missing wall</title>
       <link>https://bwuebben.github.io/when-walls-collide/</link>
       <guid>https://bwuebben.github.io/when-walls-collide/#update-2026-10-29</guid>
