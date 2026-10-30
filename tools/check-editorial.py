@@ -7,7 +7,7 @@ import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
 ARXIV_CATALOGUE_UPDATES={"calabi-yau-smoothability-paper4", "calabi-yau-smoothability-paper5"}
-AUTHORIZED_CATALOGUE_UPDATES={"cobordism-maps-atiyah-floer-ii", "toric-local-stability-chambers", "small-dolbeault-stability-walls", "toric-blowups-bundles"} | ARXIV_CATALOGUE_UPDATES
+AUTHORIZED_CATALOGUE_UPDATES={"cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii", "toric-local-stability-chambers", "small-dolbeault-stability-walls", "toric-blowups-bundles"} | ARXIV_CATALOGUE_UPDATES
 # The 27 October abstract review authorizes prose changes for these two entries
 # and a new manuscript/archive version only for the spectral companion.
 REVISED_METADATA={"toric-tangent-blowups-bundles": {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"},
@@ -17,6 +17,11 @@ REVISED_METADATA={"toric-tangent-blowups-bundles": {"abstract_html", "abstract_s
  "abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "citation_doi"
 }, "cy-vanishing-cycle": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"},
  "cy-mixed-smoothing": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"}}
+# Authorized 30 October series introductions, DOI references and manuscript revision.
+for _slug in ("af-cobordism-i", "af-cobordism-ii", "af-cobordism-iii"):
+ REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi", "resources"}
+for _anchor in ("cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii"):
+ REVISED_METADATA[_anchor] = set()
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)

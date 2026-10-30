@@ -12,40 +12,51 @@
   "label": "Donaldson theory and the Atiyah–Floer program",
   "status": "Preprint",
   "publication_date": "2026-09-30",
-  "revision_date": "2026-10-19",
+  "revision_date": "2026-10-30",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.23643189",
-    "url": "https://zenodo.org/records/23643189"
+    "doi": "10.5281/zenodo.23811453",
+    "url": "https://zenodo.org/records/23811453"
   },
-  "citation_doi": "10.5281/zenodo.23643189",
+  "citation_doi": "10.5281/zenodo.23811453",
   "resources": [
-    {
-      "label": "Scope and source",
-      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/PAPER-II.md"
-    },
     {
       "label": "current version (PDF)",
       "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
+    },
+    {
+      "label": "Scope and source",
+      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/PAPER-II.md"
     }
   ],
   "related": [
     {
       "label": "Paper III: usual maps and integral normalization",
       "url": "https://bwuebben.github.io/papers/af-cobordism-iii/"
+    },
+    {
+      "label": "Paper I: cobordism comparison over 𝔽₂",
+      "url": "https://bwuebben.github.io/papers/af-cobordism-i/"
     }
   ],
-  "verified_on": "2026-10-25",
+  "verified_on": "2026-10-30",
   "abstract_html": "<p>We prove that the mixed isomorphisms of Daemi, Fukaya and Lipyanskiy type between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting intertwine the integral instanton cobordism maps, oriented by almost-complex structures, with signed symplectic cobordism maps, up to chain homotopy and one overall sign for each cobordism. This holds for every connected cobordism between connected three-manifolds carrying a framed arc and an <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. Where the integral framed instanton homology is nonzero, the symplectic maps are signed counts of holomorphic triangles, with the Lagrangian correspondence of a compression body as one boundary condition for one- and three-handles. At three-manifolds whose integral framed instanton homology vanishes, the complexes are contractible and the maps are zero. The orientations are transported from the gauge theory through the mixed anti-self-duality and holomorphic curve equation. Consequently these maps form a projective functor on homology, independent of the handle decomposition up to sign. The unsigned analysis is that of the comparison modulo two; the new input is that two degenerations of the mixed equation, the collapse of a compression body and excision along a torus, preserve orientations. Where this homology is nonzero, we also prove that the sign by which the orientations change when a sphere is attached to a strip is constant under small perturbations and invariant under reversing the splitting. The relation with homology-oriented integral instanton maps is left open.</p>",
-  "abstract_source": "https://zenodo.org/records/23643189",
+  "abstract_source": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/38931b627bdb988e3b180620b118c68e4b744525/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
   "pdf": {
-    "sha256": "b9eea82e5e53a6c61bf47c863eca774bb033a8d0a67175f1bd6fb91e73ff6f20",
-    "size_bytes": 938893,
+    "sha256": "d285b4580e02fe2de9fee97ce76c8847a806e901592a26b7cf2444be0530f5f3",
+    "size_bytes": 928559,
     "pages": 110,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/94d69ef788b285aa137ecf888c9044f9619a7a83/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/38931b627bdb988e3b180620b118c68e4b744525/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
     "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf",
-    "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
+    "source_commit": "38931b627bdb988e3b180620b118c68e4b744525",
     "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
     "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.23643189",
+      "url": "https://zenodo.org/records/23643189"
+    }
+  ]
 }

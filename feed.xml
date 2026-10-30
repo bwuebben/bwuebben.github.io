@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Atiyah–Floer cobordism series: revised introductions and DOI references</title>
+      <link>https://bwuebben.github.io/research/topology/atiyah-floer/</link>
+      <guid>https://bwuebben.github.io/research/topology/atiyah-floer/#update-2026-10-30</guid>
+      <description>The three cobordism papers now each explain the series: comparison over 𝔽₂, integral naturality with transported orientations, and identification and normalization of the usual maps. Each bibliography links both companion papers by Zenodo DOI. The revisions preserve the original manuscript dates and display a separate version date.</description>
+      <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>A focused Atiyah–Floer research guide and a seventh explorer move</title>
       <link>https://bwuebben.github.io/research/topology/atiyah-floer/</link>
       <guid>https://bwuebben.github.io/research/topology/atiyah-floer/#update-2026-10-29</guid>
