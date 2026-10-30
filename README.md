@@ -31,8 +31,8 @@ keep the public sitemap and paper pages current.
 The Atiyah–Floer reading route includes Papers I–III: comparison over
 𝔽₂, integral transported orientations, and the identification and
 normalization of the usual maps. Paper III has its own abstract page,
-archived preprint, source and PDF, and appears in the topology guide
-and the cobordism explorer’s reading list.
+archived preprint, source and PDF, and appears in the topology guide, the
+focused Atiyah–Floer guide and the cobordism explorer’s reading list.
 
 ## Rebuilding and checks
 
@@ -49,6 +49,7 @@ python3 tools/update-site.py --check
 python3 tools/update-papers.py --check
 python3 tools/check-editorial.py
 node tools/check-essay-models.cjs
+node tools/check-cobordism-explorer.cjs
 node tools/check-at-the-wall.cjs
 node tools/check-when-walls-collide.cjs
 for f in tools/essay-checks/*.cjs; do node "$f"; done
@@ -239,9 +240,13 @@ Preview it at <http://127.0.0.1:8000/conifold-lab/> and run
 ## The Atiyah–Floer Cobordism Explorer
 
 `cobordism-explorer/index.html`, titled *Four Dimensions, Two Languages*, is linked
-under Explorers → Atiyah–Floer Cobordism and from the corresponding Paper I entry. Six chapters
+under Explorers → Atiyah–Floer Cobordism and from the corresponding Paper I entry. Seven chapters
 explore cobordisms, the Atiyah–Floer dictionary, handle maps, a commuting square,
-compression-body collapse, and composition with orientation signs.
+compression-body collapse, composition with orientation signs, and the comparison
+of two orientation systems. The last chapter computes, exactly over the integers, a
+nine-generator ℤ/4-graded complex, the one-component sign change between the
+calibrated and sphere-positive systems, and the normalizer that intertwines them;
+`node tools/check-cobordism-explorer.cjs` verifies these finite models.
 
 The page uses the shared navigation without page-specific positioning, and its
 explorer header and introductory spacing follow the other explorers. It uses
@@ -254,9 +259,10 @@ step and no JavaScript dependency. Google Fonts are optional; local fallbacks wo
 offline. Run `python3 tools/update-site.py` after editing the integrated assets.
 
 All four integrated explorers end with a “From picture to paper” section:
-five knot-instanton papers, six Calabi–Yau smoothability papers, the two
+five knot-instanton papers, six Calabi–Yau smoothability papers, the
 cobordism papers, and the Beyond HRP paper with its replication code
-respectively. Titles and PDF links follow `papers/index.html`; update the
+respectively. A manuscript without a catalogue page yet is listed with a link
+to its research guide instead of a paper page. Titles and PDF links follow `papers/index.html`; update the
 relevant explorer when a catalogue title or PDF destination changes.
 The common reading-section layout lives in `assets/style.css`.
 
@@ -418,6 +424,22 @@ Paper 3 is a specialist branch after 2. Its source fragments are
 `content/calabi-yau-reading-guide.html` and
 `content/calabi-yau-physics-companions.html`, rendered by `tools/build-editorial.py`.
 Maintain the reached-component and physical-model qualifications.
+
+## Focused guides
+
+A programme that has outgrown its section of a subject guide gets a focused guide
+nested below that guide, such as
+[Atiyah–Floer theory](https://bwuebben.github.io/research/topology/atiyah-floer/)
+under Knots, four-manifolds & Floer theory. Its sections live in one fragment,
+`content/atiyah-floer-guide.html`; `SUBGUIDES` in `tools/build-editorial.py` names
+the fragment, the question and intro, and the manuscripts in reading order. The
+manuscripts list may name a manuscript in preparation (`FORTHCOMING`), which is
+shown with a summary and no link until its catalogue record exists; then the
+`FORTHCOMING` entry is removed and the slug stays in the list. The parent guide
+keeps every paper in its own manuscripts list, so the six subject guides still cover
+the catalogue exactly once; the paper pages of the focused guide's manuscripts link
+to the focused guide. The research index lists focused guides after the programme
+sections of their parent, without a stage badge.
 
 ## Stability walls and geometric degeneration
 

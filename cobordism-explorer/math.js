@@ -30,6 +30,25 @@
       else if(cuts.length===4){segments.push([cuts[0],cuts[1]],[cuts[2],cuts[3]]);}
     }return segments;
   }
-  const api={mod,mul,apply,sub,equal,zero,I,G,P0,bases,square,signedCount,collapse,contour};
+  // Paper III, Section 6: a toy ℤ/4-graded free integral complex, the one-component sign change
+  // between the calibrated and sphere-positive orientation systems, and the algebraic normalizer.
+  // C₀ = ℤ³ ⟨e₁,e₂,e₃⟩, C₁ = ℤ² ⟨f₁,f₂⟩, C₂ = ℤ² ⟨g₁,g₂⟩, C₃ = ℤ² ⟨h₁,h₂⟩. d[k] is d_k : C_k → C_{k−1}
+  // (indices mod 4), rows indexed by the basis of C_{k−1}: d₁f₁ = e₁, d₂g₁ = f₂, d₃h₂ = g₂, d₀e₂ = h₁.
+  const graded={ranks:[3,2,2,2],generators:[['e₁','e₂','e₃'],['f₁','f₂'],['g₁','g₂'],['h₁','h₂']],
+    d:[[[0,1,0],[0,0,0]],[[1,0],[0,0],[0,0]],[[0,0],[1,0]],[[0,0],[0,1]]],
+    cycles:[['e₁','e₃'],['f₂'],['g₂'],['h₁']],complement:[['e₂'],['f₁'],['g₁'],['h₂']]};
+  const mulZ=(A,B)=>mul(A,B,0);
+  const squaresToZero=d=>d.every((_,k)=>zero(mulZ(d[(k+3)%4],d[k])));
+  // Sphere-positive differential: s₀ = −1 on the component leaving degree 0, s₁ = s₂ = s₃ = 1.
+  const twistSigns=[-1,1,1,1];
+  const twist=d=>d.map((dk,k)=>dk.map(row=>row.map(x=>twistSigns[k]*x)));
+  // A change of sign by grading ζ conjugates d_k to ζ_{k−1}ζ_k d_k, so it changes an even number of components.
+  const relabel=(d,zeta)=>d.map((dk,k)=>{const s=zeta[(k+3)%4]*zeta[k];return dk.map(row=>row.map(x=>s*x));});
+  const changedComponents=(d1,d2)=>d1.map((dk,k)=>equal(dk,d2[k])?null:k).filter(k=>k!==null);
+  // The normalizer fixes the cycles and multiplies a complement in degree 0 by −1: here e₂ ↦ −e₂.
+  const normalizer=[[1,-1,1],[1,1],[1,1],[1,1]];
+  const diag=v=>v.map((x,i)=>v.map((_,j)=>i===j?x:0));
+  const intertwines=(A,d,dT)=>d.every((dk,k)=>equal(mulZ(dT[k],diag(A[k])),mulZ(diag(A[(k+3)%4]),dk)));
+  const api={mod,mul,apply,sub,equal,zero,I,G,P0,bases,square,signedCount,collapse,contour,graded,mulZ,squaresToZero,twist,relabel,changedComponents,normalizer,diag,intertwines};
   if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.CobMath=api;
 })(typeof globalThis!=='undefined'?globalThis:this);

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An interactive mathematical journey through four-dimensional cobordisms and the Atiyah–Floer comparison. Explore handles, commuting maps, compression-body collapse, and composition.">
+  <meta name="description" content="An interactive mathematical journey through four-dimensional cobordisms and the Atiyah–Floer comparison. Explore handles, commuting maps, compression-body collapse, composition, and the comparison of orientation systems.">
   <title>Four Dimensions, Two Languages · Atiyah–Floer Cobordism Explorer</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%237a2e2e'/%3E%3Cpath d='M8 12H32M8 28H32M12 8V32M28 8V32' stroke='%23fbfaf8' fill='none' stroke-width='2'/%3E%3C/svg%3E">
   <meta name="author" content="Bernd Johannes Wuebben">
@@ -19,8 +19,8 @@
 <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
 <!-- /site:styles -->
-  <link rel="stylesheet" href="site.css?v=958b56fdbbcf">
-  <script defer src="math.js?v=538d7e7471a9"></script><script defer src="app.js?v=efea81190cba"></script>
+  <link rel="stylesheet" href="site.css?v=d7d5cf835cf5">
+  <script defer src="math.js?v=c49f7a94a3b1"></script><script defer src="app.js?v=d12e51934355"></script>
 </head>
 <body>
 <!-- site:navigation -->
@@ -80,10 +80,10 @@
   <main id="main" tabindex="-1">
     <section class="intro" aria-labelledby="page-title">
       <div><p class="eyebrow"><span class="status-dot"></span> THE ATIYAH–FLOER COBORDISM EXPLORER</p><h1 id="page-title">Four dimensions.<br><em>Two languages.</em></h1></div>
-      <div class="intro-copy"><p>A cobordism changes a space.<br>A comparison changes its mathematical language.</p><p class="muted">Explore why the order of these operations agrees, from the first handle to the geometry of the proof.</p><a href="#laboratory" class="journey-link">Begin the journey <span>↓</span></a></div>
+      <div class="intro-copy"><p>A cobordism changes a space.<br>A comparison changes its mathematical language.</p><p class="muted">Explore why the order of these operations agrees, from the first handle to the signs that complete the comparison.</p><a href="#laboratory" class="journey-link">Begin the journey <span>↓</span></a></div>
     </section>
-    <section id="laboratory" class="laboratory" aria-label="Interactive six-step journey">
-      <div class="journey-bar"><span>SIX MOVES · ONE COMPARISON</span><span class="keyboard-hint">Use <kbd>←</kbd> <kbd>→</kbd> to explore</span><button id="motion-toggle" class="text-button" aria-pressed="false">Pause motion Ⅱ</button></div>
+    <section id="laboratory" class="laboratory" aria-label="Interactive seven-step journey">
+      <div class="journey-bar"><span>SEVEN MOVES · ONE COMPARISON</span><span class="keyboard-hint">Use <kbd>←</kbd> <kbd>→</kbd> to explore</span><button id="motion-toggle" class="text-button" aria-pressed="false">Pause motion Ⅱ</button></div>
       <nav id="chapters" class="chapters" aria-label="Journey chapters"></nav>
       <div class="workbench">
         <div class="visual-column">

@@ -117,7 +117,7 @@ def page(path, title, desc, body, extra="", image="drums", cls=""):
 explorers=[
  ("pillowcase-explorer","knot","01 · Topology","From a knot to a complex.","Cut a knot along a sphere and a three-dimensional problem becomes a count of intersecting curves.","Five guided moves · Worked trefoil example"),
  ("conifold-lab","conifold","02 · Algebraic geometry","A sphere disappears. Another takes its place.","Pass through a singularity, then see why the global relations decide what can happen.","Three experiments · Local geometry and global topology"),
- ("cobordism-explorer","cobordism","03 · Gauge theory","Four dimensions. Two languages.","A space changes. Two mathematical languages describe the change, and the question is whether they agree.","Six guided moves · Geometry, maps and comparison"),
+ ("cobordism-explorer","cobordism","03 · Gauge theory","Four dimensions. Two languages.","A space changes. Two mathematical languages describe the change, and the question is whether they agree.","Seven guided moves · Geometry, maps, comparison and signs"),
  ("beyond-hrp-lab","portfolio","04 · Quantitative finance","Give the hierarchy an expected return.","Change the forecast. Watch four portfolio rules decide what to hold.","Four experiments · Weights computed in your browser"),
  ("at-the-wall","stability-wall","05 · Geometric analysis","A small change. An enormous response.","Approach a stability wall and watch a chamber, a network, and three small eigenvalues reveal how geometry loses rigidity.","Four experiments · Chambers, spectra, and flow"),
  ("when-walls-collide","colliding-walls","06 · Enumerative geometry","Take two paths. Find the missing wall.","Cross two walls in a different order. Repair the disagreement, follow a frame around an annulus, and discover the distinction that periods miss.","Four experiments · Paths, holonomy, and a hidden discrepancy")
@@ -221,6 +221,19 @@ COMPANIONS={
  "calabi-yau":("Physics companions","physics-companions","/research/physics/#manuscripts",["compact-higgs-global-constraints","compact-higgs-quantum-transition","compact-higgs-magnetic-sheaves","compact-higgs-finite-planck"]),
 }
 
+# Focused guides nested under a subject guide, at research/<guide>/<slug>/. Each renders the
+# sections of content/<stem>.html, then a manuscripts list in reading order. A list may name a
+# manuscript from FORTHCOMING, which has no catalogue record, page or link yet. The parent guide's
+# manuscripts list keeps every catalogue paper, so the six guides still cover the catalogue exactly once.
+FORTHCOMING={}
+SUBGUIDES={
+ "topology":[dict(slug="atiyah-floer",name="Atiyah–Floer theory: from isomorphisms to functoriality",short="Atiyah–Floer theory",
+   question="When two theories share their invariants, do they share their maps?",
+   intro="The Atiyah–Floer conjecture predicts that two Floer theories of a three-manifold agree: one counts instantons on a four-dimensional cylinder, the other counts holomorphic curves in a moduli space of flat connections on a splitting surface. Daemi, Fukaya and Lipyanskiy proved an isomorphism of this kind for framed instanton homology. The papers collected here ask what lies beyond the isomorphism of groups: whether the comparison respects the maps that four-dimensional cobordisms induce, with which signs, and in which orientation conventions.",
+   image="cobordism",stem="atiyah-floer-guide",status_from="atiyah-floer",
+   groups=[("The cobordism series","progression",["af-cobordism-i","af-cobordism-ii","af-cobordism-iii"]),("Operations","operations",["af-point-operations"])])],
+}
+
 def focus_sections(stems):
     out=[]
     for stem in stems:
@@ -248,6 +261,12 @@ def paper_contexts():
             for slug in slugs:
                 result[slug]=dict(guide=p["name"],url=f'/research/{p["slug"]}/'+(f'#{anchor}' if s else ''),
                                   section=s["title"].rstrip(".") if s else None,status=s["status"] if s else None)
+        # A paper treated in a focused guide points there; the stage is that of its parent programme section.
+        for sg in SUBGUIDES.get(p["slug"],[]):
+            for _,_,slugs in sg["groups"]:
+                for slug in slugs:
+                    if slug in by_slug:
+                        result[slug]=dict(guide=p["name"],url=f'/research/{p["slug"]}/{sg["slug"]}/',section=sg["name"],status=sections[sg["status_from"]]["status"])
     assert set(result)=={x["slug"] for x in papers},"Every paper needs one home guide"
     return result
 
@@ -317,6 +336,7 @@ def guide_rows():
     for i,p in enumerate(programs):
         sections=[x for x in focus_sections(FOCUS.get(p["slug"],[])) if x["status"]]
         items=''.join(f'<li><a href="/research/{p["slug"]}/#{x["id"]}">{E(x["title"].rstrip("."))}</a>{status_badge(x["status"])}</li>' for x in sections) or ''.join(f'<li><span>{E(t)}</span></li>' for t,_ in p["themes"])
+        items+=''.join(f'<li><a href="/research/{p["slug"]}/{sg["slug"]}/">{E(sg["name"])}</a><span>Focused guide</span></li>' for sg in SUBGUIDES.get(p["slug"],[]))
         art=INDEX_ART.get(p["slug"],p["image"])
         body+=f'''<article class="guide-row"><a class="guide-row-art" href="/research/{p["slug"]}/" aria-label="{E(p["name"])}"><img src="/assets/illustrations/{art}.svg" alt="" width="800" height="500" loading="lazy"></a><div><p class="kicker">0{i+1} · {E(p["name"])}</p><h2><a href="/research/{p["slug"]}/">{E(p["question"])}</a></h2><p class="guide-row-intro">{p["intro"]}</p><ul class="guide-programmes">{items}</ul>{link("/research/"+p["slug"]+"/","Open the guide")}</div></article>'''
     return body+'</section>'
@@ -365,8 +385,7 @@ def build_research():
             body+=f'<ol class="program-papers" start="{i+1}">'
             for slug in slugs:
                 i+=1
-                item=by_slug[slug]
-                body+=f'''<li><span class="paper-number">{i:02}</span><div><h3><a href="/papers/{slug}/">{E(item["title"])}</a></h3><p class="small">{E(roles.get(slug,item["label"]))}</p><p class="small">{E(item["status"])} · {item["publication_date"][:4]} · <a href="/papers/{slug}/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary>{item["abstract_html"]}</details></div></li>'''
+                body+=manuscript_item(i,slug)
             body+='</ol>'
         if p["slug"] in COMPANIONS:
             label,anchor,home,slugs=COMPANIONS[p["slug"]]
@@ -375,6 +394,41 @@ def build_research():
             body+=f'</ul><p class="small">Full entries, with abstracts, are in the <a href="{home}">physics guide</a>.</p>'
         body+='</section>'
         page(f'research/{p["slug"]}/index.html',p["name"],p["intro"],body,image=p["image"])
+
+def manuscript_item(i,slug):
+    """One numbered entry of a manuscripts list: a catalogue paper, or a forthcoming manuscript without a page."""
+    if slug in by_slug:
+        item=by_slug[slug]
+        return f'''<li><span class="paper-number">{i:02}</span><div><h3><a href="/papers/{slug}/">{E(item["title"])}</a></h3><p class="small">{E(roles.get(slug,item["label"]))}</p><p class="small">{E(item["status"])} · {item["publication_date"][:4]} · <a href="/papers/{slug}/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary>{item["abstract_html"]}</details></div></li>'''
+    item=FORTHCOMING[slug]
+    return f'''<li><span class="paper-number">{i:02}</span><div><h3>{E(item["title"])}</h3><p class="small">{E(item["role"])}</p><p class="small">{E(item["status"])} · {item["year"]}</p><details><summary>Read a summary</summary>{item["summary"]}</details></div></li>'''
+
+def build_subguides():
+    for p in programs:
+        for sg in SUBGUIDES.get(p["slug"],[]):
+            text=(ROOT/f"content/{sg['stem']}.html").read_text()
+            sections=re.findall(r'<section\b[^>]*\bid="([^"]+)"[^>]*>.*?<h2[^>]*>(.*?)</h2>',text,re.S)
+            assert sections,"A focused guide needs sections with ids and headings: "+sg["slug"]
+            slugs=[s for _,_,group in sg["groups"] for s in group]
+            missing=[s for s in slugs if s not in by_slug and s not in FORTHCOMING]
+            assert not missing,"Unknown manuscripts in focused guide: "+", ".join(missing)
+            assert all(s in roles for s in slugs if s in by_slug),"Every catalogue paper in a focused guide needs a role"
+            body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1><p class="intro">{sg["intro"]}</p></div><img src="/assets/illustrations/{sg["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(sg["short"])}"></header>'''
+            body+='<nav class="page-contents" aria-label="On this page"><p class="kicker">On this page</p><ol>'
+            for anchor,title in sections+[("manuscripts","The manuscripts.")]:
+                body+=f'<li><a href="#{anchor}">{E(re.sub(r"<[^>]+>","",title).strip().rstrip("."))}</a></li>'
+            body+='</ol></nav>'+text
+            body+=f'<section class="section-block" id="manuscripts"><p class="kicker">{len(slugs)} manuscripts · Reading order</p><h2>The manuscripts.</h2>'
+            i=0
+            for label,anchor,group in sg["groups"]:
+                count=f'{len(group)} manuscript'+('s' if len(group)>1 else '')
+                body+=f'<p class="paper-group">{E(label)} · {count}<a href="#{anchor}">The section ↑</a></p><ol class="program-papers" start="{i+1}">'
+                for slug in group:
+                    i+=1
+                    body+=manuscript_item(i,slug)
+                body+='</ol>'
+            body+=f'<p class="small">The subject overview, with the knot papers and the four-manifold problems, is the <a href="/research/{p["slug"]}/">{E(p["name"])}</a> guide.</p></section>'
+            page(f'research/{p["slug"]}/{sg["slug"]}/index.html',sg["name"],sg["intro"],body,image=sg["image"])
 
 def build_about():
     body=(ROOT/"content/about.html").read_text()
@@ -421,6 +475,7 @@ def main():
     build_home()
     build_explorers()
     build_research()
+    build_subguides()
     build_about()
     build_writing_updates()
     subprocess.run(["python3",str(ROOT/"tools/update-site.py")],check=True)

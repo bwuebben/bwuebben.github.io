@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atiyah–Floer theory: from isomorphisms to functoriality — Bernd Johannes Wuebben</title><meta name="description" content="The Atiyah–Floer conjecture predicts that two Floer theories of a three-manifold agree: one counts instantons on a four-dimensional cylinder, the other counts holomorphic curves in a moduli space of flat connections on a splitting surface. Daemi, Fukaya and Lipyanskiy proved an isomorphism of this kind for framed instanton homology. The papers collected here ask what lies beyond the isomorphism of groups: whether the comparison respects the maps that four-dimensional cobordisms induce, with which signs, and in which orientation conventions.">
+<meta name="author" content="Bernd Johannes Wuebben"><link rel="canonical" href="https://bwuebben.github.io/research/topology/atiyah-floer/">
+<meta property="og:title" content="Atiyah–Floer theory: from isomorphisms to functoriality"><meta property="og:description" content="The Atiyah–Floer conjecture predicts that two Floer theories of a three-manifold agree: one counts instantons on a four-dimensional cylinder, the other counts holomorphic curves in a moduli space of flat connections on a splitting surface. Daemi, Fukaya and Lipyanskiy proved an isomorphism of this kind for framed instanton homology. The papers collected here ask what lies beyond the isomorphism of groups: whether the comparison respects the maps that four-dimensional cobordisms induce, with which signs, and in which orientation conventions.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://bwuebben.github.io/research/topology/atiyah-floer/">
+<meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg"><meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Bernd Wuebben — Updates" href="/feed.xml">
+<!-- site:styles -->
+<link rel="stylesheet" href="../../../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../../../assets/style.css?v=acd4f5ed3e01">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="/assets/editorial.css?v=ce86de2ff9b5">
+</head><body class="editorial ">
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../../../">Home</a></li>
+      <li><a href="../../../papers/">Papers</a></li>
+      <li><a href="../../">Research guides</a></li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../../../writing/">Essays &amp; poem</a></li>
+            <li><a href="../../../not-enough.html">Not Enough</a></li>
+            <li><a href="../../../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../../../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../../../writing/one-law/">Black holes &amp; markets</a></li>
+            <li><a href="../../../writing/one-year-per-year/">One year per year</a></li>
+            <li><a href="../../../writing/nobody-did-it/">Nobody did it</a></li>
+            <li><a href="../../../writing/broken-things/">Broken things</a></li>
+            <li><a href="../../../writing/who-vouches/">Who vouches</a></li>
+            <li><a href="../../../writing/two-failures/">Two ways to fail</a></li>
+            <li><a href="../../../writing/balance-point/">Balance point</a></li>
+            <li><a href="../../../writing/nothing-condenses-alone/">Nothing condenses alone</a></li>
+            <li><a href="../../../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../../../explorers/">Visual companions</a></li>
+            <li><a href="../../../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../../../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../../../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../../../beyond-hrp-lab/">Beyond HRP</a></li>
+            <li><a href="../../../at-the-wall/">At the Wall</a></li>
+            <li><a href="../../../when-walls-collide/">When Walls Collide</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../../../updates/">Updates</a></li>
+      <li><a href="../../../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="edition" tabindex="-1"><header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/topology/">Knots, four-manifolds &amp; Floer theory</a> / Atiyah–Floer theory</p><h1>When two theories share their invariants, do they share their maps?</h1><p class="intro">The Atiyah–Floer conjecture predicts that two Floer theories of a three-manifold agree: one counts instantons on a four-dimensional cylinder, the other counts holomorphic curves in a moduli space of flat connections on a splitting surface. Daemi, Fukaya and Lipyanskiy proved an isomorphism of this kind for framed instanton homology. The papers collected here ask what lies beyond the isomorphism of groups: whether the comparison respects the maps that four-dimensional cobordisms induce, with which signs, and in which orientation conventions.</p></div><img src="/assets/illustrations/cobordism.svg" width="800" height="500" alt="Schematic illustration of Atiyah–Floer theory"></header><nav class="page-contents" aria-label="On this page"><p class="kicker">On this page</p><ol><li><a href="#question">From an isomorphism to a functor</a></li><li><a href="#progression">Parity, then signs, then conventions</a></li><li><a href="#operations">Operations, and the bubbles that correct them</a></li><li><a href="#frontier">What is settled, and what is not</a></li><li><a href="#reading">Where to begin, and what each theorem assumes</a></li><li><a href="#manuscripts">The manuscripts</a></li></ol></nav><section class="section-block focus" id="question">
+  <p class="kicker">I · The question</p>
+  <h2>From an isomorphism to a functor.</h2>
+  <p class="focus-lede">Floer homology assigns a group to a three-manifold and a map to each four-dimensional cobordism between three-manifolds. The groups are the invariants; the maps are what makes the theory useful, because an invariant of a closed four-manifold is assembled from the maps of the pieces it is cut into. An isomorphism between two Floer theories therefore raises a second question at once: does it carry the maps of one theory to the maps of the other?</p>
+  <div class="prose-columns">
+    <div>
+      <h3>The two sides</h3>
+      <p>On the gauge-theoretic side stands framed instanton homology, the version of instanton Floer homology introduced by Kronheimer and Mrowka in which the three-manifold is summed with a three-torus, so that the flat connections that matter are irreducible. On the symplectic side, a Heegaard splitting cuts the three-manifold into two pieces meeting along a surface. The flat connections on the surface form a symplectic moduli space, the connections that extend over each piece form a Lagrangian in it, and the Lagrangian Floer homology of the two is the symplectic invariant. In the framed construction the two pieces are compression bodies rather than handlebodies.</p>
+      <p>Daemi, Fukaya and Lipyanskiy proved that the two groups are isomorphic. Their isomorphism counts solutions of a mixed equation: anti-self-dual connections on a four-dimensional part and holomorphic curves on a two-dimensional part, coupled by a matching condition along a common boundary.</p>
+    </div>
+    <div>
+      <h3>The organizing question</h3>
+      <p>A cobordism W from M₀ to M₁ induces a map F(W) in framed instanton homology. The symplectic side has its own candidate maps S(W), defined by counting holomorphic triangles with the correspondences of compression bodies as boundary conditions. Naturality asks that the two routes around the square agree:</p>
+      <p class="display-formula">Ψ<sub>M₁</sub> ∘ F(W) ≃ ± S(W) ∘ Ψ<sub>M₀</sub><small>Ψ is the mixed comparison. The sign is one sign for the entire map.</small></p>
+      <p>Three questions are folded into this line. Does the square commute at all, say with coefficients in the field of two elements? Does it commute with integer coefficients, once every count is signed by a coherent orientation system? And when it does, which orientation system has been used, and how does it relate to the conventions in which framed instanton homology is usually defined? The three cobordism papers answer these in turn.</p>
+    </div>
+  </div>
+</section>
+<section class="section-block focus" id="progression">
+  <p class="kicker">II · Three papers, one progression</p>
+  <h2>Parity, then signs, then conventions.</h2>
+  <p class="focus-lede">The three papers are not variations on one theme. Each removes a limitation of the one before it: the first establishes the square modulo two, the second signs it, and the third identifies the signed square with the conventions in which framed instanton homology is usually defined.</p>
+  <div class="progression">
+    <div id="paper-i">
+      <p class="coefficients">Paper I · Coefficients in 𝔽₂</p>
+      <h3>From isomorphisms to cobordism maps</h3>
+      <p>Mixed isomorphisms of Daemi–Fukaya–Lipyanskiy type intertwine the Kronheimer–Mrowka cobordism maps with maps defined by holomorphic curves alone, for every connected cobordism between connected three-manifolds that carries a framed arc between its ends and an SO(3) bundle trivialized along the ends and the arc. The symplectic maps count holomorphic triangles, with the correspondence of a compression body as one boundary condition for one- and three-handles. They are independent of the handle decomposition and form a functor isomorphic to framed instanton homology.</p>
+      <p class="small">Two analytic results carry the proof: an adiabatic limit in which a compression body collapses next to a holomorphic strip and becomes a Lagrangian boundary condition, and an excision theorem along a torus for the mixed equation.</p>
+    </div>
+    <div id="paper-ii">
+      <p class="coefficients">Paper II · Coefficients in ℤ</p>
+      <h3>From parity to signed counts</h3>
+      <p>Orientations are transported from the gauge theory through the mixed equation. With them, the integral instanton cobordism maps in the almost-complex orientation convention are intertwined with signed symplectic maps, up to chain homotopy and one overall sign for each cobordism, so that the symplectic maps form a projective functor on homology. The new input is that the two degenerations of Paper I, collapse and excision, preserve orientations.</p>
+      <p class="small">Where the integral framed instanton homology vanishes, the complexes are contractible and the maps are zero. The paper leaves open how its transported orientations relate to the homology-oriented integral maps of the literature.</p>
+    </div>
+    <div id="paper-iii">
+      <p class="coefficients">Paper III · Integral chain-level comparisons</p>
+      <h3>From transported orientations to the usual conventions</h3>
+      <p>Two comparisons close the gap left by Paper II. The first identifies the comparison with the usual framed instanton maps, defined through the singular Hopf-link realization with their homology orientations, by way of the Kronheimer–Mrowka excision cobordism. The identification holds up to an explicit grading conversion and one overall sign, compatibly with changes of presentation and with the cobordism maps. The second compares two choices inside the Daemi–Fukaya–Lipyanskiy orientation construction, the system calibrated to Paper II's gauge reference and the system in which attaching a generator sphere preserves orientation, and constructs integral chain homotopy equivalences between them for every closed connected oriented three-manifold.</p>
+      <p class="small">The equivalences are finite weighted count expressions: integer combinations of products of ordinary instanton counts, surgery counts, and forward and reflected mixed counts. Their coefficients are an algebraic choice; the composite comparison has a fixed projective homotopy class.</p>
+    </div>
+  </div>
+  <div class="prose-columns">
+    <div>
+      <h3>What the three say together</h3>
+      <p>On homology, the usual framed instanton theory, with the stated convention conversion, is naturally isomorphic up to sign to a symplectic theory whose maps are counts of holomorphic curves. The result is not only an isomorphism of groups for each three-manifold but a comparison compatible with the cobordisms between them.</p>
+    </div>
+    <div>
+      <h3>How to read the claims</h3>
+      <p>The three are research manuscripts. Each states its hypotheses in its introduction, and independent specialist refereeing of the analytic arguments is outstanding. The second theorem of Paper III constructs a coherent system of normalizing maps; it does not identify that system with independently prescribed geometric counts, and the final section of the paper says which identifications remain open.</p>
+    </div>
+  </div>
+</section>
+<section class="section-block focus" id="operations">
+  <p class="kicker">III · A second direction</p>
+  <h2>Operations, and the bubbles that correct them.</h2>
+  <p class="focus-lede">Floer homology carries more than cobordism maps. The splitting surface acts on it through point, loop and surface operations, and a comparison of theories should respect these as well. A separate paper studies the point operation in the embedded-Lagrangian setting of Daemi, Fukaya and Lipyanskiy, and finds that the naive identification is false.</p>
+  <div class="prose-columns">
+    <div>
+      <h3>What is proved</h3>
+      <p>In the positive Pontryagin normalization, the symplectic point operation agrees with the gauge-theoretic one only after a shift of 8, 4 or 0, according as the marked component has genus one, two, or at least three. One coherent orientation system serves both matching components, and together with the known surface and loop comparisons the result gives the corrected action of the observable algebra over every commutative coefficient ring. When four is invertible, the quarter-Pontryagin normalization gives the shifts 2, 1 and 0.</p>
+    </div>
+    <div>
+      <h3>Where the correction comes from</h3>
+      <p>An index-four mixed sequence can develop a bubble on the matching line, of normalized energy one-half. Holomorphic doubling identifies the limiting models, a Dirichlet construction glues them back to regular index-zero solutions, and the relative incidence degrees of these ends, eight and four in genera one and two, are the correction terms. The dictionary between the two theories is therefore not the obvious one. Its terms are fixed by degenerations the comparison cannot avoid.</p>
+    </div>
+  </div>
+  <p class="small">The point-operations paper and the cobordism series share the mixed equation but work in different settings: the embedded-Lagrangian comparison with its admissible bundles on one side, the framed torus-summed construction on the other. Neither depends on the other. The essay <a href="/writing/broken-things/">Why broken things make invariants</a> explains the bubbling in non-technical terms.</p>
+</section>
+<section class="section-block focus" id="frontier">
+  <p class="kicker">IV · The research frontier</p>
+  <h2>What is settled, and what is not.</h2>
+  <p class="focus-lede">Paper III changes the shape of the open problem rather than closing it. The comparison with the usual framed instanton maps, previously listed in these guides as a missing theorem, is now a theorem in one realization of those maps and an open question in another.</p>
+  <table class="stage-table frontier-table"><thead><tr><th scope="col">Question</th><th scope="col">Status</th><th scope="col">Where</th></tr></thead><tbody>
+    <tr><td>Compatibility with cobordism maps, over 𝔽₂</td><td>Proved</td><td>Paper I</td></tr>
+    <tr><td>Integral compatibility with transported orientations, up to one sign for each cobordism</td><td>Proved</td><td>Paper II</td></tr>
+    <tr><td>Identification with the usual framed instanton maps in the singular Hopf-link realization, with their homology orientations, up to grading conversion and one sign</td><td>Proved</td><td>Paper III, Theorem A</td></tr>
+    <tr><td>Equivalence of the calibrated and sphere-positive orientation systems for every three-manifold, by weighted count expressions</td><td>Proved</td><td>Paper III, Theorem B</td></tr>
+    <tr><td>Comparison with the nonsingular torus-cap convention of Scaduto</td><td>Open</td><td>Paper III, Question 1</td></tr>
+    <tr><td>Agreement with independently prescribed relative-spin operations</td><td>Open</td><td>Paper III, Question 2</td></tr>
+    <tr><td>Coherence beyond homology: chain-level composition, categorical or spectral refinements</td><td>Not attempted</td><td>A longer-term direction</td></tr>
+  </tbody></table>
+  <div class="prose-columns">
+    <div>
+      <h3>Near term: two prescribed conventions</h3>
+      <p><strong>The nonsingular cap.</strong> Scaduto's framed construction defines its reference lines and homology-oriented maps through a particular torus cap. How does the boundary gauge action on that cap's reference line compare with the singular Hopf-link and almost-complex reference actions, and how does the comparison behave under cobordism gluing? A closed index formula alone does not identify the action. The incoming reference operator, the outgoing bundle action and the quotient identification must be kept together in one determinant-gluing diagram.</p>
+      <p><strong>Relative-spin operations.</strong> A relative-spin system fixes background classes and spin data on the Lagrangian correspondences before any count is made. For a specified compatible system, do its strip, cup, cap, triangle and stabilization maps agree, up to the required integral homotopies, with the transported symplectic maps and their mixed comparison? Agreement on strip complexes would not settle the auxiliary operations, and the target system must be specified together with its behaviour under changes of genus.</p>
+    </div>
+    <div>
+      <h3>Longer term: coherence and the knot strand</h3>
+      <p>The present results hold on homology, up to one sign for each cobordism, or at chain level up to homotopy. A comparison that respects compositions coherently at chain level, and eventually a categorical or spectrum-level refinement, would be the natural continuation. No paper here attempts it.</p>
+      <p>The knot papers in the <a href="/research/topology/#atiyah-floer">topology guide</a> compare singular instanton homology with pillowcase complexes; the cobordism papers compare framed instanton homology with the Floer homology of a splitting. No paper relates the two comparisons. Whether the two strands can be assembled into one theory, in which knot complexes and three-manifold complexes are related by maps the comparison respects, is a question this guide asks and none of the manuscripts claims to answer.</p>
+      <p class="small">One sharply posed unsolved problem is worth more here than a list of conjectures. The two questions above are stated in Paper III with the conventions they require.</p>
+    </div>
+  </div>
+</section>
+<section class="section-block focus" id="reading">
+  <p class="kicker">V · Reading order, hypotheses and companions</p>
+  <h2>Where to begin, and what each theorem assumes.</h2>
+  <div class="prose-columns">
+    <div>
+      <h3>Reading order</h3>
+      <p>Begin with the introduction of Paper I and its Theorems A, B and C, which state the comparison over 𝔽₂ and the two analytic inputs. Paper II can then be read for its orientation transport, with the unsigned analysis taken from Paper I. Paper III assumes both and is read for its two comparison theorems and its final section of open questions. The point-operations paper is independent and can be read at any point.</p>
+      <ol class="route" aria-label="Reading order"><li><span class="route-label">Order</span></li><li><a href="/papers/af-cobordism-i/">Paper I</a></li><li><a href="/papers/af-cobordism-ii/">Paper II</a></li><li><a href="/papers/af-cobordism-iii/">Paper III</a></li><li><a href="/papers/af-point-operations/">Point operations</a></li></ol>
+      <p class="small">The <a href="/cobordism-explorer/">cobordism explorer</a> walks through the constructions in seven moves, from a handle to the comparison of orientation systems, with exact finite-dimensional models in place of Floer data. The <a href="/pillowcase-explorer/">pillowcase explorer</a> does the same for the knot strand.</p>
+    </div>
+    <div>
+      <h3>Hypotheses that travel with the theorems</h3>
+      <p>The cobordism series concerns connected cobordisms between connected three-manifolds, decorated with a framed arc between the ends and an SO(3) bundle trivialized along the ends and the arc; the bundle and framing data are part of the morphism. The comparison uses the framed construction, in which the three-manifold is summed with a three-torus, and Heegaard presentations of positive genus whose primary perturbations lie in a specified small admissible domain. The common-data statements of Paper III hold where the hypotheses of the Daemi–Fukaya–Lipyanskiy construction and of Papers I and II are both satisfied, and extend to arbitrary regular small presentations by geometric transport.</p>
+      <p class="small">None of the papers constructs the units, counits or closed pairings of a full field theory, and none asserts a comparison with orientation conventions beyond those named in the table above.</p>
+    </div>
+  </div>
+</section>
+<section class="section-block" id="manuscripts"><p class="kicker">4 manuscripts · Reading order</p><h2>The manuscripts.</h2><p class="paper-group">The cobordism series · 3 manuscripts<a href="#progression">The section ↑</a></p><ol class="program-papers" start="1"><li><span class="paper-number">01</span><div><h3><a href="/papers/af-cobordism-i/">Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology I</a></h3><p class="small">Compatibility with four-dimensional cobordism maps over the field of two elements.</p><p class="small">Preprint · 2026 · <a href="/papers/af-cobordism-i/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary><p>We prove that isomorphisms of the type constructed by Daemi, Fukaya and Lipyanskiy, between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting, intertwine the cobordism maps of Kronheimer and Mrowka with maps defined by holomorphic curves alone, over the field of two elements. This holds for every connected cobordism between connected three-manifolds carrying a framed arc between its ends and an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">O</mi></mrow><mo stretchy="false">&#x00028;</mo><mn>3</mn><mo stretchy="false">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. The symplectic maps count holomorphic triangles in moduli spaces of flat connections on surfaces, with the correspondence of a compression body as boundary condition for one- and three-handles. Consequently these maps are independent of the handle decomposition and of the Heegaard data, and form a functor isomorphic to framed instanton homology; where both are defined, our isomorphisms agree with those of Daemi, Fukaya and Lipyanskiy modulo two. The proof rests on two analytic results for the mixed anti-self-duality and holomorphic curve equation: an adiabatic limit in which a compression body collapses next to a holomorphic strip and becomes the Lagrangian boundary condition of its flat connections, and an excision theorem along a torus.</p></details></div></li><li><span class="paper-number">02</span><div><h3><a href="/papers/af-cobordism-ii/">Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology II</a></h3><p class="small">The integral comparison: orientations, signed counts, and the remaining overall sign for each cobordism.</p><p class="small">Preprint · 2026 · <a href="/papers/af-cobordism-ii/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary><p>We prove that the mixed isomorphisms of Daemi, Fukaya and Lipyanskiy type between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting intertwine the integral instanton cobordism maps, oriented by almost-complex structures, with signed symplectic cobordism maps, up to chain homotopy and one overall sign for each cobordism. This holds for every connected cobordism between connected three-manifolds carrying a framed arc and an <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">O</mi></mrow><mo stretchy="false">&#x00028;</mo><mn>3</mn><mo stretchy="false">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. Where the integral framed instanton homology is nonzero, the symplectic maps are signed counts of holomorphic triangles, with the Lagrangian correspondence of a compression body as one boundary condition for one- and three-handles. At three-manifolds whose integral framed instanton homology vanishes, the complexes are contractible and the maps are zero. The orientations are transported from the gauge theory through the mixed anti-self-duality and holomorphic curve equation. Consequently these maps form a projective functor on homology, independent of the handle decomposition up to sign. The unsigned analysis is that of the comparison modulo two; the new input is that two degenerations of the mixed equation, the collapse of a compression body and excision along a torus, preserve orientations. Where this homology is nonzero, we also prove that the sign by which the orientations change when a sphere is attached to a strip is constant under small perturbations and invariant under reversing the splitting. The relation with homology-oriented integral instanton maps is left open.</p></details></div></li><li><span class="paper-number">03</span><div><h3><a href="/papers/af-cobordism-iii/">Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology III</a></h3><p class="small">Usual singular gauge maps, the signed DFL count, and normalization by geometric count expressions for every closed connected three-manifold.</p><p class="small">Preprint · 2026 · <a href="/papers/af-cobordism-iii/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary><p>We construct integral chain homotopy equivalences intertwining the usual framed instanton cobordism maps in the singular Hopf-link construction with symplectic cobordism maps oriented by transport from gauge theory. At common regular small data, the equivalences are represented by the Daemi–Fukaya–Lipyanskiy mixed count with a specified coherent orientation. For connected framed cobordisms, they are natural up to integral chain homotopy and one overall sign, with an explicit grading conversion, and extend by geometric changes of presentation. We also construct equivalences to the normalization in which attachment of a generating sphere in the surface moduli space preserves orientation, for every closed connected oriented three-manifold. Surgery generation gives a finite model built from one-generator complexes for the three-sphere. Counts through the three-sphere realize its grading-preserving matrix entries, so an algebraically chosen normalization becomes a finite integer linear combination of products of geometric counts. A polynomial in forward and reflected mixed counts transfers this construction to the symplectic complex. The proof uses the companion analytic and naturality results and the stated ordinary surgery and oriented gluing inputs. Identification with prescribed relative-spin maps and the nonsingular cap convention remains open.</p></details></div></li></ol><p class="paper-group">Operations · 1 manuscript<a href="#operations">The section ↑</a></p><ol class="program-papers" start="4"><li><span class="paper-number">04</span><div><h3><a href="/papers/af-point-operations/">Point operations and matching-line bubbles in the Atiyah–Floer comparison</a></h3><p class="small">Point operations in the Atiyah–Floer comparison, including genus-dependent correction terms.</p><p class="small">Preprint · 2026 · <a href="/papers/af-point-operations/">Abstract, PDF &amp; citation ↗</a></p><details><summary>Read the abstract</summary><p>We prove compatibility of the integral point operations in the admissible <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mi>S</mi><mi>O</mi><mo stretchy="false">&#x00028;</mo><mn>3</mn><mo stretchy="false">&#x00029;</mo></mrow></math> Atiyah–Floer comparison of Daemi, Fukaya, and Lipyanskiy, in their embedded-Lagrangian setting. In the positive <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><msub><mi>p</mi><mn>1</mn></msub></mrow></math> normalization, the symplectic point operation is shifted by <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>8</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>4</mn></mrow></math>, or <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn></mrow></math> according as the marked component has genus one, two, or at least three. One coherent orientation system works for both matching components. Together with the known surface and loop comparisons and integral operation relations, this gives the corrected observable-algebra action over every commutative coefficient ring. When four is invertible, quarter-Pontryagin normalization gives the shifts <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>2</mn></mrow></math>, <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>1</mn></mrow></math>, and <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow><mn>0</mn></mrow></math>.</p>
+<p>An index-four mixed sequence can develop a matching bubble of normalized energy one-half. Holomorphic doubling and the converse estimates identify compact limiting models: degree-one stable families and single elementary modifications of constant families. A Dirichlet construction reconstructs these models and glues them to regular index-zero mixed solutions. Converse gluing and the incidence conditions identify every bubbling end of the chosen point cut. The relative incidence degrees are eight and four in genera one and two. Comparing the actual gluing derivative with determinant-line excision determines their signs. Ordinary reference orientations agree for the two homologous matching surfaces; a local sphere comparison and a stabilized torus example fix the genus-two normalization even when the ambient rational Floer homology vanishes. The resulting boundary identity uses the original integral geometric count as its homotopy.</p></details></div></li></ol><p class="small">The subject overview, with the knot papers and the four-manifold problems, is the <a href="/research/topology/">Knots, four-manifolds &amp; Floer theory</a> guide.</p></section><footer class="edition-footer"><span>Bernd Johannes Wuebben<br>Finance · Mathematics · Theoretical Physics</span><nav aria-label="Footer"><a href="/about/">About &amp; contact</a><a href="/updates/">Updates</a><a href="/feed.xml">RSS</a><a href="https://scholar.google.com/citations?user=uCkoy4IAAAAJ">Google Scholar ↗</a></nav></footer></main></body></html>

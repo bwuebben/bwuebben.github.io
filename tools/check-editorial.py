@@ -69,6 +69,8 @@ for p in old_papers:
  assert {k:v for k,v in p.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed},"Existing manuscript metadata changed: "+p["slug"]
  assert all(r in current["related"] for r in p["related"]),"Existing related links removed: "+p["slug"]
 assert set(new_entries)=={p["catalogue_anchor"] for p in papers},"Catalogue and manifest differ"
+# The six subject guides at research/<guide>/ cover the catalogue exactly once. Focused guides nested
+# below them (research/<guide>/<slug>/) repeat the papers they treat and are checked for links only.
 guide_links=[]
 for guide in (ROOT/"research").glob("*/index.html"):
  guide_links+=re.findall(r'<h3><a href="/papers/([^/]+)/">',guide.read_text())

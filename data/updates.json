@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-29",
+    "title": "A focused Atiyah–Floer research guide and a seventh explorer move",
+    "url": "/research/topology/atiyah-floer/",
+    "description": "A new research guide, nested under the topology guide, presents the Atiyah–Floer programme in five sections: the question of functoriality, the three cobordism papers as one progression from parity to signs to conventions, the point-operations paper and its bubbling corrections, a table of what is proved and what remains open after Paper III, and the reading order with the hypotheses each theorem carries. The cobordism explorer gains a seventh move, which compares the two orientation systems of Paper III on an exact integral model."
+  },
+  {
+    "date": "2026-10-29",
     "title": "Atiyah–Floer cobordism maps III: usual maps and integral normalization",
     "url": "/papers/af-cobordism-iii/",
     "description": "A new paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons."
