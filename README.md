@@ -444,8 +444,12 @@ shown with a summary and no link until its catalogue record exists; then the
 `FORTHCOMING` entry is removed and the slug stays in the list. The parent guide
 keeps every paper in its own manuscripts list, so the six subject guides still cover
 the catalogue exactly once; the paper pages of the focused guide's manuscripts link
-to the focused guide. The research index lists focused guides after the programme
-sections of their parent, with the stage badge of the section they extend.
+to the focused guide. Stages belong to programmes, not to guides: on the research
+index a focused guide appears as a link beside the programme section it presents,
+and the stage table lists the programme. The topology guide has two programmes,
+"Knots and the pillowcase" (`content/topology-knots.html`, developing) and
+"Atiyah–Floer functoriality" (`content/topology-atiyah-floer.html`, integrated:
+Paper III joins the signed comparison to the usual framed instanton maps).
 
 ## Stability walls and geometric degeneration
 

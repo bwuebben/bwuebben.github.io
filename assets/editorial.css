@@ -146,9 +146,10 @@
 .guide-row h2 a:hover { color:var(--accent); }
 .guide-row-intro { color:var(--ink-soft); font-size:1.02rem; line-height:1.62; }
 .guide-programmes { list-style:none; padding:0; margin:1.4rem 0; border-top:1px solid var(--rule); }
-.guide-programmes li { display:flex; justify-content:space-between; align-items:baseline; gap:.8rem; padding:.55rem 0; border-bottom:1px solid var(--rule); font:.86rem/1.4 var(--sans); }
+.guide-programmes li { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:.3rem .8rem; padding:.55rem 0; border-bottom:1px solid var(--rule); font:.86rem/1.4 var(--sans); }
+.guide-programmes .guide-link { font-size:.78rem; white-space:nowrap; }
 .guide-programmes li span { color:var(--ink-soft); }
-.edition .guide-programmes .status { margin-left:0; flex:none; }
+.edition .guide-programmes .status { margin-left:auto; flex:none; }
 .stage-table { width:100%; border-collapse:collapse; margin-top:1.8rem; border-top:1px solid var(--ink); }
 .stage-table th { text-align:left; font:500 .62rem/1.5 var(--sans); letter-spacing:.16em; text-transform:uppercase; color:var(--ink-soft); padding:.7rem 1.4rem .7rem 0; border-bottom:1px solid var(--rule); }
 .stage-table td { vertical-align:baseline; padding:.85rem 1.4rem .85rem 0; border-bottom:1px solid var(--rule); font:.86rem/1.5 var(--sans); color:var(--ink-soft); }
