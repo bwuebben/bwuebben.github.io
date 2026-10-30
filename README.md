@@ -262,8 +262,14 @@ All four integrated explorers end with a “From picture to paper” section:
 five knot-instanton papers, six Calabi–Yau smoothability papers, the
 cobordism papers, and the Beyond HRP paper with its replication code
 respectively. A manuscript without a catalogue page yet is listed with a link
-to its research guide instead of a paper page. Titles and PDF links follow `papers/index.html`; update the
-relevant explorer when a catalogue title or PDF destination changes.
+to its research guide instead of a paper page. Titles follow `papers/index.html`.
+Every manuscript link outside the catalogue and the paper pages, including the
+explorers' "Read the paper" buttons, reading lists and the essays, leads to arXiv
+or SSRN when the catalogue's archive record names one and otherwise to the paper
+page; `tools/integrate-site.py` rewrites repository PDF links accordingly (absolute
+site addresses on `standalone.html` copies), and `tools/check-editorial.py` fails on
+a remaining repository PDF link or a reading-list entry that bypasses an arXiv or
+SSRN record. Only the catalogue and paper pages keep "current version (PDF)" links.
 The common reading-section layout lives in `assets/style.css`.
 
 The geometry is schematic and the finite-dimensional algebra is an illustrative

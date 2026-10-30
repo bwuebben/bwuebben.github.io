@@ -75,6 +75,22 @@ guide_links=[]
 for guide in (ROOT/"research").glob("*/index.html"):
  guide_links+=re.findall(r'<h3><a href="/papers/([^/]+)/">',guide.read_text())
 assert len(guide_links)==len(papers) and set(guide_links)=={p["slug"] for p in papers},"Research guides must cover every paper exactly once"
+# Outside the catalogue and the paper pages, a manuscript link leads to arXiv or SSRN when the paper is
+# archived there and otherwise to its paper page; a "Read the paper" button follows the same rule and never
+# points at a repository PDF. The paper pages and the catalogue keep "current version (PDF)" links.
+pdf_urls={r["url"] for p in papers for r in p["resources"] if "PDF" in r["label"]}
+archived={p["slug"]:p["archive"]["url"] for p in papers if (p.get("archive") or {}).get("name") in ("arXiv","SSRN")}
+READERS=("../","/","#","https://bwuebben.github.io/","https://arxiv.org/","https://papers.ssrn.com/","https://ssrn.com/")
+for path in [p for p in ROOT.rglob("*.html") if p.relative_to(ROOT).parts[0] not in {"tools","templates","content","papers","review"}]+sorted(ROOT.glob("*/app.js")):
+ text=path.read_text();name=str(path.relative_to(ROOT))
+ for url in pdf_urls:
+  if 'href="'+url+'"' in text:errors.append(name+": repository PDF link; link the paper page, arXiv or SSRN: "+url)
+ for href,label in re.findall(r'<a [^>]*href="([^"]+)"[^>]*>([^<]*[Rr]ead (?:the )?paper[^<]*)</a>',text):
+  if not href.startswith(READERS):errors.append(name+": '"+label.strip()+"' must lead to the paper page, arXiv or SSRN, not "+href)
+ if '<div class="reading-list">' in text:
+  a=text.index('<div class="reading-list">');block=text[a:text.index('</section>',a)]
+  for slug,url in archived.items():
+   if 'papers/'+slug+'/"' in block:errors.append(name+": reading list links the paper page of "+slug+", which is archived at "+url)
 # Catalogue lists keep the shared entry styling (an unstyled list shows bullets).
 catalogue=(ROOT/"papers/index.html").read_text()
 assert not re.search(r'<ul(?![^>]*class="entries")[^>]*>',catalogue[catalogue.index("<main"):]),"Catalogue lists must use class=\"entries\""

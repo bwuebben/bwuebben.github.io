@@ -28,17 +28,39 @@ for route,image in [("not-enough.html","drums"),("pillowcase-explorer/index.html
  s=re.sub(r'(<meta property="og:image:alt" content=")[^"]+',r'\g<1>Illustration accompanying '+route.split("/")[0].replace(".html","").replace("-"," "),s)
  p.write_text(s)
 papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
+by_slug={item["slug"]:item for item in papers}
 resources={r["url"]:item["slug"] for item in papers for r in item["resources"] if "PDF" in r["label"]}
-for name in ["pillowcase-explorer","conifold-lab","cobordism-explorer","beyond-hrp-lab"]:
- p=ROOT/name/"index.html";s=p.read_text()
- # Titles in the companion list now lead to the complete local paper record.
+# Manuscript links outside the catalogue and the paper pages (explorer buttons, reading lists, essays)
+# lead to arXiv or SSRN when the paper is archived there, otherwise to its paper page. Standalone
+# explorer copies use absolute site addresses; other pages link relative to their own depth.
+def manuscript_target(slug,page):
+ archive=by_slug[slug].get("archive") or {}
+ if archive.get("name") in ("arXiv","SSRN"):return archive["url"],archive["name"]
+ if page.name=="standalone.html":return "https://bwuebben.github.io/papers/"+slug+"/","page"
+ return "../"*(len(page.relative_to(ROOT).parts)-1)+"papers/"+slug+"/","page"
+def entry_label(slug,kind):
+ if kind=="arXiv":return "arXiv:"+by_slug[slug]["archive"]["doi"].split("arXiv.")[-1]+" ↗"
+ if kind=="SSRN":return "SSRN ↗"
+ return "Abstract, PDF &amp; citation ↗"
+for page in sorted(ROOT.rglob("*.html")):
+ if page.relative_to(ROOT).parts[0] in {"papers","tools","templates","content","review"}:continue
+ s=page.read_text()
+ for url,slug in resources.items():
+  if 'href="'+url+'"' in s:s=s.replace('href="'+url+'"','href="'+manuscript_target(slug,page)[0]+'"')
  marker='<div class="reading-list">'
  if marker in s:
   a=s.index(marker);b=s.index('</section>',a);block=s[a:b]
-  for url,slug in resources.items():block=block.replace('href="'+url+'"','href="../papers/'+slug+'/"')
-  block=block.replace(" · PDF ↗"," · Abstract, PDF &amp; citation ↗")
+  def entry(m):
+   href,body=m.group(1),m.group(2)
+   found=re.search(r'papers/([^/"]+)/$',href)
+   slug=found.group(1) if found and found.group(1) in by_slug else None
+   if slug is None:return m.group(0)
+   target,kind=manuscript_target(slug,page)
+   body=re.sub(r' · (PDF|Abstract, PDF &amp; citation|arXiv:[^<]+|SSRN) ↗',' · '+entry_label(slug,kind),body)
+   return m.group(0).replace('href="'+href+'"','href="'+target+'"',1).replace(m.group(2),body,1)
+  block=re.sub(r'<a href="([^"]+)"[^>]*>(.*?)</a>',entry,block,flags=re.S)
   s=s[:a]+block+s[b:]
- p.write_text(s)
+ page.write_text(s)
 # Include the public editorial pages in the sitemap.
 ns="http://www.sitemaps.org/schemas/sitemap/0.9";ET.register_namespace("",ns)
 p=ROOT/"sitemap.xml";tree=ET.fromstring(p.read_text())
