@@ -28,6 +28,12 @@ identity metadata from `data/person.json`. The essay sources live in
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
 keep the public sitemap and paper pages current.
 
+The Atiyah–Floer reading route includes Papers I–III: comparison over
+𝔽₂, integral transported orientations, and the identification and
+normalization of the usual maps. Paper III has its own abstract page,
+archived preprint, source and PDF, and appears in the topology guide
+and the cobordism explorer’s reading list.
+
 ## Rebuilding and checks
 
 Run the whole sequence after any change to editorial sources, essays or paper

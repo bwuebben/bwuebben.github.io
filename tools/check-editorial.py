@@ -7,7 +7,7 @@ import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
 ARXIV_CATALOGUE_UPDATES={"calabi-yau-smoothability-paper4", "calabi-yau-smoothability-paper5"}
-AUTHORIZED_CATALOGUE_UPDATES={"toric-local-stability-chambers", "small-dolbeault-stability-walls", "toric-blowups-bundles"} | ARXIV_CATALOGUE_UPDATES
+AUTHORIZED_CATALOGUE_UPDATES={"cobordism-maps-atiyah-floer-ii", "toric-local-stability-chambers", "small-dolbeault-stability-walls", "toric-blowups-bundles"} | ARXIV_CATALOGUE_UPDATES
 # The 27 October abstract review authorizes prose changes for these two entries
 # and a new manuscript/archive version only for the spectral companion.
 REVISED_METADATA={"toric-tangent-blowups-bundles": {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"},

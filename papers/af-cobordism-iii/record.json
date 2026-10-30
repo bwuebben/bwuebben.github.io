@@ -1,0 +1,59 @@
+{
+  "slug": "af-cobordism-iii",
+  "catalogue_title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology III",
+  "catalogue_anchor": "cobordism-maps-atiyah-floer-iii",
+  "title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology III",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Donaldson theory and the Atiyah–Floer program",
+  "status": "Preprint",
+  "publication_date": "2026-10-26",
+  "revision_date": "2026-10-29",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23789290",
+    "url": "https://zenodo.org/records/23789290"
+  },
+  "citation_doi": "10.5281/zenodo.23789290",
+  "resources": [
+    {
+      "label": "Scope and source",
+      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/PAPER-III.md"
+    },
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf"
+    }
+  ],
+  "related": [
+    {
+      "label": "Paper I: cobordism comparison over 𝔽₂",
+      "url": "https://bwuebben.github.io/papers/af-cobordism-i/"
+    },
+    {
+      "label": "Paper II: integral transported orientations",
+      "url": "https://bwuebben.github.io/papers/af-cobordism-ii/"
+    },
+    {
+      "label": "Atiyah–Floer Cobordism Explorer",
+      "url": "https://bwuebben.github.io/cobordism-explorer/"
+    }
+  ],
+  "verified_on": "2026-10-29",
+  "abstract_html": "<p>We construct integral chain homotopy equivalences intertwining the usual framed instanton cobordism maps in the singular Hopf-link construction with symplectic cobordism maps oriented by transport from gauge theory. At common regular small data, the equivalences are represented by the Daemi–Fukaya–Lipyanskiy mixed count with a specified coherent orientation. For connected framed cobordisms, they are natural up to integral chain homotopy and one overall sign, with an explicit grading conversion, and extend by geometric changes of presentation. We also construct equivalences to the normalization in which attachment of a generating sphere in the surface moduli space preserves orientation, for every closed connected oriented three-manifold. Surgery generation gives a finite model built from one-generator complexes for the three-sphere. Counts through the three-sphere realize its grading-preserving matrix entries, so an algebraically chosen normalization becomes a finite integer linear combination of products of geometric counts. A polynomial in forward and reflected mixed counts transfers this construction to the symplectic complex. The proof uses the companion analytic and naturality results and the stated ordinary surgery and oriented gluing inputs. Identification with prescribed relative-spin maps and the nonsingular cap convention remains open.</p>",
+  "abstract_source": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/5482454d26d76d2a785d54a1e85160bfbcb0d9f1/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+  "pdf": {
+    "sha256": "7067714123a0fe616af6fc1054ecc95cac643b215326e40f5d9e0b76fbc5f203",
+    "size_bytes": 451510,
+    "pages": 32,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/5482454d26d76d2a785d54a1e85160bfbcb0d9f1/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+    "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+    "source_commit": "5482454d26d76d2a785d54a1e85160bfbcb0d9f1",
+    "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+    "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf"
+  }
+}

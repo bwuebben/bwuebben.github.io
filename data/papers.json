@@ -373,7 +373,12 @@
           "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-ops/point-operations-and-matching-line-bubbles.pdf"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "label": "Paper III: usual maps and integral normalization",
+          "url": "https://bwuebben.github.io/papers/af-cobordism-iii/"
+        }
+      ],
       "verified_on": "2026-10-25",
       "abstract_html": "<p>We prove compatibility of the integral point operations in the admissible <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>S</mi><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> Atiyah–Floer comparison of Daemi, Fukaya, and Lipyanskiy, in their embedded-Lagrangian setting. In the positive <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>p</mi><mn>1</mn></msub></mrow></math> normalization, the symplectic point operation is shifted by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>8</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn></mrow></math>, or <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math> according as the marked component has genus one, two, or at least three. One coherent orientation system works for both matching components. Together with the known surface and loop comparisons and integral operation relations, this gives the corrected observable-algebra action over every commutative coefficient ring. When four is invertible, quarter-Pontryagin normalization gives the shifts <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>1</mn></mrow></math>, and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn></mrow></math>.</p>\n<p>An index-four mixed sequence can develop a matching bubble of normalized energy one-half. Holomorphic doubling and the converse estimates identify compact limiting models: degree-one stable families and single elementary modifications of constant families. A Dirichlet construction reconstructs these models and glues them to regular index-zero mixed solutions. Converse gluing and the incidence conditions identify every bubbling end of the chosen point cut. The relative incidence degrees are eight and four in genera one and two. Comparing the actual gluing derivative with determinant-line excision determines their signs. Ordinary reference orientations agree for the two homologous matching surfaces; a local sphere comparison and a stabilized torus example fix the genus-two normalization even when the ambient rational Floer homology vanishes. The resulting boundary identity uses the original integral geometric count as its homotopy.</p>",
       "abstract_source": "https://zenodo.org/records/23643185",
@@ -419,6 +424,10 @@
         {
           "label": "Atiyah–Floer Cobordism Explorer",
           "url": "https://bwuebben.github.io/cobordism-explorer/"
+        },
+        {
+          "label": "Paper III: usual maps and integral normalization",
+          "url": "https://bwuebben.github.io/papers/af-cobordism-iii/"
         }
       ],
       "verified_on": "2026-10-25",
@@ -466,7 +475,12 @@
           "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
         }
       ],
-      "related": [],
+      "related": [
+        {
+          "label": "Paper III: usual maps and integral normalization",
+          "url": "https://bwuebben.github.io/papers/af-cobordism-iii/"
+        }
+      ],
       "verified_on": "2026-10-25",
       "abstract_html": "<p>We prove that the mixed isomorphisms of Daemi, Fukaya and Lipyanskiy type between framed instanton homology and the Lagrangian Floer homology of a Heegaard splitting intertwine the integral instanton cobordism maps, oriented by almost-complex structures, with signed symplectic cobordism maps, up to chain homotopy and one overall sign for each cobordism. This holds for every connected cobordism between connected three-manifolds carrying a framed arc and an <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mrow><mi mathvariant=\"normal\">S</mi><mi mathvariant=\"normal\">O</mi></mrow><mo stretchy=\"false\">&#x00028;</mo><mn>3</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> bundle trivialized along the ends and the arc. Where the integral framed instanton homology is nonzero, the symplectic maps are signed counts of holomorphic triangles, with the Lagrangian correspondence of a compression body as one boundary condition for one- and three-handles. At three-manifolds whose integral framed instanton homology vanishes, the complexes are contractible and the maps are zero. The orientations are transported from the gauge theory through the mixed anti-self-duality and holomorphic curve equation. Consequently these maps form a projective functor on homology, independent of the handle decomposition up to sign. The unsigned analysis is that of the comparison modulo two; the new input is that two degenerations of the mixed equation, the collapse of a compression body and excision along a torus, preserve orientations. Where this homology is nonzero, we also prove that the sign by which the orientations change when a sphere is attached to a strip is constant under small perturbations and invariant under reversing the splitting. The relation with homology-oriented integral instanton maps is left open.</p>",
       "abstract_source": "https://zenodo.org/records/23643189",
@@ -479,6 +493,65 @@
         "source_commit": "94d69ef788b285aa137ecf888c9044f9619a7a83",
         "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
         "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-ii.pdf"
+      }
+    },
+    {
+      "slug": "af-cobordism-iii",
+      "catalogue_title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology III",
+      "catalogue_anchor": "cobordism-maps-atiyah-floer-iii",
+      "title": "Cobordism maps and Atiyah–Floer isomorphisms for framed instanton homology III",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Donaldson theory and the Atiyah–Floer program",
+      "status": "Preprint",
+      "publication_date": "2026-10-26",
+      "revision_date": "2026-10-29",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23789290",
+        "url": "https://zenodo.org/records/23789290"
+      },
+      "citation_doi": "10.5281/zenodo.23789290",
+      "resources": [
+        {
+          "label": "Scope and source",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/PAPER-III.md"
+        },
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf"
+        }
+      ],
+      "related": [
+        {
+          "label": "Paper I: cobordism comparison over 𝔽₂",
+          "url": "https://bwuebben.github.io/papers/af-cobordism-i/"
+        },
+        {
+          "label": "Paper II: integral transported orientations",
+          "url": "https://bwuebben.github.io/papers/af-cobordism-ii/"
+        },
+        {
+          "label": "Atiyah–Floer Cobordism Explorer",
+          "url": "https://bwuebben.github.io/cobordism-explorer/"
+        }
+      ],
+      "verified_on": "2026-10-29",
+      "abstract_html": "<p>We construct integral chain homotopy equivalences intertwining the usual framed instanton cobordism maps in the singular Hopf-link construction with symplectic cobordism maps oriented by transport from gauge theory. At common regular small data, the equivalences are represented by the Daemi–Fukaya–Lipyanskiy mixed count with a specified coherent orientation. For connected framed cobordisms, they are natural up to integral chain homotopy and one overall sign, with an explicit grading conversion, and extend by geometric changes of presentation. We also construct equivalences to the normalization in which attachment of a generating sphere in the surface moduli space preserves orientation, for every closed connected oriented three-manifold. Surgery generation gives a finite model built from one-generator complexes for the three-sphere. Counts through the three-sphere realize its grading-preserving matrix entries, so an algebraically chosen normalization becomes a finite integer linear combination of products of geometric counts. A polynomial in forward and reflected mixed counts transfers this construction to the symplectic complex. The proof uses the companion analytic and naturality results and the stated ordinary surgery and oriented gluing inputs. Identification with prescribed relative-spin maps and the nonsingular cap convention remains open.</p>",
+      "abstract_source": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/5482454d26d76d2a785d54a1e85160bfbcb0d9f1/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+      "pdf": {
+        "sha256": "7067714123a0fe616af6fc1054ecc95cac643b215326e40f5d9e0b76fbc5f203",
+        "size_bytes": 451510,
+        "pages": 32,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/donaldson-atiyah-floer/5482454d26d76d2a785d54a1e85160bfbcb0d9f1/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+        "source_url": "https://github.com/bwuebben/donaldson-atiyah-floer/blob/main/af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf",
+        "source_commit": "5482454d26d76d2a785d54a1e85160bfbcb0d9f1",
+        "source_repository": "https://github.com/bwuebben/donaldson-atiyah-floer",
+        "source_path": "af-cob-1/cobordism-maps-and-atiyah-floer-isomorphisms-iii.pdf"
       }
     },
     {

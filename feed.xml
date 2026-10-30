@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Atiyah–Floer cobordism maps III: usual maps and integral normalization</title>
+      <link>https://bwuebben.github.io/papers/af-cobordism-iii/</link>
+      <guid>https://bwuebben.github.io/papers/af-cobordism-iii/#update-2026-10-29</guid>
+      <description>A new paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons.</description>
+      <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Uniform Hermitian–Einstein spectra with repeated stable factors</title>
       <link>https://bwuebben.github.io/papers/repeated-factor-he-spectra/</link>
       <guid>https://bwuebben.github.io/papers/repeated-factor-he-spectra/#update-2026-10-29</guid>

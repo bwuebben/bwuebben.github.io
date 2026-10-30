@@ -29,6 +29,10 @@
     {
       "label": "Atiyah–Floer Cobordism Explorer",
       "url": "https://bwuebben.github.io/cobordism-explorer/"
+    },
+    {
+      "label": "Paper III: usual maps and integral normalization",
+      "url": "https://bwuebben.github.io/papers/af-cobordism-iii/"
     }
   ],
   "verified_on": "2026-10-25",

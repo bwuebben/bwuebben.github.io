@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-29",
+    "title": "Atiyah–Floer cobordism maps III: usual maps and integral normalization",
+    "url": "/papers/af-cobordism-iii/",
+    "description": "A new paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons."
+  },
+  {
+    "date": "2026-10-29",
     "title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
     "url": "/papers/repeated-factor-he-spectra/",
     "description": "A new paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry & moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions."
