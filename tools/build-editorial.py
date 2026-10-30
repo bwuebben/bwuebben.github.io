@@ -336,7 +336,9 @@ def guide_rows():
     for i,p in enumerate(programs):
         sections=[x for x in focus_sections(FOCUS.get(p["slug"],[])) if x["status"]]
         items=''.join(f'<li><a href="/research/{p["slug"]}/#{x["id"]}">{E(x["title"].rstrip("."))}</a>{status_badge(x["status"])}</li>' for x in sections) or ''.join(f'<li><span>{E(t)}</span></li>' for t,_ in p["themes"])
-        items+=''.join(f'<li><a href="/research/{p["slug"]}/{sg["slug"]}/">{E(sg["name"])}</a><span>Focused guide</span></li>' for sg in SUBGUIDES.get(p["slug"],[]))
+        # A focused guide carries the stage badge of the programme section it extends, like every other entry.
+        by_id={x["id"]:x for x in sections}
+        items+=''.join(f'<li><a href="/research/{p["slug"]}/{sg["slug"]}/">{E(sg["name"])}</a>{status_badge(by_id[sg["status_from"]]["status"])}</li>' for sg in SUBGUIDES.get(p["slug"],[]))
         art=INDEX_ART.get(p["slug"],p["image"])
         body+=f'''<article class="guide-row"><a class="guide-row-art" href="/research/{p["slug"]}/" aria-label="{E(p["name"])}"><img src="/assets/illustrations/{art}.svg" alt="" width="800" height="500" loading="lazy"></a><div><p class="kicker">0{i+1} · {E(p["name"])}</p><h2><a href="/research/{p["slug"]}/">{E(p["question"])}</a></h2><p class="guide-row-intro">{p["intro"]}</p><ul class="guide-programmes">{items}</ul>{link("/research/"+p["slug"]+"/","Open the guide")}</div></article>'''
     return body+'</section>'

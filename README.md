@@ -445,7 +445,7 @@ shown with a summary and no link until its catalogue record exists; then the
 keeps every paper in its own manuscripts list, so the six subject guides still cover
 the catalogue exactly once; the paper pages of the focused guide's manuscripts link
 to the focused guide. The research index lists focused guides after the programme
-sections of their parent, without a stage badge.
+sections of their parent, with the stage badge of the section they extend.
 
 ## Stability walls and geometric degeneration
 
