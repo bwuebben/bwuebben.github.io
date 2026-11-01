@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-10-31",
+    "title": "Metrics, moduli and flow near stability walls",
+    "url": "/research/geometry/#stability-degeneration",
+    "description": "New papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes."
+  },
+  {
     "date": "2026-10-30",
     "title": "Atiyah–Floer cobordism series: revised introductions and DOI references",
     "url": "/research/topology/atiyah-floer/",

@@ -46,6 +46,18 @@
     {
       "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
       "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+    },
+    {
+      "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+      "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+    },
+    {
+      "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+      "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+      "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
     }
   ],
   "verified_on": "2026-10-27",

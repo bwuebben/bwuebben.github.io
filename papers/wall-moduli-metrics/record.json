@@ -1,0 +1,64 @@
+{
+  "slug": "wall-moduli-metrics",
+  "catalogue_anchor": "wall-moduli-metrics",
+  "catalogue_title": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+  "title": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-31",
+  "revision_date": "2026-10-31",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23850992",
+    "url": "https://zenodo.org/records/23850992",
+    "deposited_at": "2026-11-01T02:14:43.084769+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23850992",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/wall_moduli_metrics"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+      "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+    },
+    {
+      "label": "Relative metric estimates near reducible Yang–Mills connections",
+      "url": "https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/"
+    },
+    {
+      "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+      "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+    }
+  ],
+  "verified_on": "2026-10-31",
+  "abstract_html": "<p>We prove a uniform relative comparison between the harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L^2\"><msup><mi>L</mi><mn>2</mn></msup></math> metric on a local Hermitian–Yang–Mills moduli space and the quotient metric of its finite-dimensional harmonic deformation model. The result concerns a rank-four family on the product of three projective lines, near a split sum of four line bundles at a stability wall. The model retains the full analytic obstruction and describes a neighborhood of the corresponding Hermitian–Einstein classes. On its smooth complex pieces, the relative metric error is quadratic in the coefficient radius. Both the comparison constant and the allowed radius are independent of the distance to the wall, even when the infinitesimal orbit map and the derivative of the obstruction lose rank. The proof estimates the ambient deformation norm before taking the quotient, avoiding inversion of either degenerating map. We also identify the transition from this wall model to the harmonic model at a reducible rank-three-plus-line endpoint, with quantitative domains of validity. These comparisons extend to intrinsic lengths and their completions; in an explicit family of stable extensions they give a joint asymptotic for the intrinsic distance to the reducible bundle.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_moduli_metrics/paper.tex",
+  "pdf": {
+    "sha256": "4285aa1ba043afe94aca43e636f5877ae0201b4cf230d899afb58b6f52a31ee1",
+    "size_bytes": 513315,
+    "pages": 34,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_moduli_metrics/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf",
+    "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/wall_moduli_metrics/paper.pdf"
+  }
+}

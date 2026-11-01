@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Metrics, moduli and flow near stability walls</title>
+      <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
+      <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-31</guid>
+      <description>New papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Atiyah–Floer cobordism series: revised introductions and DOI references</title>
       <link>https://bwuebben.github.io/research/topology/atiyah-floer/</link>
       <guid>https://bwuebben.github.io/research/topology/atiyah-floer/#update-2026-10-30</guid>

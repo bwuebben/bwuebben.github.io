@@ -1,0 +1,68 @@
+{
+  "slug": "three-step-he-metrics",
+  "catalogue_anchor": "three-step-he-metrics",
+  "catalogue_title": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+  "title": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-31",
+  "revision_date": "2026-10-31",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23850990",
+    "url": "https://zenodo.org/records/23850990",
+    "deposited_at": "2026-11-01T02:14:39.319938+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23850990",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/three_step_metrics"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+      "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+    },
+    {
+      "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+      "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+    },
+    {
+      "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+      "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+    },
+    {
+      "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+      "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+    }
+  ],
+  "verified_on": "2026-10-31",
+  "abstract_html": "<p>We prove uniform relative asymptotics for every small Dolbeault eigenvalue on trace-free endomorphism-valued zero-forms in a class of three-step Hermitian–Einstein extensions, allowing arbitrary separation of positive spectral scales. The graded factors are distinct line bundles of equal slope at a reference polarization on a compact Kähler manifold. Adjacent extension classes vary in fixed cohomology subspaces; the remaining terms are quadratic coexact Hodge primitives of their compositions, with no independent first-to-third-layer parameters. Assume integrability and a connected extension graph. At nearby polarizations, suppose diagonal rescaling balances the squared norms of the adjacent classes against the slope differences, with sufficiently small sum of rescaled squared norms. The rescaled split metric then approximates the Hermitian–Einstein metric with the same determinant, with logarithmic error bounded by a uniform constant times that sum. Every small eigenvalue has the same relative accuracy with respect to the corresponding eigenvalue of the graph Laplacian weighted by these squared norms; the complementary spectrum has a uniform positive gap. The proof controls curvature traces by the energy crossing each vertex cut. A family on the product of three projective lines has a spectral scale undetected by its polarization parameters. At each fixed bundle in this family, both singular values of the intrinsic metric response to the two polarization parameters agree, with the same relative accuracy, with those of the differentiated finite balancing equation.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.tex",
+  "pdf": {
+    "sha256": "a5dc0b5f6f626f5d6b80aa4695b67db3307f8142cff036e1fbc19a8ef1807d8f",
+    "size_bytes": 457676,
+    "pages": 28,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf",
+    "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/three_step_metrics/paper.pdf"
+  }
+}

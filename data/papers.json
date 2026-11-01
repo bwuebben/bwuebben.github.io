@@ -1587,6 +1587,10 @@
         {
           "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
           "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+          "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1651,6 +1655,10 @@
         {
           "label": "Relative metric estimates near reducible Yang–Mills connections",
           "url": "https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
         }
       ],
       "verified_on": "2026-10-29",
@@ -1710,6 +1718,10 @@
         {
           "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
           "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        },
+        {
+          "label": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/singular-hym-metric-growth/"
         }
       ],
       "verified_on": "2026-10-29",
@@ -1783,6 +1795,18 @@
         {
           "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
           "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+          "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+        },
+        {
+          "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+          "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1797,6 +1821,386 @@
         "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/v/paper.pdf"
+      }
+    },
+    {
+      "slug": "three-step-he-metrics",
+      "catalogue_anchor": "three-step-he-metrics",
+      "catalogue_title": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+      "title": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23850990",
+        "url": "https://zenodo.org/records/23850990",
+        "deposited_at": "2026-11-01T02:14:39.319938+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23850990",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/three_step_metrics"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
+          "url": "https://bwuebben.github.io/papers/uniform-hermitian-einstein-spectra/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We prove uniform relative asymptotics for every small Dolbeault eigenvalue on trace-free endomorphism-valued zero-forms in a class of three-step Hermitian–Einstein extensions, allowing arbitrary separation of positive spectral scales. The graded factors are distinct line bundles of equal slope at a reference polarization on a compact Kähler manifold. Adjacent extension classes vary in fixed cohomology subspaces; the remaining terms are quadratic coexact Hodge primitives of their compositions, with no independent first-to-third-layer parameters. Assume integrability and a connected extension graph. At nearby polarizations, suppose diagonal rescaling balances the squared norms of the adjacent classes against the slope differences, with sufficiently small sum of rescaled squared norms. The rescaled split metric then approximates the Hermitian–Einstein metric with the same determinant, with logarithmic error bounded by a uniform constant times that sum. Every small eigenvalue has the same relative accuracy with respect to the corresponding eigenvalue of the graph Laplacian weighted by these squared norms; the complementary spectrum has a uniform positive gap. The proof controls curvature traces by the energy crossing each vertex cut. A family on the product of three projective lines has a spectral scale undetected by its polarization parameters. At each fixed bundle in this family, both singular values of the intrinsic metric response to the two polarization parameters agree, with the same relative accuracy, with those of the differentiated finite balancing equation.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.tex",
+      "pdf": {
+        "sha256": "a5dc0b5f6f626f5d6b80aa4695b67db3307f8142cff036e1fbc19a8ef1807d8f",
+        "size_bytes": 457676,
+        "pages": 28,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/three_step_metrics/paper.pdf"
+      }
+    },
+    {
+      "slug": "wall-moduli-metrics",
+      "catalogue_anchor": "wall-moduli-metrics",
+      "catalogue_title": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+      "title": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23850992",
+        "url": "https://zenodo.org/records/23850992",
+        "deposited_at": "2026-11-01T02:14:43.084769+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23850992",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/wall_moduli_metrics"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+          "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+        },
+        {
+          "label": "Relative metric estimates near reducible Yang–Mills connections",
+          "url": "https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We prove a uniform relative comparison between the harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L^2\"><msup><mi>L</mi><mn>2</mn></msup></math> metric on a local Hermitian–Yang–Mills moduli space and the quotient metric of its finite-dimensional harmonic deformation model. The result concerns a rank-four family on the product of three projective lines, near a split sum of four line bundles at a stability wall. The model retains the full analytic obstruction and describes a neighborhood of the corresponding Hermitian–Einstein classes. On its smooth complex pieces, the relative metric error is quadratic in the coefficient radius. Both the comparison constant and the allowed radius are independent of the distance to the wall, even when the infinitesimal orbit map and the derivative of the obstruction lose rank. The proof estimates the ambient deformation norm before taking the quotient, avoiding inversion of either degenerating map. We also identify the transition from this wall model to the harmonic model at a reducible rank-three-plus-line endpoint, with quantitative domains of validity. These comparisons extend to intrinsic lengths and their completions; in an explicit family of stable extensions they give a joint asymptotic for the intrinsic distance to the reducible bundle.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_moduli_metrics/paper.tex",
+      "pdf": {
+        "sha256": "4285aa1ba043afe94aca43e636f5877ae0201b4cf230d899afb58b6f52a31ee1",
+        "size_bytes": 513315,
+        "pages": 34,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_moduli_metrics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/wall_moduli_metrics/paper.pdf"
+      }
+    },
+    {
+      "slug": "repeated-factor-moduli",
+      "catalogue_anchor": "repeated-factor-moduli",
+      "catalogue_title": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+      "title": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23850994",
+        "url": "https://zenodo.org/records/23850994",
+        "deposited_at": "2026-11-01T02:14:47.682434+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23850994",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_moduli"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We construct Hermitian–Einstein metrics and obtain relative asymptotics for all six small eigenvalues of the Dolbeault Laplacian on trace-free endomorphism-valued zero-forms in a rank-five deformation problem with a repeated line factor on the product of three projective lines. The estimates are uniform as positive spectral scales separate or vanish. At nearby product polarizations, the metric construction applies to every sufficiently small simple integrable deformation satisfying the quadratic moment-map equation at the centered slope level. Its logarithmic error relative to the split metric is quadratic in the harmonic coefficients. The key estimate uses harmonic orthogonality to eliminate cubic curvature terms and bounds the remaining error against each multiplicity projection by the energy mixing its image and kernel. This gives relative spectral comparison with the matrix commutator form without a lower bound on its positive eigenvalues. On smooth pieces of the full local Hermitian–Einstein quotient, we likewise compare the harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L^2\"><msup><mi>L</mi><mn>2</mn></msup></math> metric with the coefficient quotient metric. At a reducible locus where one copy of the repeated line splits off, the induced metric agrees with that of the remaining stable rank-four summand.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.tex",
+      "pdf": {
+        "sha256": "192e67f9ed40d06f427cc5f939339946db519ddc648d503ec4470404de917ec8",
+        "size_bytes": 472769,
+        "pages": 29,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/repeated_factor_moduli/paper.pdf"
+      }
+    },
+    {
+      "slug": "hym-initial-condition-phase",
+      "catalogue_anchor": "hym-initial-condition-phase",
+      "catalogue_title": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+      "title": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23850996",
+        "url": "https://zenodo.org/records/23850996",
+        "deposited_at": "2026-11-01T02:14:51.430912+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23850996",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/flow_phase"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+          "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+          "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We prove that the initial Hermitian metric selects a finite-dimensional trajectory that tracks Hermitian–Yang–Mills flow with exponentially decaying relative metric error, uniformly as the positive relaxation rates separate or tend to zero. The result holds for a nearby stable family of deformations of a specified sum of four line bundles on the product of three projective lines, along a fixed polarization path. We construct an exact invariant graph over the full integrable harmonic deformation space. Relative to this chosen graph, the asymptotic phase is continuously differentiable in the initial metric at fixed bundle and polarization. The local theorem permits bounded diagonal metric coordinates and sufficiently small transverse displacement. A prescribed smooth determinant-normalized metric enters this regime after a common restart time, chosen before the deformation, polarization and nearby-metric neighborhoods. The proof uses a fixed complementary spectral gap and metric order, without inverting a small relaxation rate. For a three-layer family with two independent positive slope parameters, we also prove all-future comparison with a small, time-independent relative error.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/flow_phase/paper.tex",
+      "pdf": {
+        "sha256": "c9f27d5667b6f19562826ef09277ca3e0cb8d3ce4fff31ac398eccc79c29dc60",
+        "size_bytes": 491348,
+        "pages": 30,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/flow_phase/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/flow_phase/paper.pdf"
+      }
+    },
+    {
+      "slug": "hym-wall-unstable-flow",
+      "catalogue_anchor": "hym-wall-unstable-flow",
+      "catalogue_title": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+      "title": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23850998",
+        "url": "https://zenodo.org/records/23850998",
+        "deposited_at": "2026-11-01T02:14:55.095224+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23850998",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_unstable_flow/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/wall_unstable_flow"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+        },
+        {
+          "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+          "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+        },
+        {
+          "label": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/singular-hym-metric-growth/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We prove all-time confinement and two-sided decay estimates for Hermitian–Yang–Mills flow whose initial metric is a sufficiently small transverse perturbation of a metric on a fixed finite-dimensional invariant graph. The bundles are small integrable deformations of a specified sum of four line bundles on the product of three projective lines. At the stability wall the directed extension graph is acyclic and connected; beyond it we treat a connected triangular class with locally free Harder–Narasimhan line quotients. In a moving diagonal presentation, the harmonic coefficients remain small although the diagonal metric factors become unbounded. Their energy decays reciprocally at the wall and crosses to exponential decay on the unstable side, uniformly in the ratio of wall distance to initial energy. This confinement yields an asymptotic phase relative to a chosen invariant graph: each such initial metric selects a unique reduced trajectory with exponentially decaying relative metric error. The phase is continuously differentiable in the initial metric at fixed bundle and polarization. At each fixed nearby unstable polarization, subtracting the linear diagonal drift leaves a limiting residual that is locally invertible in the three real diagonal initial coordinates.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_unstable_flow/paper.tex",
+      "pdf": {
+        "sha256": "7528024e3d41350758c5c27953ad622047bcda8c061756a048370903588580bc",
+        "size_bytes": 447051,
+        "pages": 20,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_unstable_flow/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_unstable_flow/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/wall_unstable_flow/paper.pdf"
+      }
+    },
+    {
+      "slug": "singular-hym-metric-growth",
+      "catalogue_anchor": "singular-hym-metric-growth",
+      "catalogue_title": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+      "title": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability walls and geometric degeneration",
+      "status": "Preprint",
+      "publication_date": "2026-10-31",
+      "revision_date": "2026-10-31",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23851000",
+        "url": "https://zenodo.org/records/23851000",
+        "deposited_at": "2026-11-01T02:14:58.755597+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23851000",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/singular_hym_asymptotics"
+        }
+      ],
+      "related": [
+        {
+          "label": "Geometry & moduli research guide",
+          "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+        },
+        {
+          "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+          "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+          "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+        }
+      ],
+      "verified_on": "2026-10-31",
+      "abstract_html": "<p>We construct a semistable toric tangent bundle for which the weight-filtration description of Hermitian–Yang–Mills metric growth cannot extend to singular graded sheaves with a uniformly bounded remainder. The bundle lies on a smooth projective surface, and its Jordan–Hölder graded sheaf is singular at one point. For every smooth initial metric with fixed Hermitian–Einstein determinant, the induced squared norm on its unique saturated equal-slope line subsheaf is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"o(T^{-1/2})\"><mi>o</mi><mo>(</mo><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></math> as the flow time <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T\"><mi>T</mi></math> tends to infinity, uniformly on compact subsets away from that point. The rank-polarized iterated weight filtration of Haiden–Katzarkov–Kontsevich–Pandit instead assigns the scale <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T^{-1/2}\"><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math>, with no further nonzero weights. A splitting-independent local residue forces divergent normalized extension energy, which an exact dissipation identity converts into the strict decay estimate. Approaching the wall from the stable side, we also identify the Hermitian–Einstein limit with the reflexive graded bundle and locate its multiplicity-one curvature concentration at the same point.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.tex",
+      "pdf": {
+        "sha256": "edbe3d9524b290fd2a4fdfd591e1085a592fc1830cd361b83820d5a60e49239e",
+        "size_bytes": 377245,
+        "pages": 20,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf",
+        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/singular_hym_asymptotics/paper.pdf"
       }
     },
     {
@@ -1847,6 +2251,10 @@
         {
           "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
           "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
         }
       ],
       "verified_on": "2026-10-28",

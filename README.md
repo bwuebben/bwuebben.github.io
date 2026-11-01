@@ -158,7 +158,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 47 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 55 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -454,8 +454,9 @@ Paper III joins the signed comparison to the usual framed instanton maps).
 ## Stability walls and geometric degeneration
 
 The [Geometry & moduli guide](https://bwuebben.github.io/research/geometry/#stability-degeneration)
-places the repeated-factor Hermitian–Einstein spectral paper after the bipartite
-spectral theorem on the analytic reading route. Its individual abstract page,
-full source links and archive citation are maintained through `data/papers.json`.
-The programme distinguishes completed stationary matrix spectra from the open
-repeated-factor response/flow and higher-step problems.
+organizes the chamber, stationary-metric, moduli and flow branches. The later
+papers treat canonical three-step extensions, a repeated-factor rank-five
+model, full local quotient metrics, initial-condition dependence and a singular
+graded toric surface example. Each has a full abstract, pinned PDF, citation
+and archive record in `data/papers.json`. General filtrations, repeated-factor
+dynamics and a replacement singular metric asymptotic law remain open.

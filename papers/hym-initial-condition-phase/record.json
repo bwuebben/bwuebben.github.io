@@ -1,0 +1,64 @@
+{
+  "slug": "hym-initial-condition-phase",
+  "catalogue_anchor": "hym-initial-condition-phase",
+  "catalogue_title": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+  "title": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-31",
+  "revision_date": "2026-10-31",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23850996",
+    "url": "https://zenodo.org/records/23850996",
+    "deposited_at": "2026-11-01T02:14:51.430912+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23850996",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/flow_phase"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Hermitian–Einstein metrics and small spectra for three-step extensions",
+      "url": "https://bwuebben.github.io/papers/three-step-he-metrics/"
+    },
+    {
+      "label": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
+      "url": "https://bwuebben.github.io/papers/metric-response-hym-flow/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+      "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+    }
+  ],
+  "verified_on": "2026-10-31",
+  "abstract_html": "<p>We prove that the initial Hermitian metric selects a finite-dimensional trajectory that tracks Hermitian–Yang–Mills flow with exponentially decaying relative metric error, uniformly as the positive relaxation rates separate or tend to zero. The result holds for a nearby stable family of deformations of a specified sum of four line bundles on the product of three projective lines, along a fixed polarization path. We construct an exact invariant graph over the full integrable harmonic deformation space. Relative to this chosen graph, the asymptotic phase is continuously differentiable in the initial metric at fixed bundle and polarization. The local theorem permits bounded diagonal metric coordinates and sufficiently small transverse displacement. A prescribed smooth determinant-normalized metric enters this regime after a common restart time, chosen before the deformation, polarization and nearby-metric neighborhoods. The proof uses a fixed complementary spectral gap and metric order, without inverting a small relaxation rate. For a three-layer family with two independent positive slope parameters, we also prove all-future comparison with a small, time-independent relative error.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/flow_phase/paper.tex",
+  "pdf": {
+    "sha256": "c9f27d5667b6f19562826ef09277ca3e0cb8d3ce4fff31ac398eccc79c29dc60",
+    "size_bytes": 491348,
+    "pages": 30,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/flow_phase/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf",
+    "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/flow_phase/paper.pdf"
+  }
+}

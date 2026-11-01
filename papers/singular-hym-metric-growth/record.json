@@ -1,0 +1,60 @@
+{
+  "slug": "singular-hym-metric-growth",
+  "catalogue_anchor": "singular-hym-metric-growth",
+  "catalogue_title": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+  "title": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-31",
+  "revision_date": "2026-10-31",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23851000",
+    "url": "https://zenodo.org/records/23851000",
+    "deposited_at": "2026-11-01T02:14:58.755597+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23851000",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/singular_hym_asymptotics"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+      "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+    }
+  ],
+  "verified_on": "2026-10-31",
+  "abstract_html": "<p>We construct a semistable toric tangent bundle for which the weight-filtration description of Hermitian–Yang–Mills metric growth cannot extend to singular graded sheaves with a uniformly bounded remainder. The bundle lies on a smooth projective surface, and its Jordan–Hölder graded sheaf is singular at one point. For every smooth initial metric with fixed Hermitian–Einstein determinant, the induced squared norm on its unique saturated equal-slope line subsheaf is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"o(T^{-1/2})\"><mi>o</mi><mo>(</mo><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></math> as the flow time <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T\"><mi>T</mi></math> tends to infinity, uniformly on compact subsets away from that point. The rank-polarized iterated weight filtration of Haiden–Katzarkov–Kontsevich–Pandit instead assigns the scale <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T^{-1/2}\"><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math>, with no further nonzero weights. A splitting-independent local residue forces divergent normalized extension energy, which an exact dissipation identity converts into the strict decay estimate. Approaching the wall from the stable side, we also identify the Hermitian–Einstein limit with the reflexive graded bundle and locate its multiplicity-one curvature concentration at the same point.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.tex",
+  "pdf": {
+    "sha256": "edbe3d9524b290fd2a4fdfd591e1085a592fc1830cd361b83820d5a60e49239e",
+    "size_bytes": 377245,
+    "pages": 20,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf",
+    "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/singular_hym_asymptotics/paper.pdf"
+  }
+}

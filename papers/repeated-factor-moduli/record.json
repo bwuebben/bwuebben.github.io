@@ -1,0 +1,60 @@
+{
+  "slug": "repeated-factor-moduli",
+  "catalogue_anchor": "repeated-factor-moduli",
+  "catalogue_title": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+  "title": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability walls and geometric degeneration",
+  "status": "Preprint",
+  "publication_date": "2026-10-31",
+  "revision_date": "2026-10-31",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.23850994",
+    "url": "https://zenodo.org/records/23850994",
+    "deposited_at": "2026-11-01T02:14:47.682434+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.23850994",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_moduli"
+    }
+  ],
+  "related": [
+    {
+      "label": "Geometry & moduli research guide",
+      "url": "https://bwuebben.github.io/research/geometry/#stability-degeneration"
+    },
+    {
+      "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+      "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+    },
+    {
+      "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+      "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+    }
+  ],
+  "verified_on": "2026-10-31",
+  "abstract_html": "<p>We construct Hermitian–Einstein metrics and obtain relative asymptotics for all six small eigenvalues of the Dolbeault Laplacian on trace-free endomorphism-valued zero-forms in a rank-five deformation problem with a repeated line factor on the product of three projective lines. The estimates are uniform as positive spectral scales separate or vanish. At nearby product polarizations, the metric construction applies to every sufficiently small simple integrable deformation satisfying the quadratic moment-map equation at the centered slope level. Its logarithmic error relative to the split metric is quadratic in the harmonic coefficients. The key estimate uses harmonic orthogonality to eliminate cubic curvature terms and bounds the remaining error against each multiplicity projection by the energy mixing its image and kernel. This gives relative spectral comparison with the matrix commutator form without a lower bound on its positive eigenvalues. On smooth pieces of the full local Hermitian–Einstein quotient, we likewise compare the harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L^2\"><msup><mi>L</mi><mn>2</mn></msup></math> metric with the coefficient quotient metric. At a reducible locus where one copy of the repeated line splits off, the induced metric agrees with that of the remaining stable rank-four summand.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.tex",
+  "pdf": {
+    "sha256": "192e67f9ed40d06f427cc5f939339946db519ddc648d503ec4470404de917ec8",
+    "size_bytes": 472769,
+    "pages": 29,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf",
+    "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/repeated_factor_moduli/paper.pdf"
+  }
+}
