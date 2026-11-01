@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-10-31",
+    "title": "Stability walls and geometric degeneration: a programme guide",
+    "url": "/research/geometry/quantitative-moduli/",
+    "description": "A focused guide follows the programme from realizable chambers to small spectra, moduli metrics and geometric flows. It explains why relative accuracy matters, distinguishes changing stabilizers from singular graded sheaves, and presents the counterexample, reading routes and remaining questions alongside the scope of the established results."
+  },
+  {
+    "date": "2026-10-31",
     "title": "Metrics, moduli and flow near stability walls",
     "url": "/research/geometry/#stability-degeneration",
     "description": "New papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes."

@@ -445,18 +445,33 @@ shown with a summary and no link until its catalogue record exists; then the
 keeps every paper in its own manuscripts list, so the six subject guides still cover
 the catalogue exactly once; the paper pages of the focused guide's manuscripts link
 to the focused guide. Stages belong to programmes, not to guides: on the research
-index a focused guide appears as a link beside the programme section it presents,
-and the stage table lists the programme. The topology guide has two programmes,
+index a programme with a focused guide links to it, and the stage table uses
+the same destination while retaining the programme stage. The topology guide
+has two programmes,
 "Knots and the pillowcase" (`content/topology-knots.html`, developing) and
 "Atiyah–Floer functoriality" (`content/topology-atiyah-floer.html`, integrated:
 Paper III joins the signed comparison to the usual framed instanton maps).
 
 ## Stability walls and geometric degeneration
 
-The [Geometry & moduli guide](https://bwuebben.github.io/research/geometry/#stability-degeneration)
-organizes the chamber, stationary-metric, moduli and flow branches. The later
-papers treat canonical three-step extensions, a repeated-factor rank-five
-model, full local quotient metrics, initial-condition dependence and a singular
-graded toric surface example. Each has a full abstract, pinned PDF, citation
-and archive record in `data/papers.json`. General filtrations, repeated-factor
-dynamics and a replacement singular metric asymptotic law remain open.
+The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
+presents the ambition, geometric realizability, stationary spectra and metrics,
+quotient geometry, dynamics, the singular graded counterexample, and the open
+questions. Its source is `content/quantitative-moduli-guide.html`; the labelled
+finite-graph figure comes from `content/quantitative-moduli-figure.html`. Two
+inline SVG illustrations in the guide source explain relative spectral error
+and distinguish quotient singularities from singular graded sheaves. Its
+`SUBGUIDES` entry in `tools/build-editorial.py` groups all 16 manuscripts by
+mathematical question. Its illustration, prose-link and responsive table styles live in
+`assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
+three reading routes and links to At the Wall. Its theorems concern the stated
+geometric families; a general theory and the replacement singular asymptotic law remain open.
+
+The [Geometry & moduli overview](https://bwuebben.github.io/research/geometry/#stability-degeneration)
+keeps a concise programme introduction and all manuscript entries. Singular
+quotient metrics belong to the stability programme. Both existing
+`#singular-quotient-metrics` anchors remain available in the catalogue and the
+Geometry overview; the focused guide uses the same anchor for its moduli section.
+The catalogue reading links, research index, individual paper contexts and
+At the Wall link to the focused guide. Every manuscript retains its full abstract,
+pinned PDF, citation and archive record in `data/papers.json`.

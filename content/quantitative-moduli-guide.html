@@ -1,0 +1,191 @@
+<section class="section-block focus" id="question">
+  <p class="kicker">I · The ambition</p>
+  <h2>From stability to loss of rigidity.</h2>
+  <p class="focus-lede">For a stable holomorphic bundle on a compact Kähler manifold, the Hermitian–Einstein correspondence gives a canonical metric up to scale. The quantitative question begins when a stable bundle approaches a wall: how does its metric change, which eigenvalues become small, and how does its evolution slow down? The aim is to relate these analytic effects to the algebraic geometry of the degeneration, with estimates that remain useful when several scales vanish at very different rates.</p>
+  <div class="prose-columns">
+    <div>
+      <h3>Four descriptions to connect</h3>
+      <p>Algebraic geometry determines which degenerations occur. The incidence of equal-slope subobjects describes the local chamber. A finite operator records weak spectral directions. Nonlinear analysis determines the actual metrics and flows. A general theory would explain when these describe the same degeneration, and what additional data are needed to pass from one description to another.</p>
+      <p>The chamber alone need not determine the answer. Harmonic extension data can affect the leading spectrum; a flow retains information about its initial metric. When the graded sheaf is singular, even the proposed asymptotic scale can require a further correction.</p>
+    </div>
+    <div>
+      <h3>Why relative accuracy matters</h3>
+      <p>An error small in absolute size can overwhelm a much smaller eigenvalue. A useful comparison controls the error relative to each positive mode, even when the ratios between modes approach zero. Schematically, the spectral results have the form</p>
+      <p class="display-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="The absolute difference between lambda j and mu j is at most C eta mu j"><mrow><mo stretchy="false">|</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false">|</mo><mo>≤</mo><mi>C</mi><mi>η</mi><msub><mi>μ</mi><mi>j</mi></msub></mrow></math><small>λ is an actual eigenvalue, μ the corresponding eigenvalue of the finite model, and η tends to zero. In the stated families, C is independent of the ratios between positive modes.</small></p>
+      <p>The estimates retain the weak directions in the finite model and invert only a complementary operator with a uniform positive gap. Quotient metrics and flows require further arguments; a spectral comparison alone does not establish either.</p>
+    </div>
+  </div>
+  <figure class="programme-figure" id="relative-error-figure" aria-labelledby="relative-error-title" aria-describedby="relative-error-caption">
+    <p class="kicker">Reading a small eigenvalue</p>
+    <h3 id="relative-error-title">The same error can hide the weaker mode.</h3>
+    <div class="programme-panels">
+      <div class="programme-panel">
+        <h4>An absolute bound</h4>
+        <p class="figure-bound">|λ − μ| ≤ 0.02</p>
+        <svg class="programme-diagram error-diagram" viewBox="0 0 360 215" role="img" aria-label="Absolute error intervals on the normalized axis lambda divided by mu. For mu equal to 1 the interval is 0.98 to 1.02. For mu equal to 0.01 the nonnegative interval is 0 to 3, so the estimate allows zero.">
+          <g class="figure-grid"><path d="M80 35V167 M166.667 35V167 M253.333 35V167 M340 35V167"/></g>
+          <path class="figure-reference" d="M166.667 28V167"/>
+          <g class="figure-axis"><path d="M80 167H340 M80 163V172 M166.667 163V172 M253.333 163V172 M340 163V172"/></g>
+          <g class="figure-label"><text x="8" y="73">μ = 1</text><text x="8" y="133">μ = .01</text><text x="80" y="195" text-anchor="middle">0</text><text x="166.667" y="195" text-anchor="middle">1</text><text x="253.333" y="195" text-anchor="middle">2</text><text x="340" y="195" text-anchor="middle">3</text></g>
+          <g class="error-absolute"><path d="M164.933 67H168.4 M80 127H340"/><path class="error-cap" d="M164.933 59V75 M168.4 59V75 M80 119V135 M340 119V135"/></g>
+          <g class="error-model"><circle cx="166.667" cy="67" r="4"/><circle cx="166.667" cy="127" r="4"/></g>
+        </svg>
+        <p class="figure-axis-label">Normalized eigenvalue λ / μ</p>
+        <p class="figure-result">The bound allows the smaller mode to be <strong>zero</strong>.</p>
+      </div>
+      <div class="programme-panel">
+        <h4>A relative bound</h4>
+        <p class="figure-bound">|λ − μ| ≤ 0.2 μ</p>
+        <svg class="programme-diagram error-diagram" viewBox="0 0 360 215" role="img" aria-label="Relative error intervals on the same normalized axis lambda divided by mu. For both mu equal to 1 and mu equal to 0.01, the interval is 0.8 to 1.2. Both modes stay positive.">
+          <g class="figure-grid"><path d="M80 35V167 M166.667 35V167 M253.333 35V167 M340 35V167"/></g>
+          <path class="figure-reference" d="M166.667 28V167"/>
+          <g class="figure-axis"><path d="M80 167H340 M80 163V172 M166.667 163V172 M253.333 163V172 M340 163V172"/></g>
+          <g class="figure-label"><text x="8" y="73">μ = 1</text><text x="8" y="133">μ = .01</text><text x="80" y="195" text-anchor="middle">0</text><text x="166.667" y="195" text-anchor="middle">1</text><text x="253.333" y="195" text-anchor="middle">2</text><text x="340" y="195" text-anchor="middle">3</text></g>
+          <g class="error-relative"><path d="M149.333 67H184 M149.333 127H184"/><path class="error-cap" d="M149.333 59V75 M184 59V75 M149.333 119V135 M184 119V135"/></g>
+          <g class="error-model"><circle cx="166.667" cy="67" r="4"/><circle cx="166.667" cy="127" r="4"/></g>
+        </svg>
+        <p class="figure-axis-label">Normalized eigenvalue λ / μ</p>
+        <p class="figure-result">Both modes stay within <strong>20%</strong> of the model.</p>
+      </div>
+    </div>
+    <figcaption id="relative-error-caption">An illustrative pair of model eigenvalues, μ = 1 and μ = 0.01. Bars show the nonnegative values allowed by each bound; dots mark the model value. Both panels use the same normalized axis, so 1 means exact agreement. The absolute tolerance is only 2% of the larger mode, yet it gives no positive lower bound for the smaller one.</figcaption>
+  </figure>
+</section>
+
+<section class="section-block focus" id="chambers">
+  <p class="kicker">II · Geometric realizability</p>
+  <h2>Which degenerations can actually occur?</h2>
+  <p class="focus-lede">A finite model becomes a geometric example only when a bundle realizes its factors, extension classes and accessible slope directions. The chamber papers establish this part of the programme.</p>
+  <p>The <a href="/papers/toric-tangent-stability/">toric tangent stability census</a> and the <a href="/papers/toric-tangent-blowups-bundles/">blowup-and-bundle paper</a> give explicit families and exact classifications. <a href="/papers/toric-local-stability-chambers/">Local stability chambers</a> then varies the polarization: it constructs an all-dimensional family with arbitrarily many independent chamber boundaries and determines nearby stable loci for the indecomposable strictly semistable examples in the earlier census.</p>
+  <p><a href="/papers/nonsimplicial-toric-stability-chambers/">Nonsimplicial tangent chambers</a> goes beyond independent inequalities. It constructs weak-Fano tangent bundles whose local chambers have genuinely nonsimplicial geometry, with every centered slope direction accessible. Its general local normal form retains the slope directions realized by polarizations and requires no local-freeness assumption on the equal-slope subsheaves. A toric surface in the same paper supplies the singular graded object studied later.</p>
+  <aside class="guide-aside">
+    <h3>The bridge to analysis</h3>
+    <p>The <a href="/papers/metric-response-hym-flow/">two-step metric-response and flow paper</a> joins the chamber construction to spectral and nonlinear estimates on the same weak-Fano tangent bundles. This is an integrated result within a specified family. Classifying all realizable chamber structures and extending the analytic comparison to general filtrations remain wider questions.</p>
+  </aside>
+</section>
+
+<section class="section-block focus" id="spectra">
+  <p class="kicker">III · Stationary metrics and spectra</p>
+  <h2>What determines every weak spectral scale?</h2>
+  <p><a href="/papers/small-dolbeault-stability-walls/">Small eigenvalues near stability walls</a> begins with a stable subbundle extended by several stable quotient factors. The <a href="/papers/uniform-hermitian-einstein-spectra/">bipartite two-step theorem</a> treats extensions between two sums of distinct stable factors. At equal limiting slopes and with connected extension support, a weighted graph Laplacian determines the small endomorphism spectrum with uniform relative error. Ranks give the vertex masses; balancing the harmonic extension data against the slope gaps gives the edge weights.</p>
+  <p>This description also identifies what the chamber forgets. On a tree, ranks and slopes determine the leading spectrum. On a cycle, harmonic extension data can survive. A spanning-tree expression controls the leading vanishing factor of the spectral determinant in the stated two-step setting.</p>
+  <div class="prose-columns">
+    <div>
+      <h3>When extensions compose</h3>
+      <p>The <a href="/papers/three-step-he-metrics/">three-step metric theorem</a> includes nonlinear composition and its integrability relations. It treats distinct equal-slope line factors, adjacent extension classes and the prescribed quadratic coexact corrections, with no independent first-to-third-layer parameters. Under its balancing and smallness assumptions, the finite model approximates the actual Hermitian–Einstein metric and every small eigenvalue. An example on the product of three projective lines has a weak scale that its polarization parameters alone do not detect.</p>
+    </div>
+    <div>
+      <h3>When factors repeat</h3>
+      <p>The <a href="/papers/repeated-factor-he-spectra/">repeated-factor spectral theorem</a> replaces scalar graph directions by matrix multiplicities for simple locally free two-step extensions. The later <a href="/papers/repeated-factor-moduli/">rank-five three-step paper</a> constructs actual metrics and controls six small matrix modes in a specified deformation family on the product of three projective lines. These results admit arbitrarily separated positive scales, while retaining their respective hypotheses on factors and extensions.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-block focus" id="singular-quotient-metrics">
+  <p class="kicker">IV · Metrics on moduli spaces</p>
+  <h2>What happens when stabilizers change?</h2>
+  <p class="focus-lede">A metric on a bundle and a metric on its moduli space measure different things. The latter measures deformation after identifying changes induced by gauge transformations. When an object acquires more automorphisms, the orbit directions change rank; a comparison must survive this degeneration as well.</p>
+  <p>Begin with <a href="/papers/relative-metrics-reducible-yang-mills/">relative metric estimates near reducible Yang–Mills connections</a>. Near a central Yang–Mills connection on a closed surface, the classical quadratic model approximates the actual quotient metric and every small gauge eigenvalue uniformly across stabilizer types and arbitrarily separated orbit scales. The paper also computes the leading metric correction.</p>
+  <p>The higher-dimensional <a href="/papers/wall-moduli-metrics/">stability-wall moduli paper</a> retains the full analytic obstruction near a sum of four line bundles on the product of three projective lines. On smooth complex pieces, the relative metric error is quadratic in the coefficient radius, with a radius and comparison constant independent of the distance to the wall. The estimate persists as orbit and obstruction maps lose rank. Quantitative changes of chart also give comparisons of intrinsic lengths and their completions within the local domains.</p>
+  <p>The <a href="/papers/repeated-factor-moduli/">rank-five repeated-factor paper</a> adds a noncommutative multiplicity symmetry. It compares harmonic quotient metrics on smooth pieces of the full local deformation problem and identifies the metric on a specified reducible locus with that of the remaining stable rank-four summand. These are concrete higher-dimensional theorems, with different hypotheses from the surface theorem.</p>
+  <p class="small">The surface paper's explicit quaternionic projective and hyperbolic reductions provide a comparison with the <a href="/papers/compact-higgs-finite-planck/">finite-Planck Higgs quotient problem</a>. A general quaternionic Kähler comparison across stabilizer changes remains open.</p>
+</section>
+
+<section class="section-block focus" id="dynamics">
+  <p class="kicker">V · Metric response and evolution</p>
+  <h2>Which trajectory belongs to the initial metric?</h2>
+  <p>The earlier <a href="/papers/small-dolbeault-eigenvalues/">flow-spectrum paper</a> determines small eigenvalue asymptotics along Hermitian Yang–Mills flow in its curve and two-step settings. The <a href="/papers/metric-response-hym-flow/">metric-response theorem</a> relates sensitivity to polarization to reciprocal graph eigenvalues and constructs a finite-dimensional invariant manifold for the flow. Its tangent-bundle application connects chamber geometry, small spectra, metric response and evolution on the same family.</p>
+  <p>A reduced evolution equation does not yet identify which of its solutions represents a prescribed initial metric. The <a href="/papers/hym-initial-condition-phase/">initial-condition and phase paper</a> supplies this identification near a stable four-line family on the product of three projective lines. Relative to a chosen invariant graph, the initial metric selects a finite trajectory with exponentially decaying relative tracking error, uniformly in the weak relaxation rates. The phase depends differentiably on the initial metric at fixed bundle and polarization. A common restart brings prescribed smooth determinant-normalized initial metrics into the local regime under the theorem's neighborhood conditions.</p>
+  <p>The <a href="/papers/hym-wall-unstable-flow/">wall and unstable-flow paper</a> treats acyclic connected extension data at the wall and a specified triangular unstable class with locally free Harder–Narasimhan line quotients. In moving diagonal coordinates, the harmonic coefficients remain small while the diagonal metric factors diverge. For the stated initial metrics, this gives all-time confinement and asymptotic phase; after the unstable linear drift is subtracted, a limiting residual retains three real diagonal initial coordinates.</p>
+  <p class="small">These flow theorems require their own invariant graphs, confinement estimates and initial-metric assumptions. The stationary repeated-factor results do not yet supply a corresponding general repeated-factor dynamical theorem.</p>
+</section>
+
+<section class="section-block focus" id="singular-graded-limits">
+  <p class="kicker">VI · A boundary of the smooth description</p>
+  <h2>A singular point changes the metric away from it.</h2>
+  <p class="focus-lede">Changing stabilizers can make a moduli space singular even when the graded bundle is locally free. A graded sheaf that is itself singular presents a further problem. The programme contains an example where this second kind of singularity changes the long-time metric behavior on every region kept away from the singular point.</p>
+  <figure class="programme-figure" id="singularity-figure" aria-labelledby="singularity-title" aria-describedby="singularity-caption">
+    <p class="kicker">Two different geometric questions</p>
+    <h3 id="singularity-title">Where does the singularity live?</h3>
+    <div class="programme-panels">
+      <div class="programme-panel">
+        <h4>In the moduli space</h4>
+        <svg class="programme-diagram singularity-diagram" viewBox="0 0 360 240" role="img" aria-label="A schematic cone representing a quotient, with its vertex q marked. Extra automorphisms can make the moduli space singular while the graded bundle remains locally free.">
+          <path class="figure-wash" d="M65 55A115 30 0 0 1 295 55L180 208Z"/>
+          <path class="quotient-outline" d="M65 55L180 208L295 55"/>
+          <ellipse class="quotient-outline" cx="180" cy="55" rx="115" ry="30"/>
+          <ellipse class="quotient-ring" cx="180" cy="106" rx="76.667" ry="20"/>
+          <ellipse class="quotient-ring" cx="180" cy="157" rx="38.333" ry="10"/>
+          <path class="quotient-ring" d="M180 85V208 M180 25V208"/>
+          <circle class="singularity-point" cx="180" cy="208" r="6"/>
+          <text class="figure-math-label" x="196" y="219">q</text>
+        </svg>
+        <p class="figure-result">At <em>q</em>: <strong>extra automorphisms</strong>.</p>
+        <p class="figure-detail">The graded bundle can remain locally free.</p>
+      </div>
+      <div class="programme-panel">
+        <h4>In the graded sheaf</h4>
+        <svg class="programme-diagram singularity-diagram" viewBox="0 0 360 240" role="img" aria-label="A smooth surface patch with a point p where the graded sheaf is singular, and an outlined compact region K separated from p. The metric asymptotics change even on K.">
+          <path class="figure-wash surface-outline" d="M25 65Q105 25 180 50T335 65L320 195Q245 165 170 190T25 180Z"/>
+          <g class="surface-grid">
+            <path d="M25 104Q105 64 180 89T330.5 104 M25 143Q105 103 180 128T326 143"/>
+            <path d="M80 45Q66 115 80 178 M135 41Q122 115 135 196 M190 53Q177 120 190 184 M245 67Q232 125 245 178 M300 69Q287 130 300 188"/>
+          </g>
+          <path class="compact-region" d="M230 92C257 79 293 94 297 118S276 159 246 152S206 109 230 92Z"/>
+          <text class="figure-math-label region-label" x="251" y="129" text-anchor="middle">K</text>
+          <circle class="singularity-halo" cx="105" cy="112" r="14"/>
+          <circle class="singularity-point" cx="105" cy="112" r="6"/>
+          <text class="figure-math-label" x="100" y="88">p</text>
+        </svg>
+        <p class="figure-result">At <em>p</em>: <strong>failure of local freeness</strong>.</p>
+        <p class="figure-detail">The metric discrepancy persists on <em>K</em>, away from <em>p</em>.</p>
+      </div>
+    </div>
+    <figcaption id="singularity-caption">A stabilizer change concerns the space of isomorphism classes, represented schematically by the cone. In the toric surface example, the graded sheaf is singular over a point <em>p</em> of a smooth base. Its long-time metric behavior changes even on compact sets <em>K</em> that avoid that point; the surface itself stays smooth.</figcaption>
+  </figure>
+  <p><a href="/papers/singular-hym-metric-growth/">Singular graded limits and metric growth</a> studies a semistable tangent bundle on a smooth projective toric surface. Its graded sheaf is singular at one point. Write <em>u</em>(<em>T</em>, <em>x</em>) for the induced metric on its saturated equal-slope line, divided by a fixed Hermitian–Einstein line metric. For every smooth initial metric with the prescribed Hermitian–Einstein determinant,</p>
+  <p class="display-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="The supremum over x in K of the square root of T times u of T x tends to zero"><mrow><munder><mi>sup</mi><mrow><mi>x</mi><mo>∈</mo><mi>K</mi></mrow></munder><msqrt><mi>T</mi></msqrt><mi>u</mi><mo stretchy="false">(</mo><mi>T</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo><mo>→</mo><mn>0</mn></mrow></math><small>As T tends to infinity, for every fixed compact K away from the singular point.</small></p>
+  <p>The iterated weight filtration of Haiden, Katzarkov, Kontsevich and Pandit, polarized by rank, assigns the squared-metric scale <em>T</em><sup>−1/2</sup>, with no later nonzero weights. The strict decay above rules out the two bounded-remainder extensions tested in the paper: uniform metric-order comparison and a bounded error in a fixed-splitting matrix-log expansion. A local residue forces divergent normalized extension energy; a dissipation identity carries its effect into the flow. In the stationary limit from the stable side, the same point carries multiplicity-one curvature concentration.</p>
+  <aside class="guide-aside">
+    <h3>What the counterexample leaves open</h3>
+    <p>The established asymptotic theorem for locally free graded objects is unaffected. The example does not determine a new power-law exponent or the exact slower correction, and it does not rule out a finite description enriched by singular data. Determining the replacement asymptotic law is a central next problem.</p>
+  </aside>
+</section>
+
+<section class="section-block focus" id="frontier">
+  <p class="kicker">VII · Toward a general theory</p>
+  <h2>What would make the comparison reusable?</h2>
+  <p>The papers already establish comparisons on explicit geometric classes and develop methods that can be used again: retain every weak finite direction, control the complement uniformly, and estimate the ambient metric before minimizing over gauge orbits. The singular-flow result also answers an independently motivated asymptotic question. The next steps concern the reach of these methods and the additional data their limits reveal.</p>
+  <table class="stage-table programme-frontier">
+    <caption>Established results and the next mathematical questions</caption>
+    <thead><tr><th scope="col">Direction</th><th scope="col">Established setting</th><th scope="col">Next question</th></tr></thead>
+    <tbody>
+      <tr><td>Realizability and stationary comparison</td><td data-label="Established">Toric chamber families; two-step extensions and specified three-step models.</td><td data-label="Next question">Which hypotheses extend the comparison to other stable factors and general filtrations, and which finite data must be retained?</td></tr>
+      <tr><td>Quotient geometry</td><td data-label="Established">Surface Yang–Mills quotients and the stated higher-dimensional deformation families.</td><td data-label="Next question">When do uniform metric and chart comparisons persist for other moduli problems, including changing stabilizers and obstructions?</td></tr>
+      <tr><td>Dynamics</td><td data-label="Established">Two-step flows and the stated four-line stable, wall and unstable families.</td><td data-label="Next question">How can the initial-condition-sensitive theory extend to repeated factors and more general filtrations?</td></tr>
+      <tr><td>Singular graded sheaves</td><td data-label="Established">A toric surface counterexample, with strict off-singular metric decay and a stationary curvature defect.</td><td data-label="Next question">What is the replacement asymptotic law, and which singular data determine its correction?</td></tr>
+    </tbody>
+  </table>
+  <p>A further test of generality is transfer to a different geometric problem with a concrete new consequence. The programme's ambition is a common quantitative theory; its current theorems retain the geometric hypotheses stated above. The integrated result on the weak-Fano tangent family is one realization of that ambition.</p>
+</section>
+
+<section class="section-block focus" id="reading-routes">
+  <p class="kicker">VIII · Where to begin</p>
+  <h2>Three routes through the programme.</h2>
+  <div class="reading-path">
+    <div>
+      <h3>The geometric idea</h3>
+      <p>Start with <a href="/papers/toric-local-stability-chambers/">local stability chambers</a>, continue to the <a href="/papers/nonsimplicial-toric-stability-chambers/">nonsimplicial examples</a>, then read the integrated tangent-bundle application in <a href="/papers/metric-response-hym-flow/">metric response and flow</a>. The <a href="/papers/singular-hym-metric-growth/">singular-flow counterexample</a> shows a limit of the resulting description.</p>
+    </div>
+    <div>
+      <h3>The analytic mechanism</h3>
+      <p>Read the <a href="/papers/uniform-hermitian-einstein-spectra/">two-step spectral theorem</a>, then <a href="/papers/three-step-he-metrics/">three-step metrics</a>. For moduli geometry, follow <a href="/papers/relative-metrics-reducible-yang-mills/">surface quotient metrics</a>, <a href="/papers/wall-moduli-metrics/">stability-wall metrics</a> and <a href="/papers/repeated-factor-moduli/">repeated-factor moduli</a>.</p>
+    </div>
+    <div>
+      <h3>The dynamics</h3>
+      <p>Begin with <a href="/papers/metric-response-hym-flow/">two-step response and flow</a>. Use <a href="/papers/three-step-he-metrics/">three-step metrics</a> for the stationary setting of the later work, then read <a href="/papers/hym-initial-condition-phase/">initial conditions and phase</a> followed by <a href="/papers/hym-wall-unstable-flow/">flow at and beyond the wall</a>.</p>
+    </div>
+  </div>
+  <p><a href="/at-the-wall/">At the Wall — explore chambers, weak spectra and metric response ↗</a></p>
+  <p class="small">The explorer illustrates selected finite models and the two-factor flow profile. The three-step, quotient-metric and singular-flow theorems are developed in the papers. The full reading list below groups the programme by mathematical question; abstracts can be opened individually.</p>
+</section>

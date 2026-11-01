@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Stability walls and geometric degeneration: a programme guide</title>
+      <link>https://bwuebben.github.io/research/geometry/quantitative-moduli/</link>
+      <guid>https://bwuebben.github.io/research/geometry/quantitative-moduli/#update-2026-10-31</guid>
+      <description>A focused guide follows the programme from realizable chambers to small spectra, moduli metrics and geometric flows. It explains why relative accuracy matters, distinguishes changing stabilizers from singular graded sheaves, and presents the counterexample, reading routes and remaining questions alongside the scope of the established results.</description>
+      <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Metrics, moduli and flow near stability walls</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-31</guid>
