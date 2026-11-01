@@ -22,11 +22,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/02_nonsimplicial_chambers/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iv"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/02_nonsimplicial_chambers"
     }
   ],
   "related": [
@@ -55,7 +55,7 @@
     "size_bytes": 448122,
     "pages": 24,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/93f91f743eb0a0fb16eda36b8b1e6b902a9f4b7e/papers/iv/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/02_nonsimplicial_chambers/paper.pdf",
     "source_commit": "93f91f743eb0a0fb16eda36b8b1e6b902a9f4b7e",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/iv/paper.pdf"

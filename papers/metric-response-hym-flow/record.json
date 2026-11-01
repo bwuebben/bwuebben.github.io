@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/03_metric_response_flow/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/v"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/03_metric_response_flow"
     }
   ],
   "related": [
@@ -68,7 +68,7 @@
     "size_bytes": 501118,
     "pages": 27,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7/papers/v/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/03_metric_response_flow/paper.pdf",
     "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/v/paper.pdf"

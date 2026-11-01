@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/01_two_step_spectra/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iii"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/01_two_step_spectra"
     }
   ],
   "related": [
@@ -64,7 +64,7 @@
     "size_bytes": 402295,
     "pages": 22,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7/papers/iii/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/01_two_step_spectra/paper.pdf",
     "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/iii/paper.pdf"

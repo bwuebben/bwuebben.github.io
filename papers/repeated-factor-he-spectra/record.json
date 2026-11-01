@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/04_repeated_factor_spectra/main.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_spectra"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/04_repeated_factor_spectra"
     }
   ],
   "related": [
@@ -60,7 +60,7 @@
     "size_bytes": 376534,
     "pages": 18,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/4ce7547ec74d245e636d10416bde4e0939477492/papers/repeated_factor_spectra/main.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/04_repeated_factor_spectra/main.pdf",
     "source_commit": "4ce7547ec74d245e636d10416bde4e0939477492",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/repeated_factor_spectra/main.pdf"

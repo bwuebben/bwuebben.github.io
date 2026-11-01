@@ -1560,11 +1560,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/01_two_step_spectra/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iii"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/01_two_step_spectra"
         }
       ],
       "related": [
@@ -1601,7 +1601,7 @@
         "size_bytes": 402295,
         "pages": 22,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7/papers/iii/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iii/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/01_two_step_spectra/paper.pdf",
         "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/iii/paper.pdf"
@@ -1632,11 +1632,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/04_repeated_factor_spectra/main.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_spectra"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/04_repeated_factor_spectra"
         }
       ],
       "related": [
@@ -1669,7 +1669,7 @@
         "size_bytes": 376534,
         "pages": 18,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/4ce7547ec74d245e636d10416bde4e0939477492/papers/repeated_factor_spectra/main.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_spectra/main.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/04_repeated_factor_spectra/main.pdf",
         "source_commit": "4ce7547ec74d245e636d10416bde4e0939477492",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/repeated_factor_spectra/main.pdf"
@@ -1699,11 +1699,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/02_nonsimplicial_chambers/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/iv"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/02_nonsimplicial_chambers"
         }
       ],
       "related": [
@@ -1732,7 +1732,7 @@
         "size_bytes": 448122,
         "pages": 24,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/93f91f743eb0a0fb16eda36b8b1e6b902a9f4b7e/papers/iv/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/iv/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/02_nonsimplicial_chambers/paper.pdf",
         "source_commit": "93f91f743eb0a0fb16eda36b8b1e6b902a9f4b7e",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/iv/paper.pdf"
@@ -1772,11 +1772,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/03_metric_response_flow/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/v"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/03_metric_response_flow"
         }
       ],
       "related": [
@@ -1817,7 +1817,7 @@
         "size_bytes": 501118,
         "pages": 27,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7/papers/v/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/v/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/03_metric_response_flow/paper.pdf",
         "source_commit": "499ab35f4bc3ebd6e38acbf4f0155ca35da6dea7",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/v/paper.pdf"
@@ -1848,11 +1848,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/05_three_step_metrics/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/three_step_metrics"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/05_three_step_metrics"
         }
       ],
       "related": [
@@ -1885,7 +1885,7 @@
         "size_bytes": 457676,
         "pages": 28,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/05_three_step_metrics/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/three_step_metrics/paper.pdf"
@@ -1916,11 +1916,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/06_wall_moduli_metrics/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/wall_moduli_metrics"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/06_wall_moduli_metrics"
         }
       ],
       "related": [
@@ -1949,7 +1949,7 @@
         "size_bytes": 513315,
         "pages": 34,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_moduli_metrics/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_moduli_metrics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/06_wall_moduli_metrics/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/wall_moduli_metrics/paper.pdf"
@@ -1980,11 +1980,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/07_repeated_factor_moduli/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_moduli"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/07_repeated_factor_moduli"
         }
       ],
       "related": [
@@ -2009,7 +2009,7 @@
         "size_bytes": 472769,
         "pages": 29,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/07_repeated_factor_moduli/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/repeated_factor_moduli/paper.pdf"
@@ -2040,11 +2040,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/08_flow_phase/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/flow_phase"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/08_flow_phase"
         }
       ],
       "related": [
@@ -2073,7 +2073,7 @@
         "size_bytes": 491348,
         "pages": 30,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/flow_phase/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/flow_phase/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/08_flow_phase/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/flow_phase/paper.pdf"
@@ -2104,11 +2104,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_unstable_flow/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/09_wall_unstable_flow/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/wall_unstable_flow"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/09_wall_unstable_flow"
         }
       ],
       "related": [
@@ -2137,7 +2137,7 @@
         "size_bytes": 447051,
         "pages": 20,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/wall_unstable_flow/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/wall_unstable_flow/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/09_wall_unstable_flow/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/wall_unstable_flow/paper.pdf"
@@ -2168,11 +2168,11 @@
       "resources": [
         {
           "label": "current version (PDF)",
-          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf"
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/10_singular_hym_asymptotics/paper.pdf"
         },
         {
           "label": "source and reproducible calculations",
-          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/singular_hym_asymptotics"
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/10_singular_hym_asymptotics"
         }
       ],
       "related": [
@@ -2197,7 +2197,7 @@
         "size_bytes": 377245,
         "pages": 20,
         "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.pdf",
-        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/10_singular_hym_asymptotics/paper.pdf",
         "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/singular_hym_asymptotics/paper.pdf"

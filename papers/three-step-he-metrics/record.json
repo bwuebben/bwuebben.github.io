@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/05_three_step_metrics/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/three_step_metrics"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/05_three_step_metrics"
     }
   ],
   "related": [
@@ -60,7 +60,7 @@
     "size_bytes": 457676,
     "pages": 28,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/three_step_metrics/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/three_step_metrics/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/05_three_step_metrics/paper.pdf",
     "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/three_step_metrics/paper.pdf"

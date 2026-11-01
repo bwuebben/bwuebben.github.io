@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/10_singular_hym_asymptotics/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/singular_hym_asymptotics"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/10_singular_hym_asymptotics"
     }
   ],
   "related": [
@@ -52,7 +52,7 @@
     "size_bytes": 377245,
     "pages": 20,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/singular_hym_asymptotics/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/10_singular_hym_asymptotics/paper.pdf",
     "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/singular_hym_asymptotics/paper.pdf"

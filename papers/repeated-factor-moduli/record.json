@@ -23,11 +23,11 @@
   "resources": [
     {
       "label": "current version (PDF)",
-      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf"
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/07_repeated_factor_moduli/paper.pdf"
     },
     {
       "label": "source and reproducible calculations",
-      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/repeated_factor_moduli"
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/07_repeated_factor_moduli"
     }
   ],
   "related": [
@@ -52,7 +52,7 @@
     "size_bytes": 472769,
     "pages": 29,
     "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/repeated_factor_moduli/paper.pdf",
-    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/repeated_factor_moduli/paper.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/07_repeated_factor_moduli/paper.pdf",
     "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/repeated_factor_moduli/paper.pdf"
