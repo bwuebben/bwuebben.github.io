@@ -69,8 +69,16 @@ def main():
                               and route.startswith(child["href"]))
                              for child in item["children"])
                 classes = "nav-group is-current" if active else "nav-group"
-                children = "\n".join(f'            <li>{render_link(child)}</li>'
-                                     for child in item["children"])
+                if any(child.get("heading") for child in item["children"]):
+                    classes += " has-sections"
+                child_items = []
+                for child in item["children"]:
+                    if child.get("heading"):
+                        child_items.append(
+                            '            <li class="nav-submenu-heading" role="presentation">'
+                            f'{html.escape(child["heading"])}</li>')
+                    child_items.append(f'            <li>{render_link(child)}</li>')
+                children = "\n".join(child_items)
                 links.append(
                     f'      <li>\n'
                     f'        <details class="{classes}">\n'

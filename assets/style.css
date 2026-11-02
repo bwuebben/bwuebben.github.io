@@ -201,6 +201,34 @@ a:focus-visible,
 .nav-submenu a:focus-visible { background: var(--bg-panel); }
 .nav-submenu a:focus-visible { outline-offset: -3px; }
 
+.nav-group.has-sections .nav-submenu {
+  left: 0;
+  right: auto;
+  width: 16rem;
+  max-height: calc(100dvh - 10rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.nav-submenu-heading {
+  margin-top: 0.35rem;
+  padding: 0.75rem 1rem 0.2rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+@media (max-width: 34rem) {
+  .site-nav { position: relative; }
+  .nav-group.has-sections { position: static; }
+  .nav-group.has-sections .nav-submenu {
+    right: 0;
+    width: auto;
+    max-width: none;
+  }
+}
+
 .site-header ~ .wrap { padding-top: 2.75rem; }
 
 .skip-link {

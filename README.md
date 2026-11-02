@@ -15,11 +15,16 @@ navigation and stylesheet links when the site's configuration changes.
 
 ## Site structure
 
-The top navigation is Home, Papers, Research guides, Writing, Explorers, Updates,
+The top navigation is Home, Research guides, Explorers, Writing, Papers, Updates,
 and About. The catalogue keeps subject navigation and complete descriptions;
 there are no search or filter controls. Its routes include `/research/` and six
 subject guides, `/explorers/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
+
+The Research guides menu starts with Overview, followed by the six topic guides
+and the focused programme guides, grouped under Topic guides and Focused guides.
+The focused guides are Atiyah–Floer theory and Stability walls. In `site.json`,
+an optional `heading` on a menu link inserts a section label before that link.
 
 Edit `site.json` for navigation. Editorial page content comes from
 `tools/build-editorial.py`; the biography comes from `content/about.html` and
@@ -122,7 +127,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Papers, Research guides, Writing, Explorers, Updates, and About.
+`templates/navigation.html`. The top level contains Home, Research guides, Explorers, Writing, Papers, Updates, and About.
 Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall, and When Walls Collide; add future explorers
 to that group's `children` list.
 Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
@@ -438,8 +443,10 @@ nested below that guide, such as
 [Atiyah–Floer theory](https://bwuebben.github.io/research/topology/atiyah-floer/)
 under Knots, four-manifolds & Floer theory. Its sections live in one fragment,
 `content/atiyah-floer-guide.html`; `SUBGUIDES` in `tools/build-editorial.py` names
-the fragment, the question and intro, and the manuscripts in reading order. The
-manuscripts list may name a manuscript in preparation (`FORTHCOMING`), which is
+the fragment, the question and intro, and the manuscripts in reading order.
+When adding a focused guide, add its short title and route to the Research guides
+menu's Focused guides section in `site.json`, and run `python3 tools/update-site.py`.
+The manuscripts list may name a manuscript in preparation (`FORTHCOMING`), which is
 shown with a summary and no link until its catalogue record exists; then the
 `FORTHCOMING` entry is removed and the slug stays in the list. The parent guide
 keeps every paper in its own manuscripts list, so the six subject guides still cover

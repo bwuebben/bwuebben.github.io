@@ -5,12 +5,80 @@
       "href": "/"
     },
     {
-      "label": "Papers",
-      "href": "/papers/"
+      "label": "Research guides",
+      "children": [
+        {
+          "label": "Overview",
+          "href": "/research/"
+        },
+        {
+          "label": "Markets & inference",
+          "href": "/research/markets/",
+          "heading": "Topic guides"
+        },
+        {
+          "label": "Knots, four-manifolds & Floer theory",
+          "href": "/research/topology/"
+        },
+        {
+          "label": "Calabi–Yau transitions",
+          "href": "/research/calabi-yau/"
+        },
+        {
+          "label": "Geometry & moduli",
+          "href": "/research/geometry/"
+        },
+        {
+          "label": "Geometry, gravity & information",
+          "href": "/research/physics/"
+        },
+        {
+          "label": "AI, institutions & power",
+          "href": "/research/ai-institutions/"
+        },
+        {
+          "label": "Atiyah–Floer theory",
+          "href": "/research/topology/atiyah-floer/",
+          "heading": "Focused guides"
+        },
+        {
+          "label": "Stability walls",
+          "href": "/research/geometry/quantitative-moduli/"
+        }
+      ]
     },
     {
-      "label": "Research guides",
-      "href": "/research/"
+      "label": "Explorers",
+      "children": [
+        {
+          "label": "Visual companions",
+          "href": "/explorers/"
+        },
+        {
+          "label": "Pillowcase",
+          "href": "/pillowcase-explorer/"
+        },
+        {
+          "label": "Conifold Transitions",
+          "href": "/conifold-lab/"
+        },
+        {
+          "label": "Atiyah–Floer Cobordism",
+          "href": "/cobordism-explorer/"
+        },
+        {
+          "label": "Beyond HRP",
+          "href": "/beyond-hrp-lab/"
+        },
+        {
+          "label": "At the Wall",
+          "href": "/at-the-wall/"
+        },
+        {
+          "label": "When Walls Collide",
+          "href": "/when-walls-collide/"
+        }
+      ]
     },
     {
       "label": "Writing",
@@ -70,37 +138,8 @@
       ]
     },
     {
-      "label": "Explorers",
-      "children": [
-        {
-          "label": "Visual companions",
-          "href": "/explorers/"
-        },
-        {
-          "label": "Pillowcase",
-          "href": "/pillowcase-explorer/"
-        },
-        {
-          "label": "Conifold Transitions",
-          "href": "/conifold-lab/"
-        },
-        {
-          "label": "Atiyah–Floer Cobordism",
-          "href": "/cobordism-explorer/"
-        },
-        {
-          "label": "Beyond HRP",
-          "href": "/beyond-hrp-lab/"
-        },
-        {
-          "label": "At the Wall",
-          "href": "/at-the-wall/"
-        },
-        {
-          "label": "When Walls Collide",
-          "href": "/when-walls-collide/"
-        }
-      ]
+      "label": "Papers",
+      "href": "/papers/"
     },
     {
       "label": "Updates",
