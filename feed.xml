@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Mass increase and acyclic cancellation</title>
+      <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
+      <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-02</guid>
+      <description>Paper 11 studies categorical phase flows for two-term quiver complexes. An explicit mass-increase example is accompanied by exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family. The 25-page preprint and reproducible calculations are public, with a Zenodo archive.</description>
+      <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Singular HYM metric growth: a general surface theorem</title>
       <link>https://bwuebben.github.io/papers/singular-hym-metric-growth/</link>
       <guid>https://bwuebben.github.io/papers/singular-hym-metric-growth/#update-2026-11-02</guid>

@@ -163,7 +163,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 55 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 56 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -472,7 +472,7 @@ questions. Its source is `content/quantitative-moduli-guide.html`; the labelled
 finite-graph figure comes from `content/quantitative-moduli-figure.html`. Two
 inline SVG illustrations in the guide source explain relative spectral error
 and distinguish quotient singularities from singular graded sheaves. Its
-`SUBGUIDES` entry in `tools/build-editorial.py` groups all 16 manuscripts by
+`SUBGUIDES` entry in `tools/build-editorial.py` groups all 17 manuscripts by
 mathematical question. Its illustration, prose-link and responsive table styles live in
 `assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
 three reading routes and links to At the Wall. Its theorems concern the stated
