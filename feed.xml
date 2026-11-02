@@ -6,7 +6,7 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
-      <title>Stability walls and geometric degeneration: a programme guide</title>
+      <title>Stability and Geometric Degeneration: a programme guide</title>
       <link>https://bwuebben.github.io/research/geometry/quantitative-moduli/</link>
       <guid>https://bwuebben.github.io/research/geometry/quantitative-moduli/#update-2026-10-31</guid>
       <description>A focused guide follows the programme from realizable chambers to small spectra, moduli metrics and geometric flows. It explains why relative accuracy matters, distinguishes changing stabilizers from singular graded sheaves, and presents the counterexample, reading routes and remaining questions alongside the scope of the established results.</description>
@@ -90,7 +90,7 @@
       <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Stability walls and geometric degeneration</title>
+      <title>Stability and Geometric Degeneration</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-27</guid>
       <description>Three new papers connect realizable toric tangent stability chambers, uniform small Hermitian–Einstein spectra, metric response and actual Hermitian Yang–Mills flow. The Geometry &amp; moduli guide gives geometric and analytic reading routes into the programme. The manuscripts, sources and reproducible finite calculations are public.</description>

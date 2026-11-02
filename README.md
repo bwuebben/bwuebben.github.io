@@ -23,7 +23,7 @@ subject guides, `/explorers/`, `/writing/` and its interactive essays,
 
 The Research Programs menu starts with Overview, followed by the six topic guides
 and the focused programme guides, grouped under Topic guides and Focused guides.
-The focused guides are Atiyah–Floer theory and Stability walls. In `site.json`,
+The focused guides are Atiyah–Floer theory and Stability & Degeneration. In `site.json`,
 an optional `heading` on a menu link inserts a section label before that link.
 
 Edit `site.json` for navigation. Editorial page content comes from
@@ -459,7 +459,11 @@ has two programmes,
 "Atiyah–Floer functoriality" (`content/topology-atiyah-floer.html`, integrated:
 Paper III joins the signed comparison to the usual framed instanton maps).
 
-## Stability walls and geometric degeneration
+## Stability and Geometric Degeneration
+
+The short name is **Stability & Degeneration**. The focused guide's subtitle is
+"Chambers, spectra, metrics, and geometric flows". The existing URLs and anchors
+remain unchanged; "stability walls" is still used in paper titles and mathematical prose.
 
 The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
 presents the ambition, geometric realizability, stationary spectra and metrics,
