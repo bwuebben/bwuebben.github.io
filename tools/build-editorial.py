@@ -293,29 +293,26 @@ def explorer_card(x):
     route,img,kicker,title,desc,meta=x
     return f'''<a class="visual-link" href="/{route}/"><div class="art-panel"><img src="/assets/illustrations/{img}.svg" alt="" width="800" height="500" loading="lazy"></div><p class="kicker">{kicker}</p><h3>{title} <span class="arrow" aria-hidden="true">↗</span></h3><p>{desc}</p><p class="small">{meta}</p></a>'''
 
-# Homepage summaries: what each guide's work does, without counts. The guides' own intros appear on /research/.
-HOME_SUMMARY={
- "markets":"A model that earns has not thereby explained anything. The papers ask what discovery means once language models make hypotheses free while evidence still arrives one year per year, how a portfolio should respond to a forecast, and how a firm should form, test and revise its beliefs.",
- "topology":"Cut a space along a surface and a hard question becomes a comparison between simpler pieces. The papers compare two Floer theories, one built from instantons and one from holomorphic curves, exactly for families of knots and for the maps that four-dimensional cobordisms induce.",
- "calabi-yau":"A singular threefold can be smoothable at every singular point and still admit no smoothing at all. The papers determine when local smoothings coexist, how mirror symmetry transforms their relations, and how universal curve counts change through a transition. A compact counterexample identifies a limit to integer product expansions.",
- "geometry":"As a bundle approaches a stability wall, its metric loses rigidity, and small eigenvalues record the scale of the loss. The papers connect stability chambers to spectra, bundle and moduli metrics, and geometric flows, and ask how wall crossing becomes geometry in open FJRW theory and which algebra a moduli space can realize.",
- "physics":"In a compact universe, singularities that could each change on their own may only change together; the papers work out which transitions the geometry allows. For black holes, they ask how much an entropy curve, even computed exactly, reveals about the quantum process behind it.",
- "ai-institutions":"Abundant analysis does not abolish the need for institutions, infrastructure or someone who answers for a decision; it moves the scarcity onto them. The papers follow that shift into markets between machines, the physical systems that sustain deployment, and the attribution of responsibility when decisions are delegated to algorithms.",
+# The homepage copy and layout live in content/home.html. Paper titles and
+# programme names stay connected to their canonical records here.
+HOME_PAPER_QUESTIONS={
+    "validation-bottleneck":"When ideas outrun evidence",
+    "cy-conifold-relations":"Which relations survive mirror symmetry?",
+    "page-curve-not-enough":"What does the Page curve determine?",
+    "ai-native-asset-manager":"How should an investment firm learn?",
+    "af-cobordism-i":"Do two Floer theories agree on maps?",
+    "compact-higgs-finite-planck":"What changes when gravity enters?",
 }
 
-def research_cards():
-    assert set(HOME_SUMMARY)=={p["slug"] for p in programs},"Every guide needs a homepage summary"
-    return '<div class="research-grid">'+''.join(f'''<article class="research-entry"><span class="number">0{i+1}</span><h3><a href="/research/{p["slug"]}/">{p["name"]}</a></h3><p class="research-question">{p["question"]}</p><p class="small">{E(HOME_SUMMARY[p["slug"]])}</p></article>''' for i,p in enumerate(programs))+'</div>'
-
 def build_home():
-    body='''<header class="home-intro"><p class="kicker">Finance · Mathematics · Theoretical Physics</p><h1>Bernd Johannes<br>Wuebben</h1>
-<div class="home-intro-copy"><figure><a href="/about/"><img src="/assets/bernd_dark1-576.jpg" width="576" height="864" alt="Bernd Wuebben" fetchpriority="high"></a></figure>
-<p class="intro">A price is a claim about the future that somebody was willing to fund. My research in finance asks what can be known about such claims: whether a model that earns is a model that explains, where compensation for risk ends and compensation for absorbing other people’s constraints begins, and what remains hidden in a record of success.</p>
-<p class="intro">These questions lead outward: toward who is on the other side of a trade and what they are solving for, and toward markets as aggregation mechanisms that sometimes aggregate belief and sometimes only aggregate attention.</p>
-<p class="intro">In mathematics and theoretical physics, I pursue questions about geometry, topology, and information: how local structures constrain a whole, what survives a change of description, and how much of an object its invariants can reveal. My particular interests include four-manifolds, gauge and Floer theory, mirror symmetry, and moduli spaces.</p>
-<p class="research-purpose">This site collects my <a href="/papers/">research papers</a> and essays, including work on AI, institutions, and international order.</p></div>
-<div class="entry-links"><a class="button" href="/papers/">Read the research papers <span class="arrow" aria-hidden="true">↗</span></a><a class="quiet-link" href="/research/">Research programs <span class="arrow" aria-hidden="true">↗</span></a></div></header>'''
-    body+='<section class="section-block home-papers" aria-labelledby="selected-papers"><div class="section-top"><div><p class="kicker">From the research</p><h2 id="selected-papers">Selected papers</h2></div>'+link("/papers/","Complete collection")+'</div><div class="paper-picks">'
+    body=(ROOT/"content/home.html").read_text()
+    program_html='<div class="home-program-grid">'
+    for p in programs:
+        program_html+=f'<article class="home-program"><h3><a href="/research/{p["slug"]}/">{E(p["name"])}</a></h3><p class="home-program-question">{E(p["question"])}</p>'
+        for sg in SUBGUIDES.get(p["slug"],[]):
+            program_html+=f'<p class="home-focused">Focused guide: <a href="/research/{p["slug"]}/{sg["slug"]}/">{E(sg["short"])} ↗</a></p>'
+        program_html+='</article>'
+    program_html+='</div>'
     selected_papers = [
         ("validation-bottleneck", "Language models have made investment hypotheses free. The evidence that can judge them still arrives one year per year, and the paper works out what that does to discovery."),
         ("cy-conifold-relations", "Mirror symmetry trades relations among exceptional curves for relations among vanishing spheres. The paper proves the trade exact, as an equality of integral lattices, for specified Batyrev families near the maximally degenerate limit."),
@@ -324,22 +321,24 @@ def build_home():
         ("af-cobordism-i", "Daemi, Fukaya and Lipyanskiy identified framed instanton homology with a Lagrangian Floer homology. The paper proves that such identifications also respect four-dimensional cobordism maps, over the field of two elements."),
         ("compact-higgs-finite-planck", "Without gravity, a Higgs branch comes with a dial that can smooth its singularity. With gravity the dial disappears, and the paper shows that the singularity keeps its shape, under stated freeness and regularity hypotheses."),
     ]
+    paper_html='<div class="home-paper-grid">'
     for slug,desc in selected_papers:
         p=by_slug[slug]
-        body+=f'<article><p class="kicker">{E(p["label"])}</p><h3><a href="/papers/{slug}/">{E(p["title"])}</a></h3><p class="small">{desc}</p></article>'
-    body+='</div></section>'
-    body+='<section class="section-block"><div class="section-top"><div><p class="kicker">Questions, constructions, and arguments</p><h2>Research programs</h2></div>'+link("/research/","Guides to the papers")+'</div>'+research_cards()+'</section>'
-    body+='''<section class="feature home-essay" aria-labelledby="featured-title"><div class="feature-copy"><p class="kicker">An essay across the research</p><h2 id="featured-title"><a href="/not-enough.html">Not Enough</a></h2><p>Two drums can ring identically and differ in shape. So can two track records, the radiation of two black holes and two cuts of the same knot. The essay follows what each sound leaves out.</p><a class="quiet-link" href="/not-enough.html">Read the essay <span class="arrow" aria-hidden="true">↗</span></a></div><a class="feature-art" href="/not-enough.html" aria-label="Read Not Enough"><img src="/assets/illustrations/drums.svg" width="800" height="500" alt="Two differently shaped drums" loading="lazy"></a></section>'''
-    body+='<section class="section-block home-companions"><div class="section-top"><div><p class="kicker">Constructions and examples</p><h2>Visual companions<br>to the research</h2></div>'+link("/explorers/","All six companions")+'</div><p class="companion-intro">Each companion takes one construction from the papers and puts it in your hands: a knot cut along a sphere, a three-sphere shrinking to a point, a portfolio rebuilt around a forecast. The pictures suggest; the papers state exactly what follows.</p><div class="visual-grid">'+explorer_card(explorers[1])+explorer_card(explorers[3])+'</div></section>'
-    # Recent additions come from data/updates.json, the source of the Updates page and RSS feed.
+        paper_html+=f'<article class="home-paper"><p class="kicker">{E(p["label"])}</p><h3><a href="/papers/{slug}/">{E(HOME_PAPER_QUESTIONS[slug])} <span class="arrow" aria-hidden="true">↗</span></a></h3><p class="home-paper-description">{desc}</p><p class="home-paper-title">{E(p["title"])}</p></article>'
+    paper_html+='</div>'
     latest=sorted(json.loads((ROOT/"data/updates.json").read_text()),key=lambda x:x["date"],reverse=True)[:3]
-    body+='<section class="split-note"><div><p class="kicker">The continuing work</p><h2>Recent additions</h2><p class="small">New papers, revised arguments, and essays.</p>'+link("/updates/","Publication updates")+'</div><div>'
+    updates=''
     for u in latest:
         summary=re.split(r'(?<=[.!?])\s+(?=[A-Z])',u["description"])[0]
-        body+=f'<div class="update-row"><time datetime="{u["date"]}">{datetime.fromisoformat(u["date"]).strftime("%-d %B %Y")}</time><p><a href="{E(u["url"],quote=True)}">{E(u["title"])}</a><br><span class="small">{E(summary)}</span></p></div>'
-    body+='''<p class="small" style="margin-top:1.5rem"><a href="/feed.xml">Subscribe by RSS ↗</a> · <a href="/about/">About &amp; contact ↗</a></p></div></section>'''
+        updates+=f'<div class="update-row"><time datetime="{u["date"]}">{datetime.fromisoformat(u["date"]).strftime("%-d %B %Y")}</time><p><a href="{E(u["url"],quote=True)}">{E(u["title"])}</a><br><span class="small">{E(summary)}</span></p></div>'
+    for key,value in {"programs":program_html,"papers":paper_html,"updates":updates}.items():
+        marker="{{"+key+"}}"
+        assert body.count(marker)==1,"Expected one homepage placeholder: "+marker
+        body=body.replace(marker,value)
     person='<script type="application/ld+json">\n'+(ROOT/"data/person.json").read_text()+'</script>'
-    page("index.html","Bernd Johannes Wuebben","Research papers and essays by Bernd Wuebben in finance, mathematics, theoretical physics, AI, and international relations.",body,extra=person)
+    version=__import__("hashlib").sha256((ROOT/"assets/home.css").read_bytes()).hexdigest()[:12]
+    extra=person+f'\n<link rel="stylesheet" href="/assets/home.css?v={version}">'
+    page("index.html","Bernd Johannes Wuebben","Research papers and essays by Bernd Wuebben in finance, mathematics, theoretical physics, AI, and international relations.",body,extra=extra,cls="home-page")
 
 def build_explorers():
     body='''<header class="page-intro"><p class="kicker">Visual companions to the papers</p><h1>Constructions,<br>made explicit.</h1><p class="intro">A picture can show a relation before anyone understands its proof, and a numerical example can expose a distinction a formula hides. Each companion makes one construction from the research explicit, with the assumptions and limits of its model stated beside it.</p><p class="small"><a href="/papers/">Research papers ↗</a> · <a href="/research/">Guides to the research ↗</a></p></header><div class="visual-grid">'''

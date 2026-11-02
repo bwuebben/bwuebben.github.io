@@ -33,6 +33,11 @@ identity metadata from `data/person.json`. The essay sources live in
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
 keep the public sitemap and paper pages current.
 
+The homepage's introduction, question cards and featured essay live in
+`content/home.html`, with page-specific styling in `assets/home.css`.
+`build_home()` in `tools/build-editorial.py` supplies the programme links,
+selected-paper titles and summaries, and recent additions from their records.
+
 The Atiyah–Floer reading route includes Papers I–III: comparison over
 𝔽₂, integral transported orientations, and the identification and
 normalization of the usual maps. Paper III has its own abstract page,
