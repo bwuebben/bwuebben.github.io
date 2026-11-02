@@ -2157,14 +2157,14 @@
       "label": "Stability and Geometric Degeneration",
       "status": "Preprint",
       "publication_date": "2026-10-31",
-      "revision_date": "2026-10-31",
+      "revision_date": "2026-11-02",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23851000",
-        "url": "https://zenodo.org/records/23851000",
-        "deposited_at": "2026-11-01T02:14:58.755597+00:00"
+        "doi": "10.5281/zenodo.23893608",
+        "url": "https://zenodo.org/records/23893608",
+        "deposited_at": "2026-11-02T18:55:32.211216+00:00"
       },
-      "citation_doi": "10.5281/zenodo.23851000",
+      "citation_doi": "10.5281/zenodo.23893608",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2189,19 +2189,27 @@
           "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
         }
       ],
-      "verified_on": "2026-10-31",
-      "abstract_html": "<p>We construct a semistable toric tangent bundle for which the weight-filtration description of Hermitian–Yang–Mills metric growth cannot extend to singular graded sheaves with a uniformly bounded remainder. The bundle lies on a smooth projective surface, and its Jordan–Hölder graded sheaf is singular at one point. For every smooth initial metric with fixed Hermitian–Einstein determinant, the induced squared norm on its unique saturated equal-slope line subsheaf is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"o(T^{-1/2})\"><mi>o</mi><mo>(</mo><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup><mo>)</mo></math> as the flow time <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T\"><mi>T</mi></math> tends to infinity, uniformly on compact subsets away from that point. The rank-polarized iterated weight filtration of Haiden–Katzarkov–Kontsevich–Pandit instead assigns the scale <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T^{-1/2}\"><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math>, with no further nonzero weights. A splitting-independent local residue forces divergent normalized extension energy, which an exact dissipation identity converts into the strict decay estimate. Approaching the wall from the stable side, we also identify the Hermitian–Einstein limit with the reflexive graded bundle and locate its multiplicity-one curvature concentration at the same point.</p>",
-      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.tex",
+      "verified_on": "2026-11-02",
+      "abstract_html": "<p>We prove that two bounded-remainder extensions of weight-filtration asymptotics for Hermitian–Yang–Mills flow fail for rank-two bundles on connected compact Kähler surfaces with a saturated equal-slope line subsheaf and a singular torsion-free quotient. For every smooth initial metric with fixed Hermitian–Einstein determinant, the squared <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L^2\"><msup><mi>L</mi><mn>2</mn></msup></math> norm of the inclusion is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"o(T^{-1/2})\"><mi>o</mi><mo>(</mo><msup><mi>T</mi><mrow><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>)</mo></math> as flow time <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T\"><mi>T</mi></math> tends to infinity. The pointwise squared norm divided by this integral converges to a positive constant away from the finite singular set. In the quotient by sheaves supported at points, the full rank-polarized subobject lattice has weights <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"-1/2,+1/2\"><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math> and no subsequent iterated weights. Neither relative metric comparability nor a bounded ordinary matrix-logarithm remainder realizes this model on any nonempty compact subset away from the singularities. A splitting-independent Bochner–Martinelli residue, global normalization and an exact dissipation identity give the obstruction, including for nonreduced singularities and repeated line factors. A projective K3 example realizes both features. For a toric tangent-bundle example, we also identify the stable-side Hermitian–Einstein limit and its multiplicity-one curvature concentration.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/0fb10cda6f8466b7af0f5277746a575656629491/papers/10_singular_hym_asymptotics/paper.tex",
       "pdf": {
-        "sha256": "edbe3d9524b290fd2a4fdfd591e1085a592fc1830cd361b83820d5a60e49239e",
-        "size_bytes": 377245,
-        "pages": 20,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/74fe6c4a21b52bc774f962f3653a0a161fd9aea6/papers/singular_hym_asymptotics/paper.pdf",
+        "sha256": "ce1c491016aee7e64a9d0527682789d4bb90511ad000d5a5bd6dcde98c3de686",
+        "size_bytes": 422095,
+        "pages": 22,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/0fb10cda6f8466b7af0f5277746a575656629491/papers/10_singular_hym_asymptotics/paper.pdf",
         "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/10_singular_hym_asymptotics/paper.pdf",
-        "source_commit": "74fe6c4a21b52bc774f962f3653a0a161fd9aea6",
+        "source_commit": "0fb10cda6f8466b7af0f5277746a575656629491",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
-        "source_path": "papers/singular_hym_asymptotics/paper.pdf"
-      }
+        "source_path": "papers/10_singular_hym_asymptotics/paper.pdf"
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23851000",
+          "url": "https://zenodo.org/records/23851000",
+          "deposited_at": "2026-11-01T02:14:58.755597+00:00"
+        }
+      ]
     },
     {
       "slug": "relative-metrics-reducible-yang-mills",

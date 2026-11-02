@@ -17,6 +17,8 @@ REVISED_METADATA={"toric-tangent-blowups-bundles": {"abstract_html", "abstract_s
  "abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "citation_doi"
 }, "cy-vanishing-cycle": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"},
  "cy-mixed-smoothing": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"}}
+# Authorized 2 November revision of paper 10; its catalogue entry postdates BASE.
+REVISED_METADATA["singular-hym-metric-growth"] = {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 # Authorized 30 October series introductions, DOI references and manuscript revision.
 for _slug in ("af-cobordism-i", "af-cobordism-ii", "af-cobordism-iii"):
  REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi", "resources"}

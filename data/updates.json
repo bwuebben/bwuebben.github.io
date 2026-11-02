@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-02",
+    "title": "Singular HYM metric growth: a general surface theorem",
+    "url": "/papers/singular-hym-metric-growth/",
+    "description": "The revised paper proves a general rank-two surface obstruction to two bounded-remainder descriptions of Hermitian–Yang–Mills metric growth. The result includes nonreduced singularities and repeated line factors, with a projective K3 example; the stationary curvature theorem retains its toric hypotheses. The 22-page revision preserves the original date and has a new Zenodo version."
+  },
+  {
     "date": "2026-10-31",
     "title": "Stability and Geometric Degeneration: a programme guide",
     "url": "/research/geometry/quantitative-moduli/",
