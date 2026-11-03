@@ -3,13 +3,7 @@
     "date": "2026-11-03",
     "title": "General acyclic cancellation and nonbalanced relaxation",
     "url": "/papers/mass-increase-acyclic-cancellation/",
-    "description": "Paper 11 now proves large-scale cancellation for arbitrary surviving tuples and unequal dimensions. A separate finite-infimum theorem gives nonbalanced cohomology relaxation, and nonscalar static estimates accompany a sharp C² regularity example. The revised 29-page preprint has a new Zenodo version."
-  },
-  {
-    "date": "2026-11-03",
-    "title": "General balanced cancellation for categorical phase flows",
-    "url": "/papers/mass-increase-acyclic-cancellation/",
-    "description": "Paper 11 now proves acyclic cancellation for initially balanced surviving cohomology in arbitrary dimensions. With fixed charges and a sufficiently large least acyclic singular value, the bounds are uniform in arrow number, stabilizer and acyclic condition number. The revised 27-page preprint retains the Pauli family as a corollary and has a new Zenodo archive."
+    "description": "Paper 11 now proves acyclic cancellation for surjective source differentials, arbitrary surviving tuples and unequal dimensions, with fixed charges and a sufficiently large least acyclic singular value. At fixed dimensions and total norm bounds, the estimates are uniform in arrow count, stabilizer and acyclic condition number. A separate finite-infimum theorem gives nonbalanced cohomology relaxation; balanced and Pauli cases are corollaries. Nonscalar static estimates accompany a sharp C² regularity example. The revised 29-page preprint has a new Zenodo version."
   },
   {
     "date": "2026-11-02",
