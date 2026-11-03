@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-03",
+    "title": "General balanced cancellation for categorical phase flows",
+    "url": "/papers/mass-increase-acyclic-cancellation/",
+    "description": "Paper 11 now proves acyclic cancellation for initially balanced surviving cohomology in arbitrary dimensions. With fixed charges and a sufficiently large least acyclic singular value, the bounds are uniform in arrow number, stabilizer and acyclic condition number. The revised 27-page preprint retains the Pauli family as a corollary and has a new Zenodo archive."
+  },
+  {
     "date": "2026-11-02",
     "title": "Conifold relations: companion arXiv references",
     "url": "/papers/cy-conifold-relations/",

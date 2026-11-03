@@ -39,6 +39,12 @@ normalization of the usual maps. Paper III has its own abstract page,
 archived preprint, source and PDF, and appears in the topology guide, the
 focused Atiyah–Floer guide and the cobordism explorer’s reading list.
 
+The categorical phase-flow paper in the Stability & Degeneration guide is revised
+on 3 November 2026: the 27-page manuscript treats initially balanced surviving
+cohomology in arbitrary dimensions under its stated charges and large-scale
+hypothesis. Its paper page records the original date, revision date, current
+public-repository PDF and versioned Zenodo archive.
+
 ## Rebuilding and checks
 
 Run the whole sequence after any change to editorial sources, essays or paper

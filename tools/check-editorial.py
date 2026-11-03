@@ -18,6 +18,8 @@ REVISED_METADATA={"toric-tangent-blowups-bundles": {"abstract_html", "abstract_s
 }, "cy-vanishing-cycle": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"},
  "cy-mixed-smoothing": {"archive", "archive_history", "citation_doi", "abstract_source", "verified_on"}}
 # Authorized 2 November bibliography revision of the conifold-relations paper.
+# Authorized 3 November Paper 11 revision; its catalogue entry postdates BASE.
+REVISED_METADATA["mass-increase-acyclic-cancellation"] = {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 AUTHORIZED_CATALOGUE_UPDATES.add("calabi-yau-smoothability-paper6")
 REVISED_METADATA["cy-conifold-relations"] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 REVISED_METADATA["calabi-yau-smoothability-paper6"] = set()

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>General balanced cancellation for categorical phase flows</title>
+      <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
+      <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-03</guid>
+      <description>Paper 11 now proves acyclic cancellation for initially balanced surviving cohomology in arbitrary dimensions. With fixed charges and a sufficiently large least acyclic singular value, the bounds are uniform in arrow number, stabilizer and acyclic condition number. The revised 27-page preprint retains the Pauli family as a corollary and has a new Zenodo archive.</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Conifold relations: companion arXiv references</title>
       <link>https://bwuebben.github.io/papers/cy-conifold-relations/</link>
       <guid>https://bwuebben.github.io/papers/cy-conifold-relations/#update-2026-11-02</guid>
