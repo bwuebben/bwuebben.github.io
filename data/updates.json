@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-02",
+    "title": "Conifold relations: companion arXiv references",
+    "url": "/papers/cy-conifold-relations/",
+    "description": "Paper 6 now cites the arXiv records of Papers 4 and 5. The bibliography revision preserves the original manuscript date and adds a separate version date. The 234-page PDF, sources and Zenodo archive are updated; the mathematical text and abstract are unchanged."
+  },
+  {
+    "date": "2026-11-02",
     "title": "Mass increase and acyclic cancellation",
     "url": "/papers/mass-increase-acyclic-cancellation/",
     "description": "Paper 11 studies categorical phase flows for two-term quiver complexes. An explicit mass-increase example is accompanied by exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family. The 25-page preprint and reproducible calculations are public, with a Zenodo archive."
