@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>General acyclic cancellation and nonbalanced relaxation</title>
+      <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
+      <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-03</guid>
+      <description>Paper 11 now proves large-scale cancellation for arbitrary surviving tuples and unequal dimensions. A separate finite-infimum theorem gives nonbalanced cohomology relaxation, and nonscalar static estimates accompany a sharp C² regularity example. The revised 29-page preprint has a new Zenodo version.</description>
+      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>General balanced cancellation for categorical phase flows</title>
       <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
       <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-03</guid>

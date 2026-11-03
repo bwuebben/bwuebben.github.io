@@ -2945,11 +2945,11 @@
       "publication_date": "2026-11-02",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23917733",
-        "url": "https://zenodo.org/records/23917733",
-        "deposited_at": "2026-11-03T12:34:46.662705+00:00"
+        "doi": "10.5281/zenodo.23921919",
+        "url": "https://zenodo.org/records/23921919",
+        "deposited_at": "2026-11-03T15:05:41.309556+00:00"
       },
-      "citation_doi": "10.5281/zenodo.23917733",
+      "citation_doi": "10.5281/zenodo.23921919",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2975,15 +2975,15 @@
         }
       ],
       "verified_on": "2026-11-03",
-      "abstract_html": "<p>For two-term complexes over a two-vertex parallel-arrow quiver, with degree-one term supported at the source, trace-norm mass can increase along the Haiden–Katzarkov–Kontsevich–Pandit phase flow defined by positivity. We give an explicit noncommuting example. Nevertheless, for invertible source differential and vertex charges in the strict upper half-plane, every positive initial metric yields exponential decay of the acyclic coefficients and convergence of the normalized cohomology metric. For charges <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>−</mo><mn>1</mn><mo>+</mo><mi>i</mi></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow></math> and initially balanced cohomology, a sufficiently large least acyclic singular value gives quantitative cancellation for arbitrary surviving dimension, acyclic rank and bounded mixing. The estimates are independent of the number of arrows, the surviving stabilizer and the acyclic condition number. The evolving coefficient approaches its instantaneous cohomology coefficient, and the surviving moment-map defects tend to zero. The proof controls the polar phase using only the nonsingular cohomology block. As a scalar differential scale tends to infinity, the static mass and its first derivatives in bounded arrow coordinates converge uniformly. A rescaled profile forces third derivatives to diverge. The real phase combination of an explicit metric primitive has a negative Levi direction on a complex gauge orbit and identifies the positive limiting cohomology potential.</p>",
-      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/7a886311c907c342a824386ff91534385c5c8e9f/papers/11_categorical_phase_flow/paper.tex",
+      "abstract_html": "<p>Trace-norm mass can increase along the Haiden–Katzarkov–Kontsevich–Pandit phase flow defined by positivity, giving a negative answer to the proposed mass-monotonicity question with the prescribed degree branches. For two-term complexes over a two-vertex parallel-arrow quiver, with degree-one term supported at the source and surjective source differential, we nevertheless prove quantitative acyclic cancellation. For fixed upper-half-plane charges, arbitrary surviving tuples and bounded initial arrow norms, a sufficiently large least acyclic singular value gives exponential comparison with instantaneous cohomology. The estimates allow unequal surviving dimensions and are independent of arrow count, stabilizers and acyclic condition numbers. The proof controls the polar phase using only the nonsingular cohomology block. For equal surviving dimensions and charges <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>−</mo><mn>1</mn><mo>+</mo><mi>i</mi></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1</mn><mo>+</mo><mi>i</mi></mrow></math>, a finite infimum of the cohomology Kempf–Ness function forces its moment-map defects to tend to zero, without initial balance or attainment of the infimum. When the source differential is invertible, cancellation holds from every positive metric without a large-scale assumption, and the normalized cohomology metric converges. At fixed external differentials, static mass converges in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>C</mi><mn>1</mn></msup></math> in bounded arrow coordinates. An explicit family converges in <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>C</mi><mn>2</mn></msup></math> while every positive Hölder seminorm of its Hessian diverges. An exact metric primitive also identifies a positive cohomology potential and a negative ambient Levi direction.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/7047739f66b1a1bd84da1d5bde4430786956eede/papers/11_categorical_phase_flow/paper.tex",
       "pdf": {
-        "sha256": "40a8503d2ac0a3813056d2978cfcf22c68745833688172e5b24188cfbbe27641",
-        "size_bytes": 447266,
-        "pages": 27,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/7a886311c907c342a824386ff91534385c5c8e9f/papers/11_categorical_phase_flow/paper.pdf",
+        "sha256": "a885d347639bfe33581e53cd3a3aa8a923b964fec79d8d0d0e1c8a599e1a3615",
+        "size_bytes": 478665,
+        "pages": 29,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/7047739f66b1a1bd84da1d5bde4430786956eede/papers/11_categorical_phase_flow/paper.pdf",
         "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/11_categorical_phase_flow/paper.pdf",
-        "source_commit": "7a886311c907c342a824386ff91534385c5c8e9f",
+        "source_commit": "7047739f66b1a1bd84da1d5bde4430786956eede",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/11_categorical_phase_flow/paper.pdf"
       },
@@ -2994,6 +2994,12 @@
           "doi": "10.5281/zenodo.23898280",
           "url": "https://zenodo.org/records/23898280",
           "deposited_at": "2026-11-02T21:44:02.918094+00:00"
+        },
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.23917733",
+          "url": "https://zenodo.org/records/23917733",
+          "deposited_at": "2026-11-03T12:34:46.662705+00:00"
         }
       ]
     }
