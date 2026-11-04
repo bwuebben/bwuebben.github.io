@@ -2972,6 +2972,10 @@
         {
           "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
           "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Harmonic paths and honeycombs",
+          "url": "https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/"
         }
       ],
       "verified_on": "2026-11-03",
@@ -3002,6 +3006,62 @@
           "deposited_at": "2026-11-03T12:34:46.662705+00:00"
         }
       ]
+    },
+    {
+      "slug": "harmonic-paths-and-honeycombs",
+      "catalogue_anchor": "harmonic-paths-and-honeycombs",
+      "catalogue_title": "Harmonic paths and honeycombs",
+      "title": "Harmonic paths and honeycombs",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 12",
+      "status": "Preprint",
+      "publication_date": "2026-11-04",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.23947189",
+        "url": "https://zenodo.org/records/23947189",
+        "deposited_at": "2026-11-04T11:59:26.323095+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.23947189",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/12_harmonic_paths_and_honeycombs/paper.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/12_harmonic_paths_and_honeycombs"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
+          "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
+        }
+      ],
+      "verified_on": "2026-11-04",
+      "abstract_html": "<p>We construct harmonic paths of non-expansive norms on the identity representation of the A₂ quiver from arbitrary triples of diagonalizable boundary norms over the real-exponent Novikov field. We use symmetric central charges and a fixed radial area form on the plane. In every finite rank, the path has a finite apartment presentation and a finite honeycomb support with actual semistable edge labels and compatible filtrations at its vertices. It is unique among paths with such presentations whose one-sided norm motions agree to first order at each join. The construction minimizes a renormalized convex action. Its algebraic regularity follows from fixed orthogonal subspaces at gaps in the spectral velocities, second-order scalar approximations, and descent of finite norm data from the Hahn field. Repeated boundary spectra and collapsed edges are included. The result gives existence in the honeycomb specialization of the harmonic-path conjecture of Haiden–Katzarkov–Kontsevich–Pandit, with uniqueness under an explicit matching condition absent from the printed edgewise definition.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/8c15c6597b621cdf2502366657abcdf4089e4c35/papers/12_harmonic_paths_and_honeycombs/paper.tex",
+      "pdf": {
+        "sha256": "fe53affee906d37a5d1388cbfdb2adb4cc8542caa71e708518d7732465335fa9",
+        "size_bytes": 532081,
+        "pages": 45,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/8c15c6597b621cdf2502366657abcdf4089e4c35/papers/12_harmonic_paths_and_honeycombs/paper.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/12_harmonic_paths_and_honeycombs/paper.pdf",
+        "source_commit": "8c15c6597b621cdf2502366657abcdf4089e4c35",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/12_harmonic_paths_and_honeycombs/paper.pdf"
+      }
     }
   ]
 }

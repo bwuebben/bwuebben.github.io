@@ -478,7 +478,7 @@ questions. Its source is `content/quantitative-moduli-guide.html`; the labelled
 finite-graph figure comes from `content/quantitative-moduli-figure.html`. Two
 inline SVG illustrations in the guide source explain relative spectral error
 and distinguish quotient singularities from singular graded sheaves. Its
-`SUBGUIDES` entry in `tools/build-editorial.py` groups all 17 manuscripts by
+`SUBGUIDES` entry in `tools/build-editorial.py` groups all 18 manuscripts by
 mathematical question. Its illustration, prose-link and responsive table styles live in
 `assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
 three reading routes and links to At the Wall. Its theorems concern the stated
@@ -492,3 +492,5 @@ Geometry overview; the focused guide uses the same anchor for its moduli section
 The catalogue reading links, research index, individual paper contexts and
 At the Wall link to the focused guide. Every manuscript retains its full abstract,
 pinned PDF, citation and archive record in `data/papers.json`.
+
+The [harmonic-path paper](https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/) was published on 4 November 2026. Its 45-page manuscript treats all finite ranks in the specified A₂ setting, with equality uniqueness under first-order matching. The paper page, programme guides, catalogue and Updates link the current public-repository PDF and Zenodo archive; the full abstract, original date and PDF checksum are recorded in `data/papers.json`.

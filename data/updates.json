@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-04",
+    "title": "Harmonic paths and honeycombs",
+    "url": "/papers/harmonic-paths-and-honeycombs/",
+    "description": "A new 45-page preprint constructs harmonic norm paths with finite labelled honeycomb support from every full split boundary triple in every finite rank in the specified A₂ setting. Uniqueness retains an explicit first-order matching condition. The paper, source, exact examples and Zenodo archive are public."
+  },
+  {
     "date": "2026-11-03",
     "title": "General acyclic cancellation and nonbalanced relaxation",
     "url": "/papers/mass-increase-acyclic-cancellation/",
