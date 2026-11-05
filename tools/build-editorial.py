@@ -95,10 +95,10 @@ def artworks():
         circles+=f'<ellipse cx="400" cy="250" rx="{35+k*10}" ry="{35+k*6}" transform="rotate({k*11} 400 250)" opacity=".45"/>'
     art("geometry",circles,"Intersecting families of curves, a schematic image of a space of possibilities")
 
-def page(path, title, desc, body, extra="", image="drums", cls=""):
+def page(path, title, desc, body, extra="", image="drums", cls="", social_image=None):
     route="/"+path.removesuffix("index.html")
     browser_title=title if title=="Bernd Johannes Wuebben" else title+" — Bernd Johannes Wuebben"
-    social_image=f"/assets/share/{image}.png" if path.startswith("writing/") and path!="writing/index.html" else "/assets/social-card.jpg"
+    social_image=social_image or (f"/assets/share/{image}.png" if path.startswith("writing/") and path!="writing/index.html" else "/assets/social-card.jpg")
     footer='''<footer class="edition-footer"><span>Bernd Johannes Wuebben<br>Finance · Mathematics · Theoretical Physics</span><nav aria-label="Footer"><a href="/about/">About &amp; contact</a><a href="/updates/">Updates</a><a href="/feed.xml">RSS</a><a href="https://scholar.google.com/citations?user=uCkoy4IAAAAJ">Google Scholar ↗</a></nav></footer>'''
     write(path,f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -471,6 +471,12 @@ def build_about():
     page("about/index.html","About","Bernd Wuebben: research in mathematics, finance, and theoretical physics.",body,image="institution")
 
 def build_writing_updates():
+    image_caption="ArXiv Nov 3rd, 2026, Edward Witten, Claude Opus 5.5"
+    image_body=f'''<h1 class="image-note-title">I rest my case</h1><figure class="image-note-figure"><figcaption>{E(image_caption)}</figcaption><img src="/assets/witten.jpeg" width="1086" height="1448" alt="Paper excerpt titled A Note On Lattice Definition of Gauge Theories With Chiral Fermions, with Edward Witten and Opus 5.5 highlighted." fetchpriority="high"></figure>'''
+    image_css_version=__import__("hashlib").sha256((ROOT/"assets/image-note.css").read_bytes()).hexdigest()[:12]
+    page("writing/i-rest-my-case/index.html","I rest my case",image_caption,image_body,
+         extra=f'<link rel="stylesheet" href="/assets/image-note.css?v={image_css_version}">',
+         cls="image-note",social_image="/assets/witten.jpeg")
     essays=[("not-enough.html","drums","Interactive essay","Not Enough","Two drums, two portfolios, and the information that lives only in the whole."),
             ("writing/institutional-knowledge/","institution","Interactive essay","What does an institution know?","When ten agreeing voices are one piece of evidence, repeated ten times."),
             ("writing/physical-limits/","energy","Essay","The material conditions of intelligence","How physical constraints shape the passage from computational possibility to sustained capability."),
@@ -486,7 +492,8 @@ def build_writing_updates():
     body='''<header class="page-intro"><p class="kicker">Essays &amp; perspectives</p><h1>On knowledge,<br>structure, and explanation.</h1><p class="intro">A description can be accurate and still leave out what matters: the shape of a drum, the risks a track record was paid for, the relation that decides whether a space can be smoothed. These essays follow that gap through markets, geometry, physics and the institutions now being rebuilt around machines. Where a model sharpens the argument, the essay builds one and states its limits beside it.</p><p class="small"><a href="/papers/">Research papers ↗</a></p></header><div class="visual-grid">'''
     for route,img,kind,title,desc in essays:
         body+=f'<a class="visual-link" href="/{route}"><div class="art-panel"><img src="/assets/illustrations/{img}.svg" width="800" height="500" alt="" loading="lazy"></div><p class="kicker">{kind}</p><h3>{title} <span class="arrow">↗</span></h3><p>{desc}</p></a>'
-    page("writing/index.html","Writing","Interactive essays and a poem about mathematics, markets, and intelligence.",body+"</div>",image="institution")
+    body+=f'<a class="visual-link" href="/writing/i-rest-my-case/"><div class="art-panel"><img src="/assets/witten.jpeg" width="1086" height="1448" alt="" loading="lazy"></div><p class="kicker">Image</p><h3>I rest my case <span class="arrow" aria-hidden="true">↗</span></h3><p>{E(image_caption)}</p></a>'
+    page("writing/index.html","Writing","Essays, a poem, and an image about mathematics, markets, and intelligence.",body+"</div>",image="institution")
     updates=[(x["date"],x["title"],x["url"],x["description"]) for x in json.loads((ROOT/"data/updates.json").read_text())]
     body='''<header class="page-intro"><p class="kicker">Updates</p><h1>The work continues.</h1><p class="intro">New papers, substantial revisions, and additions to the site.</p><a class="feed-link" href="/feed.xml">Subscribe with an RSS reader ↗</a></header>'''
     for d,t,u,x in updates:
