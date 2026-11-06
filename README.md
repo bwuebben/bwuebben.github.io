@@ -173,7 +173,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 56 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 58 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -482,7 +482,7 @@ questions. Its source is `content/quantitative-moduli-guide.html`; the labelled
 finite-graph figure comes from `content/quantitative-moduli-figure.html`. Two
 inline SVG illustrations in the guide source explain relative spectral error
 and distinguish quotient singularities from singular graded sheaves. Its
-`SUBGUIDES` entry in `tools/build-editorial.py` groups all 18 manuscripts by
+`SUBGUIDES` entry in `tools/build-editorial.py` groups all 19 manuscripts by
 mathematical question. Its illustration, prose-link and responsive table styles live in
 `assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
 three reading routes and links to At the Wall. Its theorems concern the stated
@@ -498,3 +498,5 @@ At the Wall link to the focused guide. Every manuscript retains its full abstrac
 pinned PDF, citation and archive record in `data/papers.json`.
 
 The [harmonic-path paper](https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/) was published on 4 November 2026. Its 45-page manuscript treats all finite ranks in the specified A₂ setting, with equality uniqueness under first-order matching. The paper page, programme guides, catalogue and Updates link the current public-repository PDF and Zenodo archive; the full abstract, original date and PDF checksum are recorded in `data/papers.json`.
+
+Paper 13, [Metric wall crossing in rank-three K3 bundle moduli](https://bwuebben.github.io/papers/k3-metric-wall-crossing/), was published on 6 November 2026. The 21-page preprint applies the stationary and quotient-metric methods to local K3 moduli geometry. Its full abstract, original date, source, exact public PDF and [Zenodo archive](https://zenodo.org/records/24021822) are recorded in `data/papers.json`.

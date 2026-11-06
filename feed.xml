@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Metric wall crossing in rank-three K3 bundle moduli</title>
+      <link>https://bwuebben.github.io/papers/k3-metric-wall-crossing/</link>
+      <guid>https://bwuebben.github.io/papers/k3-metric-wall-crossing/#update-2026-11-06</guid>
+      <description>A new 21-page preprint determines local harmonic metric wall crossing in rank-three K3 bundle moduli. Uniform comparison through changing stabilizers gives collapse scales, complete rescaled Grassmannian limits and intrinsic distance asymptotics. The paper, reproducible calculations and Zenodo archive are public.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Harmonic paths and honeycombs</title>
       <link>https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/</link>
       <guid>https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/#update-2026-11-04</guid>

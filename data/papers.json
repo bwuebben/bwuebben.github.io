@@ -1667,6 +1667,10 @@
         {
           "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
           "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+        },
+        {
+          "label": "Metric wall crossing in rank-three K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-29",
@@ -1951,6 +1955,10 @@
         {
           "label": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
           "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
+        },
+        {
+          "label": "Metric wall crossing in rank-three K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -2011,6 +2019,10 @@
         {
           "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
           "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Metric wall crossing in rank-three K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -3061,6 +3073,70 @@
         "source_commit": "8c15c6597b621cdf2502366657abcdf4089e4c35",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/12_harmonic_paths_and_honeycombs/paper.pdf"
+      }
+    },
+    {
+      "slug": "k3-metric-wall-crossing",
+      "catalogue_anchor": "k3-metric-wall-crossing",
+      "catalogue_title": "Metric wall crossing in rank-three K3 bundle moduli",
+      "title": "Metric wall crossing in rank-three K3 bundle moduli",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 13",
+      "status": "Preprint",
+      "publication_date": "2026-11-06",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24021822",
+        "url": "https://zenodo.org/records/24021822",
+        "deposited_at": "2026-11-06T20:46:58.224847+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24021822",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/13_k3_metric_wall_crossing/k3-metric-wall-crossing.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/13_k3_metric_wall_crossing"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+        }
+      ],
+      "verified_on": "2026-11-06",
+      "abstract_html": "<p>We determine the local harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>L</mi><mn>2</mn></msup></math> metric near a stability wall in a complex twelve-dimensional moduli space of rank-three bundles on a projective K3 surface. The central bundle is the sum of two copies of one spherical line bundle and a second spherical line bundle, with five-dimensional cross-extension spaces; the central Kähler metric is Ricci-flat. We compare the actual chamber metrics with the standard hyperkähler quotient metrics on <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>T</mi><mo>*</mo></msup><mi mathvariant=\"normal\">Gr</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>T</mi><mo>*</mo></msup><mi mathvariant=\"normal\">Gr</mi><mo>(</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>)</mo></mrow></math>, with relative error quadratic in the deformation size. The comparison is uniform through changes of stabilizer and permits unrelated rates of approach to the wall and its singular strata. It gives the exceptional-fibre collapse scale, complete pointed Gromov–Hausdorff limits after rescaling, quantitative matching to the wall metric, and intrinsic distance asymptotics to the contracted loci. The proof corrects the real moment equation within complex orbits with a bound that remains uniform at the reducible strata.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/5b668f8b87edbee4fec82b0d052851760bacf4ed/papers/13_k3_metric_wall_crossing/paper.tex",
+      "pdf": {
+        "sha256": "41324dcb2bbea577163eb8ac49403d69cf5cffb44872556b9f18d6da8c3944a9",
+        "size_bytes": 427652,
+        "pages": 21,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/5b668f8b87edbee4fec82b0d052851760bacf4ed/papers/13_k3_metric_wall_crossing/k3-metric-wall-crossing.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/13_k3_metric_wall_crossing/k3-metric-wall-crossing.pdf",
+        "source_commit": "5b668f8b87edbee4fec82b0d052851760bacf4ed",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/13_k3_metric_wall_crossing/k3-metric-wall-crossing.pdf"
       }
     }
   ]
