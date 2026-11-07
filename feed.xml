@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle</title>
+      <link>https://bwuebben.github.io/papers/uniform-hym-phase/</link>
+      <guid>https://bwuebben.github.io/papers/uniform-hym-phase/#update-2026-11-07</guid>
+      <description>Near a fixed locally free polystable bundle, confined Hermitian–Yang–Mills trajectories admit an exact finite-dimensional comparison flow selected through a continuously differentiable initial-phase map. Relative metric error decays exponentially at a rate controlled by the complementary elliptic gap, uniformly through changing stabilizers and arbitrarily separated positive finite scales. The construction retains the full convergent obstruction and arbitrary multiplicities, including noncommuting automorphisms and unbounded reconstructing gauges. An obstructed bicubic family supplies explicit noncommuting integrable examples; confinement and small initial normal displacement remain hypotheses.</description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Quantitative local models for Hermitian–Einstein metrics</title>
       <link>https://bwuebben.github.io/papers/local-hym-reduction/</link>
       <guid>https://bwuebben.github.io/papers/local-hym-reduction/#update-2026-11-07</guid>

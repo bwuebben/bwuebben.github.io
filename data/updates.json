@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-07",
+    "title": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+    "url": "/papers/uniform-hym-phase/",
+    "description": "Near a fixed locally free polystable bundle, confined Hermitian–Yang–Mills trajectories admit an exact finite-dimensional comparison flow selected through a continuously differentiable initial-phase map. Relative metric error decays exponentially at a rate controlled by the complementary elliptic gap, uniformly through changing stabilizers and arbitrarily separated positive finite scales. The construction retains the full convergent obstruction and arbitrary multiplicities, including noncommuting automorphisms and unbounded reconstructing gauges. An obstructed bicubic family supplies explicit noncommuting integrable examples; confinement and small initial normal displacement remain hypotheses."
+  },
+  {
+    "date": "2026-11-07",
     "title": "Quantitative local models for Hermitian–Einstein metrics",
     "url": "/papers/local-hym-reduction/",
     "description": "Near a fixed locally free polystable bundle on a compact Kähler manifold, the full convergent deformation model gives uniform relative estimates for Hermitian–Einstein metrics, every small endomorphism eigenvalue, and harmonic quotient metrics on reduced smooth pieces. The estimates persist through changes of stabilizer and arbitrarily separated positive scales, with quadratic error in canonical harmonic coordinates and moving harmonic backgrounds. A stable rank-two bundle on a smooth bicubic Calabi–Yau threefold has essential cubic deformation equations; the comparison applies to the complete deformation family of three copies."

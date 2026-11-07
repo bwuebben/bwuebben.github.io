@@ -2107,6 +2107,10 @@
         {
           "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
           "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+        },
+        {
+          "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+          "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -2171,6 +2175,10 @@
         {
           "label": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
           "url": "https://bwuebben.github.io/papers/singular-hym-metric-growth/"
+        },
+        {
+          "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+          "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -3283,6 +3291,10 @@
         {
           "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
           "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+          "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
         }
       ],
       "verified_on": "2026-11-07",
@@ -3297,6 +3309,70 @@
         "source_commit": "fde9a954444ed0c137d7ad8b9b72c21072c5d8db",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/15_local_hym_reduction/local-hym-reduction.pdf"
+      }
+    },
+    {
+      "slug": "uniform-hym-phase",
+      "catalogue_anchor": "uniform-hym-phase",
+      "catalogue_title": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+      "title": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 16",
+      "status": "Preprint",
+      "publication_date": "2026-11-07",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24038504",
+        "url": "https://zenodo.org/records/24038504",
+        "deposited_at": "2026-11-07T15:06:49.700011+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24038504",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/16_uniform_hym_phase/uniform-hym-phase.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/16_uniform_hym_phase"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Quantitative local models for Hermitian–Einstein metrics",
+          "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+        },
+        {
+          "label": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/hym-initial-condition-phase/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills flow at and beyond a stability wall",
+          "url": "https://bwuebben.github.io/papers/hym-wall-unstable-flow/"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "abstract_html": "<p>Near a fixed locally free polystable bundle on a compact Kähler manifold, we construct an exact finite-dimensional invariant reduction of Hermitian–Yang–Mills flow with differentiable asymptotic phase. If the harmonic deformation coefficients remain in a prescribed neighborhood and the initial metric has sufficiently small normal displacement, a selected reduced trajectory reconstructs an exact flow on the same holomorphic bundle. The relative metric error decays exponentially in a fixed Hölder norm, with constants controlled by the complementary elliptic gap and independent of the smallest positive finite-dimensional eigenvalues, their ratios, and stabilizer changes. The phase depends continuously differentiably on the initial metric, even when the reconstructing complex gauges are unbounded. The construction retains arbitrary multiplicities and the complete convergent Kuranishi obstruction. It combines exact noncommuting metric coordinates with a parameter-dependent invariant graph and a group-valued phase estimate. An obstructed repeated-factor bundle on a smooth bicubic threefold supplies noncommuting integrable coefficients with explicitly separated finite spectral scales.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/d09aa92936fe64ff6b43cc4f3338ffa1251dd404/papers/16_uniform_hym_phase/paper.tex",
+      "pdf": {
+        "sha256": "274975c113249ebd625899b7955c4b7b8ea05e18fe6dfaf2e89b0cd424f66c70",
+        "size_bytes": 371681,
+        "pages": 19,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/d09aa92936fe64ff6b43cc4f3338ffa1251dd404/papers/16_uniform_hym_phase/uniform-hym-phase.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/16_uniform_hym_phase/uniform-hym-phase.pdf",
+        "source_commit": "d09aa92936fe64ff6b43cc4f3338ffa1251dd404",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/16_uniform_hym_phase/uniform-hym-phase.pdf"
       }
     }
   ]
