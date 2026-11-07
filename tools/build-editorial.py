@@ -239,14 +239,15 @@ COMPANIONS={
 FORTHCOMING={}
 SUBGUIDES={
  "geometry":[dict(slug="quantitative-moduli",name="Stability and Geometric Degeneration",short="Stability & Degeneration",
-   question="Can finite models predict how geometry degenerates?",
-   subtitle="Chambers, spectra, metrics, and geometric flows",
-   intro="Toward a quantitative theory of geometric degeneration. This programme connects realizable stability chambers, collapsing spectra, metrics on bundles and moduli spaces, and geometric flows. The papers establish these connections in explicit geometric classes, with estimates that remain useful when positive scales separate arbitrarily. A general rank-two surface obstruction exposes a limit of the smooth description and a new asymptotic problem.",
-   image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",
+   question="What happens to geometry at a stability wall?",
+   subtitle="Weak spectra, metric wall crossing, and singular limits",
+   intro="As stability changes, canonical metrics develop weak directions, moduli spaces collapse, and geometric flows slow down. This programme determines these effects through quantitative finite-dimensional models in specified geometric settings, including local metric wall crossing on K3 surfaces. It also identifies an obstruction that arises when the graded sheaf becomes singular.",
+   image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",lead_section="question",
    overview="The broader subject overview, including open FJRW theory and inverse moduli, is the",
-   groups=[("Chambers and geometric realizability","chambers",["toric-tangent-stability","toric-tangent-blowups-bundles","toric-local-stability-chambers","nonsimplicial-toric-stability-chambers"]),
+   groups=[("K3 metric wall crossing","k3-wall-crossing",["k3-metric-wall-crossing","quiver-metric-wall-crossing"]),
+           ("Chambers and geometric realizability","chambers",["toric-tangent-stability","toric-tangent-blowups-bundles","toric-local-stability-chambers","nonsimplicial-toric-stability-chambers"]),
            ("Stationary metrics and small spectra","spectra",["small-dolbeault-stability-walls","uniform-hermitian-einstein-spectra","repeated-factor-he-spectra","three-step-he-metrics"]),
-           ("Quotient metrics and repeated-factor moduli","singular-quotient-metrics",["relative-metrics-reducible-yang-mills","wall-moduli-metrics","repeated-factor-moduli","k3-metric-wall-crossing","quiver-metric-wall-crossing","local-hym-reduction"]),
+           ("Quotient metrics and repeated-factor moduli","singular-quotient-metrics",["relative-metrics-reducible-yang-mills","wall-moduli-metrics","repeated-factor-moduli","local-hym-reduction"]),
            ("Metric response and dynamics","dynamics",["small-dolbeault-eigenvalues","metric-response-hym-flow","hym-initial-condition-phase","hym-wall-unstable-flow"]),
            ("Singular graded limits","singular-graded-limits",["singular-hym-metric-growth"]),
            ("Categorical phase flows","categorical-phase-flows",["mass-increase-acyclic-cancellation"]),
@@ -448,6 +449,11 @@ def build_subguides():
             hero_art=(ROOT/f'content/{sg["hero_fragment"]}.html').read_text() if sg.get("hero_fragment") else f'<img src="/assets/illustrations/{sg["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(sg["short"])}">'
             subtitle=f'<p class="small">{E(sg["subtitle"])}</p>' if sg.get("subtitle") else ''
             body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1>{subtitle}<p class="intro">{sg["intro"]}</p></div>{hero_art}</header>'''
+            if sg.get("lead_section"):
+                lead=re.match(r'\s*(<section\b[^>]*\bid="'+re.escape(sg["lead_section"])+r'"[^>]*>.*?</section>)',text,re.S)
+                assert lead,"The lead section must be first: "+sg["slug"]
+                body+=lead[1]
+                text=text[lead.end():]
             body+='<nav class="page-contents" aria-label="On this page"><p class="kicker">On this page</p><ol>'
             for anchor,title in sections+[("manuscripts","The manuscripts.")]:
                 body+=f'<li><a href="#{anchor}">{E(re.sub(r"<[^>]+>","",title).strip().rstrip("."))}</a></li>'

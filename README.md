@@ -479,21 +479,25 @@ Paper III joins the signed comparison to the usual framed instanton maps).
 ## Stability and Geometric Degeneration
 
 The short name is **Stability & Degeneration**. The focused guide's subtitle is
-"Chambers, spectra, metrics, and geometric flows". The existing URLs and anchors
+"Weak spectra, metric wall crossing, and singular limits". The existing URLs and anchors
 remain unchanged; "stability walls" is still used in paper titles and mathematical prose.
 
 The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
-presents the ambition, geometric realizability, stationary spectra and metrics,
-quotient geometry, dynamics, the singular graded counterexample, and the open
-questions. Its source is `content/quantitative-moduli-guide.html`; the labelled
-finite-graph figure comes from `content/quantitative-moduli-figure.html`. Two
-inline SVG illustrations in the guide source explain relative spectral error
-and distinguish quotient singularities from singular graded sheaves. Its
+presents three central outcomes: relative spectral estimates, local K3 metric
+wall crossing, and the general rank-two singular-sheaf obstruction. Dedicated
+K3 and singular-sheaf sections precede the analytic method, geometric
+realizability, spectra, quotient metrics, dynamics and categorical branches.
+Its source is `content/quantitative-moduli-guide.html`; the five-wall diagram
+from the rank-five K3 example comes from `content/quantitative-moduli-figure.html`.
+Inline SVG illustrations in the guide source explain a vanishing graph mode,
+relative spectral error and the two kinds of singularity. Its
 `SUBGUIDES` entry in `tools/build-editorial.py` groups all 21 manuscripts by
 mathematical question. Its illustration, prose-link and responsive table styles live in
 `assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
 three reading routes and links to At the Wall. Its theorems concern the stated
-geometric families; a general theory and the replacement singular asymptotic law remain open.
+geometric hypotheses. Complete finite successive K3 limits retain convergence
+of normalized data at every stage; global completion, bubbling and the
+replacement singular asymptotic law remain open.
 
 The [Geometry & moduli overview](https://bwuebben.github.io/research/geometry/#stability-degeneration)
 keeps a concise programme introduction and all manuscript entries. Singular
