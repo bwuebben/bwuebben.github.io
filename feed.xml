@@ -9,49 +9,49 @@
       <title>Quantitative metric wall crossing for K3 bundle moduli</title>
       <link>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/</link>
       <guid>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/#update-2026-11-06</guid>
-      <description>A new 30-page preprint compares actual harmonic metrics with quiver quotient metrics near polystable K3 bundles, uniformly through changing stabilizers. A rank-five, two-parameter example realizes five walls, with local contraction profiles, intrinsic distances and complete rescaled limits under the stated convergence hypotheses. The paper and exact finite calculations are public.</description>
+      <description>The paper compares actual harmonic metrics with quiver quotient metrics near polystable K3 bundles, uniformly through changing stabilizers. A rank-five, two-parameter example realizes five walls, with local contraction profiles, intrinsic distances and complete rescaled limits under the stated convergence hypotheses. The paper and exact finite calculations are public.</description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Metric wall crossing in rank-three K3 bundle moduli</title>
       <link>https://bwuebben.github.io/papers/k3-metric-wall-crossing/</link>
       <guid>https://bwuebben.github.io/papers/k3-metric-wall-crossing/#update-2026-11-06</guid>
-      <description>A new 21-page preprint determines local harmonic metric wall crossing in rank-three K3 bundle moduli. Uniform comparison through changing stabilizers gives collapse scales, complete rescaled Grassmannian limits and intrinsic distance asymptotics. The paper, reproducible calculations and Zenodo archive are public.</description>
+      <description>The paper determines local harmonic metric wall crossing in rank-three K3 bundle moduli. Uniform comparison through changing stabilizers gives collapse scales, complete rescaled Grassmannian limits and intrinsic distance asymptotics. The paper, reproducible calculations and Zenodo archive are public.</description>
       <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Harmonic paths and honeycombs</title>
       <link>https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/</link>
       <guid>https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/#update-2026-11-04</guid>
-      <description>A new 45-page preprint constructs harmonic norm paths with finite labelled honeycomb support from every full split boundary triple in every finite rank in the specified A₂ setting. Uniqueness retains an explicit first-order matching condition. The paper, source, exact examples and Zenodo archive are public.</description>
+      <description>The paper constructs harmonic norm paths with finite labelled honeycomb support from every full split boundary triple in every finite rank in the specified A₂ setting. Uniqueness retains an explicit first-order matching condition. The paper, source, exact examples and Zenodo archive are public.</description>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>General acyclic cancellation and nonbalanced relaxation</title>
       <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
       <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-03</guid>
-      <description>Paper 11 now proves acyclic cancellation for surjective source differentials, arbitrary surviving tuples and unequal dimensions, with fixed charges and a sufficiently large least acyclic singular value. At fixed dimensions and total norm bounds, the estimates are uniform in arrow count, stabilizer and acyclic condition number. A separate finite-infimum theorem gives nonbalanced cohomology relaxation; balanced and Pauli cases are corollaries. Nonscalar static estimates accompany a sharp C² regularity example. The revised 29-page preprint has a new Zenodo version.</description>
+      <description>The paper now proves acyclic cancellation for surjective source differentials, arbitrary surviving tuples and unequal dimensions, with fixed charges and a sufficiently large least acyclic singular value. At fixed dimensions and total norm bounds, the estimates are uniform in arrow count, stabilizer and acyclic condition number. A separate finite-infimum theorem gives nonbalanced cohomology relaxation; balanced and Pauli cases are corollaries. Nonscalar static estimates accompany a sharp C² regularity example. The revised preprint has a new Zenodo version.</description>
       <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Conifold relations: companion arXiv references</title>
       <link>https://bwuebben.github.io/papers/cy-conifold-relations/</link>
       <guid>https://bwuebben.github.io/papers/cy-conifold-relations/#update-2026-11-02</guid>
-      <description>Paper 6 now cites the arXiv records of Papers 4 and 5. The bibliography revision preserves the original manuscript date and adds a separate version date. The 234-page PDF, sources and Zenodo archive are updated; the mathematical text and abstract are unchanged.</description>
+      <description>The paper now cites its companion papers’ arXiv records. The bibliography revision preserves the original manuscript date and adds a separate version date. The PDF, sources and Zenodo archive are updated; the mathematical text and abstract are unchanged.</description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Mass increase and acyclic cancellation</title>
       <link>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/</link>
       <guid>https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/#update-2026-11-02</guid>
-      <description>Paper 11 studies categorical phase flows for two-term quiver complexes. An explicit mass-increase example is accompanied by exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family. The 25-page preprint and reproducible calculations are public, with a Zenodo archive.</description>
+      <description>The paper studies categorical phase flows for two-term quiver complexes. An explicit mass-increase example is accompanied by exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family. The preprint and reproducible calculations are public, with a Zenodo archive.</description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Singular HYM metric growth: a general surface theorem</title>
       <link>https://bwuebben.github.io/papers/singular-hym-metric-growth/</link>
       <guid>https://bwuebben.github.io/papers/singular-hym-metric-growth/#update-2026-11-02</guid>
-      <description>The revised paper proves a general rank-two surface obstruction to two bounded-remainder descriptions of Hermitian–Yang–Mills metric growth. The result includes nonreduced singularities and repeated line factors, with a projective K3 example; the stationary curvature theorem retains its toric hypotheses. The 22-page revision preserves the original date and has a new Zenodo version.</description>
+      <description>The revised paper proves a general rank-two surface obstruction to two bounded-remainder descriptions of Hermitian–Yang–Mills metric growth. The result includes nonreduced singularities and repeated line factors, with a projective K3 example; the stationary curvature theorem retains its toric hypotheses. The revision preserves the original date and has a new Zenodo version.</description>
       <pubDate>Mon, 02 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -65,42 +65,42 @@
       <title>Metrics, moduli and flow near stability walls</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-31</guid>
-      <description>New papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes.</description>
+      <description>The papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes.</description>
       <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Atiyah–Floer cobordism series: revised introductions and DOI references</title>
       <link>https://bwuebben.github.io/research/topology/atiyah-floer/</link>
       <guid>https://bwuebben.github.io/research/topology/atiyah-floer/#update-2026-10-30</guid>
-      <description>The three cobordism papers now each explain the series: comparison over 𝔽₂, integral naturality with transported orientations, and identification and normalization of the usual maps. Each bibliography links both companion papers by Zenodo DOI. The revisions preserve the original manuscript dates and display a separate version date.</description>
+      <description>The cobordism papers now each explain the series: comparison over 𝔽₂, integral naturality with transported orientations, and identification and normalization of the usual maps. Each bibliography links the companion papers by Zenodo DOI. The revisions preserve the original manuscript dates and display a separate version date.</description>
       <pubDate>Fri, 30 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>A focused Atiyah–Floer research guide and a seventh explorer move</title>
       <link>https://bwuebben.github.io/research/topology/atiyah-floer/</link>
       <guid>https://bwuebben.github.io/research/topology/atiyah-floer/#update-2026-10-29</guid>
-      <description>A new research guide, nested under the topology guide, presents the Atiyah–Floer programme in five sections: the question of functoriality, the three cobordism papers as one progression from parity to signs to conventions, the point-operations paper and its bubbling corrections, a table of what is proved and what remains open after Paper III, and the reading order with the hypotheses each theorem carries. The cobordism explorer gains a seventh move, which compares the two orientation systems of Paper III on an exact integral model.</description>
+      <description>A new research guide, nested under the topology guide, presents the Atiyah–Floer programme in five sections: the question of functoriality, the cobordism papers as a progression from parity to signs to conventions, the point-operations paper and its bubbling corrections, a table of what is proved and what remains open after Paper III, and the reading order with the hypotheses each theorem carries. The cobordism explorer gains a seventh move, which compares the two orientation systems of Paper III on an exact integral model.</description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Atiyah–Floer cobordism maps III: usual maps and integral normalization</title>
       <link>https://bwuebben.github.io/papers/af-cobordism-iii/</link>
       <guid>https://bwuebben.github.io/papers/af-cobordism-iii/#update-2026-10-29</guid>
-      <description>A new paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons.</description>
+      <description>The paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons.</description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Uniform Hermitian–Einstein spectra with repeated stable factors</title>
       <link>https://bwuebben.github.io/papers/repeated-factor-he-spectra/</link>
       <guid>https://bwuebben.github.io/papers/repeated-factor-he-spectra/#update-2026-10-29</guid>
-      <description>A new paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry &amp; moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions.</description>
+      <description>The paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry &amp; moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions.</description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Toric tangent stability: complete census and geometric extensions</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-29</guid>
-      <description>Two revised papers add a complete exact eightfold census and geometric criteria for tangent stability chambers. The census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. The chamber paper adds positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition. Both retain their original dates and display a separate version date.</description>
+      <description>The revised papers add a complete exact eightfold census and geometric criteria for tangent stability chambers. The census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. The chamber paper adds positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition. The papers retain their original dates and display a separate version date.</description>
       <pubDate>Thu, 29 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -121,7 +121,7 @@
       <title>Universal curve counting across Calabi–Yau transitions</title>
       <link>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting</link>
       <guid>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting#update-2026-10-28</guid>
-      <description>Two new papers establish rational universal conifold specialization with a complete compact calculation, and give a compact counterexample to general integrality for scalar local-curve factors. The Calabi–Yau guide introduces the programme and its remaining questions. Both manuscripts, their sources and exact calculations are public, with separate Zenodo archives.</description>
+      <description>The papers establish rational universal conifold specialization with a complete compact calculation, and give a compact counterexample to general integrality for scalar local-curve factors. The Calabi–Yau guide introduces the programme and its remaining questions. The manuscripts, their sources and exact calculations are public, with separate Zenodo archives.</description>
       <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -135,28 +135,28 @@
       <title>Relative metric estimates near reducible Yang–Mills connections</title>
       <link>https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/</link>
       <guid>https://bwuebben.github.io/papers/relative-metrics-reducible-yang-mills/#update-2026-10-28</guid>
-      <description>A new paper compares surface Yang–Mills quotient metrics and the complete small gauge spectrum with a finite-dimensional model, uniformly across changing stabilizers and arbitrarily separated scales. It includes a leading metric correction and explicit quaternionic comparisons. The manuscript, source and finite calculations are public, with a Zenodo archive.</description>
+      <description>The paper compares surface Yang–Mills quotient metrics and the complete small gauge spectrum with a finite-dimensional model, uniformly across changing stabilizers and arbitrarily separated scales. It includes a leading metric correction and explicit quaternionic comparisons. The manuscript, source and finite calculations are public, with a Zenodo archive.</description>
       <pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Stability and Geometric Degeneration</title>
       <link>https://bwuebben.github.io/research/geometry/#stability-degeneration</link>
       <guid>https://bwuebben.github.io/research/geometry/#stability-degeneration#update-2026-10-27</guid>
-      <description>Three new papers connect realizable toric tangent stability chambers, uniform small Hermitian–Einstein spectra, metric response and actual Hermitian Yang–Mills flow. The Geometry &amp; moduli guide gives geometric and analytic reading routes into the programme. The manuscripts, sources and reproducible finite calculations are public.</description>
+      <description>The papers connect realizable toric tangent stability chambers, uniform small Hermitian–Einstein spectra, metric response and actual Hermitian Yang–Mills flow. The Geometry &amp; moduli guide gives geometric and analytic reading routes into the programme. The manuscripts, sources and reproducible finite calculations are public.</description>
       <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Small Dolbeault eigenvalues near stability walls</title>
       <link>https://bwuebben.github.io/papers/small-dolbeault-stability-walls/</link>
       <guid>https://bwuebben.github.io/papers/small-dolbeault-stability-walls/#update-2026-10-27</guid>
-      <description>A new paper determines every small Hermitian–Einstein endomorphism eigenvalue near intersecting stability walls, with a uniform relative estimate across independent slope gaps. It includes a second-order two-factor expansion and toric examples with arbitrarily many spectral scales. The manuscript and exact matrix computations are public, with a Zenodo archive.</description>
+      <description>The paper determines every small Hermitian–Einstein endomorphism eigenvalue near intersecting stability walls, with a uniform relative estimate across independent slope gaps. It includes a second-order two-factor expansion and toric examples with arbitrarily many spectral scales. The manuscript and exact matrix computations are public, with a Zenodo archive.</description>
       <pubDate>Tue, 27 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Local stability chambers for toric tangent bundles</title>
       <link>https://bwuebben.github.io/papers/toric-local-stability-chambers/</link>
       <guid>https://bwuebben.github.io/papers/toric-local-stability-chambers/#update-2026-10-26</guid>
-      <description>A new paper classifies tangent stability for a family of toric projective bundles, constructs local chambers with arbitrarily many independent boundaries, and determines nearby stable polarizations in the 31 indecomposable semistable census cases. Includes the full manuscript and exact computations.</description>
+      <description>The paper classifies tangent stability for a family of toric projective bundles, constructs local chambers with arbitrarily many independent boundaries, and determines nearby stable polarizations in the 31 indecomposable semistable census cases. Includes the full manuscript and exact computations.</description>
       <pubDate>Mon, 26 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -219,7 +219,7 @@
       <title>A page for every paper</title>
       <link>https://bwuebben.github.io/papers/</link>
       <guid>https://bwuebben.github.io/papers/#update-2026-10-25</guid>
-      <description>The 39-paper collection now has individual abstract pages, citation downloads, and archive links. Thirty-three papers also have verified PDF copies hosted here.</description>
+      <description>The collection now has individual abstract pages, citation downloads, and archive links, with verified PDF copies hosted here where available.</description>
       <pubDate>Sun, 25 Oct 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
