@@ -3,43 +3,43 @@
     "date": "2026-11-06",
     "title": "Quantitative metric wall crossing for K3 bundle moduli",
     "url": "/papers/quiver-metric-wall-crossing/",
-    "description": "The paper compares actual harmonic metrics with quiver quotient metrics near polystable K3 bundles, uniformly through changing stabilizers. A rank-five, two-parameter example realizes five walls, with local contraction profiles, intrinsic distances and complete rescaled limits under the stated convergence hypotheses. The paper and exact finite calculations are public."
+    "description": "Near polystable K3 bundles satisfying the stated stability hypotheses, harmonic moduli metrics admit a uniform comparison with quiver quotient metrics, even as stabilizers change and positive scales separate. A rank-five, two-parameter example realizes five walls, with local contraction profiles and intrinsic distance asymptotics. Under the stated quiver hypothesis, finite successive rescalings have complete limits whenever normalized parameters and balanced base representatives converge at each stage."
   },
   {
     "date": "2026-11-06",
     "title": "Metric wall crossing in rank-three K3 bundle moduli",
     "url": "/papers/k3-metric-wall-crossing/",
-    "description": "The paper determines local harmonic metric wall crossing in rank-three K3 bundle moduli. Uniform comparison through changing stabilizers gives collapse scales, complete rescaled Grassmannian limits and intrinsic distance asymptotics. The paper, reproducible calculations and Zenodo archive are public."
+    "description": "Uniform comparison with hyperkähler quotient metrics describes local harmonic metric wall crossing in a rank-three K3 bundle moduli space. It yields collapse scales, complete rescaled limits modeled on cotangent bundles of Grassmannians and intrinsic distance asymptotics, including through changes of stabilizer."
   },
   {
     "date": "2026-11-04",
     "title": "Harmonic paths and honeycombs",
     "url": "/papers/harmonic-paths-and-honeycombs/",
-    "description": "The paper constructs harmonic norm paths with finite labelled honeycomb support from every full split boundary triple in every finite rank in the specified A₂ setting. Uniqueness retains an explicit first-order matching condition. The paper, source, exact examples and Zenodo archive are public."
+    "description": "Every full split boundary triple in the specified A₂ setting admits a harmonic norm path with finite labelled honeycomb support, in every finite rank. Uniqueness holds among paths with finite apartment presentations whose one-sided norm motions agree to first order at each join."
   },
   {
     "date": "2026-11-03",
     "title": "General acyclic cancellation and nonbalanced relaxation",
     "url": "/papers/mass-increase-acyclic-cancellation/",
-    "description": "The paper now proves acyclic cancellation for surjective source differentials, arbitrary surviving tuples and unequal dimensions, with fixed charges and a sufficiently large least acyclic singular value. At fixed dimensions and total norm bounds, the estimates are uniform in arrow count, stabilizer and acyclic condition number. A separate finite-infimum theorem gives nonbalanced cohomology relaxation; balanced and Pauli cases are corollaries. Nonscalar static estimates accompany a sharp C² regularity example. The revised preprint has a new Zenodo version."
+    "description": "Acyclic cancellation holds for surjective source differentials, arbitrary surviving tuples and unequal dimensions, with fixed charges and a sufficiently large least acyclic singular value. At fixed dimensions and total norm bounds, the estimates are uniform in arrow count, stabilizer and acyclic condition number. A separate finite-infimum theorem gives nonbalanced cohomology relaxation; balanced and Pauli cases are corollaries. Nonscalar static estimates accompany a sharp C² regularity example."
   },
   {
     "date": "2026-11-02",
     "title": "Conifold relations: companion arXiv references",
     "url": "/papers/cy-conifold-relations/",
-    "description": "The paper now cites its companion papers’ arXiv records. The bibliography revision preserves the original manuscript date and adds a separate version date. The PDF, sources and Zenodo archive are updated; the mathematical text and abstract are unchanged."
+    "description": "Companion arXiv records are now cited in the bibliography. The revision preserves the original manuscript date and adds a separate version date. The PDF, sources and Zenodo archive are updated; the mathematical text and abstract are unchanged."
   },
   {
     "date": "2026-11-02",
     "title": "Mass increase and acyclic cancellation",
     "url": "/papers/mass-increase-acyclic-cancellation/",
-    "description": "The paper studies categorical phase flows for two-term quiver complexes. An explicit mass-increase example is accompanied by exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family. The preprint and reproducible calculations are public, with a Zenodo archive."
+    "description": "Categorical phase flows for two-term quiver complexes can increase mass. An explicit example accompanies exponential acyclic cancellation for invertible differentials and uniform comparison with instantaneous cohomology in a specified stabilizer-changing mixed family."
   },
   {
     "date": "2026-11-02",
     "title": "Singular HYM metric growth: a general surface theorem",
     "url": "/papers/singular-hym-metric-growth/",
-    "description": "The revised paper proves a general rank-two surface obstruction to two bounded-remainder descriptions of Hermitian–Yang–Mills metric growth. The result includes nonreduced singularities and repeated line factors, with a projective K3 example; the stationary curvature theorem retains its toric hypotheses. The revision preserves the original date and has a new Zenodo version."
+    "description": "For rank-two bundles on compact Kähler surfaces with a saturated equal-slope line subsheaf and a singular torsion-free quotient, two bounded-remainder descriptions of Hermitian–Yang–Mills metric growth fail. The obstruction includes nonreduced singularities and repeated line factors, with a projective K3 example. The stationary curvature theorem retains its toric hypotheses."
   },
   {
     "date": "2026-10-31",
@@ -51,13 +51,13 @@
     "date": "2026-10-31",
     "title": "Metrics, moduli and flow near stability walls",
     "url": "/research/geometry/#stability-degeneration",
-    "description": "The papers connect three-step extension geometry to actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law. The manuscripts, sources and finite calculations are public, with individual Zenodo archives and updated reading routes."
+    "description": "Three-step extension geometry connects actual Hermitian–Einstein metrics, local moduli metrics and initial-condition-sensitive Hermitian–Yang–Mills flow. A toric surface example shows why singular graded sheaves require a different metric asymptotic law."
   },
   {
     "date": "2026-10-30",
     "title": "Atiyah–Floer cobordism series: revised introductions and DOI references",
     "url": "/research/topology/atiyah-floer/",
-    "description": "The cobordism papers now each explain the series: comparison over 𝔽₂, integral naturality with transported orientations, and identification and normalization of the usual maps. Each bibliography links the companion papers by Zenodo DOI. The revisions preserve the original manuscript dates and display a separate version date."
+    "description": "Revised introductions trace the progression from comparison over 𝔽₂ to integral naturality with transported orientations, and then to identification and normalization of the usual cobordism maps. Companion references now include Zenodo DOIs. The original manuscript dates are preserved alongside separate version dates."
   },
   {
     "date": "2026-10-29",
@@ -69,19 +69,19 @@
     "date": "2026-10-29",
     "title": "Atiyah–Floer cobordism maps III: usual maps and integral normalization",
     "url": "/papers/af-cobordism-iii/",
-    "description": "The paper identifies the usual singular Hopf-link maps with the signed mixed-count comparison, and constructs sphere-positive normalization for every closed connected oriented three-manifold through finite products of geometric counts. The manuscript and source are public with a Zenodo archive. The topology guide distinguishes these results, under their stated inputs, from the remaining nonsingular cap and prescribed relative-spin comparisons."
+    "description": "The usual singular Hopf-link cobordism maps agree with the signed mixed-count comparison under the stated analytic, naturality, surgery and oriented-gluing inputs. Finite integer linear combinations of products of geometric counts realize sphere-positive normalization for every closed connected oriented three-manifold. Comparisons with prescribed relative-spin maps and the nonsingular cap convention remain open."
   },
   {
     "date": "2026-10-29",
     "title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
     "url": "/papers/repeated-factor-he-spectra/",
-    "description": "The paper determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. It compares actual metrics with an independently balanced matrix model and gives a fixed rank-five geometric example. The manuscript, source and finite calculations are public, with a Zenodo archive; the Geometry & moduli guide distinguishes this completed stationary result from the remaining flow and higher-step questions."
+    "description": "An independently balanced matrix model determines every small Hermitian–Einstein endomorphism eigenvalue for simple two-step extensions with repeated stable factors, with uniform relative accuracy at arbitrarily separated positive scales. A fixed rank-five geometric example exhibits the scale separation. Flow and higher-step questions remain open."
   },
   {
     "date": "2026-10-29",
     "title": "Toric tangent stability: complete census and geometric extensions",
     "url": "/research/geometry/#stability-degeneration",
-    "description": "The revised papers add a complete exact eightfold census and geometric criteria for tangent stability chambers. The census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. The chamber paper adds positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition. The papers retain their original dates and display a separate version date."
+    "description": "A complete exact eightfold census certifies 64 stable, 692 strictly semistable and 5,525 unstable cases, with every strictly semistable case a product. Further results give positive spanning without local freeness, a Bott-filtration obstruction and an eight-node Calabi–Yau transition."
   },
   {
     "date": "2026-10-29",
@@ -99,7 +99,7 @@
     "date": "2026-10-28",
     "title": "Universal curve counting across Calabi–Yau transitions",
     "url": "/research/calabi-yau/#universal-curve-counting",
-    "description": "The papers establish rational universal conifold specialization with a complete compact calculation, and give a compact counterexample to general integrality for scalar local-curve factors. The Calabi–Yau guide introduces the programme and its remaining questions. The manuscripts, their sources and exact calculations are public, with separate Zenodo archives."
+    "description": "A rational universal conifold-specialization formula is established and evaluated in a complete compact calculation. A compact counterexample rules out general integrality for scalar local-curve factors."
   },
   {
     "date": "2026-10-28",
@@ -111,25 +111,25 @@
     "date": "2026-10-28",
     "title": "Relative metric estimates near reducible Yang–Mills connections",
     "url": "/papers/relative-metrics-reducible-yang-mills/",
-    "description": "The paper compares surface Yang–Mills quotient metrics and the complete small gauge spectrum with a finite-dimensional model, uniformly across changing stabilizers and arbitrarily separated scales. It includes a leading metric correction and explicit quaternionic comparisons. The manuscript, source and finite calculations are public, with a Zenodo archive."
+    "description": "Near a central Yang–Mills connection on a closed surface, a finite-dimensional model controls the quotient metric and every small gauge eigenvalue uniformly through changing stabilizers and arbitrarily separated scales. Green operators determine the leading metric correction; quaternionic reductions provide explicit curved comparisons."
   },
   {
     "date": "2026-10-27",
     "title": "Stability and Geometric Degeneration",
     "url": "/research/geometry/#stability-degeneration",
-    "description": "The papers connect realizable toric tangent stability chambers, uniform small Hermitian–Einstein spectra, metric response and actual Hermitian Yang–Mills flow. The Geometry & moduli guide gives geometric and analytic reading routes into the programme. The manuscripts, sources and reproducible finite calculations are public."
+    "description": "Uniform small Hermitian–Einstein spectra and metric-response estimates connect realizable toric tangent stability chambers to actual Hermitian–Yang–Mills flow. Geometric and analytic reading routes set out the results and their hypotheses."
   },
   {
     "date": "2026-10-27",
     "title": "Small Dolbeault eigenvalues near stability walls",
     "url": "/papers/small-dolbeault-stability-walls/",
-    "description": "The paper determines every small Hermitian–Einstein endomorphism eigenvalue near intersecting stability walls, with a uniform relative estimate across independent slope gaps. It includes a second-order two-factor expansion and toric examples with arbitrarily many spectral scales. The manuscript and exact matrix computations are public, with a Zenodo archive."
+    "description": "In the stated two-step extension setting, ranks and slope gaps determine the leading small Hermitian–Einstein endomorphism spectrum near intersecting stability walls, with uniform relative accuracy across independent positive gaps. A second-order two-factor expansion and toric examples exhibit finer asymptotics and arbitrarily many spectral scales."
   },
   {
     "date": "2026-10-26",
     "title": "Local stability chambers for toric tangent bundles",
     "url": "/papers/toric-local-stability-chambers/",
-    "description": "The paper classifies tangent stability for a family of toric projective bundles, constructs local chambers with arbitrarily many independent boundaries, and determines nearby stable polarizations in the 31 indecomposable semistable census cases. Includes the full manuscript and exact computations."
+    "description": "A family of toric projective bundles admits a complete tangent-stability classification and local chambers with arbitrarily many independent boundaries. Geometric criteria determine nearby stable polarizations in all 31 indecomposable semistable census cases."
   },
   {
     "date": "2026-10-25",
@@ -189,6 +189,6 @@
     "date": "2026-10-25",
     "title": "Mirror symmetry for conifold relations",
     "url": "/papers/cy-conifold-relations/",
-    "description": "The current public manuscript is dated 25 October 2026. The paper page links its abstract, PDF, source, and archived version."
+    "description": "For specified Batyrev mirror families, relations among exceptional curves and mirror vanishing three-spheres agree as integral lattices on nodal components meeting the construction near the maximally degenerate limit. The comparison determines codimension and characterizes smoothability; a smoothing yields a symplectic conifold transition on the mirror."
   }
 ]
