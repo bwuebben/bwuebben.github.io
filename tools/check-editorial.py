@@ -41,6 +41,17 @@ class Page(HTMLParser):
    if attr in a:self.links.append(a[attr])
 pages=[p for p in ROOT.rglob("*.html") if p.relative_to(ROOT).parts[0] not in {"tools","templates","content"} and p.name!="standalone.html"]
 errors=[]
+# Update descriptions are mini abstracts; their titles, dates and links identify
+# the publication. Reject the recurring page-count and manuscript-framing errors.
+update_framing = re.compile(
+ r"\b\d+\s*[-–—]?\s*pages?\b|"
+ r"\b(?:this|the)\s+(?:paper|preprint|manuscript)\b|"
+ r"\b(?:a\s+)?(?:new|revised)\s+(?:paper|preprint|manuscript)\b", re.I)
+for update in json.loads((ROOT/"data/updates.json").read_text()):
+ match=update_framing.search(update["description"])
+ if match:
+  errors.append("data/updates.json: "+update["title"]+
+                ": write a mini abstract without page counts or manuscript framing: "+repr(match.group()))
 for path in pages:
  page=Page(path.read_text());rel=str(path.relative_to(ROOT))
  if page.h1!=1 and rel not in {"portrait/index.html","google5536594b14b40920.html"}:errors.append(rel+": expected one h1, found "+str(page.h1))

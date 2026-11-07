@@ -51,6 +51,13 @@ revision date, current public-repository PDF and versioned Zenodo archive.
 
 ## Rebuilding and checks
 
+Research descriptions in `data/updates.json` are mini abstracts: state the
+problem, result and essential qualifications directly. Omit page counts,
+"A new preprint", "This paper", "The paper" and publication-availability
+announcements. The first sentence must stand alone as the homepage excerpt.
+`tools/check-editorial.py` rejects page counts and common manuscript-framing
+phrases in update descriptions; it does not replace an editorial read.
+
 Run the whole sequence after any change to editorial sources, essays or paper
 data; intermediate states are not consistent, because later steps restore shared
 navigation and the sitemap.
