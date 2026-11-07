@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Quantitative local models for Hermitian–Einstein metrics</title>
+      <link>https://bwuebben.github.io/papers/local-hym-reduction/</link>
+      <guid>https://bwuebben.github.io/papers/local-hym-reduction/#update-2026-11-07</guid>
+      <description>A new 22-page preprint gives a quantitative local model for Hermitian–Einstein metrics, the complete small endomorphism spectrum and harmonic quotient metrics on compact Kähler manifolds. It retains the full convergent obstruction and remains uniform through stabilizer changes and separated positive scales. A compact stable-bundle example has essential cubic deformation equations; the paper and exact finite calculations are public.</description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Quantitative metric wall crossing for K3 bundle moduli</title>
       <link>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/</link>
       <guid>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/#update-2026-11-06</guid>

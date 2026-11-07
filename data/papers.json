@@ -1675,6 +1675,10 @@
         {
           "label": "Quantitative metric wall crossing for K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative local models for Hermitian–Einstein metrics",
+          "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
         }
       ],
       "verified_on": "2026-10-29",
@@ -1967,6 +1971,10 @@
         {
           "label": "Quantitative metric wall crossing for K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative local models for Hermitian–Einstein metrics",
+          "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -3207,6 +3215,10 @@
         {
           "label": "Metric wall crossing in rank-three K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative local models for Hermitian–Einstein metrics",
+          "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
         }
       ],
       "verified_on": "2026-11-06",
@@ -3221,6 +3233,70 @@
         "source_commit": "569653102361ac3fc770e96c15bf69cc94899cda",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/14_quiver_metric_wall_crossing/quiver-metric-wall-crossing.pdf"
+      }
+    },
+    {
+      "slug": "local-hym-reduction",
+      "catalogue_anchor": "local-hym-reduction",
+      "catalogue_title": "Quantitative local models for Hermitian–Einstein metrics",
+      "title": "Quantitative local models for Hermitian–Einstein metrics",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 15",
+      "status": "Preprint",
+      "publication_date": "2026-11-07",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24029090",
+        "url": "https://zenodo.org/records/24029090",
+        "deposited_at": "2026-11-07T06:05:49.462282+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24029090",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/15_local_hym_reduction/local-hym-reduction.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/15_local_hym_reduction"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Quantitative metric wall crossing for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "abstract_html": "<p>We give a quantitative local model for Hermitian–Einstein metrics near a fixed locally free polystable bundle on a compact Kähler manifold. Retaining the full convergent Kuranishi obstruction, we compare every small endomorphism Dolbeault eigenvalue with the commutator form of the automorphism action on harmonic deformations, and the harmonic metric on smooth pieces of the reduced moduli space with the flat quotient metric. The model reconstructs every sufficiently nearby Hermitian–Einstein solution. The comparisons are relative and uniform through stabilizer changes and arbitrary separation of positive eigenvalues of the finite form. Canonical harmonic coordinates give quadratic error at fixed polarization, with the same order for varying polarizations in moving harmonic backgrounds. The proof derives the geometric estimates for finite balancing and complementary elliptic reduction from orthogonality of the quadratic reconstruction and gauge terms. We construct a stable rank-two bundle on a smooth bicubic Calabi–Yau threefold with essential cubic deformation equations. The theorem controls all nearby polystable deformations of the direct sum of three copies, including families with arbitrarily separated small positive eigenvalues.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/fde9a954444ed0c137d7ad8b9b72c21072c5d8db/papers/15_local_hym_reduction/paper.tex",
+      "pdf": {
+        "sha256": "02cb19f3e8e2c1637476bc1a49dc803972cb7924c081288b10cb680a293bc9cc",
+        "size_bytes": 375599,
+        "pages": 22,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/fde9a954444ed0c137d7ad8b9b72c21072c5d8db/papers/15_local_hym_reduction/local-hym-reduction.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/15_local_hym_reduction/local-hym-reduction.pdf",
+        "source_commit": "fde9a954444ed0c137d7ad8b9b72c21072c5d8db",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/15_local_hym_reduction/local-hym-reduction.pdf"
       }
     }
   ]

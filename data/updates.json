@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-07",
+    "title": "Quantitative local models for Hermitian–Einstein metrics",
+    "url": "/papers/local-hym-reduction/",
+    "description": "A new 22-page preprint gives a quantitative local model for Hermitian–Einstein metrics, the complete small endomorphism spectrum and harmonic quotient metrics on compact Kähler manifolds. It retains the full convergent obstruction and remains uniform through stabilizer changes and separated positive scales. A compact stable-bundle example has essential cubic deformation equations; the paper and exact finite calculations are public."
+  },
+  {
     "date": "2026-11-06",
     "title": "Quantitative metric wall crossing for K3 bundle moduli",
     "url": "/papers/quiver-metric-wall-crossing/",
