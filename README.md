@@ -479,11 +479,13 @@ Paper III joins the signed comparison to the usual framed instanton maps).
 ## Stability and Geometric Degeneration
 
 The short name is **Stability & Degeneration**. The focused guide's subtitle is
-"Hermitian–Einstein metrics, weak spectra, and moduli geometry". The existing URLs and anchors
+"Holomorphic bundles, canonical metrics, and their moduli spaces". The existing URLs and anchors
 remain unchanged; "stability walls" is still used in paper titles and mathematical prose.
 
 The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
-centres the general compact-Kähler local theorem in Paper 15, then develops
+first identifies the bundles, slope-stability, polarization walls and the distinction
+between bundle metrics and moduli-space metrics. It centres the general
+compact-Kähler local theorem in Paper 15, then develops
 its relationship to K3 metric limits, the essential cubic bicubic example and
 the singular-flow obstruction. The earlier chamber, spectral, balancing and
 quotient-metric papers retain their constructions and additional consequences.

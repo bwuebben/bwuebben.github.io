@@ -239,9 +239,9 @@ COMPANIONS={
 FORTHCOMING={}
 SUBGUIDES={
  "geometry":[dict(slug="quantitative-moduli",name="Stability and Geometric Degeneration",short="Stability & Degeneration",
-   question="How much geometry can a finite model recover?",
-   subtitle="Hermitian–Einstein metrics, weak spectra, and moduli geometry",
-   intro="Near a fixed locally free polystable bundle on a compact Kähler manifold, one finite-dimensional model recovers Hermitian–Einstein metrics, their weak spectra and local moduli geometry. The comparisons remain accurate when stabilizers change and positive scales separate arbitrarily. K3 wall crossing, a cubic Calabi–Yau example and singular-flow obstructions reveal the reach and the limits of this approach.",
+   question="How does stability shape the geometry of vector bundles?",
+   subtitle="Holomorphic bundles, canonical metrics, and their moduli spaces",
+   intro="The objects are holomorphic vector bundles on compact Kähler manifolds: families of complex vector spaces that vary holomorphically over the base. We study canonical metrics on these bundles and the geometry of their moduli spaces, which parametrize bundles up to isomorphism. The central problem is to understand what changes near a stability wall or a bundle with extra symmetries.",
    image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",lead_section="question",
    overview="The broader subject overview, including open FJRW theory and inverse moduli, is the",
    groups=[("The general local theorem","local-theorem",["local-hym-reduction"]),
