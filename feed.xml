@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Quantitative metric wall crossing for K3 bundle moduli</title>
+      <link>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/</link>
+      <guid>https://bwuebben.github.io/papers/quiver-metric-wall-crossing/#update-2026-11-06</guid>
+      <description>A new 30-page preprint compares actual harmonic metrics with quiver quotient metrics near polystable K3 bundles, uniformly through changing stabilizers. A rank-five, two-parameter example realizes five walls, with local contraction profiles, intrinsic distances and complete rescaled limits under the stated convergence hypotheses. The paper and exact finite calculations are public.</description>
+      <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Metric wall crossing in rank-three K3 bundle moduli</title>
       <link>https://bwuebben.github.io/papers/k3-metric-wall-crossing/</link>
       <guid>https://bwuebben.github.io/papers/k3-metric-wall-crossing/#update-2026-11-06</guid>

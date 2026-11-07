@@ -1671,6 +1671,10 @@
         {
           "label": "Metric wall crossing in rank-three K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative metric wall crossing for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-29",
@@ -1959,6 +1963,10 @@
         {
           "label": "Metric wall crossing in rank-three K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative metric wall crossing for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -2023,6 +2031,10 @@
         {
           "label": "Metric wall crossing in rank-three K3 bundle moduli",
           "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
+        },
+        {
+          "label": "Quantitative metric wall crossing for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-10-31",
@@ -3123,6 +3135,10 @@
         {
           "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
           "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+        },
+        {
+          "label": "Quantitative metric wall crossing for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
         }
       ],
       "verified_on": "2026-11-06",
@@ -3137,6 +3153,74 @@
         "source_commit": "5b668f8b87edbee4fec82b0d052851760bacf4ed",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/13_k3_metric_wall_crossing/k3-metric-wall-crossing.pdf"
+      }
+    },
+    {
+      "slug": "quiver-metric-wall-crossing",
+      "catalogue_anchor": "quiver-metric-wall-crossing",
+      "catalogue_title": "Quantitative metric wall crossing for K3 bundle moduli",
+      "title": "Quantitative metric wall crossing for K3 bundle moduli",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 14",
+      "status": "Preprint",
+      "publication_date": "2026-11-06",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24024998",
+        "url": "https://zenodo.org/records/24024998",
+        "deposited_at": "2026-11-07T00:30:23.100812+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24024998",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/14_quiver_metric_wall_crossing/quiver-metric-wall-crossing.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/14_quiver_metric_wall_crossing"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Uniform Hermitian–Einstein spectra with repeated stable factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-he-spectra/"
+        },
+        {
+          "label": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
+          "url": "https://bwuebben.github.io/papers/wall-moduli-metrics/"
+        },
+        {
+          "label": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
+          "url": "https://bwuebben.github.io/papers/repeated-factor-moduli/"
+        },
+        {
+          "label": "Metric wall crossing in rank-three K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/k3-metric-wall-crossing/"
+        }
+      ],
+      "verified_on": "2026-11-06",
+      "abstract_html": "<p>We compare harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>L</mi><mn>2</mn></msup></math> metrics on bundle moduli over a projective K3 surface with flat quiver quotient metrics near a polystable bundle. Its locally free factors are slope-stable with a common reduced Hilbert polynomial for an ample polarization, and slope-stable of a common slope for a central Ricci-flat Kähler background, whose class may differ. The multiplicative metric error tends to zero uniformly as stabilizers change and positive degeneration scales separate arbitrarily. The proof retains all parallel automorphisms in the finite-dimensional reduction and computes harmonic lengths by complementary gauge minimization. For doubled quivers admitting a representation with no nonzero proper subrepresentation in the complex zero moment fiber, we prove pointed Gromov–Hausdorff continuity of the complete stratified quotients as real central parameters vary. Under this hypothesis, finite successive rescalings of the actual moduli metric have complete limits whenever the rescaled parameters and balanced normal base representatives converge at each stage. We apply the method to a rank-five K3 bundle with three spherical factors, multiplicities (2,2,1), and two independent polarization parameters. Its five realized walls have selected transverse contractions with models <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>T</mi><mo>*</mo></msup><msup><mi mathvariant=\"double-struck\">P</mi><mn>9</mn></msup></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>T</mi><mo>*</mo></msup><msup><mi mathvariant=\"double-struck\">P</mi><mn>11</mn></msup></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><msup><mi>T</mi><mo>*</mo></msup><msup><mi mathvariant=\"double-struck\">P</mi><mn>17</mn></msup></mrow></math>. We determine their contraction scales, distances to the corresponding strata, and matching to the surrounding wall metric.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/569653102361ac3fc770e96c15bf69cc94899cda/papers/14_quiver_metric_wall_crossing/paper.tex",
+      "pdf": {
+        "sha256": "70bca12dae324e04a62fe5c606037e01e684e96e84cc0c61671290c9465e580a",
+        "size_bytes": 446959,
+        "pages": 30,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/569653102361ac3fc770e96c15bf69cc94899cda/papers/14_quiver_metric_wall_crossing/quiver-metric-wall-crossing.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/14_quiver_metric_wall_crossing/quiver-metric-wall-crossing.pdf",
+        "source_commit": "569653102361ac3fc770e96c15bf69cc94899cda",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/14_quiver_metric_wall_crossing/quiver-metric-wall-crossing.pdf"
       }
     }
   ]
