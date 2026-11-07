@@ -1,53 +1,155 @@
 <section class="section-block focus" id="question">
-  <p class="kicker">The results</p>
-  <h2>What the programme now establishes.</h2>
-  <p class="focus-lede">Which finite data determine a geometric degeneration, and when must singular data enter? The papers answer parts of this question through spectral estimates, local metric wall crossing and an obstruction to extending smooth asymptotic laws.</p>
+  <p class="kicker">The programme in three steps</p>
+  <h2>A local theory. Geometric consequences. Precise limits.</h2>
   <div class="result-paths">
     <div>
-      <p class="result-index">01 / Spectra</p>
-      <h3><a href="#spectra">Every weak scale</a></h3>
-      <p>In the stated extension families, finite operators determine every small Hermitian–Einstein eigenvalue with relative accuracy, even when positive scales vanish at arbitrarily different rates.</p>
+      <p class="result-index">01 / The general theorem</p>
+      <h3><a href="#local-theorem">One model, three comparisons</a></h3>
+      <p>Near a fixed locally free polystable bundle, a common finite model reconstructs Hermitian–Einstein metrics and controls their small spectra and local moduli geometry.</p>
     </div>
     <div>
-      <p class="result-index">02 / Metric geometry</p>
-      <h3><a href="#k3-wall-crossing">The metric across a wall</a></h3>
-      <p>Local K3 comparisons determine collapse scales, intrinsic distances and complete rescaled limits under the stated hypotheses, through changing stabilizers and separated scales.</p>
+      <p class="result-index">02 / The geometry</p>
+      <h3><a href="#k3-wall-crossing">Collapse and obstruction</a></h3>
+      <p>K3 applications determine metric wall crossing and rescaled limits. A bicubic Calabi–Yau example shows why the full nonlinear deformation equations must be retained.</p>
     </div>
     <div>
-      <p class="result-index">03 / Singular sheaves</p>
-      <h3><a href="#singular-graded-limits">An asymptotic obstruction</a></h3>
-      <p>A general rank-two surface theorem rules out two bounded-remainder extensions of weight-filtration asymptotics. The discrepancy persists away from the singular set.</p>
+      <p class="result-index">03 / The boundaries</p>
+      <h3><a href="#singular-graded-limits">Beyond the smooth background</a></h3>
+      <p>A singular-sheaf theorem obstructs two extensions of smooth flow asymptotics. Dynamics, singular replacement laws and global metric completion remain distinct questions.</p>
     </div>
   </div>
+</section>
+
+<section class="section-block focus" id="local-theorem">
+  <p class="kicker">The general local theorem · Paper 15</p>
+  <h2>Recover the metric, the weak spectrum, and the geometry of moduli.</h2>
+  <p class="focus-lede"><a href="/papers/local-hym-reduction/">Quantitative local models for Hermitian–Einstein metrics</a> starts with any fixed locally free polystable bundle on a compact Kähler manifold. One finite-dimensional construction controls three parts of the stationary problem, even as stabilizers change and positive spectral scales separate arbitrarily.</p>
+  <p class="scope-line">Local near a fixed background · stationary metrics · locally free bundles</p>
+  <div class="theorem-outcomes">
+    <div>
+      <p class="outcome-number">I</p>
+      <h3>Reconstruct</h3>
+      <p>A balanced point satisfying the full obstruction equations determines an actual Hermitian–Einstein metric. Every sufficiently nearby solution is represented, with the prescribed determinant normalization.</p>
+    </div>
+    <div>
+      <p class="outcome-number">II</p>
+      <h3>Resolve</h3>
+      <p>The automorphism action on harmonic deformations determines every small endomorphism Dolbeault eigenvalue to relative accuracy, including its exact changing kernel. The remaining spectrum has a uniform positive gap.</p>
+    </div>
+    <div>
+      <p class="outcome-number">III</p>
+      <h3>Measure</h3>
+      <p>On genuine smooth pieces of the reduced moduli space, the actual harmonic L² metric is relatively close to the flat quotient metric restricted to the full obstruction locus.</p>
+    </div>
+  </div>
+  <div class="theorem-key">
+    <h3>The weakest directions remain visible.</h3>
+    <p>The comparison constants are independent of the positive finite eigenvalues, their ratios and the stabilizer type. Small absolute error would not give this control: it could overwhelm the weakest mode. The proof estimates each weak direction relative to its own energy.</p>
+  </div>
+  <details class="technical-note">
+    <summary>The finite model, coordinates and scope</summary>
+    <p>Write the central bundle as a direct sum of stable factors with arbitrary fixed multiplicities. Harmonic deformations form the Ext-quiver representation. The full convergent Kuranishi map κ cuts out the integrable locus; the compact automorphism group acts on it, and the flat moment equation imposes balance. No formality assumption or quadratic truncation of κ is made.</p>
+    <p>In fixed canonical harmonic coordinates, the relative error is O(|t| + r²), where t measures polarization variation and r is the coefficient norm. At fixed polarization it is O(r²). Moving harmonic backgrounds preserve quadratic accuracy under nearby polarization changes. An arbitrary nonlinear change of coordinates need not preserve that order.</p>
+    <p>The constants and neighborhood depend on the fixed background and its positive complementary elliptic gaps. The metric statement uses genuine tangents to smooth pieces of the reduced analytic quotient. It does not assert a tensor on arbitrary Zariski tangents, uniform radii for every stratum chart, or uniformity through collapse of the background manifold.</p>
+  </details>
+  <p class="section-reading"><a href="/papers/local-hym-reduction/">Read the general theorem and its full abstract ↗</a></p>
 </section>
 
 <section class="section-block focus" id="k3-wall-crossing">
-  <p class="kicker">Local metric wall crossing</p>
+  <p class="kicker">Geometric consequences · K3 surfaces</p>
   <h2>How does a moduli space collapse at a wall?</h2>
-  <p class="focus-lede">A finite quotient can describe which bundles occur near a wall. A metric comparison determines how far apart they are, how an exceptional fibre contracts, and what geometry remains after rescaling. The K3 papers establish these conclusions for actual harmonic L² metrics.</p>
-  <div class="prose-columns k3-results">
+  <p class="focus-lede">A comparison of tangent norms opens the way to geometric questions about lengths, contraction and rescaling. The K3 papers supply the additional path-localization, coverage and limit arguments needed to answer them for actual harmonic L² metrics.</p>
+  <div class="application-grid">
     <div>
       <h3>A Grassmannian wall crossing</h3>
-      <p>The <a href="/papers/k3-metric-wall-crossing/">rank-three theorem</a> compares the chamber metrics with the standard hyperkähler quotient metrics on <span class="math-name">T*Gr(2,5)</span> and <span class="math-name">T*Gr(3,5)</span>. The relative error is quadratic in deformation size and uniform through changing stabilizers and unrelated rates of approach to the wall and its singular strata.</p>
-      <p>It determines exceptional-fibre collapse, complete pointed Gromov–Hausdorff limits after rescaling, matching to the wall metric and intrinsic distances to the contracted loci.</p>
-      <p class="small">The central bundle is the sum of two copies of one spherical line bundle and a second spherical line bundle on a projective K3 surface, with five-dimensional cross-extension spaces and a central Ricci-flat Kähler metric.</p>
+      <p>The <a href="/papers/k3-metric-wall-crossing/">rank-three theorem</a> compares the chamber metrics with hyperkähler quotient metrics on <span class="math-name">T*Gr(2,5)</span> and <span class="math-name">T*Gr(3,5)</span>. It determines exceptional-fibre collapse, complete pointed Gromov–Hausdorff limits after rescaling, matching to the wall metric and intrinsic distances to contracted loci.</p>
+      <p class="small">The central bundle has two copies of one spherical line bundle and a second spherical line bundle, with five-dimensional cross-extension spaces on a projective K3 surface with a central Ricci-flat Kähler metric.</p>
+      <h3>When several walls meet</h3>
+      <p>The <a href="/papers/quiver-metric-wall-crossing/">general K3 comparison</a> is realized by a rank-five bundle with three spherical factors, multiplicities (2,2,1) and two independent polarization parameters. Selected transverse contractions have models <span class="math-name">T*P⁹</span>, <span class="math-name">T*P¹¹</span> and <span class="math-name">T*P¹⁷</span>, with square-root contraction profiles and matching to the surrounding wall metric.</p>
     </div>
-    <div>
-      <h3>A comparison through intersecting walls</h3>
-      <p>The <a href="/papers/quiver-metric-wall-crossing/">general K3 theorem</a> compares actual harmonic L² metrics with doubled-quiver quotient metrics near a polystable locally free bundle. The estimate remains relative through arbitrary stabilizer changes and arbitrarily separated positive scales.</p>
-      <p>Its rank-five application has three spherical factors with multiplicities (2,2,1), two independent polarization parameters and five walls. Selected transverse contractions have models <span class="math-name">T*P⁹</span>, <span class="math-name">T*P¹¹</span> and <span class="math-name">T*P¹⁷</span>, with square-root contraction profiles, intrinsic stratum distances and matching to the surrounding wall metric.</p>
-      <p class="small">The factors are slope-stable with a common reduced Hilbert polynomial for an integral ample class, and slope-stable of a common slope for a central Ricci-flat class, which may differ. The spatial error is linear; a verified central sign symmetry improves it to quadratic. The rank-five triangle has the linear estimate.</p>
-    </div>
+<figure class="wall-figure k3-wall-figure" aria-labelledby="wall-figure-title" aria-describedby="wall-figure-caption">
+  <p class="kicker">A rank-five K3 example</p>
+  <h3 id="wall-figure-title">Five walls, ten chambers.</h3>
+  <svg class="wall-diagram" viewBox="0 0 420 400" role="img" aria-label="Five wall lines through the origin in the plane of stability parameters zeta one and zeta two. They divide the plane into ten chambers. The lines are zeta one equals zero, zeta two equals zero, zeta one plus zeta two equals zero, two zeta one plus zeta two equals zero, and zeta one plus two zeta two equals zero.">
+    <circle class="wall-field" cx="210" cy="195" r="155"/>
+    <path class="wall-sector" d="M210 195H365A155 155 0 0 0 210 40Z"/>
+    <g class="wall-lines">
+      <path d="M55 195H365 M210 40V350"/>
+      <path d="M140.682 56.364L279.318 333.636 M100.398 85.398L319.602 304.602 M71.364 125.682L348.636 264.318"/>
+    </g>
+    <circle class="wall-center" cx="210" cy="195" r="5"/>
+    <text class="wall-axis" x="382" y="202">ζ₁</text>
+    <text class="wall-axis" x="202" y="26">ζ₂</text>
+    <text class="wall-chamber" x="268" y="133">chamber</text>
+  </svg>
+  <figcaption id="wall-figure-caption">Two independent polarization parameters realize this wall arrangement. The local metric theorem determines contraction scales and rescaled geometry at selected wall strata. The circle only frames the diagram.</figcaption>
+  <p class="wall-source"><a href="/papers/quiver-metric-wall-crossing/">The rank-five K3 application ↗</a></p>
+</figure>
   </div>
   <aside class="guide-aside">
-    <h3>What a complete rescaled limit requires</h3>
-    <p>For doubled quivers whose complex zero fibre admits a module-simple representation, a separate theorem proves pointed Gromov–Hausdorff continuity of the complete stratified quotients as real central parameters converge. Here module-simple means having no nonzero proper subrepresentation. Complete limits of the actual rescaled metrics, including finite successive limits, retain convergence of rescaled parameters and balanced normal base representatives at each stage.</p>
-    <p>These are local moduli theorems. Global metric completion, bubbling and HYM evolution remain separate problems. The proofs build on <a href="#singular-quotient-metrics">the earlier quotient-metric comparisons</a> and repeated-factor balancing.</p>
+    <h3>Complete limits require more than local metric comparison.</h3>
+    <p>For doubled quivers whose complex zero fibre admits a module-simple representation, meaning one with no nonzero proper subrepresentation, the complete stratified quotients vary continuously in the pointed Gromov–Hausdorff sense as real central parameters converge. Complete limits of the actual rescaled metrics, including finite successive limits, retain convergence of rescaled parameters and balanced normal base representatives at each stage.</p>
   </aside>
+  <details class="technical-note">
+    <summary>The K3 hypotheses and the order of the error</summary>
+    <p>The general K3 theorem assumes locally free factors that are slope-stable with a common reduced Hilbert polynomial for an integral ample class, and slope-stable of a common slope for a central Ricci-flat class, which may differ. Its formality coordinates give linear spatial error; a verified central sign symmetry improves it to quadratic. The rank-three example has the quadratic estimate, whereas the rank-five triangle has the linear estimate.</p>
+    <p>Paper 15’s quadratic estimate is in canonical harmonic coordinates. It does not automatically improve the error after formality straightening, or supply homogeneous rescaled limits for an arbitrary obstructed germ. These are local results; global metric completion and bubbling remain open.</p>
+  </details>
+</section>
+
+<section class="section-block focus" id="cubic-obstruction">
+  <p class="kicker">A test beyond quadratic models · Calabi–Yau threefolds</p>
+  <h2>The first obstruction can appear at order three.</h2>
+  <p class="focus-lede">Paper 15 constructs a stable rank-two bundle A on a smooth bicubic Calabi–Yau threefold with analytic deformation ring <span class="math-name">ℂ{a,b}/(a²b, ab²)</span>. Its quadratic obstruction vanishes. The full equations still exclude mixed directions.</p>
+  <figure class="programme-figure cubic-figure" aria-labelledby="cubic-title" aria-describedby="cubic-caption">
+    <h3 id="cubic-title">What a quadratic truncation would miss.</h3>
+    <div class="programme-panels">
+      <div class="programme-panel">
+        <h4>Through second order</h4>
+        <p class="figure-bound">No quadratic equations</p>
+        <svg class="programme-diagram cubic-diagram" viewBox="0 0 360 240" role="img" aria-label="A shaded plane in a real slice of the two deformation coordinates a and b. The diagonal direction a equals b is allowed through second order.">
+          <rect class="cubic-plane" x="55" y="30" width="250" height="180"/>
+          <path class="figure-grid" d="M55 75H305 M55 165H305 M117.5 30V210 M242.5 30V210"/>
+          <path class="figure-axis" d="M35 120H325 M180 225V15"/>
+          <path class="cubic-trial" d="M100 200L260 40"/>
+          <circle class="cubic-origin" cx="180" cy="120" r="4"/>
+          <text class="figure-math-label" x="330" y="127">a</text><text class="figure-math-label" x="190" y="22">b</text>
+          <text class="cubic-label" x="267" y="49">a = b</text>
+        </svg>
+        <p class="figure-result">Every first-order direction extends to <strong>second order</strong>.</p>
+      </div>
+      <div class="programme-panel">
+        <h4>The full equations</h4>
+        <p class="figure-bound">a²b = ab² = 0</p>
+        <svg class="programme-diagram cubic-diagram" viewBox="0 0 360 240" role="img" aria-label="The reduced solutions in the same real slice are the a and b axes. A dashed diagonal direction a equals b is crossed out away from the origin because mixed directions are obstructed at order three.">
+          <rect class="cubic-plane faint" x="55" y="30" width="250" height="180"/>
+          <path class="figure-axis" d="M35 120H325 M180 225V15"/>
+          <path class="cubic-branches" d="M55 120H305 M180 210V30"/>
+          <path class="cubic-trial" d="M180 120L260 40"/>
+          <path class="cubic-stop" d="M232 52L248 68 M248 52L232 68"/>
+          <circle class="cubic-origin" cx="180" cy="120" r="4"/>
+          <text class="figure-math-label" x="330" y="127">a</text><text class="figure-math-label" x="190" y="22">b</text>
+        </svg>
+        <p class="figure-result">A direction with both coordinates nonzero is <strong>obstructed at third order</strong>.</p>
+      </div>
+    </div>
+    <figcaption id="cubic-caption">The diagrams show a real slice. The full analytic germ has embedded nonreduced structure; its reduced zero set is the node ab = 0. That embedded structure is not pictured. The harmonic metric is defined on reduced smooth pieces.</figcaption>
+  </figure>
+  <div class="prose-columns">
+    <div>
+      <h3>The whole deformation problem</h3>
+      <p>For three copies, <span class="math-name">A ⊗ ℂ³</span>, the theorem controls all nearby polystable deformations in an eighteen-dimensional harmonic space. It retains the full matrix-valued obstruction and all eight small trace-free endomorphism modes, including zeros. The matrix equations are not obtained by simply substituting noncommuting matrices into the scalar cubic relations.</p>
+    </div>
+    <div>
+      <h3>A separate test of weak scales</h3>
+      <p>An explicit diagonal family along a smooth reduced branch has two arbitrarily weak positive modes and four on a larger scale, together with two exact trace-free zeros. Collisions change the kernel dimension from two to four to eight. This tests relative spectral uniformity; it does not assign a spectral exponent to the cubic or nilpotent structure.</p>
+    </div>
+  </div>
+  <p class="section-reading"><a href="/papers/local-hym-reduction/">The bicubic construction and the general local theorem ↗</a></p>
 </section>
 
 <section class="section-block focus" id="singular-graded-limits">
-  <p class="kicker">A boundary of the smooth description</p>
+  <p class="kicker">A boundary revealed by singular graded sheaves</p>
   <h2>A singular point changes the metric away from it.</h2>
   <p class="focus-lede">Changing stabilizers can make a moduli space singular even when the graded bundle is locally free. A graded sheaf that is itself singular presents a further problem. For rank-two bundles on compact Kähler surfaces with a saturated equal-slope line subsheaf and singular torsion-free quotient, this second kind of singularity changes the long-time metric behavior even on regions kept away from the singular set.</p>
   <figure class="programme-figure" id="singularity-figure" aria-labelledby="singularity-title" aria-describedby="singularity-caption">
@@ -94,27 +196,22 @@
   <p>The iterated weight filtration of Haiden, Katzarkov, Kontsevich and Pandit, polarized by rank, assigns the squared-metric scale <em>T</em><sup>−1/2</sup>, with no later nonzero weights. The strict decay above rules out the two bounded-remainder extensions tested in the paper: uniform metric-order comparison and a bounded error in a fixed-splitting matrix-log expansion. A local residue forces divergent normalized extension energy; a dissipation identity carries its effect into the flow. A separate theorem for the toric family identifies the stable-side stationary limit and multiplicity-one curvature concentration at its singular point.</p>
   <aside class="guide-aside">
     <h3>What the obstruction leaves open</h3>
-    <p>The established asymptotic theorem for locally free graded objects is unaffected. The theorem does not determine a new power-law exponent or the exact slower correction, and it does not rule out a finite description enriched by singular data. Determining the replacement asymptotic law is a central next problem.</p>
+    <p>The established asymptotic theorem for locally free graded objects is unaffected. The obstruction concerns these two extensions of flow asymptotics; it is not a general impossibility theorem for stationary local reductions at singular sheaves. The theorem does not determine a new power-law exponent or the exact slower correction, and it does not rule out a finite description enriched by singular data. Determining the replacement asymptotic law is a central next problem.</p>
   </aside>
 </section>
 
 <section class="section-block focus" id="method">
-  <p class="kicker">The analytic method</p>
-  <h2>How does a finite model control the geometry?</h2>
+  <p class="kicker">How the comparisons work</p>
+  <h2>Why do the estimates survive degeneracy?</h2>
   <p class="focus-lede">The common strategy is to retain every weak direction in a finite-dimensional problem and solve the remaining equation on a complement with a uniform positive gap. The finite problem then carries the degenerating scales. Passing from this reduction to an actual spectrum, a quotient metric or a flow requires a separate comparison in each setting.</p>
-  <div class="prose-columns">
-    <div>
-      <h3>Four descriptions to connect</h3>
-      <p>Algebraic geometry determines which degenerations occur. The incidence of equal-slope subobjects describes the local chamber. A finite operator records weak spectral directions. Nonlinear analysis determines the actual metrics and flows. The papers establish these links in the stated settings. A general theory would identify when they persist and which additional data are needed.</p>
-      <p>The chamber alone need not determine the answer. Harmonic extension data can affect the leading spectrum; a flow retains information about its initial metric. When the graded sheaf is singular, even the proposed asymptotic scale can require a further correction.</p>
-    </div>
-    <div>
-      <h3>Why relative accuracy matters</h3>
-      <p>An error small in absolute size can overwhelm a much smaller eigenvalue. A useful comparison controls the error relative to each positive mode, even when the ratios between modes approach zero. Schematically, the spectral results have the form</p>
-      <p class="display-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="The absolute difference between lambda j and mu j is at most C eta mu j"><mrow><mo stretchy="false">|</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false">|</mo><mo>≤</mo><mi>C</mi><mi>η</mi><msub><mi>μ</mi><mi>j</mi></msub></mrow></math><small>λ is an actual eigenvalue, μ the corresponding eigenvalue of the finite model, and η tends to zero. In the stated families, C is independent of the ratios between positive modes.</small></p>
-      <p>The estimates retain the weak directions in the finite model and invert only a complementary operator with a uniform positive gap. Quotient metrics and flows require further arguments; a spectral comparison alone does not establish either.</p>
-    </div>
+  <div class="mechanism-steps">
+    <div><span class="mechanism-index">01</span><h3>Keep the full equations</h3><p>Canonical harmonic coordinates retain the convergent obstruction. Quadratic reconstruction and gauge terms are orthogonal to harmonic one-forms, giving quadratic ambient accuracy.</p></div>
+    <div><span class="mechanism-index">02</span><h3>Balance by relative energy</h3><p>The finite correction is controlled by the energy crossing each multiplicity projection. Its bound survives the loss of a positive orbit gap. This balancing theorem is developed in Paper 14.</p></div>
+    <div><span class="mechanism-index">03</span><h3>Compare each weak direction</h3><p>Exact equivariance ties the elliptic coupling to the commutator energy of the same direction. The spectral reduction therefore gives relative error even for the weakest mode.</p></div>
+    <div><span class="mechanism-index">04</span><h3>Minimize in two stages</h3><p>Eliminate the uniformly coercive infinite-dimensional gauge directions first. Then minimize over finite orbit directions. Derivatives of the balancing gauge are vertical and disappear.</p></div>
   </div>
+  <p>The general geometric verification is in <a href="/papers/local-hym-reduction/">Paper 15</a>. Its mechanisms build on <a href="/papers/repeated-factor-he-spectra/">repeated-factor spectra</a>, <a href="/papers/wall-moduli-metrics/">complementary quotient minimization</a> and <a href="/papers/quiver-metric-wall-crossing/">finite balancing</a>. Qualitative local deformation and correspondence results supply further inputs; the additional quantitative issue is control relative to each degenerating direction.</p>
+  <p class="display-formula"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block" aria-label="The absolute difference between lambda j and mu j is at most C eta mu j"><mrow><mo stretchy="false">|</mo><msub><mi>λ</mi><mi>j</mi></msub><mo>−</mo><msub><mi>μ</mi><mi>j</mi></msub><mo stretchy="false">|</mo><mo>≤</mo><mi>C</mi><mi>η</mi><msub><mi>μ</mi><mi>j</mi></msub></mrow></math><small>Schematically: the spectral error shrinks relative to each model eigenvalue, with a constant independent of positive scale ratios.</small></p>
   <figure class="programme-figure" id="relative-error-figure" aria-labelledby="relative-error-title" aria-describedby="relative-error-caption">
     <p class="kicker">Reading a small eigenvalue</p>
     <h3 id="relative-error-title">The same error can hide the weaker mode.</h3>
@@ -160,13 +257,14 @@
   <p><a href="/papers/nonsimplicial-toric-stability-chambers/">Nonsimplicial tangent chambers</a> goes beyond independent inequalities. It constructs weak-Fano tangent bundles whose local chambers have genuinely nonsimplicial geometry, with every centered slope direction accessible. Its general local normal form retains the slope directions realized by polarizations and requires no local-freeness assumption on the equal-slope subsheaves. A toric surface in the same paper supplies the singular graded object studied later.</p>
   <aside class="guide-aside">
     <h3>The bridge to analysis</h3>
-    <p>The <a href="/papers/metric-response-hym-flow/">two-step metric-response and flow paper</a> joins the chamber construction to spectral and nonlinear estimates on the same weak-Fano tangent bundles. This is an integrated result within a specified family. Classifying all realizable chamber structures and extending the analytic comparison to general filtrations remain wider questions.</p>
+    <p>The <a href="/papers/metric-response-hym-flow/">two-step metric-response and flow paper</a> joins the chamber construction to spectral and nonlinear estimates on the same weak-Fano tangent bundles. This is an integrated result within a specified family. The general local stationary comparison now applies near fixed locally free polystable backgrounds. Classifying realizable chamber structures and extending the dynamical results to general filtrations remain wider questions.</p>
   </aside>
 </section>
 
 <section class="section-block focus" id="spectra">
   <p class="kicker">Stationary metrics and spectra</p>
   <h2>What determines every weak spectral scale?</h2>
+  <p class="focus-lede">The general commutator form specializes to a weighted graph Laplacian in the two-step setting. These earlier constructions make the finite data explicit and reveal what slopes alone can determine.</p>
   <p><a href="/papers/small-dolbeault-stability-walls/">Small eigenvalues near stability walls</a> begins with a stable subbundle extended by several stable quotient factors. The <a href="/papers/uniform-hermitian-einstein-spectra/">bipartite two-step theorem</a> treats extensions between two sums of distinct stable factors. At equal limiting slopes and with connected extension support, a weighted graph Laplacian determines the small endomorphism spectrum with uniform relative error. Ranks give the vertex masses; balancing the harmonic extension data against the slope gaps gives the edge weights.</p>
   <p>This description also identifies what the chamber forgets. On a tree, ranks and slopes determine the leading spectrum. On a cycle, harmonic extension data can survive. A spanning-tree expression controls the leading vanishing factor of the spectral determinant in the stated two-step setting.</p>
   <div class="prose-columns">
@@ -218,10 +316,8 @@
   <p class="focus-lede">A metric on a bundle and a metric on its moduli space measure different things. The latter measures deformation after identifying changes induced by gauge transformations. When an object acquires more automorphisms, the orbit directions change rank; a comparison must survive this degeneration as well.</p>
   <p>Begin with <a href="/papers/relative-metrics-reducible-yang-mills/">relative metric estimates near reducible Yang–Mills connections</a>. Near a central Yang–Mills connection on a closed surface, the classical quadratic model approximates the actual quotient metric and every small gauge eigenvalue uniformly across stabilizer types and arbitrarily separated orbit scales. The paper also computes the leading metric correction.</p>
   <p>The higher-dimensional <a href="/papers/wall-moduli-metrics/">stability-wall moduli paper</a> retains the full analytic obstruction near a sum of four line bundles on the product of three projective lines. On smooth complex pieces, the relative metric error is quadratic in the coefficient radius, with a radius and comparison constant independent of the distance to the wall. The estimate persists as orbit and obstruction maps lose rank. Quantitative changes of chart also give comparisons of intrinsic lengths and their completions within the local domains.</p>
-  <p>The <a href="/papers/repeated-factor-moduli/">rank-five repeated-factor paper</a> adds a noncommutative multiplicity symmetry. It compares harmonic quotient metrics on smooth pieces of the full local deformation problem and identifies the metric on a specified reducible locus with that of the remaining stable rank-four summand. These are concrete higher-dimensional theorems, with different hypotheses from the surface theorem.</p>
+  <p>The <a href="/papers/repeated-factor-moduli/">rank-five repeated-factor paper</a> adds a noncommutative multiplicity symmetry. It compares harmonic quotient metrics on smooth pieces of the full local deformation problem and identifies the metric on a specified reducible locus with that of the remaining stable rank-four summand. These concrete higher-dimensional theorems retain their additional geometric conclusions. The local stationary comparisons now fit within the <a href="#local-theorem">general compact-Kähler theorem</a>.</p>
   <p>The <a href="#k3-wall-crossing">K3 wall-crossing results above</a> turn these methods into collapse and distance theorems. They retain the finite symmetries in the balancing problem and compute harmonic lengths by complementary-gauge minimization. The general K3 comparison treats arbitrary quiver stabilizers under its geometric hypotheses.</p>
-  <p>The <a href="/papers/local-hym-reduction/">general local HYM model</a> puts all three stationary comparisons on the full convergent Kuranishi family at any fixed locally free polystable bundle on a compact Kähler manifold. It reconstructs every sufficiently nearby Hermitian–Einstein solution, compares every small endomorphism eigenvalue with the finite commutator form, and compares harmonic moduli metrics with the flat quotient metric on genuine smooth pieces of the reduced analytic quotient. Constants remain independent of positive finite spectral ratios and stabilizer type. Orthogonality of the quadratic reconstruction and gauge terms gives quadratic error in canonical harmonic coordinates; moving harmonic backgrounds preserve this order when polarization varies.</p>
-  <p>A stable rank-two bundle on a smooth bicubic Calabi–Yau threefold has analytic deformation ring C{a,b}/(a²b,ab²). The complete three-copy deformation problem has eighteen harmonic coordinates and eight small trace-free modes. The theorem retains the full matrix-valued obstruction. Its explicit diagonal family illustrates arbitrarily separated scales and kernel dimensions two, four and eight. The reduced germ is a node; the metric statement does not measure its embedded nilpotent structure.</p>
   <p class="small">The surface paper's explicit quaternionic projective and hyperbolic reductions provide a comparison with the <a href="/papers/compact-higgs-finite-planck/">finite-Planck Higgs quotient problem</a>. A general quaternionic Kähler comparison across stabilizer changes remains open.</p>
 </section>
 
@@ -252,42 +348,44 @@
 </section>
 
 <section class="section-block focus" id="frontier">
-  <p class="kicker">Toward a general theory</p>
+  <p class="kicker">The next mathematical questions</p>
   <h2>What remains beyond the current theorems?</h2>
-  <p>The papers already establish comparisons on explicit geometric classes and develop methods that can be used again: retain every weak finite direction, control the complement uniformly, and estimate the ambient metric before minimizing over gauge orbits. The singular-flow result also answers an independently motivated asymptotic question. The next steps concern the reach of these methods and the additional data their limits reveal.</p>
+<p class="focus-lede">A general local stationary theorem is now available near fixed locally free polystable backgrounds. The frontier concerns what survives beyond that setting, and which geometric or dynamical conclusions require additional arguments.</p>
   <table class="stage-table programme-frontier">
     <caption>Established results and the next mathematical questions</caption>
     <thead><tr><th scope="col">Direction</th><th scope="col">Established setting</th><th scope="col">Next question</th></tr></thead>
     <tbody>
-      <tr><td>Realizability and stationary comparison</td><td data-label="Established">Toric chamber families; two-step extensions and specified three-step models.</td><td data-label="Next question">Which hypotheses extend the comparison to other stable factors and general filtrations, and which finite data must be retained?</td></tr>
-      <tr><td>Quotient geometry</td><td data-label="Established">Surface Yang–Mills quotients; higher-dimensional deformation families; a general local K3 harmonic/quiver comparison, rank-three and rank-five applications, and complete finite successive limits under the stated convergence hypotheses.</td><td data-label="Next question">How do the comparisons extend to other moduli problems, global metric completion and bubbling?</td></tr>
+      <tr><td>Local stationary theory</td><td data-label="Established">HE reconstruction, all small endomorphism eigenvalues and harmonic quotient metrics on the full convergent family near a fixed locally free polystable compact-Kähler background.</td><td data-label="Next question">Which comparisons survive singular sheaf limits or degeneration of the background geometry?</td></tr>
+      <tr><td>Metric limits and wall crossing</td><td data-label="Established">K3 contraction scales, intrinsic distances and complete finite successive limits with the required normalized-data convergence.</td><td data-label="Next question">Which obstructed germs admit comparable rescaled limits? How do local models connect to global completion and bubbling?</td></tr>
+      <tr><td>Geometric realizability</td><td data-label="Established">Explicit toric chamber families, nonsimplicial chambers and accessible slope directions; a compact bundle with essential cubic obstruction.</td><td data-label="Next question">Which chamber structures and nonlinear deformation relations can geometry realize?</td></tr>
       <tr><td>Dynamics</td><td data-label="Established">Two-step flows and the stated four-line stable, wall and unstable families.</td><td data-label="Next question">How can the initial-condition-sensitive theory extend to repeated factors and more general filtrations?</td></tr>
       <tr><td>Categorical phase flows</td><td data-label="Established">Mass increase; general large-scale cancellation for surjective source differentials and arbitrary surviving tuples; separate finite-infimum cohomology relaxation.</td><td data-label="Next question">Which estimates extend to longer complexes, and when does a positive quotient metric survive?</td></tr>
       <tr><td>Harmonic paths</td><td data-label="Established">All full split boundary triples in every finite rank in the specified A₂ setting; finite labelled support and uniqueness with first-order matching.</td><td data-label="Next question">Does categorical vertex data force matching, and how does the path depend on arbitrary boundary data?</td></tr>
       <tr><td>Singular graded sheaves</td><td data-label="Established">A general rank-two surface obstruction, including nonreduced singular schemes and repeated factors; a separate stationary curvature-concentration theorem for the toric family.</td><td data-label="Next question">What is the replacement asymptotic law, and which singular data determine its correction?</td></tr>
     </tbody>
   </table>
-  <p>The K3 results supply both a general local harmonic/quiver metric comparison under geometric hypotheses and concrete rank-three and rank-five wall-crossing applications. Extending it to global completion and bubbling is a separate problem. The programme's ambition is a common quantitative theory; its current theorems retain the geometric hypotheses stated above. The integrated result on the weak-Fano tangent family is one realization of that ambition.</p>
+  <p>The local theorem, the K3 limits and the singular-flow obstruction answer different parts of the programme. The categorical phase-flow and harmonic-path branches also retain their own settings and hypotheses.</p>
 </section>
 
 <section class="section-block focus" id="reading-routes">
   <p class="kicker">Where to begin</p>
-  <h2>Three routes through the programme.</h2>
+  <h2>Choose the question you want to follow.</h2>
   <div class="reading-path">
     <div>
-      <h3>Metric wall crossing</h3>
-      <p>Begin with the <a href="/papers/k3-metric-wall-crossing/">rank-three K3 application</a>, then the <a href="/papers/quiver-metric-wall-crossing/">general comparison and rank-five wall crossing</a>. For the method’s development, read <a href="/papers/relative-metrics-reducible-yang-mills/">surface quotient metrics</a>, <a href="/papers/wall-moduli-metrics/">stability-wall metrics</a> and <a href="/papers/repeated-factor-moduli/">repeated-factor moduli</a>.</p>
+      <h3>The general theorem</h3>
+      <p>Start with <a href="/papers/local-hym-reduction/">Quantitative local models for Hermitian–Einstein metrics</a>. Its main theorem gives the common stationary statement; its bicubic example explains why the full obstruction matters. Section 7 identifies the earlier cases and the boundaries.</p>
     </div>
     <div>
-      <h3>From chambers to spectra</h3>
-      <p>Start with <a href="/papers/toric-local-stability-chambers/">local stability chambers</a> and the <a href="/papers/nonsimplicial-toric-stability-chambers/">nonsimplicial examples</a>. Continue through <a href="/papers/uniform-hermitian-einstein-spectra/">two-step spectra</a> and <a href="/papers/three-step-he-metrics/">three-step metrics</a> to the integrated tangent-bundle application in <a href="/papers/metric-response-hym-flow/">metric response and flow</a>.</p>
+      <h3>The geometric consequences</h3>
+      <p>Read the <a href="/papers/k3-metric-wall-crossing/">rank-three K3 wall crossing</a>, then the <a href="/papers/quiver-metric-wall-crossing/">general K3 comparison and rank-five application</a>. These develop contraction scales, intrinsic distances and complete rescaled limits under their additional hypotheses.</p>
     </div>
     <div>
-      <h3>Evolution and its limits</h3>
-      <p>Read <a href="/papers/metric-response-hym-flow/">metric response and flow</a>, <a href="/papers/hym-initial-condition-phase/">initial conditions and phase</a>, then <a href="/papers/hym-wall-unstable-flow/">flow at and beyond the wall</a>. The <a href="/papers/singular-hym-metric-growth/">singular-sheaf obstruction</a> identifies a boundary of the smooth asymptotic description.</p>
+      <h3>The dynamics and boundaries</h3>
+      <p>Follow <a href="/papers/metric-response-hym-flow/">metric response and flow</a>, <a href="/papers/hym-initial-condition-phase/">initial conditions and phase</a>, and <a href="/papers/hym-wall-unstable-flow/">flow at and beyond the wall</a>. Then read the <a href="/papers/singular-hym-metric-growth/">singular-sheaf asymptotic obstruction</a>.</p>
     </div>
   </div>
+  <p>For the foundations, begin with <a href="/papers/toric-local-stability-chambers/">local chambers</a> and <a href="/papers/nonsimplicial-toric-stability-chambers/">nonsimplicial realizations</a>; continue through <a href="/papers/uniform-hermitian-einstein-spectra/">two-step spectra</a>, <a href="/papers/repeated-factor-he-spectra/">repeated factors</a>, <a href="/papers/three-step-he-metrics/">three-step metrics</a> and <a href="/papers/wall-moduli-metrics/">harmonic quotient metrics</a>.</p>
   <p>The categorical branches have their own entry points: <a href="/papers/mass-increase-acyclic-cancellation/">mass increase and acyclic cancellation</a> for phase flows on complexes, and <a href="/papers/harmonic-paths-and-honeycombs/">harmonic paths and honeycombs</a> for paths of norms and labelled networks.</p>
-  <p><a href="/at-the-wall/">At the Wall — explore chambers, weak spectra and metric response ↗</a></p>
-  <p class="small">The explorer illustrates selected finite models and the two-factor flow profile. The K3 metric comparisons, three-step, quotient-metric and singular-flow theorems are developed in the papers. The reading list below groups the programme by mathematical question; abstracts can be opened individually.</p>
+  <p class="section-reading"><a href="/at-the-wall/">At the Wall — explore chambers, weak spectra and metric response ↗</a></p>
+  <p class="small">The explorer illustrates selected finite models and the two-factor flow profile. The full local theorem, K3 limits and singular-flow obstruction are developed in the papers. Every manuscript below has its full abstract and a link to the released text.</p>
 </section>

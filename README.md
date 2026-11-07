@@ -479,25 +479,30 @@ Paper III joins the signed comparison to the usual framed instanton maps).
 ## Stability and Geometric Degeneration
 
 The short name is **Stability & Degeneration**. The focused guide's subtitle is
-"Weak spectra, metric wall crossing, and singular limits". The existing URLs and anchors
+"Hermitian–Einstein metrics, weak spectra, and moduli geometry". The existing URLs and anchors
 remain unchanged; "stability walls" is still used in paper titles and mathematical prose.
 
 The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
-presents three central outcomes: relative spectral estimates, local K3 metric
-wall crossing, and the general rank-two singular-sheaf obstruction. Dedicated
-K3 and singular-sheaf sections precede the analytic method, geometric
-realizability, spectra, quotient metrics, dynamics and categorical branches.
-Its source is `content/quantitative-moduli-guide.html`; the five-wall diagram
-from the rank-five K3 example comes from `content/quantitative-moduli-figure.html`.
-Inline SVG illustrations in the guide source explain a vanishing graph mode,
-relative spectral error and the two kinds of singularity. Its
-`SUBGUIDES` entry in `tools/build-editorial.py` groups all 21 manuscripts by
-mathematical question. Its illustration, prose-link and responsive table styles live in
-`assets/quantitative-moduli.css`, loaded only by this guide. The guide includes
-three reading routes and links to At the Wall. Its theorems concern the stated
-geometric hypotheses. Complete finite successive K3 limits retain convergence
-of normalized data at every stage; global completion, bubbling and the
-replacement singular asymptotic law remain open.
+centres the general compact-Kähler local theorem in Paper 15, then develops
+its relationship to K3 metric limits, the essential cubic bicubic example and
+the singular-flow obstruction. The earlier chamber, spectral, balancing and
+quotient-metric papers retain their constructions and additional consequences.
+Its source is `content/quantitative-moduli-guide.html`; the opening diagram
+in `content/quantitative-moduli-figure.html` connects the full finite equations
+to the three stationary comparisons. Inline SVG figures show the five K3 walls,
+the cubic obstruction, a vanishing graph mode, relative error and the two kinds
+of singularity. The cubic diagram is explicitly a real slice of the reduced
+zero set and does not depict embedded nonreduced structure.
+
+`SUBGUIDES` in `tools/build-editorial.py` groups all 21 manuscripts by mathematical
+role, starting with the general local theorem. Styles are confined to
+`assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
+the local, stationary, locally free scope remains visible in the main text.
+The guide preserves every existing anchor, three reading routes and the link
+to At the Wall. Fixed-background dependence, coordinate-sensitive error orders,
+K3 rescaling hypotheses and the distinction between cubic obstruction and
+spectral scale separation remain explicit. Global completion, bubbling,
+general dynamics and the singular replacement law remain separate questions.
 
 The [Geometry & moduli overview](https://bwuebben.github.io/research/geometry/#stability-degeneration)
 keeps a concise programme introduction and all manuscript entries. Singular
