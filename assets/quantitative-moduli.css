@@ -3,6 +3,23 @@
 .edition .local-model-figure { margin: 0; padding: 1.5rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
 .edition .local-model-figure > .kicker { margin-bottom: .6rem; }
 .edition .local-model-figure h2 { font-size: 1.65rem; line-height: 1.25; margin: 0 0 1.4rem; }
+.edition .program-hero .moduli-crossing-art { display: block; width: 100%; height: auto; margin: -.2rem 0 0; filter: none; }
+.edition .local-model-figure > .model-definition { text-align: center; margin: 0 0 1.4rem; font: italic .95rem/1.5 var(--serif); }
+.correspondence-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: start; gap: 3.5rem; margin: 3rem 0 2rem; }
+.edition .correspondence-grid h3 { margin: 0 0 1rem; font-size: 1.8rem; line-height: 1.25; }
+.edition .correspondence-grid .kicker { margin-bottom: .7rem; }
+.edition .flow-profile-figure { margin: 0; padding-top: 0; }
+.flow-profile-figure img { display: block; width: 100%; height: auto; margin: .5rem 0 1rem; }
+.flow-profile-figure figcaption { font: .9rem/1.6 var(--serif); color: var(--ink-soft); }
+.profile-formula { margin-top: 1rem; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.profile-formula summary { padding: .8rem 0; min-height: 44px; box-sizing: border-box; font: .8rem/1.5 var(--sans); }
+.edition .profile-formula p { font-size: .9rem; }
+.edition .profile-formula .profile-equation { font: 1rem/1.9 var(--serif); }
+.profile-equation span { white-space: nowrap; }
+@media (max-width: 760px) {
+  .correspondence-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .edition .flow-profile-figure { padding: 1.4rem 0 0; border-top: 1px solid var(--rule); }
+}
 .model-input { padding: 1.3rem 1rem 1.1rem; border: 1px solid var(--green); background: var(--bg-panel); text-align: center; }
 .edition .model-label { margin-bottom: .7rem; font: 1.1rem/1.4 var(--serif); }
 .model-equations { display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.8rem; color: var(--green); font: 1.3rem/1.5 var(--serif); }

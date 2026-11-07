@@ -478,20 +478,34 @@ Paper III joins the signed comparison to the usual framed instanton maps).
 
 ## Stability and Geometric Degeneration
 
-The short name is **Stability & Degeneration**. The focused guide's subtitle is
-"Holomorphic bundles, canonical metrics, and their moduli spaces". The existing URLs and anchors
+The short name is **Stability & Degeneration**. The focused guide asks how
+degeneration can reveal the geometry and topology of moduli spaces; its subtitle
+is "From singular limits to nearby geometry". The existing URLs and anchors
 remain unchanged; "stability walls" is still used in paper titles and mathematical prose.
 
 The [focused programme guide](https://bwuebben.github.io/research/geometry/quantitative-moduli/)
-first identifies the bundles, slope-stability, polarization walls and the distinction
-between bundle metrics and moduli-space metrics. It centres the general
-compact-Kähler local theorem in Paper 15, then develops
-its relationship to K3 metric limits, the essential cubic bicubic example and
-the singular-flow obstruction. The earlier chamber, spectral, balancing and
+leads with the route from degeneration data to nearby geometry and the longer-term
+global objective. It identifies the bundles, slope-stability, polarization walls
+and the distinction between bundle metrics and moduli-space metrics. The general
+compact-Kähler local theorem in Paper 15 and the K3 applications establish local
+topology and metric geometry; a dedicated section explains the compactification
+and attaching data required for global topological applications. Dynamics remain
+a parallel branch. The essential cubic bicubic example and singular-flow
+obstruction retain their scope. The earlier chamber, spectral, balancing and
 quotient-metric papers retain their constructions and additional consequences.
 Its source is `content/quantitative-moduli-guide.html`; the opening diagram
-in `content/quantitative-moduli-figure.html` connects the full finite equations
-to the three stationary comparisons. Inline SVG figures show the five K3 walls,
+in `content/quantitative-moduli-figure.html` connects degeneration data to nearby
+geometry, K3 wall crossing and the open global objective. A wireframe wall-crossing
+schematic illustrates the opening, and the mathematical-setting section explicitly
+introduces the quantitative dynamical Kobayashi–Hitchin programme. Its signed
+two-factor flow plot shows the exact model profile in dimensionless variables,
+with the actual-flow comparison and its scope explained alongside it. Regenerate
+these two SVG assets with
+`uv run --with matplotlib python tools/build-quantitative-moduli-figures.py`.
+Both support light and dark appearance; the wall-crossing surfaces are schematic.
+The theorem section
+retains the full finite equations and three stationary comparisons.
+Inline SVG figures show the five K3 walls,
 the cubic obstruction, a vanishing graph mode, relative error and the two kinds
 of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
@@ -503,8 +517,10 @@ the local, stationary, locally free scope remains visible in the main text.
 The guide preserves every existing anchor, three reading routes and the link
 to At the Wall. Fixed-background dependence, coordinate-sensitive error orders,
 K3 rescaling hypotheses and the distinction between cubic obstruction and
-spectral scale separation remain explicit. Global completion, bubbling,
-general dynamics and the singular replacement law remain separate questions.
+spectral scale separation remain explicit. Global topology, metric completion,
+bubbling, general dynamics and the singular replacement law remain separate
+questions. The topology sought is primarily that of moduli spaces; implications
+for the base manifold require an additional argument.
 
 The [Geometry & moduli overview](https://bwuebben.github.io/research/geometry/#stability-degeneration)
 keeps a concise programme introduction and all manuscript entries. Singular
