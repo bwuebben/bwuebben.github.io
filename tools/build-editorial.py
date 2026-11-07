@@ -241,7 +241,7 @@ SUBGUIDES={
  "geometry":[dict(slug="quantitative-moduli",name="Stability and Geometric Degeneration",short="Stability & Degeneration",
    question="How does stability shape the geometry of vector bundles?",
    subtitle="Holomorphic bundles, canonical metrics, and their moduli spaces",
-   intro="The objects are holomorphic vector bundles on compact Kähler manifolds: families of complex vector spaces that vary holomorphically over the base. We study canonical metrics on these bundles and the geometry of their moduli spaces, which parametrize bundles up to isomorphism. The central problem is to understand what changes near a stability wall or a bundle with extra symmetries.",
+   intro="The objects are holomorphic vector bundles on compact Kähler manifolds: families of complex vector spaces that vary holomorphically over the base. We study two related geometric objects: canonical metrics on individual holomorphic vector bundles, and natural metrics on the moduli spaces of such bundles. Our aim is to understand how both degenerate as stability walls are approached. The central problem is to understand what changes near a stability wall or a bundle with extra symmetries.",
    image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",lead_section="question",
    overview="The broader subject overview, including open FJRW theory and inverse moduli, is the",
    groups=[("The general local theorem","local-theorem",["local-hym-reduction"]),
