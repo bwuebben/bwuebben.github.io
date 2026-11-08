@@ -77,6 +77,8 @@ node tools/check-when-walls-collide.cjs
 for f in tools/essay-checks/*.cjs; do node "$f"; done
 for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
+node --check assets/geometry-overview-model.js
+node --check assets/geometry-overview.js
 git diff --check
 ```
 
@@ -539,6 +541,27 @@ focused guide. The global theorem retains absence of an ideal boundary and full
 convergent quiver charts with module-simple points; additive reconstruction and
 middle-degree attachment calculations retain their different global inputs.
 Finite successive metric limits retain normalized-level and basepoint convergence.
+
+The overview has a separate visual reading route in
+`content/geometry-reading-guide.html` and an opening contraction schematic in
+`content/geometry-overview-hero.html`. Its three programme sections retain the
+full mathematical scope and manuscript list. The compact K3 period experiment
+comes from `content/geometry-cycle-experiment.html`, included in the stability
+section by the editorial builder. `assets/geometry-overview-model.js` supplies
+the period formulas; `assets/geometry-overview.js` connects logarithmic controls
+and presets to the SVG and area readouts. The common period scale is assumed
+sufficiently small, with no numerical radius asserted. Cycle areas are exact;
+drawn lengths only illustrate square-root scale estimates. The integral form
+and boundary group stay fixed within the chamber, and global reconstruction
+still requires complement and restriction data. No differential equation is
+solved by the interaction. All new styles are in `assets/geometry-overview.css`.
+The diagrams and initial period values remain readable without JavaScript.
+
+At the Wall retains its weak-spectrum and response experiments. Its reading
+section connects them to the general local, asymptotic-phase and compact K3
+results using descriptive paper titles. Its original scalar flow profile is
+not presented as a simulation of the general phase theorem. The overview's
+compact K3 experiment introduces a different topic for a future companion.
 
 When adding a result, update both guides' introductions, scope and open questions,
 as well as their manuscript lists and the homepage programme summary. Keep the

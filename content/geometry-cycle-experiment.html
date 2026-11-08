@@ -1,0 +1,29 @@
+<div class="geometry-cycle-lab" id="geometry-cycle-lab">
+  <div class="geometry-lab-heading"><div><p class="kicker">A compact K3 fourfold · Explore the periods</p><h3>Two cycles shrink.<br>One relation survives.</h3></div><p>A moving projective line specializes to one line in each of two exceptional planes. Its class satisfies <span class="geometry-math">f = c₀ + c₂</span>. Its harmonic area is the sum of theirs.</p></div>
+  <div class="geometry-lab-layout">
+    <div class="geometry-lab-picture">
+      <svg viewBox="0 0 560 340" role="img" aria-labelledby="geometry-cycle-title geometry-cycle-desc">
+        <title id="geometry-cycle-title">Two exceptional planes meeting at a point</title>
+        <desc id="geometry-cycle-desc">Schematic planes P zero and P two meet at one point. Their drawn lengths follow the square roots of the relative periods. The integral intersection matrix stays fixed.</desc>
+        <g id="geometry-plane-zero" class="geometry-plane geometry-plane-zero" transform="translate(280 190) scale(.71)"><path d="M0 0 -230 -100 -183 90Z"/><path class="geometry-plane-line" d="M-201 -44 -50 10"/></g>
+        <g id="geometry-plane-two" class="geometry-plane geometry-plane-two" transform="translate(280 190) scale(.71)"><path d="M0 0 210 -90 238 90Z"/><path class="geometry-plane-line" d="M60 -2 218 38"/></g>
+        <circle cx="280" cy="190" r="4" fill="currentColor"/>
+        <g class="geometry-svg-label"><text x="76" y="50">P₀ · FIRST PLANE</text><text x="342" y="50">P₂ · SECOND PLANE</text><text x="280" y="315" text-anchor="middle">Schematic length scales: √(a/ε), √(b/ε)</text></g>
+      </svg>
+      <div class="geometry-invariant"><span>Integral intersection form</span><span class="geometry-matrix" aria-label="Matrix with rows 3, 1 and 1, 3"><span>3</span><span>1</span><span>1</span><span>3</span></span><span>Boundary group<br><strong>ℤ/8</strong></span></div>
+    </div>
+    <div class="geometry-lab-controls">
+      <p class="small">Fix a sufficiently small common scale ε and vary the positive ratios a/ε and b/ε. The controls stay inside one chamber.</p>
+      <div class="geometry-presets" aria-label="Period presets"><button type="button" data-cycle-preset="balanced" aria-pressed="true">Balanced</button><button type="button" data-cycle-preset="first" aria-pressed="false">First shrinks faster</button><button type="button" data-cycle-preset="second" aria-pressed="false">Second shrinks faster</button><button type="button" data-cycle-preset="both" aria-pressed="false">Both small</button></div>
+      <label for="geometry-period-a">First period a/ε <output id="geometry-period-a-value" for="geometry-period-a">0.50</output></label><input id="geometry-period-a" type="range" min="-3" max="0" step="any" value="-0.30103" aria-describedby="geometry-period-help">
+      <label for="geometry-period-b">Second period b/ε <output id="geometry-period-b-value" for="geometry-period-b">0.50</output></label><input id="geometry-period-b" type="range" min="-3" max="0" step="any" value="-0.30103" aria-describedby="geometry-period-help">
+      <p class="small" id="geometry-period-help">Logarithmic controls: each unit changes the period by a factor of ten.</p>
+      <dl class="geometry-readouts"><div><dt>Area of c₀ / (πε)</dt><dd id="geometry-area-zero">0.50</dd></div><div><dt>Area of c₂ / (πε)</dt><dd id="geometry-area-two">0.50</dd></div><div class="geometry-readout-sum"><dt>Area of f / (πε)</dt><dd id="geometry-area-sum">1.00</dd></div></dl>
+      <p class="geometry-lab-message" id="geometry-cycle-message" aria-live="polite">Equal periods give equal cycle areas. The integral attachment remains modulo eight.</p>
+    </div>
+  </div>
+  <p class="geometry-figure-caption">The areas are exact identities in the stated family. The shapes are schematic: a complex projective plane has four real dimensions. Their drawn lengths illustrate square-root scale estimates, not a computed embedding or an exact ambient diameter.</p>
+  <noscript><p>The initial display has a = b = ε/2, so the moving line has area πε. Enable JavaScript to vary the periods.</p></noscript>
+  <details class="geometry-disclosure"><summary>The formulas and the geometric scope</summary><p>In the chamber with stability levels (a, −a−b, b), a,b &gt; 0, the harmonic areas are πa, πb and π(a+b). The plane volumes are π²a²/2 and π²b²/2. Ambient diameters are comparable to √a and √b with constants independent of a/b. When a/b → 0 and a+b → 0, rescaling at the smaller plane gives the complete Calabi metric on T*ℙ²; the reversed hierarchy gives the corresponding limit at the other plane. No numerical radius of validity for the common scale ε is supplied by these controls.</p><p>The boundary group is part of the integral attachment calculation for these two intersecting planes. Reconstructing the compact moduli space's cohomology also requires the marked complement and its restriction map; the displayed matrix alone does not supply those data.</p></details>
+  <p class="geometry-source"><a href="/papers/exceptional-cycles/">Exceptional cycles and harmonic metrics in K3 bundle moduli ↗</a></p>
+</div>
