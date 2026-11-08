@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Light vectors and scalar interactions near heterotic K3 gauge enhancement</title>
+      <link>https://bwuebben.github.io/papers/heterotic-k3-enhancement/</link>
+      <guid>https://bwuebben.github.io/papers/heterotic-k3-enhancement/#update-2026-11-08</guid>
+      <description>Light-vector masses near gauge enhancement in an SO(32) heterotic K3 compactification admit relative geometric control even when the Higgs scales separate arbitrarily. The first tree vector correction includes the complete leading metric and two-form towers and preserves the unbroken gauge kernels. In the same bundle family, a compensated reduction identifies a leading neutral-scalar interaction with inverse-square growth at fixed positive deformation ratio. The vector estimate concerns a defined first-order system; the scalar statement extracts the tree large-volume coefficient before enhancement. Uniform finite-string-scale remainders remain open.</description>
+      <pubDate>Sun, 08 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Canonical metrics on singular moduli of K3 bundles</title>
       <link>https://bwuebben.github.io/papers/canonical-metrics-singular-k3-moduli/</link>
       <guid>https://bwuebben.github.io/papers/canonical-metrics-singular-k3-moduli/#update-2026-11-08</guid>

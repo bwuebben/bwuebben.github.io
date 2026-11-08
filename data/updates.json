@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-08",
+    "title": "Light vectors and scalar interactions near heterotic K3 gauge enhancement",
+    "url": "/papers/heterotic-k3-enhancement/",
+    "description": "Light-vector masses near gauge enhancement in an SO(32) heterotic K3 compactification admit relative geometric control even when the Higgs scales separate arbitrarily. The first tree vector correction includes the complete leading metric and two-form towers and preserves the unbroken gauge kernels. In the same bundle family, a compensated reduction identifies a leading neutral-scalar interaction with inverse-square growth at fixed positive deformation ratio. The vector estimate concerns a defined first-order system; the scalar statement extracts the tree large-volume coefficient before enhancement. Uniform finite-string-scale remainders remain open."
+  },
+  {
+    "date": "2026-11-08",
     "title": "Canonical metrics on singular moduli of K3 bundles",
     "url": "/papers/canonical-metrics-singular-k3-moduli/",
     "description": "Canonical singular Ricci-flat metrics on a class of compact K3 bundle moduli spaces admit quadratic approximation by their hyperkähler tangent cones in holomorphic coordinates. Twice-primitive Mukai vectors and a rank bound exclude non-locally-free sheaves and slope-graded factors. The harmonic L² metric equals the canonical metric in an ample determinant class, and its regular-locus completion recovers the original space. The comparison is uniform through stabilizer changes within each fixed chart, even though these moduli spaces have positive-dimensional singular strata and admit neither a symplectic resolution nor a global smoothing."

@@ -49,6 +49,8 @@ separate nonbalanced cohomology relaxation, nonscalar static estimates and sharp
 regularity for an explicit family. Its paper page records the original date,
 revision date, current public-repository PDF and versioned Zenodo archive.
 
+The heterotic K3 application has its home in the Physics guide, with companion links from Geometry and the focused Stability & Degeneration guide. Its paper page distinguishes the ratio-uniform leading vector theorem, the defined first-order vector correction and the ordered large-volume scalar coefficient. The released PDF, Zenodo DOI, full abstract and reciprocal paper links are recorded in `data/papers.json`.
+
 ## Rebuilding and checks
 
 Research descriptions in `data/updates.json` are mini abstracts: state the
@@ -182,7 +184,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 65 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 66 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
