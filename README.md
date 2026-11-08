@@ -532,8 +532,18 @@ The topology sought is primarily that of moduli spaces; implications
 for the base manifold require an additional argument.
 
 The [Geometry & moduli overview](https://bwuebben.github.io/research/geometry/#stability-degeneration)
-keeps a concise programme introduction and all manuscript entries. Singular
-quotient metrics belong to the stability programme. Both existing
+leads with degeneration as a route to geometry and topology, including compact
+K3 integral attachments and global harmonic metric collapse. Its introduction,
+scope, reading route and homepage summary reflect the same programme as the
+focused guide. The global theorem retains absence of an ideal boundary and full
+convergent quiver charts with module-simple points; additive reconstruction and
+middle-degree attachment calculations retain their different global inputs.
+Finite successive metric limits retain normalized-level and basepoint convergence.
+
+When adding a result, update both guides' introductions, scope and open questions,
+as well as their manuscript lists and the homepage programme summary. Keep the
+individual paper records and full abstracts as the source for publication data.
+Singular quotient metrics belong to the stability programme. Both existing
 `#singular-quotient-metrics` anchors remain available in the catalogue and the
 Geometry overview; the focused guide uses the same anchor for its moduli section.
 The catalogue reading links, research index, individual paper contexts and
