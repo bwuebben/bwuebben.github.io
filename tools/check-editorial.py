@@ -30,6 +30,9 @@ for _slug in ("af-cobordism-i", "af-cobordism-ii", "af-cobordism-iii"):
  REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi", "resources"}
 for _anchor in ("cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii"):
  REVISED_METADATA[_anchor] = set()
+# Authorized 7 November compact K3 proof-clarification revisions.
+for _slug in ("exceptional-cycles", "integral-reconstruction"):
+ REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)

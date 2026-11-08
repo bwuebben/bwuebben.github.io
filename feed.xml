@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Clarified limit arguments for compact K3 moduli</title>
+      <link>https://bwuebben.github.io/papers/integral-reconstruction/</link>
+      <guid>https://bwuebben.github.io/papers/integral-reconstruction/#update-2026-11-07</guid>
+      <description>The compact K3 degeneration arguments now specify arbitrary-sequence convergence, uniform moving-fibre limits and successive rescalings under the stated quotient hypotheses. The revisions clarify the proofs and integral-cycle conventions while preserving the main conclusions.</description>
+      <pubDate>Sat, 07 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Exceptional cycles and harmonic metrics in K3 bundle moduli</title>
       <link>https://bwuebben.github.io/papers/exceptional-cycles/</link>
       <guid>https://bwuebben.github.io/papers/exceptional-cycles/#update-2026-11-07</guid>

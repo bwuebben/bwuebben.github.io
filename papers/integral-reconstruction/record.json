@@ -12,14 +12,14 @@
   "label": "Stability and Geometric Degeneration · Paper 18",
   "status": "Preprint",
   "publication_date": "2026-11-07",
-  "revision_date": null,
+  "revision_date": "2026-11-07",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24046142",
-    "url": "https://zenodo.org/records/24046142",
-    "deposited_at": "2026-11-08T00:44:26.463785+00:00"
+    "doi": "10.5281/zenodo.24047889",
+    "url": "https://zenodo.org/records/24047889",
+    "deposited_at": "2026-11-08T04:47:05.682573+00:00"
   },
-  "citation_doi": "10.5281/zenodo.24046142",
+  "citation_doi": "10.5281/zenodo.24047889",
   "resources": [
     {
       "label": "current version (PDF)",
@@ -50,15 +50,23 @@
   ],
   "verified_on": "2026-11-07",
   "abstract_html": "<p>We construct a compact moduli eightfold of rank-seven bundles on a K3 surface whose moving projective lines specialize to Schubert lines in a deepest Grassmannian fibre <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"Gr(2,4)\"><mi mathvariant=\"normal\">Gr</mi><mo>(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>)</math>. Both middle Schubert classes extend integrally. The fibre is primitive, has self-intersection six, and has an explicit degree-eight attachment modulo six. For the natural <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L²\"><msup><mi>L</mi><mn>2</mn></msup></math> metric defined by harmonic deformation representatives, these same cycles have exact periods and volumes, ambient diameter asymptotics, and complete cotangent-Grassmannian rescaled limits. We also prove a global comparison theorem for compact K3 bundle-moduli contractions without bubbling, with complete convergent quiver charts whose complex moment-zero fibres contain simple representations. A principal-stratum path argument identifies the central harmonic completion, and finite quotient distances give a variational bound for the distortion of the actual contraction graph. The bound tends to zero through arbitrary adjacent chambers. Integral cochains on all geometric overlaps recover additive cohomology, while universal-index restrictions calculate middle-degree attachments from a marked complement ring. A mapping-torus example shows why local fibre rings and divisor classes do not determine the required monodromy.</p>",
-  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/702bb8c498c8bf5ddc16d26f971d1dffca437a1f/papers/18_integral_reconstruction/paper.tex",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/f326a4f7f66d07445cd8d40db720644bd2d70255/papers/18_integral_reconstruction/paper.tex",
   "pdf": {
-    "sha256": "45cdb80eede7aac58560b6ea96a444d847ef1f9772467e062bdbebd5007ff83e",
-    "size_bytes": 443984,
-    "pages": 26,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/702bb8c498c8bf5ddc16d26f971d1dffca437a1f/papers/18_integral_reconstruction/integral-reconstruction.pdf",
+    "sha256": "8cc8f3b7f6412fca2923fad849a52681949760a7640b93b269f805bcf016868c",
+    "size_bytes": 448379,
+    "pages": 27,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/f326a4f7f66d07445cd8d40db720644bd2d70255/papers/18_integral_reconstruction/integral-reconstruction.pdf",
     "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/18_integral_reconstruction/integral-reconstruction.pdf",
-    "source_commit": "702bb8c498c8bf5ddc16d26f971d1dffca437a1f",
+    "source_commit": "f326a4f7f66d07445cd8d40db720644bd2d70255",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/18_integral_reconstruction/integral-reconstruction.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.24046142",
+      "url": "https://zenodo.org/records/24046142",
+      "deposited_at": "2026-11-08T00:44:26.463785+00:00"
+    }
+  ]
 }
