@@ -182,7 +182,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 63 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 64 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -515,7 +515,7 @@ the cubic obstruction, a vanishing graph mode, relative error and the two kinds
 of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
 
-`SUBGUIDES` in `tools/build-editorial.py` groups all 24 manuscripts by mathematical
+`SUBGUIDES` in `tools/build-editorial.py` groups all 25 manuscripts by mathematical
 role, starting with the general local theorem. References use descriptive titles
 and links; manuscript numbers indicate the suggested reading order. Styles are
 confined to `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
@@ -553,7 +553,7 @@ and presets to the SVG and area readouts. The common period scale is assumed
 sufficiently small, with no numerical radius asserted. Cycle areas are exact;
 drawn lengths only illustrate square-root scale estimates. The integral form
 and boundary group stay fixed within the chamber, and global reconstruction
-still requires complement and restriction data. No differential equation is
+requires global complement and restriction data, now explicitly calculated for the marked six-chamber family in the integral-attachment paper. No differential equation is
 solved by the interaction. All new styles are in `assets/geometry-overview.css`.
 The diagrams and initial period values remain readable without JavaScript.
 
@@ -584,3 +584,5 @@ Paper 15, [Quantitative local models for Hermitian–Einstein metrics](https://b
 [Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle](https://bwuebben.github.io/papers/uniform-hym-phase/) gives exact local dynamical reduction with C¹ initial phase and uniform relative metric tracking under coefficient confinement and small normal displacement. It retains the full obstruction and arbitrary multiplicities. Its original date, full abstract, public source, exact PDF and Zenodo archive are recorded in `data/papers.json`; the programme guide distinguishes this confined result from global entry and confinement questions.
 
 The compact K3 pair, [exceptional cycles](https://bwuebben.github.io/papers/exceptional-cycles/) and [integral reconstruction](https://bwuebben.github.io/papers/integral-reconstruction/), connects primitive cycles and calculated integral attachments to actual harmonic metric degeneration on compact fourfolds and an eightfold. The programme guide now distinguishes these no-bubbling results from reconstruction without complement and monodromy input, cup-product reconstruction and positive-charge compactification. Both records retain their original 7 November 2026 date and a separate revision date, full abstract, exact public PDF and version-specific Zenodo DOI. The 7 November revision expands the limit arguments and clarifies cycle conventions; the main conclusions are unchanged.
+
+[Integral attachments and wall correspondences for K3 bundle moduli](https://bwuebben.github.io/papers/integral-attachments/) calculates complement rings, boundary restrictions, determinant-normalized universal classes and all adjacent wall actions in the marked six-chamber rank-three family. Its exact 24-page manuscript, full abstract, original and version dates of 8 November 2026, public source and Zenodo DOI are recorded in `data/papers.json`. The geometry overview and focused guide distinguish this explicit calculation from general reconstruction with overlap and monodromy input.

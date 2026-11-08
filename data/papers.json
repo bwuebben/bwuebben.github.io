@@ -3439,6 +3439,10 @@
         {
           "label": "Quantitative local models for Hermitian–Einstein metrics",
           "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+        },
+        {
+          "label": "Integral attachments and wall correspondences for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/integral-attachments/"
         }
       ],
       "verified_on": "2026-11-07",
@@ -3511,6 +3515,10 @@
         {
           "label": "Quantitative local models for Hermitian–Einstein metrics",
           "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+        },
+        {
+          "label": "Integral attachments and wall correspondences for K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/integral-attachments/"
         }
       ],
       "verified_on": "2026-11-07",
@@ -3534,6 +3542,66 @@
           "deposited_at": "2026-11-08T00:44:26.463785+00:00"
         }
       ]
+    },
+    {
+      "slug": "integral-attachments",
+      "catalogue_anchor": "integral-attachments",
+      "catalogue_title": "Integral attachments and wall correspondences for K3 bundle moduli",
+      "title": "Integral attachments and wall correspondences for K3 bundle moduli",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 19",
+      "status": "Preprint",
+      "publication_date": "2026-11-08",
+      "revision_date": "2026-11-08",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24054004",
+        "url": "https://zenodo.org/records/24054004",
+        "deposited_at": "2026-11-08T13:45:36.106533+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24054004",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/19_integral_attachments/integral-attachments.pdf"
+        },
+        {
+          "label": "source and reproducible calculations",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/19_integral_attachments"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+        },
+        {
+          "label": "Exceptional cycles and harmonic metrics in K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/exceptional-cycles/"
+        },
+        {
+          "label": "Integral reconstruction and quantitative metric degeneration of K3 bundle moduli",
+          "url": "https://bwuebben.github.io/papers/integral-reconstruction/"
+        }
+      ],
+      "verified_on": "2026-11-08",
+      "abstract_html": "<p>We calculate the integral cohomology of the complements of the fibres over the completely split bundle in a compact six-chamber family of rank-three bundle moduli on a K3 surface, together with the boundary restrictions and the actions of the adjacent wall correspondences. Four crossings are elementary Mukai flops, with their corrected correspondences, and two are isomorphisms over divisorial wall targets. We identify the latter actions as reflections by proving the opposite signs of the exceptional divisor in the two Mukai markings. An explicit transport to the Hilbert square gives integral coordinates for the exceptional surfaces and all determinant-normalized universal indices. In these coordinates the complement ring is the quotient by the transported classes of the two planes in one chamber, and the degree-four boundary restriction is an explicit functional with values in the cyclic group of order eight. The formulas cover all six exceptional configurations and determine their cohomological wall compositions. Pairing the resulting cycles with the harmonic Kähler class identifies their periods and volumes in the established metric degeneration of this family.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/d3077cdfd826e990317a6158a3889e386909ee40/papers/19_integral_attachments/paper.tex",
+      "pdf": {
+        "sha256": "8110ca502ad64f0eee04e9125461eb2a0ae62fc67bfa7b1d50956a0783436ba1",
+        "size_bytes": 446537,
+        "pages": 24,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/d3077cdfd826e990317a6158a3889e386909ee40/papers/19_integral_attachments/integral-attachments.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/19_integral_attachments/integral-attachments.pdf",
+        "source_commit": "d3077cdfd826e990317a6158a3889e386909ee40",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/19_integral_attachments/integral-attachments.pdf"
+      }
     }
   ]
 }

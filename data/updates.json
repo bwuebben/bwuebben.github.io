@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-08",
+    "title": "Integral attachments and wall correspondences for K3 bundle moduli",
+    "url": "/papers/integral-attachments/",
+    "description": "A compact six-chamber family of rank-three K3 bundle moduli admits an explicit integral calculation of its complements, boundary restrictions and adjacent wall actions. Four crossings are corrected Mukai flops and two are divisorial isomorphisms whose opposite divisor signs determine a reflection. Hilbert-square transport gives integral coordinates for the exceptional surfaces and determinant-normalized universal indices, including the boundary restriction modulo eight. The resulting cycles have exact periods and volumes in the established harmonic metric degeneration of this family."
+  },
+  {
     "date": "2026-11-07",
     "title": "Clarified limit arguments for compact K3 moduli",
     "url": "/papers/integral-reconstruction/",
