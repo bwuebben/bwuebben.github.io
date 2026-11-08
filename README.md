@@ -180,7 +180,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 61 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 63 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -510,7 +510,7 @@ the cubic obstruction, a vanishing graph mode, relative error and the two kinds
 of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
 
-`SUBGUIDES` in `tools/build-editorial.py` groups all 22 manuscripts by mathematical
+`SUBGUIDES` in `tools/build-editorial.py` groups all 24 manuscripts by mathematical
 role, starting with the general local theorem. Styles are confined to
 `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
 the local, stationary, locally free scope remains visible in the main text.
@@ -540,3 +540,5 @@ Paper 14, [Quantitative metric wall crossing for K3 bundle moduli](https://bwueb
 Paper 15, [Quantitative local models for Hermitian–Einstein metrics](https://bwuebben.github.io/papers/local-hym-reduction/), was published on 7 November 2026. Its 22 pages give the general local stationary comparison on compact Kähler manifolds and a stable bundle with essential cubic obstruction. The full abstract, original date, source, exact PDF and archive identity are recorded in `data/papers.json`.
 
 [Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle](https://bwuebben.github.io/papers/uniform-hym-phase/) gives exact local dynamical reduction with C¹ initial phase and uniform relative metric tracking under coefficient confinement and small normal displacement. It retains the full obstruction and arbitrary multiplicities. Its original date, full abstract, public source, exact PDF and Zenodo archive are recorded in `data/papers.json`; the programme guide distinguishes this confined result from global entry and confinement questions.
+
+The compact K3 pair, [exceptional cycles](https://bwuebben.github.io/papers/exceptional-cycles/) and [integral reconstruction](https://bwuebben.github.io/papers/integral-reconstruction/), connects primitive cycles and calculated integral attachments to actual harmonic metric degeneration on compact fourfolds and an eightfold. The programme guide now distinguishes these no-bubbling results from reconstruction without complement and monodromy input, cup-product reconstruction and positive-charge compactification. Both records retain their original 7 November 2026 date, full abstract, exact public PDF and version-specific Zenodo DOI.

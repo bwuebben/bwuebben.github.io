@@ -24,9 +24,9 @@
       <p>The wall models describe nearby chamber neighbourhoods, their exceptional loci, intrinsic distances and rescaled metric limits.</p>
     </div>
     <div>
-      <p class="result-index">03 / The longer-term objective</p>
+      <p class="result-index">03 / Compact global results</p>
       <h3><a href="#global-geometry">Connect local and global geometry</a></h3>
-      <p>Determine how local models attach to one another and to their complements, and what those attachments imply for global geometry and topological invariants.</p>
+      <p>Compact K3 contractions now combine integral attachment calculations with global metric convergence. Reconstruction specifies the complement, overlap and monodromy information that remains input.</p>
     </div>
   </div>
   <div class="correspondence-grid" id="quantitative-correspondence">
@@ -125,27 +125,32 @@
   <details class="technical-note">
     <summary>The K3 hypotheses and the order of the error</summary>
     <p>The general K3 theorem assumes locally free factors that are slope-stable with a common reduced Hilbert polynomial for an integral ample class, and slope-stable of a common slope for a central Ricci-flat class, which may differ. Its formality coordinates give linear spatial error; a verified central sign symmetry improves it to quadratic. The rank-three example has the quadratic estimate, whereas the rank-five triangle has the linear estimate.</p>
-    <p>Paper 15’s quadratic estimate is in canonical harmonic coordinates. It does not automatically improve the error after formality straightening, or supply homogeneous rescaled limits for an arbitrary obstructed germ. These are local results; global metric completion and bubbling remain open.</p>
+    <p>Paper 15’s quadratic estimate is in canonical harmonic coordinates. It does not automatically improve the error after formality straightening, or supply homogeneous rescaled limits for an arbitrary obstructed germ. These results are local. Paper 17 establishes convergent common-slope K3 symplectic coordinates with cubic coordinate error; Papers 17 and 18 then treat compact contractions without bubbling. Positive-charge limits remain open.</p>
   </details>
 </section>
 
 <section class="section-block focus" id="global-geometry">
-  <p class="kicker">The longer-term objective</p>
-  <h2>From local wall models to global geometry and topology.</h2>
-  <p class="focus-lede">The ambition is to understand how the geometry visible near degenerations contributes to the moduli space as a whole: which loci contract, how chamber spaces are related, and what these changes imply for global invariants.</p>
+  <p class="kicker">Compact K3 moduli · Papers 17 and 18</p>
+  <h2>Integral cycles and metric collapse on the same spaces.</h2>
+  <p class="focus-lede">The compact K3 results carry the local models into entire bundle-moduli spaces. They determine how exceptional cycles enter integral cohomology and how the actual harmonic L² metric collapses those same cycles.</p>
+  <p class="scope-line">Compact K3 bundle moduli · no bubbling · complete convergent quiver charts</p>
   <div class="prose-columns">
     <div>
-      <h3>The local topology is already visible</h3>
-      <p>The general theorem identifies an actual moduli neighbourhood with its finite quotient. The K3 applications also describe exceptional loci and local contraction maps. These give topological and complex-geometric information about nearby chamber spaces, together with quantitative control of their metrics.</p>
-      <p>The local contraction diagram does not identify the entire chamber moduli spaces. A complete limit obtained by rescaling a shrinking neighbourhood describes the geometry seen under magnification; global metric completion is a further question.</p>
+      <h3>Interacting planes in a fourfold</h3>
+      <p><a href="/papers/exceptional-cycles/">Exceptional cycles and harmonic metrics in K3 bundle moduli</a> constructs a compact two-parameter family with six chambers. In a specified chamber, a moving projective line specializes with multiplicity one to the sum of lines in two exceptional planes. The planes have primitive integral classes and intersection matrix with diagonal entries 3 and off-diagonal entries 1.</p>
+      <p>An explicit congruence modulo eight describes the degree-four attachment to the marked complement; an isolated-plane example gives the corresponding congruence modulo three. Exact harmonic areas and volumes, ambient diameter estimates and complete rescaled limits remain compatible with arbitrarily separated positive scales.</p>
     </div>
     <div>
-      <h3>What global assembly must supply</h3>
-      <p>One must determine how the local neighbourhoods attach to their complements and to one another, and how the chosen compactification records singular sheaves and curvature concentration. Those attachments are additional data beyond an individual degeneration model.</p>
-      <p>A concrete target is to carry this out for a specified compact moduli problem, then calculate how its exceptional loci contribute to cohomology or another chosen topological invariant. A wall crossing need not change every invariant. No general reconstruction of global topology is established by the present local comparisons.</p>
+      <h3>Two Schubert directions in an eightfold</h3>
+      <p><a href="/papers/integral-reconstruction/">Integral reconstruction and quantitative metric degeneration of K3 bundle moduli</a> constructs a compact rank-seven bundle-moduli eightfold. Moving projective lines specialize to Schubert lines in a deepest Gr(2,4) fibre. Both middle Schubert classes extend integrally, the fibre is primitive, and its self-intersection is six.</p>
+      <p>Universal-index restrictions calculate its attachment modulo six. The same classes have exact harmonic periods and volumes, ambient diameter asymptotics and complete cotangent-Grassmannian rescaled limits. Both Schubert directions are needed; divisor information alone does not determine the attachment data.</p>
     </div>
   </div>
-  <p class="section-reading"><a href="#frontier">The established results and remaining questions ↓</a> · <a href="#dynamics">The parallel programme for geometric flows ↓</a></p>
+  <h3>A global comparison with an explicit modulus</h3>
+  <p>For compact K3 contractions satisfying the stated no-bubbling and complete-chart hypotheses, Paper 18 identifies the completion of the principal-stratum harmonic metric with the central projective moduli space. Finite quotient distances give a variational distortion bound for the graph of the actual contraction. That bound tends to zero through arbitrary adjacent chambers, without assuming a universal power-law rate.</p>
+  <h3>What reconstruction still takes as input</h3>
+  <p>Integral cochains on all geometric overlaps recover additive cohomology. This uses the complete overlap and monodromy information, while middle-degree attachment calculations use a marked complement ring and universal-index restrictions. A mapping-torus example shows why local fibre rings and divisor classes do not suffice. A full cup-product reconstruction, positive-charge compactifications and reconstruction of the base manifold remain beyond these results.</p>
+  <p class="section-reading"><a href="/papers/exceptional-cycles/">The compact fourfolds ↗</a> · <a href="/papers/integral-reconstruction/">Reconstruction and the Grassmannian application ↗</a> · <a href="#frontier">The next questions ↓</a></p>
 </section>
 
 <section class="section-block focus" id="cubic-obstruction">
@@ -405,14 +410,14 @@
 <section class="section-block focus" id="frontier">
   <p class="kicker">The next mathematical questions</p>
   <h2>What remains beyond the current theorems?</h2>
-  <p class="focus-lede">The local stationary theorem, confined dynamical reduction and K3 applications establish parts of the route from degeneration to nearby geometry. The wider programme asks how these descriptions assemble globally, how actual flows approach them, and what replaces the smooth theory at singular sheaves.</p>
+  <p class="focus-lede">The local stationary theorem, confined dynamical reduction and compact K3 contractions connect degeneration to nearby geometry and specified global invariants. The wider programme asks how to reduce the global input, include bubbling and singular sheaves, and understand how actual flows approach these models.</p>
   <table class="stage-table programme-frontier">
     <caption>Established results and the next mathematical questions</caption>
     <thead><tr><th scope="col">Direction</th><th scope="col">Established setting</th><th scope="col">Next question</th></tr></thead>
     <tbody>
       <tr><td>Local stationary theory</td><td data-label="Established">Identification of the local quotient topology, HE reconstruction, all small endomorphism eigenvalues and harmonic quotient metrics near a fixed locally free polystable compact-Kähler background.</td><td data-label="Next question">Which comparisons survive singular sheaf limits or degeneration of the background geometry?</td></tr>
-      <tr><td>Metric limits and wall crossing</td><td data-label="Established">K3 contraction scales, intrinsic distances and complete finite successive limits with the required normalized-data convergence.</td><td data-label="Next question">Which obstructed germs admit comparable rescaled limits? How do local models connect to global completion and bubbling?</td></tr>
-      <tr><td>Global geometry and topology</td><td data-label="Established">Local moduli identifications and K3 exceptional loci and contraction models. A general global reconstruction is open.</td><td data-label="Next question">How do these neighbourhoods attach to their complements and to one another, and what do the resulting wall crossings imply for cohomology or other global invariants?</td></tr>
+      <tr><td>Metric limits and wall crossing</td><td data-label="Established">K3 contraction scales and complete finite successive limits; central harmonic completion and a quantitative contraction-graph bound for compact moduli without bubbling and with complete convergent quiver charts.</td><td data-label="Next question">Which obstructed germs admit comparable limits, and what metric description survives bubbling?</td></tr>
+      <tr><td>Global geometry and topology</td><td data-label="Established">Compact fourfold and eightfold realizations, primitive cycles, explicit attachments modulo three, eight and six, and additive integral reconstruction from all geometric overlap cochains.</td><td data-label="Next question">How much complement and monodromy data can degeneration itself determine, and when can one reconstruct the full cohomology ring?</td></tr>
       <tr><td>Geometric realizability</td><td data-label="Established">Explicit toric chamber families, nonsimplicial chambers and accessible slope directions; a compact bundle with essential cubic obstruction.</td><td data-label="Next question">Which chamber structures and nonlinear deformation relations can geometry realize?</td></tr>
       <tr><td>Dynamics</td><td data-label="Established">Exact local reduction, C¹ phase and uniform relative tracking near arbitrary fixed locally free polystable bundles under confinement; special families also have entry and confinement theorems.</td><td data-label="Next question">When do general trajectories enter and remain in the controlled region, and what are the algebraic asymptotics of the corrected finite flow?</td></tr>
       <tr><td>Categorical phase flows</td><td data-label="Established">Mass increase; general large-scale cancellation for surjective source differentials and arbitrary surviving tuples; separate finite-infimum cohomology relaxation.</td><td data-label="Next question">Which estimates extend to longer complexes, and when does a positive quotient metric survive?</td></tr>
@@ -433,7 +438,7 @@
     </div>
     <div>
       <h3>The geometric consequences</h3>
-      <p>Read the <a href="/papers/k3-metric-wall-crossing/">rank-three K3 wall crossing</a>, then the <a href="/papers/quiver-metric-wall-crossing/">general K3 comparison and rank-five application</a>. These describe local chamber geometry, exceptional loci, contraction scales, intrinsic distances and complete rescaled limits under their additional hypotheses. The <a href="#global-geometry">global objective</a> explains what further assembly would be needed for topological applications.</p>
+      <p>Read the <a href="/papers/k3-metric-wall-crossing/">rank-three K3 wall crossing</a>, then the <a href="/papers/quiver-metric-wall-crossing/">general K3 comparison and rank-five application</a>. These describe local chamber geometry, exceptional loci, contraction scales, intrinsic distances and complete rescaled limits under their additional hypotheses. Continue with <a href="/papers/exceptional-cycles/">exceptional cycles on compact fourfolds</a> and <a href="/papers/integral-reconstruction/">integral reconstruction and the Grassmannian eightfold</a>. These join global integral attachments and actual harmonic collapse, with the precise input described in <a href="#global-geometry">the compact global results</a>.</p>
     </div>
     <div>
       <h3>The dynamics and boundaries</h3>

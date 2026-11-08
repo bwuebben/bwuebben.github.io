@@ -1,0 +1,64 @@
+{
+  "slug": "exceptional-cycles",
+  "catalogue_anchor": "exceptional-cycles",
+  "catalogue_title": "Exceptional cycles and harmonic metrics in K3 bundle moduli",
+  "title": "Exceptional cycles and harmonic metrics in K3 bundle moduli",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 17",
+  "status": "Preprint",
+  "publication_date": "2026-11-07",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24046092",
+    "url": "https://zenodo.org/records/24046092",
+    "deposited_at": "2026-11-08T00:44:10.649071+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24046092",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/17_exceptional_cycles/exceptional-cycles.pdf"
+    },
+    {
+      "label": "source and reproducible calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/17_exceptional_cycles"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+    },
+    {
+      "label": "Integral reconstruction and quantitative metric degeneration of K3 bundle moduli",
+      "url": "https://bwuebben.github.io/papers/integral-reconstruction/"
+    },
+    {
+      "label": "Quantitative metric wall crossing for K3 bundle moduli",
+      "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
+    },
+    {
+      "label": "Quantitative local models for Hermitian–Einstein metrics",
+      "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+    }
+  ],
+  "verified_on": "2026-11-07",
+  "abstract_html": "<p>We construct compact moduli fourfolds of bundles on a K3 surface whose common contraction has a singular surface and one deeper point. In a specified stability chamber, a moving projective line specializes with multiplicity one to a line in each of two Lagrangian planes. We identify the primitive integral curve and surface classes and calculate their intersection matrix. Restriction from the complement to the boundary of a neighborhood of the planes gives an explicit congruence modulo eight determining their degree-four integral cohomological gluing. For the natural <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"L²\"><msup><mi>L</mi><mn>2</mn></msup></math> metric on moduli, defined by harmonic deformation representatives, these same cycles have exact areas and volumes and ambient diameter estimates uniform as the two positive stability parameters vanish at unrelated rates. At separated scales, rescalings based on the smaller plane converge in pointed Gromov–Hausdorff topology to the complete Calabi metric on <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"T*ℙ²\"><msup><mi>T</mi><mo>*</mo></msup><msup><mi>ℙ</mi><mn>2</mn></msup></math>. The central harmonic metric completes to the common contraction, which is the compact Gromov–Hausdorff limit of the chamber spaces. The proof combines a complete boundary analysis with convergent symplectic coordinates and relative harmonic estimates. An isolated-plane contraction provides the corresponding congruence modulo three.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/702bb8c498c8bf5ddc16d26f971d1dffca437a1f/papers/17_exceptional_cycles/paper.tex",
+  "pdf": {
+    "sha256": "e3558ee5e35a33742ba6370a23d7af075fc882fdf1aa9a3d1d32874797880f5c",
+    "size_bytes": 457398,
+    "pages": 31,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/702bb8c498c8bf5ddc16d26f971d1dffca437a1f/papers/17_exceptional_cycles/exceptional-cycles.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/17_exceptional_cycles/exceptional-cycles.pdf",
+    "source_commit": "702bb8c498c8bf5ddc16d26f971d1dffca437a1f",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/17_exceptional_cycles/exceptional-cycles.pdf"
+  }
+}
