@@ -487,11 +487,12 @@ The [focused programme guide](https://bwuebben.github.io/research/geometry/quant
 leads with the route from degeneration data to nearby geometry and the longer-term
 global objective. It identifies the bundles, slope-stability, polarization walls
 and the distinction between bundle metrics and moduli-space metrics. The general
-compact-Kähler local theorem in Paper 15 and the K3 applications establish local
+compact-Kähler local theorem and the K3 applications establish local
 topology and metric geometry; a dedicated section explains the compactification
-and attaching data required for global topological applications. Paper 16 gives
-the general local dynamical reduction and C¹ phase under coefficient confinement
-and small initial normal displacement; it leads the dynamical reading route.
+and attaching data required for global topological applications. The uniform
+asymptotic-phase theorem gives the general local dynamical reduction and C¹ phase
+under coefficient confinement and small initial normal displacement; it leads
+the dynamical reading route.
 The essential cubic bicubic example and singular-flow
 obstruction retain their scope. The earlier chamber, spectral, balancing and
 quotient-metric papers retain their constructions and additional consequences.
@@ -513,11 +514,12 @@ of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
 
 `SUBGUIDES` in `tools/build-editorial.py` groups all 22 manuscripts by mathematical
-role, starting with the general local theorem. Styles are confined to
-`assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
-the fixed locally free background, stationary scope of Paper 15 and confinement
-and initial-displacement hypotheses of Paper 16 remain visible in the main text.
-The guide preserves every existing anchor, three reading routes and the link
+role, starting with the general local theorem. References use descriptive titles
+and links; manuscript numbers indicate the suggested reading order. Styles are
+confined to `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
+the fixed locally free background, scope of the stationary theorem and confinement
+and initial-displacement hypotheses of the dynamical theorem remain visible in
+the main text. The guide preserves every existing anchor, three reading routes and the link
 to At the Wall. Fixed-background dependence, coordinate-sensitive error orders,
 K3 rescaling hypotheses and the distinction between cubic obstruction and
 spectral scale separation remain explicit. Global topology, metric completion,
