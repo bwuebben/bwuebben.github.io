@@ -1,0 +1,64 @@
+{
+  "slug": "canonical-metrics-singular-k3-moduli",
+  "catalogue_anchor": "canonical-metrics-singular-k3-moduli",
+  "catalogue_title": "Canonical metrics on singular moduli of K3 bundles",
+  "title": "Canonical metrics on singular moduli of K3 bundles",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 20",
+  "status": "Preprint",
+  "publication_date": "2026-11-08",
+  "revision_date": "2026-11-08",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24060228",
+    "url": "https://zenodo.org/records/24060228",
+    "deposited_at": "2026-11-08T20:22:59.496578+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24060228",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/20_singular_hyperkahler_cones/canonical-metrics-singular-k3-moduli.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/20_singular_hyperkahler_cones"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+    },
+    {
+      "label": "Quantitative metric wall crossing for K3 bundle moduli",
+      "url": "https://bwuebben.github.io/papers/quiver-metric-wall-crossing/"
+    },
+    {
+      "label": "Quantitative local models for Hermitian–Einstein metrics",
+      "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+    },
+    {
+      "label": "Exceptional cycles and harmonic metrics in K3 bundle moduli",
+      "url": "https://bwuebben.github.io/papers/exceptional-cycles/"
+    }
+  ],
+  "verified_on": "2026-11-08",
+  "abstract_html": "<p>The canonical singular Ricci-flat metric on a class of compact K3 bundle moduli spaces admits quadratic approximation by its hyperkähler tangent cones in holomorphic coordinates. The spaces parametrize twice a primitive Mukai vector on a K3 surface of Picard rank one; a rank bound ensures that every semistable sheaf and every slope Jordan–Hölder factor is locally free. These spaces have positive-dimensional singular strata and admit neither a symplectic resolution nor a smoothing. We identify the metric in an ample determinant class with the harmonic <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>L</mi><mn>2</mn></msup></math> metric, identify its tangent cones as the flat hyperkähler quotients of the extension spaces, and prove that its regular-locus completion is the original moduli space. The comparison is uniform through changes of stabilizer in each fixed local chart. The proof combines quantitative local models for Hermitian–Einstein metrics with exact quadraticity in harmonic Kuranishi coordinates, continuous Weil–Petersson potentials, and a determinant-class calculation.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/8e85c8e06937ad3a20c999d13bc353f830db6988/papers/20_singular_hyperkahler_cones/main.tex",
+  "pdf": {
+    "sha256": "8413297cf26ba8ae69cdc1dd04589c3b7f9e5e908670a15ba47aa1a36628958c",
+    "size_bytes": 352610,
+    "pages": 17,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/8e85c8e06937ad3a20c999d13bc353f830db6988/papers/20_singular_hyperkahler_cones/canonical-metrics-singular-k3-moduli.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/20_singular_hyperkahler_cones/canonical-metrics-singular-k3-moduli.pdf",
+    "source_commit": "8e85c8e06937ad3a20c999d13bc353f830db6988",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/20_singular_hyperkahler_cones/canonical-metrics-singular-k3-moduli.pdf"
+  }
+}

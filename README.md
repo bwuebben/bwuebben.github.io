@@ -182,7 +182,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 64 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 65 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -515,7 +515,7 @@ the cubic obstruction, a vanishing graph mode, relative error and the two kinds
 of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
 
-`SUBGUIDES` in `tools/build-editorial.py` groups all 25 manuscripts by mathematical
+`SUBGUIDES` in `tools/build-editorial.py` groups all 26 manuscripts by mathematical
 role, starting with the general local theorem. References use descriptive titles
 and links; manuscript numbers indicate the suggested reading order. Styles are
 confined to `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
@@ -586,3 +586,5 @@ Paper 15, [Quantitative local models for Hermitian–Einstein metrics](https://b
 The compact K3 pair, [exceptional cycles](https://bwuebben.github.io/papers/exceptional-cycles/) and [integral reconstruction](https://bwuebben.github.io/papers/integral-reconstruction/), connects primitive cycles and calculated integral attachments to actual harmonic metric degeneration on compact fourfolds and an eightfold. The programme guide now distinguishes these no-bubbling results from reconstruction without complement and monodromy input, cup-product reconstruction and positive-charge compactification. Both records retain their original 7 November 2026 date and a separate revision date, full abstract, exact public PDF and version-specific Zenodo DOI. The 7 November revision expands the limit arguments and clarifies cycle conventions; the main conclusions are unchanged.
 
 [Integral attachments and wall correspondences for K3 bundle moduli](https://bwuebben.github.io/papers/integral-attachments/) calculates complement rings, boundary restrictions, determinant-normalized universal classes and all adjacent wall actions in the marked six-chamber rank-three family. Its exact 24-page manuscript, full abstract, original and version dates of 8 November 2026, public source and Zenodo DOI are recorded in `data/papers.json`. The geometry overview and focused guide distinguish this explicit calculation from general reconstruction with overlap and monodromy input.
+
+[Canonical metrics on singular moduli of K3 bundles](https://bwuebben.github.io/papers/canonical-metrics-singular-k3-moduli/) identifies the harmonic metric with the canonical singular Ricci-flat metric and proves quadratic tangent-cone approximation in holomorphic charts for the specified compact twice-primitive K3 family. The original and separate version dates are 8 November 2026. The exact 17-page PDF and full abstract are available on the paper page. Source, PDF checksum and version-specific Zenodo identity are recorded in `data/papers.json`. Both geometry guides retain the fixed-background and no-bubbling hypotheses and distinguish further derivative and sharpness questions.

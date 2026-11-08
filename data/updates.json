@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-08",
+    "title": "Canonical metrics on singular moduli of K3 bundles",
+    "url": "/papers/canonical-metrics-singular-k3-moduli/",
+    "description": "Canonical singular Ricci-flat metrics on a class of compact K3 bundle moduli spaces admit quadratic approximation by their hyperkähler tangent cones in holomorphic coordinates. Twice-primitive Mukai vectors and a rank bound exclude non-locally-free sheaves and slope-graded factors. The harmonic L² metric equals the canonical metric in an ample determinant class, and its regular-locus completion recovers the original space. The comparison is uniform through stabilizer changes within each fixed chart, even though these moduli spaces have positive-dimensional singular strata and admit neither a symplectic resolution nor a global smoothing."
+  },
+  {
+    "date": "2026-11-08",
     "title": "Integral attachments and wall correspondences for K3 bundle moduli",
     "url": "/papers/integral-attachments/",
     "description": "A compact six-chamber family of rank-three K3 bundle moduli admits an explicit integral calculation of its complements, boundary restrictions and adjacent wall actions. Four crossings are corrected Mukai flops and two are divisorial isomorphisms whose opposite divisor signs determine a reflection. Hilbert-square transport gives integral coordinates for the exceptional surfaces and determinant-normalized universal indices, including the boundary restriction modulo eight. The resulting cycles have exact periods and volumes in the established harmonic metric degeneration of this family."
