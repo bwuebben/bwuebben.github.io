@@ -33,6 +33,8 @@ for _anchor in ("cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii")
 # Authorized 7 November compact K3 proof-clarification revisions.
 for _slug in ("exceptional-cycles", "integral-reconstruction"):
  REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
+# Authorized Paper 21 substantive revision; its catalogue entry postdates BASE.
+REVISED_METADATA["heterotic-k3-enhancement"] = {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)

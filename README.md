@@ -49,7 +49,7 @@ separate nonbalanced cohomology relaxation, nonscalar static estimates and sharp
 regularity for an explicit family. Its paper page records the original date,
 revision date, current public-repository PDF and versioned Zenodo archive.
 
-The heterotic K3 application has its home in the Physics guide, with companion links from Geometry and the focused Stability & Degeneration guide. Its paper page distinguishes the ratio-uniform leading vector theorem, the defined first-order vector correction and the ordered large-volume scalar coefficient. The released PDF, Zenodo DOI, full abstract and reciprocal paper links are recorded in `data/papers.json`.
+The heterotic K3 application has its home in the Physics guide, with companion links from Geometry and the focused Stability & Degeneration guide. Its paper page describes the uniform complete leading Yang–Mills amplitude, relative first-order vector correction, selected curvature coefficient and partial next-tree results. The released PDF, Zenodo DOI, full abstract and reciprocal paper links are recorded in `data/papers.json`.
 
 ## Rebuilding and checks
 
