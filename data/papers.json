@@ -3708,11 +3708,11 @@
       "revision_date": "2026-11-08",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24063938",
-        "url": "https://zenodo.org/records/24063938",
-        "deposited_at": "2026-11-08T23:34:35.129723+00:00"
+        "doi": "10.5281/zenodo.24068195",
+        "url": "https://zenodo.org/records/24068195",
+        "deposited_at": "2026-11-09T02:15:08.367501+00:00"
       },
-      "citation_doi": "10.5281/zenodo.24063938",
+      "citation_doi": "10.5281/zenodo.24068195",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3743,17 +3743,25 @@
       ],
       "verified_on": "2026-11-08",
       "abstract_html": "<p>We determine light-vector masses and a leading neutral-scalar interaction near gauge enhancement in an SO(32) heterotic compactification on a smooth K3 surface. A family of stable bundles approaches a repeated rank-three factor. For harmonic deformation amplitudes <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>a</mi><mo>,</mo><mi>b</mi></math>, quantitative Hermitian–Einstein reconstruction gives three leading squared vector masses proportional to <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>b</mi><mn>2</mn></msup></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>a</mi><mn>2</mn></msup></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math>, with relative geometric error of order <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math> independent of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>/</mo><mi>a</mi></math>. We calculate and bound the first tree-level correction to the effective vector eigenvalue equation, including the complete leading metric and two-form Kaluza–Klein towers. An anti-self-dual Hodge identity gives positivity and preserves the unbroken gauge kernels. In the same family, a neutral-scalar interaction coefficient grows as the inverse square of the deformation amplitude at fixed positive <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>b</mi><mo>/</mo><mi>a</mi></math>, with quadratic relative geometric error. Its identification uses derivative estimates for the bundle metric and a reduction retaining the other neutral fields. The vector bound applies to the stated first-order system. For the scalar result, we first extract the tree-level large-volume coefficient at each regular point, then approach enhancement at fixed positive ratio; a uniform finite-string-scale remainder is not asserted.</p>",
-      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/897b82a1ac837427a815315eeab0da1923a4dba2/papers/21_heterotic_k3_enhancement/main.tex",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/5c6e2211a6e5dd721761bca02de2a14b9f1521a6/papers/21_heterotic_k3_enhancement/main.tex",
       "pdf": {
-        "sha256": "b81808a08b1224a0ee0ff055f1f7dfc3612386579b04872452c41c1b530455e2",
-        "size_bytes": 411064,
+        "sha256": "5bf06b71383de3a5775c526c88cdb802ae74af17df3ef1249b11624b88fe398c",
+        "size_bytes": 411159,
         "pages": 23,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/897b82a1ac837427a815315eeab0da1923a4dba2/papers/21_heterotic_k3_enhancement/heterotic-k3-enhancement.pdf",
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/5c6e2211a6e5dd721761bca02de2a14b9f1521a6/papers/21_heterotic_k3_enhancement/heterotic-k3-enhancement.pdf",
         "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/21_heterotic_k3_enhancement/heterotic-k3-enhancement.pdf",
-        "source_commit": "897b82a1ac837427a815315eeab0da1923a4dba2",
+        "source_commit": "5c6e2211a6e5dd721761bca02de2a14b9f1521a6",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/21_heterotic_k3_enhancement/heterotic-k3-enhancement.pdf"
-      }
+      },
+      "archive_history": [
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.24063938",
+          "url": "https://zenodo.org/records/24063938",
+          "deposited_at": "2026-11-08T23:34:35.129723+00:00"
+        }
+      ]
     }
   ]
 }

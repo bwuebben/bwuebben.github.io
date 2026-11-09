@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-08",
+    "title": "Clickable bibliography DOIs for heterotic K3 enhancement",
+    "url": "/papers/heterotic-k3-enhancement/",
+    "description": "The DOI references to the two companion geometric papers now open their archived versions directly. The printed text, mathematical results and physical approximations are unchanged."
+  },
+  {
+    "date": "2026-11-08",
     "title": "Light vectors and scalar interactions near heterotic K3 gauge enhancement",
     "url": "/papers/heterotic-k3-enhancement/",
     "description": "Light-vector masses near gauge enhancement in an SO(32) heterotic K3 compactification admit relative geometric control even when the Higgs scales separate arbitrarily. The first tree vector correction includes the complete leading metric and two-form towers and preserves the unbroken gauge kernels. In the same bundle family, a compensated reduction identifies a leading neutral-scalar interaction with inverse-square growth at fixed positive deformation ratio. The vector estimate concerns a defined first-order system; the scalar statement extracts the tree large-volume coefficient before enhancement. Uniform finite-string-scale remainders remain open."
