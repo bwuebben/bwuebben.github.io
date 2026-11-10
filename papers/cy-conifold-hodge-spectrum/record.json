@@ -1,0 +1,72 @@
+{
+  "slug": "cy-conifold-hodge-spectrum",
+  "catalogue_anchor": "cy-conifold-hodge-spectrum",
+  "catalogue_title": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+  "title": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 22",
+  "status": "Preprint",
+  "publication_date": "2026-11-09",
+  "revision_date": "2026-11-09",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24094892",
+    "url": "https://zenodo.org/records/24094892",
+    "deposited_at": "2026-11-10T00:06:05.910263+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24094892",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf"
+    },
+    {
+      "label": "source and exact calculations",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/22_cy_hodge_spectrum"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+    },
+    {
+      "label": "Nonsimplicial local stability chambers of toric tangent bundles",
+      "url": "https://bwuebben.github.io/papers/nonsimplicial-toric-stability-chambers/"
+    },
+    {
+      "label": "Integral reconstruction and quantitative metric degeneration of K3 bundle moduli",
+      "url": "https://bwuebben.github.io/papers/integral-reconstruction/"
+    },
+    {
+      "label": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+      "url": "https://bwuebben.github.io/papers/cy-vanishing-cycle/"
+    },
+    {
+      "label": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+      "url": "https://bwuebben.github.io/papers/cy-mixed-smoothing/"
+    },
+    {
+      "label": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
+      "url": "https://bwuebben.github.io/papers/cy-conifold-relations/"
+    }
+  ],
+  "verified_on": "2026-11-09",
+  "abstract_html": "<p>We determine the leading small spectrum of the Hodge Laplacian on real two-forms for Ricci-flat metrics in polarized Calabi–Yau conifold transitions. We assume a simply connected projective small resolution and a fixed smoothing that smooths every node to first order, approached along a fixed ray. Exactly as many positive eigenvalues tend to zero as there are divisor directions lost under smoothing, and their decay is inverse-logarithmic in the smoothing parameter. The leading coefficients are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>π</mi></math> times the generalized eigenvalues of the squared exceptional-period form relative to the harmonic norm after projection off all surviving cohomology. We compute this norm from global intersections. The divisor-period restriction map also determines the integral relations among cohomological vanishing cycles. The small eigenspaces are coexact and primitive of real type <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, with a uniform gap in the remaining positive two-form spectrum. Applications to four-node and eight-node toric transitions give three and two distinct coefficients, respectively. For the sixteen-node split quintic with Kähler class <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>c</mi><mn>1</mn></msub><mo>(</mo><mi mathvariant=\"script\">O</mi><mo>(</mo><mn>1</mn><mo>)</mo><mo>)</mo></math>, the coefficient is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mi>π</mi></math>; we also calculate its integral rings, attachment and specialization maps, primitive vanishing lattice and monodromy image of index sixteen. The resolution and smoothing branches converge to a common Ricci-flat metric completion, and their tangent Hermitian–Einstein connections converge smoothly to the central tangent connection on compact subsets of the regular locus.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/364b193208524ba8a0938677eff05fc8934d603c/papers/22_cy_hodge_spectrum/main.tex",
+  "pdf": {
+    "sha256": "2b986c9ea0e6da09b52e50fd1872ad1a52f1f53aad6feb680ca82af9991cc931",
+    "size_bytes": 556172,
+    "pages": 41,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/364b193208524ba8a0938677eff05fc8934d603c/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf",
+    "source_commit": "364b193208524ba8a0938677eff05fc8934d603c",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf"
+  }
+}

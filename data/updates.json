@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-09",
+    "title": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+    "url": "/papers/cy-conifold-hodge-spectrum/",
+    "description": "Exceptional periods and global intersections determine the leading small two-form spectrum of Ricci-flat metrics in fixed polarized Calabi–Yau conifold smoothings. With a simply connected projective small resolution and first-order smoothing at every node along a fixed ray, exactly the lost divisor directions yield positive eigenvalues tending to zero. Their inverse-logarithmic coefficients use the harmonic norm after projection off all surviving cohomology. Four-node and eight-node toric families and the sixteen-node split quintic give explicit coefficients; the quintic also has calculated integral rings, attachments, specialization and monodromy. The four-node application uses the original-side family established in the Calabi–Yau smoothing programme."
+  },
+  {
+    "date": "2026-11-09",
     "title": "Scalar scattering across separated Higgs scales",
     "url": "/papers/heterotic-k3-enhancement/",
     "description": "Scalar scattering in a smooth heterotic K3 family admits a uniform light-vector comparison as the Higgs scales separate. The complete leading Yang–Mills tree amplitude includes every internal vector and scalar mode, below the heavier Higgs masses and away from the light poles. Actual harmonic-state estimates and an exact contact–exchange cancellation also give a selected curvature coefficient with uniform inverse-square growth. Relative vector corrections, quadratic potential mixing with K3 metric deformations and universal graviton exchange are controlled separately; the complete next heterotic coefficient and finite-string-scale remainders remain open."

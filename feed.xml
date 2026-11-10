@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Integral topology and small eigenvalues in Calabi–Yau conifold transitions</title>
+      <link>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/</link>
+      <guid>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/#update-2026-11-09</guid>
+      <description>Exceptional periods and global intersections determine the leading small two-form spectrum of Ricci-flat metrics in fixed polarized Calabi–Yau conifold smoothings. With a simply connected projective small resolution and first-order smoothing at every node along a fixed ray, exactly the lost divisor directions yield positive eigenvalues tending to zero. Their inverse-logarithmic coefficients use the harmonic norm after projection off all surviving cohomology. Four-node and eight-node toric families and the sixteen-node split quintic give explicit coefficients; the quintic also has calculated integral rings, attachments, specialization and monodromy. The four-node application uses the original-side family established in the Calabi–Yau smoothing programme.</description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Scalar scattering across separated Higgs scales</title>
       <link>https://bwuebben.github.io/papers/heterotic-k3-enhancement/</link>
       <guid>https://bwuebben.github.io/papers/heterotic-k3-enhancement/#update-2026-11-09</guid>
