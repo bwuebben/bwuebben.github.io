@@ -1,0 +1,72 @@
+{
+  "slug": "effective-hym-nodal-curves",
+  "catalogue_anchor": "effective-hym-nodal-curves",
+  "catalogue_title": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+  "title": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 25",
+  "status": "Preprint",
+  "publication_date": "2026-11-10",
+  "revision_date": "2026-11-10",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24120966",
+    "url": "https://zenodo.org/records/24120966",
+    "deposited_at": "2026-11-10T22:27:23.229828+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24120966",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/25_hym_nodal_curves/effective-hym-nodal-curves.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/25_hym_nodal_curves"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+      "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+    },
+    {
+      "label": "Small eigenvalues on degenerating curves and the intersection form",
+      "url": "https://bwuebben.github.io/papers/curve-intersection-spectrum/"
+    },
+    {
+      "label": "Small Hodge eigenvalues on nodal degenerations of threefolds",
+      "url": "https://bwuebben.github.io/papers/nodal-threefold-spectrum/"
+    },
+    {
+      "label": "Quantitative local models for Hermitian–Einstein metrics",
+      "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+    },
+    {
+      "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+      "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
+    }
+  ],
+  "verified_on": "2026-11-10",
+  "abstract_html": "<p>We prove a finite-dimensional limit for Hermitian–Yang–Mills metric flow on the trivial bundle over a compact curve approaching a reduced nodal fibre. The total space is smooth and Kähler, the central components are smooth, and each node joins distinct components. On the time scale <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>log</mi><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>t</mi><mo stretchy=\"false\">&#x0007C;</mo><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>t</mi></mrow></math> is the degeneration parameter, the limiting component metrics follow the gradient flow of the sum of their squared symmetric-space distances, with component areas as masses and one coupling for each node. For uniformly bounded determinant-one initial metrics with prescribed local <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow></math> limits away from the nodes, we prove uniform global <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow></math> tracking on bounded rescaled time intervals and pointwise tracking away from the nodes after a fixed physical-time transient. The construction combines component Green functions, exact stationary neck metrics and the Donaldson trace inequality. At the constant flat metric, we also identify the rescaled linearized heat evolution on the small spectral subspace and prove a uniform gap on its orthogonal complement. A rank-two example on a smoothing of a triangle of projective lines has component metrics that admit no simultaneous diagonalization by a fixed holomorphic frame.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/f0ae2838447bffd3151c1f69fe8b0c07ba90242a/papers/25_hym_nodal_curves/main.tex",
+  "pdf": {
+    "sha256": "dec34cd32e400b9a53e8d81e1c10504fe27ba54d22d670751d7a542b4c3b6e9d",
+    "size_bytes": 360908,
+    "pages": 16,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/f0ae2838447bffd3151c1f69fe8b0c07ba90242a/papers/25_hym_nodal_curves/effective-hym-nodal-curves.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/25_hym_nodal_curves/effective-hym-nodal-curves.pdf",
+    "source_commit": "f0ae2838447bffd3151c1f69fe8b0c07ba90242a",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/25_hym_nodal_curves/effective-hym-nodal-curves.pdf"
+  }
+}

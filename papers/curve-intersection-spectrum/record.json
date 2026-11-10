@@ -1,0 +1,64 @@
+{
+  "slug": "curve-intersection-spectrum",
+  "catalogue_anchor": "curve-intersection-spectrum",
+  "catalogue_title": "Small eigenvalues on degenerating curves and the intersection form",
+  "title": "Small eigenvalues on degenerating curves and the intersection form",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 23",
+  "status": "Preprint",
+  "publication_date": "2026-11-10",
+  "revision_date": "2026-11-10",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24120959",
+    "url": "https://zenodo.org/records/24120959",
+    "deposited_at": "2026-11-10T22:26:07.943548+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24120959",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/23_curve_intersection_spectrum/curve-intersection-spectrum.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/23_curve_intersection_spectrum"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+      "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+    },
+    {
+      "label": "Small Hodge eigenvalues on nodal degenerations of threefolds",
+      "url": "https://bwuebben.github.io/papers/nodal-threefold-spectrum/"
+    },
+    {
+      "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+      "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+    }
+  ],
+  "verified_on": "2026-11-10",
+  "abstract_html": "<p>Let a holomorphic family of compact Riemann surfaces over a disc, with smooth total space, degenerate to a reduced curve with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>N</mi></mrow></math> irreducible components and arbitrary singularities, and let the fibres carry the metrics induced by a Riemannian metric on the total space that is Hermitian near the singular points of the central fibre. We prove that the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>N</mi><mo>&#x02212;</mo><mn>1</mn></mrow></math> eigenvalues of the Laplace–Beltrami operator on functions that tend to zero, multiplied by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>log</mi><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>s</mi><mo stretchy=\"false\">&#x0007C;</mo><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi></mrow></math> is the parameter, converge to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>&#x003C0;</mi></mrow></math> times the eigenvalues of the negative intersection matrix of the components relative to the diagonal matrix of their areas, and that the remaining positive eigenvalues stay bounded away from zero. Equivalently, the small eigenvalues are asymptotic to those of a finite weighted graph on the components whose edge weights are intersection numbers, in analogy with Burger&#x27;s theorem for hyperbolic surfaces. This answers questions of Dai and Yoshikawa on the existence and geometric meaning of these limits, and evaluates the constant in their asymptotic formula for the product of the small eigenvalues as a weighted count of spanning trees. For Kähler metrics the limits can also be derived from recent work of Cao on the Archimedean height pairing combined with the eigenvalue bounds of Dai and Yoshikawa; the proof given here is direct. It uses the logarithms of local equations of the components as explicit harmonic functions on the smooth fibres, whose Dirichlet energies are computed by winding numbers.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/f0ae2838447bffd3151c1f69fe8b0c07ba90242a/papers/23_curve_intersection_spectrum/main.tex",
+  "pdf": {
+    "sha256": "23313f9655829dfe3108fe36f4eb7ce7cdcc339c3457a1f4948d62cd8627afb0",
+    "size_bytes": 338949,
+    "pages": 11,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/f0ae2838447bffd3151c1f69fe8b0c07ba90242a/papers/23_curve_intersection_spectrum/curve-intersection-spectrum.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/23_curve_intersection_spectrum/curve-intersection-spectrum.pdf",
+    "source_commit": "f0ae2838447bffd3151c1f69fe8b0c07ba90242a",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/23_curve_intersection_spectrum/curve-intersection-spectrum.pdf"
+  }
+}

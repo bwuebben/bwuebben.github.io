@@ -54,6 +54,18 @@
     {
       "label": "Mirror Symmetry for Conifold Relations in Calabi–Yau Threefolds",
       "url": "https://bwuebben.github.io/papers/cy-conifold-relations/"
+    },
+    {
+      "label": "Small eigenvalues on degenerating curves and the intersection form",
+      "url": "https://bwuebben.github.io/papers/curve-intersection-spectrum/"
+    },
+    {
+      "label": "Small Hodge eigenvalues on nodal degenerations of threefolds",
+      "url": "https://bwuebben.github.io/papers/nodal-threefold-spectrum/"
+    },
+    {
+      "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+      "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
     }
   ],
   "verified_on": "2026-11-09",

@@ -184,7 +184,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 67 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 70 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -594,3 +594,6 @@ The compact K3 pair, [exceptional cycles](https://bwuebben.github.io/papers/exce
 [Integral topology and small eigenvalues in Calabi–Yau conifold transitions](https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/) connects fixed polarized Ricci-flat smoothings to exceptional periods and global quotient harmonic norms, with explicit compact integral topology. Original and separate version dates are 9 November 2026. The full abstract, exact PDF, source commit, checksum and Zenodo identity are in `data/papers.json`. The geometry guides and Calabi–Yau guide distinguish the spectral contribution from the shared foundations and original-side four-node family.
 
 The 9 November 2026 revision of the Calabi–Yau conifold spectrum result separates the conic model law and pointwise metric transfer, expands the finite-node metric and compactness arguments, and places supporting topology and tangent geometry in appendices. The exact revised abstract, source/PDF and version-specific archive identity are recorded in `data/papers.json`.
+
+
+Papers 23–25, dated 10 November 2026, connect component intersections to small scalar spectra, exceptional periods to the Hodge spectrum of induced-metric nodal threefolds, and node capacities to actual noncommuting HYM flow on trivial bundles over degenerating curves. Their exact abstracts, PDFs, source commits and Zenodo identities are recorded in `data/papers.json`. The geometry overview and focused programme guide distinguish the metric settings and retain the bounded-time and trivial-bundle hypotheses of the flow theorem.
