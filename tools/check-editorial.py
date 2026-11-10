@@ -28,6 +28,8 @@ REVISED_METADATA["singular-hym-metric-growth"] = {"abstract_html", "abstract_sou
 # Authorized 30 October series introductions, DOI references and manuscript revision.
 for _slug in ("af-cobordism-i", "af-cobordism-ii", "af-cobordism-iii"):
  REVISED_METADATA[_slug] = {"abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi", "resources"}
+# The announced Paper I arXiv DOI is still pending resolver registration.
+REVISED_METADATA["af-cobordism-i"].add("citation_doi_pending")
 for _anchor in ("cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii"):
  REVISED_METADATA[_anchor] = set()
 # Authorized 7 November compact K3 proof-clarification revisions.

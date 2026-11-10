@@ -458,7 +458,8 @@
           "doi": "10.5281/zenodo.23811438",
           "url": "https://zenodo.org/records/23811438"
         }
-      ]
+      ],
+      "citation_doi_pending": true
     },
     {
       "slug": "af-cobordism-ii",

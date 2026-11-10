@@ -77,6 +77,8 @@ def validate(papers):
                 raise ValueError(f'{p["slug"]}: revision predates publication')
         if p.get('citation_doi') and p['citation_doi'] != (p.get('archive') or {}).get('doi'):
             raise ValueError(f'{p["slug"]}: unexpected citation DOI')
+        if p.get('citation_doi_pending') and (not p.get('citation_doi') or (p.get('archive') or {}).get('name') != 'arXiv'):
+            raise ValueError(f'{p["slug"]}: pending DOI requires an arXiv citation')
         if not p.get('pdf') and not p.get('pdf_pending_reason'):
             raise ValueError(f'{p["slug"]}: missing PDF or explicit archive-only reason')
         if not p.get('pdf') and not p.get('archive'):
@@ -160,6 +162,12 @@ def render(p, template, css_version, context):
     year = (p.get('revision_date') or date)[:4]
     citation_url = 'https://doi.org/' + p['citation_doi'] if p.get('citation_doi') else canonical
     citation_label = 'doi:' + p['citation_doi'] if p.get('citation_doi') else 'Current manuscript'
+    if p.get('citation_doi_pending'):
+        citation_url = archive['url']
+        citation_label = 'arXiv:' + archive['url'].rstrip('/').split('/')[-1]
+    citation_link = f'<a href="{esc(citation_url)}">{esc(citation_label)}</a>'
+    if p.get('citation_doi_pending'):
+        citation_link += f' · doi:{esc(p["citation_doi"])} (registration pending)'
     citation_status = p['status']
     if p.get('revision_date'):
         citation_status += ', revised ' + pretty_date(p['revision_date'])
@@ -180,7 +188,7 @@ def render(p, template, css_version, context):
         authors=authors, dates=dates, read_link=read_link, abstract_html=p['abstract_html'],
         status_note=f'<p class="paper-status-note">{esc(p["status_note"])}</p>' if p.get('status_note') else '',
         resources=links, citation_status=esc(p['status']), year=year,
-        citation_link=f'<a href="{esc(citation_url)}">{esc(citation_label)}</a>', related=related,
+        citation_link=citation_link, related=related,
         context=context_line(context))
     bib_title = p.get('bibtex_title', p['title'])
     for char in ('&', '%', '#', '_'):
