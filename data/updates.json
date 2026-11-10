@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-09",
+    "title": "Calabi–Yau conifold spectra: metric comparison and spectral proof",
+    "url": "/papers/cy-conifold-hodge-spectrum/",
+    "description": "Small positive Hodge eigenvalues in fixed polarized Ricci-flat conifold smoothings are determined by exceptional periods and global quotient harmonic norms. The revised proof separates the ordered spectral law on exact conic models from its transfer under pointwise metric comparison, and establishes that comparison for the prescribed family with finitely many nodes. The finite-cap compactness argument is explicit; the stronger differentiated estimate is reserved for the rank-one remainder. Supporting integral topology and tangent-sheaf calculations appear in appendices."
+  },
+  {
+    "date": "2026-11-09",
     "title": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
     "url": "/papers/cy-conifold-hodge-spectrum/",
     "description": "Exceptional periods and global intersections determine the leading small two-form spectrum of Ricci-flat metrics in fixed polarized Calabi–Yau conifold smoothings. With a simply connected projective small resolution and first-order smoothing at every node along a fixed ray, exactly the lost divisor directions yield positive eigenvalues tending to zero. Their inverse-logarithmic coefficients use the harmonic norm after projection off all surviving cohomology. Four-node and eight-node toric families and the sixteen-node split quintic give explicit coefficients; the quintic also has calculated integral rings, attachments, specialization and monodromy. The four-node application uses the original-side family established in the Calabi–Yau smoothing programme."

@@ -15,11 +15,11 @@
   "revision_date": "2026-11-09",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24094892",
-    "url": "https://zenodo.org/records/24094892",
-    "deposited_at": "2026-11-10T00:06:05.910263+00:00"
+    "doi": "10.5281/zenodo.24096887",
+    "url": "https://zenodo.org/records/24096887",
+    "deposited_at": "2026-11-10T03:45:24.779987+00:00"
   },
-  "citation_doi": "10.5281/zenodo.24094892",
+  "citation_doi": "10.5281/zenodo.24096887",
   "resources": [
     {
       "label": "current version (PDF)",
@@ -57,16 +57,24 @@
     }
   ],
   "verified_on": "2026-11-09",
-  "abstract_html": "<p>We determine the leading small spectrum of the Hodge Laplacian on real two-forms for Ricci-flat metrics in polarized Calabi–Yau conifold transitions. We assume a simply connected projective small resolution and a fixed smoothing that smooths every node to first order, approached along a fixed ray. Exactly as many positive eigenvalues tend to zero as there are divisor directions lost under smoothing, and their decay is inverse-logarithmic in the smoothing parameter. The leading coefficients are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>π</mi></math> times the generalized eigenvalues of the squared exceptional-period form relative to the harmonic norm after projection off all surviving cohomology. We compute this norm from global intersections. The divisor-period restriction map also determines the integral relations among cohomological vanishing cycles. The small eigenspaces are coexact and primitive of real type <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, with a uniform gap in the remaining positive two-form spectrum. Applications to four-node and eight-node toric transitions give three and two distinct coefficients, respectively. For the sixteen-node split quintic with Kähler class <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>c</mi><mn>1</mn></msub><mo>(</mo><mi mathvariant=\"script\">O</mi><mo>(</mo><mn>1</mn><mo>)</mo><mo>)</mo></math>, the coefficient is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mi>π</mi></math>; we also calculate its integral rings, attachment and specialization maps, primitive vanishing lattice and monodromy image of index sixteen. The resolution and smoothing branches converge to a common Ricci-flat metric completion, and their tangent Hermitian–Einstein connections converge smoothly to the central tangent connection on compact subsets of the regular locus.</p>",
-  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/364b193208524ba8a0938677eff05fc8934d603c/papers/22_cy_hodge_spectrum/main.tex",
+  "abstract_html": "<p>We determine the leading small spectrum of the Hodge Laplacian on real two-forms for Ricci-flat metrics in polarized Calabi–Yau conifold transitions. We assume a simply connected projective small resolution and a fixed smoothing that smooths every node to first order, approached along a fixed ray. Exactly as many positive eigenvalues tend to zero as there are divisor directions lost under smoothing, and their decay is inverse-logarithmic in the smoothing parameter. The leading coefficients are <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>2</mn><mi>π</mi></math> times the generalized eigenvalues of the squared exceptional-period form relative to the harmonic norm after projection off all surviving cohomology. We compute this norm from global intersections. The divisor-period restriction map also determines the integral relations among cohomological vanishing cycles. The small eigenspaces are coexact and primitive of real type <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mo>(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>)</mo></math>, with a uniform gap in the remaining positive two-form spectrum. Applications to four-node and eight-node toric transitions give three and two distinct coefficients, respectively. For the sixteen-node split quintic with Kähler class <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msub><mi>c</mi><mn>1</mn></msub><mo>(</mo><mi mathvariant=\"script\">O</mi><mo>(</mo><mn>1</mn><mo>)</mo><mo>)</mo></math>, the coefficient is <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mn>10</mn><mi>π</mi></math>; we also calculate its integral rings, attachment and specialization maps, primitive vanishing lattice and monodromy image of index sixteen.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/4bff106522f39ed0763174bf3061d8aafde73215/papers/22_cy_hodge_spectrum/main.tex",
   "pdf": {
-    "sha256": "2b986c9ea0e6da09b52e50fd1872ad1a52f1f53aad6feb680ca82af9991cc931",
-    "size_bytes": 556172,
+    "sha256": "ee97656ffb7f2c3748a5e78029256484019ac2cf2751c2050cd2330bc8e5ed00",
+    "size_bytes": 564255,
     "pages": 41,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/364b193208524ba8a0938677eff05fc8934d603c/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/4bff106522f39ed0763174bf3061d8aafde73215/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf",
     "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf",
-    "source_commit": "364b193208524ba8a0938677eff05fc8934d603c",
+    "source_commit": "4bff106522f39ed0763174bf3061d8aafde73215",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/22_cy_hodge_spectrum/cy-conifold-hodge-spectrum.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.24094892",
+      "url": "https://zenodo.org/records/24094892",
+      "deposited_at": "2026-11-10T00:06:05.910263+00:00"
+    }
+  ]
 }

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Calabi–Yau conifold spectra: metric comparison and spectral proof</title>
+      <link>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/</link>
+      <guid>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/#update-2026-11-09</guid>
+      <description>Small positive Hodge eigenvalues in fixed polarized Ricci-flat conifold smoothings are determined by exceptional periods and global quotient harmonic norms. The revised proof separates the ordered spectral law on exact conic models from its transfer under pointwise metric comparison, and establishes that comparison for the prescribed family with finitely many nodes. The finite-cap compactness argument is explicit; the stronger differentiated estimate is reserved for the rank-one remainder. Supporting integral topology and tangent-sheaf calculations appear in appendices.</description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Integral topology and small eigenvalues in Calabi–Yau conifold transitions</title>
       <link>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/</link>
       <guid>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/#update-2026-11-09</guid>
