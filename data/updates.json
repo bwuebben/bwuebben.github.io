@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-09",
+    "title": "Atiyah–Floer cobordism bibliography revision",
+    "url": "/papers/af-cobordism-i/",
+    "description": "References to the mod-two Atiyah–Floer cobordism comparison now identify arXiv:2611.10002 in the integral comparison and normalization bibliographies. The mathematical statements and proofs are unchanged."
+  },
+  {
+    "date": "2026-11-09",
     "title": "Calabi–Yau conifold spectra: metric comparison and spectral proof",
     "url": "/papers/cy-conifold-hodge-spectrum/",
     "description": "Small positive Hodge eigenvalues in fixed polarized Ricci-flat conifold smoothings are determined by exceptional periods and global quotient harmonic norms. The revised proof separates the ordered spectral law on exact conic models from its transfer under pointwise metric comparison, and establishes that comparison for the prescribed family with finitely many nodes. The finite-cap compactness argument is explicit; the stronger differentiated estimate is reserved for the rank-one remainder. Supporting integral topology and tangent-sheaf calculations appear in appendices."

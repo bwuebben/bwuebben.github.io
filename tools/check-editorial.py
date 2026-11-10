@@ -6,7 +6,7 @@ from urllib.parse import urlsplit, unquote
 import json,re,subprocess,xml.etree.ElementTree as ET
 ROOT=Path(__file__).resolve().parents[1]
 BASE="d3e1bf2"  # Published baseline before the authorized trilogy release.
-ARXIV_CATALOGUE_UPDATES={"calabi-yau-smoothability-paper4", "calabi-yau-smoothability-paper5"}
+ARXIV_CATALOGUE_UPDATES={"cobordism-maps-atiyah-floer", "calabi-yau-smoothability-paper4", "calabi-yau-smoothability-paper5"}
 AUTHORIZED_CATALOGUE_UPDATES={"cobordism-maps-atiyah-floer", "cobordism-maps-atiyah-floer-ii", "toric-local-stability-chambers", "small-dolbeault-stability-walls", "toric-blowups-bundles"} | ARXIV_CATALOGUE_UPDATES
 # The 27 October abstract review authorizes prose changes for these two entries
 # and a new manuscript/archive version only for the spectral companion.
@@ -87,7 +87,7 @@ for key in AUTHORIZED_CATALOGUE_UPDATES:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
   assert len(re.findall(r'href="https://arxiv\.org/abs/\d{4}\.\d{4,5}(?:v\d+)?"',new))==1,"Expected one primary arXiv link"
   assert "zenodo.org/records/" not in new,"arXiv must replace the visible Zenodo link"
- if key in REVISED_METADATA:
+ if key in REVISED_METADATA and key not in ARXIV_CATALOGUE_UPDATES:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
   assert len(re.findall(r'href="https://zenodo.org/records/\d+"',new))==1,"Expected one current archive link"
  assert old_links <= new_links,"Existing paper resource removed"

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Atiyah–Floer cobordism bibliography revision</title>
+      <link>https://bwuebben.github.io/papers/af-cobordism-i/</link>
+      <guid>https://bwuebben.github.io/papers/af-cobordism-i/#update-2026-11-09</guid>
+      <description>References to the mod-two Atiyah–Floer cobordism comparison now identify arXiv:2611.10002 in the integral comparison and normalization bibliographies. The mathematical statements and proofs are unchanged.</description>
+      <pubDate>Mon, 09 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Calabi–Yau conifold spectra: metric comparison and spectral proof</title>
       <link>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/</link>
       <guid>https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/#update-2026-11-09</guid>
