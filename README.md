@@ -184,7 +184,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 70 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 73 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -517,7 +517,7 @@ the cubic obstruction, a vanishing graph mode, relative error and the two kinds
 of singularity. The cubic diagram is explicitly a real slice of the reduced
 zero set and does not depict embedded nonreduced structure.
 
-`SUBGUIDES` in `tools/build-editorial.py` groups all 27 manuscripts by mathematical
+`SUBGUIDES` in `tools/build-editorial.py` groups the manuscripts by mathematical
 role, starting with the general local theorem. References use descriptive titles
 and links; manuscript numbers indicate the suggested reading order. Styles are
 confined to `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
@@ -597,3 +597,6 @@ The 9 November 2026 revision of the Calabi–Yau conifold spectrum result separa
 
 
 Papers 23–25, dated 10 November 2026, connect component intersections to small scalar spectra, exceptional periods to the Hodge spectrum of induced-metric nodal threefolds, and node capacities to actual noncommuting HYM flow on trivial bundles over degenerating curves. Their exact abstracts, PDFs, source commits and Zenodo identities are recorded in `data/papers.json`. The geometry overview and focused programme guide distinguish the metric settings and retain the bounded-time and trivial-bundle hypotheses of the flow theorem.
+
+
+The compact-curve gluing, type-K threefold and all-time curve results extend the Stability & Degeneration guide to actual HYM dynamics on degenerating bases. The guide retains fixed-constraint and small-basin restrictions for the absolute all-time estimate, prescribed product-induced metrics and the rate bound for the type-K result, and marked observations for the curve inverse. Their full abstracts, original and revision dates, exact public PDFs and Zenodo archives are in `data/papers.json`.

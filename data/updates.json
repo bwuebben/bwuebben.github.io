@@ -1,5 +1,23 @@
 [
   {
+    "date": "2026-11-11",
+    "title": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+    "url": "/papers/all-time-hym-curves/",
+    "description": "Hermitian–Yang–Mills flow on a compact genus-three family admits an absolute approximation uniform for all time as four node parameters and two component-holonomy parameters tend independently to zero. Fixed holonomy generators and node identifications, uniformly bounded actual initial metrics and small finite initial data are retained, but no lower bound on the weakest decay rate is required. A global divergence representation and energy estimates control every relaxation time; the same family has complete relative spectral asymptotics and an example with h⁻¹, h⁻² and h⁻⁴ time scales."
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+    "url": "/papers/type-k-hym-dynamics/",
+    "description": "A compact Enriques Calabi–Yau degeneration carries a nonflat rank-four Hermitian–Einstein bundle family whose five small endomorphism eigenvalues admit relative asymptotics through strict polystability. A constrained noncommuting matrix flow tracks actual Hermitian–Yang–Mills trajectories for prescribed product-induced Kähler metrics, including entry from non-tensor spatial data. Tracking holds on bounded logarithmic time intervals and for all time under a positive effective-rate bound; the spectrum also recovers projective cycle transport within the specified family."
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+    "url": "/papers/global-gluing-hym-curves/",
+    "description": "On compact degenerating curve families, noncommuting unitary gluing gives a finite matrix flow that approximates actual Hermitian–Yang–Mills trajectories, with relative control of every small eigenvalue and entry from an open spatial class. Independent node lengths and weak component holonomy are permitted in their stated families; all-time tracking requires a positive normalized rate. A Hodge-metric comparison and marked spectral observations recover projective gluing, and a separate finite class recovers unknown incidence and integral monodromy."
+  },
+  {
     "date": "2026-11-10",
     "title": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
     "url": "/papers/effective-hym-nodal-curves/",

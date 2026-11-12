@@ -1,0 +1,64 @@
+{
+  "slug": "global-gluing-hym-curves",
+  "catalogue_anchor": "global-gluing-hym-curves",
+  "catalogue_title": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+  "title": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 26",
+  "status": "Preprint",
+  "publication_date": "2026-11-11",
+  "revision_date": "2026-11-11",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24149197",
+    "url": "https://zenodo.org/records/24149197",
+    "deposited_at": "2026-11-12T01:39:57.327334+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24149197",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/26_global_gluing_hym_curves/global-gluing-hym-curves.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/26_global_gluing_hym_curves"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+      "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+      "url": "https://bwuebben.github.io/papers/type-k-hym-dynamics/"
+    },
+    {
+      "label": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/all-time-hym-curves/"
+    }
+  ],
+  "verified_on": "2026-11-11",
+  "abstract_html": "<p>For a six-parameter degeneration of plane quartics, we approximate Hermitian–Yang–Mills metric flow on flat unitary bundles with trivial component connections and noncommuting gluing by a finite gradient flow. Its energy is a sum of squared distances between positive Hermitian matrices after unitary transport, weighted by neck capacities. The integrated squared-distance comparison holds on time intervals proportional to the shortest logarithmic neck length, uniformly in all node-length ratios and as the gluing representation becomes reducible. We prove relative asymptotics for every small linearized eigenvalue and reach the comparison from an open class of bounded spatial initial metrics with uniform component regularity after a negligible initial layer. The comparison holds for all time when the smallest effective eigenvalue times the shortest logarithmic neck length stays bounded away from zero. A second compact family permits independently vanishing component holonomy and neck size. On the quartic family with equal node parameters we determine the leading Hodge metric on the unitary Schottky locus and asymptotically recover projective gluing from low eigenvalues and component averages of orthonormal eigensections in fixed unitary frames. On a finite class of first-order rational-component smoothings, these observations and the base-loop orientation determine unknown adjacency and the integral symplectic conjugacy class of monodromy.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/26_global_gluing_hym_curves/main.tex",
+  "pdf": {
+    "sha256": "2937a59b1f99b5254824e1bbf57d9b3045c752b54a531c85c49d85fbc544623d",
+    "size_bytes": 516936,
+    "pages": 39,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/26_global_gluing_hym_curves/global-gluing-hym-curves.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/26_global_gluing_hym_curves/global-gluing-hym-curves.pdf",
+    "source_commit": "64c2c23d6bae287ebfba0d97029466bb0f91524f",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/26_global_gluing_hym_curves/global-gluing-hym-curves.pdf"
+  }
+}

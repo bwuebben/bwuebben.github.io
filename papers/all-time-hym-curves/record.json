@@ -1,0 +1,64 @@
+{
+  "slug": "all-time-hym-curves",
+  "catalogue_anchor": "all-time-hym-curves",
+  "catalogue_title": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+  "title": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 28",
+  "status": "Preprint",
+  "publication_date": "2026-11-11",
+  "revision_date": "2026-11-11",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24149212",
+    "url": "https://zenodo.org/records/24149212",
+    "deposited_at": "2026-11-12T01:43:21.976445+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24149212",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/28_all_time_hym_curves/all-time-hym-curves.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/28_all_time_hym_curves"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+      "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/global-gluing-hym-curves/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+      "url": "https://bwuebben.github.io/papers/type-k-hym-dynamics/"
+    }
+  ],
+  "verified_on": "2026-11-11",
+  "abstract_html": "<p>We prove an all-time approximation of Hermitian–Yang–Mills flow by a finite matrix gradient flow on a degenerating family of compact genus-three curves. Four independent node parameters and two component-holonomy parameters determine flat unitary bundles passing from stable to strictly polystable. With fixed infinitesimal holonomy generators and node identifications, the spatially integrated squared error is bounded, uniformly in time, by the initial integrated trace discrepancy plus an error vanishing as all six parameters tend independently to zero. Actual initial metrics are uniformly bounded and finite initial data lie in a small ball; no lower bound on the weakest decay rate is required. An open spatial initial class enters after preparation negligible on every finite relaxation scale. The proof writes the first-order component-frame error as a global divergence using its zero angular mean, and combines HYM energy with time-integrated bounds from the finite gradient flow. We also prove relative asymptotics for every positive small eigenvalue of the endomorphism connection Laplacian, with exact correspondence of kernels and varying node identifications. One stable family has relaxation scales of orders <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup></mrow></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mrow><mo>&#x02212;</mo><mn>2</mn></mrow></msup></mrow></math> and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>h</mi><mrow><mo>&#x02212;</mo><mn>4</mn></mrow></msup></mrow></math> as <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>h</mi><mo>&#x02192;</mo><mn>0</mn></mrow></math>, all covered by the nonlinear theorem.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/28_all_time_hym_curves/main.tex",
+  "pdf": {
+    "sha256": "fd96113b876d2e7d105b46ee2b48d7ec3a747949ffd69135d3decd972e1043c6",
+    "size_bytes": 908433,
+    "pages": 29,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/28_all_time_hym_curves/all-time-hym-curves.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/28_all_time_hym_curves/all-time-hym-curves.pdf",
+    "source_commit": "64c2c23d6bae287ebfba0d97029466bb0f91524f",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/28_all_time_hym_curves/all-time-hym-curves.pdf"
+  }
+}

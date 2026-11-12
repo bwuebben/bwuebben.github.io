@@ -1,0 +1,68 @@
+{
+  "slug": "type-k-hym-dynamics",
+  "catalogue_anchor": "type-k-hym-dynamics",
+  "catalogue_title": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+  "title": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 27",
+  "status": "Preprint",
+  "publication_date": "2026-11-11",
+  "revision_date": "2026-11-11",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24149210",
+    "url": "https://zenodo.org/records/24149210",
+    "deposited_at": "2026-11-12T01:43:17.175164+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24149210",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/27_type_k_hym_dynamics/type-k-hym-dynamics.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/27_type_k_hym_dynamics"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
+      "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/global-gluing-hym-curves/"
+    },
+    {
+      "label": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/all-time-hym-curves/"
+    },
+    {
+      "label": "Small Hodge eigenvalues on nodal degenerations of threefolds",
+      "url": "https://bwuebben.github.io/papers/nodal-threefold-spectrum/"
+    }
+  ],
+  "verified_on": "2026-11-11",
+  "abstract_html": "<p>We construct a rank-four holomorphic bundle family on a compact degeneration, with smoothing parameter <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>t</mi></mrow></math>, of Enriques Calabi–Yau threefolds. The threefolds are free quotients of products of a K3 surface and an elliptic curve degenerating to a cycle of four rational curves. On the unitary gluing locus, the bundles have nonflat Hermitian–Einstein connections for prescribed product-induced Kähler metrics, which need not be Ricci-flat. We identify all five small eigenvalues of the trace-free endomorphism Laplacian, prove relative asymptotics uniform up to strict polystability, and establish a uniform complementary gap. The effective quadratic energy lies on an interval with one-dimensional endpoint constraints whose relative angle records holonomy around the elliptic central-fibre cycle. We derive a finite-dimensional gradient flow of noncommuting positive Hermitian matrices and reconstruct comparison metrics approximating actual Hermitian–Yang–Mills trajectories in global <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow></math> affine distance. With determinant fixed to that of the Hermitian–Einstein reference metric, an open class of initial metrics whose relative logarithms are globally bounded and whose component-exterior restrictions admit uniformly bounded <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>C</mi><mrow><mn>6</mn><mo>&#x0002C;</mo><mi>&#x003B2;</mi></mrow></msup></mrow></math> extensions to the normalization components, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mo>&#x0003C;</mo><mi>&#x003B2;</mi><mo>&#x0003C;</mo><mn>1</mn></mrow></math>, enters this description after physical time <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0003D;</mo><mi>o</mi><mo stretchy=\"false\">&#x00028;</mo><mi>L</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>L</mi><mo>&#x0003D;</mo><mi>log</mi><mo stretchy=\"false\">&#x00028;</mo><mn>1</mn><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>t</mi><mo stretchy=\"false\">&#x0007C;</mo><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. Tracking is uniform on bounded <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>s</mi><mo>&#x0002F;</mo><mi>L</mi></mrow></math> intervals and, where the least effective eigenvalue is bounded below by a positive constant, for all subsequent times. Within the specified family, the five eigenvalues, elliptic component areas and known normalization <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>L</mi></mrow></math> asymptotically recover the projective conjugacy class of the cycle transport. Infinite physical-time limits need not commute with degeneration. The rescaled limits commute under this gap bound when the selected parallel limits of the component flows and the gluing parameters converge, but can fail near reducibility.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/27_type_k_hym_dynamics/main.tex",
+  "pdf": {
+    "sha256": "64e63f53c9324d364f6f9e61ab892464dc4835be63c782bd08212da4853e9342",
+    "size_bytes": 474588,
+    "pages": 28,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/27_type_k_hym_dynamics/type-k-hym-dynamics.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/27_type_k_hym_dynamics/type-k-hym-dynamics.pdf",
+    "source_commit": "64c2c23d6bae287ebfba0d97029466bb0f91524f",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/27_type_k_hym_dynamics/type-k-hym-dynamics.pdf"
+  }
+}

@@ -54,6 +54,18 @@
     {
       "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
       "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/global-gluing-hym-curves/"
+    },
+    {
+      "label": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
+      "url": "https://bwuebben.github.io/papers/type-k-hym-dynamics/"
+    },
+    {
+      "label": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
+      "url": "https://bwuebben.github.io/papers/all-time-hym-curves/"
     }
   ],
   "verified_on": "2026-11-10",
