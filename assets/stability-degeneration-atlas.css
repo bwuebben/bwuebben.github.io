@@ -28,6 +28,8 @@
 .atlas-page #main .leader{display:flex;gap:.85rem;text-align:left;background:transparent;border:0;padding:1.4rem 1rem;color:var(--ink)}
 .atlas-page #main .leader+.leader{border-left:1px solid var(--rule)}
 .atlas-page #main .leader:hover{background:var(--bg-panel)}
+.atlas-page #main .leader-select{display:block;text-align:left;background:transparent;border:0;padding:0}
+.atlas-page #main .leader-link{display:inline-block;margin-top:.7rem;font:.75rem/1.5 var(--sans)}
 .atlas-page #main .ordinal{font:1.7rem var(--serif);color:var(--accent)}
 .atlas-page #main .paper-label{display:block;font:.6rem/1.5 var(--sans);letter-spacing:.06em;color:var(--ink-soft);margin-bottom:.4rem}
 .atlas-page #main .leader strong{font:1.1rem/1.3 var(--serif)}
