@@ -81,6 +81,9 @@ for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
 node --check assets/geometry-overview-model.js
 node --check assets/geometry-overview.js
+node --check assets/stability-spectral-hero.js
+node tools/check-stability-atlas.cjs
+node tools/check-stability-spectral.cjs
 git diff --check
 ```
 
@@ -613,3 +616,6 @@ The 28-paper ranking is editorial. Its 44 selected theorem/method arrows and fiv
 The focused programme guide opens with a short orientation and three reading routes. Detailed dynamical discussion and the two-factor profile sit in the Dynamics section; qualifications remain beside the relevant results.
 
 The atlas stylesheet scopes every presentation rule to `#main`; only its colour variables live on the page body. This keeps the shared navigation’s native dropdown typography, padding and focus behaviour identical to other pages. Its menu entry is Research Programs → Atlas → Degeneration. The focused guide retains the original wall-crossing illustration and pairs it with three background paragraphs explaining holomorphic bundles, slope stability, the base-versus-moduli distinction and the K3/degenerating-base settings.
+
+
+The atlas opens with “One limit. Three clocks.”, an interactive spectral illustration of the explicit three-scale curve family in Paper 28, Section 8. `tools/stability_spectral_hero.py` renders an accessible static SVG; `assets/stability-spectral-hero.js` moves the parameter cursor and updates the leading-rate readouts. The twelve leading modes have coefficients 2 − √2, 2 and 2 + √2 at order h (three each), ½ at order h² (two), and 1 at order h⁴ (one). The model is explicitly asymptotic and preserves the distinction from the separate nonlinear comparison theorem. It uses the shared light/dark palette and remains readable without JavaScript. No third-party runtime dependencies are used.
