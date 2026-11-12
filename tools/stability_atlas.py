@@ -3,7 +3,6 @@ from hashlib import sha256
 from html import escape
 import json
 from pathlib import Path
-from stability_spectral_hero import spectral_hero
 
 ROOT = Path(__file__).resolve().parent.parent
 ROUTE = 'research/geometry/quantitative-moduli/atlas/index.html'
@@ -37,8 +36,7 @@ def build_atlas(page):
     dataset.write_text(encoded)
     (ROOT / 'assets/stability-degeneration-data.js').write_text('window.ATLAS_DATA = ' + encoded.strip() + ';\n')
     body = (ROOT / 'content/stability-degeneration-atlas.html').read_text().replace('{{PAPER_GUIDE}}', '\n'.join(cards))
-    body = body.replace('{{SPECTRAL_HERO}}', spectral_hero())
-    assets = ['stability-degeneration-atlas.css', 'stability-spectral-hero.js', 'stability-degeneration-data.js', 'stability-degeneration-atlas.js']
+    assets = ['stability-degeneration-atlas.css', 'stability-degeneration-data.js', 'stability-degeneration-atlas.js']
     extra = []
     for name in assets:
         version = sha256((ROOT / 'assets' / name).read_bytes()).hexdigest()[:12]

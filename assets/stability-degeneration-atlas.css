@@ -13,44 +13,16 @@
 .atlas-page #main button,.atlas-page #main input,.atlas-page #main select{font:inherit;color:inherit}
 .atlas-page #main button{cursor:pointer}
 .atlas-page #main button:focus-visible,.atlas-page #main a:focus-visible,.atlas-page #main input:focus-visible,.atlas-page #main select:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.atlas-page #main .atlas-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center;padding-bottom:3rem}
-.atlas-page #main .atlas-hero h1{max-width:13ch}
+.atlas-page #main .atlas-hero{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);gap:clamp(2rem,4vw,4rem);align-items:center;padding-bottom:3rem}
+.atlas-page #main .atlas-hero h1{max-width:14ch;font-size:clamp(2.8rem,4.6vw,4rem);line-height:1.07}
 .atlas-page #main .atlas-links{display:flex;gap:1.4rem;flex-wrap:wrap;font:.82rem/1.6 var(--sans)}
-.atlas-page #main .spectral-hero{margin:0;width:100%;max-width:35rem;justify-self:end;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:1.2rem 0}
-.atlas-page #main .spectral-hero>.eyebrow{margin-bottom:.45rem}
-.atlas-page #main .spectral-hero h2{font-size:clamp(1.65rem,2.5vw,2.15rem);margin:0 0 .7rem;line-height:1.15}
-.atlas-page #main .spectral-plot{display:block;width:100%;height:auto;overflow:visible}
-.atlas-page #main .spectrum-grid{fill:none;stroke:var(--rule);stroke-width:.7;stroke-dasharray:2 5}
-.atlas-page #main .spectrum-tick{fill:var(--ink-soft);font:14px var(--sans)}
-.atlas-page #main .spectrum-axis-label{fill:var(--ink-soft);font:11px var(--sans);letter-spacing:1px}
-.atlas-page #main .spectrum-end-label{font:italic 22px var(--serif);stroke:none!important}
-.atlas-page #main .spectrum-curve{fill:none;stroke-width:1.8}
-.atlas-page #main .spectrum-fast{stroke:var(--atlas-foundations);color:var(--atlas-foundations)}
-.atlas-page #main .spectrum-middle{stroke:var(--atlas-geometry);color:var(--atlas-geometry)}
-.atlas-page #main .spectrum-slow{stroke:var(--accent);color:var(--accent)}
-.atlas-page #main .spectrum-end-label,.atlas-page #main .spectrum-marker{fill:currentColor}
-.atlas-page #main .spectrum-marker{stroke:var(--bg);stroke-width:1}
-.atlas-page #main .spectrum-band{fill:var(--atlas-foundations);opacity:.13}
-.atlas-page #main .spectrum-separation{fill:var(--accent);opacity:.045}
-.atlas-page #main .spectrum-cursor{stroke:var(--ink-soft);stroke-width:1;stroke-dasharray:3 5;opacity:.6}
-.atlas-page #main .spectral-legend{display:flex;flex-wrap:wrap;gap:.35rem 1.2rem;justify-content:center;font:.65rem/1.6 var(--sans);margin:.25rem 0 1rem}
-.atlas-page #main .spectral-legend span:before{content:'';display:inline-block;width:.8rem;border-top:2px solid currentColor;vertical-align:middle;margin-right:.3rem}
-.atlas-page #main .spectral-fast-key{color:var(--atlas-foundations)}
-.atlas-page #main .spectral-middle-key{color:var(--atlas-geometry)}
-.atlas-page #main .spectral-slow-key{color:var(--accent)}
-.atlas-page #main .spectral-control{display:grid;grid-template-columns:1fr 1fr;gap:.2rem;font:.72rem/1.5 var(--sans);color:var(--ink-soft)}
-.atlas-page #main .spectral-control output{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
-.atlas-page #main .spectral-control input{grid-column:1/-1;width:100%;margin:.3rem 0;accent-color:var(--accent)}
-.atlas-page #main .spectral-control input:disabled{opacity:.5}
-.atlas-page #main .spectral-range-end{font-size:.62rem;color:var(--ink-faint)}
-.atlas-page #main .spectral-range-right{text-align:right}
-.atlas-page #main .spectral-readouts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;padding:.8rem 0;margin:.8rem 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.atlas-page #main .spectral-readouts dt{font:.61rem/1.5 var(--sans);color:var(--ink-soft)}
-.atlas-page #main .spectral-readouts dd{font:1.45rem/1.4 var(--serif);margin:.2rem 0 0;color:var(--ink);font-variant-numeric:tabular-nums}
-.atlas-page #main .spectral-hero figcaption{font:.76rem/1.65 var(--sans);color:var(--ink-soft)}
-.atlas-page #main .spectral-formulas{margin-top:.6rem}
-.atlas-page #main .spectral-formulas p{font:.85rem/1.65 var(--serif);color:var(--ink-soft);margin-bottom:0}
-.atlas-page #main .spectral-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.atlas-page #main .atlas-hero .intro{max-width:44rem;font-size:1.08rem;line-height:1.75;margin-bottom:1.15rem}
+.atlas-page #main .atlas-hero .intro+.intro{color:var(--ink-soft)}
+.atlas-page #main .atlas-hero .atlas-links{margin-top:1.65rem}
+.atlas-page #main .bundle-art{width:100%;max-width:35rem;margin:0;justify-self:end}
+.atlas-page #main .bundle-art img{display:block;width:100%;height:auto;max-height:35rem;object-fit:contain;filter:none}
+.atlas-page #main .bundle-art figcaption{max-width:31rem;margin:1.05rem auto 0;padding-top:.85rem;border-top:1px solid var(--rule);font:.77rem/1.65 var(--sans);color:var(--ink-soft)}
+.atlas-page #main .bundle-art-title{display:block;font:italic 1.2rem/1.4 var(--serif);color:var(--ink);margin-bottom:.4rem}
 .atlas-page #main .eyebrow{font:500 .68rem/1.6 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin:0 0 1rem}
 .atlas-page #main .leaders{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-bottom:4rem}
 .atlas-page #main .leader{display:flex;gap:.85rem;text-align:left;background:transparent;border:0;padding:1.4rem 1rem;color:var(--ink)}
@@ -164,6 +136,6 @@
 .atlas-page #main dialog pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem/1.7 var(--mono);background:var(--bg-panel);padding:1rem}
 .atlas-page #main dialog h3{font:2rem var(--serif);margin:.5rem 0 1rem}.atlas-page #main dialog p{font:1rem/1.7 var(--serif)}
 @media(max-width:1150px){.atlas-page #main .map-panel{grid-template-columns:minmax(0,1fr) 20rem}.atlas-page #main .workspace-top{align-items:start}.atlas-page #main .tabs{gap:.9rem}.atlas-page #main .atlas-hero{gap:2rem}}
-@media(max-width:900px){.atlas-page #main .map-panel{grid-template-columns:1fr}.atlas-page #main .inspector{border-left:0;border-top:1px solid var(--rule);max-height:none;display:grid;grid-template-columns:1.4fr 1fr}.atlas-page #main .inspector-main{border-bottom:0;border-right:1px solid var(--rule)}.atlas-page #main .atlas-hero{grid-template-columns:1fr}.atlas-page #main .spectral-hero{max-width:34rem;justify-self:center}.atlas-page #main .leaders{grid-template-columns:1fr 1fr}.atlas-page #main .leader:nth-child(3){border-left:0;border-top:1px solid var(--rule)}.atlas-page #main .leader:nth-child(4){border-top:1px solid var(--rule)}.atlas-page #main .journey-grid{grid-template-columns:1fr}.atlas-page #main .method-section{grid-template-columns:1fr;gap:1rem}.atlas-page #main .section-note{display:none}.atlas-page #main .concept-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.atlas-page #main .map-panel{grid-template-columns:1fr}.atlas-page #main .inspector{border-left:0;border-top:1px solid var(--rule);max-height:none;display:grid;grid-template-columns:1.4fr 1fr}.atlas-page #main .inspector-main{border-bottom:0;border-right:1px solid var(--rule)}.atlas-page #main .atlas-hero{grid-template-columns:1fr}.atlas-page #main .bundle-art{max-width:33rem;justify-self:center}.atlas-page #main .leaders{grid-template-columns:1fr 1fr}.atlas-page #main .leader:nth-child(3){border-left:0;border-top:1px solid var(--rule)}.atlas-page #main .leader:nth-child(4){border-top:1px solid var(--rule)}.atlas-page #main .journey-grid{grid-template-columns:1fr}.atlas-page #main .method-section{grid-template-columns:1fr;gap:1rem}.atlas-page #main .section-note{display:none}.atlas-page #main .concept-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.atlas-page #main.edition{padding:2rem 1rem}.atlas-page #main .atlas-hero h1{font-size:3.1rem}.atlas-page #main .workspace-top{padding:0 .8rem;gap:.6rem}.atlas-page #main .tabs{gap:.2rem 1rem}.atlas-page #main .tabs button{padding:.8rem 0;font-size:.7rem}.atlas-page #main .workspace-top>.quiet-button{padding-top:.8rem}.atlas-page #main .inspector{display:block}.atlas-page #main .inspector-main{border-right:0;border-bottom:1px solid var(--rule)}.atlas-page #main .paper-guide-grid{grid-template-columns:1fr}.atlas-page #main .paper-guide-card:nth-child(odd){border-right:0}.atlas-page #main .ranking-intro{display:block}.atlas-page #main .ranking-intro button{margin-top:1rem}.atlas-page #main .ranking-card{grid-template-columns:2rem 1fr;padding:1rem;gap:.7rem}.atlas-page #main .filters{padding:.8rem;gap:.7rem}.atlas-page #main .filter-label{flex-wrap:wrap}.atlas-page #main .concept-grid{grid-template-columns:1fr}.atlas-page #main .leader{padding:1rem .6rem}.atlas-page #main .leader strong{font-size:1rem}}
 @media(prefers-reduced-motion:reduce){.atlas-page #main *{scroll-behavior:auto!important;transition:none!important}}
