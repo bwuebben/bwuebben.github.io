@@ -524,8 +524,13 @@ and links; manuscript numbers indicate the suggested reading order. Styles are
 confined to `assets/quantitative-moduli.css`. Native disclosures carry technical hypotheses;
 the fixed locally free background, scope of the stationary theorem and confinement
 and initial-displacement hypotheses of the dynamical theorem remain visible in
-the main text. The guide preserves every existing anchor, three reading routes and the link
-to At the Wall. Fixed-background dependence, coordinate-sensitive error orders,
+the main text. The guide preserves every existing anchor and the link to At the Wall.
+Six reading routes distinguish the general theorem, K3 geometry, fixed-base dynamics,
+curve dynamics, the type-K threefold branch, and spectra with inverse geometry.
+The frontier table separates all-time curve tracking without a weakest-rate bound
+from type-K tracking with a positive rate bound and fixed-ray Ricci-flat conifold
+spectra. Marked inverse results retain their observational and geometric inputs.
+Fixed-background dependence, coordinate-sensitive error orders,
 K3 rescaling hypotheses and the distinction between cubic obstruction and
 spectral scale separation remain explicit. Compact K3 contractions without bubbling now
 have global harmonic completion and integral attachment calculations. Reconstruction
