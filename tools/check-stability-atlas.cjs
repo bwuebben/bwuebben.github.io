@@ -37,6 +37,26 @@ check('Shared theme, fallback reading content and no private project material',(
   }
   assert.ok(read('assets/stability-degeneration-atlas.css').includes('prefers-color-scheme:dark'));
 });
+check('Atlas presentation cannot override shared navigation styles',()=>{
+  const css=read('assets/stability-degeneration-atlas.css').replace(/\/\*[\s\S]*?\*\//g,'');
+  for(const match of css.matchAll(/([^{}]+)\{([^{}]*)\}/g)){
+    const selectors=match[1].trim().split(',').map(s=>s.trim());
+    for(const selector of selectors){
+      if(selector==='.atlas-page'){
+        for(const declaration of match[2].split(';').map(s=>s.trim()).filter(Boolean))assert.match(declaration,/^--atlas-[\w-]+\s*:/);
+      }else assert.match(selector,/^\.atlas-page #main(?:[.#\s:]|$)/,`Style escapes atlas content: ${selector}`);
+    }
+  }
+  assert.ok(html.indexOf('</header>')<html.indexOf('<main id="main"'),'Shared navigation is outside atlas content');
+});
+check('Research Programs has the Atlas section and its Degeneration link',()=>{
+  const research=html.match(/<summary>Research Programs<\/summary>([\s\S]*?)<\/details>/)[1];
+  assert.match(research,/class="nav-submenu-heading"[^>]*>Atlas<\/li>/);
+  const link=research.match(/<a href="([^"]+)"[^>]*>Degeneration<\/a>/);
+  assert.ok(link);assert.equal(new URL(link[1],'https://bwuebben.github.io/research/geometry/quantitative-moduli/atlas/').pathname,'/research/geometry/quantitative-moduli/atlas/');
+  const explorers=html.match(/<summary>Explorers<\/summary>([\s\S]*?)<\/details>/)[1];
+  assert.ok(!explorers.includes('Stability &amp; Degeneration Atlas'));
+});
 check('Programme opening is concise and points to the atlas',()=>{
   const guide=read('research/geometry/quantitative-moduli/index.html');
   const opening=guide.match(/<p class="intro">([\s\S]*?)<\/p>/)[1];

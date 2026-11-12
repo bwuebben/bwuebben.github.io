@@ -258,6 +258,7 @@ SUBGUIDES={
    question="How does geometry change near a singular limit?",
    subtitle="Canonical metrics, weak directions and slow motion",
    intro="Near a stability wall, a bundle can split, a canonical metric can lose rigidity, and motion towards equilibrium can become very slow. This programme studies those changes through finite models, then follows their consequences for moduli spaces and for bundles on degenerating curves and threefolds.",
+   intro_paragraphs=['We study holomorphic vector bundles on compact Kähler manifolds: families of complex vector spaces varying holomorphically over a curved complex base. A bundle is slope-stable when every proper holomorphic subsheaf of smaller positive rank has smaller degree per rank. Degree depends on the chosen Kähler class, or polarization; as that class varies, equal slopes define stability walls.', 'One question is how canonical Hermitian–Einstein metrics on these bundles behave near a wall. Another concerns their moduli space, which parametrizes bundles of fixed rank and Chern classes up to isomorphism. Its harmonic L² metric measures the size of bundle deformations. Small eigenvalues, slow Hermitian–Yang–Mills flow and collapsing distances connect these two levels of geometry.', 'The local theory starts near a fixed polystable bundle—a direct sum of stable bundles of equal slope. Compact K3 surfaces provide concrete bases where exceptional cycles in moduli space collapse and their integral topology can be followed through wall crossing. Other parts of the programme let the underlying curve or Calabi–Yau threefold degenerate too, creating additional small modes that require separate estimates.'],
    image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",lead_section="question",
    overview="The broader subject overview, including open FJRW theory and inverse moduli, is the",
    groups=[("The general local theorem","local-theorem",["local-hym-reduction"]),
@@ -479,7 +480,8 @@ def build_subguides():
             assert all(s in roles for s in slugs if s in by_slug),"Every catalogue paper in a focused guide needs a role"
             hero_art=(ROOT/f'content/{sg["hero_fragment"]}.html').read_text() if sg.get("hero_fragment") else f'<img src="/assets/illustrations/{sg["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(sg["short"])}">'
             subtitle=f'<p class="small">{E(sg["subtitle"])}</p>' if sg.get("subtitle") else ''
-            body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1>{subtitle}<p class="intro">{sg["intro"]}</p></div>{hero_art}</header>'''
+            intro_html="".join(f'<p class="intro">{E(paragraph)}</p>' for paragraph in sg.get("intro_paragraphs",[sg["intro"]]))
+            body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1>{subtitle}{intro_html}</div>{hero_art}</header>'''
             if sg.get("lead_section"):
                 lead=re.match(r'\s*(<section\b[^>]*\bid="'+re.escape(sg["lead_section"])+r'"[^>]*>.*?</section>)',text,re.S)
                 assert lead,"The lead section must be first: "+sg["slug"]

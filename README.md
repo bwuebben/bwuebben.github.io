@@ -22,7 +22,7 @@ subject guides, `/explorers/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
 
 The Research Programs menu starts with Overview, followed by the six topic guides
-and the focused programme guides, grouped under Topic guides and Focused guides.
+and the focused programme guides, grouped under Topic guides, Focused guides and Atlas. The Atlas subsection links Degeneration to its interactive paper atlas.
 The focused guides are Atiyah–Floer theory and Stability & Degeneration. In `site.json`,
 an optional `heading` on a menu link inserts a section label before that link.
 
@@ -149,7 +149,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 
 **Navigation:** edit the links in `site.json` or their outer markup in
 `templates/navigation.html`. The top level contains Home, Research Programs, Explorers, Writing, Papers, Updates, and About.
-Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall, When Walls Collide, and the Stability & Degeneration Atlas; add future explorers
+Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall and When Walls Collide; add future explorers
 to that group's `children` list.
 Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, Gradient of Mind, and I rest my case. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
@@ -611,3 +611,5 @@ Edit `data/stability-degeneration-atlas.json` for ranking rationales, explanatio
 The 28-paper ranking is editorial. Its 44 selected theorem/method arrows and five optional thematic links retain separate meanings; direct follow-on counts exclude thematic links. Evidence links point to the exact public source commit. A change of ranking date or dependency evidence needs an explicit content review. No framework or npm installation is required to build or serve the atlas. Run `node tools/check-stability-atlas.cjs` after atlas changes; optional DOM interaction checks use an externally installed `jsdom` via `NODE_PATH`.
 
 The focused programme guide opens with a short orientation and three reading routes. Detailed dynamical discussion and the two-factor profile sit in the Dynamics section; qualifications remain beside the relevant results.
+
+The atlas stylesheet scopes every presentation rule to `#main`; only its colour variables live on the page body. This keeps the shared navigation’s native dropdown typography, padding and focus behaviour identical to other pages. Its menu entry is Research Programs → Atlas → Degeneration. The focused guide retains the original wall-crossing illustration and pairs it with three background paragraphs explaining holomorphic bundles, slope stability, the base-versus-moduli distinction and the K3/degenerating-base settings.
