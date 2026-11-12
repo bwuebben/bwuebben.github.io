@@ -185,7 +185,7 @@ for that page and verify that Google actually accepts the request.
 Under **Indexing → Sitemaps**, submit `sitemap.xml` and check that its status becomes
 **Success**, not merely that submission was accepted. The live sitemap is
 <https://bwuebben.github.io/sitemap.xml>; `robots.txt` also advertises it. Keep its
-canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 73 individual paper pages. It excludes standalone explorer copies, templates,
+canonical page list current when adding or removing public pages. It covers the main site, editorial pages and guides, and all 77 individual paper pages. It excludes standalone explorer copies, templates,
 tools, verification files, and external paper URLs. Papers linked on Zenodo, arXiv, SSRN,
 and GitHub are outside this Search Console property's scope; the papers catalogue
 is one page on this domain.
@@ -617,3 +617,5 @@ The atlas stylesheet scopes every presentation rule to `#main`; only its colour 
 
 
 The atlas opening pairs two introductory paragraphs with a static sculptural illustration of a vector bundle and changing Hermitian metric contours. The transparent image `assets/illustrations/hermitian-bundle.png` uses the site’s burgundy, brass and teal palette. Its caption identifies it as conceptual artwork; it is not a numerical flow. The two-column hero aligns both halves centrally and stacks below 900 pixels. The former spectral slider and its supporting code have been removed.
+
+The conifold Hodge, nonflat bundle, integral reconstruction and point-defect results extend the programme guide and the 32-paper atlas. The editorial ranking and source-backed graph distinguish reusable foundations, marked inverse results and the sharp surface concentration law.

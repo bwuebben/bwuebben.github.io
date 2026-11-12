@@ -1,12 +1,12 @@
 window.ATLAS_DATA = {
-  "asOf": "11 November 2026",
+  "asOf": "12 November 2026",
   "papers": [
     {
       "id": 1,
       "title": "Uniform Hermitian–Einstein spectra for bipartite two-step extensions",
       "short": "The spectral mechanism",
       "branch": "foundations",
-      "rank": 10,
+      "rank": 14,
       "rationale": "The original graph-cut mechanism gives relative control of every small eigenvalue even when positive scales separate arbitrarily. Its determinant formula and distinction between trees and cycles retain independent value after the generalizations.",
       "scope": "Two-step extensions with distinct stable factors on a fixed compact Kähler manifold.",
       "role": "Original foundation",
@@ -32,7 +32,7 @@ window.ATLAS_DATA = {
       "title": "Nonsimplicial local stability chambers of toric tangent bundles",
       "short": "Realizing the chambers",
       "branch": "foundations",
-      "rank": 16,
+      "rank": 20,
       "rationale": "This supplies genuine projective geometry for nonsimplicial stability chambers, together with a general toric normal form and a minimality result. It is a distinctive realization theorem, not merely an illustrative example for the analytic papers.",
       "scope": "Toric tangent bundles; the explicit higher-dimensional varieties are weak Fano, not Fano.",
       "role": "Geometric realization",
@@ -58,7 +58,7 @@ window.ATLAS_DATA = {
       "title": "Metric response and Hermitian Yang–Mills flow for two-step extensions",
       "short": "Metric response & flow",
       "branch": "dynamics",
-      "rank": 13,
+      "rank": 17,
       "rationale": "The first integrated bridge from wall combinatorics to metric sensitivity and actual HYM trajectories on the same bundles. Later local theory is broader, but the inverse spectral response and explicit across-wall profile remain substantial.",
       "scope": "Two-step extensions; the full response statement requires centered slopes to supply local parameters.",
       "role": "First synthesis",
@@ -84,7 +84,7 @@ window.ATLAS_DATA = {
       "title": "Uniform Hermitian–Einstein spectra with repeated stable factors",
       "short": "Repeated-factor spectra",
       "branch": "foundations",
-      "rank": 19,
+      "rank": 23,
       "rationale": "It replaces the scalar graph picture with the full noncommutative multiplicity algebra, while preserving relative estimates at every small scale. This is a necessary conceptual step toward arbitrary stabilizers, although Paper 15 gives the wider framework.",
       "scope": "Fixed multiplicities in two-step extensions; distinct isomorphism types in the two layers.",
       "role": "Noncommutative extension",
@@ -110,7 +110,7 @@ window.ATLAS_DATA = {
       "title": "Hermitian–Einstein metrics and small spectra for three-step extensions",
       "short": "Three-step extensions",
       "branch": "foundations",
-      "rank": 28,
+      "rank": 32,
       "rationale": "This proves the method survives composable extensions and the correction needed for integrability, with a concrete spectral scale invisible to polarization parameters. Its selected three-step class makes it a focused precursor to the full-obstruction theory.",
       "scope": "Distinct line factors and constrained quadratic coexact compositions; not arbitrary filtrations.",
       "role": "Focused precursor",
@@ -136,7 +136,7 @@ window.ATLAS_DATA = {
       "title": "L² metrics on Hermitian–Yang–Mills moduli spaces near a stability wall",
       "short": "Metrics at a wall",
       "branch": "geometry",
-      "rank": 21,
+      "rank": 25,
       "rationale": "The key move is from eigenvalues to the actual harmonic metric on a quotient, without dividing by maps whose rank degenerates. It establishes a method used much more generally later, but its principal geometric family is specific.",
       "scope": "A rank-four family on a product of three projective lines, retaining the full analytic obstruction.",
       "role": "Quotient-metric foundation",
@@ -162,7 +162,7 @@ window.ATLAS_DATA = {
       "title": "Hermitian–Einstein metrics and moduli of three-step extensions with repeated factors",
       "short": "Repeated factors & moduli",
       "branch": "geometry",
-      "rank": 27,
+      "rank": 31,
       "rationale": "This combines composable extensions, a repeated factor, all small modes and the full local quotient metric in one concrete problem. It is valuable as a stringent noncommutative test case, with much of its general role subsequently taken by Paper 15.",
       "scope": "A specified rank-five deformation problem; six small modes and a reducible rank-four-plus-line locus.",
       "role": "Concrete synthesis",
@@ -188,7 +188,7 @@ window.ATLAS_DATA = {
       "title": "Initial conditions and asymptotic phase for Hermitian–Yang–Mills flow",
       "short": "Selecting the initial phase",
       "branch": "dynamics",
-      "rank": 23,
+      "rank": 27,
       "rationale": "It establishes that the initial spatial metric selects a differentiable asymptotic phase with an error controlled by the complementary gap. Paper 16 generalizes the reduction, while the entry theorem here remains a useful independent contribution.",
       "scope": "A specified four-line family along a polarization path, plus a two-parameter three-layer comparison.",
       "role": "Dynamical foundation",
@@ -214,7 +214,7 @@ window.ATLAS_DATA = {
       "title": "Hermitian–Yang–Mills flow at and beyond a stability wall",
       "short": "At and beyond the wall",
       "branch": "dynamics",
-      "rank": 22,
+      "rank": 26,
       "rationale": "This proves actual coefficient confinement and identifies the transition from reciprocal wall decay to exponential unstable decay. That confinement is substantive: the general phase theorem in Paper 16 assumes it rather than supplying it automatically.",
       "scope": "Specified acyclic wall and triangular unstable families with locally free graded line quotients.",
       "role": "Unstable dynamics",
@@ -240,9 +240,9 @@ window.ATLAS_DATA = {
       "title": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
       "short": "When graded objects are singular",
       "branch": "dynamics",
-      "rank": 5,
+      "rank": 9,
       "rationale": "A major conceptual correction: singular graded quotients invalidate two natural bounded-remainder extensions of the weight-filtration description of HYM flow. Its importance comes from changing what a correct general theory must say, rather than from how many later papers cite it.",
-      "scope": "Rank-two bundles on compact Kähler surfaces with a singular equal-slope line quotient; the sharp replacement time law remains open.",
+      "scope": "Rank-two bundles on compact Kähler surfaces with a singular equal-slope line quotient. Paper 32 supplies a sharp replacement law for reduced defects with distinct factors, while broader sharp profiles remain open.",
       "role": "Conceptual correction",
       "status": "Public preprint",
       "pdf": "/papers/singular-hym-metric-growth/paper.pdf",
@@ -257,7 +257,7 @@ window.ATLAS_DATA = {
         "idea": "The algebraic weight filtration still predicts two weights, but a residue concentrated at the singular set contributes an additional analytic obstruction. A global normalization and an exact dissipation identity show that this obstruction remains visible in the metric even on regions away from the singular points.",
         "result": "For rank-two bundles on compact Kähler surfaces with an equal-slope line subsheaf and a singular torsion-free quotient, the squared L² norm of the inclusion decays faster than the inverse square root of flow time for every smooth initial metric with fixed Hermitian–Einstein determinant. Both a bounded relative metric remainder and a bounded ordinary matrix-logarithm remainder fail to realize the predicted weight model, including for repeated line factors and nonreduced singularities.",
         "significance": "It identifies a concrete obstruction that any general theory of singular HYM asymptotics must address.",
-        "limits": "The sharp replacement time law is not established. The stable-side curvature-concentration calculation belongs to a separate toric example and should not be read as a general bubbling theorem for the flow.",
+        "limits": "The obstruction does not itself identify a leading replacement coefficient. Paper 32 subsequently proves an inverse-time law and charge-one profile for reduced defects with distinct factors. Sharp nonreduced or repeated-factor profiles remain open.",
         "prerequisite": "The key distinction is between a vector bundle and a torsion-free sheaf that fails to be a bundle at finitely many points; familiarity with filtrations and HYM flow helps beyond that picture."
       }
     },
@@ -266,7 +266,7 @@ window.ATLAS_DATA = {
       "title": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
       "short": "Mass & acyclic cancellation",
       "branch": "category",
-      "rank": 12,
+      "rank": 16,
       "rationale": "It gives a negative answer to the proposed phase-flow mass-monotonicity question and proves quantitative acyclic cancellation in substantial generality. This is an independent contribution to the categorical programme, so its sparse position in the series graph understates its importance.",
       "scope": "Two-term parallel-arrow quiver complexes; the cancellation hypotheses vary by theorem.",
       "role": "Independent advance",
@@ -292,7 +292,7 @@ window.ATLAS_DATA = {
       "title": "Harmonic paths and honeycombs",
       "short": "Harmonic paths & honeycombs",
       "branch": "category",
-      "rank": 9,
+      "rank": 13,
       "rationale": "Existence for arbitrary diagonalizable boundary triples in every finite rank is a substantial result in the honeycomb specialization of the harmonic-path problem. The finite algebraic presentation is the central achievement; uniqueness uses an explicit additional matching condition.",
       "scope": "The identity A₂ representation over the real-exponent Novikov field, symmetric charges and fixed radial area form.",
       "role": "Independent advance",
@@ -318,7 +318,7 @@ window.ATLAS_DATA = {
       "title": "Metric wall crossing in rank-three K3 bundle moduli",
       "short": "A K3 metric wall crossing",
       "branch": "geometry",
-      "rank": 20,
+      "rank": 24,
       "rationale": "This makes a nontrivial K3 wall crossing quantitatively geometric: actual harmonic metrics acquire cotangent-Grassmannian models, collapse rates and complete rescaled limits. Paper 14 broadens the mechanism, but this remains its clearest substantial first realization.",
       "scope": "A rank-three, complex twelve-dimensional moduli problem with T*Gr(2,5) and T*Gr(3,5) chamber models.",
       "role": "K3 realization",
@@ -344,7 +344,7 @@ window.ATLAS_DATA = {
       "title": "Quantitative metric wall crossing for K3 bundle moduli",
       "short": "Quantitative K3 wall crossing",
       "branch": "geometry",
-      "rank": 7,
+      "rank": 11,
       "rationale": "A central foundation for the K3 branch: it controls quiver quotient metrics through changing stabilizers and arbitrarily separated scales. Complete stratified limits and successive rescalings make its reach much greater than one explicit wall crossing.",
       "scope": "Locally free polystable K3 backgrounds; complete quotient continuity uses a simple-representation hypothesis, and iterated limits require convergence at each stage.",
       "role": "Reusable foundation",
@@ -396,7 +396,7 @@ window.ATLAS_DATA = {
       "title": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
       "short": "The general dynamical theory",
       "branch": "dynamics",
-      "rank": 4,
+      "rank": 7,
       "rationale": "The dynamical counterpart of Paper 15 constructs exact finite reduction and differentiable phase selection uniformly as finite relaxation rates collapse. It is a broadly reusable theorem, with confinement explicitly retained as a hypothesis.",
       "scope": "Small normal displacement and harmonic coefficients confined to a prescribed neighborhood; arbitrary multiplicities and full Kuranishi obstruction.",
       "role": "Reusable foundation",
@@ -422,7 +422,7 @@ window.ATLAS_DATA = {
       "title": "Exceptional cycles and harmonic metrics in K3 bundle moduli",
       "short": "Exceptional cycles, actual metrics",
       "branch": "geometry",
-      "rank": 15,
+      "rank": 19,
       "rationale": "It makes integral exceptional geometry and metric degeneration describe the same cycles in compact K3 moduli spaces. The interacting planes, congruence data and complete rescaled metrics give a richer result than a local model alone.",
       "scope": "A compact fourfold family with a singular surface and deeper point; explicit attachment congruences modulo eight and three.",
       "role": "Geometry–topology bridge",
@@ -448,7 +448,7 @@ window.ATLAS_DATA = {
       "title": "Integral reconstruction and quantitative metric degeneration of K3 bundle moduli",
       "short": "Global integral reconstruction",
       "branch": "geometry",
-      "rank": 11,
+      "rank": 15,
       "rationale": "Its general compact metric comparison turns the local quiver theory into completion and convergence results across chambers. The integral reconstruction and Grassmannian example extend the bridge to topology, provided the marked complement and overlap data are supplied.",
       "scope": "Compact no-bubbling K3 contractions with complete convergent quiver charts; reconstruction is not from local fibre rings alone.",
       "role": "Global synthesis",
@@ -474,7 +474,7 @@ window.ATLAS_DATA = {
       "title": "Integral attachments and wall correspondences for K3 bundle moduli",
       "short": "Integral wall correspondences",
       "branch": "geometry",
-      "rank": 17,
+      "rank": 21,
       "rationale": "This supplies unusually complete integral information: complement rings, boundary maps, normalized indices and all adjacent wall actions in one compact family. It is more specialized than the general metric theorems, but materially strengthens the topological content of the programme.",
       "scope": "Six chambers in a rank-three K3 family, with four elementary Mukai flops and two divisorial isomorphisms.",
       "role": "Integral computation",
@@ -500,7 +500,7 @@ window.ATLAS_DATA = {
       "title": "Canonical metrics on singular moduli of K3 bundles",
       "short": "Canonical singular metrics",
       "branch": "geometry",
-      "rank": 3,
+      "rank": 6,
       "rationale": "Identifying the canonical singular Ricci-flat metric with the gauge-theoretic harmonic metric is a major geometric conclusion. Quantitative tangent cones and metric completion on compact spaces with neither resolution nor smoothing give this paper significance beyond the local machinery it uses.",
       "scope": "A specified locally free class of twice-primitive K3 moduli spaces with a rank bound and Picard rank one.",
       "role": "Geometric flagship",
@@ -526,7 +526,7 @@ window.ATLAS_DATA = {
       "title": "Light vectors and scalar interactions near heterotic K3 gauge enhancement",
       "short": "Heterotic gauge enhancement",
       "branch": "physics",
-      "rank": 18,
+      "rank": 22,
       "rationale": "This takes the spectral and quotient-metric estimates into an actual compactification and a controlled scalar-scattering calculation. Its standing would rise for a physics audience; within this mathematical series, the selected amplitude and perturbative regime make it a focused application.",
       "scope": "Leading Yang–Mills tree amplitude below the heavier Higgs thresholds and away from poles; the complete next-order coefficient and finite-string-scale remainder remain open.",
       "role": "Physics bridge",
@@ -552,10 +552,10 @@ window.ATLAS_DATA = {
       "title": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
       "short": "Topology meets Ricci-flat spectra",
       "branch": "spectral",
-      "rank": 2,
-      "rationale": "The strongest bridge from global algebraic topology to the spectrum of an actual degenerating Ricci-flat metric. Explicit leading coefficients, integral vanishing cycles and monodromy on genuine Calabi–Yau smoothings give it unusually broad mathematical significance.",
+      "rank": 8,
+      "rationale": "The original bridge from global algebraic topology to the complete small spectrum of an actual Ricci-flat conifold smoothing. Explicit compact topology and leading coefficients retain independent value; Paper 29 now supplies the stronger ratio-unrestricted comparison on the selected eight-node family.",
       "scope": "A polarized fixed smoothing, all nodes smoothed to first order, approached along a fixed ray; not independent arbitrary node scales.",
-      "role": "Spectral flagship",
+      "role": "Fixed-ray spectral foundation",
       "status": "Public preprint",
       "pdf": "/papers/cy-conifold-hodge-spectrum/paper.pdf",
       "sha256": "ee97656ffb7f2c3748a5e78029256484019ac2cf2751c2050cd2330bc8e5ed00",
@@ -578,7 +578,7 @@ window.ATLAS_DATA = {
       "title": "Small eigenvalues on degenerating curves and the intersection form",
       "short": "The intersection-form spectrum",
       "branch": "spectral",
-      "rank": 24,
+      "rank": 28,
       "rationale": "A clean, independently useful theorem identifies the complete small scalar spectrum of reduced curve degenerations directly from intersections and component areas. Its broader singular-fibre scope matters, while the stated relationship to existing Kähler results tempers claims of novelty.",
       "scope": "Smooth total space and induced metrics Hermitian near the central singularities; a direct proof including arbitrary reduced singular fibres.",
       "role": "Clean spectral theorem",
@@ -604,7 +604,7 @@ window.ATLAS_DATA = {
       "title": "Small Hodge eigenvalues on nodal degenerations of threefolds",
       "short": "Nodal threefold Hodge spectra",
       "branch": "spectral",
-      "rank": 26,
+      "rank": 30,
       "rationale": "It gives a direct geometric formula for small two-form eigenvalues in nodal threefold degenerations with induced metrics. This is a useful complementary metric setting to Paper 22, rather than another general Ricci-flat or HYM theorem.",
       "scope": "Induced Kähler metrics and explicit cohomological hypotheses on a small resolution; a single smoothing parameter.",
       "role": "Complementary spectral theorem",
@@ -630,7 +630,7 @@ window.ATLAS_DATA = {
       "title": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
       "short": "Effective flow on nodal curves",
       "branch": "degeneration",
-      "rank": 25,
+      "rank": 29,
       "rationale": "This is the first actual nonlinear HYM tracking theorem on a degenerating base in the series, using exact neck metrics and integrated comparison. Its core construction is foundational for the last three papers, although trivial gluing and bounded rescaled time limit its final standalone scope.",
       "scope": "Trivial determinant-one bundles on compact nodal curves; bounded rescaled intervals, with a pointwise estimate away from nodes.",
       "role": "New branch foundation",
@@ -656,8 +656,8 @@ window.ATLAS_DATA = {
       "title": "Hermitian–Yang–Mills flow and gluing on degenerating curves",
       "short": "Global gluing & inverse geometry",
       "branch": "degeneration",
-      "rank": 8,
-      "rationale": "The broadest synthesis on a degenerating base combines genuine noncommuting gluing, actual flow, relative spectra, moduli metrics and marked inverse information. Recovering incidence and integral monodromy is especially distinctive, with eigenfunction observations and markings explicitly part of the data.",
+      "rank": 12,
+      "rationale": "A broad synthesis on a degenerating base combines genuine noncommuting gluing, actual flow, relative spectra, moduli metrics and marked inverse information. Recovering incidence and integral monodromy is especially distinctive, with eigenfunction observations and markings explicitly part of the data.",
       "scope": "Specified compact curve families; all-time tracking needs a normalized gap, and the moduli/inverse results use narrower stated subfamilies.",
       "role": "Integrated synthesis",
       "status": "Public preprint",
@@ -682,7 +682,7 @@ window.ATLAS_DATA = {
       "title": "Hermitian–Yang–Mills flow on degenerating Calabi–Yau threefolds of type K",
       "short": "A genuine threefold realization",
       "branch": "degeneration",
-      "rank": 14,
+      "rank": 18,
       "rationale": "It realizes effective HYM dynamics on a compact Calabi–Yau threefold with a nonflat rank-four bundle and initial data beyond the tensor ansatz. This is a meaningful dimensional advance, tempered by the type-K product construction and prescribed product-induced metrics.",
       "scope": "Enriques/type-K threefolds, not simply connected full-SU(3) examples; metrics need not be Ricci-flat, and all-time tracking retains a rate bound.",
       "role": "Higher-dimensional realization",
@@ -708,8 +708,8 @@ window.ATLAS_DATA = {
       "title": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
       "short": "Every relaxation time",
       "branch": "degeneration",
-      "rank": 6,
-      "rationale": "A new residual and energy argument removes the weakest-rate obstruction and controls the actual nonlinear flow through all relaxation times. This is the strongest dynamical result on a degenerating base here, within its fixed constraints and small finite basin.",
+      "rank": 10,
+      "rationale": "A residual and energy argument removes the weakest-rate lower bound and controls actual curve flow through every relaxation time. Its fixed-constraint absolute approximation remains a distinct result alongside the later conifold invariant-graph theorem, which has different geometry, error control and basin hypotheses.",
       "scope": "A compact genus-three family with four node and two component-holonomy parameters; absolute all-time error, fixed constraints, small finite initial data.",
       "role": "Analytic breakthrough",
       "status": "Public preprint",
@@ -728,11 +728,115 @@ window.ATLAS_DATA = {
         "limits": "The nonlinear result keeps the holonomy generators and node identifications fixed and requires a small finite basin. It controls absolute integrated error, not relative error at the weakest mode, and does not establish nonlinear uniformity under varying constraints.",
         "prerequisite": "Read Paper 26 for the gluing dynamics, then distinguish an error estimate uniform in time from a bound valid only on each fixed time interval."
       }
+    },
+    {
+      "short": "Relative conifold spectra",
+      "branch": "spectral",
+      "role": "Multiscale analytic foundation",
+      "rationale": "The full Ricci-flat construction and relative control of an entire small spectral space survive arbitrary separation of node scales. This removes the fixed-ray restriction in the chosen family and supplies the analytic foundation for the common-family flow and reconstruction results. Its depth and reuse place it just behind the general local theorem and integral inverse construction.",
+      "scope": "The explicit eight-node, six-parameter polarized family; arbitrary nonzero period ratios, with a fixed central geometry and marking.",
+      "explanation": {
+        "question": "How does the actual Ricci-flat Hodge spectrum behave when different conifold nodes smooth at independently separated scales?",
+        "idea": "Retain the quadratic harmonic cap modes by exact complex automorphisms, solve the global Ricci-flat correction uniformly, then compare the full small two-form energy with the capacity-weighted restriction form.",
+        "result": "Exactly two positive two-form eigenvalues tend to zero over the full period base. Relative energy and harmonic mass comparisons determine both eigenlines in fixed cohomological coordinates, with a complementary gap and logarithmic or iterated-logarithmic hierarchies.",
+        "significance": "This is a uniform theorem for actual Ricci-flat geometry across independent scales. It supplies the analytic background used by the nonflat bundle construction and the integral reconstruction synthesis.",
+        "limits": "The central eight-node family and polarization are fixed. The theorem is not uniform over arbitrary central coefficients and does not reconstruct a complete manifold or its metric from two eigenvalues.",
+        "prerequisite": "Read Paper 22 for the fixed-ray Hodge problem and Paper 2 for the compact toric transition; Hodge theory, conifold geometry and weighted elliptic analysis are useful."
+      },
+      "id": 29,
+      "title": "Relative Hodge spectra of multiscale conifold smoothings",
+      "slug": "relative-hodge-conifold-smoothings",
+      "status": "Public preprint",
+      "page": "/papers/relative-hodge-conifold-smoothings/",
+      "pdf": "/papers/relative-hodge-conifold-smoothings/paper.pdf",
+      "sha256": "fb82519246a0269565ced27c93cfe03bac455f40bf3a73e4ea22aa0f95325406",
+      "doi": "10.5281/zenodo.24175848",
+      "publicationDate": "2026-11-12",
+      "revisionDate": "2026-11-12",
+      "rank": 3
+    },
+    {
+      "short": "Conifold flow and moduli",
+      "branch": "degeneration",
+      "role": "Common-family geometric synthesis",
+      "rationale": "Actual Ricci-flat degeneration, a nonflat bundle, changing weak kernels, all-time nonlinear phase tracking and harmonic moduli geometry are controlled on one family. The combination reaches well beyond a finite model. The rank-four family and spatial basin are specific, so the broader fixed-background foundation retains first place.",
+      "scope": "Nonflat rank-four bundles on the selected conifold fibres; an open spatial C¹ basin, fixed base and bundle along each trajectory, and paths confined to the local moduli locus.",
+      "explanation": {
+        "question": "Can the same degenerating Ricci-flat threefold carry a nonflat bundle whose spectrum, actual metric flow and harmonic moduli geometry remain quantitatively controlled?",
+        "idea": "Construct and balance the two-arrow bundle family, retain all seven weak endomorphism directions, solve on the uniform complement, and build an exact finite invariant graph with an initial-phase map.",
+        "result": "Every weak eigenvalue has relative control, including changing kernels and separated positive rates. Actual HYM trajectories in an open spatial C¹ basin track exact graph trajectories exponentially for all time. The local harmonic metric has confined tangent cone (ℂ², 4|du|²)/((ℤ/2)² ⋊ S₂).",
+        "significance": "This joins base degeneration, bundle stability, complete weak spectra, nonlinear flow and actual local moduli geometry. Independent base and bundle scales are allowed on the same geometric family.",
+        "limits": "Each flow fixes its base and holomorphic bundle. The theorem uses a specified nonflat rank-four family, an open local basin and confined moduli distances; it is not a global theorem for arbitrary bundles or arbitrary initial metrics.",
+        "prerequisite": "Paper 29 supplies the uniform Ricci-flat background. Papers 15 and 16 explain fixed-background stationary and phase reduction, whose required uniform estimates are proved anew here."
+      },
+      "id": 30,
+      "title": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+      "slug": "conifold-hym-dynamics",
+      "status": "Public preprint",
+      "page": "/papers/conifold-hym-dynamics/",
+      "pdf": "/papers/conifold-hym-dynamics/paper.pdf",
+      "sha256": "37241120331c82ab66b046a893c240bb812708fe7152ae1bf77371bbe9e9d68b",
+      "doi": "10.5281/zenodo.24175924",
+      "publicationDate": "2026-11-12",
+      "revisionDate": "2026-11-12",
+      "rank": 4
+    },
+    {
+      "short": "Integral recovery from periods",
+      "branch": "geometry",
+      "role": "Global inverse construction",
+      "rationale": "The closest direct advance towards recovering global topology from degeneration: a terminating observation construction recovers an unknown marked integral vanishing-cycle map, saturation and monodromy, and connects them to actual spectra and flow on the same family. The output is substantial but specific; a global marking, certified periods and a possibly ineffective analytic neighbourhood remain part of the result.",
+      "scope": "A selected six-parameter conifold family, geometrically constructed marking and certified period observations; a terminating construction rather than an executed full integer matrix.",
+      "explanation": {
+        "question": "Can degenerating periods reveal an unknown integral vanishing-cycle lattice, rather than merely predict a spectrum from topology already supplied?",
+        "idea": "Select algebraic equations, construct a symplectic marking and certified cycle transport, then increase observation precision until Picard–Lefschetz period jumps identify each integer column without a height prior.",
+        "result": "The construction recovers the map ℤ⁸ → ℤ¹³⁴ with rank-six image, its saturation, quotient torsion and monodromy. Its real kernel is the divisor restriction image governing the two weak Hodge directions. The Hodge and nonflat bundle-flow results apply on a smaller neighbourhood of the same family.",
+        "significance": "A genuine inverse step now accompanies the forward metric and spectral theory: specified global integral information is recovered from constructed marked observations, and its relation to the geometric analytic operators is explicit.",
+        "limits": "The full matrix and Smith data are not numerically executed; no practical runtime bound is claimed. The analytic neighbourhood can be ineffective. This does not recover the full cohomology ring, diffeomorphism type or complete metric from local nodes or eigenvalues alone.",
+        "prerequisite": "Conifold surgery, Picard–Lefschetz theory and certified period computation motivate the construction. Papers 29 and 30 provide the imported analytic conclusions, with hypotheses checked here."
+      },
+      "id": 31,
+      "title": "Integral vanishing cycles from periods on conifold smoothings",
+      "slug": "conifold-integral-reconstruction",
+      "status": "Public preprint",
+      "page": "/papers/conifold-integral-reconstruction/",
+      "pdf": "/papers/conifold-integral-reconstruction/paper.pdf",
+      "sha256": "f573fe0135e0a967d01eeee17314e09ae0ef389b7c29e5ab14583faf8b840c75",
+      "doi": "10.5281/zenodo.24175968",
+      "publicationDate": "2026-11-12",
+      "revisionDate": "2026-11-12",
+      "rank": 2
+    },
+    {
+      "short": "Point-defect flow law",
+      "branch": "dynamics",
+      "role": "Sharp singular replacement law",
+      "rationale": "A conceptually independent advance resolves the missing leading law exposed by the singular-graded obstruction: an explicit inverse-time coefficient, an actual charge-one inner metric and matching concentration radii for every smooth fixed-determinant initial metric in the reduced distinct-factor class. Its geometric scope is narrower than the general stationary theorem but its conclusion is sharp.",
+      "scope": "Rank-two locally free extensions on compact Kähler surfaces; sharp profiles for nonempty reduced defects and distinct equal-degree line factors. Broader finite defects have one-sided bounds.",
+      "explanation": {
+        "question": "When a graded quotient has point defects, what replaces the smooth weight-model asymptotic and how does the actual metric concentrate?",
+        "idea": "Use the local residue and dissipation identities, correct a compact metric family orthogonally to its small connection eigenspace, and compare the resulting trajectory with every actual fixed-determinant flow.",
+        "result": "The integrated squared inclusion norm satisfies Z(T) ∼ v₀²/(4π²σT). Rescaled metrics converge smoothly to an explicit charge-one anti-self-dual profile; inclusion half-height and half-defect-energy radii have the same leading order-T⁻¹ᐟ² value. General finite defects obey O(T⁻¹), with TZ(T) → 0 for a nonreduced defect.",
+        "significance": "The singular-graded branch now has a positive quantitative replacement law and concentration profile, not only an obstruction to extending a smooth model. The leading coefficient retains the local inclusion geometry.",
+        "limits": "The sharp coefficient and profile require reduced defects and distinct line factors. Repeated factors and nonreduced defects retain only the stated bounds. The base surface stays smooth; this is not singular flow on the conifold threefold family.",
+        "prerequisite": "Paper 10 gives the obstruction and toric example. Knowledge of HYM flow, surface bubbling and local anti-self-dual connections helps separate the established limiting charges from the new quantitative profile."
+      },
+      "id": 32,
+      "title": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+      "slug": "point-defects-hym-flow",
+      "status": "Public preprint",
+      "page": "/papers/point-defects-hym-flow/",
+      "pdf": "/papers/point-defects-hym-flow/paper.pdf",
+      "sha256": "d4b742421d750f25165118eaffc0b80ce0aa1a1be7b0e1147290de48a1183c6e",
+      "doi": "10.5281/zenodo.24175884",
+      "publicationDate": "2026-11-12",
+      "revisionDate": "2026-11-12",
+      "rank": 5
     }
   ],
   "graph": {
-    "generated": "2026-11-11",
-    "scope": "Selected direct intra-series theorem inputs and explicitly acknowledged method extensions in the current canonical sources; Papers 1–28 only.",
+    "generated": "2026-11-12",
+    "scope": "Selected direct intra-series theorem inputs and explicitly acknowledged method extensions in the current canonical sources; Papers 1–32 only.",
     "methodology": [
       "An arrow points from a source paper to a paper that uses or extends it.",
       "Theorem means that a result or geometric construction is expressly used as an input. It may support an application rather than the entire later paper.",
@@ -1401,6 +1505,156 @@ window.ATLAS_DATA = {
             "url": "https://github.com/bwuebben/stability-degeneration/blob/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/28_all_time_hym_curves/sections/01_introduction.tex#L197"
           }
         ]
+      },
+      {
+        "from": 2,
+        "to": 29,
+        "kind": "theorem",
+        "reason": "Uses the central toric transition and its global Hodge and divisor data.",
+        "evidence": [
+          {
+            "path": "papers/29_multiscale_conifold_hodge/sections/02_geometry.tex",
+            "line": 94,
+            "endLine": 99,
+            "excerpt": "The global toric calculation in \\cite[Appendix~A]{wuebben-chambers}\ngives $h^{1,1}(Y)=4$, $h^{2,1}(Y)=60$ and the spanning divisor\nclasses $(f,g,\\xi_1,\\xi_2)$. Simple connectivity follows from the\ntoric lattice-quotient calculation in \\cite[Section~8]{wuebben-hodge}.\nWe use these established global data. In these coordinates the two\ncurve types have degrees",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/sections/02_geometry.tex#L94"
+          }
+        ]
+      },
+      {
+        "from": 22,
+        "to": 29,
+        "kind": "theorem",
+        "reason": "Uses the central simple-connectivity calculation and normalization; the unequal-scale analytic theorem is proved anew.",
+        "evidence": [
+          {
+            "path": "papers/29_multiscale_conifold_hodge/sections/02_geometry.tex",
+            "line": 94,
+            "endLine": 99,
+            "excerpt": "The global toric calculation in \\cite[Appendix~A]{wuebben-chambers}\ngives $h^{1,1}(Y)=4$, $h^{2,1}(Y)=60$ and the spanning divisor\nclasses $(f,g,\\xi_1,\\xi_2)$. Simple connectivity follows from the\ntoric lattice-quotient calculation in \\cite[Section~8]{wuebben-hodge}.\nWe use these established global data. In these coordinates the two\ncurve types have degrees",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/sections/02_geometry.tex#L94"
+          }
+        ]
+      },
+      {
+        "from": 29,
+        "to": 30,
+        "kind": "theorem",
+        "reason": "Uses the actual Ricci-flat family and its uniform analytic estimates as the background for the nonflat bundle construction.",
+        "evidence": [
+          {
+            "path": "papers/30_conifold_hym_dynamics/sections/02_geometry.tex",
+            "line": 44,
+            "endLine": 63,
+            "excerpt": "$\\mathcal B^\\circ=\\{p\\in\\mathcal B:\\prod_i p_i\\ne0\\}$.\nAfter shrinking the ball, all the units and their inverses are\nbounded. We permit every path $p\\to0$ in $\\mathcal B^\\circ$;\nno ratio or phase condition is imposed on the $\\tau_i$.\n\nLet $\\omega_p$ be the actual Ricci-flat Kähler form in\n$c_1(\\mathcal H_p)$ and let $g_p$ be its Riemannian metric.\nWe recall explicitly the analytic input from\n\\cite[Theorem 9.1 and Section 10]{W_Hodge}. There are conic radii\n$\\varrho_p$, equal up to fixed constants to\n$(|z|^2+|\\tau_i|)^{1/3}$ on the node charts and to one on a fixed\nexterior, and initial Kähler metrics $\\widetilde g_p^R$ which are\nnormalized Stenzel metrics on the inner charts. For fixed small\n$R>0$ and every fixed $k$, there are $\\mu>\\eta>0$ such that\n\\begin{equation}\\label{eq:ricci-flat-input}\n \\limsup_{\\substack{p\\to0\\\\p\\in\\mathcal B^\\circ}}\n \\max_{j\\le k}\\sup_{X_p}\\varrho_p^j\n |\\nabla^j(g_p-\\widetilde g_p^R)|_{\\widetilde g_p^R}\n       \\le C_k R^{\\mu-\\eta}.\n\\end{equation}",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/sections/02_geometry.tex#L44"
+          }
+        ]
+      },
+      {
+        "from": 15,
+        "to": 30,
+        "kind": "method",
+        "reason": "Extends stationary local reduction to the conifold family, verifying the complementary estimates and quotient geometry anew.",
+        "evidence": [
+          {
+            "path": "papers/30_conifold_hym_dynamics/sections/01_introduction.tex",
+            "line": 236,
+            "endLine": 246,
+            "excerpt": "Earlier work in this series treats stationary local\nreduction on a fixed smooth background \\cite{W_Local},\nfinite phase reduction for trajectories satisfying its\nconfinement hypotheses \\cite{W_Phase}, and all-time\napproximation on degenerating curves with the stated\nspatial initial-data class \\cite{W_Curves}.\nThe present proof verifies the complementary estimates,\nconfinement and quotient geometry anew on the nonflat\nconifold family. Its contribution is this geometric\nrealization and the simultaneous uniformity of the\nspectral, dynamical and harmonic-metric comparisons.",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/sections/01_introduction.tex#L236"
+          }
+        ]
+      },
+      {
+        "from": 16,
+        "to": 30,
+        "kind": "method",
+        "reason": "Extends finite phase reduction to the specified degenerating family with a verified open spatial basin.",
+        "evidence": [
+          {
+            "path": "papers/30_conifold_hym_dynamics/sections/01_introduction.tex",
+            "line": 236,
+            "endLine": 246,
+            "excerpt": "Earlier work in this series treats stationary local\nreduction on a fixed smooth background \\cite{W_Local},\nfinite phase reduction for trajectories satisfying its\nconfinement hypotheses \\cite{W_Phase}, and all-time\napproximation on degenerating curves with the stated\nspatial initial-data class \\cite{W_Curves}.\nThe present proof verifies the complementary estimates,\nconfinement and quotient geometry anew on the nonflat\nconifold family. Its contribution is this geometric\nrealization and the simultaneous uniformity of the\nspectral, dynamical and harmonic-metric comparisons.",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/sections/01_introduction.tex#L236"
+          }
+        ]
+      },
+      {
+        "from": 29,
+        "to": 31,
+        "kind": "theorem",
+        "reason": "Imports the full relative Ricci-flat Hodge theorem after verifying its hypotheses on the selected algebraic family.",
+        "evidence": [
+          {
+            "path": "papers/31_conifold_integral_reconstruction/sections/09_integrated_theorem.tex",
+            "line": 132,
+            "endLine": 139,
+            "excerpt": "The Hodge, bundle, flow and harmonic metric estimates are\nimported in their full stated forms from \\cite{W_Hodge,W_HYM},\nwith their hypotheses checked in\nProposition~\\ref{prop:analytic-reapplication}. The proof below\nestablishes their compatibility with the integral construction.\nIt also records the spectral--flow and action-map\nidentifications explicitly; the corresponding analytic\narguments are in \\cite[Sections~10--12]{W_HYM}.",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/sections/09_integrated_theorem.tex#L132"
+          }
+        ]
+      },
+      {
+        "from": 30,
+        "to": 31,
+        "kind": "theorem",
+        "reason": "Imports the nonflat bundle, flow and harmonic metric conclusions on that same family; the connecting maps are identified explicitly.",
+        "evidence": [
+          {
+            "path": "papers/31_conifold_integral_reconstruction/sections/09_integrated_theorem.tex",
+            "line": 132,
+            "endLine": 139,
+            "excerpt": "The Hodge, bundle, flow and harmonic metric estimates are\nimported in their full stated forms from \\cite{W_Hodge,W_HYM},\nwith their hypotheses checked in\nProposition~\\ref{prop:analytic-reapplication}. The proof below\nestablishes their compatibility with the integral construction.\nIt also records the spectral--flow and action-map\nidentifications explicitly; the corresponding analytic\narguments are in \\cite[Sections~10--12]{W_HYM}.",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/sections/09_integrated_theorem.tex#L132"
+          }
+        ]
+      },
+      {
+        "from": 2,
+        "to": 31,
+        "kind": "theorem",
+        "reason": "Uses the central compact transition and divisor data before constructing the certified integral observations.",
+        "evidence": [
+          {
+            "path": "papers/31_conifold_integral_reconstruction/sections/01_introduction.tex",
+            "line": 272,
+            "endLine": 281,
+            "excerpt": "The central compact transition and its divisor\ndata come from \\cite{W_Toric,W_HodgeRay}.\nThe relative Ricci-flat Hodge theorem and the\nnonflat bundle, HYM and harmonic quotient results\nare those of \\cite{W_Hodge,W_HYM}.\nThe present contribution is the terminating geometric\nobservation construction and its integral output\non a family to which those analytic conclusions\nare proved to apply. The final section records\nthe actual connecting maps and an example with",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/sections/01_introduction.tex#L272"
+          }
+        ]
+      },
+      {
+        "from": 22,
+        "to": 31,
+        "kind": "theorem",
+        "reason": "Uses the established compact transition data; the inverse construction itself is new to this paper.",
+        "evidence": [
+          {
+            "path": "papers/31_conifold_integral_reconstruction/sections/01_introduction.tex",
+            "line": 272,
+            "endLine": 281,
+            "excerpt": "The central compact transition and its divisor\ndata come from \\cite{W_Toric,W_HodgeRay}.\nThe relative Ricci-flat Hodge theorem and the\nnonflat bundle, HYM and harmonic quotient results\nare those of \\cite{W_Hodge,W_HYM}.\nThe present contribution is the terminating geometric\nobservation construction and its integral output\non a family to which those analytic conclusions\nare proved to apply. The final section records\nthe actual connecting maps and an example with",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/sections/01_introduction.tex#L272"
+          }
+        ]
+      },
+      {
+        "from": 10,
+        "to": 32,
+        "kind": "theorem",
+        "reason": "Uses the predecessor toric example for a sharp-profile application; its residue estimates are also reproved with fixed normalizations.",
+        "evidence": [
+          {
+            "path": "papers/32_singular_hym_point_defects/sections/10_consequences_examples.tex",
+            "line": 76,
+            "endLine": 98,
+            "excerpt": "\nWe spell out the specialization to the tangent-bundle example\nof \\cite[Section~2]{W_Singular}. Let \\(X\\) have fan with cyclic rays\n\\[\n (1,0),\\quad(1,1),\\quad(0,1),\\quad(-1,0),\\quad(1,-1).\n\\]\nConsecutive determinants are one. Removing \\((1,1)\\)\ngives the first Hirzebruch surface, so \\(X\\) is its\nblowup at the corresponding fixed point. With pullback\nsection and fibre classes \\(S,f\\) and exceptional class \\(E\\),\n\\[\n S^2=-1,\\quad Sf=1,\\quad f^2=0,\\quad E^2=-1,\\quad SE=fE=0.\n\\]\nChoose a Kähler form in \\(4S+7f-2E\\), and put\n\\[\n V=T_X,\\qquad L=\\OO_X(2S+f-E),\\qquad M=\\OO_X(2f).\n\\]\nThe torus direction \\((1,0)\\) gives a saturated tangent\nline. Its divisorial class is the sum of the two\nopposite-ray divisors, namely \\(2S+f-E\\).\nOn the chart of the cone \\(((1,1),(0,1))\\), its\ninclusion and quotient have the presentation\n\\[",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/32_singular_hym_point_defects/sections/10_consequences_examples.tex#L76"
+          }
+        ]
       }
     ],
     "thematicConnections": [
@@ -1485,6 +1739,21 @@ window.ATLAS_DATA = {
             "url": "https://github.com/bwuebben/stability-degeneration/blob/64c2c23d6bae287ebfba0d97029466bb0f91524f/papers/23_curve_intersection_spectrum/main.tex#L812"
           }
         ]
+      },
+      {
+        "from": 28,
+        "to": 30,
+        "kind": "theme",
+        "reason": "Both treat all-time HYM behaviour under independent degeneration, with different geometries, error norms and basin hypotheses. The later paper verifies its estimates anew.",
+        "evidence": [
+          {
+            "path": "papers/30_conifold_hym_dynamics/sections/01_introduction.tex",
+            "line": 236,
+            "endLine": 246,
+            "excerpt": "Earlier work in this series treats stationary local\nreduction on a fixed smooth background \\cite{W_Local},\nfinite phase reduction for trajectories satisfying its\nconfinement hypotheses \\cite{W_Phase}, and all-time\napproximation on degenerating curves with the stated\nspatial initial-data class \\cite{W_Curves}.\nThe present proof verifies the complementary estimates,\nconfinement and quotient geometry anew on the nonflat\nconifold family. Its contribution is this geometric\nrealization and the simultaneous uniformity of the\nspectral, dynamical and harmonic-metric comparisons.",
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/sections/01_introduction.tex#L236"
+          }
+        ]
       }
     ],
     "isolatedInSelectedDependencyGraph": [
@@ -1550,7 +1819,20 @@ window.ATLAS_DATA = {
       "papers/25_hym_nodal_curves/sections/06_spectrum.tex": "8476946cf73e45d35b447bc4370e18bd11de81248b084b985d61fee4d8c6083a",
       "papers/26_global_gluing_hym_curves/sections/01_introduction.tex": "d21e0fdd7ac5f30281d7e11655f401bd3265ee7e9e61f9eacc730ed08812b5ce",
       "papers/27_type_k_hym_dynamics/sections/01_introduction.tex": "bd59b114fbc6d303e017e51310b122a492f87dc04b28b4a6e400bfb1d94ae030",
-      "papers/28_all_time_hym_curves/sections/01_introduction.tex": "0b49d0e42a87ad242646b7ee58a424533a8498475734984332d4b549326a1375"
+      "papers/28_all_time_hym_curves/sections/01_introduction.tex": "0b49d0e42a87ad242646b7ee58a424533a8498475734984332d4b549326a1375",
+      "papers/29_multiscale_conifold_hodge/sections/02_geometry.tex": "8183f349e96e369bf6d66b995e3ab802fac14d5cab40aeb5888967a9438884ef",
+      "papers/30_conifold_hym_dynamics/sections/02_geometry.tex": "65643aea5405928fe4f4cb159ad797fc269d772f0eb5d33ad4b33ff7790065b1",
+      "papers/30_conifold_hym_dynamics/sections/01_introduction.tex": "d1fadcaf3ba65486673088ba0d018808ea3a39c88c19039bf0681268285169cf",
+      "papers/31_conifold_integral_reconstruction/sections/09_integrated_theorem.tex": "023bfb3a95d5b8ab111ccd63dc15afcd780426bd685692aaea111f43ccdd5bac",
+      "papers/31_conifold_integral_reconstruction/sections/01_introduction.tex": "5e8c613a3517b5d71535ac6610a40f9d39e32e7b59fff8f94638f93ee9bff31e",
+      "papers/32_singular_hym_point_defects/sections/10_consequences_examples.tex": "e272405fad7407d1bb6283b749504711863cb3042528247321db2abef43c0609",
+      "papers/03_metric_response_flow/paper.tex": "6fdfed3a80d1e0b9577008d78529230fbc6b86394aab41ce2486d99f914cb4ef",
+      "papers/05_three_step_metrics/paper.tex": "48a2f6414d10e53288d6a94321410776eb5a6c2dc914901fd879544fb54cb409",
+      "papers/06_wall_moduli_metrics/paper.tex": "17057a7824d9f3ee8b34bd1312e80ae0b8d54f6888b23df7e2688921b6c6ba2e",
+      "papers/07_repeated_factor_moduli/paper.tex": "4c1068a81ae432edf4556e17e9039d0968d4ea7c025077235408622e5aea8346",
+      "papers/08_flow_phase/paper.tex": "64e586efb49cbc82b08752bdd0acf3134346339fc46213fbd401c617684b1a8b",
+      "papers/09_wall_unstable_flow/paper.tex": "69e46bc34a1e572eb62af0b35886e610c2dbe0d59df7766af0d44877fe89c936",
+      "papers/10_singular_hym_asymptotics/paper.tex": "5e9a9a057040221db4c8b0484e1c247a0a4fd072bc1d785bf65a6df7e79cf450"
     },
     "rootsInSelectedDependencyGraph": [
       1,
@@ -1562,9 +1844,13 @@ window.ATLAS_DATA = {
   },
   "order": [
     15,
-    22,
+    31,
+    29,
+    30,
+    32,
     20,
     16,
+    22,
     10,
     28,
     14,
@@ -1590,7 +1876,7 @@ window.ATLAS_DATA = {
     7,
     5
   ],
-  "method": "Editorial ordering of the current manuscripts by mathematical breadth, conceptual advance, reusable foundations and lasting independent contribution. Not a citation metric, journal forecast, external peer review or new correctness audit. Neighbouring ranks, especially in the lower half, are debatable.",
+  "method": "Editorial ordering of the current manuscripts by breadth, conceptual advance, reusable foundations and lasting independent contribution. The reassessment includes Papers 29–32: integral recovery, ratio-unrestricted Ricci-flat analysis, common-family bundle dynamics and a sharp surface defect law. Paper 15 retains first place for generality; Paper 31 ranks second for the inverse construction, with its marking and effectiveness limits explicit. This is not a citation metric, a journal forecast, external peer review or a new correctness audit. Nearby ranks remain debatable.",
   "branches": {
     "foundations": {
       "name": "Local & spectral foundations",
@@ -1605,7 +1891,7 @@ window.ATLAS_DATA = {
       "color": "var(--atlas-category)"
     },
     "geometry": {
-      "name": "K3 metrics & integral geometry",
+      "name": "Moduli and integral geometry",
       "color": "var(--atlas-geometry)"
     },
     "spectral": {

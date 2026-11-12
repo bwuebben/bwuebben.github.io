@@ -6,6 +6,34 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Point defects and Hermitian–Yang–Mills flow on surfaces</title>
+      <link>https://bwuebben.github.io/papers/point-defects-hym-flow/</link>
+      <guid>https://bwuebben.github.io/papers/point-defects-hym-flow/#update-2026-11-12</guid>
+      <description>For rank-two extensions with distinct equal-degree line factors and nonempty reduced point defects on a compact Kähler surface, every smooth initial metric with the fixed Hermitian–Einstein determinant has an explicit inverse-time inclusion-norm law. Actual metrics converge to a charge-one anti-self-dual profile at radius of order T⁻¹ᐟ², with matching leading inclusion half-height and half-energy radii. Arbitrary finite defects satisfy an O(T⁻¹) bound, strengthened to o(T⁻¹) when a defect is nonreduced; sharp profiles beyond the reduced distinct-factor class remain open.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Integral vanishing cycles from periods on conifold smoothings</title>
+      <link>https://bwuebben.github.io/papers/conifold-integral-reconstruction/</link>
+      <guid>https://bwuebben.github.io/papers/conifold-integral-reconstruction/#update-2026-11-12</guid>
+      <description>Certified period jumps recover the marked integral vanishing-cycle homomorphism for an algebraically selected six-parameter conifold family, including saturation, quotient torsion and monodromy. The terminating construction produces a geometric symplectic marking and absolute observation-error bounds without a height prior. Relative Ricci-flat Hodge spectra and nonflat bundle dynamics apply on a possibly ineffective smaller neighbourhood of the same family; the full integral matrix is not numerically executed, and reconstruction of an arbitrary manifold is not asserted.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold</title>
+      <link>https://bwuebben.github.io/papers/conifold-hym-dynamics/</link>
+      <guid>https://bwuebben.github.io/papers/conifold-hym-dynamics/#update-2026-11-12</guid>
+      <description>A nonflat rank-four bundle family on Ricci-flat conifold smoothings admits relative asymptotics for all seven weak endomorphism modes, including changing kernels and independently separated rates. For an open spatial C¹ basin, actual Hermitian–Yang–Mills flow follows an exact finite invariant-graph trajectory with an initial phase and exponentially decaying C¹ error for all time. Harmonic metrics on every local stabilizer stratum determine a confined metric tangent cone; base and bundle scales vary independently, while each trajectory fixes its base and holomorphic bundle.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Relative Hodge spectra of multiscale conifold smoothings</title>
+      <link>https://bwuebben.github.io/papers/relative-hodge-conifold-smoothings/</link>
+      <guid>https://bwuebben.github.io/papers/relative-hodge-conifold-smoothings/#update-2026-11-12</guid>
+      <description>Actual Ricci-flat metrics on an explicit eight-node Calabi–Yau conifold smoothing have exactly two small positive two-form eigenvalues throughout a six-dimensional period base, with no restriction on nonzero node ratios. A relative comparison of the full energy and harmonic mass identifies both eigenlines and a complementary spectral gap. Independently scaled Stenzel regions give logarithmic and iterated-logarithmic hierarchies on the same algebraic family.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>All-time approximation of Hermitian–Yang–Mills flow on degenerating curves</title>
       <link>https://bwuebben.github.io/papers/all-time-hym-curves/</link>
       <guid>https://bwuebben.github.io/papers/all-time-hym-curves/#update-2026-11-11</guid>

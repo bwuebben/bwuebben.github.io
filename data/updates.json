@@ -1,5 +1,29 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+    "url": "/papers/point-defects-hym-flow/",
+    "description": "For rank-two extensions with distinct equal-degree line factors and nonempty reduced point defects on a compact Kähler surface, every smooth initial metric with the fixed Hermitian–Einstein determinant has an explicit inverse-time inclusion-norm law. Actual metrics converge to a charge-one anti-self-dual profile at radius of order T⁻¹ᐟ², with matching leading inclusion half-height and half-energy radii. Arbitrary finite defects satisfy an O(T⁻¹) bound, strengthened to o(T⁻¹) when a defect is nonreduced; sharp profiles beyond the reduced distinct-factor class remain open."
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Integral vanishing cycles from periods on conifold smoothings",
+    "url": "/papers/conifold-integral-reconstruction/",
+    "description": "Certified period jumps recover the marked integral vanishing-cycle homomorphism for an algebraically selected six-parameter conifold family, including saturation, quotient torsion and monodromy. The terminating construction produces a geometric symplectic marking and absolute observation-error bounds without a height prior. Relative Ricci-flat Hodge spectra and nonflat bundle dynamics apply on a possibly ineffective smaller neighbourhood of the same family; the full integral matrix is not numerically executed, and reconstruction of an arbitrary manifold is not asserted."
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+    "url": "/papers/conifold-hym-dynamics/",
+    "description": "A nonflat rank-four bundle family on Ricci-flat conifold smoothings admits relative asymptotics for all seven weak endomorphism modes, including changing kernels and independently separated rates. For an open spatial C¹ basin, actual Hermitian–Yang–Mills flow follows an exact finite invariant-graph trajectory with an initial phase and exponentially decaying C¹ error for all time. Harmonic metrics on every local stabilizer stratum determine a confined metric tangent cone; base and bundle scales vary independently, while each trajectory fixes its base and holomorphic bundle."
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Relative Hodge spectra of multiscale conifold smoothings",
+    "url": "/papers/relative-hodge-conifold-smoothings/",
+    "description": "Actual Ricci-flat metrics on an explicit eight-node Calabi–Yau conifold smoothing have exactly two small positive two-form eigenvalues throughout a six-dimensional period base, with no restriction on nonzero node ratios. A relative comparison of the full energy and harmonic mass identifies both eigenlines and a complementary spectral gap. Independently scaled Stenzel regions give logarithmic and iterated-logarithmic hierarchies on the same algebraic family."
+  },
+  {
     "date": "2026-11-11",
     "title": "All-time approximation of Hermitian–Yang–Mills flow on degenerating curves",
     "url": "/papers/all-time-hym-curves/",

@@ -19,7 +19,7 @@
     1:[85,135],2:[85,350],3:[245,390],4:[245,145],5:[85,550],6:[245,265],7:[270,550],
     8:[435,395],9:[435,535],10:[605,550],11:[435,90],12:[600,90],13:[600,190],14:[575,310],
     15:[745,410],16:[765,555],17:[760,135],18:[875,250],19:[910,90],20:[925,405],21:[925,555],
-    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300]
+    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300],29:[1325,565],30:[1470,395],31:[1480,150],32:[605,675]
   };
   const svg = (tag, attrs={}, text) => {
     const e=document.createElementNS('http://www.w3.org/2000/svg',tag);
@@ -45,7 +45,7 @@
   function setView(view){state.view=view;render();}
   function edgePath(e){
     const a=pos[e.from],b=pos[e.to]; const dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy)||1;
-    const ra=11+(29-byId.get(e.from).rank)*.53,rb=11+(29-byId.get(e.to).rank)*.53;
+    const ra=11+(papers.length+1-byId.get(e.from).rank)*.45,rb=11+(papers.length+1-byId.get(e.to).rank)*.45;
     const x1=a[0]+dx/len*(ra+3),y1=a[1]+dy/len*(ra+3),x2=b[0]-dx/len*(rb+7),y2=b[1]-dy/len*(rb+7);
     const bend=Math.min(60,len*.1)*((e.from+e.to)%2?1:-1);
     return `M${x1},${y1} Q${(x1+x2)/2-dy/len*bend},${(y1+y2)/2+dx/len*bend} ${x2},${y2}`;
@@ -70,11 +70,11 @@
     root.append(g);
   }
   function renderMap(){
-    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox','0 0 1260 700');root.setAttribute('aria-label','Selected direct theorem and method dependencies among 28 papers');
+    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox','0 0 1600 790');root.style.minWidth='1300px';root.setAttribute('aria-label',`Selected direct theorem and method dependencies among ${papers.length} papers`);
     const defs=svg('defs');
     for(const [id,c] of [['normal','var(--ink-soft)'],['focus','var(--accent)']]){const m=svg('marker',{id:`arrow-${id}`,viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'});m.append(svg('path',{d:'M 0 1 L 9 5 L 0 9',fill:'none',stroke:c,'stroke-width':1.5}));defs.append(m);}root.append(defs);
-    for(const [x,t] of [[45,'ORIGINS'],[395,'FLOW & CATEGORIES'],[700,'K3 & LOCAL THEORY'],[1010,'DEGENERATING BASES']])root.append(svg('text',{x,y:25,class:'group-label'},t));
-    for(let x=35;x<1250;x+=35)for(let y=50;y<700;y+=35)root.append(svg('circle',{cx:x,cy:y,r:.65,fill:'var(--rule)',opacity:.25}));
+    for(const [x,t] of [[45,'ORIGINS'],[395,'FLOW & CATEGORIES'],[700,'K3 & LOCAL THEORY'],[1010,'DEGENERATING BASES'],[1350,'COMMON-FAMILY RECOVERY']])root.append(svg('text',{x,y:25,class:'group-label'},t));
+    for(let x=35;x<1590;x+=35)for(let y=50;y<780;y+=35)root.append(svg('circle',{cx:x,cy:y,r:.65,fill:'var(--rule)',opacity:.25}));
     const highlighted=highlightSet();
     const edges=[...activeEdges(),...(state.themes?themes:[])];
     for(const e of edges){
@@ -86,21 +86,21 @@
     }
     for(const p of papers.filter(p=>p.id!==state.selected).concat(byId.get(state.selected))){
       const opacity=!matches(p)?.13:highlighted.has(p.id)?1:.4;
-      drawNode(root,p,...pos[p.id],11+(29-p.rank)*.53,opacity);
+      drawNode(root,p,...pos[p.id],11+(papers.length+1-p.rank)*.45,opacity);
     }
     const n=highlighted.size-1;
     $('#chart-caption').innerHTML=`<strong>Paper ${num(state.selected)} · ${esc(byId.get(state.selected).short)}</strong> — ${state.neighborhood==='all'?'all documented connections shown':state.neighborhood==='direct'?`${n} directly connected papers highlighted`:state.neighborhood==='ancestors'?`${n} selected-graph predecessors highlighted`:`${n} selected-graph successors highlighted`}.`;
     $('#graph-footnote').textContent='Numbers identify papers. Larger circles indicate higher editorial rank. Positions group research strands; distances have no mathematical meaning. On a small screen, scroll the map sideways.';
   }
   function renderInfluence(){
-    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox','0 0 1000 820');root.setAttribute('aria-label','Editorial rank versus selected direct follow-on papers');
+    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox','0 0 1000 930');root.style.minWidth='1000px';root.setAttribute('aria-label','Editorial rank versus selected direct follow-on papers');
     const edges=activeEdges(),counts=new Map(papers.map(p=>[p.id,new Set(edges.filter(e=>e.from===p.id).map(e=>e.to)).size]));
     const max=Math.max(5,...counts.values());const x=n=>145+n*(710/max);const y=rank=>65+(rank-1)*25;
     root.append(svg('rect',{x:105,y:40,width:795,height:155,rx:8,fill:'var(--bg-panel)',opacity:.5}));
-    for(let n=0;n<=max;n++){root.append(svg('line',{x1:x(n),y1:40,x2:x(n),y2:750,stroke:'var(--rule)','stroke-width':1,'stroke-dasharray':'2 6'}));root.append(svg('text',{x:x(n),y:777,class:'plot-label','text-anchor':'middle'},n));}
-    for(const rank of [1,7,14,21,28]){root.append(svg('text',{x:72,y:y(rank)+4,class:'plot-label','text-anchor':'end'},`#${rank}`));root.append(svg('line',{x1:105,y1:y(rank),x2:900,y2:y(rank),stroke:'var(--rule)',opacity:.4}));}
+    for(let n=0;n<=max;n++){root.append(svg('line',{x1:x(n),y1:40,x2:x(n),y2:865,stroke:'var(--rule)','stroke-width':1,'stroke-dasharray':'2 6'}));root.append(svg('text',{x:x(n),y:892,class:'plot-label','text-anchor':'middle'},n));}
+    for(const rank of [1,8,16,24,32]){root.append(svg('text',{x:72,y:y(rank)+4,class:'plot-label','text-anchor':'end'},`#${rank}`));root.append(svg('line',{x1:105,y1:y(rank),x2:900,y2:y(rank),stroke:'var(--rule)',opacity:.4}));}
     root.append(svg('text',{x:35,y:28,class:'group-label'},'EDITORIAL RANK ↑'));
-    root.append(svg('text',{x:510,y:810,class:'plot-label','text-anchor':'middle'},'Number of distinct direct follow-on papers in the selected graph →'));
+    root.append(svg('text',{x:510,y:920,class:'plot-label','text-anchor':'middle'},'Number of distinct direct follow-on papers in the selected graph →'));
     for(const p of papers){
       const opacity=matches(p)?1:.13;drawNode(root,p,x(counts.get(p.id)),y(p.rank),9.5,opacity,true);
       if(p.rank<=6||[11,12].includes(p.id)||p.id===state.selected){const left=x(counts.get(p.id))>650;const tx=x(counts.get(p.id))+(left?-18:18);root.append(svg('text',{x:tx,y:y(p.rank)+4,class:'plot-label',opacity,'text-anchor':left?'end':'start',fill:p.id===state.selected?'var(--ink)':'var(--ink-soft)'},p.short));}
@@ -115,7 +115,7 @@
   function renderInspector(){
     const p=byId.get(state.selected),incoming=allEdges.filter(e=>e.to===p.id),outgoing=allEdges.filter(e=>e.from===p.id),related=themes.filter(e=>e.from===p.id||e.to===p.id);
     const x=p.explanation;
-    $('#inspector').innerHTML=`<div class="inspector-main"><div class="paper-meta"><span style="color:${color(p)}">PAPER ${num(p.id)}</span><span class="rank-badge">RANK ${num(p.rank)} / 28</span></div><p class="role" style="color:${color(p)}">${esc(p.role)}</p><h3>${esc(p.short)}</h3><p class="full-title">${esc(p.title)}</p><h4>The question</h4><p class="explanation">${esc(x.question)}</p><h4>The main result</h4><p class="explanation">${esc(x.result)}</p><h4>Why this rank</h4><p class="rationale">${esc(p.rationale)}</p><details><summary>The idea behind the result</summary><p>${esc(x.idea)}</p></details><div class="scope"><strong>Scope and limits</strong>${esc(x.limits)}</div><div class="paper-links"><a href="${p.page}">Full abstract ↗</a><a href="${p.pdf}" target="_blank" rel="noopener">Read PDF ↗</a><button class="quiet-button" data-guide="${p.id}">Paper guide →</button></div><p class="paper-status">Public preprint · <a href="https://doi.org/${esc(p.doi)}">Archived version ↗</a></p></div><div class="inspector-connections"><p class="connection-heading">Uses or extends · ${incoming.length}</p>${connectionRows(incoming,true)}<p class="connection-heading">Used or extended by · ${outgoing.length}</p>${connectionRows(outgoing)}${related.length?`<p class="connection-heading">Thematic connections · not dependencies</p>${related.map(e=>{const other=byId.get(e.from===p.id?e.to:e.from);return `<div class="connection-row"><button data-select="${other.id}"><span class="connection-id">${num(other.id)}</span>${esc(other.short)}</button><button class="evidence-button" data-theme="${themes.indexOf(e)}" aria-label="Read thematic connection to Paper ${other.id}">theme ↗</button></div>`;}).join('')}`:''}<button class="show-all-rank" id="see-ranked">See in the importance ranking →</button></div>`;
+    $('#inspector').innerHTML=`<div class="inspector-main"><div class="paper-meta"><span style="color:${color(p)}">PAPER ${num(p.id)}</span><span class="rank-badge">RANK ${num(p.rank)} / ${papers.length}</span></div><p class="role" style="color:${color(p)}">${esc(p.role)}</p><h3>${esc(p.short)}</h3><p class="full-title">${esc(p.title)}</p><h4>The question</h4><p class="explanation">${esc(x.question)}</p><h4>The main result</h4><p class="explanation">${esc(x.result)}</p><h4>Why this rank</h4><p class="rationale">${esc(p.rationale)}</p><details><summary>The idea behind the result</summary><p>${esc(x.idea)}</p></details><div class="scope"><strong>Scope and limits</strong>${esc(x.limits)}</div><div class="paper-links"><a href="${p.page}">Full abstract ↗</a><a href="${p.pdf}" target="_blank" rel="noopener">Read PDF ↗</a><button class="quiet-button" data-guide="${p.id}">Paper guide →</button></div><p class="paper-status">Public preprint · <a href="https://doi.org/${esc(p.doi)}">Archived version ↗</a></p></div><div class="inspector-connections"><p class="connection-heading">Uses or extends · ${incoming.length}</p>${connectionRows(incoming,true)}<p class="connection-heading">Used or extended by · ${outgoing.length}</p>${connectionRows(outgoing)}${related.length?`<p class="connection-heading">Thematic connections · not dependencies</p>${related.map(e=>{const other=byId.get(e.from===p.id?e.to:e.from);return `<div class="connection-row"><button data-select="${other.id}"><span class="connection-id">${num(other.id)}</span>${esc(other.short)}</button><button class="evidence-button" data-theme="${themes.indexOf(e)}" aria-label="Read thematic connection to Paper ${other.id}">theme ↗</button></div>`;}).join('')}`:''}<button class="show-all-rank" id="see-ranked">See in the importance ranking →</button></div>`;
   }
   function renderRanking(){
     const list=ordered().filter(matches);
@@ -127,7 +127,7 @@
     $('#map-panel').hidden=!['map','influence'].includes(state.view);$('#ranking-panel').hidden=state.view!=='ranking';$('#papers-panel').hidden=state.view!=='papers';
     $('#map-panel').setAttribute('aria-labelledby',state.view==='influence'?'tab-influence':'tab-map');
     $('#graph-options').hidden=state.view==='ranking';$('#show-themes').closest('label').hidden=state.view==='influence';$('.network-control').hidden=state.view==='influence';$('#graph-key').hidden=state.view==='influence';
-    $('#result-count').textContent=`${visible().length} of 28 papers`;
+    $('#result-count').textContent=`${visible().length} of ${papers.length} papers`;
     $$('#legend button').forEach(b=>b.classList.toggle('active',b.dataset.branch===state.branch));
     if(state.view==='ranking')renderRanking();else if(state.view==='papers'){$$('[data-guide-paper]').forEach(card=>card.hidden=!matches(byId.get(Number(card.dataset.guidePaper)))) ;$('#papers-empty').hidden=visible().length>0;}else {renderInspector();state.view==='map'?renderMap():renderInfluence();}
   }
@@ -141,7 +141,9 @@
   const journeys=[
     {title:'Find the general mechanism',copy:'From the original spectral estimate to quotient geometry, the general local theorem and its dynamical counterpart.',ids:[1,4,6,14,15,16]},
     {title:'Follow the geometry outward',copy:'Start with one K3 wall crossing, then connect compact metric limits, integral cycles and canonical singular metrics.',ids:[13,14,17,18,20]},
-    {title:'Let the underlying space degenerate',copy:'Move from intersection-controlled spectra to actual nonlinear flow, genuine gluing and every relaxation time. Paper 27 is the threefold branch.',ids:[23,25,26,28,27]}
+    {title:'Let the underlying space degenerate',copy:'Move from intersection-controlled spectra to actual nonlinear flow, genuine gluing and every relaxation time. Paper 27 gives a type-K branch; the next path follows Ricci-flat conifolds.',ids:[23,25,26,28,27]},
+    {title:'Recover integral topology on one family',copy:'Start with the compact transition and fixed-ray spectrum, pass to independent node scales and nonflat bundle dynamics, then recover the integral vanishing-cycle map from certified marked periods.',ids:[2,22,29,30,31]},
+    {title:'Resolve the singular-flow law',copy:'A toric example exposes the failure of a smooth graded model. Follow the obstruction to the inverse-time law and shrinking charge-one profile, keeping the reduced distinct-factor hypothesis visible.',ids:[2,10,32]}
   ];
   $('#journey-grid').innerHTML=journeys.map((j,i)=>`<article class="journey"><span class="journey-no">PATH ${num(i+1)}</span><h3>${j.title}</h3><p>${j.copy}</p><div class="path-steps">${j.ids.map((id,k)=>`${k?'<span aria-hidden="true">→</span>':''}<button data-select="${id}" data-scroll="true" title="${esc(byId.get(id).title)}" aria-label="Explore Paper ${id}: ${esc(byId.get(id).short)}">${num(id)}</button>`).join('')}</div></article>`).join('');
   $('#ranking-method').textContent=D.method;$('#edge-total').textContent=allEdges.length;

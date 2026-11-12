@@ -1,0 +1,64 @@
+{
+  "slug": "relative-hodge-conifold-smoothings",
+  "catalogue_anchor": "relative-hodge-conifold-smoothings",
+  "catalogue_title": "Relative Hodge spectra of multiscale conifold smoothings",
+  "title": "Relative Hodge spectra of multiscale conifold smoothings",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 29",
+  "status": "Preprint",
+  "publication_date": "2026-11-12",
+  "revision_date": "2026-11-12",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24175848",
+    "url": "https://zenodo.org/records/24175848",
+    "deposited_at": "2026-11-12T21:10:36.203517+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24175848",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/29_multiscale_conifold_hodge"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+    },
+    {
+      "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+      "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
+    },
+    {
+      "label": "Integral vanishing cycles from periods on conifold smoothings",
+      "url": "https://bwuebben.github.io/papers/conifold-integral-reconstruction/"
+    },
+    {
+      "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+      "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+    }
+  ],
+  "verified_on": "2026-11-12",
+  "abstract_html": "<p>We determine the complete small two-form spectrum of the Ricci-flat metrics on an explicit compact polarized Calabi–Yau conifold smoothing with eight nodes. The estimates hold on its full six-dimensional period base, with no restriction on the relative sizes of the nonzero local smoothing parameters. Exactly two positive eigenvalues tend to zero. A fixed exterior cohomological map identifies their spectral space with the two-dimensional quotient of divisor classes by those surviving the smoothing, and compares its entire energy form relatively with the capacity-weighted restriction form. The harmonic mass and complementary spectral gaps are controlled as well. The proof constructs a uniform Ricci-flat correction through independently scaled Stenzel regions, retaining their quadratic harmonic modes by exact complex automorphisms, and combines weighted capacity bounds with compactness in degrees one and two. The resulting energy and mass forms give uniform asymptotics for both eigenlines in these cohomological coordinates and yield separated logarithmic and iterated-logarithmic spectral scales on the same algebraic family.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/main.tex",
+  "pdf": {
+    "sha256": "fb82519246a0269565ced27c93cfe03bac455f40bf3a73e4ea22aa0f95325406",
+    "size_bytes": 549017,
+    "pages": 41,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf",
+    "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf"
+  }
+}

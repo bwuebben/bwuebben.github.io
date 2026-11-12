@@ -2275,6 +2275,10 @@
         {
           "label": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
           "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
+        },
+        {
+          "label": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+          "url": "https://bwuebben.github.io/papers/point-defects-hym-flow/"
         }
       ],
       "verified_on": "2026-11-02",
@@ -3363,6 +3367,10 @@
         {
           "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
           "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+          "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
         }
       ],
       "verified_on": "2026-11-07",
@@ -3431,6 +3439,10 @@
         {
           "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
           "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+          "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
         }
       ],
       "verified_on": "2026-11-07",
@@ -3881,6 +3893,18 @@
         {
           "label": "Effective Hermitian–Yang–Mills flow on nodal degenerations of curves",
           "url": "https://bwuebben.github.io/papers/effective-hym-nodal-curves/"
+        },
+        {
+          "label": "Relative Hodge spectra of multiscale conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/relative-hodge-conifold-smoothings/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+          "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
+        },
+        {
+          "label": "Integral vanishing cycles from periods on conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/conifold-integral-reconstruction/"
         }
       ],
       "verified_on": "2026-11-09",
@@ -4315,6 +4339,262 @@
         "source_commit": "64c2c23d6bae287ebfba0d97029466bb0f91524f",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/28_all_time_hym_curves/all-time-hym-curves.pdf"
+      }
+    },
+    {
+      "slug": "relative-hodge-conifold-smoothings",
+      "catalogue_anchor": "relative-hodge-conifold-smoothings",
+      "catalogue_title": "Relative Hodge spectra of multiscale conifold smoothings",
+      "title": "Relative Hodge spectra of multiscale conifold smoothings",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 29",
+      "status": "Preprint",
+      "publication_date": "2026-11-12",
+      "revision_date": "2026-11-12",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24175848",
+        "url": "https://zenodo.org/records/24175848",
+        "deposited_at": "2026-11-12T21:10:36.203517+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24175848",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/29_multiscale_conifold_hodge"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+        },
+        {
+          "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+          "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
+        },
+        {
+          "label": "Integral vanishing cycles from periods on conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/conifold-integral-reconstruction/"
+        },
+        {
+          "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+          "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+        }
+      ],
+      "verified_on": "2026-11-12",
+      "abstract_html": "<p>We determine the complete small two-form spectrum of the Ricci-flat metrics on an explicit compact polarized Calabi–Yau conifold smoothing with eight nodes. The estimates hold on its full six-dimensional period base, with no restriction on the relative sizes of the nonzero local smoothing parameters. Exactly two positive eigenvalues tend to zero. A fixed exterior cohomological map identifies their spectral space with the two-dimensional quotient of divisor classes by those surviving the smoothing, and compares its entire energy form relatively with the capacity-weighted restriction form. The harmonic mass and complementary spectral gaps are controlled as well. The proof constructs a uniform Ricci-flat correction through independently scaled Stenzel regions, retaining their quadratic harmonic modes by exact complex automorphisms, and combines weighted capacity bounds with compactness in degrees one and two. The resulting energy and mass forms give uniform asymptotics for both eigenlines in these cohomological coordinates and yield separated logarithmic and iterated-logarithmic spectral scales on the same algebraic family.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/main.tex",
+      "pdf": {
+        "sha256": "fb82519246a0269565ced27c93cfe03bac455f40bf3a73e4ea22aa0f95325406",
+        "size_bytes": 549017,
+        "pages": 41,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf",
+        "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/29_multiscale_conifold_hodge/relative-hodge-conifold-smoothings.pdf"
+      }
+    },
+    {
+      "slug": "conifold-hym-dynamics",
+      "catalogue_anchor": "conifold-hym-dynamics",
+      "catalogue_title": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+      "title": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 30",
+      "status": "Preprint",
+      "publication_date": "2026-11-12",
+      "revision_date": "2026-11-12",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24175924",
+        "url": "https://zenodo.org/records/24175924",
+        "deposited_at": "2026-11-12T21:11:52.552917+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24175924",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/30_conifold_hym_dynamics/conifold-hym-dynamics.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/30_conifold_hym_dynamics"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+        },
+        {
+          "label": "Relative Hodge spectra of multiscale conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/relative-hodge-conifold-smoothings/"
+        },
+        {
+          "label": "Integral vanishing cycles from periods on conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/conifold-integral-reconstruction/"
+        },
+        {
+          "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+          "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+        },
+        {
+          "label": "Quantitative local models for Hermitian–Einstein metrics",
+          "url": "https://bwuebben.github.io/papers/local-hym-reduction/"
+        },
+        {
+          "label": "Uniform asymptotic phase for Hermitian–Yang–Mills flow near a polystable bundle",
+          "url": "https://bwuebben.github.io/papers/uniform-hym-phase/"
+        }
+      ],
+      "verified_on": "2026-11-12",
+      "abstract_html": "<p>We construct a nonflat rank-four bundle family on compact Calabi–Yau threefolds smoothing eight ordinary double points and compare its Hermitian–Einstein metrics, metric flow and local moduli geometry uniformly through degeneration. A two-arrow matrix form determines all seven small trace-free endomorphism eigenvalues with relative error, including changing kernels and arbitrarily separated positive rates. On each polystable member, an open spatial <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>C</mi><mn>1</mn></msup></mrow></math> basin admits a finite invariant graph and an initial phase for which the actual Hermitian–Yang–Mills flow tracks an exact graph trajectory with exponentially decaying <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>C</mi><mn>1</mn></msup></mrow></math> error for all time. At the Hermitian–Einstein equilibrium, the Hessian of twice Donaldson&#x27;s functional restricted to the graph is relatively equivalent to the same matrix form in the original metric coordinates. We also identify the actual local bundle classes and compare their harmonic metric on every stabilizer stratum. For paths confined to this locus, the unique metric tangent cone at the split bundle is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><msup><mi mathvariant=\"double-struck\">C</mi><mn>2</mn></msup><mo>&#x0002C;</mo><mn>4</mn><mo stretchy=\"false\">&#x0007C;</mo><mi mathvariant=\"normal\">d</mi><mi>u</mi><msup><mo stretchy=\"false\">&#x0007C;</mo><mn>2</mn></msup><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x00028;</mo><mo stretchy=\"false\">&#x00028;</mo><mi mathvariant=\"double-struck\">Z</mi><mo>&#x0002F;</mo><mn>2</mn><msup><mo stretchy=\"false\">&#x00029;</mo><mn>2</mn></msup><mo>&#x022CA;</mo><msub><mi>S</mi><mn>2</mn></msub><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. All comparisons allow independent node and bundle scales.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/main.tex",
+      "pdf": {
+        "sha256": "37241120331c82ab66b046a893c240bb812708fe7152ae1bf77371bbe9e9d68b",
+        "size_bytes": 631979,
+        "pages": 51,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/30_conifold_hym_dynamics/conifold-hym-dynamics.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/30_conifold_hym_dynamics/conifold-hym-dynamics.pdf",
+        "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/30_conifold_hym_dynamics/conifold-hym-dynamics.pdf"
+      }
+    },
+    {
+      "slug": "conifold-integral-reconstruction",
+      "catalogue_anchor": "conifold-integral-reconstruction",
+      "catalogue_title": "Integral vanishing cycles from periods on conifold smoothings",
+      "title": "Integral vanishing cycles from periods on conifold smoothings",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 31",
+      "status": "Preprint",
+      "publication_date": "2026-11-12",
+      "revision_date": "2026-11-12",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24175968",
+        "url": "https://zenodo.org/records/24175968",
+        "deposited_at": "2026-11-12T21:13:06.790537+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24175968",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/31_conifold_integral_reconstruction"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+        },
+        {
+          "label": "Relative Hodge spectra of multiscale conifold smoothings",
+          "url": "https://bwuebben.github.io/papers/relative-hodge-conifold-smoothings/"
+        },
+        {
+          "label": "Hermitian–Yang–Mills dynamics and harmonic moduli near a conifold",
+          "url": "https://bwuebben.github.io/papers/conifold-hym-dynamics/"
+        },
+        {
+          "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
+          "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+        }
+      ],
+      "verified_on": "2026-11-12",
+      "abstract_html": "<p>We give a terminating construction of the marked integral vanishing-cycle homomorphism for a six-parameter family of Calabi–Yau conifold smoothings in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup></mrow></math>. Its eight local spheres span a rank-six lattice in free middle homology of rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>134</mn></mrow></math>. Starting from algebraically selected equations, we construct a known neighbourhood in vanishing-period coordinates, a geometric symplectic marking, and absolute error bounds for transport and integration of represented cycles. Picard–Lefschetz period jumps recover the integral columns, their saturation and monodromy without a height prior or a restriction on nonzero period ratios. We verify the hypotheses of established analytic results on a possibly ineffective smaller neighbourhood. There the capacity-weighted squared norm of restriction of divisor classes from the small resolution to its exceptional curves governs the two small positive Ricci-flat two-form eigenvalues; the image of this restriction is the kernel of the recovered vanishing-cycle homomorphism. For nonflat bundles on the same fibres, a finite-dimensional invariant manifold of Hermitian–Yang–Mills metric flow is tangent at each constructed Hermitian–Einstein metric to the full low eigenspace on trace-free Hermitian endomorphisms.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/abstract.tex",
+      "pdf": {
+        "sha256": "f573fe0135e0a967d01eeee17314e09ae0ef389b7c29e5ab14583faf8b840c75",
+        "size_bytes": 498426,
+        "pages": 36,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
+        "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf"
+      }
+    },
+    {
+      "slug": "point-defects-hym-flow",
+      "catalogue_anchor": "point-defects-hym-flow",
+      "catalogue_title": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+      "title": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Stability and Geometric Degeneration · Paper 32",
+      "status": "Preprint",
+      "publication_date": "2026-11-12",
+      "revision_date": "2026-11-12",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24175884",
+        "url": "https://zenodo.org/records/24175884",
+        "deposited_at": "2026-11-12T21:10:47.602330+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24175884",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/32_singular_hym_point_defects/point-defects-hym-flow.pdf"
+        },
+        {
+          "label": "source and guide",
+          "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/32_singular_hym_point_defects"
+        }
+      ],
+      "related": [
+        {
+          "label": "Stability & Degeneration research guide",
+          "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#degenerating-spaces"
+        },
+        {
+          "label": "Singular graded limits and metric growth under Hermitian–Yang–Mills flow",
+          "url": "https://bwuebben.github.io/papers/singular-hym-metric-growth/"
+        }
+      ],
+      "verified_on": "2026-11-12",
+      "abstract_html": "<p>We determine the leading metric and concentration scales of Hermitian–Yang–Mills flow for locally free extensions <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>0</mn><mo>&#x02192;</mo><mi>L</mi><mo>&#x02192;</mo><mi>V</mi><mo>&#x02192;</mo><msub><mi mathvariant=\"script\">I</mi><mi>W</mi></msub><mi>M</mi><mo>&#x02192;</mo><mn>0</mn></mrow></math> on a compact Kähler surface, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>L</mi><mo>&#x0002C;</mo><mi>M</mi></mrow></math> are distinct line bundles of equal degree and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>W</mi></mrow></math> is a nonempty reduced finite scheme. Fix Hermitian–Einstein metrics on the line factors and their product as determinant. For every smooth initial metric with this determinant, the integrated squared norm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> of the fixed inclusion satisfies <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo><mi>&#x0007E;</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x00028;</mo><mn>4</mn><msup><mi>&#x003C0;</mi><mn>2</mn></msup><mi>&#x003C3;</mi><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>v</mi><mn>0</mn></msub></mrow></math> is the volume and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>&#x003C3;</mi><mo>&#x0003D;</mo><msub><mo>&#x02211;</mo><mrow><mi>p</mi><mo>&#x02208;</mo><mi>W</mi></mrow></msub><mo stretchy=\"false\">&#x00028;</mo><mo movablelimits=\"true\">det</mo><msub><mi>Q</mi><mi>p</mi></msub><msup><mo stretchy=\"false\">&#x00029;</mo><mrow><mo>&#x02212;</mo><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>Q</mi><mi>p</mi></msub></mrow></math> is the quadratic form of the inclusion norm at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>p</mi></mrow></math> in orthonormal coordinates. On the radius <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x0007B;</mo><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x00028;</mo><msub><mi>v</mi><mn>0</mn></msub><msqrt><mrow><mo movablelimits=\"true\">det</mo><msub><mi>Q</mi><mi>p</mi></msub></mrow></msqrt><mo stretchy=\"false\">&#x00029;</mo><msup><mo stretchy=\"false\">&#x0007D;</mo><mrow><mn>1</mn><mo>&#x0002F;</mo><mn>2</mn></mrow></msup></mrow></math>, the actual metrics converge smoothly to an explicit charge-one anti-self-dual metric. The inclusion half-height radius and the half-defect-energy radius have this same leading value. The proof corrects a compact family of metrics orthogonally to its small connection eigenspace and compares the resulting trajectory with every actual flow. It also gives a global inclusion profile and quantitative convergence outside shrinking balls. For arbitrary finite defects we prove <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x0003D;</mo><mi>O</mi><mo stretchy=\"false\">&#x00028;</mo><msup><mi>T</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mo stretchy=\"false\">&#x00029;</mo></mrow></math>; if a defect is nonreduced, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>T</mi><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>T</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02192;</mo><mn>0</mn></mrow></math>.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/32_singular_hym_point_defects/abstract.tex",
+      "pdf": {
+        "sha256": "d4b742421d750f25165118eaffc0b80ce0aa1a1be7b0e1147290de48a1183c6e",
+        "size_bytes": 501461,
+        "pages": 33,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/32_singular_hym_point_defects/point-defects-hym-flow.pdf",
+        "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/32_singular_hym_point_defects/point-defects-hym-flow.pdf",
+        "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+        "source_repository": "https://github.com/bwuebben/stability-degeneration",
+        "source_path": "papers/32_singular_hym_point_defects/point-defects-hym-flow.pdf"
       }
     }
   ]

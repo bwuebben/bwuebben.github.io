@@ -11,8 +11,8 @@ def build_atlas(page):
     dataset = ROOT / 'data/stability-degeneration-atlas.json'
     data = json.loads(dataset.read_text())
     records = {p['slug']: p for p in json.loads((ROOT / 'data/papers.json').read_text())['papers']}
-    assert sorted(p['id'] for p in data['papers']) == list(range(1, 29))
-    assert sorted(p['rank'] for p in data['papers']) == list(range(1, 29))
+    assert sorted(p['id'] for p in data['papers']) == list(range(1, len(data['papers']) + 1))
+    assert sorted(p['rank'] for p in data['papers']) == list(range(1, len(data['papers']) + 1))
     cards = []
     for p in sorted(data['papers'], key=lambda p: p['id']):
         current = records[p['slug']]
@@ -23,7 +23,7 @@ def build_atlas(page):
         e = p['explanation']
         assert all(e.get(k) for k in ('question', 'idea', 'result', 'significance', 'limits', 'prerequisite'))
         cards.append(f'''<article class="paper-guide-card" id="paper-guide-{p['id']:02}" data-guide-paper="{p['id']}">
-<div class="card-meta"><span>Paper {p['id']:02}</span><span>Importance rank {p['rank']:02} / 28</span></div>
+<div class="card-meta"><span>Paper {p['id']:02}</span><span>Importance rank {p['rank']:02} / {len(data['papers'])}</span></div>
 <h3>{escape(p['title'])}</h3><p class="question">{escape(e['question'])}</p>
 <p><strong>The result.</strong> {escape(e['result'])}</p>
 <details><summary>Method, significance and limits</summary>
