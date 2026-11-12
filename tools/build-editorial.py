@@ -120,7 +120,8 @@ explorers=[
  ("cobordism-explorer","cobordism","03 · Gauge theory","Four dimensions. Two languages.","A space changes. Two mathematical languages describe the change, and the question is whether they agree.","Seven guided moves · Geometry, maps, comparison and signs"),
  ("beyond-hrp-lab","portfolio","04 · Quantitative finance","Give the hierarchy an expected return.","Change the forecast. Watch four portfolio rules decide what to hold.","Four experiments · Weights computed in your browser"),
  ("at-the-wall","stability-wall","05 · Geometric analysis","A small change. An enormous response.","Approach a stability wall and watch a chamber, a network, and three small eigenvalues reveal how geometry loses rigidity.","Four experiments · Chambers, spectra, and flow"),
- ("when-walls-collide","colliding-walls","06 · Enumerative geometry","Take two paths. Find the missing wall.","Cross two walls in a different order. Repair the disagreement, follow a frame around an annulus, and discover the distinction that periods miss.","Four experiments · Paths, holonomy, and a hidden discrepancy")
+ ("when-walls-collide","colliding-walls","06 · Enumerative geometry","Take two paths. Find the missing wall.","Cross two walls in a different order. Repair the disagreement, follow a frame around an annulus, and discover the distinction that periods miss.","Four experiments · Paths, holonomy, and a hidden discrepancy"),
+ ("research/geometry/quantitative-moduli/atlas","stability-wall","07 · Research atlas","Read the series. See the connections.","Explore what each result establishes, the ideas it depends on, and its place in an editorial importance ranking.","Paper explanations · Dependency graph · Reading paths")
 ]
 
 programs=[
@@ -254,9 +255,9 @@ COMPANIONS={
 FORTHCOMING={}
 SUBGUIDES={
  "geometry":[dict(slug="quantitative-moduli",name="Stability and Geometric Degeneration",short="Stability & Degeneration",
-   question="How can degeneration reveal the geometry and topology of moduli spaces?",
-   subtitle="From singular limits to nearby geometry",
-   intro="We use degenerations of holomorphic vector bundles to understand canonical metrics on individual bundles and natural metrics on their moduli spaces. Finite deformation and symmetry data describe actual solutions near a stability wall. In specified compact K3 families without bubbling, exceptional cycles and integral attachments are linked to harmonic metric collapse and global convergence. The marked six-chamber rank-three family now has explicit complement rings, boundary restrictions and wall actions; reconstruction in general retains overlap and monodromy data. For a specified twice-primitive K3 family with all slope-graded factors locally free, the harmonic metric equals the canonical singular Ricci-flat metric in an ample determinant class; holomorphic tangent-cone charts have quadratic relative error within each fixed background. For fixed polarized Calabi–Yau conifold smoothings, exceptional periods and global intersections determine the complete leading small positive two-form spectrum of the Ricci-flat metrics. The theorem assumes a simply connected projective small resolution, first-order smoothing at every node and approach along a fixed ray; its coefficients use the full quotient harmonic norm. Reduced curve degenerations and nodal threefolds with induced metrics have related intersection-theoretic spectral descriptions. On compact degenerating curves, genuine unitary gluing and independent component and neck scales admit finite matrix descriptions of actual HYM flow; fixed constraints and a small finite basin permit absolute tracking for all time. A compact type-K threefold family supplies nonflat rank-four bundles, relative weak spectra and actual flow tracking under its prescribed-metric and rate hypotheses. The broader aim extends this connection to singular compactifications and a quantitative dynamical Kobayashi–Hitchin programme for geometric flows.",
+   question="How does geometry change near a singular limit?",
+   subtitle="Canonical metrics, weak directions and slow motion",
+   intro="Near a stability wall, a bundle can split, a canonical metric can lose rigidity, and motion towards equilibrium can become very slow. This programme studies those changes through finite models, then follows their consequences for moduli spaces and for bundles on degenerating curves and threefolds.",
    image="stability-wall",stem="quantitative-moduli-guide",section="stability-degeneration",stylesheet="assets/quantitative-moduli.css",hero_fragment="quantitative-moduli-figure",lead_section="question",
    overview="The broader subject overview, including open FJRW theory and inverse moduli, is the",
    groups=[("The general local theorem","local-theorem",["local-hym-reduction"]),
@@ -375,7 +376,7 @@ def build_explorers():
     body='''<header class="page-intro"><p class="kicker">Visual companions to the papers</p><h1>Constructions,<br>made explicit.</h1><p class="intro">A picture can show a relation before anyone understands its proof, and a numerical example can expose a distinction a formula hides. Each companion makes one construction from the research explicit, with the assumptions and limits of its model stated beside it.</p><p class="small"><a href="/papers/">Research papers ↗</a> · <a href="/research/">Guides to the research ↗</a></p></header><div class="visual-grid">'''
     body+=''.join(map(explorer_card,explorers))+'</div>'
     body+='''<aside class="guide-aside"><p>A place to start.</p><p class="small">The <a href="/beyond-hrp-lab/">portfolio lab</a> starts with familiar decisions about risk and return. The <a href="/pillowcase-explorer/">pillowcase explorer</a> builds its geometry one move at a time. For a tour across the subjects, start with <a href="/not-enough.html">Not Enough</a>.</p></aside>'''
-    page("explorers/index.html","Explorers","Six interactive laboratories in geometry, topology, geometric analysis, and portfolio construction.",body,image="conifold")
+    page("explorers/index.html","Explorers","Interactive laboratories and a research atlas in geometry, topology, geometric analysis, and portfolio construction.",body,image="conifold")
 
 def guide_rows():
     body='<section class="guide-rows" aria-label="The six guides">'
@@ -558,6 +559,8 @@ def main():
     build_explorers()
     build_research()
     build_subguides()
+    from stability_atlas import build_atlas
+    build_atlas(page)
     build_about()
     build_writing_updates()
     subprocess.run(["python3",str(ROOT/"tools/update-site.py")],check=True)

@@ -77,6 +77,10 @@
         {
           "label": "When Walls Collide",
           "href": "/when-walls-collide/"
+        },
+        {
+          "label": "Stability & Degeneration Atlas",
+          "href": "/research/geometry/quantitative-moduli/atlas/"
         }
       ]
     },

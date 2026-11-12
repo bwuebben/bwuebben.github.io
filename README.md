@@ -149,7 +149,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 
 **Navigation:** edit the links in `site.json` or their outer markup in
 `templates/navigation.html`. The top level contains Home, Research Programs, Explorers, Writing, Papers, Updates, and About.
-Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall, and When Walls Collide; add future explorers
+Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall, When Walls Collide, and the Stability & Degeneration Atlas; add future explorers
 to that group's `children` list.
 Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, Gradient of Mind, and I rest my case. An item with a `children` list becomes a group, rendered as a native HTML
 disclosure: click or tap the label, or focus it and press Enter or Space, to
@@ -600,3 +600,14 @@ Papers 23–25, dated 10 November 2026, connect component intersections to small
 
 
 The compact-curve gluing, type-K threefold and all-time curve results extend the Stability & Degeneration guide to actual HYM dynamics on degenerating bases. The guide retains fixed-constraint and small-basin restrictions for the absolute all-time estimate, prescribed product-induced metrics and the rate bound for the type-K result, and marked observations for the curve inverse. Their full abstracts, original and revision dates, exact public PDFs and Zenodo archives are in `data/papers.json`.
+
+
+## Stability & Degeneration paper atlas
+
+The [paper atlas](https://bwuebben.github.io/research/geometry/quantitative-moduli/atlas/) combines a documented dependency graph, an editorial importance ranking, a rank-versus-follow-on plot, a paper-by-paper explanatory guide and suggested reading paths. The shared site theme supplies typography and light/dark colours; the graph uses supplementary strand colours with labels.
+
+Edit `data/stability-degeneration-atlas.json` for ranking rationales, explanations and source evidence, and `content/stability-degeneration-atlas.html` for the page structure. `tools/stability_atlas.py`, called by the editorial builder, refreshes publication metadata from `data/papers.json`, generates the browser data and renders a complete paper guide that remains readable without JavaScript. The page links to existing paper pages and verified PDF mirrors; it keeps no duplicate manuscripts.
+
+The 28-paper ranking is editorial. Its 44 selected theorem/method arrows and five optional thematic links retain separate meanings; direct follow-on counts exclude thematic links. Evidence links point to the exact public source commit. A change of ranking date or dependency evidence needs an explicit content review. No framework or npm installation is required to build or serve the atlas. Run `node tools/check-stability-atlas.cjs` after atlas changes; optional DOM interaction checks use an externally installed `jsdom` via `NODE_PATH`.
+
+The focused programme guide opens with a short orientation and three reading routes. Detailed dynamical discussion and the two-factor profile sit in the Dynamics section; qualifications remain beside the relevant results.

@@ -1,55 +1,14 @@
 <section class="section-block focus" id="question">
-  <p class="kicker">The mathematical setting</p>
-  <h2>Stability of bundles. Geometry of their moduli.</h2>
-  <p class="focus-lede">The objects are holomorphic vector bundles on compact Kähler manifolds: families of complex vector spaces varying holomorphically over a fixed base. Their degenerations give access to the geometry of nearby bundles and to the spaces that parametrize them. A further branch varies the underlying Calabi–Yau threefold itself: exceptional periods and global intersections determine small Hodge eigenvalues on genuine Ricci-flat smoothings.</p>
-  <div class="prose-columns">
-    <div>
-      <h3>Stability and its walls</h3>
-      <p>A holomorphic vector bundle is <em>slope-stable</em> when every coherent subsheaf of smaller positive rank has smaller degree per rank. Degree depends on the chosen Kähler class, or polarization. As that class varies, equality of slopes can mark a stability wall. Stable bundles admit canonical Hermitian–Einstein metrics. So do <em>polystable</em> bundles: direct sums of stable bundles of the same slope.</p>
-    </div>
-    <div>
-      <h3>The geometry of moduli</h3>
-      <p>For a fixed base and fixed topological data, these moduli spaces parametrize polystable holomorphic bundles up to isomorphism. On their smooth pieces, the harmonic L² metric measures infinitesimal changes of a bundle by integrating pointwise inner products over the base. Two geometries therefore enter the problem: a Hermitian metric on each bundle, and a metric on the space of bundles. Stability alone need not make the moduli space smooth.</p>
-    </div>
-  </div>
+  <p class="kicker">Three routes through the programme</p>
+  <h2>Start with the geometric question.</h2>
+  <p class="focus-lede">A stability wall marks a change in which bundles admit canonical metrics. Near that wall, small eigenvalues reveal weak directions, and finite models make their geometry and evolution accessible. The results follow three related routes.</p>
   <div class="result-paths">
-    <div>
-      <p class="result-index">01 / Established locally</p>
-      <h3><a href="#local-theorem">Recover nearby solutions</a></h3>
-      <p>Near a fixed locally free polystable bundle, a finite model identifies the local moduli space, reconstructs Hermitian–Einstein metrics and controls every weak spectral direction.</p>
-    </div>
-    <div>
-      <p class="result-index">02 / Established K3 applications</p>
-      <h3><a href="#k3-wall-crossing">Understand the chamber geometry</a></h3>
-      <p>The wall models describe nearby chamber neighbourhoods, their exceptional loci, intrinsic distances and rescaled metric limits.</p>
-    </div>
-    <div>
-      <p class="result-index">03 / Compact global results</p>
-      <h3><a href="#global-geometry">Connect local and global geometry</a></h3>
-      <p>Compact K3 contractions combine integral attachment calculations with global metric convergence. Singular twice-primitive bundle moduli also carry identified canonical Ricci-flat metrics with quadratic tangent-cone approximation. The marked rank-three family has explicit complement rings and wall actions; general reconstruction retains overlap and monodromy input.</p>
-    </div>
+    <div><p class="result-index">01 / Metrics and flow</p><h3><a href="#local-theorem">What happens near a wall?</a></h3><p>Reconstruct canonical bundle metrics, identify every weak spectral direction and track the flow towards equilibrium near a fixed reference bundle.</p><p><a href="#dynamics">Follow the dynamical theory →</a></p></div>
+    <div><p class="result-index">02 / Spaces of bundles</p><h3><a href="#k3-wall-crossing">How does moduli geometry change?</a></h3><p>Measure collapsing distances and exceptional cycles, then connect local models to compact K3 contractions, integral topology and singular canonical metrics.</p><p><a href="#global-geometry">See the compact results →</a></p></div>
+    <div><p class="result-index">03 / Degenerating spaces</p><h3><a href="#degenerating-spaces">What if the base changes too?</a></h3><p>Let a curve or threefold develop singularities. Relate its geometry to small eigenvalues and, on specified families, to actual nonlinear bundle flow.</p><p><a href="#degenerating-spaces">Explore curves and threefolds →</a></p></div>
   </div>
-  <div class="correspondence-grid" id="quantitative-correspondence">
-    <div>
-      <p class="kicker">The local dynamical theorem</p>
-      <h3>Quantitative dynamical Kobayashi–Hitchin.</h3>
-      <p>The classical Kobayashi–Hitchin correspondence relates polystability to the existence of Hermitian–Einstein metrics. The quantitative dynamical programme asks how those metrics respond as stability changes, how Hermitian Yang–Mills flow approaches them, and what the flow does at the wall and beyond it.</p>
-      <p>The <a href="/papers/uniform-hym-phase/">uniform asymptotic-phase theorem</a> now selects an exact finite trajectory from the initial metric near any fixed locally free polystable bundle, retaining arbitrary multiplicities and the full obstruction. Under coefficient confinement and small initial normal displacement, relative metric error decays exponentially, uniformly through weak spectral scales and stabilizer changes. The <a href="#dynamics">dynamical results below</a> distinguish this theorem from the remaining questions of general entry, confinement and the algebraic asymptotics of the corrected finite flow.</p>
-    </div>
-    <figure class="flow-profile-figure" aria-labelledby="flow-profile-title" aria-describedby="flow-profile-caption">
-      <p class="kicker">A two-factor transition</p>
-      <h3 id="flow-profile-title">Three regimes. One profile.</h3>
-      <img src="/assets/illustrations/hym-flow-profile.svg" width="640" height="425" loading="lazy" alt="Weak spectral scale against scaled time. The stable curve tends to a positive level, the wall curve decays reciprocally, and the unstable curve decays exponentially to zero.">
-      <figcaption id="flow-profile-caption">The model predicts a positive limiting gap in the stable chamber, reciprocal decay at the wall, and exponential decay on the unstable side. The <a href="/papers/metric-response-hym-flow/">two-factor flow theorem</a> compares the actual small eigenvalue with this profile, uniformly near the wall at sufficiently late times.</figcaption>
-      <details class="profile-formula">
-        <summary>The profile and its scope</summary>
-        <p>For signed curvature-normalized slope gap δ and flow time τ,</p>
-        <p class="profile-equation"><var>P</var><sub>δ</sub>(τ) = δ / (1 − e<sup>−2δτ</sup>), <span>δ ≠ 0;</span><br><var>P</var><sub>0</sub>(τ) = 1 / (2τ).</p>
-        <p>The graph plots <var>P</var><sub>δ</sub>/d against dτ for δ = d, 0, −d and any d &gt; 0. These are model curves. The theorem concerns nonsplit two-step extensions of distinct stable locally free factors with equal slope at the wall, with smooth positive initial-metric families.</p>
-      </details>
-    </figure>
-  </div>
-  <p>The <a href="#singular-graded-limits">singular-sheaf results</a> identify a boundary of the smooth theory. The global topological ambition concerns moduli spaces; consequences for the topology of the base manifold require an additional argument.</p>
+  <aside class="guide-aside"><h3><a href="/research/geometry/quantitative-moduli/atlas/">Explore the paper atlas ↗</a></h3><p>Read an explanation of each paper, compare the importance ranking, and follow documented dependencies through the interactive graph. Suggested reading paths connect the main results.</p></aside>
+  <details class="technical-note"><summary>The basic objects: bundles, stability and moduli</summary><p>A holomorphic vector bundle is a family of complex vector spaces varying holomorphically over a compact Kähler manifold. Slope stability compares its degree per rank with that of its coherent subsheaves; equality can mark a stability wall as the polarization varies. Polystable bundles, including direct sums of stable bundles of the same slope, admit Hermitian–Einstein metrics.</p><p>A moduli space parametrizes bundles up to isomorphism. Its harmonic L² metric measures infinitesimal bundle deformations by integrating over the base. The metric on a bundle and the metric on its moduli space are different objects; the programme studies both. Statements about moduli topology do not automatically determine the topology of the base manifold.</p></details>
 </section>
 
 <section class="section-block focus" id="local-theorem">
@@ -433,6 +392,26 @@
   <p>A reduced evolution equation does not yet identify which of its solutions represents a prescribed initial metric. The <a href="/papers/hym-initial-condition-phase/">initial-condition and phase paper</a> supplies this identification near a stable four-line family on the product of three projective lines. Relative to a chosen invariant graph, the initial metric selects a finite trajectory with exponentially decaying relative tracking error, uniformly in the weak relaxation rates. The phase depends differentiably on the initial metric at fixed bundle and polarization. A common restart brings prescribed smooth determinant-normalized initial metrics into the local regime under the theorem's neighborhood conditions.</p>
   <p>The <a href="/papers/hym-wall-unstable-flow/">wall and unstable-flow paper</a> treats acyclic connected extension data at the wall and a specified triangular unstable class with locally free Harder–Narasimhan line quotients. In moving diagonal coordinates, the harmonic coefficients remain small while the diagonal metric factors diverge. For the stated initial metrics, this gives all-time confinement and asymptotic phase; after the unstable linear drift is subtracted, a limiting residual retains three real diagonal initial coordinates.</p>
   <p class="small">The earlier families retain their additional entry, confinement and asymptotic conclusions. The general theorem extends phase and relative tracking to arbitrary multiplicities under explicit confinement; the stationary complementary correction alone is not a flow-invariant graph.</p>
+  <div class="correspondence-grid" id="quantitative-correspondence">
+    <div>
+      <p class="kicker">The local dynamical theorem</p>
+      <h3>Quantitative dynamical Kobayashi–Hitchin.</h3>
+      <p>The classical Kobayashi–Hitchin correspondence relates polystability to the existence of Hermitian–Einstein metrics. The quantitative dynamical programme asks how those metrics respond as stability changes, how Hermitian Yang–Mills flow approaches them, and what the flow does at the wall and beyond it.</p>
+      <p>The <a href="/papers/uniform-hym-phase/">uniform asymptotic-phase theorem</a> now selects an exact finite trajectory from the initial metric near any fixed locally free polystable bundle, retaining arbitrary multiplicities and the full obstruction. Under coefficient confinement and small initial normal displacement, relative metric error decays exponentially, uniformly through weak spectral scales and stabilizer changes. The <a href="#dynamics">dynamical results below</a> distinguish this theorem from the remaining questions of general entry, confinement and the algebraic asymptotics of the corrected finite flow.</p>
+    </div>
+    <figure class="flow-profile-figure" aria-labelledby="flow-profile-title" aria-describedby="flow-profile-caption">
+      <p class="kicker">A two-factor transition</p>
+      <h3 id="flow-profile-title">Three regimes. One profile.</h3>
+      <img src="/assets/illustrations/hym-flow-profile.svg" width="640" height="425" loading="lazy" alt="Weak spectral scale against scaled time. The stable curve tends to a positive level, the wall curve decays reciprocally, and the unstable curve decays exponentially to zero.">
+      <figcaption id="flow-profile-caption">The model predicts a positive limiting gap in the stable chamber, reciprocal decay at the wall, and exponential decay on the unstable side. The <a href="/papers/metric-response-hym-flow/">two-factor flow theorem</a> compares the actual small eigenvalue with this profile, uniformly near the wall at sufficiently late times.</figcaption>
+      <details class="profile-formula">
+        <summary>The profile and its scope</summary>
+        <p>For signed curvature-normalized slope gap δ and flow time τ,</p>
+        <p class="profile-equation"><var>P</var><sub>δ</sub>(τ) = δ / (1 − e<sup>−2δτ</sup>), <span>δ ≠ 0;</span><br><var>P</var><sub>0</sub>(τ) = 1 / (2τ).</p>
+        <p>The graph plots <var>P</var><sub>δ</sub>/d against dτ for δ = d, 0, −d and any d &gt; 0. These are model curves. The theorem concerns nonsplit two-step extensions of distinct stable locally free factors with equal slope at the wall, with smooth positive initial-metric families.</p>
+      </details>
+    </figure>
+  </div>
 </section>
 
 <section class="section-block focus" id="categorical-phase-flows">
