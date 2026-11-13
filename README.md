@@ -29,8 +29,9 @@ The focused guides are Atiyah–Floer theory and Stability & Degeneration. In `s
 an optional `heading` on a menu link inserts a section label before that link.
 
 Edit `site.json` for navigation. Editorial page content comes from
-`tools/build-editorial.py`; the biography comes from `content/about.html` and
-identity metadata from `data/person.json`. The essay sources live in
+`tools/build-editorial.py`; the homepage structure comes from `content/home.html`,
+the biography from `content/about.html`, and identity metadata from
+`data/person.json`. The essay sources live in
 `content/`. Do not edit their generated HTML directly. The complete rebuild ends
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
 keep the public sitemap and paper pages current. The latter also rebuilds the
@@ -89,6 +90,7 @@ git diff --check
 
 ```
 index.html              the landing page
+content/home.html       homepage introduction, starting routes and section structure
 papers/index.html       research papers, grouped by subject
 papers/<slug>/           individual paper pages, PDFs, citations, and provenance
 data/papers.json         verified paper metadata and public PDF sources
@@ -109,6 +111,7 @@ templates/page.html     starting point for additional pages
 templates/paper.html    shared individual paper page template
 assets/theme.css        shared fonts, colours, and reading width
 assets/style.css        shared layout and page styles
+assets/home.css         homepage layout and responsive styles
 assets/paper.css        individual paper page layout
 assets/bernd_full_noir.jpg  full-length portrait shown on the portrait page
 assets/bernd_dark1.jpg   masthead headshot at full size (the masthead loads
@@ -133,6 +136,16 @@ tools/render-card.sh
 ```
 
 ## Local preview and editing
+
+The homepage starts with routes for curious readers, researchers and finance
+practitioners, followed by the six-paper Selected papers block, a Not Enough
+essay feature, short subject guides, a featured explorer and recent updates.
+The essay and explorer share the same responsive feature layout. Edit the
+introductory copy and section structure in
+`content/home.html`, its selected papers and subject summaries in
+`tools/build-editorial.py`, and its layout in `assets/home.css`. Paper titles come
+from the catalogue metadata; recent excerpts come from `data/updates.json`.
+Run the complete rebuild above after changes.
 
 The compact Papers catalogue's layout and controls live in
 `assets/catalogue-browser.css` and `assets/catalogue-browser.js`. The normal
