@@ -65,9 +65,12 @@ for program in programs:
         for slug in group_slugs:
             p = papers[slug]
             parts.append(entries[p['catalogue_anchor']])
-            pdf_resource = next((r for r in p['resources'] if r['label'] == 'current version (PDF)'), None)
-            read_url = pdf_resource['url'] if pdf_resource else (slug + '/paper.pdf' if p.get('pdf') else p['archive']['url'])
-            read_label = 'PDF' if p.get('pdf') else p['archive']['name']
+            # Match the primary reading button on the individual paper page.
+            archive = p.get('archive')
+            if archive and (not p.get('pdf') or archive['name'] in ('arXiv', 'SSRN')):
+                read_url, read_label = archive['url'], archive['name']
+            else:
+                read_url, read_label = slug + '/paper.pdf', 'PDF'
             metadata['papers'].append({
                 'anchor': p['catalogue_anchor'], 'slug': slug, 'field': key,
                 'title': p['catalogue_title'], 'series': group_name or labels[key],
