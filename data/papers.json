@@ -4491,14 +4491,14 @@
       "label": "Stability and Geometric Degeneration · Paper 31",
       "status": "Preprint",
       "publication_date": "2026-11-12",
-      "revision_date": "2026-11-12",
+      "revision_date": "2026-11-13",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24182113",
-        "url": "https://zenodo.org/records/24182113",
-        "deposited_at": "2026-11-13T00:48:17.662697+00:00"
+        "doi": "10.5281/zenodo.24185494",
+        "url": "https://zenodo.org/records/24185494",
+        "deposited_at": "2026-11-13T05:29:34.431339+00:00"
       },
-      "citation_doi": "10.5281/zenodo.24182113",
+      "citation_doi": "10.5281/zenodo.24185494",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4527,16 +4527,16 @@
           "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
         }
       ],
-      "verified_on": "2026-11-12",
-      "abstract_html": "<p>We give a terminating construction of the marked integral vanishing-cycle homomorphism for a six-parameter family of Calabi–Yau conifold smoothings in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup></mrow></math>. Its eight local spheres span a primitive rank-six lattice in free middle homology of rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>134</mn></mrow></math>. Integral topology determines its symplectic normal form and torsion-free quotient. The period construction recovers its coordinates in an independently constructed geometric marking. Starting from algebraically selected equations, we construct a known neighbourhood in vanishing-period coordinates, a geometric symplectic marking, and absolute error bounds for transport and integration of represented cycles. Picard–Lefschetz period jumps recover the integral columns and monodromy without an a priori bound on the integral coordinates or a restriction on nonzero period ratios. The recovered matrix is constant in the transported marking, so recovery at one reference fibre suffices throughout the smooth family. On a possibly ineffective smaller neighbourhood, we verify applicability of established Ricci-flat Hodge, Hermitian–Yang–Mills flow and harmonic moduli results, and identify the kernel of the recovered map with the divisor restriction image governing the weak Hodge energy.</p>",
-      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b/papers/31_conifold_integral_reconstruction/abstract.tex",
+      "verified_on": "2026-11-13",
+      "abstract_html": "<p>We give a terminating construction of the marked integral vanishing-cycle map for a six-parameter family of Calabi–Yau conifold smoothings in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup></mrow></math>. The eight vanishing spheres span a primitive rank-six lattice whose symplectic normal form is determined by topology. We recover their coordinates in an independent geometric marking by constructing an effective neighbourhood in vanishing-period coordinates and absolute error bounds for cycle transport and integration. Picard–Lefschetz period jumps determine the integral columns and monodromy without an a priori bound on the integer entries or restrictions on nonzero period ratios. Recovery at one reference fibre suffices throughout the smooth locus. As applications, we verify the hypotheses of established analytic results on the same fibres in a possibly ineffective smaller neighbourhood. Over <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi mathvariant=\"double-struck\">R</mi></mrow></math>, the kernel of the recovered map is the image of divisor restriction to the exceptional curves; its capacity-weighted quadratic form and limiting harmonic mass give relative asymptotics for the two small positive Ricci-flat two-form eigenvalues. For the constructed nonflat polystable rank-four bundles, a local invariant manifold of Hermitian–Yang–Mills metric flow is tangent at the Hermitian–Einstein metric to the complete low spectral subspace of the Laplacian on trace-free Hermitian endomorphisms, including its kernel.</p>",
+      "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/975e7b7470fa0aa3960cb02639de34e748c40205/papers/31_conifold_integral_reconstruction/abstract.tex",
       "pdf": {
-        "sha256": "16cc5fb7d2a9253d39478c478b83c8bc527c04cd5d2d120ab2cbfedb111db11c",
-        "size_bytes": 506270,
+        "sha256": "8f2fcadd280211f75d7f41a3680ff19b5abbf2c616be3f5f9908f5a60c0bbe60",
+        "size_bytes": 505290,
         "pages": 37,
-        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
+        "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/975e7b7470fa0aa3960cb02639de34e748c40205/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
         "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
-        "source_commit": "e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b",
+        "source_commit": "975e7b7470fa0aa3960cb02639de34e748c40205",
         "source_repository": "https://github.com/bwuebben/stability-degeneration",
         "source_path": "papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf"
       },
@@ -4546,6 +4546,12 @@
           "doi": "10.5281/zenodo.24175968",
           "url": "https://zenodo.org/records/24175968",
           "deposited_at": "2026-11-12T21:13:06.790537+00:00"
+        },
+        {
+          "name": "Zenodo",
+          "doi": "10.5281/zenodo.24182113",
+          "url": "https://zenodo.org/records/24182113",
+          "deposited_at": "2026-11-13T00:48:17.662697+00:00"
         }
       ]
     },

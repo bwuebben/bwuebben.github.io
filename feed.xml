@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Integral vanishing cycles: reconstruction and analytic applications</title>
+      <link>https://bwuebben.github.io/papers/conifold-integral-reconstruction/</link>
+      <guid>https://bwuebben.github.io/papers/conifold-integral-reconstruction/#update-2026-11-13</guid>
+      <description>The reconstruction of marked vanishing cycles is now presented separately from the known topological classification and the analytic applications. The abstract specifies the recovered integral data, the two small Hodge eigenvalues and the complete low spectral tangent space for Hermitian–Yang–Mills flow. Established analytic statements are collected in an appendix, with their hypotheses verified on the constructed family.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Integral vanishing cycles: topology and marked recovery</title>
       <link>https://bwuebben.github.io/papers/conifold-integral-reconstruction/</link>
       <guid>https://bwuebben.github.io/papers/conifold-integral-reconstruction/#update-2026-11-12</guid>
