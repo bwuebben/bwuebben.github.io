@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-12",
+    "title": "Integral vanishing cycles: topology and marked recovery",
+    "url": "/papers/conifold-integral-reconstruction/",
+    "description": "Integral topology determines the primitive rank-six vanishing lattice, torsion-free quotient and symplectic normal form in the eight-node conifold family. The terminating period construction recovers coordinates in an independently constructed geometric marking and the associated monodromy matrices. The matrix is constant in the transported marking, so one reference-fibre recovery suffices."
+  },
+  {
+    "date": "2026-11-12",
     "title": "Point defects and Hermitian–Yang–Mills flow on surfaces",
     "url": "/papers/point-defects-hym-flow/",
     "description": "For rank-two extensions with distinct equal-degree line factors and nonempty reduced point defects on a compact Kähler surface, every smooth initial metric with the fixed Hermitian–Einstein determinant has an explicit inverse-time inclusion-norm law. Actual metrics converge to a charge-one anti-self-dual profile at radius of order T⁻¹ᐟ², with matching leading inclusion half-height and half-energy radii. Arbitrary finite defects satisfy an O(T⁻¹) bound, strengthened to o(T⁻¹) when a defect is nonreduced; sharp profiles beyond the reduced distinct-factor class remain open."

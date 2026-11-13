@@ -15,11 +15,11 @@
   "revision_date": "2026-11-12",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24175968",
-    "url": "https://zenodo.org/records/24175968",
-    "deposited_at": "2026-11-12T21:13:06.790537+00:00"
+    "doi": "10.5281/zenodo.24182113",
+    "url": "https://zenodo.org/records/24182113",
+    "deposited_at": "2026-11-13T00:48:17.662697+00:00"
   },
-  "citation_doi": "10.5281/zenodo.24175968",
+  "citation_doi": "10.5281/zenodo.24182113",
   "resources": [
     {
       "label": "current version (PDF)",
@@ -49,16 +49,24 @@
     }
   ],
   "verified_on": "2026-11-12",
-  "abstract_html": "<p>We give a terminating construction of the marked integral vanishing-cycle homomorphism for a six-parameter family of Calabi–Yau conifold smoothings in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup></mrow></math>. Its eight local spheres span a rank-six lattice in free middle homology of rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>134</mn></mrow></math>. Starting from algebraically selected equations, we construct a known neighbourhood in vanishing-period coordinates, a geometric symplectic marking, and absolute error bounds for transport and integration of represented cycles. Picard–Lefschetz period jumps recover the integral columns, their saturation and monodromy without a height prior or a restriction on nonzero period ratios. We verify the hypotheses of established analytic results on a possibly ineffective smaller neighbourhood. There the capacity-weighted squared norm of restriction of divisor classes from the small resolution to its exceptional curves governs the two small positive Ricci-flat two-form eigenvalues; the image of this restriction is the kernel of the recovered vanishing-cycle homomorphism. For nonflat bundles on the same fibres, a finite-dimensional invariant manifold of Hermitian–Yang–Mills metric flow is tangent at each constructed Hermitian–Einstein metric to the full low eigenspace on trace-free Hermitian endomorphisms.</p>",
-  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/abstract.tex",
+  "abstract_html": "<p>We give a terminating construction of the marked integral vanishing-cycle homomorphism for a six-parameter family of Calabi–Yau conifold smoothings in <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup><mo>&#x000D7;</mo><msup><mi mathvariant=\"double-struck\">P</mi><mn>3</mn></msup></mrow></math>. Its eight local spheres span a primitive rank-six lattice in free middle homology of rank <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>134</mn></mrow></math>. Integral topology determines its symplectic normal form and torsion-free quotient. The period construction recovers its coordinates in an independently constructed geometric marking. Starting from algebraically selected equations, we construct a known neighbourhood in vanishing-period coordinates, a geometric symplectic marking, and absolute error bounds for transport and integration of represented cycles. Picard–Lefschetz period jumps recover the integral columns and monodromy without an a priori bound on the integral coordinates or a restriction on nonzero period ratios. The recovered matrix is constant in the transported marking, so recovery at one reference fibre suffices throughout the smooth family. On a possibly ineffective smaller neighbourhood, we verify applicability of established Ricci-flat Hodge, Hermitian–Yang–Mills flow and harmonic moduli results, and identify the kernel of the recovered map with the divisor restriction image governing the weak Hodge energy.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b/papers/31_conifold_integral_reconstruction/abstract.tex",
   "pdf": {
-    "sha256": "f573fe0135e0a967d01eeee17314e09ae0ef389b7c29e5ab14583faf8b840c75",
-    "size_bytes": 498426,
-    "pages": 36,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/9fc0e68d678bae86d2d1bdf65b86e542d246b7f4/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
+    "sha256": "16cc5fb7d2a9253d39478c478b83c8bc527c04cd5d2d120ab2cbfedb111db11c",
+    "size_bytes": 506270,
+    "pages": 37,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
     "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf",
-    "source_commit": "9fc0e68d678bae86d2d1bdf65b86e542d246b7f4",
+    "source_commit": "e3dcbe49941ee8ce4a61eadd33c900ee3e925b4b",
     "source_repository": "https://github.com/bwuebben/stability-degeneration",
     "source_path": "papers/31_conifold_integral_reconstruction/conifold-integral-reconstruction.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.24175968",
+      "url": "https://zenodo.org/records/24175968",
+      "deposited_at": "2026-11-12T21:13:06.790537+00:00"
+    }
+  ]
 }

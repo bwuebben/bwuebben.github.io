@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Integral vanishing cycles: topology and marked recovery</title>
+      <link>https://bwuebben.github.io/papers/conifold-integral-reconstruction/</link>
+      <guid>https://bwuebben.github.io/papers/conifold-integral-reconstruction/#update-2026-11-12</guid>
+      <description>Integral topology determines the primitive rank-six vanishing lattice, torsion-free quotient and symplectic normal form in the eight-node conifold family. The terminating period construction recovers coordinates in an independently constructed geometric marking and the associated monodromy matrices. The matrix is constant in the transported marking, so one reference-fibre recovery suffices.</description>
+      <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Point defects and Hermitian–Yang–Mills flow on surfaces</title>
       <link>https://bwuebben.github.io/papers/point-defects-hym-flow/</link>
       <guid>https://bwuebben.github.io/papers/point-defects-hym-flow/#update-2026-11-12</guid>
