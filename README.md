@@ -7,8 +7,9 @@ Paper releases follow the release protocol kept in the papers repository.
 
 A GitHub *user site* — the repository name must stay exactly
 `bwuebben.github.io`, and GitHub allows one per account. Everything is static
-HTML, CSS, and the explorers' client-side JavaScript; there is no
-server-side code. Apart from the explorers and interactive essays, the pages require no runtime JavaScript (the landing
+HTML, CSS, and client-side JavaScript; there is no
+server-side code. The catalogue uses JavaScript for browsing controls, with a
+complete static fallback. Apart from the explorers and interactive essays, the pages require no runtime JavaScript (the landing
 page carries a JSON-LD `Person` block, which browsers do not execute). The
 checked-in pages are ready to serve. A small Python helper updates shared
 navigation and stylesheet links when the site's configuration changes.
@@ -16,8 +17,9 @@ navigation and stylesheet links when the site's configuration changes.
 ## Site structure
 
 The top navigation is Home, Research Programs, Explorers, Writing, Papers, Updates,
-and About. The catalogue keeps subject navigation and complete descriptions;
-there are no search or filter controls. Its routes include `/research/` and six
+and About. The catalogue has six subject views, title and date
+rows, search, sorting, direct manuscript links, and expandable descriptions.
+Individual paper pages retain their full abstracts. Its routes include `/research/` and six
 subject guides, `/explorers/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
 
@@ -31,7 +33,8 @@ Edit `site.json` for navigation. Editorial page content comes from
 identity metadata from `data/person.json`. The essay sources live in
 `content/`. Do not edit their generated HTML directly. The complete rebuild ends
 with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, which
-keep the public sitemap and paper pages current.
+keep the public sitemap and paper pages current. The latter also rebuilds the
+compact catalogue through `tools/build-compact-catalogue.py`.
 
 The Atiyah–Floer reading route includes Papers I–III: comparison over
 𝔽₂, integral transported orientations, and the identification and
@@ -77,6 +80,7 @@ for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
 node --check assets/geometry-overview-model.js
 node --check assets/geometry-overview.js
+node --check assets/catalogue-browser.js
 node tools/check-stability-atlas.cjs
 git diff --check
 ```
@@ -129,6 +133,14 @@ tools/render-card.sh
 ```
 
 ## Local preview and editing
+
+The compact Papers catalogue's layout and controls live in
+`assets/catalogue-browser.css` and `assets/catalogue-browser.js`. The normal
+paper build refreshes its layout and asset versions; `--check` also checks the
+catalogue. For layout-only edits, run `python3 tools/build-compact-catalogue.py`.
+It reuses every existing
+catalogue entry, paper record, manuscript link, and paper anchor. Without
+JavaScript the full descriptions and subject anchors remain available.
 
 Preview the checked-in pages without installing any dependencies:
 

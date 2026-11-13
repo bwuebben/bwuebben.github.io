@@ -287,7 +287,7 @@ def main():
     pdf_count = sum(bool(p.get('pdf')) for p in papers)
     print(f'{len(papers)} paper pages; {pdf_count} verified local PDFs; {len(papers) - pdf_count} archive-only reading links.')
     print(f'{len(pending)} generated files {"need updating" if args.check else "updated"}.')
-    subprocess.run([sys.executable, str(ROOT / 'tools/update-site.py')] + (['--check'] if args.check else []), check=True)
+    subprocess.run([sys.executable, str(ROOT / 'tools/build-compact-catalogue.py')] + (['--check'] if args.check else []), check=True)
     return 0
 
 
