@@ -1,0 +1,60 @@
+{
+  "slug": "l2-metric-uhlenbeck-boundary",
+  "catalogue_anchor": "l2-metric-uhlenbeck-boundary",
+  "catalogue_title": "The L² metric at the Uhlenbeck boundary",
+  "title": "The L² metric at the Uhlenbeck boundary",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Stability and Geometric Degeneration · Paper 33",
+  "status": "Preprint",
+  "publication_date": "2026-11-13",
+  "revision_date": "2026-11-13",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24211932",
+    "url": "https://zenodo.org/records/24211932",
+    "deposited_at": "2026-11-14T03:39:30.315836+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24211932",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/33_uhlenbeck_boundary/l2-metric-uhlenbeck-boundary.pdf"
+    },
+    {
+      "label": "source and guide",
+      "url": "https://github.com/bwuebben/stability-degeneration/tree/main/papers/33_uhlenbeck_boundary"
+    }
+  ],
+  "related": [
+    {
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/#global-geometry"
+    },
+    {
+      "label": "Canonical metrics on singular moduli of K3 bundles",
+      "url": "https://bwuebben.github.io/papers/canonical-metrics-singular-k3-moduli/"
+    },
+    {
+      "label": "Point defects and Hermitian–Yang–Mills flow on surfaces",
+      "url": "https://bwuebben.github.io/papers/point-defects-hym-flow/"
+    }
+  ],
+  "verified_on": "2026-11-13",
+  "abstract_html": "<p>We construct local Kähler potentials for the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow></math> metric on moduli spaces of Hermitian–Yang–Mills connections over polarized projective surfaces that extend continuously to ideal connections. The potential combines a zeta determinant on a curve avoiding the bubble points with a weighted curvature integral and an explicit term for the defect cycle. On a projective K3 surface with a generic polarization and its Ricci-flat metric, let the Mukai vector be primitive, of rank at least two and positive square, with nonempty stable bundle locus. The potential identifies the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>L</mi><mn>2</mn></msup></mrow></math> metric with the canonical singular Ricci-flat metric on the normalized Uhlenbeck compactification. Its completion is the Uhlenbeck compactification, and in complex dimension <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>2</mn><mi>N</mi></mrow></math> its volume is <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mn>16</mn><msup><mi>&#x003C0;</mi><mn>4</mn></msup><mo>Vol</mo><mi>X</mi><msup><mo stretchy=\"false\">&#x00029;</mo><mi>N</mi></msup><mo>&#x0002F;</mo><mi>N</mi><mo>&#x00021;</mo></mrow></math>. In rank two, the strata with stable residual bundle and distinct simple bubble points are totally geodesic hyperkähler orbifold strata, with the base-surface metric scaled by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mn>4</mn><msup><mi>&#x003C0;</mi><mn>2</mn></msup></mrow></math>. At stable-residual boundary points, we identify the affine tangent cones and their Reeb actions and compute their volume densities from instanton partition functions.</p>",
+  "abstract_source": "https://github.com/bwuebben/stability-degeneration/blob/44415ed5b94f59201ff23f4aed51e1bc36bbf10e/papers/33_uhlenbeck_boundary/abstract.tex",
+  "pdf": {
+    "sha256": "c0ba2d12a20196721531c34dfa6a8ace268edb919444527914e32133804a8870",
+    "size_bytes": 413492,
+    "pages": 22,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/stability-degeneration/44415ed5b94f59201ff23f4aed51e1bc36bbf10e/papers/33_uhlenbeck_boundary/l2-metric-uhlenbeck-boundary.pdf",
+    "source_url": "https://github.com/bwuebben/stability-degeneration/blob/main/papers/33_uhlenbeck_boundary/l2-metric-uhlenbeck-boundary.pdf",
+    "source_commit": "44415ed5b94f59201ff23f4aed51e1bc36bbf10e",
+    "source_repository": "https://github.com/bwuebben/stability-degeneration",
+    "source_path": "papers/33_uhlenbeck_boundary/l2-metric-uhlenbeck-boundary.pdf"
+  }
+}

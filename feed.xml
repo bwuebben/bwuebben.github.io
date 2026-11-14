@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>The L² metric at the Uhlenbeck boundary</title>
+      <link>https://bwuebben.github.io/papers/l2-metric-uhlenbeck-boundary/</link>
+      <guid>https://bwuebben.github.io/papers/l2-metric-uhlenbeck-boundary/#update-2026-11-13</guid>
+      <description>Continuous potentials at ideal connections identify the L² metric on K3 moduli of primitive positive-square Mukai vectors with its canonical singular Ricci-flat metric, giving Uhlenbeck completion and exact volume. The rank is at least two; a generic polarization, its Ricci-flat representative and a nonempty stable bundle locus are assumed. Rank-two distinct-simple-bubble strata with stable residual bundle are totally geodesic orbifold strata; the affine cones, Reeb actions and densities are determined at stable-residual points, while the full ADHM metric identification remains conditional beyond the orbifold case.</description>
+      <pubDate>Fri, 13 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Integral vanishing cycles: reconstruction and analytic applications</title>
       <link>https://bwuebben.github.io/papers/conifold-integral-reconstruction/</link>
       <guid>https://bwuebben.github.io/papers/conifold-integral-reconstruction/#update-2026-11-13</guid>

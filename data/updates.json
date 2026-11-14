@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-13",
+    "title": "The L² metric at the Uhlenbeck boundary",
+    "url": "/papers/l2-metric-uhlenbeck-boundary/",
+    "description": "Continuous potentials at ideal connections identify the L² metric on K3 moduli of primitive positive-square Mukai vectors with its canonical singular Ricci-flat metric, giving Uhlenbeck completion and exact volume. The rank is at least two; a generic polarization, its Ricci-flat representative and a nonempty stable bundle locus are assumed. Rank-two distinct-simple-bubble strata with stable residual bundle are totally geodesic orbifold strata; the affine cones, Reeb actions and densities are determined at stable-residual points, while the full ADHM metric identification remains conditional beyond the orbifold case."
+  },
+  {
+    "date": "2026-11-13",
     "title": "Integral vanishing cycles: reconstruction and analytic applications",
     "url": "/papers/conifold-integral-reconstruction/",
     "description": "The reconstruction of marked vanishing cycles is now presented separately from the known topological classification and the analytic applications. The abstract specifies the recovered integral data, the two small Hodge eigenvalues and the complete low spectral tangent space for Hermitian–Yang–Mills flow. Established analytic statements are collected in an appendix, with their hypotheses verified on the constructed family."
