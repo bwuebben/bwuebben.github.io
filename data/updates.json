@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-14",
+    "title": "L² Hodge theory: expanded analytic and geometric proofs",
+    "url": "/papers/l2-hodge-llv/",
+    "description": "Expanded proofs explain how square-integrable harmonic forms realize the Lefschetz operators on singular K3 moduli. The exposition develops the coupled cone modes, quotient derivative estimates, two-stratum construction, and compatibility with the intersection-cohomology action and pairing. An unconditional dimension-eighteen example precedes the representation calculation under the Hodge-structure hypothesis (H3); the theorem hypotheses and conclusions are unchanged."
+  },
+  {
+    "date": "2026-11-14",
     "title": "L² Hodge theory and the LLV algebra of singular K3 moduli spaces",
     "url": "/papers/l2-hodge-llv/",
     "description": "The LLV algebra on the intersection cohomology of twice-primitive K3 sheaf moduli is the orthogonal algebra of second cohomology enlarged by a hyperbolic plane. In the stated Picard-rank-one numerical range, all semistable sheaves are locally free, and square-integrable harmonic forms realize the Lefschetz operators despite two singular strata and the absence of a symplectic resolution. Singular-link cone analysis and directional metric estimates control the operator domains; monodromy extends the relations from one positive three-plane. The complete representation in dimension eighteen remains conditional on an explicit Hodge-structure comparison."

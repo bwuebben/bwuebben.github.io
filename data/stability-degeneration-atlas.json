@@ -880,8 +880,8 @@
       "status": "Public preprint",
       "page": "/papers/l2-hodge-llv/",
       "pdf": "/papers/l2-hodge-llv/paper.pdf",
-      "sha256": "0d88adf006d7983f631dda44b2242d4027f67a2894a7f7188ab81cd3bf4e57a5",
-      "doi": "10.5281/zenodo.24227117",
+      "sha256": "3d59af24d312461c83f0d7b87826aa1d482ddb8e8443b7498a6f8d62235cfbbb",
+      "doi": "10.5281/zenodo.24230354",
       "publicationDate": "2026-11-14",
       "revisionDate": "2026-11-14"
     }
@@ -1718,7 +1718,7 @@
             "line": 35,
             "endLine": 43,
             "excerpt": "The bundle statement is \\cite[Proposition~2.1]{wue20}; the\nquotient, metric and chart statements are\n\\cite[Theorem~1.1]{wue15} and\n\\cite[Theorem~1.1, Lemma~5.2 and \\S5.3]{wue20}; completion is\n\\cite[Proposition~4.2]{wue20}. The holomorphic quotient model is\nprovided by \\cite{as18,bz19}. The hyperk\\\"ahler structure is the\ngauge-theoretic one of \\cite{hklr87,itoh88}, using\n\\cite{donaldson85,uy86}. These are imported results. In particular,\nthe analytic conclusions of this paper retain their dependence on",
-            "url": "https://github.com/bwuebben/stability-degeneration/blob/e50ae0ecf9fe6125a4d37a1876ab8fc3d2992b36/papers/34_l2_hodge_llv/sections/03_geometry.tex#L35"
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/0c360b492adec8fd1964e787659f16ff8d5e3358/papers/34_l2_hodge_llv/sections/03_geometry.tex#L35"
           }
         ],
         "from": 15
@@ -1733,7 +1733,7 @@
             "line": 35,
             "endLine": 43,
             "excerpt": "The bundle statement is \\cite[Proposition~2.1]{wue20}; the\nquotient, metric and chart statements are\n\\cite[Theorem~1.1]{wue15} and\n\\cite[Theorem~1.1, Lemma~5.2 and \\S5.3]{wue20}; completion is\n\\cite[Proposition~4.2]{wue20}. The holomorphic quotient model is\nprovided by \\cite{as18,bz19}. The hyperk\\\"ahler structure is the\ngauge-theoretic one of \\cite{hklr87,itoh88}, using\n\\cite{donaldson85,uy86}. These are imported results. In particular,\nthe analytic conclusions of this paper retain their dependence on",
-            "url": "https://github.com/bwuebben/stability-degeneration/blob/e50ae0ecf9fe6125a4d37a1876ab8fc3d2992b36/papers/34_l2_hodge_llv/sections/03_geometry.tex#L35"
+            "url": "https://github.com/bwuebben/stability-degeneration/blob/0c360b492adec8fd1964e787659f16ff8d5e3358/papers/34_l2_hodge_llv/sections/03_geometry.tex#L35"
           }
         ],
         "from": 20

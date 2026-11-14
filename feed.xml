@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>L² Hodge theory: expanded analytic and geometric proofs</title>
+      <link>https://bwuebben.github.io/papers/l2-hodge-llv/</link>
+      <guid>https://bwuebben.github.io/papers/l2-hodge-llv/#update-2026-11-14</guid>
+      <description>Expanded proofs explain how square-integrable harmonic forms realize the Lefschetz operators on singular K3 moduli. The exposition develops the coupled cone modes, quotient derivative estimates, two-stratum construction, and compatibility with the intersection-cohomology action and pairing. An unconditional dimension-eighteen example precedes the representation calculation under the Hodge-structure hypothesis (H3); the theorem hypotheses and conclusions are unchanged.</description>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>L² Hodge theory and the LLV algebra of singular K3 moduli spaces</title>
       <link>https://bwuebben.github.io/papers/l2-hodge-llv/</link>
       <guid>https://bwuebben.github.io/papers/l2-hodge-llv/#update-2026-11-14</guid>
