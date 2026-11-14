@@ -121,7 +121,9 @@ explorers=[
  ("beyond-hrp-lab","portfolio","04 · Quantitative finance","Give the hierarchy an expected return.","Change the forecast. Watch four portfolio rules decide what to hold.","Four experiments · Weights computed in your browser"),
  ("at-the-wall","stability-wall","05 · Geometric analysis","A small change. An enormous response.","Approach a stability wall and watch a chamber, a network, and three small eigenvalues reveal how geometry loses rigidity.","Four experiments · Chambers, spectra, and flow"),
  ("when-walls-collide","colliding-walls","06 · Enumerative geometry","Take two paths. Find the missing wall.","Cross two walls in a different order. Repair the disagreement, follow a frame around an annulus, and discover the distinction that periods miss.","Four experiments · Paths, holonomy, and a hidden discrepancy"),
- ("research/geometry/quantitative-moduli/atlas","stability-wall","07 · Research atlas","Read the series. See the connections.","Explore what each result establishes, the ideas it depends on, and its place in an editorial importance ranking.","Paper explanations · Dependency graph · Reading paths")
+ ("singularity-microscope","singularity-microscope","07 · Geometric analysis","Something is shrinking to a point. Keep looking.","Turn the magnification up, recover a concentrating curvature profile, and discover how singular limits find a place in a completed space.","Three experiments · Scale, charge, and completion"),
+ ("geometry-particles","geometry-particles","08 · Geometry & physics","When geometry makes particles light.","Change two bundle deformations, separate three masses, and explore how a light vector changes the description of an interaction.","Three experiments · Masses, scattering, and cancellation"),
+ ("research/geometry/quantitative-moduli/atlas","stability-wall","09 · Research atlas","Read the series. See the connections.","Explore what each result establishes, the ideas it depends on, and its place in an editorial importance ranking.","Paper explanations · Dependency graph · Reading paths")
 ]
 
 programs=[

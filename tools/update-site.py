@@ -134,6 +134,8 @@ def main():
         output = STYLES.sub(lambda _: f"<!-- site:styles -->\n{stylesheet_links}\n<!-- /site:styles -->", output)
         explorer_assets = {
             "at-the-wall/index.html": ("style.css", "model.js", "app.js"),
+            "singularity-microscope/index.html": ("../assets/scale-explorers.css", "model.js", "app.js"),
+            "geometry-particles/index.html": ("../assets/scale-explorers.css", "model.js", "app.js"),
             "when-walls-collide/index.html": ("style.css", "model.js", "app.js"),
             "cobordism-explorer/index.html": ("site.css", "math.js", "app.js"),
             "pillowcase-explorer/index.html": ("styles.css", "site.css", "model.js", "app.js"),

@@ -82,6 +82,7 @@ node tools/check-essay-models.cjs
 node tools/check-cobordism-explorer.cjs
 node tools/check-at-the-wall.cjs
 node tools/check-when-walls-collide.cjs
+node tools/check-scale-explorers.cjs
 for f in tools/essay-checks/*.cjs; do node "$f"; done
 for f in assets/essays/*.js; do node --check "$f"; done
 node --check assets/essay-experiments.js
@@ -655,3 +656,13 @@ The conifold Hodge, nonflat bundle, integral reconstruction and point-defect res
 Paper 33 adds the continuous potential at the Uhlenbeck boundary, its primitive K3 metric consequences and a sixth reading path. It ranks sixth and has thematic connections to Papers 20 and 32; neither connection is a theorem dependency. The explanation retains the comparison with Feehan and the conditional status of the full ADHM cone-metric identification. The atlas snapshot date and paper totals are generated from its data.
 
 Paper 34, dated 14 November 2026, adds L² Hodge theory and the intersection-cohomology LLV algebra on twice-primitive locally free K3 moduli. The 34-paper atlas places it second, records its two theorem inputs (Papers 15 and 20), and includes a metric-to-Hodge reading path. The complete dimension-eighteen representation remains conditional on the explicit Hodge-structure hypothesis. There are 56 documented dependencies and eight separate thematic links; manuscript metadata and the exact PDF are in `data/papers.json`.
+
+## Concentration and particle-mass explorers
+
+`singularity-microscope/` links a late-time concentration model, exact normalized
+bubble profiles and a separate ideal-connection completion diagram.
+`geometry-particles/` links bundle deformation parameters to leading masses,
+scalar scattering and contact/exchange cancellation. The pages share
+`assets/scale-explorers.css`; each directory documents its precise source map
+and mathematical boundaries. Run `node tools/check-scale-explorers.cjs` for
+the exact-model checks and the normal full rebuild for site integration.

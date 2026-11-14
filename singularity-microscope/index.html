@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Singularity Microscope — Bernd Johannes Wuebben</title>
+<meta name="description" content="Watch curvature concentrate into a point. Turn the magnification up and discover the geometry that survives at a shrinking scale.">
+<meta name="author" content="Bernd Johannes Wuebben">
+<link rel="canonical" href="https://bwuebben.github.io/singularity-microscope/">
+<meta property="og:title" content="The Singularity Microscope"><meta property="og:description" content="Something is shrinking to a point. Keep looking."><meta property="og:type" content="website"><meta property="og:url" content="https://bwuebben.github.io/singularity-microscope/"><meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+<!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=fff82036387e">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="../assets/scale-explorers.css?v=30b87c6be93f">
+<script defer src="model.js?v=9e57bffb3530"></script><script defer src="app.js?v=97398d1480e6"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
+</head>
+<body>
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li>
+        <details class="nav-group has-sections">
+          <summary>Research Programs</summary>
+          <ul class="nav-submenu">
+            <li><a href="../research/">Overview</a></li>
+            <li class="nav-submenu-heading" role="presentation">Topic guides</li>
+            <li><a href="../research/markets/">Markets &amp; inference</a></li>
+            <li><a href="../research/topology/">Knots, four-manifolds &amp; Floer theory</a></li>
+            <li><a href="../research/calabi-yau/">Calabi–Yau transitions</a></li>
+            <li><a href="../research/geometry/">Geometry &amp; moduli</a></li>
+            <li><a href="../research/physics/">Geometry, gravity &amp; information</a></li>
+            <li><a href="../research/ai-institutions/">AI, institutions &amp; power</a></li>
+            <li class="nav-submenu-heading" role="presentation">Focused guides</li>
+            <li><a href="../research/topology/atiyah-floer/">Atiyah–Floer theory</a></li>
+            <li><a href="../research/geometry/quantitative-moduli/">Stability &amp; Degeneration</a></li>
+            <li class="nav-submenu-heading" role="presentation">Atlas</li>
+            <li><a href="../research/geometry/quantitative-moduli/atlas/">Degeneration</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../explorers/">Visual companions</a></li>
+            <li><a href="../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../beyond-hrp-lab/">Beyond HRP</a></li>
+            <li><a href="../at-the-wall/">At the Wall</a></li>
+            <li><a href="../when-walls-collide/">When Walls Collide</a></li>
+            <li><a href="./" aria-current="page">The Singularity Microscope</a></li>
+            <li><a href="../geometry-particles/">When Geometry Makes Particles Light</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../writing/">Essays &amp; poem</a></li>
+            <li><a href="../not-enough.html">Not Enough</a></li>
+            <li><a href="../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../writing/one-law/">Black holes &amp; markets</a></li>
+            <li><a href="../writing/one-year-per-year/">One year per year</a></li>
+            <li><a href="../writing/nobody-did-it/">Nobody did it</a></li>
+            <li><a href="../writing/broken-things/">Broken things</a></li>
+            <li><a href="../writing/who-vouches/">Who vouches</a></li>
+            <li><a href="../writing/two-failures/">Two ways to fail</a></li>
+            <li><a href="../writing/balance-point/">Balance point</a></li>
+            <li><a href="../writing/nothing-condenses-alone/">Nothing condenses alone</a></li>
+            <li><a href="../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../papers/">Papers</a></li>
+      <li><a href="../updates/">Updates</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="scale-app" tabindex="-1">
+<header class="lab-hero">
+  <div><p class="eyebrow">Geometry &amp; moduli · An interactive explorer</p><h1>The singularity<br><em>microscope.</em></h1></div>
+  <div class="hero-copy"><p>Something is shrinking to a point.<br>Keep looking.</p><p>A geometric flow concentrates curvature into smaller and smaller regions. Change the scale of observation, and a shape emerges from the point.</p><p class="small">Three experiments in concentration, magnification, and the geometry of a limit.</p></div>
+</header>
+<nav class="chapter-nav" aria-label="Experiments"><a href="#microscope"><span>01</span> Follow the scale</a><a href="#charge"><span>02</span> What fits inside?</a><a href="#boundary"><span>03</span> A place for the limit</a><a href="#papers">The research ↗</a></nav>
+<noscript><p class="notice">The explanations, formulas and research links are available below. Enable JavaScript to operate the microscope and diagrams.</p></noscript>
+
+<section class="experiment" id="microscope" aria-labelledby="microscope-title">
+  <div class="chapter-intro"><div><span class="chapter-number">01 / An instrument for changing scale</span><h2 id="microscope-title">A point from far away.<br>A profile up close.</h2></div><p>Move time forward. The concentration becomes hard to see in the fixed view. Now increase the magnification—or let the microscope follow the shrinking radius. Both windows show the same local model.</p></div>
+  <div class="instrument">
+    <div class="instrument-top"><span class="live-dot">Concentration microscope</span><span>Cross-section of a four-dimensional profile</span></div>
+    <div class="optics">
+      <div class="viewport"><div class="viewport-head"><span>The fixed view</span><span>1×</span></div><canvas id="global-field" role="img" aria-label="Fixed-scale cross-section of the concentrating curvature profile"></canvas><p class="viewport-caption">The dashed ring marks the circular region inscribed in the lens view.</p></div>
+      <div class="viewport"><div class="viewport-head"><span>Through the lens</span><span id="zoom-badge">4×</span></div><canvas id="lens-field" role="img" aria-label="Magnified cross-section of the same curvature profile"></canvas><p class="viewport-caption" id="lens-caption">The lens follows the concentration radius.</p></div>
+    </div>
+    <div class="controls">
+      <div class="control"><label class="range-label" for="flow-time">Elapsed time <output id="time-value" for="flow-time">16 T₀</output></label><input id="flow-time" type="range" min="0" max="4" step="0.01" value="1.20412"><div class="range-ends"><span>T₀</span><span>100 T₀</span><span>10,000 T₀</span></div><p class="control-help">A logarithmic clock, starting at a late reference time T₀.</p></div>
+      <div class="control"><label class="range-label" for="magnification">Magnification <output id="zoom-value" for="magnification">4×</output></label><input id="magnification" type="range" min="0" max="2" step="0.005" value="0.60206"><div class="range-ends"><span>1×</span><span>10×</span><span>100×</span></div><label class="check-label"><input id="follow-scale" type="checkbox" checked> Follow the shrinking radius</label></div>
+    </div>
+    <div class="button-row"><button id="play-flow" class="primary" aria-pressed="false">Play time</button><button data-view="point">Nearly a point</button><button data-view="follow">Find the profile</button><button data-view="reset">Reset</button></div>
+    <div class="readouts" aria-live="off"><div class="readout"><span class="small-label">Radius / initial radius</span><strong id="radius-value">0.2500</strong></div><div class="readout"><span class="small-label">Inclusion mass / initial mass</span><strong id="mass-value">0.0625</strong></div><div class="readout"><span class="small-label">Bubble charge</span><strong>1</strong></div></div>
+  </div>
+  <p class="caption">Exact limiting profile with the leading late-time scale; this is not a numerical integration of the flow. Colours show density relative to its central peak. Each image is a two-dimensional slice; energy is integrated in four real dimensions.</p>
+  <p class="discovery" id="scale-discovery">When magnification grows with the square root of time, the profile holds its shape in the lens.</p>
+  <details class="math"><summary>The mathematics of the microscope</summary><div class="math-body">
+    <p>A Hermitian metric assigns lengths and angles to the fibres of a complex vector bundle. Hermitian–Yang–Mills flow adjusts that metric toward a preferred curvature condition. In the setting of Paper 32, curvature concentrates at a finite set of point defects.</p>
+    <p>For distinct equal-degree line factors and reduced point defects on a compact Kähler surface, the inclusion mass Z(T) is asymptotic to a positive constant divided by T. The concentration radius ρ(T) is proportional to √Z(T), hence to T<sup>−1/2</sup>. The constants depend on the fixed geometric data.</p>
+    <p class="formula">ρ(T) / ρ(T₀) ≈ √(T₀/T)<br>Z(T) / Z(T₀) ≈ T₀/T</p>
+    <p>The controls evaluate these leading laws as an exact illustrative model. T₀ represents a time already in the asymptotic regime; the theorem does not give a universal numerical starting time. At the shrinking scale, actual flow metrics converge to an explicit charge-one anti-self-dual metric. Its density relative to the peak is (1 + R²)<sup>−4</sup>, where R = r/ρ(T).</p>
+    <p>The unit charge belongs to the limiting bubble. Total Yang–Mills energy along the original flow need not be constant. Nonreduced defects and repeated line factors do not carry the same sharp-profile conclusion.</p>
+  </div></details>
+</section>
+
+<section class="experiment" id="charge" aria-labelledby="charge-title">
+  <div class="chapter-intro"><div><span class="chapter-number">02 / Measure what remains</span><h2 id="charge-title">How much can a<br>small ball contain?</h2></div><p>A narrow peak can carry a definite amount of curvature energy. Enlarge a ball around the defect and count the fraction inside. The dashed curve tracks the normalized squared length of a distinguished bundle direction. At one radius, both measurements reach one half.</p></div>
+  <div class="instrument"><div class="split">
+    <div><div class="legend"><span><i></i>Energy inside the ball</span><span class="blue"><i></i>Inclusion height</span></div><svg class="plot" id="profile-plot" viewBox="0 0 540 320" role="img" aria-label="Normalized energy and inclusion profiles, both equal to one half at radius one"></svg></div>
+    <div><label class="range-label" for="ball-radius">Ball radius R = r / ρ <output id="ball-value">1.00</output></label><input id="ball-radius" type="range" min="0" max="4" step="0.01" value="1"><div class="range-ends"><span>0</span><span>2ρ</span><span>4ρ</span></div><p class="formula"><span id="energy-percent">50.0%</span> of the bubble energy<br><span id="height-percent">50.0%</span> of the inclusion height</p><p class="plain-copy" id="ball-note">At R = 1, the ball contains half the bubble energy. The inclusion profile also reaches half its limiting height here.</p><button id="half-radius">Return to the half-energy radius</button></div>
+  </div></div>
+  <details class="math"><summary>Two exact functions, one shared radius</summary><div class="math-body"><p>The normalized inclusion measures the squared length of the fixed holomorphic line inclusion, divided by its limiting outer height. The normalized energy counts the fraction of the charge-one bubble’s total curvature energy 8π² inside a four-dimensional ball.</p><p class="formula">Inclusion: H(R) = R² / (1 + R²)<br>Energy: C(R) = R⁴(R² + 3) / (1 + R²)³</p><p>Both equal 1/2 at R = 1. In the actual flow, the inclusion half-height radius and the half-defect-energy radius have the same leading asymptotic value. The plotted equality is exact for the limiting profile.</p></div></details>
+</section>
+
+<section class="experiment" id="boundary" aria-labelledby="boundary-title">
+  <div class="chapter-intro"><div><span class="chapter-number">03 / Give the limit a home</span><h2 id="boundary-title">The space needs<br>one more kind of object.</h2></div><p>A smooth connection may approach a limit with point concentrations. Record the connection that remains away from those points, and record the points with their charges. This pair is called an <em>ideal connection</em>.</p></div>
+  <div class="instrument"><div class="split">
+    <div class="boundary-drawing"><svg id="boundary-plot" viewBox="0 0 520 300" role="img" aria-label="Schematic approach to an ideal connection with two distinct simple defects"></svg></div>
+    <div><label class="range-label" for="boundary-position">Approach the ideal connection <output id="boundary-value">Smooth</output></label><input id="boundary-position" type="range" min="0" max="1" step="0.01" value="0"><div class="range-ends"><span>Smooth connections</span><span>Ideal limit</span></div><p class="plain-copy" id="boundary-copy">Two small regions carry concentrated curvature. Away from them, a smooth residual connection is emerging.</p><div class="boundary-ledger">Residual second Chern number: <strong>k − 2</strong><br>Defect cycle: <strong>p + q</strong><br>Total second Chern number: <strong>k</strong><p class="control-help">Here k is the bundle’s topological charge. Two units remain at the marked points.</p></div></div>
+  </div></div>
+  <p class="caption">A schematic family with two distinct unit defects. This control is an approach parameter, not a flow clock or a computed metric distance. The ledger describes the limiting decomposition.</p>
+  <p class="discovery">A limit can be singular and still lie at finite distance. Completing the space means including the objects a finite journey can approach.</p>
+  <details class="math"><summary>Where the completion theorem applies</summary><div class="math-body"><p>This experiment introduces the separate setting of Paper 33. On a projective K3 surface with its Ricci-flat metric, a generic polarization and a primitive Mukai vector of rank at least two and positive square, with nonempty stable bundle locus, the L² metric has Uhlenbeck completion. Ideal connections supply the limiting objects.</p><p>For rank two, stable residual bundles with distinct simple bubble points form totally geodesic hyperkähler orbifold strata. The paper also identifies affine tangent cones at stable-residual points; a full identification with flat ADHM quotient metrics remains conditional outside the established locus. The local flow example above and this moduli-space completion theorem have different hypotheses.</p></div></details>
+</section>
+
+<section class="experiment" id="papers" aria-labelledby="papers-title"><span class="chapter-number">Behind the experiments</span><h2 id="papers-title">The research.</h2><ul class="paper-list">
+<li><span class="paper-number">Paper 32</span><div><a href="../papers/point-defects-hym-flow/">Point defects and Hermitian–Yang–Mills flow on surfaces</a><p>The shrinking scale, explicit charge-one profile and shared half-height / half-energy radius used in the first two experiments.</p></div></li>
+<li><span class="paper-number">Paper 33</span><div><a href="../papers/l2-metric-uhlenbeck-boundary/">The L² metric at the Uhlenbeck boundary</a><p>Continuous potentials, metric completion and boundary geometry in the stated polarized K3 setting.</p></div></li>
+<li><span class="paper-number">Paper 10</span><div><a href="../papers/singular-hym-metric-growth/">Singular graded limits and metric growth under Hermitian–Yang–Mills flow</a><p>The earlier obstruction showing why a bounded-remainder weight model does not capture singular graded concentration.</p></div></li>
+</ul><p class="endnote">Continue with <a href="../geometry-particles/">When Geometry Makes Particles Light</a>, explore the <a href="../research/geometry/quantitative-moduli/atlas/">Stability &amp; Degeneration atlas</a>, or browse <a href="../explorers/">all explorers</a>.</p></section>
+</main></body></html>

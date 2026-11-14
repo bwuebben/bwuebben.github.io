@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>When Geometry Makes Particles Light — Bernd Johannes Wuebben</title>
+<meta name="description" content="Change two geometric parameters, separate three particle masses, and explore how a light vector changes scalar scattering near gauge enhancement.">
+<meta name="author" content="Bernd Johannes Wuebben"><link rel="canonical" href="https://bwuebben.github.io/geometry-particles/">
+<meta property="og:title" content="When Geometry Makes Particles Light"><meta property="og:description" content="Two geometric changes. Three masses. A different way to describe the physics."><meta property="og:type" content="website"><meta property="og:url" content="https://bwuebben.github.io/geometry-particles/"><meta property="og:image" content="https://bwuebben.github.io/assets/social-card.jpg">
+<!-- site:styles -->
+<link rel="stylesheet" href="../assets/theme.css?v=ea3dc6e4506f">
+<link rel="stylesheet" href="../assets/style.css?v=fff82036387e">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
+<!-- /site:styles -->
+<link rel="stylesheet" href="../assets/scale-explorers.css?v=30b87c6be93f"><script defer src="model.js?v=7aee1b16b829"></script><script defer src="app.js?v=3a5b4d03b0ab"></script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>∑</text></svg>">
+</head>
+<body>
+<!-- site:navigation -->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="../">Home</a></li>
+      <li>
+        <details class="nav-group has-sections">
+          <summary>Research Programs</summary>
+          <ul class="nav-submenu">
+            <li><a href="../research/">Overview</a></li>
+            <li class="nav-submenu-heading" role="presentation">Topic guides</li>
+            <li><a href="../research/markets/">Markets &amp; inference</a></li>
+            <li><a href="../research/topology/">Knots, four-manifolds &amp; Floer theory</a></li>
+            <li><a href="../research/calabi-yau/">Calabi–Yau transitions</a></li>
+            <li><a href="../research/geometry/">Geometry &amp; moduli</a></li>
+            <li><a href="../research/physics/">Geometry, gravity &amp; information</a></li>
+            <li><a href="../research/ai-institutions/">AI, institutions &amp; power</a></li>
+            <li class="nav-submenu-heading" role="presentation">Focused guides</li>
+            <li><a href="../research/topology/atiyah-floer/">Atiyah–Floer theory</a></li>
+            <li><a href="../research/geometry/quantitative-moduli/">Stability &amp; Degeneration</a></li>
+            <li class="nav-submenu-heading" role="presentation">Atlas</li>
+            <li><a href="../research/geometry/quantitative-moduli/atlas/">Degeneration</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group is-current">
+          <summary>Explorers</summary>
+          <ul class="nav-submenu">
+            <li><a href="../explorers/">Visual companions</a></li>
+            <li><a href="../pillowcase-explorer/">Pillowcase</a></li>
+            <li><a href="../conifold-lab/">Conifold Transitions</a></li>
+            <li><a href="../cobordism-explorer/">Atiyah–Floer Cobordism</a></li>
+            <li><a href="../beyond-hrp-lab/">Beyond HRP</a></li>
+            <li><a href="../at-the-wall/">At the Wall</a></li>
+            <li><a href="../when-walls-collide/">When Walls Collide</a></li>
+            <li><a href="../singularity-microscope/">The Singularity Microscope</a></li>
+            <li><a href="./" aria-current="page">When Geometry Makes Particles Light</a></li>
+          </ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary>Writing</summary>
+          <ul class="nav-submenu">
+            <li><a href="../writing/">Essays &amp; poem</a></li>
+            <li><a href="../not-enough.html">Not Enough</a></li>
+            <li><a href="../writing/institutional-knowledge/">Institutional knowledge</a></li>
+            <li><a href="../writing/physical-limits/">Physical limits</a></li>
+            <li><a href="../writing/one-law/">Black holes &amp; markets</a></li>
+            <li><a href="../writing/one-year-per-year/">One year per year</a></li>
+            <li><a href="../writing/nobody-did-it/">Nobody did it</a></li>
+            <li><a href="../writing/broken-things/">Broken things</a></li>
+            <li><a href="../writing/who-vouches/">Who vouches</a></li>
+            <li><a href="../writing/two-failures/">Two ways to fail</a></li>
+            <li><a href="../writing/balance-point/">Balance point</a></li>
+            <li><a href="../writing/nothing-condenses-alone/">Nothing condenses alone</a></li>
+            <li><a href="../poem.html">Gradient of Mind</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a href="../papers/">Papers</a></li>
+      <li><a href="../updates/">Updates</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- /site:navigation -->
+<main id="main" class="scale-app" tabindex="-1">
+<header class="lab-hero"><div><p class="eyebrow">Geometry &amp; physics · An interactive explorer</p><h1>When geometry<br>makes particles<br><em>light.</em></h1></div><div class="hero-copy"><p>A particle’s mass can remember the geometry of dimensions we do not see.</p><p>Here, two small changes to a bundle over a smooth K3 surface create three mass scales. Separate those scales, then watch the useful description of an interaction change.</p><p class="small">A concrete heterotic compactification, explored through its leading Yang–Mills models.</p></div></header>
+<nav class="chapter-nav" aria-label="Experiments"><a href="#masses"><span>01</span> Make a hierarchy</a><a href="#scattering"><span>02</span> Change the energy</a><a href="#cancellation"><span>03</span> Watch a cancellation</a><a href="#papers">The research ↗</a></nav>
+<noscript><p class="notice">The explanations, formulas and research links are available below. Enable JavaScript to use the mass and scattering experiments.</p></noscript>
+
+<section class="experiment" id="masses" aria-labelledby="masses-title"><div class="chapter-intro"><div><span class="chapter-number">01 / Geometry sets a scale</span><h2 id="masses-title">Two deformations.<br>Three masses.</h2></div><p>At the enhancement point, two identical bundle factors leave an extra gauge symmetry intact. Deforming the bundle breaks that symmetry and makes three vector particles massive. Reduce one deformation more quickly than the other: one vector becomes much lighter than its companions.</p></div>
+<div class="instrument"><div class="instrument-top"><span class="live-dot">The mass laboratory</span><span>The K3 surface stays smooth</span></div><div class="mass-stage">
+  <div><svg id="mass-compass" class="plot" viewBox="0 0 520 310" role="img" aria-label="Right triangle of leading vector masses with sides b, a, and square root of a squared plus b squared"></svg><p class="stage-copy">The mass triangle: m₃² = m₁² + m₂² at leading order.</p></div>
+  <div><h3 id="hierarchy-title">One light vector emerges.</h3><p class="stage-copy">The middle mass divided by the lightest</p><div class="scale-value" id="hierarchy-value">10×</div><div class="mass-bars" aria-label="Leading masses in common geometric units"><div class="mass-row"><span>m₁</span><span class="mass-track"><i class="mass-fill" id="mass-bar-1"></i></span><output id="mass-1">0.0100</output></div><div class="mass-row"><span>m₂</span><span class="mass-track"><i class="mass-fill" id="mass-bar-2"></i></span><output id="mass-2">0.1000</output></div><div class="mass-row"><span>m₃</span><span class="mass-track"><i class="mass-fill" id="mass-bar-3"></i></span><output id="mass-3">0.1005</output></div></div><p class="stage-copy">Bar lengths use one fixed scale. Values are masses divided by √(8 / (3V₀L²)).</p></div>
+</div><div class="controls">
+<div class="control"><label class="range-label" for="deformation-a">Overall deformation a <output id="a-value">0.100</output></label><input id="deformation-a" type="range" min="0.02" max="0.2" step="0.001" value="0.1"><div class="range-ends"><span>0.02</span><span>0.20</span></div><p class="control-help">Reduce a with the ratio fixed to lower all three masses together.</p></div>
+<div class="control"><label class="range-label" for="hierarchy-ratio">Relative deformation b / a <output id="ratio-value">0.100</output></label><input id="hierarchy-ratio" type="range" min="-2" max="0" step="0.01" value="-1"><div class="range-ends"><span>0.01</span><span>0.10</span><span>1</span></div><p class="control-help">Reduce the ratio to separate the lightest vector.</p></div>
+</div><div class="button-row"><button data-mass="equal">Equal deformations</button><button data-mass="separate" class="primary">Separate the scales</button><button data-mass="deep">A hundredfold hierarchy</button><button data-mass="reset">Reset</button></div></div>
+<p class="caption">The triangle is an exact diagram of the leading mass formula, not a picture of the internal K3 surface. The displayed parameter range illustrates the small-deformation model; the theorem does not supply a numerical threshold for its asymptotic error.</p>
+<details class="math"><summary>The bundle, the masses, and the approximation</summary><div class="math-body"><p>A K3 surface is a compact space of four real dimensions with special geometric structure. A bundle adds internal vector spaces to its points. Near two identical stable rank-three factors F ⊕ F, the multiplicity symmetry is SU(2). Two orthonormal harmonic deformation coordinates have amplitudes a and b, with 0 &lt; b ≤ a. These are bundle deformations; no stability-wall parameter or singular K3 metric is being varied.</p><p class="formula">(m̂₁², m̂₂², m̂₃²) = [8 / (3V₀L²)] (b², a², a² + b²)</p><p>The actual leading Yang–Mills masses have relative error O(a² + b²), uniformly as b/a becomes small. V₀ is the reference K3 volume and L sets its physical size. The page draws the leading quantities m̂, suppressing the hats in the controls. Higher string-scale corrections are outside this model. The exact enhancement point a = b = 0 is approached but is not part of the positive-parameter controls.</p></div></details></section>
+
+<section class="experiment" id="scattering" aria-labelledby="scattering-title"><div class="chapter-intro"><div><span class="chapter-number">02 / The experiment chooses the description</span><h2 id="scattering-title">How much energy<br>does it take to notice?</h2></div><p>Far below the lightest mass, its exchange can be approximated by a local interaction. Above that mass, the light vector must be retained explicitly. Compare the leading exchange amplitude with its low-energy approximation. The two heavier vectors set the upper limit of this experiment.</p></div>
+<div class="instrument"><div class="instrument-top"><span>Two specified massless bundle scalars</span><span>Leading amplitude / e²</span></div><div class="split">
+<div><div class="legend"><span><i></i>Light-vector exchange</span><span class="blue"><i></i>Low-energy approximation</span></div><svg id="amplitude-plot" class="plot" viewBox="0 0 560 345" role="img" aria-label="Leading exchange amplitude compared with its low-energy approximation as energy varies"></svg><p class="caption">Shaded intervals are excluded by the required channel margins. Curves stop at E/M = 1/√2, below the heavier mass M. Vertical values use a signed logarithmic display.</p></div>
+<div><span class="small-label">Selected leading amplitude / e²</span><div class="amp-value" id="amplitude-value">—</div><p class="plain-copy" id="energy-description">Change the collision energy to explore the light-vector exchange.</p><div class="amp-controls"><div><label class="range-label" for="collision-energy">Energy E / M <output id="energy-value">0.030</output></label><input id="collision-energy" type="range" min="-3" max="-0.150515" step="0.005" value="-1.522879"><div class="range-ends"><span>0.001</span><span>0.707</span></div></div><div><label class="range-label" for="scattering-angle">Scattering angle <output id="angle-value">60°</output></label><input id="scattering-angle" type="range" min="30" max="150" step="1" value="60"><div class="range-ends"><span>30°</span><span>150°</span></div></div></div><p class="control-help">M = m₂ is the heavier reference mass. Changing a rescales the physical energy unit; changing b/a moves the light threshold.</p></div>
+</div><div class="button-row"><button data-energy="low">Below the light mass</button><button data-energy="middle">Between the masses</button><button data-energy="pole">Inspect the excluded pole</button></div><div class="state-note" id="domain-status" role="status">Leading comparison domain.</div></div>
+<p class="discovery">A useful description depends on both the geometry and the energy of the question you ask.</p>
+<details class="math"><summary>The amplitude and its permitted domain</summary><div class="math-body"><p>Here e² is the effective gauge-coupling prefactor. With x = E/M, μ = m₁/M = b/a, and c = cos θ, the dimensionless Mandelstam invariants are s = x², t = −s(1 − c)/2 and u = −s(1 + c)/2. They obey s + t + u = 0. The leading model evaluates</p><p class="formula">𝓜₀/e² = (t − u)/(μ² − s) + (t − s)/(μ² − u).</p><p>At low energy the denominators can be replaced by μ², giving (2t − u − s)/μ². The two curves compare these explicit formulas. They are not a measured cross-section or a numerical sum over the full internal spectrum.</p><p>The paper compares this expression with the complete leading Yang–Mills four-scalar amplitude, including the internal vector and scalar towers. Here the permitted comparison region uses b/a ≤ 0.4, E²/M² ≤ 0.5, and |μ² − q²| ≥ 0.15(μ² + x²) for q² = s,t,u. These are fixed illustrative choices within the theorem’s domain. The model suppresses the amplitude outside it and never connects a curve through a pole.</p><p>The theorem’s error is absolute and uniform in b/a in this domain, for sufficiently small a and b. No numerical constant is supplied, so no numerical uncertainty band is drawn. This does not establish a finite-string-scale error bound for the full heterotic amplitude.</p></div></details></section>
+
+<section class="experiment" id="cancellation" aria-labelledby="cancellation-title"><div class="chapter-intro"><div><span class="chapter-number">03 / Two terms that must be kept together</span><h2 id="cancellation-title">The interaction<br>that cancels itself.</h2></div><p>A scalar contact contribution and exchange of its massive partner cancel at zero momentum. Move toward that limit and watch the sum shrink. The cancellation removes a term before any small-mass estimate is made.</p></div>
+<div class="instrument"><div class="split"><div><span class="small-label">One scalar channel · common vertex factor removed</span><div class="cancellation"><div class="term"><span>Contact</span><strong>−1</strong><div class="cancel-bar"></div></div><div class="term"><span>Exchange</span><strong id="exchange-term">0.667</strong><div class="cancel-bar" id="exchange-bar"></div></div><div class="term"><span>Sum</span><strong id="sum-term">−0.333</strong><div class="cancel-bar" id="sum-bar"></div></div></div><p class="formula">−1 + m²/(m² − q²) = q²/(m² − q²)</p></div><div><label class="range-label" for="momentum">Spacelike momentum q² / m² <output id="momentum-value">−0.50</output></label><input id="momentum" type="range" min="-2" max="0" step="0.01" value="-0.5"><div class="range-ends"><span>−2</span><span>Zero momentum</span></div><p class="plain-copy" id="cancellation-copy">The two terms partly cancel. At zero momentum their sum is exactly zero.</p><button id="zero-momentum">Take the zero-momentum limit</button></div></div></div>
+<p class="caption">One exact algebraic channel from the scalar-sector decomposition, with its common coupling and vertex product factored out. It is separate from the vector-exchange amplitude plotted above. A spacelike channel avoids the pole throughout.</p></section>
+
+<section class="experiment" id="papers" aria-labelledby="papers-title"><span class="chapter-number">Behind the experiments</span><h2 id="papers-title">The research.</h2><ul class="paper-list"><li><span class="paper-number">Paper 21</span><div><a href="../papers/heterotic-k3-enhancement/">Light vectors and scalar interactions near heterotic K3 gauge enhancement</a><p>The concrete compactification, relative vector masses, complete leading Yang–Mills scalar amplitude and contact/exchange cancellation used here.</p></div></li><li><span class="paper-number">Paper 4</span><div><a href="../papers/repeated-factor-he-spectra/">Uniform Hermitian–Einstein spectra with repeated stable factors</a><p>Why repeated stable factors produce matrix-valued weak modes and a finite commutator mass operator.</p></div></li><li><span class="paper-number">Paper 15</span><div><a href="../papers/local-hym-reduction/">Quantitative local models for Hermitian–Einstein metrics</a><p>The general local geometric comparison underlying the small masses and harmonic metric calculations.</p></div></li></ul><p class="endnote">Continue with <a href="../singularity-microscope/">The Singularity Microscope</a>, explore the <a href="../research/geometry/quantitative-moduli/atlas/">Stability &amp; Degeneration atlas</a>, or browse <a href="../explorers/">all explorers</a>.</p></section>
+</main></body></html>
