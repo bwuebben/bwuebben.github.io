@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>L² Hodge theory and the LLV algebra of singular K3 moduli spaces</title>
+      <link>https://bwuebben.github.io/papers/l2-hodge-llv/</link>
+      <guid>https://bwuebben.github.io/papers/l2-hodge-llv/#update-2026-11-14</guid>
+      <description>The LLV algebra on the intersection cohomology of twice-primitive K3 sheaf moduli is the orthogonal algebra of second cohomology enlarged by a hyperbolic plane. In the stated Picard-rank-one numerical range, all semistable sheaves are locally free, and square-integrable harmonic forms realize the Lefschetz operators despite two singular strata and the absence of a symplectic resolution. Singular-link cone analysis and directional metric estimates control the operator domains; monodromy extends the relations from one positive three-plane. The complete representation in dimension eighteen remains conditional on an explicit Hodge-structure comparison.</description>
+      <pubDate>Sat, 14 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>The L² metric at the Uhlenbeck boundary</title>
       <link>https://bwuebben.github.io/papers/l2-metric-uhlenbeck-boundary/</link>
       <guid>https://bwuebben.github.io/papers/l2-metric-uhlenbeck-boundary/#update-2026-11-13</guid>

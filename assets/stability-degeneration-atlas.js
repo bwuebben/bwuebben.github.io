@@ -19,7 +19,7 @@
     1:[85,135],2:[85,350],3:[245,390],4:[245,145],5:[85,550],6:[245,265],7:[270,550],
     8:[435,395],9:[435,535],10:[605,550],11:[435,90],12:[600,90],13:[600,190],14:[575,310],
     15:[745,410],16:[765,555],17:[760,135],18:[875,250],19:[910,90],20:[925,405],21:[925,555],
-    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300],29:[1325,565],30:[1470,395],31:[1480,150],32:[605,675],33:[880,690]
+    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300],29:[1325,565],30:[1470,395],31:[1480,150],32:[605,675],33:[880,690],34:[1040,715]
   };
   const svg = (tag, attrs={}, text) => {
     const e=document.createElementNS('http://www.w3.org/2000/svg',tag);
@@ -93,14 +93,15 @@
     $('#graph-footnote').textContent='Numbers identify papers. Larger circles indicate higher editorial rank. Positions group research strands; distances have no mathematical meaning. On a small screen, scroll the map sideways.';
   }
   function renderInfluence(){
-    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox','0 0 1000 930');root.style.minWidth='1000px';root.setAttribute('aria-label','Editorial rank versus selected direct follow-on papers');
+    const bottom=65+(papers.length-1)*25,axisY=bottom+35;
+    const root=$('#graph');root.replaceChildren();root.setAttribute('viewBox',`0 0 1000 ${axisY+60}`);root.style.minWidth='1000px';root.setAttribute('aria-label','Editorial rank versus selected direct follow-on papers');
     const edges=activeEdges(),counts=new Map(papers.map(p=>[p.id,new Set(edges.filter(e=>e.from===p.id).map(e=>e.to)).size]));
     const max=Math.max(5,...counts.values());const x=n=>145+n*(710/max);const y=rank=>65+(rank-1)*25;
     root.append(svg('rect',{x:105,y:40,width:795,height:155,rx:8,fill:'var(--bg-panel)',opacity:.5}));
-    for(let n=0;n<=max;n++){root.append(svg('line',{x1:x(n),y1:40,x2:x(n),y2:865,stroke:'var(--rule)','stroke-width':1,'stroke-dasharray':'2 6'}));root.append(svg('text',{x:x(n),y:892,class:'plot-label','text-anchor':'middle'},n));}
+    for(let n=0;n<=max;n++){root.append(svg('line',{x1:x(n),y1:40,x2:x(n),y2:bottom+15,stroke:'var(--rule)','stroke-width':1,'stroke-dasharray':'2 6'}));root.append(svg('text',{x:x(n),y:axisY,class:'plot-label','text-anchor':'middle'},n));}
     for(const rank of [1,8,16,24,32]){root.append(svg('text',{x:72,y:y(rank)+4,class:'plot-label','text-anchor':'end'},`#${rank}`));root.append(svg('line',{x1:105,y1:y(rank),x2:900,y2:y(rank),stroke:'var(--rule)',opacity:.4}));}
     root.append(svg('text',{x:35,y:28,class:'group-label'},'EDITORIAL RANK ↑'));
-    root.append(svg('text',{x:510,y:920,class:'plot-label','text-anchor':'middle'},'Number of distinct direct follow-on papers in the selected graph →'));
+    root.append(svg('text',{x:510,y:axisY+28,class:'plot-label','text-anchor':'middle'},'Number of distinct direct follow-on papers in the selected graph →'));
     for(const p of papers){
       const opacity=matches(p)?1:.13;drawNode(root,p,x(counts.get(p.id)),y(p.rank),9.5,opacity,true);
       if(p.rank<=6||[11,12].includes(p.id)||p.id===state.selected){const left=x(counts.get(p.id))>650;const tx=x(counts.get(p.id))+(left?-18:18);root.append(svg('text',{x:tx,y:y(p.rank)+4,class:'plot-label',opacity,'text-anchor':left?'end':'start',fill:p.id===state.selected?'var(--ink)':'var(--ink-soft)'},p.short));}
@@ -139,6 +140,7 @@
   $('#leaders').innerHTML=ordered().slice(0,4).map(p=>`<article class="leader"><span class="ordinal">${num(p.rank)}</span><div><button class="leader-select" data-select="${p.id}" data-scroll="true"><span class="paper-label">PAPER ${num(p.id)} / LEADING CONTRIBUTION</span><strong>${esc(p.short)}</strong></button><a class="leader-link" href="${esc(p.page)}" aria-label="Paper webpage: ${esc(p.title)}">Paper webpage ↗</a></div></article>`).join('');
   for(const [key,b] of Object.entries(D.branches)){$('#branch').insertAdjacentHTML('beforeend',`<option value="${key}">${esc(b.name)}</option>`);$('#legend').insertAdjacentHTML('beforeend',`<button data-branch="${key}"><i style="background:${b.color}"></i>${esc(b.name)}</button>`);}
   const journeys=[
+    {title:'From metric geometry to Hodge theory',copy:'Start with the general harmonic quotient reduction, pass to compact singular K3 metrics, then recover harmonic Lefschetz operators and intersection-cohomology symmetry. The final complete dimension-18 representation retains its Hodge-theoretic hypothesis.',ids:[15,20,34]},
     {title:'Find the general mechanism',copy:'From the original spectral estimate to quotient geometry, the general local theorem and its dynamical counterpart.',ids:[1,4,6,14,15,16]},
     {title:'Follow the geometry outward',copy:'Start with one K3 wall crossing, then connect compact metric limits, integral cycles and canonical singular metrics. End with the different primitive K3 setting where curvature can bubble.',ids:[13,14,17,18,20,33]},
     {title:'Let the underlying space degenerate',copy:'Move from intersection-controlled spectra to actual nonlinear flow, genuine gluing and every relaxation time. Paper 27 gives a type-K branch; the next path follows Ricci-flat conifolds.',ids:[23,25,26,28,27]},

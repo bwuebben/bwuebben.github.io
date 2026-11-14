@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-14",
+    "title": "L² Hodge theory and the LLV algebra of singular K3 moduli spaces",
+    "url": "/papers/l2-hodge-llv/",
+    "description": "The LLV algebra on the intersection cohomology of twice-primitive K3 sheaf moduli is the orthogonal algebra of second cohomology enlarged by a hyperbolic plane. In the stated Picard-rank-one numerical range, all semistable sheaves are locally free, and square-integrable harmonic forms realize the Lefschetz operators despite two singular strata and the absence of a symplectic resolution. Singular-link cone analysis and directional metric estimates control the operator domains; monodromy extends the relations from one positive three-plane. The complete representation in dimension eighteen remains conditional on an explicit Hodge-structure comparison."
+  },
+  {
     "date": "2026-11-13",
     "title": "The L² metric at the Uhlenbeck boundary",
     "url": "/papers/l2-metric-uhlenbeck-boundary/",
