@@ -19,7 +19,7 @@
     1:[85,135],2:[85,350],3:[245,390],4:[245,145],5:[85,550],6:[245,265],7:[270,550],
     8:[435,395],9:[435,535],10:[605,550],11:[435,90],12:[600,90],13:[600,190],14:[575,310],
     15:[745,410],16:[765,555],17:[760,135],18:[875,250],19:[910,90],20:[925,405],21:[925,555],
-    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300],29:[1325,565],30:[1470,395],31:[1480,150],32:[605,675]
+    22:[1095,610],23:[1060,80],24:[1165,190],25:[1040,300],26:[1165,405],27:[1165,510],28:[1180,300],29:[1325,565],30:[1470,395],31:[1480,150],32:[605,675],33:[880,690]
   };
   const svg = (tag, attrs={}, text) => {
     const e=document.createElementNS('http://www.w3.org/2000/svg',tag);
@@ -140,10 +140,11 @@
   for(const [key,b] of Object.entries(D.branches)){$('#branch').insertAdjacentHTML('beforeend',`<option value="${key}">${esc(b.name)}</option>`);$('#legend').insertAdjacentHTML('beforeend',`<button data-branch="${key}"><i style="background:${b.color}"></i>${esc(b.name)}</button>`);}
   const journeys=[
     {title:'Find the general mechanism',copy:'From the original spectral estimate to quotient geometry, the general local theorem and its dynamical counterpart.',ids:[1,4,6,14,15,16]},
-    {title:'Follow the geometry outward',copy:'Start with one K3 wall crossing, then connect compact metric limits, integral cycles and canonical singular metrics.',ids:[13,14,17,18,20]},
+    {title:'Follow the geometry outward',copy:'Start with one K3 wall crossing, then connect compact metric limits, integral cycles and canonical singular metrics. End with the different primitive K3 setting where curvature can bubble.',ids:[13,14,17,18,20,33]},
     {title:'Let the underlying space degenerate',copy:'Move from intersection-controlled spectra to actual nonlinear flow, genuine gluing and every relaxation time. Paper 27 gives a type-K branch; the next path follows Ricci-flat conifolds.',ids:[23,25,26,28,27]},
     {title:'Recover integral topology on one family',copy:'Start with the compact transition and fixed-ray spectrum, pass to independent node scales and nonflat bundle dynamics, then recover the integral vanishing-cycle map from certified marked periods.',ids:[2,22,29,30,31]},
-    {title:'Resolve the singular-flow law',copy:'A toric example exposes the failure of a smooth graded model. Follow the obstruction to the inverse-time law and shrinking charge-one profile, keeping the reduced distinct-factor hypothesis visible.',ids:[2,10,32]}
+    {title:'Resolve the singular-flow law',copy:'A toric example exposes the failure of a smooth graded model. Follow the obstruction to the inverse-time law and shrinking charge-one profile, keeping the reduced distinct-factor hypothesis visible.',ids:[2,10,32]},
+    {title:'Understand the bubbling boundary',copy:'Compare canonical metrics on locally free K3 moduli with the continuous potential at ideal connections. Then turn to point concentration along actual flow: its rates and profiles answer a different question from stationary metric completion.',ids:[20,33,32]}
   ];
   $('#journey-grid').innerHTML=journeys.map((j,i)=>`<article class="journey"><span class="journey-no">PATH ${num(i+1)}</span><h3>${j.title}</h3><p>${j.copy}</p><div class="path-steps">${j.ids.map((id,k)=>`${k?'<span aria-hidden="true">→</span>':''}<button data-select="${id}" data-scroll="true" title="${esc(byId.get(id).title)}" aria-label="Explore Paper ${id}: ${esc(byId.get(id).short)}">${num(id)}</button>`).join('')}</div></article>`).join('');
   $('#ranking-method').textContent=D.method;$('#edge-total').textContent=allEdges.length;

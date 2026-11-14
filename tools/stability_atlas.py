@@ -35,7 +35,10 @@ def build_atlas(page):
     encoded = json.dumps(data, ensure_ascii=False, indent=2) + '\n'
     dataset.write_text(encoded)
     (ROOT / 'assets/stability-degeneration-data.js').write_text('window.ATLAS_DATA = ' + encoded.strip() + ';\n')
-    body = (ROOT / 'content/stability-degeneration-atlas.html').read_text().replace('{{PAPER_GUIDE}}', '\n'.join(cards))
+    body = ((ROOT / 'content/stability-degeneration-atlas.html').read_text()
+            .replace('{{PAPER_GUIDE}}', '\n'.join(cards))
+            .replace('{{PAPER_COUNT}}', str(len(data['papers'])))
+            .replace('{{AS_OF}}', escape(data['asOf'])))
     assets = ['stability-degeneration-atlas.css', 'stability-degeneration-data.js', 'stability-degeneration-atlas.js']
     extra = []
     for name in assets:
