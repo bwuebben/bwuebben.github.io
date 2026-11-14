@@ -28,6 +28,12 @@ and the focused programme guides, grouped under Topic guides, Focused guides and
 The focused guides are Atiyah–Floer theory and Stability & Degeneration. In `site.json`,
 an optional `heading` on a menu link inserts a section label before that link.
 
+Every public HTML page uses the same ∑ browser-tab icon, defined once in
+`templates/favicon.html`. `tools/update-site.py` applies it to both shared-layout
+pages and standalone explorers; the paper generator uses the same template.
+The embedded SVG keeps standalone copies self-contained. The `--check` mode
+also detects missing or inconsistent tab icons.
+
 Edit `site.json` for navigation. Editorial page content comes from
 `tools/build-editorial.py`; the homepage structure comes from `content/home.html`,
 the biography from `content/about.html`, and identity metadata from

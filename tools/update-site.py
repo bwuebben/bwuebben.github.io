@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh shared navigation and stylesheet versions in marked static pages."""
+"""Refresh the shared favicon, navigation and styles in static pages."""
 
 import argparse
 import hashlib
@@ -7,11 +7,45 @@ import html
 import json
 import posixpath
 import re
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 NAV = re.compile(r"<!-- site:navigation -->.*?<!-- /site:navigation -->", re.S)
 STYLES = re.compile(r"<!-- site:styles -->.*?<!-- /site:styles -->", re.S)
+HEAD = re.compile(r"(<head\b[^>]*>)(.*?)(</head\s*>)", re.I | re.S)
+LINK = re.compile(r'''<link\b(?:[^>"']|"[^"]*"|'[^']*')*>''', re.I)
+
+
+def shared_favicon(source, favicon):
+    """Keep one browser icon in the head, including in standalone explorers."""
+    class IconLink(HTMLParser):
+        is_icon = False
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "link":
+                self.is_icon = "icon" in (dict(attrs).get("rel") or "").lower().split()
+
+    def head(match):
+        installed = False
+
+        def link(item):
+            nonlocal installed
+            parser = IconLink()
+            parser.feed(item[0])
+            if not parser.is_icon:
+                return item[0]
+            if installed:
+                return ""
+            installed = True
+            return favicon
+
+        content = LINK.sub(link, match[2])
+        if not installed:
+            content = content.rstrip() + "\n" + favicon + "\n"
+        return match[1] + content + match[3]
+
+    return HEAD.sub(head, source, count=1)
 
 
 def main():
@@ -20,6 +54,7 @@ def main():
     args = parser.parse_args()
     config = json.loads((ROOT / "site.json").read_text())
     template = (ROOT / "templates/navigation.html").read_text().rstrip()
+    favicon = (ROOT / "templates/favicon.html").read_text().strip()
     styles = ["assets/theme.css", "assets/style.css"]
     versions = {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest()[:12]
                 for name in styles}
@@ -34,10 +69,13 @@ def main():
     pending = []
     for page in sorted(ROOT.rglob("*.html")):
         relative = page.relative_to(ROOT).as_posix()
-        if relative.split("/")[0] in {"tools", "templates", ".git"}:
+        if relative.split("/")[0] in {"tools", "templates", "content", "review", ".git"}:
             continue
         source = page.read_text()
+        output = shared_favicon(source, favicon)
         if "<!-- site:navigation -->" not in source:
+            if output != source:
+                pending.append((page, output))
             continue
         if len(NAV.findall(source)) != 1 or len(STYLES.findall(source)) != 1:
             raise ValueError(f"{relative}: expected one navigation and one styles block")
@@ -92,7 +130,7 @@ def main():
         stylesheet_links = "\n".join(
             f'<link rel="stylesheet" href="{local_url("/" + name)}?v={versions[name]}">'
             for name in styles) + "\n" + theme_metas
-        output = NAV.sub(lambda _: f"<!-- site:navigation -->\n{navigation}\n<!-- /site:navigation -->", source)
+        output = NAV.sub(lambda _: f"<!-- site:navigation -->\n{navigation}\n<!-- /site:navigation -->", output)
         output = STYLES.sub(lambda _: f"<!-- site:styles -->\n{stylesheet_links}\n<!-- /site:styles -->", output)
         explorer_assets = {
             "at-the-wall/index.html": ("style.css", "model.js", "app.js"),
@@ -116,7 +154,7 @@ def main():
     if args.check and pending:
         raise SystemExit(1)
     if not pending:
-        print("Shared navigation and styles are up to date.")
+        print("Shared favicon, navigation and styles are up to date.")
 
 
 if __name__ == "__main__":

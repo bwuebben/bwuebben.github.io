@@ -182,6 +182,7 @@ def render(p, template, css_version, context):
         structured['identifier'] = p['citation_doi']
     page = template.substitute(
         title=esc(p['title']), author_names=esc(author_names), canonical=canonical,
+        favicon=(ROOT / 'templates/favicon.html').read_text().strip(),
         description=esc(f'{p["title"]}. Research by {author_names}. Full abstract, manuscript, and citation.'),
         citation_meta=citation_meta, structured_data=json.dumps(structured, ensure_ascii=False).replace('</', '<\\/'),
         paper_css_version=css_version, catalogue_anchor=esc(p['catalogue_anchor']), label=esc(p['label']),
