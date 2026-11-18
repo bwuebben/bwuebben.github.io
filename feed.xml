@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>A trace inequality for the minimizing flow on Kronecker complexes</title>
+      <link>https://bwuebben.github.io/papers/phase-flow-convergence-kronecker/</link>
+      <guid>https://bwuebben.github.io/papers/phase-flow-convergence-kronecker/#update-2026-11-19</guid>
+      <description>For the second divided differences of the exponential that enter the minimizing flow on a two-term Kronecker complex, an elementary kernel decomposition bounds the trace of the negative part of the resulting Schur product by one third of its trace. For ordered charges this gives strict decrease of the potential whenever the total phase is at least π/3.</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>A phase bound for the Kempf–Ness potential on quiver complexes</title>
       <link>https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/</link>
       <guid>https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/#update-2026-11-19</guid>

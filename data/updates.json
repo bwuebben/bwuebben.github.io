@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-19",
+    "title": "A trace inequality for the minimizing flow on Kronecker complexes",
+    "url": "/papers/phase-flow-convergence-kronecker/",
+    "description": "For the second divided differences of the exponential that enter the minimizing flow on a two-term Kronecker complex, an elementary kernel decomposition bounds the trace of the negative part of the resulting Schur product by one third of its trace. For ordered charges this gives strict decrease of the potential whenever the total phase is at least π/3."
+  },
+  {
+    "date": "2026-11-19",
     "title": "A phase bound for the Kempf–Ness potential on quiver complexes",
     "url": "/papers/kempf-ness-function-quiver-complexes/",
     "description": "For a two-term quiver complex with a surjective differential at a single loopless vertex, the Kempf–Ness potential is nonincreasing when the vertex phase is at least the total phase and the total phase is at least π/3. A trace inequality for the heat kernel gives this bound. Even with polystable cohomology, the potential can be strictly concave along a geodesic in the space of Hermitian metrics."
