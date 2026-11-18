@@ -1,0 +1,95 @@
+.mathematics-ranking .edition {
+  max-width: 72rem;
+  padding-top: clamp(1.8rem, 4vw, 3.5rem);
+}
+
+.ranking-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+  font: .86rem/1.5 var(--sans);
+  color: var(--ink-soft);
+}
+
+.ranking-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: end;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding: clamp(2rem, 5vw, 4.5rem) 0 clamp(1.8rem, 4vw, 3rem);
+}
+
+.ranking-intro h1 {
+  max-width: 13ch;
+  margin: 0;
+  font-size: clamp(2.7rem, 5.8vw, 4.9rem);
+}
+
+.ranking-intro p {
+  max-width: 38ch;
+  margin: 0 0 .2rem;
+  color: var(--ink-soft);
+  font-size: 1.16rem;
+  line-height: 1.55;
+}
+
+.ranked-papers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--ink);
+}
+
+.ranked-papers li {
+  display: grid;
+  grid-template-columns: 2.8rem minmax(0, 1fr) minmax(0, 1.15fr);
+  align-items: baseline;
+  column-gap: clamp(1.3rem, 3vw, 2.6rem);
+  padding: clamp(1.4rem, 2.7vw, 2.2rem) 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.rank-number {
+  color: var(--accent);
+  font: italic 2.45rem/1 var(--serif);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.rank-number .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.ranked-papers h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.25vw, 1.95rem);
+  line-height: 1.17;
+  letter-spacing: -.025em;
+  text-wrap: pretty;
+}
+
+.ranked-papers h2 a { color: var(--ink); }
+.ranked-papers h2 a:is(:hover, :focus-visible) { color: var(--accent); }
+.ranked-papers li p, .ranking-history p {
+  margin: 0;
+  color: var(--ink-soft);
+  font: 1.06rem/1.57 var(--serif);
+}
+
+.ranking-history { margin: 1.25rem 0; }
+.ranking-history p { max-width: 65ch; padding: .45rem 0 1rem; }
+.ranking-return { font: .86rem/1.5 var(--sans); }
+
+@media (max-width: 710px) {
+  .ranking-intro { grid-template-columns: 1fr; gap: 1.15rem; }
+  .ranking-intro h1 { max-width: 15ch; }
+  .ranking-intro p { max-width: 54ch; font-size: 1.07rem; }
+  .ranked-papers li { grid-template-columns: 2.05rem minmax(0, 1fr); gap: .6rem .9rem; }
+  .ranked-papers li p { grid-column: 2; }
+  .rank-number { font-size: 1.9rem; }
+}

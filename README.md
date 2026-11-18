@@ -162,6 +162,10 @@ It reuses every existing
 catalogue entry, paper record, manuscript link, and paper anchor. Without
 JavaScript the full descriptions and subject anchors remain available.
 
+The catalogue introduction links to the dated [mathematics ranking](papers/mathematics-ranking/).
+Its order, explanations and comparison with the previous list live in
+`data/mathematics-ranking.json`. The editorial build takes the paper titles from the catalogue.
+
 Preview the checked-in pages without installing any dependencies:
 
 ```sh

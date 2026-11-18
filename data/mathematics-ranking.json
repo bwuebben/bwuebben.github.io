@@ -1,0 +1,49 @@
+{
+  "as_of": "2026-11-18",
+  "papers": [
+    {
+      "slug": "af-cobordism-i",
+      "significance": "A four-dimensional cobordism induces a map between the Floer groups of its ends. For connected framed cobordisms, those maps over the field of two elements can be recovered by counting holomorphic curves. The Atiyah–Floer comparison thus identifies what the two theories do to cobordisms as well as the groups they assign to three-manifolds."
+    },
+    {
+      "slug": "fan-symmetries-exceptional-collections",
+      "significance": "Every smooth projective complex toric Fano variety has a full exceptional collection permuted by its fan symmetries. At a symmetry-fixed quantum parameter, the objects realize the individual integral Gamma classes. Even when two Euler eigenvalues coincide, their objects remain distinguishable and are orthogonal in both directions."
+    },
+    {
+      "slug": "local-hym-reduction",
+      "significance": "Near a locally free polystable bundle on a compact Kähler manifold, one model controls the small eigenvalues and the metric on the moduli space. Its estimates retain the full deformation obstructions and remain uniform as stabilizers change or positive spectral scales separate. That makes the model useful across several degeneration problems."
+    },
+    {
+      "slug": "cy-conifold-relations",
+      "significance": "On the specified components of Batyrev mirror families, Morrison’s predicted codimension follows from a stronger integral comparison. The relations among exceptional curves on one side agree with those among vanishing three-spheres on the mirror. The theorem determines exactly which integral combinations vanish."
+    },
+    {
+      "slug": "phase-flow-acyclic-quivers",
+      "significance": "The decay rate of a vector’s length under the minimizing flow determines its step in the Harder–Narasimhan filtration. This holds for every nonzero representation of a finite acyclic quiver, every initial metric and all vertex charges in the upper half-plane. The limiting mass is the sum of the masses of the filtration factors."
+    },
+    {
+      "slug": "l2-hodge-llv",
+      "significance": "For a family of sheaf moduli spaces on Picard-rank-one K3 surfaces, the hyperkähler operators preserve square-integrable harmonic forms across positive-dimensional singular strata. This recovers the full Looijenga–Lunts–Verbitsky algebra on intersection cohomology in a family with no symplectic resolution. The complete representation in dimension eighteen requires a further hypothesis."
+    },
+    {
+      "slug": "cy-mixed-smoothing",
+      "significance": "When can nodes and cones over del Pezzo surfaces be smoothed together? For cones over smooth surfaces of degrees five to seven or over a smooth quadric, a necessary-and-sufficient criterion uses a global relation on a crepant resolution. A nonsmoothable example shows why nonvanishing at each singular point alone is insufficient."
+    },
+    {
+      "slug": "l2-metric-uhlenbeck-boundary",
+      "significance": "As curvature concentrates at points, a local Kähler potential for the moduli metric extends continuously to the resulting ideal connection. For a generically polarized K3 surface and a primitive Mukai vector of rank at least two and positive square, this identifies the metric completion of the nonempty stable bundle locus with the Uhlenbeck compactification."
+    },
+    {
+      "slug": "cy-conifold-hodge-spectrum",
+      "significance": "Along a fixed ray smoothing every node to first order, and with a simply connected projective small resolution, divisor and period data determine how many positive two-form eigenvalues of the Ricci-flat metric approach zero. They also give the leading coefficients of their decay. Global topology thus determines a quantitative spectral law."
+    },
+    {
+      "slug": "canonical-metrics-singular-k3-moduli",
+      "significance": "On the specified K3 moduli spaces with twice-primitive Mukai vector, the harmonic metric from gauge theory agrees with the canonical singular Ricci-flat metric. The theorem identifies its tangent cones and gives a quadratic approximation to them. This comparison also supplies a geometric input to the L² Hodge theorem at rank 6."
+    }
+  ],
+  "comparison": {
+    "since": "2026-11-12",
+    "note": "Atiyah–Floer I remains first. The toric Fano paper enters at 2 and the acyclic-quiver flow paper at 5. Two other additions since the previous ranking are the LLV algebra paper at 6 and the Uhlenbeck boundary paper at 8. The six returning papers retain their relative order. The closest calls are at positions 8–10."
+  }
+}

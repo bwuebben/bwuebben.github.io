@@ -229,9 +229,9 @@ def sitemap(source, papers):
         loc = entry.find(f'{{{SITEMAP}}}loc')
         if loc is not None and loc.text.startswith(BASE + '/papers/') and loc.text != BASE + '/papers/':
             tree.remove(entry)
-    for p in papers:
+    for slug in ['mathematics-ranking', *(p['slug'] for p in papers)]:
         entry = ET.SubElement(tree, f'{{{SITEMAP}}}url')
-        ET.SubElement(entry, f'{{{SITEMAP}}}loc').text = f'{BASE}/papers/{p["slug"]}/'
+        ET.SubElement(entry, f'{{{SITEMAP}}}loc').text = f'{BASE}/papers/{slug}/'
     ET.indent(tree, space='  ')
     return '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(tree, encoding='unicode') + '\n'
 

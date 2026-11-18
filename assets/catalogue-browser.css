@@ -5,6 +5,7 @@
 .paper-browser .catalogue-kicker { font:500 .66rem/1.6 var(--sans); letter-spacing:.17em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 .75rem; }
 .paper-browser .catalogue-intro h1 { font:400 4.75rem/1 var(--serif); letter-spacing:-.045em; margin:0; }
 .paper-browser .catalogue-intro>p { font:1.12rem/1.65 var(--serif); color:var(--ink-soft); margin:0; }
+.paper-browser .catalogue-ranking-link { font:.9rem/1.65 var(--sans); text-decoration:underline; text-decoration-color:var(--rule); text-underline-offset:.23em; }
 .paper-browser .catalogue-layout { display:grid; grid-template-columns:15rem minmax(0,1fr); gap:3.5rem; align-items:start; }
 .paper-browser .catalogue-sidebar { position:sticky; top:2rem; }
 .paper-browser .catalogue-mobile-field { display:none; }

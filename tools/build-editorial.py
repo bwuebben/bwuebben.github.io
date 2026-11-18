@@ -393,6 +393,39 @@ def build_home():
     page("index.html", "Bernd Johannes Wuebben", "Research papers and essays by Bernd Wuebben in finance, mathematics, theoretical physics, AI, and international relations.", body, extra=extra, cls="front-page")
 
 
+def build_mathematics_ranking():
+    ranking = json.loads((ROOT / "data/mathematics-ranking.json").read_text())
+    slugs = [entry["slug"] for entry in ranking["papers"]]
+    if len(slugs) != 10 or len(set(slugs)) != 10:
+        raise ValueError("The mathematics ranking requires ten distinct papers")
+    rows = []
+    for position, entry in enumerate(ranking["papers"], start=1):
+        paper = by_slug[entry["slug"]]
+        rows.append(f'''<li>
+  <span class="rank-number"><span class="visually-hidden">Rank </span>{position}</span>
+  <h2><a href="/papers/{E(paper["slug"])}/">{E(paper["title"])}</a></h2>
+  <p>{E(entry["significance"])}</p>
+</li>''')
+    date = datetime.fromisoformat(ranking["as_of"]).date()
+    previous = datetime.fromisoformat(ranking["comparison"]["since"]).date()
+    title = "Ten mathematics papers, ranked"
+    body = f'''<header class="ranking-heading">
+  <div class="ranking-meta"><a href="/papers/"><span aria-hidden="true">← </span>All papers</a><time datetime="{date}">{date:%-d %B %Y}</time></div>
+  <div class="ranking-intro"><h1>Ten mathematics papers, <em>ranked</em></h1>
+  <p>The order reflects a judgment about mathematical importance. It weighs the question each theorem settles, how broadly it applies, and what others can now prove or compute.</p></div>
+</header>
+<ol class="ranked-papers" role="list" aria-label="Mathematics papers in rank order">
+{chr(10).join(rows)}
+</ol>
+<details class="ranking-history"><summary>Changes since {previous:%-d %B %Y}</summary>
+<p>{E(ranking["comparison"]["note"])}</p></details>
+<p class="ranking-return"><a href="/papers/">Browse all papers <span aria-hidden="true">→</span></a></p>'''
+    css = "assets/mathematics-ranking.css"
+    version = __import__("hashlib").sha256((ROOT / css).read_bytes()).hexdigest()[:12]
+    page("papers/mathematics-ranking/index.html", title,
+         "Ten mathematics papers by Bernd Wuebben, ranked by the scope and consequences of their main theorems.",
+         body, extra=f'<link rel="stylesheet" href="/{css}?v={version}">', cls="mathematics-ranking")
+
 def build_explorers():
     body='''<header class="page-intro"><p class="kicker">Visual companions to the papers</p><h1>Constructions,<br>made explicit.</h1><p class="intro">A picture can show a relation before anyone understands its proof, and a numerical example can expose a distinction a formula hides. Each companion makes one construction from the research explicit, with the assumptions and limits of its model stated beside it.</p><p class="small"><a href="/papers/">Research papers ↗</a> · <a href="/research/">Guides to the research ↗</a></p></header><div class="visual-grid">'''
     body+=''.join(map(explorer_card,explorers))+'</div>'
@@ -571,6 +604,7 @@ def build_writing_updates():
 def main():
     artworks()
     build_home()
+    build_mathematics_ranking()
     build_explorers()
     build_research()
     build_subguides()
