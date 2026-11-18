@@ -15,9 +15,10 @@
   "revision_date": "2026-10-29",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.23774632",
-    "url": "https://zenodo.org/records/23774632",
-    "deposited_at": "2026-10-29T18:45:49.350605+00:00"
+    "doi": "10.5281/zenodo.23643198",
+    "url": "https://doi.org/10.5281/zenodo.23643198",
+    "deposited_at": "2026-10-29T18:45:49.350605+00:00",
+    "version_doi": "10.5281/zenodo.23774632"
   },
   "resources": [
     {
@@ -55,5 +56,5 @@
       "url": "https://zenodo.org/records/23643199"
     }
   ],
-  "citation_doi": "10.5281/zenodo.23774632"
+  "citation_doi": "10.5281/zenodo.23643198"
 }

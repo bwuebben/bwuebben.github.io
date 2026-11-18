@@ -22,7 +22,8 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://bwuebben.github.io'
 SHARED = re.compile(r'<!-- site:(navigation|styles) -->.*?<!-- /site:\1 -->', re.S)
-ENTRY = re.compile(r'(<li(?:\s+id="([^"]+)")?>)(\s*<span class="entry-title"><a href=")([^\"]+)(">(.*?)</a></span>)', re.S)
+ENTRY = re.compile(r'(<li(?:\s+id="([^"]+)")?>)(\s*<span class="entry-title"><a href=")([^\"]+)(">(.*?)</a></span>)(.*?</li>)', re.S)
+ZENODO_LINK = re.compile(r'<a href="https://(?:zenodo\.org/records/\d+|(?:doi\.org/|zenodo\.org/doi/)10\.5281/zenodo\.\d+)">Zenodo:\d+</a>')
 SITEMAP = 'http://www.sitemaps.org/schemas/sitemap/0.9'
 
 
@@ -77,6 +78,15 @@ def validate(papers):
                 raise ValueError(f'{p["slug"]}: revision predates publication')
         if p.get('citation_doi') and p['citation_doi'] != (p.get('archive') or {}).get('doi'):
             raise ValueError(f'{p["slug"]}: unexpected citation DOI')
+        archive = p.get('archive') or {}
+        if archive.get('name') == 'Zenodo':
+            concept = archive.get('doi', '')
+            edition = archive.get('version_doi', '')
+            if not all(re.fullmatch(r'10\.5281/zenodo\.\d+', value) for value in (concept, edition)) or concept == edition:
+                raise ValueError(f'{p["slug"]}: provide distinct Zenodo concept and edition DOIs')
+            resolver = 'https://zenodo.org/doi/' if p.get('citation_doi_pending') else 'https://doi.org/'
+            if p.get('citation_doi') != concept or archive.get('url') != resolver + concept:
+                raise ValueError(f'{p["slug"]}: Zenodo citations and reading links must use the concept DOI')
         if p.get('citation_doi_pending') and (not p.get('citation_doi') or (p.get('archive') or {}).get('name') not in ('arXiv', 'Zenodo')):
             raise ValueError(f'{p["slug"]}: pending DOI requires an arXiv or Zenodo citation')
         if not p.get('pdf') and not p.get('pdf_pending_reason'):
@@ -156,7 +166,7 @@ def render(p, template, css_version, context):
         read_link = archive_link
     resources = list(p['resources'])
     if archive:
-        identifier = archive['doi'].split('/')[-1].split('.', 1)[1] if archive['name'] in ('SSRN', 'arXiv') else archive['url'].rstrip('/').split('/')[-1]
+        identifier = archive['doi'].split('/')[-1].split('.', 1)[1] if archive['name'] in ('SSRN', 'arXiv', 'Zenodo') else archive['url'].rstrip('/').split('/')[-1]
         resources.append({'label': archive['name'] + ':' + identifier, 'url': archive['url']})
     links = '\n'.join(f'        <li><a href="{esc(r["url"])}">{esc(r["label"])}</a></li>' for r in resources)
     year = (p.get('revision_date') or date)[:4]
@@ -164,7 +174,7 @@ def render(p, template, css_version, context):
     citation_label = 'doi:' + p['citation_doi'] if p.get('citation_doi') else 'Current manuscript'
     if p.get('citation_doi_pending'):
         citation_url = archive['url']
-        citation_label = archive['name'] + ':' + archive['url'].rstrip('/').split('/')[-1]
+        citation_label = archive['name'] + ':' + identifier
     citation_link = f'<a href="{esc(citation_url)}">{esc(citation_label)}</a>'
     if p.get('citation_doi_pending'):
         citation_link += f' · doi:{esc(p["citation_doi"])} (registration pending)'
@@ -214,7 +224,15 @@ def catalogue(source, papers):
         if m[2] and m[2] != p['catalogue_anchor']:
             raise ValueError(f'{p["slug"]}: existing catalogue anchor changed')
         seen.append(p['slug'])
-        return f'<li id="{esc(p["catalogue_anchor"])}">' + m[3] + p['slug'] + '/' + m[5]
+        detail = m[7]
+        archive = p.get('archive') or {}
+        if archive.get('name') == 'Zenodo':
+            number = archive['doi'].rsplit('.', 1)[1]
+            link = f'<a href="{esc(archive["url"])}">Zenodo:{number}</a>'
+            detail, count = ZENODO_LINK.subn(link, detail)
+            if count != 1:
+                raise ValueError(f'{p["slug"]}: expected one Zenodo catalogue link')
+        return f'<li id="{esc(p["catalogue_anchor"])}">' + m[3] + p['slug'] + '/' + m[5] + detail
     result = ENTRY.sub(entry, source)
     if len(seen) != len(papers) or len(set(seen)) != len(seen):
         raise ValueError('Catalogue and paper manifest do not match one to one')

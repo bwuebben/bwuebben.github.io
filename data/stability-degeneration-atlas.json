@@ -15,7 +15,7 @@
       "sha256": "5e9b2f3b806b6f72184cfaabb447f52c60dfc051dcef70baaa1b9241511bd3b4",
       "slug": "uniform-hermitian-einstein-spectra",
       "page": "/papers/uniform-hermitian-einstein-spectra/",
-      "doi": "10.5281/zenodo.23717660",
+      "doi": "10.5281/zenodo.23717122",
       "publicationDate": "2026-10-27",
       "revisionDate": "2026-10-27",
       "explanation": {
@@ -41,7 +41,7 @@
       "sha256": "957f9e3efced4948a7fba0f00086e0bc581fe548529daacdac3b78a04079826e",
       "slug": "nonsimplicial-toric-stability-chambers",
       "page": "/papers/nonsimplicial-toric-stability-chambers/",
-      "doi": "10.5281/zenodo.23774770",
+      "doi": "10.5281/zenodo.23717177",
       "publicationDate": "2026-10-27",
       "revisionDate": "2026-10-29",
       "explanation": {
@@ -67,7 +67,7 @@
       "sha256": "37187c86fb61ef0af2c7055b39440df8a6cdb16263c18c9ee06c59934468d010",
       "slug": "metric-response-hym-flow",
       "page": "/papers/metric-response-hym-flow/",
-      "doi": "10.5281/zenodo.23717742",
+      "doi": "10.5281/zenodo.23717289",
       "publicationDate": "2026-10-27",
       "revisionDate": "2026-10-27",
       "explanation": {
@@ -93,7 +93,7 @@
       "sha256": "a54528e6aaad77be9ee7bcca8e09b55d9f0bcf444d53ffb52028851d4573a43d",
       "slug": "repeated-factor-he-spectra",
       "page": "/papers/repeated-factor-he-spectra/",
-      "doi": "10.5281/zenodo.23780241",
+      "doi": "10.5281/zenodo.23780240",
       "publicationDate": "2026-10-29",
       "revisionDate": null,
       "explanation": {
@@ -119,7 +119,7 @@
       "sha256": "a5dc0b5f6f626f5d6b80aa4695b67db3307f8142cff036e1fbc19a8ef1807d8f",
       "slug": "three-step-he-metrics",
       "page": "/papers/three-step-he-metrics/",
-      "doi": "10.5281/zenodo.23850990",
+      "doi": "10.5281/zenodo.23850989",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-10-31",
       "explanation": {
@@ -145,7 +145,7 @@
       "sha256": "4285aa1ba043afe94aca43e636f5877ae0201b4cf230d899afb58b6f52a31ee1",
       "slug": "wall-moduli-metrics",
       "page": "/papers/wall-moduli-metrics/",
-      "doi": "10.5281/zenodo.23850992",
+      "doi": "10.5281/zenodo.23850991",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-10-31",
       "explanation": {
@@ -171,7 +171,7 @@
       "sha256": "192e67f9ed40d06f427cc5f939339946db519ddc648d503ec4470404de917ec8",
       "slug": "repeated-factor-moduli",
       "page": "/papers/repeated-factor-moduli/",
-      "doi": "10.5281/zenodo.23850994",
+      "doi": "10.5281/zenodo.23850993",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-10-31",
       "explanation": {
@@ -197,7 +197,7 @@
       "sha256": "c9f27d5667b6f19562826ef09277ca3e0cb8d3ce4fff31ac398eccc79c29dc60",
       "slug": "hym-initial-condition-phase",
       "page": "/papers/hym-initial-condition-phase/",
-      "doi": "10.5281/zenodo.23850996",
+      "doi": "10.5281/zenodo.23850995",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-10-31",
       "explanation": {
@@ -223,7 +223,7 @@
       "sha256": "7528024e3d41350758c5c27953ad622047bcda8c061756a048370903588580bc",
       "slug": "hym-wall-unstable-flow",
       "page": "/papers/hym-wall-unstable-flow/",
-      "doi": "10.5281/zenodo.23850998",
+      "doi": "10.5281/zenodo.23850997",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-10-31",
       "explanation": {
@@ -249,7 +249,7 @@
       "sha256": "ce1c491016aee7e64a9d0527682789d4bb90511ad000d5a5bd6dcde98c3de686",
       "slug": "singular-hym-metric-growth",
       "page": "/papers/singular-hym-metric-growth/",
-      "doi": "10.5281/zenodo.23893608",
+      "doi": "10.5281/zenodo.23850999",
       "publicationDate": "2026-10-31",
       "revisionDate": "2026-11-02",
       "explanation": {
@@ -275,7 +275,7 @@
       "sha256": "a885d347639bfe33581e53cd3a3aa8a923b964fec79d8d0d0e1c8a599e1a3615",
       "slug": "mass-increase-acyclic-cancellation",
       "page": "/papers/mass-increase-acyclic-cancellation/",
-      "doi": "10.5281/zenodo.23921919",
+      "doi": "10.5281/zenodo.23898279",
       "publicationDate": "2026-11-02",
       "revisionDate": "2026-11-03",
       "explanation": {
@@ -301,7 +301,7 @@
       "sha256": "fe53affee906d37a5d1388cbfdb2adb4cc8542caa71e708518d7732465335fa9",
       "slug": "harmonic-paths-and-honeycombs",
       "page": "/papers/harmonic-paths-and-honeycombs/",
-      "doi": "10.5281/zenodo.23947189",
+      "doi": "10.5281/zenodo.23947188",
       "publicationDate": "2026-11-04",
       "revisionDate": null,
       "explanation": {
@@ -327,7 +327,7 @@
       "sha256": "41324dcb2bbea577163eb8ac49403d69cf5cffb44872556b9f18d6da8c3944a9",
       "slug": "k3-metric-wall-crossing",
       "page": "/papers/k3-metric-wall-crossing/",
-      "doi": "10.5281/zenodo.24021822",
+      "doi": "10.5281/zenodo.24021821",
       "publicationDate": "2026-11-06",
       "revisionDate": null,
       "explanation": {
@@ -353,7 +353,7 @@
       "sha256": "70bca12dae324e04a62fe5c606037e01e684e96e84cc0c61671290c9465e580a",
       "slug": "quiver-metric-wall-crossing",
       "page": "/papers/quiver-metric-wall-crossing/",
-      "doi": "10.5281/zenodo.24024998",
+      "doi": "10.5281/zenodo.24024997",
       "publicationDate": "2026-11-06",
       "revisionDate": null,
       "explanation": {
@@ -379,7 +379,7 @@
       "sha256": "02cb19f3e8e2c1637476bc1a49dc803972cb7924c081288b10cb680a293bc9cc",
       "slug": "local-hym-reduction",
       "page": "/papers/local-hym-reduction/",
-      "doi": "10.5281/zenodo.24029090",
+      "doi": "10.5281/zenodo.24029089",
       "publicationDate": "2026-11-07",
       "revisionDate": null,
       "explanation": {
@@ -405,7 +405,7 @@
       "sha256": "274975c113249ebd625899b7955c4b7b8ea05e18fe6dfaf2e89b0cd424f66c70",
       "slug": "uniform-hym-phase",
       "page": "/papers/uniform-hym-phase/",
-      "doi": "10.5281/zenodo.24038504",
+      "doi": "10.5281/zenodo.24038503",
       "publicationDate": "2026-11-07",
       "revisionDate": null,
       "explanation": {
@@ -431,7 +431,7 @@
       "sha256": "84aa3b22d5d4425538df7ab278ffad54815396476d931d2babf6814790ef9a6f",
       "slug": "exceptional-cycles",
       "page": "/papers/exceptional-cycles/",
-      "doi": "10.5281/zenodo.24047888",
+      "doi": "10.5281/zenodo.24046091",
       "publicationDate": "2026-11-07",
       "revisionDate": "2026-11-07",
       "explanation": {
@@ -457,7 +457,7 @@
       "sha256": "8cc8f3b7f6412fca2923fad849a52681949760a7640b93b269f805bcf016868c",
       "slug": "integral-reconstruction",
       "page": "/papers/integral-reconstruction/",
-      "doi": "10.5281/zenodo.24047889",
+      "doi": "10.5281/zenodo.24046141",
       "publicationDate": "2026-11-07",
       "revisionDate": "2026-11-07",
       "explanation": {
@@ -483,7 +483,7 @@
       "sha256": "8110ca502ad64f0eee04e9125461eb2a0ae62fc67bfa7b1d50956a0783436ba1",
       "slug": "integral-attachments",
       "page": "/papers/integral-attachments/",
-      "doi": "10.5281/zenodo.24054004",
+      "doi": "10.5281/zenodo.24054003",
       "publicationDate": "2026-11-08",
       "revisionDate": "2026-11-08",
       "explanation": {
@@ -509,7 +509,7 @@
       "sha256": "8413297cf26ba8ae69cdc1dd04589c3b7f9e5e908670a15ba47aa1a36628958c",
       "slug": "canonical-metrics-singular-k3-moduli",
       "page": "/papers/canonical-metrics-singular-k3-moduli/",
-      "doi": "10.5281/zenodo.24060228",
+      "doi": "10.5281/zenodo.24060227",
       "publicationDate": "2026-11-08",
       "revisionDate": "2026-11-08",
       "explanation": {
@@ -535,7 +535,7 @@
       "sha256": "00d09895425f0408b3aa679af12958a47b9eb05a3ed52228a040ff6fcc28913d",
       "slug": "heterotic-k3-enhancement",
       "page": "/papers/heterotic-k3-enhancement/",
-      "doi": "10.5281/zenodo.24072269",
+      "doi": "10.5281/zenodo.24063937",
       "publicationDate": "2026-11-08",
       "revisionDate": "2026-11-08",
       "explanation": {
@@ -561,7 +561,7 @@
       "sha256": "ee97656ffb7f2c3748a5e78029256484019ac2cf2751c2050cd2330bc8e5ed00",
       "slug": "cy-conifold-hodge-spectrum",
       "page": "/papers/cy-conifold-hodge-spectrum/",
-      "doi": "10.5281/zenodo.24096887",
+      "doi": "10.5281/zenodo.24094891",
       "publicationDate": "2026-11-09",
       "revisionDate": "2026-11-09",
       "explanation": {
@@ -587,7 +587,7 @@
       "sha256": "23313f9655829dfe3108fe36f4eb7ce7cdcc339c3457a1f4948d62cd8627afb0",
       "slug": "curve-intersection-spectrum",
       "page": "/papers/curve-intersection-spectrum/",
-      "doi": "10.5281/zenodo.24120959",
+      "doi": "10.5281/zenodo.24120958",
       "publicationDate": "2026-11-10",
       "revisionDate": "2026-11-10",
       "explanation": {
@@ -613,7 +613,7 @@
       "sha256": "2d59643aa6a03d026d1f0b29678372fd249acdb0aad729fb9c162e6ae5848c80",
       "slug": "nodal-threefold-spectrum",
       "page": "/papers/nodal-threefold-spectrum/",
-      "doi": "10.5281/zenodo.24120961",
+      "doi": "10.5281/zenodo.24120960",
       "publicationDate": "2026-11-10",
       "revisionDate": "2026-11-10",
       "explanation": {
@@ -639,7 +639,7 @@
       "sha256": "dec34cd32e400b9a53e8d81e1c10504fe27ba54d22d670751d7a542b4c3b6e9d",
       "slug": "effective-hym-nodal-curves",
       "page": "/papers/effective-hym-nodal-curves/",
-      "doi": "10.5281/zenodo.24120966",
+      "doi": "10.5281/zenodo.24120965",
       "publicationDate": "2026-11-10",
       "revisionDate": "2026-11-10",
       "explanation": {
@@ -665,7 +665,7 @@
       "sha256": "2937a59b1f99b5254824e1bbf57d9b3045c752b54a531c85c49d85fbc544623d",
       "slug": "global-gluing-hym-curves",
       "page": "/papers/global-gluing-hym-curves/",
-      "doi": "10.5281/zenodo.24149197",
+      "doi": "10.5281/zenodo.24149196",
       "publicationDate": "2026-11-11",
       "revisionDate": "2026-11-11",
       "explanation": {
@@ -691,7 +691,7 @@
       "sha256": "64e63f53c9324d364f6f9e61ab892464dc4835be63c782bd08212da4853e9342",
       "slug": "type-k-hym-dynamics",
       "page": "/papers/type-k-hym-dynamics/",
-      "doi": "10.5281/zenodo.24149210",
+      "doi": "10.5281/zenodo.24149209",
       "publicationDate": "2026-11-11",
       "revisionDate": "2026-11-11",
       "explanation": {
@@ -717,7 +717,7 @@
       "sha256": "fd96113b876d2e7d105b46ee2b48d7ec3a747949ffd69135d3decd972e1043c6",
       "slug": "all-time-hym-curves",
       "page": "/papers/all-time-hym-curves/",
-      "doi": "10.5281/zenodo.24149212",
+      "doi": "10.5281/zenodo.24149211",
       "publicationDate": "2026-11-11",
       "revisionDate": "2026-11-11",
       "explanation": {
@@ -750,7 +750,7 @@
       "page": "/papers/relative-hodge-conifold-smoothings/",
       "pdf": "/papers/relative-hodge-conifold-smoothings/paper.pdf",
       "sha256": "fb82519246a0269565ced27c93cfe03bac455f40bf3a73e4ea22aa0f95325406",
-      "doi": "10.5281/zenodo.24175848",
+      "doi": "10.5281/zenodo.24175847",
       "publicationDate": "2026-11-12",
       "revisionDate": "2026-11-12",
       "rank": 4
@@ -776,7 +776,7 @@
       "page": "/papers/conifold-hym-dynamics/",
       "pdf": "/papers/conifold-hym-dynamics/paper.pdf",
       "sha256": "37241120331c82ab66b046a893c240bb812708fe7152ae1bf77371bbe9e9d68b",
-      "doi": "10.5281/zenodo.24175924",
+      "doi": "10.5281/zenodo.24175923",
       "publicationDate": "2026-11-12",
       "revisionDate": "2026-11-12",
       "rank": 5
@@ -802,7 +802,7 @@
       "page": "/papers/conifold-integral-reconstruction/",
       "pdf": "/papers/conifold-integral-reconstruction/paper.pdf",
       "sha256": "8f2fcadd280211f75d7f41a3680ff19b5abbf2c616be3f5f9908f5a60c0bbe60",
-      "doi": "10.5281/zenodo.24185494",
+      "doi": "10.5281/zenodo.24175967",
       "publicationDate": "2026-11-12",
       "revisionDate": "2026-11-13",
       "rank": 3
@@ -828,7 +828,7 @@
       "page": "/papers/point-defects-hym-flow/",
       "pdf": "/papers/point-defects-hym-flow/paper.pdf",
       "sha256": "d4b742421d750f25165118eaffc0b80ce0aa1a1be7b0e1147290de48a1183c6e",
-      "doi": "10.5281/zenodo.24175884",
+      "doi": "10.5281/zenodo.24175883",
       "publicationDate": "2026-11-12",
       "revisionDate": "2026-11-12",
       "rank": 6
@@ -855,7 +855,7 @@
       "page": "/papers/l2-metric-uhlenbeck-boundary/",
       "pdf": "/papers/l2-metric-uhlenbeck-boundary/paper.pdf",
       "sha256": "c0ba2d12a20196721531c34dfa6a8ace268edb919444527914e32133804a8870",
-      "doi": "10.5281/zenodo.24211932",
+      "doi": "10.5281/zenodo.24211931",
       "publicationDate": "2026-11-13",
       "revisionDate": "2026-11-13"
     },
@@ -881,7 +881,7 @@
       "page": "/papers/l2-hodge-llv/",
       "pdf": "/papers/l2-hodge-llv/paper.pdf",
       "sha256": "3d59af24d312461c83f0d7b87826aa1d482ddb8e8443b7498a6f8d62235cfbbb",
-      "doi": "10.5281/zenodo.24230354",
+      "doi": "10.5281/zenodo.24227116",
       "publicationDate": "2026-11-14",
       "revisionDate": "2026-11-14"
     }

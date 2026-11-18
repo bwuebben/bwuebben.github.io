@@ -15,10 +15,11 @@
   "revision_date": "2026-10-11",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.23643211",
-    "url": "https://zenodo.org/records/23643211"
+    "doi": "10.5281/zenodo.23643210",
+    "url": "https://doi.org/10.5281/zenodo.23643210",
+    "version_doi": "10.5281/zenodo.23643211"
   },
-  "citation_doi": "10.5281/zenodo.23643211",
+  "citation_doi": "10.5281/zenodo.23643210",
   "resources": [
     {
       "label": "current version (PDF)",

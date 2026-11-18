@@ -225,10 +225,11 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643150",
-        "url": "https://zenodo.org/records/23643150"
+        "doi": "10.5281/zenodo.23643149",
+        "url": "https://doi.org/10.5281/zenodo.23643149",
+        "version_doi": "10.5281/zenodo.23643150"
       },
-      "citation_doi": "10.5281/zenodo.23643150",
+      "citation_doi": "10.5281/zenodo.23643149",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -271,10 +272,11 @@
       "revision_date": "2026-10-06",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643177",
-        "url": "https://zenodo.org/records/23643177"
+        "doi": "10.5281/zenodo.23643176",
+        "url": "https://doi.org/10.5281/zenodo.23643176",
+        "version_doi": "10.5281/zenodo.23643177"
       },
-      "citation_doi": "10.5281/zenodo.23643177",
+      "citation_doi": "10.5281/zenodo.23643176",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -317,10 +319,11 @@
       "revision_date": "2026-10-06",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643181",
-        "url": "https://zenodo.org/records/23643181"
+        "doi": "10.5281/zenodo.23643180",
+        "url": "https://doi.org/10.5281/zenodo.23643180",
+        "version_doi": "10.5281/zenodo.23643181"
       },
-      "citation_doi": "10.5281/zenodo.23643181",
+      "citation_doi": "10.5281/zenodo.23643180",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -363,10 +366,11 @@
       "revision_date": "2026-09-23",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643185",
-        "url": "https://zenodo.org/records/23643185"
+        "doi": "10.5281/zenodo.23643184",
+        "url": "https://doi.org/10.5281/zenodo.23643184",
+        "version_doi": "10.5281/zenodo.23643185"
       },
-      "citation_doi": "10.5281/zenodo.23643185",
+      "citation_doi": "10.5281/zenodo.23643184",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -478,10 +482,11 @@
       "revision_date": "2026-11-09",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24097426",
-        "url": "https://zenodo.org/records/24097426"
+        "doi": "10.5281/zenodo.23643188",
+        "url": "https://doi.org/10.5281/zenodo.23643188",
+        "version_doi": "10.5281/zenodo.24097426"
       },
-      "citation_doi": "10.5281/zenodo.24097426",
+      "citation_doi": "10.5281/zenodo.23643188",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -545,10 +550,11 @@
       "revision_date": "2026-11-09",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24097427",
-        "url": "https://zenodo.org/records/24097427"
+        "doi": "10.5281/zenodo.23789289",
+        "url": "https://doi.org/10.5281/zenodo.23789289",
+        "version_doi": "10.5281/zenodo.24097427"
       },
-      "citation_doi": "10.5281/zenodo.24097427",
+      "citation_doi": "10.5281/zenodo.23789289",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -616,10 +622,11 @@
       "revision_date": "2026-10-07",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643193",
-        "url": "https://zenodo.org/records/23643193"
+        "doi": "10.5281/zenodo.23643192",
+        "url": "https://doi.org/10.5281/zenodo.23643192",
+        "version_doi": "10.5281/zenodo.23643193"
       },
-      "citation_doi": "10.5281/zenodo.23643193",
+      "citation_doi": "10.5281/zenodo.23643192",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -709,9 +716,10 @@
       "revision_date": "2026-10-29",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23774632",
-        "url": "https://zenodo.org/records/23774632",
-        "deposited_at": "2026-10-29T18:45:49.350605+00:00"
+        "doi": "10.5281/zenodo.23643198",
+        "url": "https://doi.org/10.5281/zenodo.23643198",
+        "deposited_at": "2026-10-29T18:45:49.350605+00:00",
+        "version_doi": "10.5281/zenodo.23774632"
       },
       "resources": [
         {
@@ -749,7 +757,7 @@
           "url": "https://zenodo.org/records/23643199"
         }
       ],
-      "citation_doi": "10.5281/zenodo.23774632"
+      "citation_doi": "10.5281/zenodo.23643198"
     },
     {
       "slug": "toric-local-stability-chambers",
@@ -768,10 +776,11 @@
       "revision_date": "2026-10-27",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23682140",
-        "url": "https://zenodo.org/records/23682140"
+        "doi": "10.5281/zenodo.23681808",
+        "url": "https://doi.org/10.5281/zenodo.23681808",
+        "version_doi": "10.5281/zenodo.23682140"
       },
-      "citation_doi": "10.5281/zenodo.23682140",
+      "citation_doi": "10.5281/zenodo.23681808",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1120,11 +1129,12 @@
       "revision_date": "2026-11-02",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23904357",
-        "url": "https://zenodo.org/records/23904357",
-        "deposited_at": "2026-11-03T03:23:21.951264+00:00"
+        "doi": "10.5281/zenodo.23643205",
+        "url": "https://doi.org/10.5281/zenodo.23643205",
+        "deposited_at": "2026-11-03T03:23:21.951264+00:00",
+        "version_doi": "10.5281/zenodo.23904357"
       },
-      "citation_doi": "10.5281/zenodo.23904357",
+      "citation_doi": "10.5281/zenodo.23643205",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1187,11 +1197,12 @@
       "revision_date": "2026-10-28",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23750304",
-        "url": "https://zenodo.org/records/23750304",
-        "deposited_at": "2026-10-29T00:52:09.640936+00:00"
+        "doi": "10.5281/zenodo.23750046",
+        "url": "https://doi.org/10.5281/zenodo.23750046",
+        "deposited_at": "2026-10-29T00:52:09.640936+00:00",
+        "version_doi": "10.5281/zenodo.23750304"
       },
-      "citation_doi": "10.5281/zenodo.23750304",
+      "citation_doi": "10.5281/zenodo.23750046",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1259,11 +1270,12 @@
       "revision_date": "2026-10-28",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23750305",
-        "url": "https://zenodo.org/records/23750305",
-        "deposited_at": "2026-10-29T00:52:11.498760+00:00"
+        "doi": "10.5281/zenodo.23750048",
+        "url": "https://doi.org/10.5281/zenodo.23750048",
+        "deposited_at": "2026-10-29T00:52:11.498760+00:00",
+        "version_doi": "10.5281/zenodo.23750305"
       },
-      "citation_doi": "10.5281/zenodo.23750305",
+      "citation_doi": "10.5281/zenodo.23750048",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1323,10 +1335,11 @@
       "revision_date": "2026-10-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643211",
-        "url": "https://zenodo.org/records/23643211"
+        "doi": "10.5281/zenodo.23643210",
+        "url": "https://doi.org/10.5281/zenodo.23643210",
+        "version_doi": "10.5281/zenodo.23643211"
       },
-      "citation_doi": "10.5281/zenodo.23643211",
+      "citation_doi": "10.5281/zenodo.23643210",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1369,10 +1382,11 @@
       "revision_date": "2026-10-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643215",
-        "url": "https://zenodo.org/records/23643215"
+        "doi": "10.5281/zenodo.23643214",
+        "url": "https://doi.org/10.5281/zenodo.23643214",
+        "version_doi": "10.5281/zenodo.23643215"
       },
-      "citation_doi": "10.5281/zenodo.23643215",
+      "citation_doi": "10.5281/zenodo.23643214",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1415,10 +1429,11 @@
       "revision_date": "2026-10-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643219",
-        "url": "https://zenodo.org/records/23643219"
+        "doi": "10.5281/zenodo.23643218",
+        "url": "https://doi.org/10.5281/zenodo.23643218",
+        "version_doi": "10.5281/zenodo.23643219"
       },
-      "citation_doi": "10.5281/zenodo.23643219",
+      "citation_doi": "10.5281/zenodo.23643218",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1461,10 +1476,11 @@
       "revision_date": "2026-09-30",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643223",
-        "url": "https://zenodo.org/records/23643223"
+        "doi": "10.5281/zenodo.23643222",
+        "url": "https://doi.org/10.5281/zenodo.23643222",
+        "version_doi": "10.5281/zenodo.23643223"
       },
-      "citation_doi": "10.5281/zenodo.23643223",
+      "citation_doi": "10.5281/zenodo.23643222",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1520,11 +1536,12 @@
       "revision_date": "2026-10-27",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23717764",
-        "url": "https://zenodo.org/records/23717764",
-        "deposited_at": "2026-10-28T01:49:38.071896+00:00"
+        "doi": "10.5281/zenodo.23682044",
+        "url": "https://doi.org/10.5281/zenodo.23682044",
+        "deposited_at": "2026-10-28T01:49:38.071896+00:00",
+        "version_doi": "10.5281/zenodo.23717764"
       },
-      "citation_doi": "10.5281/zenodo.23717764",
+      "citation_doi": "10.5281/zenodo.23682044",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1588,11 +1605,12 @@
       "revision_date": "2026-10-27",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23717660",
-        "url": "https://zenodo.org/records/23717660",
-        "deposited_at": "2026-10-28T01:41:02.103698+00:00"
+        "doi": "10.5281/zenodo.23717122",
+        "url": "https://doi.org/10.5281/zenodo.23717122",
+        "deposited_at": "2026-10-28T01:41:02.103698+00:00",
+        "version_doi": "10.5281/zenodo.23717660"
       },
-      "citation_doi": "10.5281/zenodo.23717660",
+      "citation_doi": "10.5281/zenodo.23717122",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1660,11 +1678,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23780241",
-        "url": "https://zenodo.org/records/23780241",
-        "deposited_at": "2026-10-29T21:13:25.971737+00:00"
+        "doi": "10.5281/zenodo.23780240",
+        "url": "https://doi.org/10.5281/zenodo.23780240",
+        "deposited_at": "2026-10-29T21:13:25.971737+00:00",
+        "version_doi": "10.5281/zenodo.23780241"
       },
-      "citation_doi": "10.5281/zenodo.23780241",
+      "citation_doi": "10.5281/zenodo.23780240",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1740,9 +1759,10 @@
       "revision_date": "2026-10-29",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23774770",
-        "url": "https://zenodo.org/records/23774770",
-        "deposited_at": "2026-10-29T18:46:11.240880+00:00"
+        "doi": "10.5281/zenodo.23717177",
+        "url": "https://doi.org/10.5281/zenodo.23717177",
+        "deposited_at": "2026-10-29T18:46:11.240880+00:00",
+        "version_doi": "10.5281/zenodo.23774770"
       },
       "resources": [
         {
@@ -1797,7 +1817,7 @@
           "deposited_at": "2026-10-28T01:43:11.309416+00:00"
         }
       ],
-      "citation_doi": "10.5281/zenodo.23774770"
+      "citation_doi": "10.5281/zenodo.23717177"
     },
     {
       "slug": "metric-response-hym-flow",
@@ -1816,11 +1836,12 @@
       "revision_date": "2026-10-27",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23717742",
-        "url": "https://zenodo.org/records/23717742",
-        "deposited_at": "2026-10-28T01:45:30.235369+00:00"
+        "doi": "10.5281/zenodo.23717289",
+        "url": "https://doi.org/10.5281/zenodo.23717289",
+        "deposited_at": "2026-10-28T01:45:30.235369+00:00",
+        "version_doi": "10.5281/zenodo.23717742"
       },
-      "citation_doi": "10.5281/zenodo.23717742",
+      "citation_doi": "10.5281/zenodo.23717289",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1892,11 +1913,12 @@
       "revision_date": "2026-10-31",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23850990",
-        "url": "https://zenodo.org/records/23850990",
-        "deposited_at": "2026-11-01T02:14:39.319938+00:00"
+        "doi": "10.5281/zenodo.23850989",
+        "url": "https://doi.org/10.5281/zenodo.23850989",
+        "deposited_at": "2026-11-01T02:14:39.319938+00:00",
+        "version_doi": "10.5281/zenodo.23850990"
       },
-      "citation_doi": "10.5281/zenodo.23850990",
+      "citation_doi": "10.5281/zenodo.23850989",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -1960,11 +1982,12 @@
       "revision_date": "2026-10-31",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23850992",
-        "url": "https://zenodo.org/records/23850992",
-        "deposited_at": "2026-11-01T02:14:43.084769+00:00"
+        "doi": "10.5281/zenodo.23850991",
+        "url": "https://doi.org/10.5281/zenodo.23850991",
+        "deposited_at": "2026-11-01T02:14:43.084769+00:00",
+        "version_doi": "10.5281/zenodo.23850992"
       },
-      "citation_doi": "10.5281/zenodo.23850992",
+      "citation_doi": "10.5281/zenodo.23850991",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2040,11 +2063,12 @@
       "revision_date": "2026-10-31",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23850994",
-        "url": "https://zenodo.org/records/23850994",
-        "deposited_at": "2026-11-01T02:14:47.682434+00:00"
+        "doi": "10.5281/zenodo.23850993",
+        "url": "https://doi.org/10.5281/zenodo.23850993",
+        "deposited_at": "2026-11-01T02:14:47.682434+00:00",
+        "version_doi": "10.5281/zenodo.23850994"
       },
-      "citation_doi": "10.5281/zenodo.23850994",
+      "citation_doi": "10.5281/zenodo.23850993",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2108,11 +2132,12 @@
       "revision_date": "2026-10-31",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23850996",
-        "url": "https://zenodo.org/records/23850996",
-        "deposited_at": "2026-11-01T02:14:51.430912+00:00"
+        "doi": "10.5281/zenodo.23850995",
+        "url": "https://doi.org/10.5281/zenodo.23850995",
+        "deposited_at": "2026-11-01T02:14:51.430912+00:00",
+        "version_doi": "10.5281/zenodo.23850996"
       },
-      "citation_doi": "10.5281/zenodo.23850996",
+      "citation_doi": "10.5281/zenodo.23850995",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2176,11 +2201,12 @@
       "revision_date": "2026-10-31",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23850998",
-        "url": "https://zenodo.org/records/23850998",
-        "deposited_at": "2026-11-01T02:14:55.095224+00:00"
+        "doi": "10.5281/zenodo.23850997",
+        "url": "https://doi.org/10.5281/zenodo.23850997",
+        "deposited_at": "2026-11-01T02:14:55.095224+00:00",
+        "version_doi": "10.5281/zenodo.23850998"
       },
-      "citation_doi": "10.5281/zenodo.23850998",
+      "citation_doi": "10.5281/zenodo.23850997",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2244,11 +2270,12 @@
       "revision_date": "2026-11-02",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23893608",
-        "url": "https://zenodo.org/records/23893608",
-        "deposited_at": "2026-11-02T18:55:32.211216+00:00"
+        "doi": "10.5281/zenodo.23850999",
+        "url": "https://doi.org/10.5281/zenodo.23850999",
+        "deposited_at": "2026-11-02T18:55:32.211216+00:00",
+        "version_doi": "10.5281/zenodo.23893608"
       },
-      "citation_doi": "10.5281/zenodo.23893608",
+      "citation_doi": "10.5281/zenodo.23850999",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2320,11 +2347,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23740619",
-        "url": "https://zenodo.org/records/23740619",
-        "deposited_at": "2026-10-28T18:11:09.687408+00:00"
+        "doi": "10.5281/zenodo.23740618",
+        "url": "https://doi.org/10.5281/zenodo.23740618",
+        "deposited_at": "2026-10-28T18:11:09.687408+00:00",
+        "version_doi": "10.5281/zenodo.23740619"
       },
-      "citation_doi": "10.5281/zenodo.23740619",
+      "citation_doi": "10.5281/zenodo.23740618",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2388,10 +2416,11 @@
       "revision_date": "2026-09-05",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643225",
-        "url": "https://zenodo.org/records/23643225"
+        "doi": "10.5281/zenodo.23643224",
+        "url": "https://doi.org/10.5281/zenodo.23643224",
+        "version_doi": "10.5281/zenodo.23643225"
       },
-      "citation_doi": "10.5281/zenodo.23643225",
+      "citation_doi": "10.5281/zenodo.23643224",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2481,10 +2510,11 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643227",
-        "url": "https://zenodo.org/records/23643227"
+        "doi": "10.5281/zenodo.23643226",
+        "url": "https://doi.org/10.5281/zenodo.23643226",
+        "version_doi": "10.5281/zenodo.23643227"
       },
-      "citation_doi": "10.5281/zenodo.23643227",
+      "citation_doi": "10.5281/zenodo.23643226",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2532,10 +2562,11 @@
       "revision_date": "2026-09-23",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643235",
-        "url": "https://zenodo.org/records/23643235"
+        "doi": "10.5281/zenodo.23643234",
+        "url": "https://doi.org/10.5281/zenodo.23643234",
+        "version_doi": "10.5281/zenodo.23643235"
       },
-      "citation_doi": "10.5281/zenodo.23643235",
+      "citation_doi": "10.5281/zenodo.23643234",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2587,10 +2618,11 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643240",
-        "url": "https://zenodo.org/records/23643240"
+        "doi": "10.5281/zenodo.23643239",
+        "url": "https://doi.org/10.5281/zenodo.23643239",
+        "version_doi": "10.5281/zenodo.23643240"
       },
-      "citation_doi": "10.5281/zenodo.23643240",
+      "citation_doi": "10.5281/zenodo.23643239",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2638,10 +2670,11 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643242",
-        "url": "https://zenodo.org/records/23643242"
+        "doi": "10.5281/zenodo.23643241",
+        "url": "https://doi.org/10.5281/zenodo.23643241",
+        "version_doi": "10.5281/zenodo.23643242"
       },
-      "citation_doi": "10.5281/zenodo.23643242",
+      "citation_doi": "10.5281/zenodo.23643241",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -2835,10 +2868,11 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23643250",
-        "url": "https://zenodo.org/records/23643250"
+        "doi": "10.5281/zenodo.23643249",
+        "url": "https://doi.org/10.5281/zenodo.23643249",
+        "version_doi": "10.5281/zenodo.23643250"
       },
-      "citation_doi": "10.5281/zenodo.23643250",
+      "citation_doi": "10.5281/zenodo.23643249",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3025,11 +3059,12 @@
       "publication_date": "2026-11-02",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23921919",
-        "url": "https://zenodo.org/records/23921919",
-        "deposited_at": "2026-11-03T15:05:41.309556+00:00"
+        "doi": "10.5281/zenodo.23898279",
+        "url": "https://doi.org/10.5281/zenodo.23898279",
+        "deposited_at": "2026-11-03T15:05:41.309556+00:00",
+        "version_doi": "10.5281/zenodo.23921919"
       },
-      "citation_doi": "10.5281/zenodo.23921919",
+      "citation_doi": "10.5281/zenodo.23898279",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3120,11 +3155,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.23947189",
-        "url": "https://zenodo.org/records/23947189",
-        "deposited_at": "2026-11-04T11:59:26.323095+00:00"
+        "doi": "10.5281/zenodo.23947188",
+        "url": "https://doi.org/10.5281/zenodo.23947188",
+        "deposited_at": "2026-11-04T11:59:26.323095+00:00",
+        "version_doi": "10.5281/zenodo.23947189"
       },
-      "citation_doi": "10.5281/zenodo.23947189",
+      "citation_doi": "10.5281/zenodo.23947188",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3180,11 +3216,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24021822",
-        "url": "https://zenodo.org/records/24021822",
-        "deposited_at": "2026-11-06T20:46:58.224847+00:00"
+        "doi": "10.5281/zenodo.24021821",
+        "url": "https://doi.org/10.5281/zenodo.24021821",
+        "deposited_at": "2026-11-06T20:46:58.224847+00:00",
+        "version_doi": "10.5281/zenodo.24021822"
       },
-      "citation_doi": "10.5281/zenodo.24021822",
+      "citation_doi": "10.5281/zenodo.24021821",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3248,11 +3285,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24024998",
-        "url": "https://zenodo.org/records/24024998",
-        "deposited_at": "2026-11-07T00:30:23.100812+00:00"
+        "doi": "10.5281/zenodo.24024997",
+        "url": "https://doi.org/10.5281/zenodo.24024997",
+        "deposited_at": "2026-11-07T00:30:23.100812+00:00",
+        "version_doi": "10.5281/zenodo.24024998"
       },
-      "citation_doi": "10.5281/zenodo.24024998",
+      "citation_doi": "10.5281/zenodo.24024997",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3332,11 +3370,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24029090",
-        "url": "https://zenodo.org/records/24029090",
-        "deposited_at": "2026-11-07T06:05:49.462282+00:00"
+        "doi": "10.5281/zenodo.24029089",
+        "url": "https://doi.org/10.5281/zenodo.24029089",
+        "deposited_at": "2026-11-07T06:05:49.462282+00:00",
+        "version_doi": "10.5281/zenodo.24029090"
       },
-      "citation_doi": "10.5281/zenodo.24029090",
+      "citation_doi": "10.5281/zenodo.24029089",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3428,11 +3467,12 @@
       "revision_date": null,
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24038504",
-        "url": "https://zenodo.org/records/24038504",
-        "deposited_at": "2026-11-07T15:06:49.700011+00:00"
+        "doi": "10.5281/zenodo.24038503",
+        "url": "https://doi.org/10.5281/zenodo.24038503",
+        "deposited_at": "2026-11-07T15:06:49.700011+00:00",
+        "version_doi": "10.5281/zenodo.24038504"
       },
-      "citation_doi": "10.5281/zenodo.24038504",
+      "citation_doi": "10.5281/zenodo.24038503",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3500,11 +3540,12 @@
       "revision_date": "2026-11-07",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24047888",
-        "url": "https://zenodo.org/records/24047888",
-        "deposited_at": "2026-11-08T04:47:04.256849+00:00"
+        "doi": "10.5281/zenodo.24046091",
+        "url": "https://doi.org/10.5281/zenodo.24046091",
+        "deposited_at": "2026-11-08T04:47:04.256849+00:00",
+        "version_doi": "10.5281/zenodo.24047888"
       },
-      "citation_doi": "10.5281/zenodo.24047888",
+      "citation_doi": "10.5281/zenodo.24046091",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3580,11 +3621,12 @@
       "revision_date": "2026-11-07",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24047889",
-        "url": "https://zenodo.org/records/24047889",
-        "deposited_at": "2026-11-08T04:47:05.682573+00:00"
+        "doi": "10.5281/zenodo.24046141",
+        "url": "https://doi.org/10.5281/zenodo.24046141",
+        "deposited_at": "2026-11-08T04:47:05.682573+00:00",
+        "version_doi": "10.5281/zenodo.24047889"
       },
-      "citation_doi": "10.5281/zenodo.24047889",
+      "citation_doi": "10.5281/zenodo.24046141",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3660,11 +3702,12 @@
       "revision_date": "2026-11-08",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24054004",
-        "url": "https://zenodo.org/records/24054004",
-        "deposited_at": "2026-11-08T13:45:36.106533+00:00"
+        "doi": "10.5281/zenodo.24054003",
+        "url": "https://doi.org/10.5281/zenodo.24054003",
+        "deposited_at": "2026-11-08T13:45:36.106533+00:00",
+        "version_doi": "10.5281/zenodo.24054004"
       },
-      "citation_doi": "10.5281/zenodo.24054004",
+      "citation_doi": "10.5281/zenodo.24054003",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3720,11 +3763,12 @@
       "revision_date": "2026-11-08",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24060228",
-        "url": "https://zenodo.org/records/24060228",
-        "deposited_at": "2026-11-08T20:22:59.496578+00:00"
+        "doi": "10.5281/zenodo.24060227",
+        "url": "https://doi.org/10.5281/zenodo.24060227",
+        "deposited_at": "2026-11-08T20:22:59.496578+00:00",
+        "version_doi": "10.5281/zenodo.24060228"
       },
-      "citation_doi": "10.5281/zenodo.24060228",
+      "citation_doi": "10.5281/zenodo.24060227",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3796,11 +3840,12 @@
       "revision_date": "2026-11-08",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24072269",
-        "url": "https://zenodo.org/records/24072269",
-        "deposited_at": "2026-11-09T05:04:08.485692+00:00"
+        "doi": "10.5281/zenodo.24063937",
+        "url": "https://doi.org/10.5281/zenodo.24063937",
+        "deposited_at": "2026-11-09T05:04:08.485692+00:00",
+        "version_doi": "10.5281/zenodo.24072269"
       },
-      "citation_doi": "10.5281/zenodo.24072269",
+      "citation_doi": "10.5281/zenodo.24063937",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3874,11 +3919,12 @@
       "revision_date": "2026-11-09",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24096887",
-        "url": "https://zenodo.org/records/24096887",
-        "deposited_at": "2026-11-10T03:45:24.779987+00:00"
+        "doi": "10.5281/zenodo.24094891",
+        "url": "https://doi.org/10.5281/zenodo.24094891",
+        "deposited_at": "2026-11-10T03:45:24.779987+00:00",
+        "version_doi": "10.5281/zenodo.24096887"
       },
-      "citation_doi": "10.5281/zenodo.24096887",
+      "citation_doi": "10.5281/zenodo.24094891",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -3978,11 +4024,12 @@
       "revision_date": "2026-11-10",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24120959",
-        "url": "https://zenodo.org/records/24120959",
-        "deposited_at": "2026-11-10T22:26:07.943548+00:00"
+        "doi": "10.5281/zenodo.24120958",
+        "url": "https://doi.org/10.5281/zenodo.24120958",
+        "deposited_at": "2026-11-10T22:26:07.943548+00:00",
+        "version_doi": "10.5281/zenodo.24120959"
       },
-      "citation_doi": "10.5281/zenodo.24120959",
+      "citation_doi": "10.5281/zenodo.24120958",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4042,11 +4089,12 @@
       "revision_date": "2026-11-10",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24120961",
-        "url": "https://zenodo.org/records/24120961",
-        "deposited_at": "2026-11-10T22:26:11.529114+00:00"
+        "doi": "10.5281/zenodo.24120960",
+        "url": "https://doi.org/10.5281/zenodo.24120960",
+        "deposited_at": "2026-11-10T22:26:11.529114+00:00",
+        "version_doi": "10.5281/zenodo.24120961"
       },
-      "citation_doi": "10.5281/zenodo.24120961",
+      "citation_doi": "10.5281/zenodo.24120960",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4110,11 +4158,12 @@
       "revision_date": "2026-11-10",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24120966",
-        "url": "https://zenodo.org/records/24120966",
-        "deposited_at": "2026-11-10T22:27:23.229828+00:00"
+        "doi": "10.5281/zenodo.24120965",
+        "url": "https://doi.org/10.5281/zenodo.24120965",
+        "deposited_at": "2026-11-10T22:27:23.229828+00:00",
+        "version_doi": "10.5281/zenodo.24120966"
       },
-      "citation_doi": "10.5281/zenodo.24120966",
+      "citation_doi": "10.5281/zenodo.24120965",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4194,11 +4243,12 @@
       "revision_date": "2026-11-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24149197",
-        "url": "https://zenodo.org/records/24149197",
-        "deposited_at": "2026-11-12T01:39:57.327334+00:00"
+        "doi": "10.5281/zenodo.24149196",
+        "url": "https://doi.org/10.5281/zenodo.24149196",
+        "deposited_at": "2026-11-12T01:39:57.327334+00:00",
+        "version_doi": "10.5281/zenodo.24149197"
       },
-      "citation_doi": "10.5281/zenodo.24149197",
+      "citation_doi": "10.5281/zenodo.24149196",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4258,11 +4308,12 @@
       "revision_date": "2026-11-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24149210",
-        "url": "https://zenodo.org/records/24149210",
-        "deposited_at": "2026-11-12T01:43:17.175164+00:00"
+        "doi": "10.5281/zenodo.24149209",
+        "url": "https://doi.org/10.5281/zenodo.24149209",
+        "deposited_at": "2026-11-12T01:43:17.175164+00:00",
+        "version_doi": "10.5281/zenodo.24149210"
       },
-      "citation_doi": "10.5281/zenodo.24149210",
+      "citation_doi": "10.5281/zenodo.24149209",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4326,11 +4377,12 @@
       "revision_date": "2026-11-11",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24149212",
-        "url": "https://zenodo.org/records/24149212",
-        "deposited_at": "2026-11-12T01:43:21.976445+00:00"
+        "doi": "10.5281/zenodo.24149211",
+        "url": "https://doi.org/10.5281/zenodo.24149211",
+        "deposited_at": "2026-11-12T01:43:21.976445+00:00",
+        "version_doi": "10.5281/zenodo.24149212"
       },
-      "citation_doi": "10.5281/zenodo.24149212",
+      "citation_doi": "10.5281/zenodo.24149211",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4390,11 +4442,12 @@
       "revision_date": "2026-11-12",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24175848",
-        "url": "https://zenodo.org/records/24175848",
-        "deposited_at": "2026-11-12T21:10:36.203517+00:00"
+        "doi": "10.5281/zenodo.24175847",
+        "url": "https://doi.org/10.5281/zenodo.24175847",
+        "deposited_at": "2026-11-12T21:10:36.203517+00:00",
+        "version_doi": "10.5281/zenodo.24175848"
       },
-      "citation_doi": "10.5281/zenodo.24175848",
+      "citation_doi": "10.5281/zenodo.24175847",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4454,11 +4507,12 @@
       "revision_date": "2026-11-12",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24175924",
-        "url": "https://zenodo.org/records/24175924",
-        "deposited_at": "2026-11-12T21:11:52.552917+00:00"
+        "doi": "10.5281/zenodo.24175923",
+        "url": "https://doi.org/10.5281/zenodo.24175923",
+        "deposited_at": "2026-11-12T21:11:52.552917+00:00",
+        "version_doi": "10.5281/zenodo.24175924"
       },
-      "citation_doi": "10.5281/zenodo.24175924",
+      "citation_doi": "10.5281/zenodo.24175923",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4526,11 +4580,12 @@
       "revision_date": "2026-11-13",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24185494",
-        "url": "https://zenodo.org/records/24185494",
-        "deposited_at": "2026-11-13T05:29:34.431339+00:00"
+        "doi": "10.5281/zenodo.24175967",
+        "url": "https://doi.org/10.5281/zenodo.24175967",
+        "deposited_at": "2026-11-13T05:29:34.431339+00:00",
+        "version_doi": "10.5281/zenodo.24185494"
       },
-      "citation_doi": "10.5281/zenodo.24185494",
+      "citation_doi": "10.5281/zenodo.24175967",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4604,11 +4659,12 @@
       "revision_date": "2026-11-12",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24175884",
-        "url": "https://zenodo.org/records/24175884",
-        "deposited_at": "2026-11-12T21:10:47.602330+00:00"
+        "doi": "10.5281/zenodo.24175883",
+        "url": "https://doi.org/10.5281/zenodo.24175883",
+        "deposited_at": "2026-11-12T21:10:47.602330+00:00",
+        "version_doi": "10.5281/zenodo.24175884"
       },
-      "citation_doi": "10.5281/zenodo.24175884",
+      "citation_doi": "10.5281/zenodo.24175883",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4664,11 +4720,12 @@
       "revision_date": "2026-11-13",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24211932",
-        "url": "https://zenodo.org/records/24211932",
-        "deposited_at": "2026-11-14T03:39:30.315836+00:00"
+        "doi": "10.5281/zenodo.24211931",
+        "url": "https://doi.org/10.5281/zenodo.24211931",
+        "deposited_at": "2026-11-14T03:39:30.315836+00:00",
+        "version_doi": "10.5281/zenodo.24211932"
       },
-      "citation_doi": "10.5281/zenodo.24211932",
+      "citation_doi": "10.5281/zenodo.24211931",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4724,11 +4781,12 @@
       "revision_date": "2026-11-14",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24230354",
-        "url": "https://zenodo.org/records/24230354",
-        "deposited_at": "2026-11-14T20:46:50.353534+00:00"
+        "doi": "10.5281/zenodo.24227116",
+        "url": "https://doi.org/10.5281/zenodo.24227116",
+        "deposited_at": "2026-11-14T20:46:50.353534+00:00",
+        "version_doi": "10.5281/zenodo.24230354"
       },
-      "citation_doi": "10.5281/zenodo.24230354",
+      "citation_doi": "10.5281/zenodo.24227116",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4802,11 +4860,12 @@
       "revision_date": "2026-11-19",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24347557",
-        "url": "https://zenodo.org/records/24347557",
-        "deposited_at": "2026-11-18T16:23:33.962582+00:00"
+        "doi": "10.5281/zenodo.24341604",
+        "url": "https://doi.org/10.5281/zenodo.24341604",
+        "deposited_at": "2026-11-18T16:23:33.962582+00:00",
+        "version_doi": "10.5281/zenodo.24347557"
       },
-      "citation_doi": "10.5281/zenodo.24347557",
+      "citation_doi": "10.5281/zenodo.24341604",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4877,11 +4936,12 @@
       "revision_date": "2026-11-19",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24347420",
-        "url": "https://zenodo.org/records/24347420",
-        "deposited_at": "2026-11-18T16:20:07.685727+00:00"
+        "doi": "10.5281/zenodo.24341614",
+        "url": "https://doi.org/10.5281/zenodo.24341614",
+        "deposited_at": "2026-11-18T16:20:07.685727+00:00",
+        "version_doi": "10.5281/zenodo.24347420"
       },
-      "citation_doi": "10.5281/zenodo.24347420",
+      "citation_doi": "10.5281/zenodo.24341614",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -4952,11 +5012,12 @@
       "revision_date": "2026-11-19",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24346923",
-        "url": "https://zenodo.org/records/24346923",
-        "deposited_at": "2026-11-18T16:03:48.583832+00:00"
+        "doi": "10.5281/zenodo.24341618",
+        "url": "https://doi.org/10.5281/zenodo.24341618",
+        "deposited_at": "2026-11-18T16:03:48.583832+00:00",
+        "version_doi": "10.5281/zenodo.24346923"
       },
-      "citation_doi": "10.5281/zenodo.24346923",
+      "citation_doi": "10.5281/zenodo.24341618",
       "resources": [
         {
           "label": "current version (PDF)",
@@ -5023,11 +5084,12 @@
       "revision_date": "2026-11-18",
       "archive": {
         "name": "Zenodo",
-        "doi": "10.5281/zenodo.24341632",
-        "url": "https://zenodo.org/records/24341632",
-        "deposited_at": "2026-11-18T12:39:56.245057+00:00"
+        "doi": "10.5281/zenodo.24341631",
+        "url": "https://zenodo.org/doi/10.5281/zenodo.24341631",
+        "deposited_at": "2026-11-18T12:39:56.245057+00:00",
+        "version_doi": "10.5281/zenodo.24341632"
       },
-      "citation_doi": "10.5281/zenodo.24341632",
+      "citation_doi": "10.5281/zenodo.24341631",
       "citation_doi_pending": true,
       "resources": [
         {

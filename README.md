@@ -260,9 +260,14 @@ For a paper revision, download the latest released public PDF, verify it, and
 update the local PDF and its catalogue record together: full abstract, title,
 authors, dates, source commit, checksum, page count, and archive identity. Keep
 `current version (PDF)` linked to the public repository. Archive links remain
-visible even when that archive contains an older revision. Only use
-`citation_doi` when it identifies the version described by the page; otherwise
-the suggested citation uses the stable manuscript page URL. Do not rebuild or
+visible even when that archive contains an older revision. Use the preferred public
+arXiv, SSRN or other publication record when applicable. For a Zenodo-primary
+paper, verify the parent DOI on the published record. Store this concept DOI in
+`archive.doi` and `citation_doi`, its resolver link in `archive.url`, and the
+released edition DOI in `archive.version_doi`. The catalogue, paper page,
+BibTeX and indexing metadata cite the concept DOI across revisions. While
+doi.org registration is pending, use Zenodo’s working `/doi/<concept DOI>`
+link and set `citation_doi_pending`. Do not rebuild or
 change the manuscript as part of a website refresh. Preview representative long
 titles, mathematical abstracts, and archive-only pages at desktop and phone
 widths. Actual Scholar inclusion remains a separate verification.
@@ -615,7 +620,7 @@ pinned PDF, citation and archive record in `data/papers.json`.
 
 The [harmonic-path paper](https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/) was published on 4 November 2026. Its 45-page manuscript treats all finite ranks in the specified A₂ setting, with equality uniqueness under first-order matching. The paper page, programme guides, catalogue and Updates link the current public-repository PDF and Zenodo archive; the full abstract, original date and PDF checksum are recorded in `data/papers.json`.
 
-Paper 13, [Metric wall crossing in rank-three K3 bundle moduli](https://bwuebben.github.io/papers/k3-metric-wall-crossing/), was published on 6 November 2026. The 21-page preprint applies the stationary and quotient-metric methods to local K3 moduli geometry. Its full abstract, original date, source, exact public PDF and [Zenodo archive](https://zenodo.org/records/24021822) are recorded in `data/papers.json`.
+Paper 13, [Metric wall crossing in rank-three K3 bundle moduli](https://bwuebben.github.io/papers/k3-metric-wall-crossing/), was published on 6 November 2026. The 21-page preprint applies the stationary and quotient-metric methods to local K3 moduli geometry. Its full abstract, original date, source, exact public PDF and [Zenodo archive](https://doi.org/10.5281/zenodo.24021821) are recorded in `data/papers.json`.
 
 Paper 14, [Quantitative metric wall crossing for K3 bundle moduli](https://bwuebben.github.io/papers/quiver-metric-wall-crossing/), was published on 6 November 2026. The 30-page preprint proves a general local harmonic/quiver comparison and applies it to a rank-five, two-parameter wall crossing. Its full abstract, original date, source, exact public PDF and archive identity are recorded in `data/papers.json`.
 

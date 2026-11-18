@@ -80,6 +80,19 @@ after=(ROOT/"papers/index.html").read_text()
 entry=re.compile(r'<li id="[^"]+">\s*<span class="entry-title">.*?</li>',re.S)
 old_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(before)}
 new_entries={re.search(r'<li id="([^"]+)"',e)[1]:e for e in entry.findall(after)}
+papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
+by_slug={p["slug"]:p for p in papers}
+by_anchor={p["catalogue_anchor"]:p for p in papers}
+for anchor, paper in by_anchor.items():
+ archive=paper.get("archive") or {}
+ if archive.get("name") != "Zenodo":continue
+ concept=archive["doi"].rsplit(".",1)[1]
+ edition=archive["version_doi"].rsplit(".",1)[1]
+ link=f'<a href="{archive["url"]}">Zenodo:{concept}</a>'
+ assert new_entries[anchor].count(link)==1,"Missing concept DOI in catalogue: "+anchor
+ if anchor in old_entries:
+  old_link=f'<a href="https://zenodo.org/records/{edition}">Zenodo:{edition}</a>'
+  old_entries[anchor]=old_entries[anchor].replace(old_link,link)
 assert all(new_entries.get(k)==v for k,v in old_entries.items() if k not in AUTHORIZED_CATALOGUE_UPDATES),"Unrelated paper catalogue entries changed"
 for key in AUTHORIZED_CATALOGUE_UPDATES:
  old=old_entries[key];new=new_entries[key]
@@ -88,17 +101,20 @@ for key in AUTHORIZED_CATALOGUE_UPDATES:
  if key in ARXIV_CATALOGUE_UPDATES:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
   assert len(re.findall(r'href="https://arxiv\.org/abs/\d{4}\.\d{4,5}(?:v\d+)?"',new))==1,"Expected one primary arXiv link"
-  assert "zenodo.org/records/" not in new,"arXiv must replace the visible Zenodo link"
+  assert not any("zenodo.org/" in url or "/10.5281/zenodo." in url for url in new_links),"arXiv must replace the visible Zenodo link"
  if key in REVISED_METADATA and key not in ARXIV_CATALOGUE_UPDATES:
   old_links={u for u in old_links if not u.startswith("https://zenodo.org/records/")}
-  assert len(re.findall(r'href="https://zenodo.org/records/\d+"',new))==1,"Expected one current archive link"
+  assert by_anchor[key]["archive"]["name"]=="Zenodo","Expected one current Zenodo archive link"
  assert old_links <= new_links,"Existing paper resource removed"
-papers=json.loads((ROOT/"data/papers.json").read_text())["papers"]
 old_papers=json.loads(subprocess.check_output(["git","show",BASE+":data/papers.json"],cwd=ROOT))["papers"]
-by_slug={p["slug"]:p for p in papers}
 for p in old_papers:
  current=by_slug[p["slug"]]
  allowed=REVISED_METADATA.get(p["slug"],set()) | {"related"}
+ if (p["archive"] or {}).get("name")=="Zenodo" and current["archive"].get("version_doi")==p["archive"]["doi"]:
+  # Compare edition provenance and all other baseline fields through the citation migration.
+  assert p["archive"]["url"]=="https://zenodo.org/records/"+p["archive"]["doi"].rsplit(".",1)[1]
+  p["archive"].update(doi=current["archive"]["doi"],url=current["archive"]["url"],version_doi=current["archive"]["version_doi"])
+  p["citation_doi"]=current["archive"]["doi"]
  assert {k:v for k,v in p.items() if k not in allowed}=={k:v for k,v in current.items() if k not in allowed},"Existing manuscript metadata changed: "+p["slug"]
  assert all(r in current["related"] for r in p["related"]),"Existing related links removed: "+p["slug"]
 assert set(new_entries)=={p["catalogue_anchor"] for p in papers},"Catalogue and manifest differ"

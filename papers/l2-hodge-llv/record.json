@@ -15,11 +15,12 @@
   "revision_date": "2026-11-14",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24230354",
-    "url": "https://zenodo.org/records/24230354",
-    "deposited_at": "2026-11-14T20:46:50.353534+00:00"
+    "doi": "10.5281/zenodo.24227116",
+    "url": "https://doi.org/10.5281/zenodo.24227116",
+    "deposited_at": "2026-11-14T20:46:50.353534+00:00",
+    "version_doi": "10.5281/zenodo.24230354"
   },
-  "citation_doi": "10.5281/zenodo.24230354",
+  "citation_doi": "10.5281/zenodo.24227116",
   "resources": [
     {
       "label": "current version (PDF)",
