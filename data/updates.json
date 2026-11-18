@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-19",
+    "title": "A phase bound for the Kempf–Ness potential on quiver complexes",
+    "url": "/papers/kempf-ness-function-quiver-complexes/",
+    "description": "For a two-term quiver complex with a surjective differential at a single loopless vertex, the Kempf–Ness potential is nonincreasing when the vertex phase is at least the total phase and the total phase is at least π/3. A trace inequality for the heat kernel gives this bound. Even with polystable cohomology, the potential can be strictly concave along a geodesic in the space of Hermitian metrics."
+  },
+  {
+    "date": "2026-11-19",
     "title": "Degree shifts in the minimizing flow on Kronecker complexes",
     "url": "/papers/phase-flow-acyclic-quivers/",
     "description": "On a bounded Kronecker complex with differentials at one vertex, a cohomology vector in degree n and Harder–Narasimhan phase φ has squared-norm exponent πn − φ under the minimizing flow. On a polystable factor the metric converges exponentially after this scalar growth or decay is removed. A single semistable factor retains the original perturbation rate."

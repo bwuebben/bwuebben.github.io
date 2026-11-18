@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>A phase bound for the Kempf–Ness potential on quiver complexes</title>
+      <link>https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/</link>
+      <guid>https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/#update-2026-11-19</guid>
+      <description>For a two-term quiver complex with a surjective differential at a single loopless vertex, the Kempf–Ness potential is nonincreasing when the vertex phase is at least the total phase and the total phase is at least π/3. A trace inequality for the heat kernel gives this bound. Even with polystable cohomology, the potential can be strictly concave along a geodesic in the space of Hermitian metrics.</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Degree shifts in the minimizing flow on Kronecker complexes</title>
       <link>https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/</link>
       <guid>https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/#update-2026-11-19</guid>

@@ -12,14 +12,14 @@
   "label": "Categorical Kähler Geometry · Paper II",
   "status": "Preprint",
   "publication_date": "2026-11-18",
-  "revision_date": "2026-11-18",
+  "revision_date": "2026-11-19",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24341615",
-    "url": "https://zenodo.org/records/24341615",
-    "deposited_at": "2026-11-18T12:42:14.552883+00:00"
+    "doi": "10.5281/zenodo.24347420",
+    "url": "https://zenodo.org/records/24347420",
+    "deposited_at": "2026-11-18T16:20:07.685727+00:00"
   },
-  "citation_doi": "10.5281/zenodo.24341615",
+  "citation_doi": "10.5281/zenodo.24347420",
   "resources": [
     {
       "label": "current version (PDF)",
@@ -52,17 +52,24 @@
       "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
     }
   ],
-  "verified_on": "2026-11-18",
-  "abstract_html": "<p>For every bounded complex of representations of a finite quiver with vertex charges in the upper half-plane, the superconnection endomorphism of Haiden, Katzarkov, Kontsevich and Pandit defines a closed one-form on the space of Hermitian metrics. We construct a primitive by transgression along the rescaling of the differentials. For nonzero total charge <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi></mrow></math>, rotating the primitive by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mover><mrow><mi>Z</mi></mrow><mo accent=\"true\">&#x02015;</mo></mover><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>Z</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></math> and taking its imaginary part gives a real potential. On representations this potential is a positive multiple of the Kempf–Ness function and is nonincreasing along the flow defined by the argument of the unitary polar factor of the endomorphism. For a two-term complex in degrees zero and one whose differential surjects onto a term supported at a loopless vertex <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>i</mi></mrow></math>, the potential is nonincreasing if the vertex charge <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>z</mi><mi>i</mi></msub></mrow></math> satisfies <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>arg</mo><msub><mi>z</mi><mi>i</mi></msub><mo>&#x02265;</mo><mo>arg</mo><mi>Z</mi></mrow></math> and either <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>arg</mo><mi>Z</mi><mo>&#x02265;</mo><mn>2</mn><mi>&#x003C0;</mi><mo>&#x0002F;</mo><mn>5</mn></mrow></math> or the differential has rank one. On a three-term Kronecker quiver complex the potential can increase even when the induced metric on its stable cohomology is harmonic. Quillen&#x27;s superconnection gives the analogous potential for two-term complexes of holomorphic bundles on a compact Riemann surface. On a single bundle it is a positive multiple of Donaldson&#x27;s functional.</p>",
-  "abstract_source": "https://github.com/bwuebben/categorical-kahler-geometry/blob/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/02_kempf_ness_complexes/paper.tex",
+  "verified_on": "2026-11-19",
+  "abstract_html": "<p>For every bounded complex of representations of a finite quiver with vertex charges in the upper half-plane, the superconnection endomorphism of Haiden, Katzarkov, Kontsevich and Pandit defines a closed one-form on the space of Hermitian metrics. We construct a primitive by transgression along the rescaling of the differentials. For nonzero total charge <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi></mrow></math>, rotating the primitive by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mover><mrow><mi>Z</mi></mrow><mo accent=\"true\">&#x02015;</mo></mover><mo>&#x0002F;</mo><mo stretchy=\"false\">&#x0007C;</mo><mi>Z</mi><mo stretchy=\"false\">&#x0007C;</mo></mrow></math> and taking its imaginary part gives a real potential. On representations this potential is a positive multiple of the Kempf–Ness function and is nonincreasing along the flow defined by the argument of the unitary polar factor of the endomorphism. For a two-term complex in degrees zero and one whose differential surjects onto a term supported at a loopless vertex <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>i</mi></mrow></math>, the potential is nonincreasing if the vertex charge <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>z</mi><mi>i</mi></msub></mrow></math> satisfies <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>arg</mo><msub><mi>z</mi><mi>i</mi></msub><mo>&#x02265;</mo><mo>arg</mo><mi>Z</mi></mrow></math> and either <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>arg</mo><mi>Z</mi><mo>&#x02265;</mo><mi>&#x003C0;</mi><mo>&#x0002F;</mo><mn>3</mn></mrow></math> or the differential has rank one. On a three-term Kronecker quiver complex the potential can increase even when the induced metric on its stable cohomology is harmonic. Quillen&#x27;s superconnection gives the analogous potential for two-term complexes of holomorphic bundles on a compact Riemann surface. On a single bundle it is a positive multiple of Donaldson&#x27;s functional.</p>",
+  "abstract_source": "https://github.com/bwuebben/categorical-kahler-geometry/blob/4ce41bdbf4e3e92ca7008e7265db678feebb6cec/papers/02_kempf_ness_complexes/paper.tex",
   "pdf": {
-    "sha256": "b0c2213722e83660a9e0063ed81162df5d808901b85df8e365e543316b56ecec",
-    "size_bytes": 477647,
+    "sha256": "d1cddad45c8de7d174021a01915d2d4e9f2ea65b4480e7c456021acc4657fdd6",
+    "size_bytes": 481724,
     "pages": 24,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/categorical-kahler-geometry/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/02_kempf_ness_complexes/paper.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/categorical-kahler-geometry/4ce41bdbf4e3e92ca7008e7265db678feebb6cec/papers/02_kempf_ness_complexes/paper.pdf",
     "source_url": "https://github.com/bwuebben/categorical-kahler-geometry/blob/main/papers/02_kempf_ness_complexes/paper.pdf",
-    "source_commit": "cafcfc2ba96a669f3b06a9dfaebfff2271b0e788",
+    "source_commit": "4ce41bdbf4e3e92ca7008e7265db678feebb6cec",
     "source_repository": "https://github.com/bwuebben/categorical-kahler-geometry",
     "source_path": "papers/02_kempf_ness_complexes/paper.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "url": "https://zenodo.org/records/24341615",
+      "doi": "10.5281/zenodo.24341615"
+    }
+  ]
 }
