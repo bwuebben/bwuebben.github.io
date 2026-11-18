@@ -25,7 +25,7 @@ subject guides, `/explorers/`, `/writing/` and its interactive essays,
 
 The Research Programs menu starts with Overview, followed by the six topic guides
 and the focused programme guides, grouped under Topic guides, Focused guides and Atlas. The Atlas subsection links Degeneration to its interactive paper atlas.
-The focused guides are Atiyah–Floer theory and Stability & Degeneration. In `site.json`,
+The focused guides are Atiyah–Floer theory, Stability & Degeneration and Categorical Kähler Geometry. Equivariant Quantum Geometry has its own section and manuscript group in Geometry & moduli. In `site.json`,
 an optional `heading` on a menu link inserts a section label before that link.
 
 Every public HTML page uses the same ∑ browser-tab icon, defined once in

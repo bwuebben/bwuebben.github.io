@@ -1,0 +1,68 @@
+{
+  "slug": "phase-flow-convergence-kronecker",
+  "catalogue_anchor": "phase-flow-convergence-kronecker",
+  "catalogue_title": "Convergence of the minimizing flow on Kronecker quiver complexes",
+  "title": "Convergence of the minimizing flow on Kronecker quiver complexes",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Categorical Kähler Geometry · Paper I",
+  "status": "Preprint",
+  "publication_date": "2026-11-18",
+  "revision_date": "2026-11-18",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24341605",
+    "url": "https://zenodo.org/records/24341605",
+    "deposited_at": "2026-11-18T12:43:14.788618+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24341605",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/categorical-kahler-geometry/blob/main/papers/01_kronecker_minimizing_flow/paper.pdf"
+    },
+    {
+      "label": "LaTeX source and build instructions",
+      "url": "https://github.com/bwuebben/categorical-kahler-geometry/tree/main/papers/01_kronecker_minimizing_flow"
+    },
+    {
+      "label": "Supplementary computations",
+      "url": "https://github.com/bwuebben/categorical-kahler-geometry/tree/main/papers/01_kronecker_minimizing_flow/ancillary"
+    }
+  ],
+  "related": [
+    {
+      "label": "Categorical Kähler Geometry guide",
+      "url": "https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/"
+    },
+    {
+      "label": "Extending the Kempf–Ness function to complexes of quiver representations",
+      "url": "https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/"
+    },
+    {
+      "label": "Convergence of the minimizing flow on acyclic quivers",
+      "url": "https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/"
+    },
+    {
+      "label": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
+      "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
+    }
+  ],
+  "verified_on": "2026-11-18",
+  "abstract_html": "<p>We prove exponential cancellation of the acyclic part of a two-term complex <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo stretchy=\"false\">&#x00028;</mo><mi>V</mi><mo>&#x02192;</mo><mi>W</mi><mo stretchy=\"false\">&#x00029;</mo><mo>&#x02192;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>U</mi><mo>&#x02192;</mo><mn>0</mn><mo stretchy=\"false\">&#x00029;</mo></mrow></math> of generalized Kronecker quiver representations under the minimizing flow of Haiden, Katzarkov, Kontsevich and Pandit. The differential <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>D</mi><mi>&#x0003A;</mi><mi>V</mi><mo>&#x02192;</mo><mi>U</mi></mrow></math> is surjective with <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>U</mi><mo>&#x02260;</mo><mn>0</mn></mrow></math>, and the cohomology <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>H</mi><mo>&#x0003D;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>ker</mi><mi>D</mi><mo>&#x02192;</mo><mi>W</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is nonzero at both vertices. For all vertex charges in the upper half-plane and every initial Hermitian metric, the endomorphism whose polar phase defines the flow approaches the cohomology endomorphism exponentially in trace norm. Here <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>H</mi></mrow></math> carries the induced metric and its endomorphism is extended by zero. If the source charge has larger argument than the target charge and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>H</mi></mrow></math> is polystable, the induced metric multiplied by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>e</mi><mrow><mi>t</mi><mo>arg</mo><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>H</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></msup></mrow></math> converges exponentially to a harmonic metric, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>Z</mi><mo stretchy=\"false\">&#x00028;</mo><mi>H</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> is the central charge of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>H</mi></mrow></math>. In the same chamber, semistability suffices for the shifted moment map to tend to zero. Two matrix estimates control the arrow energy. At fixed positive definite imaginary part, minus the argument of the unitary polar factor is strictly monotone for the trace inner product. Schur multiplication by the second divided differences of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>e</mi><mrow><mo>&#x02212;</mo><mi>x</mi></mrow></msup></mrow></math> at <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>&#x02113;</mi><mi>i</mi></msub><mo>&#x0002C;</mo><mn>0</mn><mo>&#x0002C;</mo><msub><mi>&#x02113;</mi><mi>j</mi></msub></mrow></math>, with all <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>&#x02113;</mi><mi>i</mi></msub><mo>&#x0003E;</mo><mn>0</mn></mrow></math>, sends each positive semidefinite matrix to a matrix <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>J</mi></mrow></math> whose negative part has trace at most <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mfrac><mrow><mn>2</mn></mrow><mrow><mn>5</mn></mrow></mfrac><mo>tr</mo><mi>J</mi></mrow></math>.</p>",
+  "abstract_source": "https://github.com/bwuebben/categorical-kahler-geometry/blob/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/01_kronecker_minimizing_flow/paper.tex",
+  "pdf": {
+    "sha256": "cac4a4d30892b95574a6372417632614d27cc34108b4ef39cb7e5047b391b3ea",
+    "size_bytes": 599813,
+    "pages": 41,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/categorical-kahler-geometry/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/01_kronecker_minimizing_flow/paper.pdf",
+    "source_url": "https://github.com/bwuebben/categorical-kahler-geometry/blob/main/papers/01_kronecker_minimizing_flow/paper.pdf",
+    "source_commit": "cafcfc2ba96a669f3b06a9dfaebfff2271b0e788",
+    "source_repository": "https://github.com/bwuebben/categorical-kahler-geometry",
+    "source_path": "papers/01_kronecker_minimizing_flow/paper.pdf"
+  }
+}

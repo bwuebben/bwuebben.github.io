@@ -115,6 +115,9 @@
     <loc>https://bwuebben.github.io/geometry-particles/</loc>
   </url>
   <url>
+    <loc>https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/</loc>
+  </url>
+  <url>
     <loc>https://bwuebben.github.io/papers/validation-bottleneck/</loc>
   </url>
   <url>
@@ -350,5 +353,17 @@
   </url>
   <url>
     <loc>https://bwuebben.github.io/papers/l2-hodge-llv/</loc>
+  </url>
+  <url>
+    <loc>https://bwuebben.github.io/papers/phase-flow-convergence-kronecker/</loc>
+  </url>
+  <url>
+    <loc>https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/</loc>
+  </url>
+  <url>
+    <loc>https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/</loc>
+  </url>
+  <url>
+    <loc>https://bwuebben.github.io/papers/fan-symmetries-exceptional-collections/</loc>
   </url>
 </urlset>

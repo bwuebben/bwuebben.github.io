@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-18",
+    "title": "Minimizing flows and stability on quiver complexes",
+    "url": "/research/geometry/categorical-kahler-geometry/",
+    "description": "Metric decay under the minimizing flow recovers the Harder–Narasimhan filtration of every nonzero representation of a finite acyclic quiver. On two-term Kronecker complexes with a surjective source differential and cohomology at both vertices, the acyclic contribution decays exponentially from every initial metric. A primitive on all bounded quiver complexes recovers the Kempf–Ness function on representations and can increase along the flow in a three-term example."
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Fan symmetries and exceptional collections on toric Fano varieties",
+    "url": "/papers/fan-symmetries-exceptional-collections/",
+    "description": "Every smooth projective complex toric Fano variety has a full exceptional collection permuted by the automorphisms of its fan. At a fan-invariant semisimple quantum parameter and each admissible lifted phase, its individual classes realize the integral Gamma asymptotic basis. Distinct objects with equal Euler eigenvalue are orthogonal in every degree. In characteristic zero, Galois orbits of the objects give division-algebra components on every form of the variety."
+  },
+  {
     "date": "2026-11-14",
     "title": "L² Hodge theory: expanded analytic and geometric proofs",
     "url": "/papers/l2-hodge-llv/",

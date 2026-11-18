@@ -6,6 +6,20 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Minimizing flows and stability on quiver complexes</title>
+      <link>https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/</link>
+      <guid>https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/#update-2026-11-18</guid>
+      <description>Metric decay under the minimizing flow recovers the Harder–Narasimhan filtration of every nonzero representation of a finite acyclic quiver. On two-term Kronecker complexes with a surjective source differential and cohomology at both vertices, the acyclic contribution decays exponentially from every initial metric. A primitive on all bounded quiver complexes recovers the Kempf–Ness function on representations and can increase along the flow in a three-term example.</description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fan symmetries and exceptional collections on toric Fano varieties</title>
+      <link>https://bwuebben.github.io/papers/fan-symmetries-exceptional-collections/</link>
+      <guid>https://bwuebben.github.io/papers/fan-symmetries-exceptional-collections/#update-2026-11-18</guid>
+      <description>Every smooth projective complex toric Fano variety has a full exceptional collection permuted by the automorphisms of its fan. At a fan-invariant semisimple quantum parameter and each admissible lifted phase, its individual classes realize the integral Gamma asymptotic basis. Distinct objects with equal Euler eigenvalue are orthogonal in every degree. In characteristic zero, Galois orbits of the objects give division-algebra components on every form of the variety.</description>
+      <pubDate>Wed, 18 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>L² Hodge theory: expanded analytic and geometric proofs</title>
       <link>https://bwuebben.github.io/papers/l2-hodge-llv/</link>
       <guid>https://bwuebben.github.io/papers/l2-hodge-llv/#update-2026-11-14</guid>

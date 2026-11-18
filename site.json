@@ -46,6 +46,10 @@
           "href": "/research/geometry/quantitative-moduli/"
         },
         {
+          "label": "Categorical Kähler Geometry",
+          "href": "/research/geometry/categorical-kahler-geometry/"
+        },
+        {
           "label": "Degeneration",
           "href": "/research/geometry/quantitative-moduli/atlas/",
           "heading": "Atlas"

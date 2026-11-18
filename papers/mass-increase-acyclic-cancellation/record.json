@@ -45,6 +45,22 @@
     {
       "label": "Harmonic paths and honeycombs",
       "url": "https://bwuebben.github.io/papers/harmonic-paths-and-honeycombs/"
+    },
+    {
+      "label": "Categorical Kähler Geometry guide",
+      "url": "https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/"
+    },
+    {
+      "label": "Convergence of the minimizing flow on Kronecker quiver complexes",
+      "url": "https://bwuebben.github.io/papers/phase-flow-convergence-kronecker/"
+    },
+    {
+      "label": "Extending the Kempf–Ness function to complexes of quiver representations",
+      "url": "https://bwuebben.github.io/papers/kempf-ness-function-quiver-complexes/"
+    },
+    {
+      "label": "Convergence of the minimizing flow on acyclic quivers",
+      "url": "https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/"
     }
   ],
   "verified_on": "2026-11-03",

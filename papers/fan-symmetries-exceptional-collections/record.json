@@ -1,0 +1,56 @@
+{
+  "slug": "fan-symmetries-exceptional-collections",
+  "catalogue_anchor": "fan-symmetries-exceptional-collections",
+  "catalogue_title": "Fan symmetries and exceptional collections on toric Fano varieties",
+  "title": "Fan symmetries and exceptional collections on toric Fano varieties",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Equivariant Quantum Geometry · Paper 01",
+  "status": "Preprint",
+  "publication_date": "2026-11-17",
+  "revision_date": "2026-11-18",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24341632",
+    "url": "https://zenodo.org/records/24341632",
+    "deposited_at": "2026-11-18T12:39:56.245057+00:00"
+  },
+  "citation_doi": "10.5281/zenodo.24341632",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/equivariant-quantum-geometry/blob/main/01_equivariant_toric_atoms/main.pdf"
+    },
+    {
+      "label": "LaTeX source and build instructions",
+      "url": "https://github.com/bwuebben/equivariant-quantum-geometry/tree/main/01_equivariant_toric_atoms"
+    },
+    {
+      "label": "Supplementary computations",
+      "url": "https://github.com/bwuebben/equivariant-quantum-geometry/tree/main/01_equivariant_toric_atoms/checks"
+    }
+  ],
+  "related": [
+    {
+      "label": "Equivariant Quantum Geometry",
+      "url": "https://bwuebben.github.io/research/geometry/#equivariant-quantum-geometry"
+    }
+  ],
+  "verified_on": "2026-11-18",
+  "abstract_html": "<p>Every smooth projective complex toric Fano variety has a full exceptional collection permuted by the automorphism group of its fan. We construct a semisimple point of big quantum cohomology fixed by this group. At each admissible lifted phase the objects can be chosen so that their individual classes give the integral Gamma asymptotic basis indexed by the primitive idempotents at that point. Distinct objects with the same Euler eigenvalue are orthogonal in every degree. One mirror equivalence identifies the fan action on Lefschetz thimbles with toric pullback on perfect complexes. Testing a second equivalence on mirror disks associated with ample polytopes determines the integral classes of its thimble images. Comparing the equivalences recovers the fan action on these images. The objects have rational models on the split variety, and their Galois orbits give division-algebra components on every form in characteristic zero. Over the locus in the nonarchimedean fixed quantum base where the number of distinct Euler eigenvalues is maximal, the reduced Euler cover is the quotient of the primitive-idempotent cover by the fan group. Its connected components give the local equivariant Hodge atoms.</p>",
+  "abstract_source": "https://github.com/bwuebben/equivariant-quantum-geometry/blob/e3de35334004bb4ce829c9d725619a9f0db7feaf/01_equivariant_toric_atoms/main.tex",
+  "pdf": {
+    "sha256": "7d662a87d89a5f1d5939a84f7272306a28d4b7e317d31673e842ed49f8dbbb06",
+    "size_bytes": 646456,
+    "pages": 64,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/equivariant-quantum-geometry/e3de35334004bb4ce829c9d725619a9f0db7feaf/01_equivariant_toric_atoms/main.pdf",
+    "source_url": "https://github.com/bwuebben/equivariant-quantum-geometry/blob/main/01_equivariant_toric_atoms/main.pdf",
+    "source_commit": "e3de35334004bb4ce829c9d725619a9f0db7feaf",
+    "source_repository": "https://github.com/bwuebben/equivariant-quantum-geometry",
+    "source_path": "01_equivariant_toric_atoms/main.pdf"
+  }
+}

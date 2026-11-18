@@ -28,7 +28,7 @@ aliases = {
     'markets': ['markets'],
     'topology': ['mathematics', 'knot-instanton-homology', 'atiyah-floer', 'exotic-four-manifolds-series'],
     'calabi-yau': ['calabi-yau-smoothability', 'universal-curve-counting'],
-    'geometry': ['toric-tangent-stability-series', 'open-fjrw', 'stability-degeneration'],
+    'geometry': ['toric-tangent-stability-series', 'open-fjrw', 'stability-degeneration', 'categorical-kahler-geometry', 'equivariant-quantum-geometry'],
     'physics': ['physics', 'compact-higgs-transitions', 'heterotic-k3', 'black-hole-information'],
     'ai-institutions': ['ai', 'politics'],
 }
@@ -44,7 +44,7 @@ descriptions = {
     'markets': 'Evidence, investment models and portfolio construction.',
     'topology': 'Knots, four-manifolds and the maps between Floer theories.',
     'calabi-yau': 'Smoothability, mirror relations and curve counting.',
-    'geometry': 'Stability, canonical metrics, degeneration and moduli spaces.',
+    'geometry': 'Stability, moduli spaces, categorical Kähler geometry and equivariant quantum geometry.',
     'physics': 'Compact Higgs transitions, black holes and information.',
     'ai-institutions': 'Machine economies, institutional design and international order.',
 }
