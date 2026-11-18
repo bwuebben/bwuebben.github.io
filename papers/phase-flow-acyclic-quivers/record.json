@@ -12,14 +12,14 @@
   "label": "Categorical Kähler Geometry · Paper III",
   "status": "Preprint",
   "publication_date": "2026-11-18",
-  "revision_date": "2026-11-18",
+  "revision_date": "2026-11-19",
   "archive": {
     "name": "Zenodo",
-    "doi": "10.5281/zenodo.24341619",
-    "url": "https://zenodo.org/records/24341619",
-    "deposited_at": "2026-11-18T12:43:01.039303+00:00"
+    "doi": "10.5281/zenodo.24346923",
+    "url": "https://zenodo.org/records/24346923",
+    "deposited_at": "2026-11-18T16:03:48.583832+00:00"
   },
-  "citation_doi": "10.5281/zenodo.24341619",
+  "citation_doi": "10.5281/zenodo.24346923",
   "resources": [
     {
       "label": "current version (PDF)",
@@ -48,17 +48,24 @@
       "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
     }
   ],
-  "verified_on": "2026-11-18",
-  "abstract_html": "<p>The minimizing flow of Haiden, Katzarkov, Kontsevich and Pandit recovers the Harder–Narasimhan filtration of every nonzero representation of a finite acyclic quiver from the exponential decay rates of its Hermitian metric <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>h</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. This holds for all vertex charges in the upper half-plane and every initial metric. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>v</mi></mrow></math> lies in the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math>th filtration step outside the preceding one and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>Z</mi><mi>k</mi></msub></mrow></math> is the central charge of the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math>th quotient, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>t</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mi>log</mi><mi>h</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>v</mi><mo>&#x0002C;</mo><mi>v</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> tends to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mo>arg</mo><msub><mi>Z</mi><mi>k</mi></msub></mrow></math>. The mass tends to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mo>&#x02211;</mo><mi>k</mi></msub><mo stretchy=\"false\">&#x0007C;</mo><msub><mi>Z</mi><mi>k</mi></msub><mo stretchy=\"false\">&#x0007C;</mo></mrow></math>. On each quotient the metric rescaled by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>e</mi><mrow><mi>t</mi><mo>arg</mo><msub><mi>Z</mi><mi>k</mi></msub></mrow></msup></mrow></math> converges exponentially to a harmonic metric if the quotient is polystable. In general the rescaled metric stays at bounded distance from a Kempf–Ness gradient trajectory with vertex weights proportional to the imaginary parts of the charges. The iterated-logarithm asymptotics of Haiden, Katzarkov, Kontsevich and Pandit therefore apply up to bounded factors. For two-term complexes with nonzero cohomology concentrated in degree zero and differential supported at one vertex, the same results hold on cohomology when the phase is taken from the polar decomposition. For generalized Kronecker quivers the results extend to bounded complexes whose differentials vanish at one vertex, with the phases shifted by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mi>&#x003C0;</mi><mi>n</mi></mrow></math> in degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>. Under Beilinson&#x27;s equivalence this includes every object of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>D</mi><mi>b</mi></msup><mo stretchy=\"false\">&#x00028;</mo><msup><mi>&#x02119;</mi><mn>1</mn></msup><mo stretchy=\"false\">&#x00029;</mo></mrow></math> in a minimal projective or injective Kronecker model.</p>",
-  "abstract_source": "https://github.com/bwuebben/categorical-kahler-geometry/blob/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/03_acyclic_quiver_minimizing_flow/paper.tex",
+  "verified_on": "2026-11-19",
+  "abstract_html": "<p>The minimizing flow of Haiden, Katzarkov, Kontsevich and Pandit recovers the Harder–Narasimhan filtration of every nonzero representation of a finite acyclic quiver from the exponential decay rates of its Hermitian metric <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>h</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math>. This holds for all vertex charges in the upper half-plane and every initial metric. If <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>v</mi></mrow></math> lies in the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math>th filtration step outside the preceding one and <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mi>Z</mi><mi>k</mi></msub></mrow></math> is the central charge of the <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>k</mi></mrow></math>th quotient, then <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>t</mi><mrow><mo>&#x02212;</mo><mn>1</mn></mrow></msup><mi>log</mi><mi>h</mi><mo stretchy=\"false\">&#x00028;</mo><mi>t</mi><mo stretchy=\"false\">&#x00029;</mo><mo stretchy=\"false\">&#x00028;</mo><mi>v</mi><mo>&#x0002C;</mo><mi>v</mi><mo stretchy=\"false\">&#x00029;</mo></mrow></math> tends to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mo>arg</mo><msub><mi>Z</mi><mi>k</mi></msub></mrow></math>. The mass of the evolving metric tends to <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msub><mo>&#x02211;</mo><mi>k</mi></msub><mo stretchy=\"false\">&#x0007C;</mo><msub><mi>Z</mi><mi>k</mi></msub><mo stretchy=\"false\">&#x0007C;</mo></mrow></math>. On each quotient the metric rescaled by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>e</mi><mrow><mi>t</mi><mo>arg</mo><msub><mi>Z</mi><mi>k</mi></msub></mrow></msup></mrow></math> converges exponentially to a harmonic metric if the quotient is polystable. In general the rescaled metric stays at bounded distance from a Kempf–Ness gradient trajectory with vertex weights proportional to the imaginary parts of the charges. The iterated-logarithm asymptotics of Haiden, Katzarkov, Kontsevich and Pandit therefore apply up to bounded factors. For two-term complexes with nonzero cohomology concentrated in degree zero and differential supported at one vertex, the same results hold on cohomology when the phase is taken from the polar decomposition. For generalized Kronecker quivers the results extend to bounded complexes whose differentials vanish at one vertex, with the phases shifted by <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mo>&#x02212;</mo><mi>&#x003C0;</mi><mi>n</mi></mrow></math> in degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><mi>n</mi></mrow></math>. Under Beilinson&#x27;s equivalence this includes every object of <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mrow><msup><mi>D</mi><mi>b</mi></msup><mo stretchy=\"false\">&#x00028;</mo><msup><mi>&#x02119;</mi><mn>1</mn></msup><mo stretchy=\"false\">&#x00029;</mo></mrow></math> in a minimal projective or injective Kronecker model.</p>",
+  "abstract_source": "https://github.com/bwuebben/categorical-kahler-geometry/blob/f387e00f3db42d8bdaaf06f6323d5dabf08f174b/papers/03_acyclic_quiver_minimizing_flow/paper.tex",
   "pdf": {
-    "sha256": "bd332bf649ab96ca0e25fa340b7e10b56f1023c72b4dbc20517582a0e7361f49",
-    "size_bytes": 575957,
+    "sha256": "e4da61094175c46e82deda83c94b7d4bc08d51b811d4fc9a835f852f0469e7bc",
+    "size_bytes": 576876,
     "pages": 34,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/categorical-kahler-geometry/cafcfc2ba96a669f3b06a9dfaebfff2271b0e788/papers/03_acyclic_quiver_minimizing_flow/paper.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/categorical-kahler-geometry/f387e00f3db42d8bdaaf06f6323d5dabf08f174b/papers/03_acyclic_quiver_minimizing_flow/paper.pdf",
     "source_url": "https://github.com/bwuebben/categorical-kahler-geometry/blob/main/papers/03_acyclic_quiver_minimizing_flow/paper.pdf",
-    "source_commit": "cafcfc2ba96a669f3b06a9dfaebfff2271b0e788",
+    "source_commit": "f387e00f3db42d8bdaaf06f6323d5dabf08f174b",
     "source_repository": "https://github.com/bwuebben/categorical-kahler-geometry",
     "source_path": "papers/03_acyclic_quiver_minimizing_flow/paper.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "url": "https://zenodo.org/records/24341619",
+      "doi": "10.5281/zenodo.24341619"
+    }
+  ]
 }

@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-19",
+    "title": "Degree shifts in the minimizing flow on Kronecker complexes",
+    "url": "/papers/phase-flow-acyclic-quivers/",
+    "description": "On a bounded Kronecker complex with differentials at one vertex, a cohomology vector in degree n and Harder–Narasimhan phase φ has squared-norm exponent πn − φ under the minimizing flow. On a polystable factor the metric converges exponentially after this scalar growth or decay is removed. A single semistable factor retains the original perturbation rate."
+  },
+  {
     "date": "2026-11-18",
     "title": "Minimizing flows and stability on quiver complexes",
     "url": "/research/geometry/categorical-kahler-geometry/",

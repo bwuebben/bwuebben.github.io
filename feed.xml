@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Degree shifts in the minimizing flow on Kronecker complexes</title>
+      <link>https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/</link>
+      <guid>https://bwuebben.github.io/papers/phase-flow-acyclic-quivers/#update-2026-11-19</guid>
+      <description>On a bounded Kronecker complex with differentials at one vertex, a cohomology vector in degree n and Harder–Narasimhan phase φ has squared-norm exponent πn − φ under the minimizing flow. On a polystable factor the metric converges exponentially after this scalar growth or decay is removed. A single semistable factor retains the original perturbation rate.</description>
+      <pubDate>Thu, 19 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Minimizing flows and stability on quiver complexes</title>
       <link>https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/</link>
       <guid>https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/#update-2026-11-18</guid>
