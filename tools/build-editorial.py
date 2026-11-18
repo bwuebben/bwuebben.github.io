@@ -408,13 +408,13 @@ def build_mathematics_ranking():
 </li>''')
     date = datetime.fromisoformat(ranking["as_of"]).date()
     previous = datetime.fromisoformat(ranking["comparison"]["since"]).date()
-    title = "Ten mathematics papers, ranked"
+    title = "The top ten mathematics papers"
     body = f'''<header class="ranking-heading">
   <div class="ranking-meta"><a href="/papers/"><span aria-hidden="true">← </span>All papers</a><time datetime="{date}">{date:%-d %B %Y}</time></div>
-  <div class="ranking-intro"><h1>Ten mathematics papers, <em>ranked</em></h1>
-  <p>The order reflects a judgment about mathematical importance. It weighs the question each theorem settles, how broadly it applies, and what others can now prove or compute.</p></div>
+  <div class="ranking-intro"><h1>The <em>top ten</em> mathematics papers</h1>
+  <p>These ten were selected from all the mathematics papers in this catalogue. Their order reflects the importance of the questions they settle, the breadth of the results, and what others can prove or compute with them.</p></div>
 </header>
-<ol class="ranked-papers" role="list" aria-label="Mathematics papers in rank order">
+<ol class="ranked-papers" role="list" aria-label="Top ten mathematics papers in rank order">
 {chr(10).join(rows)}
 </ol>
 <details class="ranking-history"><summary>Changes since {previous:%-d %B %Y}</summary>
@@ -423,7 +423,7 @@ def build_mathematics_ranking():
     css = "assets/mathematics-ranking.css"
     version = __import__("hashlib").sha256((ROOT / css).read_bytes()).hexdigest()[:12]
     page("papers/mathematics-ranking/index.html", title,
-         "Ten mathematics papers by Bernd Wuebben, ranked by the scope and consequences of their main theorems.",
+         "The top ten papers from Bernd Wuebben’s full mathematics catalogue, ordered by the importance of their main results.",
          body, extra=f'<link rel="stylesheet" href="/{css}?v={version}">', cls="mathematics-ranking")
 
 def build_explorers():

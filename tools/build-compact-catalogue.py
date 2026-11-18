@@ -90,7 +90,7 @@ subject_options = f'<option value="all">All papers ({len(papers)})</option>' + '
     f'<option value="{p["slug"]}">{E(labels[p["slug"]])} ({len(p["slugs"])})</option>' for p in programs)
 body = f'''<main id="main" class="wrap paper-browser" tabindex="-1">
   <header class="masthead"><div class="catalogue-intro"><div><p class="catalogue-kicker">The research collection</p><h1>Papers.</h1></div>
-<p>Open a title for its full abstract and manuscript.<br><a class="catalogue-ranking-link" href="mathematics-ranking/">Ten mathematics papers, ranked <span aria-hidden="true">→</span></a></p></div></header>
+<p>Open a title for its full abstract and manuscript.<br><a class="catalogue-ranking-link" href="mathematics-ranking/">The top ten mathematics papers <span aria-hidden="true">→</span></a></p></div></header>
 <div class="catalogue-layout"><aside class="catalogue-sidebar"><nav aria-label="Browse papers by subject">
 <p class="catalogue-kicker">Browse by subject</p>{''.join(nav)}</nav>
 <label class="catalogue-mobile-field" for="catalogue-subject"><span class="catalogue-kicker">Browse by subject</span><select id="catalogue-subject">{subject_options}</select></label>
