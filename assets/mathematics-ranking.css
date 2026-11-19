@@ -56,15 +56,6 @@
   font-variant-numeric: lining-nums tabular-nums;
 }
 
-.rank-number .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
 .ranked-papers h2 {
   margin: 0;
   font-size: clamp(1.35rem, 2.25vw, 1.95rem);
@@ -75,14 +66,12 @@
 
 .ranked-papers h2 a { color: var(--ink); }
 .ranked-papers h2 a:is(:hover, :focus-visible) { color: var(--accent); }
-.ranked-papers li p, .ranking-history p {
+.ranked-papers li p {
   margin: 0;
   color: var(--ink-soft);
   font: 1.06rem/1.57 var(--serif);
 }
 
-.ranking-history { margin: 1.25rem 0; }
-.ranking-history p { max-width: 65ch; padding: .45rem 0 1rem; }
 .ranking-return { font: .86rem/1.5 var(--sans); }
 
 @media (max-width: 710px) {

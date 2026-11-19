@@ -402,28 +402,26 @@ def build_mathematics_ranking():
     for position, entry in enumerate(ranking["papers"], start=1):
         paper = by_slug[entry["slug"]]
         rows.append(f'''<li>
-  <span class="rank-number"><span class="visually-hidden">Rank </span>{position}</span>
+  <span class="rank-number">{position}</span>
   <h2><a href="/papers/{E(paper["slug"])}/">{E(paper["title"])}</a></h2>
   <p>{E(entry["significance"])}</p>
 </li>''')
     date = datetime.fromisoformat(ranking["as_of"]).date()
-    previous = datetime.fromisoformat(ranking["comparison"]["since"]).date()
-    title = "The top ten mathematics papers"
+    title = "Selected papers in mathematics"
+    intro = ("These papers are central to my mathematical work. I chose them for the questions "
+             "they address and for what their results make it possible to prove or compute.")
     body = f'''<header class="ranking-heading">
   <div class="ranking-meta"><a href="/papers/"><span aria-hidden="true">← </span>All papers</a><time datetime="{date}">{date:%-d %B %Y}</time></div>
-  <div class="ranking-intro"><h1>The <em>top ten</em> mathematics papers</h1>
-  <p>These ten were selected from all the mathematics papers in this catalogue. Their order reflects the importance of the questions they settle, the breadth of the results, and what others can prove or compute with them.</p></div>
+  <div class="ranking-intro"><h1>{title}</h1>
+  <p>{intro}</p></div>
 </header>
-<ol class="ranked-papers" role="list" aria-label="Top ten mathematics papers in rank order">
+<ol class="ranked-papers" role="list" aria-label="{title}">
 {chr(10).join(rows)}
 </ol>
-<details class="ranking-history"><summary>Changes since {previous:%-d %B %Y}</summary>
-<p>{E(ranking["comparison"]["note"])}</p></details>
 <p class="ranking-return"><a href="/papers/">Browse all papers <span aria-hidden="true">→</span></a></p>'''
     css = "assets/mathematics-ranking.css"
     version = __import__("hashlib").sha256((ROOT / css).read_bytes()).hexdigest()[:12]
-    page("papers/mathematics-ranking/index.html", title,
-         "The top ten papers from Bernd Wuebben’s full mathematics catalogue, ordered by the importance of their main results.",
+    page("papers/mathematics-ranking/index.html", title, intro,
          body, extra=f'<link rel="stylesheet" href="/{css}?v={version}">', cls="mathematics-ranking")
 
 def build_explorers():

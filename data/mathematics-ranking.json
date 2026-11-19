@@ -39,11 +39,7 @@
     },
     {
       "slug": "canonical-metrics-singular-k3-moduli",
-      "significance": "On the specified K3 moduli spaces with twice-primitive Mukai vector, the harmonic metric from gauge theory agrees with the canonical singular Ricci-flat metric. The theorem identifies its tangent cones and gives a quadratic approximation to them. This comparison also supplies a geometric input to the L² Hodge theorem at rank 6."
+      "significance": "On the specified K3 moduli spaces with twice-primitive Mukai vector, the harmonic metric from gauge theory agrees with the canonical singular Ricci-flat metric. The theorem identifies its tangent cones and gives a quadratic approximation to them. This comparison also supplies a geometric input to the L² Hodge theorem for singular K3 moduli spaces."
     }
-  ],
-  "comparison": {
-    "since": "2026-11-12",
-    "note": "Atiyah–Floer I remains first. The toric Fano paper enters at 2 and the acyclic-quiver flow paper at 5. Two other additions since the previous ranking are the LLV algebra paper at 6 and the Uhlenbeck boundary paper at 8. The six returning papers retain their relative order. The closest calls are at positions 8–10."
-  }
+  ]
 }
