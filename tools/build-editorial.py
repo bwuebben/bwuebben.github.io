@@ -408,8 +408,8 @@ def build_mathematics_ranking():
 </li>''')
     date = datetime.fromisoformat(ranking["as_of"]).date()
     title = "Selected papers in mathematics"
-    intro = ("These papers are central to my mathematical work. I chose them for the questions "
-             "they address and for what their results make it possible to prove or compute.")
+    intro = ("I’ve chosen these papers from my own work for the questions they address "
+             "and for what their results make it possible to prove or compute.")
     body = f'''<header class="ranking-heading">
   <div class="ranking-meta"><a href="/papers/"><span aria-hidden="true">← </span>All papers</a><time datetime="{date}">{date:%-d %B %Y}</time></div>
   <div class="ranking-intro"><h1>{title}</h1>
