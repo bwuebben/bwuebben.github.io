@@ -9,7 +9,7 @@
       "orcid": "https://orcid.org/0009-0002-4588-3284"
     }
   ],
-  "label": "Stability and Geometric Degeneration · Paper 12",
+  "label": "Categorical Kähler Geometry",
   "status": "Preprint",
   "publication_date": "2026-11-04",
   "revision_date": null,
@@ -33,16 +33,20 @@
   ],
   "related": [
     {
-      "label": "Stability & Degeneration research guide",
-      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+      "label": "Non-Archimedean harmonic paths",
+      "url": "https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/#harmonic-paths"
     },
     {
       "label": "Mass increase and acyclic cancellation for phase flows on quiver complexes",
       "url": "https://bwuebben.github.io/papers/mass-increase-acyclic-cancellation/"
     },
     {
-      "label": "Categorical Kähler Geometry guide",
-      "url": "https://bwuebben.github.io/research/geometry/categorical-kahler-geometry/"
+      "label": "Stability & Degeneration research guide",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/"
+    },
+    {
+      "label": "Paper 12 in the Stability & Degeneration atlas",
+      "url": "https://bwuebben.github.io/research/geometry/quantitative-moduli/atlas/#paper-guide-12"
     }
   ],
   "verified_on": "2026-11-04",

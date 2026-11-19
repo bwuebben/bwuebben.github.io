@@ -172,5 +172,11 @@
   $('#evidence-dialog').addEventListener('click',e=>{if(e.target===$('#evidence-dialog')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close();}});
   $('#download-ranking').addEventListener('click',()=>{const lines=['Stability & Degeneration — Editorial Ranking','Snapshot: '+D.asOf,'',D.method,'',...ordered().flatMap(p=>[`${p.rank}. Paper ${p.id} — ${p.title}`,p.rationale,'Question: '+p.explanation.question,'Result: '+p.explanation.result,'Limits: '+p.explanation.limits,'Read: https://bwuebben.github.io'+p.page,''])];const url=URL.createObjectURL(new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='stability-degeneration-ranking.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
   const initial=location.hash.match(/^#paper-(\d+)$/);if(initial&&byId.has(Number(initial[1])))state.selected=Number(initial[1]);
+  const guideCard=document.getElementById(location.hash.slice(1));
+  if(guideCard?.matches('[data-guide-paper]')){
+    state.selected=Number(guideCard.dataset.guidePaper);
+    state.view='papers';
+  }
   render();
+  if(state.view==='papers')guideCard.scrollIntoView();
 })();
