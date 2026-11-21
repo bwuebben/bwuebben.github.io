@@ -288,14 +288,19 @@ SUBGUIDES={
            ("Singular graded limits","singular-graded-limits",["singular-hym-metric-growth","point-defects-hym-flow"]),
            ("Categorical phase flows","categorical-phase-flows",["mass-increase-acyclic-cancellation"])]),
    dict(slug="categorical-kahler-geometry",name="Categorical Kähler Geometry",short="Categorical Kähler Geometry",
-        question="What does a metric remember about a complex?",
-        intro="A representation of a quiver assigns vector spaces to vertices and maps to arrows. Letting the Hermitian metrics on these spaces evolve reveals which subrepresentations destabilize it. For a complex, the differential changes the metric flow even on summands that vanish in cohomology. Over a Novikov field one can prescribe boundary norms and ask whether a harmonic path realizes them.",
+        question="Categorical Kähler geometry on quivers",
+        intro="The minimizing flow on a finite acyclic quiver recovers the Harder–Narasimhan filtration. Over a Novikov field, harmonic paths realize prescribed boundary norms in the A₂ honeycomb case.",
+        intro_paragraphs=["Haiden, Katzarkov, Kontsevich and Pandit proposed studying stability by evolving Hermitian metrics. I study their flow on quiver representations, diagrams of vector spaces and linear maps, and on complexes of these diagrams.",
+                          "For every nonzero representation of a finite acyclic quiver, the rates at which vectors shrink recover its Harder–Narasimhan filtration. On certain complexes mass can rise while the acyclic part decays. Over a Novikov field, I construct harmonic paths from boundary norms in the A₂ honeycomb case."],
+        entry_links=[("phase-flow-acyclic-quivers","Read the filtration theorem"),
+                     ("harmonic-paths-and-honeycombs","Read the honeycomb theorem")],
         image="geometry",hero_fragment="categorical-kahler-figure",stem="categorical-kahler-guide",
         section="categorical-kahler-geometry",overview="For stability walls, equivariant quantum geometry and related research, see the",
-        groups=[("Cancellation and convergence","cancellation",["phase-flow-convergence-kronecker"]),
-                ("A potential on complexes","potential",["kempf-ness-function-quiver-complexes"]),
-                ("Stability filtrations","filtration",["phase-flow-acyclic-quivers"]),
-                ("Non-Archimedean harmonic paths","harmonic-paths",["harmonic-paths-and-honeycombs"])])],
+        companion_slugs={"mass-increase-acyclic-cancellation"},
+        series_starts={"related-work":11,"filtration":1,"harmonic-paths":12},
+        groups=[("Precursor · Stability & Degeneration","related-work",["mass-increase-acyclic-cancellation"]),
+                ("Quiver-flow trilogy","filtration",["phase-flow-convergence-kronecker","kempf-ness-function-quiver-complexes","phase-flow-acyclic-quivers"]),
+                ("Harmonic paths · Paper 12 in the degeneration atlas","harmonic-paths",["harmonic-paths-and-honeycombs"])])],
  "topology":[dict(slug="atiyah-floer",name="Atiyah–Floer theory: from isomorphisms to functoriality",short="Atiyah–Floer theory",
    question="When two theories share their invariants, do they share their maps?",
    intro="The Atiyah–Floer conjecture predicts that two Floer theories of a three-manifold agree: one counts instantons on a four-dimensional cylinder, the other counts holomorphic curves in a moduli space of flat connections on a splitting surface. Daemi, Fukaya and Lipyanskiy proved an isomorphism of this kind for framed instanton homology. The papers collected here ask what lies beyond the isomorphism of groups: whether the comparison respects the maps that four-dimensional cobordisms induce, with which signs, and in which orientation conventions.",
@@ -336,7 +341,7 @@ def paper_contexts():
         for sg in SUBGUIDES.get(p["slug"],[]):
             for _,_,slugs in sg["groups"]:
                 for slug in slugs:
-                    if slug in by_slug:
+                    if slug in by_slug and slug not in sg.get("companion_slugs", ()):
                         result[slug]=dict(guide=p["name"],url=f'/research/{p["slug"]}/{sg["slug"]}/',section=sg["name"],status=sections[sg["section"]]["status"])
     assert set(result)=={x["slug"] for x in papers},"Every paper needs one home guide"
     return result
@@ -532,6 +537,8 @@ def build_subguides():
             hero_art=(ROOT/f'content/{sg["hero_fragment"]}.html').read_text() if sg.get("hero_fragment") else f'<img src="/assets/illustrations/{sg["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(sg["short"])}">'
             subtitle=f'<p class="small">{E(sg["subtitle"])}</p>' if sg.get("subtitle") else ''
             intro_html="".join(f'<p class="intro">{E(paragraph)}</p>' for paragraph in sg.get("intro_paragraphs",[sg["intro"]]))
+            if sg.get("entry_links"):
+                intro_html+='<div class="entry-links">'+''.join(link(f'/papers/{slug}/',E(label)) for slug,label in sg["entry_links"])+'</div>'
             body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1>{subtitle}{intro_html}</div>{hero_art}</header>'''
             if sg.get("lead_section"):
                 lead=re.match(r'\s*(<section\b[^>]*\bid="'+re.escape(sg["lead_section"])+r'"[^>]*>.*?</section>)',text,re.S)
@@ -545,10 +552,11 @@ def build_subguides():
             body+=f'<section class="section-block" id="manuscripts"><p class="kicker">{len(slugs)} manuscripts · Reading order</p><h2>The manuscripts.</h2>'
             i=0
             for label,anchor,group in sg["groups"]:
+                # Some reading lists bring together papers numbered in different series.
+                start=sg.get("series_starts",{}).get(anchor,i+1)
                 count=f'{len(group)} manuscript'+('s' if len(group)>1 else '')
-                body+=f'<p class="paper-group">{E(label)} · {count}<a href="#{anchor}">The section ↑</a></p><ol class="program-papers" start="{i+1}">'
-                for slug in group:
-                    i+=1
+                body+=f'<p class="paper-group">{E(label)} · {count}<a href="#{anchor}">The section ↑</a></p><ol class="program-papers" start="{start}">'
+                for i,slug in enumerate(group,start):
                     body+=manuscript_item(i,slug)
                 body+='</ol>'
             overview=sg.get("overview","The subject overview, with the knot papers and the four-manifold problems, is the")
