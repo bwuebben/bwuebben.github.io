@@ -190,12 +190,13 @@ def render(p, template, css_version, context):
         structured['encoding'] = {'@type': 'MediaObject', 'contentUrl': canonical + 'paper.pdf', 'encodingFormat': 'application/pdf'}
     if p.get('citation_doi'):
         structured['identifier'] = p['citation_doi']
+    series_line = f'      <p class="paper-series-label">{esc(p["label"])}</p>\n' if p["label"] else ''
     page = template.substitute(
         title=esc(p['title']), author_names=esc(author_names), canonical=canonical,
         favicon=(ROOT / 'templates/favicon.html').read_text().strip(),
         description=esc(f'{p["title"]}. Research by {author_names}. Full abstract, manuscript, and citation.'),
         citation_meta=citation_meta, structured_data=json.dumps(structured, ensure_ascii=False).replace('</', '<\\/'),
-        paper_css_version=css_version, catalogue_anchor=esc(p['catalogue_anchor']), label=esc(p['label']),
+        paper_css_version=css_version, catalogue_anchor=esc(p['catalogue_anchor']), series_line=series_line,
         authors=authors, dates=dates, read_link=read_link, abstract_html=p['abstract_html'],
         status_note=f'<p class="paper-status-note">{esc(p["status_note"])}</p>' if p.get('status_note') else '',
         resources=links, citation_status=esc(p['status']), year=year,
