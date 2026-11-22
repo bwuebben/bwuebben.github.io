@@ -12,13 +12,13 @@
   "label": "Universal curve counting",
   "status": "Preprint",
   "publication_date": "2026-10-28",
-  "revision_date": "2026-10-28",
+  "revision_date": "2026-11-21",
   "archive": {
     "name": "Zenodo",
     "doi": "10.5281/zenodo.23750048",
     "url": "https://doi.org/10.5281/zenodo.23750048",
-    "deposited_at": "2026-10-29T00:52:11.498760+00:00",
-    "version_doi": "10.5281/zenodo.23750305"
+    "deposited_at": "2026-11-22T04:07:48.052537+00:00",
+    "version_doi": "10.5281/zenodo.24433174"
   },
   "citation_doi": "10.5281/zenodo.23750048",
   "resources": [
@@ -45,16 +45,16 @@
       "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
     }
   ],
-  "verified_on": "2026-10-28",
-  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/e46e7f672c525a97577787709759df18fe15f58a/paper2/sections/abstract.tex",
+  "verified_on": "2026-11-21",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/983b143e190f88c22e5694c0b9fa279d2493cd06/paper2/sections/abstract.tex",
   "abstract_html": "<p>We construct a smooth projective Calabi–Yau threefold with torsion-free second homology whose product expansion in Pardon's scalar equivariant local-curve generators has a nonintegral exponent. The genus-ten exponent at three times a primitive class has fractional part <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, disproving the integer-exponent assertion for these generators. The obstruction comes from an exact degree-three calculation in the local Gromov–Witten Frobenius algebra. Comparison with the integer elementary expansion of Ionel–Parker gives a necessary divisibility condition on the primitive genus-three count. We realize a count violating this condition on a first Hirzebruch surface in a compact toric hypersurface. A filtration by powers of the surface ideal controls transverse thickenings and disconnected products; the stable-pair moduli space at minimal Euler characteristic is a projective space of dimension thirteen, with virtual count <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mo>−</mo><mn>14</mn></math>. We also prove integrality in classes of divisibility at most two. The counterexample concerns the scalar local factors; the integer elementary expansion is an input to its proof.</p>",
   "pdf": {
-    "sha256": "09b2fe2c1afe71091df4a14fc1d9fa6b566dd8ce49a665ed1b941dfadc2c8967",
-    "size_bytes": 336972,
+    "sha256": "dca3144b08b4566293ae7ff0e807eff8ffff0cb60c12025e084a2ba10a6fa9e8",
+    "size_bytes": 337065,
     "pages": 13,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/e46e7f672c525a97577787709759df18fe15f58a/paper2/main.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/983b143e190f88c22e5694c0b9fa279d2493cd06/paper2/main.pdf",
     "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/paper2/main.pdf",
-    "source_commit": "e46e7f672c525a97577787709759df18fe15f58a",
+    "source_commit": "983b143e190f88c22e5694c0b9fa279d2493cd06",
     "source_repository": "https://github.com/bwuebben/universal-curve-counting",
     "source_path": "paper2/main.pdf"
   },
@@ -64,6 +64,12 @@
       "doi": "10.5281/zenodo.23750049",
       "url": "https://zenodo.org/records/23750049",
       "deposited_at": "2026-10-29T00:28:01.472434+00:00"
+    },
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.23750305",
+      "url": "https://doi.org/10.5281/zenodo.23750305",
+      "deposited_at": "2026-10-29T00:52:11.498760+00:00"
     }
   ]
 }

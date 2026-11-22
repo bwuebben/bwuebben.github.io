@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-21",
+    "title": "DOI references in the universal curve-counting papers",
+    "url": "/research/calabi-yau/#universal-curve-counting",
+    "description": "The bibliographies of the conifold specialization and integrality counterexample papers now link to the Zenodo records for the companion and background preprints."
+  },
+  {
+    "date": "2026-11-21",
     "title": "Antidiagonal local curves and integral exponents in universal curve counting",
     "url": "/papers/antidiagonal-universal-curve-counting/",
     "description": "Under Pardon’s Gromov–Witten evaluation for analytic families, balanced antidiagonal local curves give integral product exponents for smooth projective Calabi–Yau threefolds with torsion-free second homology. The exponents are the Ionel–Parker elementary-cluster integers. On the compact scalar counterexample, the two choices of local factors yield different exponents for the same curve class."

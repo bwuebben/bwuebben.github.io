@@ -12,13 +12,13 @@
   "label": "Universal curve counting",
   "status": "Preprint",
   "publication_date": "2026-10-28",
-  "revision_date": "2026-10-28",
+  "revision_date": "2026-11-21",
   "archive": {
     "name": "Zenodo",
     "doi": "10.5281/zenodo.23750046",
     "url": "https://doi.org/10.5281/zenodo.23750046",
-    "deposited_at": "2026-10-29T00:52:09.640936+00:00",
-    "version_doi": "10.5281/zenodo.23750304"
+    "deposited_at": "2026-11-22T04:07:46.199606+00:00",
+    "version_doi": "10.5281/zenodo.24433173"
   },
   "citation_doi": "10.5281/zenodo.23750046",
   "resources": [
@@ -53,16 +53,16 @@
       "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
     }
   ],
-  "verified_on": "2026-10-28",
-  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/e46e7f672c525a97577787709759df18fe15f58a/paper/sections/abstract.tex",
+  "verified_on": "2026-11-21",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/983b143e190f88c22e5694c0b9fa279d2493cd06/paper/sections/abstract.tex",
   "abstract_html": "<p>For projective conifold transitions of Calabi–Yau threefolds, we lift the numerical degeneration formula to Pardon's rational universal curve-counting algebra. We assume a smoothing with smooth algebraic total space and torsion-free second homology at both endpoints. After removing the exceptional local-curve factors, effective lifts to the common blow-up give a support bound that makes specialization finite in every bounded target degree. We carry out this specialization completely in the primitive line class of a plane in the smoothing of a compact four-node transition. The source calculation uses an Euler-characteristic bound for pure curves on two intersecting rational surfaces, allowing arbitrary multiple exceptional components. Together with a finite genus-zero mirror calculation, this bound determines all 37 candidate universal coefficients: eight are nonzero, and their sum agrees with an independent stable-pair calculation on a plane in the smoothing. We also determine the smoothing coefficient in twice the line class. If the resolution has integral product exponents, then so does the smoothing.</p>",
   "pdf": {
-    "sha256": "87f67b640c2bad3c295517fe680092f318cdeb163fcf7b6cf746ae0a57628692",
-    "size_bytes": 375652,
+    "sha256": "1dd5227a4c3d5e137ca4dae6cd25bb9c3be651c303a7efb496f61a180451fbbc",
+    "size_bytes": 375684,
     "pages": 18,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/e46e7f672c525a97577787709759df18fe15f58a/paper/main.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/983b143e190f88c22e5694c0b9fa279d2493cd06/paper/main.pdf",
     "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/paper/main.pdf",
-    "source_commit": "e46e7f672c525a97577787709759df18fe15f58a",
+    "source_commit": "983b143e190f88c22e5694c0b9fa279d2493cd06",
     "source_repository": "https://github.com/bwuebben/universal-curve-counting",
     "source_path": "paper/main.pdf"
   },
@@ -72,6 +72,12 @@
       "doi": "10.5281/zenodo.23750047",
       "url": "https://zenodo.org/records/23750047",
       "deposited_at": "2026-10-29T00:28:00.454915+00:00"
+    },
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.23750304",
+      "url": "https://doi.org/10.5281/zenodo.23750304",
+      "deposited_at": "2026-10-29T00:52:09.640936+00:00"
     }
   ]
 }
