@@ -10,7 +10,8 @@
   const summaries = document.getElementById('show-summaries');
   const clear = document.getElementById('clear-search');
   const links = Array.from(root.querySelectorAll('[data-field]'));
-  const sections = Array.from(results.querySelectorAll('.catalogue-field'));
+  const sections = Array.from(results.querySelectorAll('[data-field-section]'));
+  const archiveSections = Array.from(results.querySelectorAll('[data-archive]'));
   const fieldNames = Object.fromEntries(data.fields.map(f => [f.id, f.label]));
   const monthFormat = new Intl.DateTimeFormat('en-GB', {month: 'short', year: 'numeric', timeZone: 'UTC'});
   const dayFormat = new Intl.DateTimeFormat('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
@@ -77,21 +78,22 @@
     history[push ? 'pushState' : 'replaceState']({}, '', url);
   }
   function render(changeUrl = false, push = false) {
-    const byOriginalDate = sort.value === 'original';
+    const byArchive = sort.value === 'archive';
+    const byOriginalDate = byArchive || sort.value === 'original';
     const dateKey = byOriginalDate ? 'publication_date' : 'date';
     const tokens = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
-    let visible = records.filter(p => (field === 'all' || p.field === field) && tokens.every(t => p.text.includes(t)));
+    const visible = records.filter(p => (field === 'all' || p.field === field) && tokens.every(t => p.text.includes(t)));
     const shown = new Set(visible);
     for (const paper of records) {
+      paper.container.append(paper.row);
       paper.row.hidden = !shown.has(paper);
       paper.subject.hidden = sort.value === 'programme';
       paper.time.dateTime = paper[dateKey];
       const prefix = byOriginalDate ? 'Original ' : (paper.revised ? 'Revised ' : '');
       paper.time.textContent = prefix + formatDate(paper[dateKey]);
     }
+    flat.hidden = sort.value === 'programme' || byArchive || !visible.length;
     if (sort.value === 'programme') {
-      for (const paper of records) paper.container.append(paper.row);
-      flat.hidden = true;
       for (const section of sections) {
         section.hidden = !visible.some(p => p.field === section.dataset.fieldSection);
         for (const list of section.querySelectorAll('.entries')) {
@@ -106,10 +108,13 @@
       } else {
         visible.sort((a, b) => b[dateKey].localeCompare(a[dateKey]) || a.index - b.index);
       }
-      for (const paper of records) paper.container.append(paper.row);
-      flat.replaceChildren(...visible.map(p => p.row));
-      flat.hidden = !visible.length;
+      if (!flat.hidden) flat.replaceChildren(...visible.map(p => p.row));
       for (const section of sections) section.hidden = true;
+    }
+    for (const section of archiveSections) {
+      const papers = byArchive ? visible.filter(p => p.archive === section.dataset.archive) : [];
+      section.hidden = !papers.length;
+      if (papers.length) section.querySelector('.entries').append(...papers.map(p => p.row));
     }
     for (const link of links) {
       if (link.dataset.field === field) link.setAttribute('aria-current', 'true');
