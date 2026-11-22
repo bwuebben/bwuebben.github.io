@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>DOI references in the finite-Planck Higgs-branch paper</title>
+      <link>https://bwuebben.github.io/papers/compact-higgs-finite-planck/</link>
+      <guid>https://bwuebben.github.io/papers/compact-higgs-finite-planck/#update-2026-11-22</guid>
+      <description>References [3] and [4] in the finite-Planck Higgs-branch paper now link to the Zenodo records for the companion preprints on global Higgsing constraints and bulk quantum couplings.</description>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Antidiagonal factorization in full integral homology</title>
       <link>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/</link>
       <guid>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/#update-2026-11-22</guid>

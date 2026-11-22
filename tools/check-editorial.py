@@ -39,6 +39,9 @@ for _slug in ("exceptional-cycles", "integral-reconstruction"):
 REVISED_METADATA["heterotic-k3-enhancement"] = {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 # Authorized Paper 22 proof and exposition revision; entry postdates BASE.
 REVISED_METADATA["cy-conifold-hodge-spectrum"] = {"abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
+# Paper 4 now records its original release day and its bibliography revision.
+AUTHORIZED_CATALOGUE_UPDATES.add("compact-higgs-finite-planck")
+REVISED_METADATA["compact-higgs-finite-planck"] = {"abstract_source", "pdf", "publication_date", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)

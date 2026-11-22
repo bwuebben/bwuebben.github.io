@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-22",
+    "title": "DOI references in the finite-Planck Higgs-branch paper",
+    "url": "/papers/compact-higgs-finite-planck/",
+    "description": "References [3] and [4] in the finite-Planck Higgs-branch paper now link to the Zenodo records for the companion preprints on global Higgsing constraints and bulk quantum couplings."
+  },
+  {
+    "date": "2026-11-22",
     "title": "Antidiagonal factorization in full integral homology",
     "url": "/papers/antidiagonal-universal-curve-counting/",
     "description": "Assuming Pardon’s Gromov–Witten evaluation for analytic families, the universal series of every smooth projective Calabi–Yau threefold factors with integral exponents indexed by effective classes in full integral homology. The elementary-cluster evaluation determines the compatible universal factor. Among split local curves with the antidiagonal action, agreement with the cluster in degree two forces the two normal line bundles to have equal degree."
