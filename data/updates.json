@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-21",
+    "title": "Antidiagonal local curves and integral exponents in universal curve counting",
+    "url": "/papers/antidiagonal-universal-curve-counting/",
+    "description": "Under Pardon’s Gromov–Witten evaluation for analytic families, balanced antidiagonal local curves give integral product exponents for smooth projective Calabi–Yau threefolds with torsion-free second homology. The exponents are the Ionel–Parker elementary-cluster integers. On the compact scalar counterexample, the two choices of local factors yield different exponents for the same curve class."
+  },
+  {
+    "date": "2026-11-21",
     "title": "Title-page correction for Fan symmetries and exceptional collections",
     "url": "/papers/fan-symmetries-exceptional-collections/",
     "description": "The series designation has been removed from the title page of Fan symmetries and exceptional collections on toric Fano varieties. The original manuscript date is 17 November 2026."

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Antidiagonal local curves and integral exponents in universal curve counting</title>
+      <link>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/</link>
+      <guid>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/#update-2026-11-21</guid>
+      <description>Under Pardon’s Gromov–Witten evaluation for analytic families, balanced antidiagonal local curves give integral product exponents for smooth projective Calabi–Yau threefolds with torsion-free second homology. The exponents are the Ionel–Parker elementary-cluster integers. On the compact scalar counterexample, the two choices of local factors yield different exponents for the same curve class.</description>
+      <pubDate>Sat, 21 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Title-page correction for Fan symmetries and exceptional collections</title>
       <link>https://bwuebben.github.io/papers/fan-symmetries-exceptional-collections/</link>
       <guid>https://bwuebben.github.io/papers/fan-symmetries-exceptional-collections/#update-2026-11-21</guid>
