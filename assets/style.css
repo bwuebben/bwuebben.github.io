@@ -144,6 +144,13 @@ a:focus-visible,
   gap: 0 1.75rem;
 }
 
+:is(.editorial, .writing-page) .site-header { max-width: 76rem; }
+:is(.editorial, .writing-page) .site-nav > ul { column-gap: 2rem; }
+
+@media (max-width: 620px) {
+  :is(.editorial, .writing-page) .site-nav > ul { column-gap: 1.25rem; }
+}
+
 .site-nav a,
 .site-nav summary {
   display: block;
@@ -221,11 +228,15 @@ a:focus-visible,
 }
 @media (max-width: 34rem) {
   .site-nav { position: relative; }
-  .nav-group.has-sections { position: static; }
-  .nav-group.has-sections .nav-submenu {
+  .site-nav .nav-group { position: static; }
+  .site-nav .nav-group .nav-submenu {
+    left: 0;
     right: 0;
     width: auto;
     max-width: none;
+    max-height: calc(100dvh - 10rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 }
 

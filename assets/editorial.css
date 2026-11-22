@@ -1,7 +1,5 @@
 /* Editorial pages. Existing essays, paper records and laboratories retain their layouts. */
 .editorial { --green:#40685b; --gold:#a17b44; }
-.editorial .site-header { max-width:76rem; }
-.editorial .site-nav > ul { gap:0 2rem; }
 .edition { max-width:76rem; margin:auto; padding:4rem 2rem 3rem; }
 .edition h1,.edition h2,.edition h3 { font-family:var(--serif); font-weight:400; color:var(--ink); letter-spacing:-.035em; text-transform:none; border:0; padding:0; }
 .edition h1 { font-size:clamp(2.7rem,5.8vw,5.25rem); line-height:1.04; margin:.6rem 0 1.5rem; text-wrap:balance; }
@@ -221,7 +219,7 @@
 @media(max-width:850px) { .research-grid { grid-template-columns:1fr 1fr; } .feature-copy { padding:2rem; } .program-hero { gap:2rem; } .about-grid { gap:3rem; } }
 @media(max-width:760px) { .stage-table thead { display:none; } .stage-table tr { display:block; padding:.8rem 0; border-bottom:1px solid var(--rule); } .stage-table td { display:block; border:0; padding:.15rem 0; width:auto!important; } }
 @media(max-width:620px) {
- .edition { padding:2.5rem 1.4rem; } .editorial .site-nav > ul { gap:0 1.25rem; }
+ .edition { padding:2.5rem 1.4rem; }
  .home-intro { padding-bottom:2.5rem; } .home-intro h1 { font-size:2.8rem; }
  .home-intro figure { width:30%; max-width:7rem; margin-left:1.25rem; margin-bottom:.75rem; }
  .feature { grid-template-columns:1fr; margin-bottom:3.5rem; } .feature-art { min-height:0; order:-1; } .feature-art img { max-height:15rem; } .feature-copy { padding:1.5rem 1.5rem 2rem; }

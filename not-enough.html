@@ -18,7 +18,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <!-- site:styles -->
 <link rel="stylesheet" href="assets/theme.css?v=ea3dc6e4506f">
-<link rel="stylesheet" href="assets/style.css?v=fff82036387e">
+<link rel="stylesheet" href="assets/style.css?v=cf1733654c4a">
 <meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16161a" media="(prefers-color-scheme: dark)">
 <!-- /site:styles -->
@@ -52,7 +52,8 @@ a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transp
 a:hover { color: var(--accent-lit); border-bottom-color: currentColor; }
 a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-/* shared navigation (mirrors the site stylesheet) */
+/* Use these navigation defaults when the essay is opened without the site styles. */
+@layer standalone-navigation {
 .site-header { max-width: 44rem; margin: 0 auto; padding: 1.5rem 1.5rem 0; }
 .site-nav { font-family: var(--sans); font-size: .875rem; line-height: 1.4; border-bottom: 1px solid var(--rule); }
 .site-nav ul { list-style: none; margin: 0; padding: 0; }
@@ -67,6 +68,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visibl
 .site-nav .nav-submenu { position: absolute; right: 0; top: 100%; z-index: 5; width: 11rem; padding: .35rem 0; border: 1px solid var(--rule); background: var(--bg); box-shadow: 0 6px 16px rgba(20,18,15,.08); }
 .nav-submenu a { padding: .8rem 1rem; border-bottom: 0; }
 .nav-submenu a:hover { background: var(--bg-panel); }
+}
 .skip-link { position: absolute; left: 1rem; top: -10rem; padding: .5rem .75rem; background: var(--bg); font-family: var(--sans); z-index: 6; }
 .skip-link:focus { top: .5rem; }
 
@@ -198,7 +200,7 @@ input[type=range] { accent-color: var(--accent); width: 100%; }
 }
 </style>
 </head>
-<body>
+<body class="writing-page">
 <!-- site:navigation -->
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
