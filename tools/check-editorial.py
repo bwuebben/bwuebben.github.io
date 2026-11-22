@@ -110,6 +110,11 @@ old_papers=json.loads(subprocess.check_output(["git","show",BASE+":data/papers.j
 for p in old_papers:
  current=by_slug[p["slug"]]
  allowed=REVISED_METADATA.get(p["slug"],set()) | {"related"}
+ if p["slug"]=="exotic-four-manifolds":
+  # arXiv:2608.17267v1 gives the original date. The baseline dated the working PDF.
+  p["revision_date"]=p["publication_date"]
+  p["publication_date"]="2026-08-18"
+  allowed.add("verified_on")
  if (p["archive"] or {}).get("name")=="Zenodo" and current["archive"].get("version_doi")==p["archive"]["doi"]:
   # Compare edition provenance and all other baseline fields through the citation migration.
   assert p["archive"]["url"]=="https://zenodo.org/records/"+p["archive"]["doi"].rsplit(".",1)[1]
