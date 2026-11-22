@@ -74,6 +74,7 @@ for program in programs:
             metadata['papers'].append({
                 'anchor': p['catalogue_anchor'], 'slug': slug, 'field': key,
                 'title': p['catalogue_title'], 'series': group_name or labels[key],
+                'publication_date': p['publication_date'],
                 'date': p.get('revision_date') or p['publication_date'],
                 'revised': bool(p.get('revision_date')), 'status': p['status'],
                 'read_url': read_url, 'read_label': read_label,
@@ -103,7 +104,7 @@ body = f'''<main id="main" class="wrap paper-browser" tabindex="-1">
 <label class="visually-hidden" for="paper-search">Search papers</label><input id="paper-search" type="search" placeholder="Search titles, subjects or summaries" autocomplete="off"><button type="button" id="clear-search" hidden aria-label="Clear search">×</button></div>
 <div class="catalogue-toolbar"><p id="catalogue-count" role="status" aria-live="polite">All subjects · {len(papers)} papers</p>
 <div class="catalogue-options"><label class="catalogue-summary-toggle"><input type="checkbox" id="show-summaries"> Show summaries</label>
-<label class="visually-hidden" for="catalogue-sort">Sort papers</label><select id="catalogue-sort"><option value="programme">By programme</option><option value="newest">Newest version</option><option value="title">Title A–Z</option></select></div></div></div>
+<label class="visually-hidden" for="catalogue-sort">Sort papers</label><select id="catalogue-sort"><option value="programme">By programme</option><option value="original">Original publication date</option><option value="newest">Newest version</option><option value="title">Title A–Z</option></select></div></div></div>
 <div id="catalogue-results">{''.join(sections)}</div>
 <div id="catalogue-empty" hidden><h2>No papers found.</h2><p>Try a broader term or search across all subjects.</p><button type="button" id="reset-catalogue">Reset search and subjects</button></div>
 </div></div><footer class="catalogue-footer"><span>Bernd Johannes Wuebben</span><a href="../research/">Research programmes ↗</a><a href="../about/">About &amp; contact</a></footer>

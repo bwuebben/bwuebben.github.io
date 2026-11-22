@@ -12,6 +12,13 @@
   const links = Array.from(root.querySelectorAll('[data-field]'));
   const sections = Array.from(results.querySelectorAll('.catalogue-field'));
   const fieldNames = Object.fromEntries(data.fields.map(f => [f.id, f.label]));
+  const monthFormat = new Intl.DateTimeFormat('en-GB', {month: 'short', year: 'numeric', timeZone: 'UTC'});
+  const dayFormat = new Intl.DateTimeFormat('en-GB', {day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC'});
+  function formatDate(value) {
+    if (value.length === 4) return value;
+    const format = value.length === 7 ? monthFormat : dayFormat;
+    return format.format(new Date(value));
+  }
   const normalize = text => text.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[–—−-]/g, ' ');
   let field = 'all';
   const records = data.papers.map((paper, index) => {
@@ -21,11 +28,8 @@
     const text = normalize([paper.title, paper.series, fieldNames[paper.field], note.textContent].join(' '));
     const meta = document.createElement('div');
     meta.className = 'record-meta';
-    const date = document.createElement('time');
-    date.dateTime = paper.date;
-    const prettyDate = paper.date.length === 4 ? paper.date : new Intl.DateTimeFormat('en-GB', {day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(paper.date.length === 7 ? paper.date + '-01' : paper.date));
-    date.textContent = (paper.revised ? 'Revised ' : '') + prettyDate;
-    meta.append(date);
+    const time = document.createElement('time');
+    meta.append(time);
     if (paper.status !== 'Preprint') {
       const status = document.createElement('span');
       status.className = 'revision-status';
@@ -49,7 +53,7 @@
     summary.textContent = 'Summary & links';
     detail.append(summary, note);
     row.append(meta, actions, detail);
-    return {...paper, row, container, text, index, detail, subject};
+    return {...paper, row, container, text, index, detail, subject, time};
   });
   const flat = document.createElement('ul');
   flat.className = 'entries';
@@ -60,7 +64,8 @@
     const params = new URLSearchParams(location.search);
     field = fieldNames[params.get('subject')] ? params.get('subject') : 'all';
     search.value = params.get('q') || '';
-    sort.value = ['newest','title'].includes(params.get('sort')) ? params.get('sort') : 'programme';
+    sort.value = params.get('sort') || 'programme';
+    if (sort.selectedIndex < 0) sort.value = 'programme';
   }
   function updateUrl(push) {
     const url = new URL(location.href);
@@ -72,12 +77,17 @@
     history[push ? 'pushState' : 'replaceState']({}, '', url);
   }
   function render(changeUrl = false, push = false) {
+    const byOriginalDate = sort.value === 'original';
+    const dateKey = byOriginalDate ? 'publication_date' : 'date';
     const tokens = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
     let visible = records.filter(p => (field === 'all' || p.field === field) && tokens.every(t => p.text.includes(t)));
     const shown = new Set(visible);
     for (const paper of records) {
       paper.row.hidden = !shown.has(paper);
       paper.subject.hidden = sort.value === 'programme';
+      paper.time.dateTime = paper[dateKey];
+      const prefix = byOriginalDate ? 'Original ' : (paper.revised ? 'Revised ' : '');
+      paper.time.textContent = prefix + formatDate(paper[dateKey]);
     }
     if (sort.value === 'programme') {
       for (const paper of records) paper.container.append(paper.row);
@@ -91,7 +101,11 @@
         }
       }
     } else {
-      visible.sort(sort.value === 'newest' ? (a,b) => b.date.localeCompare(a.date) || a.index-b.index : (a,b) => a.title.localeCompare(b.title));
+      if (sort.value === 'title') {
+        visible.sort((a, b) => a.title.localeCompare(b.title));
+      } else {
+        visible.sort((a, b) => b[dateKey].localeCompare(a[dateKey]) || a.index - b.index);
+      }
       for (const paper of records) paper.container.append(paper.row);
       flat.replaceChildren(...visible.map(p => p.row));
       flat.hidden = !visible.length;
