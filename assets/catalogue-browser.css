@@ -1,5 +1,4 @@
 /* Compact catalogue. All rules are confined to the Papers page. */
-.catalogue .site-header { max-width:76rem; }
 .catalogue .paper-browser { max-width:76rem; padding:3.4rem 2rem 3rem; }
 .paper-browser .catalogue-intro { display:flex; justify-content:space-between; align-items:center; gap:3rem; margin-bottom:3.4rem; }
 .paper-browser .catalogue-kicker { font:500 .66rem/1.6 var(--sans); letter-spacing:.17em; text-transform:uppercase; color:var(--ink-soft); margin:0 0 .75rem; }

@@ -43,6 +43,14 @@ with `python3 tools/integrate-site.py` and `python3 tools/update-papers.py`, whi
 keep the public sitemap and paper pages current. The latter also rebuilds the
 compact catalogue through `tools/build-compact-catalogue.py`.
 
+The shared header gets its width, spacing and dropdown layout from
+`assets/style.css`. Page-specific styles belong on the content beneath it.
+To check header alignment, serve the site locally and run
+`node tools/check-site-header.cjs http://127.0.0.1:8000` with Playwright and
+Chromium available. Set `BROWSER_CHANNEL=chrome` to use installed Chrome.
+The check scans the sitemap and compares each distinct page layout with the
+homepage, including the open dropdowns at desktop and phone widths.
+
 The Atiyah–Floer reading route includes Papers I–III: comparison over
 𝔽₂, integral transported orientations, and the identification and
 normalization of the usual maps. Paper III has its own abstract page,
