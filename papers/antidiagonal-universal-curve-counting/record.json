@@ -16,8 +16,8 @@
     "name": "Zenodo",
     "doi": "10.5281/zenodo.24432700",
     "url": "https://doi.org/10.5281/zenodo.24432700",
-    "deposited_at": "2026-11-22T03:19:57.547020+00:00",
-    "version_doi": "10.5281/zenodo.24432701"
+    "deposited_at": "2026-11-22T19:33:07.401366+00:00",
+    "version_doi": "10.5281/zenodo.24447953"
   },
   "citation_doi": "10.5281/zenodo.24432700",
   "resources": [
@@ -44,17 +44,26 @@
       "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
     }
   ],
-  "verified_on": "2026-11-21",
-  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/ae00895d2c8ae2e517f11ed119ecef7d82ed992f/paper3/sections/abstract.tex",
-  "abstract_html": "<p>Assuming Pardon's Gromov–Witten evaluation for analytic families of threefolds, we lift the elementary-cluster expansion to his rational algebra of one-cycles. For each genus we construct a universal local factor from the circle action with opposite weights on the two summands of a balanced local Calabi–Yau curve. For every smooth projective Calabi–Yau threefold with torsion-free second homology, the universal curve-counting series is a unique product of these factors with integer exponents. The exponents are the elementary-cluster coefficients of Ionel and Parker. To construct the factors, we project a cycle onto the two line summands and use the resulting symmetric functions to isolate each multiple of the zero section. The associated compactly supported classes respect addition of cycles and multiplication by positive integers, and their Gromov–Witten evaluations are the local series of Bryan and Pandharipande. The corresponding stable-pair evaluation gives a second proof of exponent integrality.</p>",
+  "verified_on": "2026-11-22",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/915dfba450e1c8eb5d616662b48da6b7282ee31a/paper3/sections/abstract.tex",
+  "abstract_html": "<p>Assuming Pardon's Gromov–Witten evaluation for analytic families of threefolds, we lift the elementary-cluster expansion of Ionel and Parker to his rational algebra of one-cycles. For every smooth projective Calabi–Yau threefold the universal series factors uniquely with the elementary-cluster integers as exponents, indexed by effective classes in integral homology. We construct the genus-<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi></math> factor using the volume-preserving circle in the torus that scales the two line summands of a balanced local curve. Symmetric functions of the two fiber projections isolate the multiples of the zero section and give compactly supported classes compatible with addition of cycles and multiplication by positive integers. Among series with these compatibilities, the local Gromov–Witten series of an elementary cluster determines the universal factor. Among split local Calabi–Yau curves with the antidiagonal action, agreement with the elementary cluster in degree two already forces the splitting degrees to be balanced.</p>",
   "pdf": {
-    "sha256": "cb197837bea1731ef44018886ec4cee4d136b9828d612c247e21734fe8e98015",
-    "size_bytes": 290381,
-    "pages": 9,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/ae00895d2c8ae2e517f11ed119ecef7d82ed992f/paper3/main.pdf",
+    "sha256": "9b132e7bb87206c6a72a9099eca6dc260029745f90788089b845d9e58a6bbaa3",
+    "size_bytes": 304775,
+    "pages": 10,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/915dfba450e1c8eb5d616662b48da6b7282ee31a/paper3/main.pdf",
     "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/paper3/main.pdf",
-    "source_commit": "ae00895d2c8ae2e517f11ed119ecef7d82ed992f",
+    "source_commit": "915dfba450e1c8eb5d616662b48da6b7282ee31a",
     "source_repository": "https://github.com/bwuebben/universal-curve-counting",
     "source_path": "paper3/main.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.24432701",
+      "url": "https://doi.org/10.5281/zenodo.24432701",
+      "deposited_at": "2026-11-22T03:19:57.547020+00:00"
+    }
+  ],
+  "revision_date": "2026-11-22"
 }

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Antidiagonal factorization in full integral homology</title>
+      <link>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/</link>
+      <guid>https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/#update-2026-11-22</guid>
+      <description>Assuming Pardon’s Gromov–Witten evaluation for analytic families, the universal series of every smooth projective Calabi–Yau threefold factors with integral exponents indexed by effective classes in full integral homology. The elementary-cluster evaluation determines the compatible universal factor. Among split local curves with the antidiagonal action, agreement with the cluster in degree two forces the two normal line bundles to have equal degree.</description>
+      <pubDate>Sun, 22 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>DOI references in the universal curve-counting papers</title>
       <link>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting</link>
       <guid>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting#update-2026-11-21</guid>
