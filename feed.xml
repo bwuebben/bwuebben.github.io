@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>A geometric product formula for universal curve counting</title>
+      <link>https://bwuebben.github.io/papers/geometric-universal-curve-product/</link>
+      <guid>https://bwuebben.github.io/papers/geometric-universal-curve-product/#update-2026-11-23</guid>
+      <description>The universal series of effective curves on a smooth projective Calabi–Yau threefold factors in Pardon’s rational cycle algebra with integer exponents. Deformation identifies the balanced antidiagonal local classes with multiples of elementary curves. Excision gives the exponents as signed elementary-cluster multiplicities, and stable maps of fixed genus detect the classes needed to lift the product to the complex cycle algebra.</description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>DOI references in the finite-Planck Higgs-branch paper</title>
       <link>https://bwuebben.github.io/papers/compact-higgs-finite-planck/</link>
       <guid>https://bwuebben.github.io/papers/compact-higgs-finite-planck/#update-2026-11-22</guid>

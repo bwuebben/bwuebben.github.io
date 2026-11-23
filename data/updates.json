@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-23",
+    "title": "A geometric product formula for universal curve counting",
+    "url": "/papers/geometric-universal-curve-product/",
+    "description": "The universal series of effective curves on a smooth projective Calabi–Yau threefold factors in Pardon’s rational cycle algebra with integer exponents. Deformation identifies the balanced antidiagonal local classes with multiples of elementary curves. Excision gives the exponents as signed elementary-cluster multiplicities, and stable maps of fixed genus detect the classes needed to lift the product to the complex cycle algebra."
+  },
+  {
     "date": "2026-11-22",
     "title": "DOI references in the finite-Planck Higgs-branch paper",
     "url": "/papers/compact-higgs-finite-planck/",
