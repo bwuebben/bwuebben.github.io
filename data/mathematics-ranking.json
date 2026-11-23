@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-18",
+  "as_of": "2026-11-23",
   "papers": [
     {
       "slug": "af-cobordism-i",
@@ -12,6 +12,10 @@
     {
       "slug": "local-hym-reduction",
       "significance": "Near a locally free polystable bundle on a compact Kähler manifold, one model controls the small eigenvalues and the metric on the moduli space. Its estimates retain the full deformation obstructions and remain uniform as stabilizers change or positive spectral scales separate. That makes the model useful across several degeneration problems."
+    },
+    {
+      "slug": "geometric-universal-curve-product",
+      "significance": "For smooth projective Calabi–Yau threefolds with vanishing first and second structure-sheaf cohomology, the universal series factors into balanced antidiagonal local-curve series. The exponents are signed elementary-cluster integers, with only finitely many genera in each integral curve class. The geometric proof establishes the identity in Pardon's rational cycle algebra without assuming a universal Gromov–Witten evaluation on analytic families."
     },
     {
       "slug": "cy-conifold-relations",

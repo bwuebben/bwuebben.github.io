@@ -403,8 +403,8 @@ def build_home():
 def build_mathematics_ranking():
     ranking = json.loads((ROOT / "data/mathematics-ranking.json").read_text())
     slugs = [entry["slug"] for entry in ranking["papers"]]
-    if len(slugs) != 10 or len(set(slugs)) != 10:
-        raise ValueError("The mathematics ranking requires ten distinct papers")
+    if not slugs or len(set(slugs)) != len(slugs):
+        raise ValueError("The mathematics ranking requires a nonempty list of distinct papers")
     rows = []
     for position, entry in enumerate(ranking["papers"], start=1):
         paper = by_slug[entry["slug"]]
