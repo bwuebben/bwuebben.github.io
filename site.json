@@ -50,6 +50,10 @@
           "href": "/research/geometry/categorical-kahler-geometry/"
         },
         {
+          "label": "Universal curve counting",
+          "href": "/research/calabi-yau/universal-curve-counting/"
+        },
+        {
           "label": "Degeneration",
           "href": "/research/geometry/quantitative-moduli/atlas/",
           "heading": "Atlas"

@@ -25,7 +25,7 @@ subject guides, `/explorers/`, `/writing/` and its interactive essays,
 
 The Research Programs menu starts with Overview, followed by the six topic guides
 and the focused programme guides, grouped under Topic guides, Focused guides and Atlas. The Atlas subsection links Degeneration to its interactive paper atlas.
-The focused guides are Atiyah–Floer theory, Stability & Degeneration and Categorical Kähler Geometry. Equivariant Quantum Geometry has its own section and manuscript group in Geometry & moduli. In `site.json`,
+The focused guides are Atiyah–Floer theory, Stability & Degeneration, Categorical Kähler Geometry and Universal curve counting. Equivariant Quantum Geometry has its own section and manuscript group in Geometry & moduli. In `site.json`,
 an optional `heading` on a menu link inserts a section label before that link.
 
 Every public HTML page uses the same ∑ browser-tab icon, defined once in
@@ -502,6 +502,11 @@ Paper 3 is a specialist branch after 2. Its source fragments are
 `content/calabi-yau-reading-guide.html` and
 `content/calabi-yau-physics-companions.html`, rendered by `tools/build-editorial.py`.
 Maintain the reached-component and physical-model qualifications.
+
+The [Universal curve counting guide](research/calabi-yau/universal-curve-counting/)
+gives reading paths through integral generators, conifold specialization and local
+wall crossing. Its source is `content/universal-curve-counting-guide.html`. The
+parent guide keeps the transition examples at `#universal-curve-counting`.
 
 ## Focused guides
 

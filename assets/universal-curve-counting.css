@@ -1,0 +1,27 @@
+.edition .focus > p {
+  max-width: 74ch;
+}
+.curve-weights {
+  margin: 0;
+  padding: clamp(.75rem, 2.5vw, 2rem);
+  background: var(--bg-panel);
+  border-block: 1px solid var(--rule);
+}
+.curve-weights svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  font-family: var(--serif);
+}
+.curve-weights figcaption {
+  margin-top: .75rem;
+  padding-top: .9rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+  font: .87rem/1.6 var(--serif);
+}
+.curve-identity {
+  max-width: 61ch;
+  margin: 1.4rem 0;
+  font-size: 1.3rem;
+}
