@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-24",
+    "title": "Integral generators, wall crossing and spin structures in curve counting",
+    "url": "/research/calabi-yau/#universal-curve-counting",
+    "description": "Opposite circle weights give explicit integral generators for curve counting on threefolds, while scalar exponents on one smooth projective Calabi–Yau threefold have unbounded denominators at divisibility three. The common fourfold cover determines the alternating change at two double-cover walls. Branched triple covers can change the count while all low-degree unramified signs agree. For positive maximal flat symplectic normal holonomy, spin structures determine the absolute local series in all degrees and genera."
+  },
+  {
     "date": "2026-11-23",
     "title": "A geometric product formula for universal curve counting",
     "url": "/papers/geometric-universal-curve-product/",

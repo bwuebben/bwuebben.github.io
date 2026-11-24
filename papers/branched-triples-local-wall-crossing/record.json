@@ -1,0 +1,77 @@
+{
+  "slug": "branched-triples-local-wall-crossing",
+  "catalogue_title": "Branched triple covers and wall crossing for local curve counts",
+  "catalogue_anchor": "branched-triples-local-wall-crossing",
+  "title": "Branched triple covers and wall crossing for local curve counts",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Universal curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-24",
+  "revision_date": "2026-11-24",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24510974",
+    "url": "https://doi.org/10.5281/zenodo.24510974",
+    "deposited_at": "2026-11-24T18:27:27.865860+00:00",
+    "version_doi": "10.5281/zenodo.24510975"
+  },
+  "citation_doi": "10.5281/zenodo.24510974",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/ramification_and_compact_counts/main.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/ramification_and_compact_counts"
+    },
+    {
+      "label": "Supplementary calculations",
+      "url": "https://zenodo.org/records/24510975/files/supplementary-calculations.html?download=1"
+    }
+  ],
+  "related": [
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+    },
+    {
+      "label": "Triple curves and unbounded denominators in threefold curve counting",
+      "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
+    },
+    {
+      "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+      "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+    },
+    {
+      "label": "Spin structures and local Gromov–Witten invariants of curves",
+      "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
+    },
+    {
+      "label": "A counterexample to integral product exponents in universal curve counting",
+      "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+    },
+    {
+      "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+      "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+    }
+  ],
+  "verified_on": "2026-11-24",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/ramification_and_compact_counts/main.tex",
+  "abstract_html": "<p>A branched triple cover of a genus-two curve can change the local curve count while preserving all determinant signs on unramified covers of degrees at most seven. At the crossing the degree-three elementary multiplicity in genus five changes by two in absolute value. At a generic transverse crossing on a prescribed simply branched triple cover with symmetric monodromy over a curve of genus at least two, we determine the local Gromov–Witten change in degree seven and every source genus. Each nonempty subset of branch values gives a nodal map joining the sextic Galois closure to the original curve. Its contribution is the degree-one series of a smooth curve, with sign determined by the number of nodes and the sum of their branch weights, up to a common orientation sign. On a fixed symplectic six-torus the other curves compensate each change in the same integral homology class and elementary genus.</p>",
+  "pdf": {
+    "sha256": "7ad29f6a06c3c7b7147118f51922682af8f3a201a7967c09c6638baa902e32cb",
+    "size_bytes": 643431,
+    "pages": 65,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/ramification_and_compact_counts/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/ramification_and_compact_counts/main.pdf",
+    "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "ramification_and_compact_counts/main.pdf"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-23",
+  "as_of": "2026-11-24",
   "papers": [
     {
       "slug": "af-cobordism-i",
@@ -18,8 +18,8 @@
       "significance": "On the specified components of Batyrev mirror families, Morrison’s predicted codimension follows from a stronger integral comparison. The relations among exceptional curves on one side agree with those among vanishing three-spheres on the mirror. The theorem determines exactly which integral combinations vanish."
     },
     {
-      "slug": "geometric-universal-curve-product",
-      "significance": "For smooth projective Calabi–Yau threefolds with vanishing first and second structure-sheaf cohomology, the universal series factors into balanced antidiagonal local-curve series. The exponents are signed elementary-cluster integers, with only finitely many genera in each integral curve class. The geometric proof establishes the identity in Pardon's rational cycle algebra without assuming a universal Gromov–Witten evaluation on analytic families."
+      "slug": "integral-generators-threefold-curves",
+      "significance": "One local curve model in each genus supplies explicit integral polynomial generators in every covering multiplicity for the cycle algebra in first Chern number and virtual dimension zero. Its factors give a unique product with integral exponents for effective curves of first Chern number zero on every compact Kähler threefold whose first Chern class is nonnegative on curves."
     },
     {
       "slug": "phase-flow-acyclic-quivers",

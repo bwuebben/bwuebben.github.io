@@ -46,6 +46,14 @@
     {
       "label": "Geometric product formula for the antidiagonal factors",
       "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+    },
+    {
+      "label": "Triple curves and unbounded denominators in threefold curve counting",
+      "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
     }
   ],
   "verified_on": "2026-11-22",

@@ -1,0 +1,69 @@
+{
+  "slug": "triple-curves-unbounded-denominators",
+  "catalogue_title": "Triple curves and unbounded denominators in threefold curve counting",
+  "catalogue_anchor": "triple-curves-unbounded-denominators",
+  "title": "Triple curves and unbounded denominators in threefold curve counting",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Universal curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-24",
+  "revision_date": "2026-11-24",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24510966",
+    "url": "https://doi.org/10.5281/zenodo.24510966",
+    "deposited_at": "2026-11-24T18:27:24.409200+00:00",
+    "version_doi": "10.5281/zenodo.24510967"
+  },
+  "citation_doi": "10.5281/zenodo.24510966",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/scalar_denominators/main.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/scalar_denominators"
+    }
+  ],
+  "related": [
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+    },
+    {
+      "label": "Branched triple covers and wall crossing for local curve counts",
+      "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+    },
+    {
+      "label": "A counterexample to integral product exponents in universal curve counting",
+      "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+    },
+    {
+      "label": "Antidiagonal local curves and integral exponents in universal curve counting",
+      "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+    }
+  ],
+  "verified_on": "2026-11-24",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/scalar_denominators/main.tex",
+  "abstract_html": "<p>We exhibit a smooth projective Calabi–Yau threefold on which the exponents of the scalar local factors in the universal series of effective curves have unbounded denominators, even among homology classes of divisibility three. These factors are defined by scaling both normal directions to a curve with the same weight. For a curve of odd genus <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></mrow></math>, the scalar class of its tripled zero section has exact denominator <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>3</mn><mi>k</mi></msup></math> in the integral cycle algebra in Chern number and virtual dimension zero. We also determine the denominator in even genus. From even genus four onward it is smaller than the least product of weights needed to isolate the triple by single-fiber evaluations, even allowing the normal bundle to vary. A deformation separates the moving curves. Counting their embedded images in the cycle space and their contributions in every source genus on the same family determines the difference of the universal classes.</p>",
+  "pdf": {
+    "sha256": "a9900d50d7251ac40fff2e3115e12e3dacb9b3747024f21043c25817c6765c0d",
+    "size_bytes": 598781,
+    "pages": 53,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/scalar_denominators/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/scalar_denominators/main.pdf",
+    "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "scalar_denominators/main.pdf"
+  }
+}

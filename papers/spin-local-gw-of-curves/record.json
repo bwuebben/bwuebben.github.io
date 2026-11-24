@@ -1,0 +1,69 @@
+{
+  "slug": "spin-local-gw-of-curves",
+  "catalogue_title": "Spin structures and local Gromov–Witten invariants of curves",
+  "catalogue_anchor": "spin-local-gw-of-curves",
+  "title": "Spin structures and local Gromov–Witten invariants of curves",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Universal curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-24",
+  "revision_date": "2026-11-24",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24510976",
+    "url": "https://doi.org/10.5281/zenodo.24510976",
+    "deposited_at": "2026-11-24T18:27:29.623543+00:00",
+    "version_doi": "10.5281/zenodo.24510977"
+  },
+  "citation_doi": "10.5281/zenodo.24510976",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/spin_partition_functions/main.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/spin_partition_functions"
+    },
+    {
+      "label": "Supplementary calculations",
+      "url": "https://zenodo.org/records/24510977/files/supplementary-calculations.html?download=1"
+    }
+  ],
+  "related": [
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+    },
+    {
+      "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+      "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+    },
+    {
+      "label": "Branched triple covers and wall crossing for local curve counts",
+      "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+    },
+    {
+      "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+      "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+    }
+  ],
+  "verified_on": "2026-11-24",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/spin_partition_functions/main.tex",
+  "abstract_html": "<p>We compute the local Gromov–Witten invariants of a curve of genus at least two with positive maximal flat symplectic normal holonomy, in every covering degree and source genus. The orthogonal bundle of the harmonic reduction determines which partitions occur. When it is orientable, the series agrees with the antidiagonal local-curve series of Bryan and Pandharipande. When it is nonorientable, only self-conjugate partitions contribute. The determinant sign on the embedded curve multiplies the degree variable in this sum. The restriction on partitions comes from the change of orientation at the relative contacts when two spin structures are glued across a nonseparating node. On the closure of the locus of triple covers with four simple branch points over a genus-two curve, we compute the intersection matrix of the ten classes measuring the difference between the real spin Euler class and the corresponding complex Chern class, one for each even spin structure.</p>",
+  "pdf": {
+    "sha256": "bd3c6467e41fb855c799a16fb86d2fdee7845f7deaf2503169ab099e4ba0d400",
+    "size_bytes": 443697,
+    "pages": 26,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/spin_partition_functions/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/spin_partition_functions/main.pdf",
+    "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "spin_partition_functions/main.pdf"
+  }
+}

@@ -43,6 +43,22 @@
     {
       "label": "Scalar product exponents on a compact threefold",
       "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+    },
+    {
+      "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+      "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+    },
+    {
+      "label": "Branched triple covers and wall crossing for local curve counts",
+      "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+    },
+    {
+      "label": "Spin structures and local Gromov–Witten invariants of curves",
+      "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
     }
   ],
   "verified_on": "2026-11-23",

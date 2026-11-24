@@ -1233,6 +1233,10 @@
         {
           "label": "Antidiagonal local curves and integral exponents",
           "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+        },
+        {
+          "label": "Integral generators for curve counting on threefolds",
+          "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
         }
       ],
       "verified_on": "2026-11-21",
@@ -1312,6 +1316,14 @@
         {
           "label": "Geometric product formula for the antidiagonal factors",
           "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        },
+        {
+          "label": "Triple curves and unbounded denominators in threefold curve counting",
+          "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
+        },
+        {
+          "label": "Branched triple covers and wall crossing for local curve counts",
+          "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
         }
       ],
       "verified_on": "2026-11-21",
@@ -1390,6 +1402,14 @@
         {
           "label": "Geometric product formula for the antidiagonal factors",
           "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        },
+        {
+          "label": "Integral generators for curve counting on threefolds",
+          "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+        },
+        {
+          "label": "Triple curves and unbounded denominators in threefold curve counting",
+          "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
         }
       ],
       "verified_on": "2026-11-22",
@@ -1460,6 +1480,22 @@
         {
           "label": "Scalar product exponents on a compact threefold",
           "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+        },
+        {
+          "label": "Integral generators for curve counting on threefolds",
+          "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+        },
+        {
+          "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+          "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+        },
+        {
+          "label": "Branched triple covers and wall crossing for local curve counts",
+          "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+        },
+        {
+          "label": "Spin structures and local Gromov–Witten invariants of curves",
+          "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
         }
       ],
       "verified_on": "2026-11-23",
@@ -5301,6 +5337,363 @@
           "url": "https://zenodo.org/records/24341632"
         }
       ]
+    },
+    {
+      "slug": "integral-generators-threefold-curves",
+      "catalogue_title": "Integral generators for curve counting on threefolds",
+      "catalogue_anchor": "integral-generators-threefold-curves",
+      "title": "Integral generators for curve counting on threefolds",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-24",
+      "revision_date": "2026-11-24",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24510962",
+        "url": "https://doi.org/10.5281/zenodo.24510962",
+        "deposited_at": "2026-11-24T18:27:22.689856+00:00",
+        "version_doi": "10.5281/zenodo.24510963"
+      },
+      "citation_doi": "10.5281/zenodo.24510962",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/integral_factorization/main.pdf"
+        },
+        {
+          "label": "LaTeX source",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/integral_factorization"
+        }
+      ],
+      "related": [
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+        },
+        {
+          "label": "Triple curves and unbounded denominators in threefold curve counting",
+          "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
+        },
+        {
+          "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+          "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+        },
+        {
+          "label": "Universal curve counting under conifold transitions",
+          "url": "https://bwuebben.github.io/papers/universal-conifold-counting/"
+        },
+        {
+          "label": "Antidiagonal local curves and integral exponents in universal curve counting",
+          "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+        },
+        {
+          "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+          "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        }
+      ],
+      "verified_on": "2026-11-24",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/integral_factorization/main.tex",
+      "abstract_html": "<p>Pardon’s integral curve-counting algebra has geometric generators whose local models may depend on the covering multiplicity. In first Chern number and virtual dimension zero we give a single model in each genus for all multiplicities. On a genus-<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>g</mi></math> curve take two line bundles of degree <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mi>g</mi><mo>−</mo><mn>1</mn></mrow></math> with canonical determinant and act on them with opposite weights. The equivariant classes of the multiple zero sections freely generate the integral algebra. The comparison with an isolated holomorphic multiple is triangular in multiplicity, with leading coefficient one given by the complex orientation of the embedded curve. The resulting factors give a unique product with integral exponents for effective cycles of Chern number zero on every compact Kähler threefold whose first Chern class is nonnegative on curves.</p>",
+      "pdf": {
+        "sha256": "a05c2b8f36054a5f2e03d836de7149df3ee28d3a78471c74ab751384610c42c8",
+        "size_bytes": 329149,
+        "pages": 11,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/integral_factorization/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/integral_factorization/main.pdf",
+        "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "integral_factorization/main.pdf"
+      }
+    },
+    {
+      "slug": "triple-curves-unbounded-denominators",
+      "catalogue_title": "Triple curves and unbounded denominators in threefold curve counting",
+      "catalogue_anchor": "triple-curves-unbounded-denominators",
+      "title": "Triple curves and unbounded denominators in threefold curve counting",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-24",
+      "revision_date": "2026-11-24",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24510966",
+        "url": "https://doi.org/10.5281/zenodo.24510966",
+        "deposited_at": "2026-11-24T18:27:24.409200+00:00",
+        "version_doi": "10.5281/zenodo.24510967"
+      },
+      "citation_doi": "10.5281/zenodo.24510966",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/scalar_denominators/main.pdf"
+        },
+        {
+          "label": "LaTeX source",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/scalar_denominators"
+        }
+      ],
+      "related": [
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+        },
+        {
+          "label": "Integral generators for curve counting on threefolds",
+          "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+        },
+        {
+          "label": "Branched triple covers and wall crossing for local curve counts",
+          "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+        },
+        {
+          "label": "A counterexample to integral product exponents in universal curve counting",
+          "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+        },
+        {
+          "label": "Antidiagonal local curves and integral exponents in universal curve counting",
+          "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+        }
+      ],
+      "verified_on": "2026-11-24",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/scalar_denominators/main.tex",
+      "abstract_html": "<p>We exhibit a smooth projective Calabi–Yau threefold on which the exponents of the scalar local factors in the universal series of effective curves have unbounded denominators, even among homology classes of divisibility three. These factors are defined by scaling both normal directions to a curve with the same weight. For a curve of odd genus <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>2</mn><mi>k</mi><mo>+</mo><mn>1</mn></mrow></math>, the scalar class of its tripled zero section has exact denominator <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><msup><mn>3</mn><mi>k</mi></msup></math> in the integral cycle algebra in Chern number and virtual dimension zero. We also determine the denominator in even genus. From even genus four onward it is smaller than the least product of weights needed to isolate the triple by single-fiber evaluations, even allowing the normal bundle to vary. A deformation separates the moving curves. Counting their embedded images in the cycle space and their contributions in every source genus on the same family determines the difference of the universal classes.</p>",
+      "pdf": {
+        "sha256": "a9900d50d7251ac40fff2e3115e12e3dacb9b3747024f21043c25817c6765c0d",
+        "size_bytes": 598781,
+        "pages": 53,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/scalar_denominators/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/scalar_denominators/main.pdf",
+        "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "scalar_denominators/main.pdf"
+      }
+    },
+    {
+      "slug": "unramified-local-gw-wall-crossing",
+      "catalogue_title": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+      "catalogue_anchor": "unramified-local-gw-wall-crossing",
+      "title": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-24",
+      "revision_date": "2026-11-24",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24510972",
+        "url": "https://doi.org/10.5281/zenodo.24510972",
+        "deposited_at": "2026-11-24T18:27:25.998029+00:00",
+        "version_doi": "10.5281/zenodo.24510973"
+      },
+      "citation_doi": "10.5281/zenodo.24510972",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/unramified_wall_crossing/main.pdf"
+        },
+        {
+          "label": "LaTeX source",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/unramified_wall_crossing"
+        }
+      ],
+      "related": [
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+        },
+        {
+          "label": "Integral generators for curve counting on threefolds",
+          "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+        },
+        {
+          "label": "Branched triple covers and wall crossing for local curve counts",
+          "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+        },
+        {
+          "label": "Spin structures and local Gromov–Witten invariants of curves",
+          "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
+        },
+        {
+          "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+          "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        }
+      ],
+      "verified_on": "2026-11-24",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/unramified_wall_crossing/main.tex",
+      "abstract_html": "<p>Let two independent unramified double covers of an embedded curve acquire normal deformations along transverse walls. We construct such a family over every curve of genus at least two with a complex rank-two normal bundle of degree twice the genus minus two. The alternating difference of the local Gromov–Witten invariants in its four chambers equals the local invariant on the common fourfold cover, in every source genus. At each fixed covering-degree bound one neighborhood suffices for all genera. On a finite principal unramified cover we realize simultaneous crossings for pairwise inequivalent nontrivial irreducible representations of real type, provided their associated flat bundles together embed in the underlying real normal bundle. Fixed vectors determine the signs, and the result is a sum of local invariants on intermediate covers. Along a path of these crossings the determinant signs transport the initial series on the covers in all genera. For arbitrary rigid endpoints, the signs at both endpoints determine the change in the least source genus, the genus of an unramified cover of the given degree.</p>",
+      "pdf": {
+        "sha256": "8fa4fd54ff45399f9f3833834d9a154eba4909706037c5bc1d1048075ea3f839",
+        "size_bytes": 759969,
+        "pages": 76,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/unramified_wall_crossing/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/unramified_wall_crossing/main.pdf",
+        "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "unramified_wall_crossing/main.pdf"
+      }
+    },
+    {
+      "slug": "branched-triples-local-wall-crossing",
+      "catalogue_title": "Branched triple covers and wall crossing for local curve counts",
+      "catalogue_anchor": "branched-triples-local-wall-crossing",
+      "title": "Branched triple covers and wall crossing for local curve counts",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-24",
+      "revision_date": "2026-11-24",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24510974",
+        "url": "https://doi.org/10.5281/zenodo.24510974",
+        "deposited_at": "2026-11-24T18:27:27.865860+00:00",
+        "version_doi": "10.5281/zenodo.24510975"
+      },
+      "citation_doi": "10.5281/zenodo.24510974",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/ramification_and_compact_counts/main.pdf"
+        },
+        {
+          "label": "LaTeX source",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/ramification_and_compact_counts"
+        },
+        {
+          "label": "Supplementary calculations",
+          "url": "https://zenodo.org/records/24510975/files/supplementary-calculations.html?download=1"
+        }
+      ],
+      "related": [
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+        },
+        {
+          "label": "Triple curves and unbounded denominators in threefold curve counting",
+          "url": "https://bwuebben.github.io/papers/triple-curves-unbounded-denominators/"
+        },
+        {
+          "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+          "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+        },
+        {
+          "label": "Spin structures and local Gromov–Witten invariants of curves",
+          "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
+        },
+        {
+          "label": "A counterexample to integral product exponents in universal curve counting",
+          "url": "https://bwuebben.github.io/papers/universal-integrality-counterexample/"
+        },
+        {
+          "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+          "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        }
+      ],
+      "verified_on": "2026-11-24",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/ramification_and_compact_counts/main.tex",
+      "abstract_html": "<p>A branched triple cover of a genus-two curve can change the local curve count while preserving all determinant signs on unramified covers of degrees at most seven. At the crossing the degree-three elementary multiplicity in genus five changes by two in absolute value. At a generic transverse crossing on a prescribed simply branched triple cover with symmetric monodromy over a curve of genus at least two, we determine the local Gromov–Witten change in degree seven and every source genus. Each nonempty subset of branch values gives a nodal map joining the sextic Galois closure to the original curve. Its contribution is the degree-one series of a smooth curve, with sign determined by the number of nodes and the sum of their branch weights, up to a common orientation sign. On a fixed symplectic six-torus the other curves compensate each change in the same integral homology class and elementary genus.</p>",
+      "pdf": {
+        "sha256": "7ad29f6a06c3c7b7147118f51922682af8f3a201a7967c09c6638baa902e32cb",
+        "size_bytes": 643431,
+        "pages": 65,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/ramification_and_compact_counts/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/ramification_and_compact_counts/main.pdf",
+        "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "ramification_and_compact_counts/main.pdf"
+      }
+    },
+    {
+      "slug": "spin-local-gw-of-curves",
+      "catalogue_title": "Spin structures and local Gromov–Witten invariants of curves",
+      "catalogue_anchor": "spin-local-gw-of-curves",
+      "title": "Spin structures and local Gromov–Witten invariants of curves",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-24",
+      "revision_date": "2026-11-24",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24510976",
+        "url": "https://doi.org/10.5281/zenodo.24510976",
+        "deposited_at": "2026-11-24T18:27:29.623543+00:00",
+        "version_doi": "10.5281/zenodo.24510977"
+      },
+      "citation_doi": "10.5281/zenodo.24510976",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/spin_partition_functions/main.pdf"
+        },
+        {
+          "label": "LaTeX source",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/spin_partition_functions"
+        },
+        {
+          "label": "Supplementary calculations",
+          "url": "https://zenodo.org/records/24510977/files/supplementary-calculations.html?download=1"
+        }
+      ],
+      "related": [
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+        },
+        {
+          "label": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+          "url": "https://bwuebben.github.io/papers/unramified-local-gw-wall-crossing/"
+        },
+        {
+          "label": "Branched triple covers and wall crossing for local curve counts",
+          "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+        },
+        {
+          "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+          "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+        }
+      ],
+      "verified_on": "2026-11-24",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/spin_partition_functions/main.tex",
+      "abstract_html": "<p>We compute the local Gromov–Witten invariants of a curve of genus at least two with positive maximal flat symplectic normal holonomy, in every covering degree and source genus. The orthogonal bundle of the harmonic reduction determines which partitions occur. When it is orientable, the series agrees with the antidiagonal local-curve series of Bryan and Pandharipande. When it is nonorientable, only self-conjugate partitions contribute. The determinant sign on the embedded curve multiplies the degree variable in this sum. The restriction on partitions comes from the change of orientation at the relative contacts when two spin structures are glued across a nonseparating node. On the closure of the locus of triple covers with four simple branch points over a genus-two curve, we compute the intersection matrix of the ten classes measuring the difference between the real spin Euler class and the corresponding complex Chern class, one for each even spin structure.</p>",
+      "pdf": {
+        "sha256": "bd3c6467e41fb855c799a16fb86d2fdee7845f7deaf2503169ab099e4ba0d400",
+        "size_bytes": 443697,
+        "pages": 26,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/spin_partition_functions/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/spin_partition_functions/main.pdf",
+        "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "spin_partition_functions/main.pdf"
+      }
     }
   ]
 }

@@ -51,6 +51,10 @@
     {
       "label": "Antidiagonal local curves and integral exponents",
       "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
     }
   ],
   "verified_on": "2026-11-21",

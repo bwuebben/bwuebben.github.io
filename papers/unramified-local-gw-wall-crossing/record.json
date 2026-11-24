@@ -1,0 +1,69 @@
+{
+  "slug": "unramified-local-gw-wall-crossing",
+  "catalogue_title": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+  "catalogue_anchor": "unramified-local-gw-wall-crossing",
+  "title": "Unramified covers and wall crossing for local Gromov–Witten invariants",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Universal curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-24",
+  "revision_date": "2026-11-24",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24510972",
+    "url": "https://doi.org/10.5281/zenodo.24510972",
+    "deposited_at": "2026-11-24T18:27:25.998029+00:00",
+    "version_doi": "10.5281/zenodo.24510973"
+  },
+  "citation_doi": "10.5281/zenodo.24510972",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/unramified_wall_crossing/main.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/unramified_wall_crossing"
+    }
+  ],
+  "related": [
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+    },
+    {
+      "label": "Branched triple covers and wall crossing for local curve counts",
+      "url": "https://bwuebben.github.io/papers/branched-triples-local-wall-crossing/"
+    },
+    {
+      "label": "Spin structures and local Gromov–Witten invariants of curves",
+      "url": "https://bwuebben.github.io/papers/spin-local-gw-of-curves/"
+    },
+    {
+      "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+      "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+    }
+  ],
+  "verified_on": "2026-11-24",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/unramified_wall_crossing/main.tex",
+  "abstract_html": "<p>Let two independent unramified double covers of an embedded curve acquire normal deformations along transverse walls. We construct such a family over every curve of genus at least two with a complex rank-two normal bundle of degree twice the genus minus two. The alternating difference of the local Gromov–Witten invariants in its four chambers equals the local invariant on the common fourfold cover, in every source genus. At each fixed covering-degree bound one neighborhood suffices for all genera. On a finite principal unramified cover we realize simultaneous crossings for pairwise inequivalent nontrivial irreducible representations of real type, provided their associated flat bundles together embed in the underlying real normal bundle. Fixed vectors determine the signs, and the result is a sum of local invariants on intermediate covers. Along a path of these crossings the determinant signs transport the initial series on the covers in all genera. For arbitrary rigid endpoints, the signs at both endpoints determine the change in the least source genus, the genus of an unramified cover of the given degree.</p>",
+  "pdf": {
+    "sha256": "8fa4fd54ff45399f9f3833834d9a154eba4909706037c5bc1d1048075ea3f839",
+    "size_bytes": 759969,
+    "pages": 76,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/d06fa4c6446b1e51b7eb715fa9fda6e3ff134487/unramified_wall_crossing/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/unramified_wall_crossing/main.pdf",
+    "source_commit": "d06fa4c6446b1e51b7eb715fa9fda6e3ff134487",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "unramified_wall_crossing/main.pdf"
+  }
+}
