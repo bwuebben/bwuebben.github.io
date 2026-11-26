@@ -3,7 +3,7 @@
     "date": "2026-11-26",
     "title": "Two circle actions and the topological string on local curves",
     "url": "/papers/circle-exchange-local-curves/",
-    "description": "For a balanced local curve of positive genus, the variable that counts the Euler characteristic of a stable pair has a second interpretation as the weight of a plane rotation. Exchanging two circle actions on an ambient Calabi–Yau fivefold gives the same integral index in every positive curve degree throughout the Picard family. For a doubled genus-two curve the connected contribution is supported where the two transverse points coincide. Whether two wrapped branes form a normalizable particle remains open."
+    "description": "For a balanced local curve of positive genus, the variable that counts the Euler characteristic of a stable pair has a second interpretation as the weight of a plane rotation. Exchanging two circle actions on an ambient Calabi–Yau fivefold gives the same integral index in every positive curve degree throughout the Picard family. For a doubled genus-two curve the connected contribution is supported where the two transverse points coincide. Whether two wrapped branes form a normalizable particle remains open. For the doubled genus-two curve, Theorem 1.2 identifies the first variation at the lowest Euler characteristic in every positive exchanged grading. At the second grading its Chern character is twelve times the principal polarization of the Picard variety."
   },
   {
     "date": "2026-11-24",

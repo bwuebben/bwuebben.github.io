@@ -12,13 +12,13 @@
   "label": "Topological strings and curve counting",
   "status": "Preprint",
   "publication_date": "2026-11-25",
-  "revision_date": "2026-11-25",
+  "revision_date": "2026-11-26",
   "archive": {
     "name": "Zenodo",
     "doi": "10.5281/zenodo.24549724",
     "url": "https://doi.org/10.5281/zenodo.24549724",
-    "deposited_at": "2026-11-26T05:05:51.515593+00:00",
-    "version_doi": "10.5281/zenodo.24549725"
+    "deposited_at": "2026-11-26T14:05:54.299765+00:00",
+    "version_doi": "10.5281/zenodo.24562568"
   },
   "citation_doi": "10.5281/zenodo.24549724",
   "resources": [
@@ -54,16 +54,23 @@
     }
   ],
   "verified_on": "2026-11-26",
-  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/512908e48672a7eae6bdc4dbdc4df1ebd6ddae34/circle_exchange/main.tex",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/543a0ff4dd8a2142746a918bf991560c953b671b/circle_exchange/main.tex",
   "abstract_html": "<p>In the membrane proposal of Nekrasov and Okounkov, the variable that counts the Euler characteristic of a stable pair on a threefold is a rotation fugacity of an ambient Calabi–Yau fivefold. We prove the predicted exchange of these roles for two circle actions over a smooth curve of positive genus. One fixes a local Calabi–Yau threefold with two normal lines of equal degree. The other fixes the product of the curve with a plane. With the orientations determined by the ordered normal lines, their stable-pair indices agree in every positive curve degree as integral classes on the common space of cycles, throughout the Picard variety of splittings. On the product threefold a deformation of the matrix equations makes the virtual contribution vanish above the minimum Euler characteristic. At the minimum, the rotation weights of plane Hilbert schemes reproduce the known local-curve partition function. For a doubled genus-two curve the connected index is supported where the two transverse points coincide. A first variation of the rotation weights detects the same nonzero multiple of the Picard theta class in both descriptions, although the corresponding coefficient vanishes on every individual target.</p>",
   "pdf": {
-    "sha256": "8ba3191f2f5c96bf6b5a31522b28ea0c24860c0f9907f7ad2c83839d99b1828b",
-    "size_bytes": 333132,
+    "sha256": "f709ad933af0723eb2e04746c769adf93e60cda58d89ad01c3d182af96f2d3cf",
+    "size_bytes": 334705,
     "pages": 16,
-    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/512908e48672a7eae6bdc4dbdc4df1ebd6ddae34/circle_exchange/main.pdf",
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/543a0ff4dd8a2142746a918bf991560c953b671b/circle_exchange/main.pdf",
     "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange/main.pdf",
-    "source_commit": "512908e48672a7eae6bdc4dbdc4df1ebd6ddae34",
+    "source_commit": "543a0ff4dd8a2142746a918bf991560c953b671b",
     "source_repository": "https://github.com/bwuebben/universal-curve-counting",
     "source_path": "circle_exchange/main.pdf"
-  }
+  },
+  "archive_history": [
+    {
+      "name": "Zenodo",
+      "doi": "10.5281/zenodo.24549725",
+      "url": "https://zenodo.org/records/24549725"
+    }
+  ]
 }
