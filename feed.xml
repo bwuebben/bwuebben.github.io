@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points</title>
+      <link>https://bwuebben.github.io/papers/partial-smoothings-degree-six/</link>
+      <guid>https://bwuebben.github.io/papers/partial-smoothings-degree-six/#update-2026-11-26</guid>
+      <description>A degree-six del Pezzo cone that stays fixed to first order on a chosen smoothing component stays fixed to every order. This holds for projective Calabi–Yau threefolds with nodes and degree-six cones admitting a smooth projective crepant resolution that is small at the nodes and blows up the cone vertices. Marked vanishing periods determine exactly which singularities can persist together. Divisor classes on the resolution give the integral degree-two cohomology of the regular locus and its restrictions to the remaining links.</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Refined circle exchange for stable pairs on balanced local curves</title>
       <link>https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/</link>
       <guid>https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/#update-2026-11-26</guid>

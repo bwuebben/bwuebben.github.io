@@ -1089,6 +1089,10 @@
         {
           "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
           "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+        },
+        {
+          "label": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/partial-smoothings-degree-six/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1179,6 +1183,67 @@
           "url": "https://zenodo.org/records/23643206"
         }
       ]
+    },
+    {
+      "slug": "partial-smoothings-degree-six",
+      "catalogue_title": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+      "catalogue_anchor": "partial-smoothings-degree-six",
+      "title": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-11-26",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24570171",
+        "url": "https://doi.org/10.5281/zenodo.24570171",
+        "version_doi": "10.5281/zenodo.24570172",
+        "deposited_at": "2026-11-26T20:01:05.021234+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24570171",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/partial-smoothings/main.pdf"
+        },
+        {
+          "label": "source and calculations",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/partial-smoothings"
+        }
+      ],
+      "related": [
+        {
+          "label": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/cy-mixed-smoothing/"
+        },
+        {
+          "label": "Global Constraints on Higgsing Localized Five-Dimensional Sectors in Compact M-Theory Vacua",
+          "url": "https://bwuebben.github.io/papers/compact-higgs-global-constraints/"
+        },
+        {
+          "label": "Calabi–Yau reading guide",
+          "url": "https://bwuebben.github.io/research/calabi-yau/#six-paper-guide"
+        }
+      ],
+      "verified_on": "2026-11-26",
+      "abstract_html": "<p>Let <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math> be a projective Calabi–Yau threefold with ordinary double points and anticanonical cones over smooth del Pezzo surfaces of degree six. Assume that <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math> has a smooth projective crepant resolution which is small at the nodes and blows up the cone vertices. Each cone has two local smoothing components. For every choice of these components we prove that their scheme-theoretic inverse image in the semiuniversal deformation base of <math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mi>X</mi></math> is smooth. If no global first-order deformation on this base moves a given cone, its local classifying map is constant. Blowing up precisely these vertices identifies the completed selected deformation bases before and after the blow-up. On the resulting smooth base the vanishing periods of a simultaneous nodal modification give a submersion onto the space of relations among its exceptional curves. The zero sets of the coordinate functions determine exactly which singularities can persist together on a projective deformation. We describe the integral degree-two cohomology of the regular locus of each partial smoothing and compute the restrictions to the remaining links from divisor classes on the resolution.</p>",
+      "abstract_source": "https://zenodo.org/records/24570172",
+      "pdf": {
+        "sha256": "0b7e427541eb6bc7389f38b73e6011041281415f31d2e167a2ea7294e4c98dd5",
+        "size_bytes": 318516,
+        "pages": 11,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/20b12f2acf67e085754ec6cbda74148f9ea4f3bd/partial-smoothings/main.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/partial-smoothings/main.pdf",
+        "source_commit": "20b12f2acf67e085754ec6cbda74148f9ea4f3bd",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "partial-smoothings/main.pdf"
+      }
     },
     {
       "slug": "universal-conifold-counting",
@@ -2731,6 +2796,10 @@
         {
           "label": "Calabi–Yau geometry and physics reading guide",
           "url": "https://bwuebben.github.io/research/calabi-yau/#physics-companions"
+        },
+        {
+          "label": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/partial-smoothings-degree-six/"
         }
       ],
       "verified_on": "2026-11-26",

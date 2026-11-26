@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-26",
+    "title": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+    "url": "/papers/partial-smoothings-degree-six/",
+    "description": "A degree-six del Pezzo cone that stays fixed to first order on a chosen smoothing component stays fixed to every order. This holds for projective Calabi–Yau threefolds with nodes and degree-six cones admitting a smooth projective crepant resolution that is small at the nodes and blows up the cone vertices. Marked vanishing periods determine exactly which singularities can persist together. Divisor classes on the resolution give the integral degree-two cohomology of the regular locus and its restrictions to the remaining links."
+  },
+  {
+    "date": "2026-11-26",
     "title": "Refined circle exchange for stable pairs on balanced local curves",
     "url": "/papers/refined-circle-exchange-local-curves/",
     "description": "For a balanced local curve of positive genus, two stable-pair indices agree to first order in the threefold volume character in every curve degree and both counting gradings. The equality holds in the integral K-theory of the Picard variety. Keeping the volume character free, the entire coefficient of exchanged grading one agrees separately for each Young diagram and is a sum over its removable boxes."
