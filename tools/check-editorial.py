@@ -42,6 +42,8 @@ REVISED_METADATA["cy-conifold-hodge-spectrum"] = {"abstract_html", "abstract_sou
 # Paper 4 now records its original release day and its bibliography revision.
 AUTHORIZED_CATALOGUE_UPDATES.add("compact-higgs-finite-planck")
 REVISED_METADATA["compact-higgs-finite-planck"] = {"abstract_source", "pdf", "publication_date", "revision_date", "verified_on", "archive", "archive_history", "citation_doi"}
+AUTHORIZED_CATALOGUE_UPDATES.add("compact-higgs-global-constraints")
+REVISED_METADATA["compact-higgs-global-constraints"] = {"citation_doi", "abstract_html", "abstract_source", "pdf", "revision_date", "verified_on", "archive", "archive_history"}
 class Page(HTMLParser):
  def __init__(self,text):
   super().__init__();self.links=[];self.ids=[];self.h1=0;self.feed(text)
