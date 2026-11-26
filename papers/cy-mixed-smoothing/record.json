@@ -45,6 +45,10 @@
     {
       "label": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
       "url": "https://bwuebben.github.io/papers/partial-smoothings-degree-six/"
+    },
+    {
+      "label": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+      "url": "https://bwuebben.github.io/papers/stratified-cy-deformation-germs/"
     }
   ],
   "verified_on": "2026-10-27",

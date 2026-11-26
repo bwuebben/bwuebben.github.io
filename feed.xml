@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points</title>
+      <link>https://bwuebben.github.io/papers/stratified-cy-deformation-germs/</link>
+      <guid>https://bwuebben.github.io/papers/stratified-cy-deformation-germs/#update-2026-11-26</guid>
+      <description>Two projective Calabi–Yau threefolds have the same reduced deformation space and tangent dimension, yet the squares of their nilradicals differ. For nodes and exact degree-five and degree-six del Pezzo cone points admitting the specified smooth projective crepant resolution, intersecting the product of the marked local bases with the space of homological relations determines the full analytic deformation germ up to a smooth factor.</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points</title>
       <link>https://bwuebben.github.io/papers/partial-smoothings-degree-six/</link>
       <guid>https://bwuebben.github.io/papers/partial-smoothings-degree-six/#update-2026-11-26</guid>

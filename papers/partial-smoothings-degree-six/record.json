@@ -43,6 +43,10 @@
     {
       "label": "Calabi–Yau reading guide",
       "url": "https://bwuebben.github.io/research/calabi-yau/#six-paper-guide"
+    },
+    {
+      "label": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+      "url": "https://bwuebben.github.io/papers/stratified-cy-deformation-germs/"
     }
   ],
   "verified_on": "2026-11-26",

@@ -1023,6 +1023,10 @@
         {
           "label": "Integral topology and small eigenvalues in Calabi–Yau conifold transitions",
           "url": "https://bwuebben.github.io/papers/cy-conifold-hodge-spectrum/"
+        },
+        {
+          "label": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/stratified-cy-deformation-germs/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1093,6 +1097,10 @@
         {
           "label": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
           "url": "https://bwuebben.github.io/papers/partial-smoothings-degree-six/"
+        },
+        {
+          "label": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/stratified-cy-deformation-germs/"
         }
       ],
       "verified_on": "2026-10-27",
@@ -1229,6 +1237,10 @@
         {
           "label": "Calabi–Yau reading guide",
           "url": "https://bwuebben.github.io/research/calabi-yau/#six-paper-guide"
+        },
+        {
+          "label": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/stratified-cy-deformation-germs/"
         }
       ],
       "verified_on": "2026-11-26",
@@ -1243,6 +1255,71 @@
         "source_commit": "20b12f2acf67e085754ec6cbda74148f9ea4f3bd",
         "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
         "source_path": "partial-smoothings/main.pdf"
+      }
+    },
+    {
+      "slug": "stratified-cy-deformation-germs",
+      "catalogue_title": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+      "catalogue_anchor": "stratified-cy-deformation-germs",
+      "title": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Smoothability of Calabi–Yau threefolds",
+      "status": "Preprint",
+      "publication_date": "2026-11-26",
+      "revision_date": null,
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24573015",
+        "url": "https://doi.org/10.5281/zenodo.24573015",
+        "version_doi": "10.5281/zenodo.24573016",
+        "deposited_at": "2026-11-26T23:31:35.296364+00:00"
+      },
+      "citation_doi": "10.5281/zenodo.24573015",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/stratified-smoothing/main.pdf"
+        },
+        {
+          "label": "source and calculations",
+          "url": "https://github.com/bwuebben/calabi-yau-smoothability/tree/main/stratified-smoothing"
+        }
+      ],
+      "related": [
+        {
+          "label": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/partial-smoothings-degree-six/"
+        },
+        {
+          "label": "Smoothing Calabi–Yau threefolds with nodes and del Pezzo cone points",
+          "url": "https://bwuebben.github.io/papers/cy-mixed-smoothing/"
+        },
+        {
+          "label": "A vanishing-cycle obstruction to smoothing Calabi–Yau threefolds",
+          "url": "https://bwuebben.github.io/papers/cy-vanishing-cycle/"
+        },
+        {
+          "label": "Smoothability and deformation spaces",
+          "url": "https://bwuebben.github.io/research/calabi-yau/smoothability/#deformation-space"
+        }
+      ],
+      "verified_on": "2026-11-26",
+      "abstract_html": "<p>We determine the analytic deformation space of a projective Calabi–Yau threefold with ordinary double points and anticanonical cones over smooth del Pezzo surfaces of degrees five and six, admitting a smooth projective crepant resolution small at the nodes and given by the vertex blow-up at the cones. Up to a smooth factor, its semiuniversal base is the scheme-theoretic intersection of the product of the marked local bases with the space of homological relations on the resolution. Link periods identify the strata on which prescribed singularities persist. We construct two projective examples with the same smooth reduced germ and the same tangent dimension. The nilradical has square zero in one and nonzero square in the other. The proof establishes compatibility of link periods with Artin base change and detects global obstructions to lifting by localization and pairing with Cartier divisor classes.</p>",
+      "abstract_source": "https://github.com/bwuebben/calabi-yau-smoothability/blob/ec47c38e17ad92096ad4d97e458cade971a4f346/stratified-smoothing/main.tex",
+      "pdf": {
+        "sha256": "8acf649cb342656354431d18f006c79de27ab2a7eaebafbe187a3813596dc14c",
+        "size_bytes": 307950,
+        "pages": 10,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/calabi-yau-smoothability/ec47c38e17ad92096ad4d97e458cade971a4f346/stratified-smoothing/main.pdf",
+        "source_url": "https://github.com/bwuebben/calabi-yau-smoothability/blob/main/stratified-smoothing/main.pdf",
+        "source_commit": "ec47c38e17ad92096ad4d97e458cade971a4f346",
+        "source_repository": "https://github.com/bwuebben/calabi-yau-smoothability",
+        "source_path": "stratified-smoothing/main.pdf"
       }
     },
     {

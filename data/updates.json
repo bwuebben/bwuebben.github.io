@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-26",
+    "title": "Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points",
+    "url": "/papers/stratified-cy-deformation-germs/",
+    "description": "Two projective Calabi–Yau threefolds have the same reduced deformation space and tangent dimension, yet the squares of their nilradicals differ. For nodes and exact degree-five and degree-six del Pezzo cone points admitting the specified smooth projective crepant resolution, intersecting the product of the marked local bases with the space of homological relations determines the full analytic deformation germ up to a smooth factor."
+  },
+  {
+    "date": "2026-11-26",
     "title": "Partial smoothings of Calabi–Yau threefolds with degree-six del Pezzo cone points",
     "url": "/papers/partial-smoothings-degree-six/",
     "description": "A degree-six del Pezzo cone that stays fixed to first order on a chosen smoothing component stays fixed to every order. This holds for projective Calabi–Yau threefolds with nodes and degree-six cones admitting a smooth projective crepant resolution that is small at the nodes and blows up the cone vertices. Marked vanishing periods determine exactly which singularities can persist together. Divisor classes on the resolution give the integral degree-two cohomology of the regular locus and its restrictions to the remaining links."
