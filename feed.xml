@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Refined circle exchange for stable pairs on balanced local curves</title>
+      <link>https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/</link>
+      <guid>https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/#update-2026-11-26</guid>
+      <description>For a balanced local curve of positive genus, two stable-pair indices agree to first order in the threefold volume character in every curve degree and both counting gradings. The equality holds in the integral K-theory of the Picard variety. Keeping the volume character free, the entire coefficient of exchanged grading one agrees separately for each Young diagram and is a sum over its removable boxes.</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Electric charge at a residual node in a compact Higgs transition</title>
       <link>https://bwuebben.github.io/papers/compact-higgs-global-constraints/</link>
       <guid>https://bwuebben.github.io/papers/compact-higgs-global-constraints/#update-2026-11-26</guid>

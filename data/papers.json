@@ -5768,6 +5768,10 @@
         {
           "label": "Integral generators for curve counting on threefolds",
           "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+        },
+        {
+          "label": "The first variation and the one-mark coefficient of circle exchange for balanced local curves",
+          "url": "https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/"
         }
       ],
       "verified_on": "2026-11-26",
@@ -5790,6 +5794,63 @@
           "url": "https://zenodo.org/records/24549725"
         }
       ]
+    },
+    {
+      "slug": "refined-circle-exchange-local-curves",
+      "catalogue_title": "The first variation and the one-mark coefficient of circle exchange for balanced local curves",
+      "catalogue_anchor": "refined-circle-exchange-local-curves",
+      "title": "The first variation and the one-mark coefficient of circle exchange for balanced local curves",
+      "authors": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "orcid": "https://orcid.org/0009-0002-4588-3284"
+        }
+      ],
+      "label": "Universal curve counting",
+      "status": "Preprint",
+      "publication_date": "2026-11-26",
+      "revision_date": "2026-11-26",
+      "archive": {
+        "name": "Zenodo",
+        "doi": "10.5281/zenodo.24570158",
+        "url": "https://doi.org/10.5281/zenodo.24570158",
+        "deposited_at": "2026-11-26T19:58:20.051294+00:00",
+        "version_doi": "10.5281/zenodo.24570159"
+      },
+      "citation_doi": "10.5281/zenodo.24570158",
+      "resources": [
+        {
+          "label": "current version (PDF)",
+          "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange_variation/main.pdf"
+        },
+        {
+          "label": "LaTeX source and exact checks",
+          "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/circle_exchange_variation"
+        }
+      ],
+      "related": [
+        {
+          "label": "The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold",
+          "url": "https://bwuebben.github.io/papers/circle-exchange-local-curves/"
+        },
+        {
+          "label": "Universal curve counting programme",
+          "url": "https://bwuebben.github.io/research/calabi-yau/universal-curve-counting/"
+        }
+      ],
+      "verified_on": "2026-11-26",
+      "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/aa00d64853214976d601aa6dbbf2224d4335028a/circle_exchange_variation/main.tex",
+      "abstract_html": "<p>For a balanced local curve of positive genus we prove a first-order circle-exchange identity for the two stable-pair indices over its Picard variety. After their common determinant normalization, the indices agree modulo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"(1−κ)²\"><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mi>κ</mi><mo>)</mo></mrow><mn>2</mn></msup></math> in integral family K-theory in every curve degree and both counting gradings, where <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"κ\"><mi>κ</mi></math> is the threefold volume character. At positive exchanged grading the first variation is a sum over hooks of Adams operations on the derived pushforwards of powers of the Poincaré line twisted by powers of the canonical bundle. With <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"κ\"><mi>κ</mi></math> unrestricted, the entire coefficient of exchanged grading one agrees separately for each Young diagram and is given by a sum over its removable boxes. The first comparison deforms the graded moment equations to walls with symmetric powers of the curve as fixed loci. The second evaluates a product of two Macdonald currents and descends the resulting disk identity to the Picard family.</p>",
+      "pdf": {
+        "sha256": "981d86bb72d238b6ea934e4e94485b669cde29f6193239983d08957b3e8e6ec3",
+        "size_bytes": 421330,
+        "pages": 21,
+        "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/aa00d64853214976d601aa6dbbf2224d4335028a/circle_exchange_variation/main.pdf",
+        "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange_variation/main.pdf",
+        "source_commit": "aa00d64853214976d601aa6dbbf2224d4335028a",
+        "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+        "source_path": "circle_exchange_variation/main.pdf"
+      }
     }
   ]
 }

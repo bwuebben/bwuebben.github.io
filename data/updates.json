@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-26",
+    "title": "Refined circle exchange for stable pairs on balanced local curves",
+    "url": "/papers/refined-circle-exchange-local-curves/",
+    "description": "For a balanced local curve of positive genus, two stable-pair indices agree to first order in the threefold volume character in every curve degree and both counting gradings. The equality holds in the integral K-theory of the Picard variety. Keeping the volume character free, the entire coefficient of exchanged grading one agrees separately for each Young diagram and is a sum over its removable boxes."
+  },
+  {
+    "date": "2026-11-26",
     "title": "Electric charge at a residual node in a compact Higgs transition",
     "url": "/papers/compact-higgs-global-constraints/",
     "description": "Two compact Calabi–Yau threefolds retain the same local singularity after all thirty original nodes smooth. In the first, an integral bulk divisor measures one unit of electric charge at the residual node. In the second, every bulk photon has zero coupling there and the node can smooth. Ordinary Abelian gauging predicts both measurements. Identification with a prescribed microscopic Higgs vacuum at finite Planck mass remains open."
