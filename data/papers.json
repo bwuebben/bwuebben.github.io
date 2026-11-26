@@ -5878,7 +5878,7 @@
       "label": "Universal curve counting",
       "status": "Preprint",
       "publication_date": "2026-11-26",
-      "revision_date": "2026-11-26",
+      "revision_date": null,
       "archive": {
         "name": "Zenodo",
         "doi": "10.5281/zenodo.24570158",
@@ -5905,6 +5905,10 @@
         {
           "label": "Universal curve counting programme",
           "url": "https://bwuebben.github.io/research/calabi-yau/universal-curve-counting/"
+        },
+        {
+          "label": "Topological strings and curve counting",
+          "url": "https://bwuebben.github.io/research/physics/#topological-strings"
         }
       ],
       "verified_on": "2026-11-26",
