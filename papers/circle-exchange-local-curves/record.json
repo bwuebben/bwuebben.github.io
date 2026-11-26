@@ -1,0 +1,69 @@
+{
+  "slug": "circle-exchange-local-curves",
+  "catalogue_title": "The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold",
+  "catalogue_anchor": "circle-exchange-local-curves",
+  "title": "The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Topological strings and curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-25",
+  "revision_date": "2026-11-25",
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24549724",
+    "url": "https://doi.org/10.5281/zenodo.24549724",
+    "deposited_at": "2026-11-26T05:05:51.515593+00:00",
+    "version_doi": "10.5281/zenodo.24549725"
+  },
+  "citation_doi": "10.5281/zenodo.24549724",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange/main.pdf"
+    },
+    {
+      "label": "LaTeX source",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/circle_exchange"
+    }
+  ],
+  "related": [
+    {
+      "label": "Topological strings and curve counting",
+      "url": "https://bwuebben.github.io/research/physics/#topological-strings"
+    },
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/universal-curve-counting/"
+    },
+    {
+      "label": "Antidiagonal local curves and integral exponents in universal curve counting",
+      "url": "https://bwuebben.github.io/papers/antidiagonal-universal-curve-counting/"
+    },
+    {
+      "label": "A geometric product formula for universal curve counting on Calabi–Yau threefolds",
+      "url": "https://bwuebben.github.io/papers/geometric-universal-curve-product/"
+    },
+    {
+      "label": "Integral generators for curve counting on threefolds",
+      "url": "https://bwuebben.github.io/papers/integral-generators-threefold-curves/"
+    }
+  ],
+  "verified_on": "2026-11-26",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/512908e48672a7eae6bdc4dbdc4df1ebd6ddae34/circle_exchange/main.tex",
+  "abstract_html": "<p>In the membrane proposal of Nekrasov and Okounkov, the variable that counts the Euler characteristic of a stable pair on a threefold is a rotation fugacity of an ambient Calabi–Yau fivefold. We prove the predicted exchange of these roles for two circle actions over a smooth curve of positive genus. One fixes a local Calabi–Yau threefold with two normal lines of equal degree. The other fixes the product of the curve with a plane. With the orientations determined by the ordered normal lines, their stable-pair indices agree in every positive curve degree as integral classes on the common space of cycles, throughout the Picard variety of splittings. On the product threefold a deformation of the matrix equations makes the virtual contribution vanish above the minimum Euler characteristic. At the minimum, the rotation weights of plane Hilbert schemes reproduce the known local-curve partition function. For a doubled genus-two curve the connected index is supported where the two transverse points coincide. A first variation of the rotation weights detects the same nonzero multiple of the Picard theta class in both descriptions, although the corresponding coefficient vanishes on every individual target.</p>",
+  "pdf": {
+    "sha256": "8ba3191f2f5c96bf6b5a31522b28ea0c24860c0f9907f7ad2c83839d99b1828b",
+    "size_bytes": 333132,
+    "pages": 16,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/512908e48672a7eae6bdc4dbdc4df1ebd6ddae34/circle_exchange/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange/main.pdf",
+    "source_commit": "512908e48672a7eae6bdc4dbdc4df1ebd6ddae34",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "circle_exchange/main.pdf"
+  }
+}

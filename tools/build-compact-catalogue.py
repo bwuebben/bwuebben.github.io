@@ -29,7 +29,7 @@ aliases = {
     'topology': ['mathematics', 'knot-instanton-homology', 'atiyah-floer', 'exotic-four-manifolds-series'],
     'calabi-yau': ['calabi-yau-smoothability', 'universal-curve-counting'],
     'geometry': ['toric-tangent-stability-series', 'open-fjrw', 'stability-degeneration', 'categorical-kahler-geometry', 'equivariant-quantum-geometry'],
-    'physics': ['physics', 'compact-higgs-transitions', 'heterotic-k3', 'black-hole-information'],
+    'physics': ['physics', 'compact-higgs-transitions', 'heterotic-k3', 'topological-strings', 'black-hole-information'],
     'ai-institutions': ['ai', 'politics'],
 }
 labels = {
@@ -45,7 +45,7 @@ descriptions = {
     'topology': 'Knots, four-manifolds and the maps between Floer theories.',
     'calabi-yau': 'Smoothability, mirror relations and curve counting.',
     'geometry': 'Stability, moduli spaces, categorical Kähler geometry and equivariant quantum geometry.',
-    'physics': 'Compact Higgs transitions, black holes and information.',
+    'physics': 'Compact Higgs transitions, topological strings, black holes and information.',
     'ai-institutions': 'Machine economies, institutional design and international order.',
 }
 metadata = {'fields': [], 'papers': [], 'aliases': aliases}

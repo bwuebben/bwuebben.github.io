@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Two circle actions and the topological string on local curves</title>
+      <link>https://bwuebben.github.io/papers/circle-exchange-local-curves/</link>
+      <guid>https://bwuebben.github.io/papers/circle-exchange-local-curves/#update-2026-11-26</guid>
+      <description>For a balanced local curve of positive genus, the variable that counts the Euler characteristic of a stable pair has a second interpretation as the weight of a plane rotation. Exchanging two circle actions on an ambient Calabi–Yau fivefold gives the same integral index in every positive curve degree throughout the Picard family. For a doubled genus-two curve the connected contribution is supported where the two transverse points coincide. Whether two wrapped branes form a normalizable particle remains open.</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Integral generators, wall crossing and spin structures in curve counting</title>
       <link>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting</link>
       <guid>https://bwuebben.github.io/research/calabi-yau/#universal-curve-counting#update-2026-11-24</guid>
