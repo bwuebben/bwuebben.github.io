@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-11-27",
+    "title": "The quadratic and cubic coefficients of circle exchange for balanced local curves",
+    "url": "/papers/quadratic-cubic-circle-exchange/",
+    "description": "For a balanced local curve of positive genus, two circle actions give the same quadratic and cubic stable-pair coefficients at every Euler characteristic and arbitrary volume character. The comparison holds in every positive curve degree in integral K-theory over the Picard variety. On the disk each Young diagram satisfies a separate identity between Macdonald operators and a sum over reverse plane partitions."
+  },
+  {
     "date": "2026-11-26",
     "title": "Link periods and deformations of Calabi–Yau threefolds with toric singularities",
     "url": "/papers/toric-link-periods/",

@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>The quadratic and cubic coefficients of circle exchange for balanced local curves</title>
+      <link>https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/</link>
+      <guid>https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/#update-2026-11-27</guid>
+      <description>For a balanced local curve of positive genus, two circle actions give the same quadratic and cubic stable-pair coefficients at every Euler characteristic and arbitrary volume character. The comparison holds in every positive curve degree in integral K-theory over the Picard variety. On the disk each Young diagram satisfies a separate identity between Macdonald operators and a sum over reverse plane partitions.</description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Link periods and deformations of Calabi–Yau threefolds with toric singularities</title>
       <link>https://bwuebben.github.io/papers/toric-link-periods/</link>
       <guid>https://bwuebben.github.io/papers/toric-link-periods/#update-2026-11-26</guid>

@@ -1,0 +1,65 @@
+{
+  "slug": "quadratic-cubic-circle-exchange",
+  "catalogue_title": "The quadratic and cubic coefficients of circle exchange for balanced local curves",
+  "catalogue_anchor": "quadratic-cubic-circle-exchange",
+  "title": "The quadratic and cubic coefficients of circle exchange for balanced local curves",
+  "authors": [
+    {
+      "name": "Bernd Johannes Wuebben",
+      "orcid": "https://orcid.org/0009-0002-4588-3284"
+    }
+  ],
+  "label": "Universal curve counting",
+  "status": "Preprint",
+  "publication_date": "2026-11-27",
+  "revision_date": null,
+  "archive": {
+    "name": "Zenodo",
+    "doi": "10.5281/zenodo.24579580",
+    "url": "https://doi.org/10.5281/zenodo.24579580",
+    "deposited_at": "2026-11-27T06:53:31.933139+00:00",
+    "version_doi": "10.5281/zenodo.24579581"
+  },
+  "citation_doi": "10.5281/zenodo.24579580",
+  "resources": [
+    {
+      "label": "current version (PDF)",
+      "url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange_coefficients/main.pdf"
+    },
+    {
+      "label": "LaTeX source and exact checks",
+      "url": "https://github.com/bwuebben/universal-curve-counting/tree/main/circle_exchange_coefficients"
+    }
+  ],
+  "related": [
+    {
+      "label": "The first variation and the one-mark coefficient of circle exchange for balanced local curves",
+      "url": "https://bwuebben.github.io/papers/refined-circle-exchange-local-curves/"
+    },
+    {
+      "label": "The topological string on balanced local curves from two circle actions on a Calabi–Yau fivefold",
+      "url": "https://bwuebben.github.io/papers/circle-exchange-local-curves/"
+    },
+    {
+      "label": "Universal curve counting programme",
+      "url": "https://bwuebben.github.io/research/calabi-yau/universal-curve-counting/"
+    },
+    {
+      "label": "Topological strings and curve counting",
+      "url": "https://bwuebben.github.io/research/physics/#topological-strings"
+    }
+  ],
+  "verified_on": "2026-11-27",
+  "abstract_source": "https://github.com/bwuebben/universal-curve-counting/blob/204b8039642e5410e5b5f7362f4654e3bd091368/circle_exchange_coefficients/main.tex",
+  "abstract_html": "<p>Exchanging two circle actions on a Calabi–Yau fivefold gives stable-pair indices on a balanced local curve and on the product of its base curve with an affine plane. After a common determinant normalization, we prove that the two modified indices agree through cubic order in the exchanged counting variable, in integral <math xmlns=\"http://www.w3.org/1998/Math/MathML\" aria-label=\"K\"><mi>K</mi></math>-theory over the Picard variety parametrizing one normal summand. The comparison holds for every smooth projective complex curve of positive genus and every positive curve degree, at every Euler characteristic and arbitrary volume character. On the formal disk we identify the quadratic and cubic coefficients separately for each Young diagram, with the cotangent character also free. One presentation is a Macdonald expectation and the other is a finite sum over reverse plane partitions. At quadratic order the residues from interchanging currents give the two orientations of a domino. At cubic order an exact polynomial interpolation proves that two adjacent diagonal parameters can be interchanged in the sum with currents grouped by sign. Restoring the original order produces an additional pole whose contributions from the ordinary currents and the second Adams operation cancel identically.</p>",
+  "pdf": {
+    "sha256": "13872836441290a346a4a2a1437108b5423cf00a4c9498b9b6659b81248b21bc",
+    "size_bytes": 387304,
+    "pages": 22,
+    "download_url": "https://raw.githubusercontent.com/bwuebben/universal-curve-counting/204b8039642e5410e5b5f7362f4654e3bd091368/circle_exchange_coefficients/main.pdf",
+    "source_url": "https://github.com/bwuebben/universal-curve-counting/blob/main/circle_exchange_coefficients/main.pdf",
+    "source_commit": "204b8039642e5410e5b5f7362f4654e3bd091368",
+    "source_repository": "https://github.com/bwuebben/universal-curve-counting",
+    "source_path": "circle_exchange_coefficients/main.pdf"
+  }
+}
