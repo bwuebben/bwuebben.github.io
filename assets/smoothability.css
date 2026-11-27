@@ -1,9 +1,87 @@
-.face-plate {
+.conifold-plate {
+  align-self: start;
+  scroll-margin-top: 1rem;
+  width: 100%;
+  min-width: 0;
   margin: 0;
+  border-top: 1px solid var(--ink);
+  padding-top: .9rem;
+}
+.cycle-controls { min-width: 0; border: 0; padding: 0; margin: 0; }
+.cycle-controls legend {
+  padding: 0;
+  margin: 0 0 .9rem;
+  font: 1.65rem/1.15 var(--serif);
+  letter-spacing: -.025em;
+  color: var(--ink);
+}
+.cycle-choices {
+  display: grid;
+  grid-template-columns: 1fr .75fr 1fr;
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-bottom: .65rem;
+}
+.cycle-choices label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+  min-height: 2.65rem;
+  background: var(--bg);
+  color: var(--ink-soft);
+  font: .85rem/1.3 var(--sans);
+  cursor: pointer;
+}
+.cycle-choices i { font: italic 1rem/1 var(--serif); }
+.cycle-choices input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.cycle-choices label:hover { background: var(--bg-panel); color: var(--ink); }
+.cycle-choices label:has(:checked) { background: var(--ink); color: var(--bg); }
+.cycle-choices label:has(:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; z-index: 1; }
+.cycle-art { aspect-ratio: 1; background: #213139; }
+.program-hero .cycle-art img { display: none; width: 100%; height: auto; filter: none; }
+.conifold-plate figcaption {
+  padding: .75rem 0 .9rem;
+  border-bottom: 1px solid var(--rule);
+  font: .9rem/1.55 var(--sans);
+  color: var(--ink-soft);
+}
+.conifold-plate figcaption b { color: var(--ink); font-weight: 600; }
+.conifold-plate figcaption span { display: none; }
+.conifold-plate:has([value="smoothing"]:checked) .cycle-smoothing,
+.conifold-plate:has([value="node"]:checked) .cycle-node,
+.conifold-plate:has([value="resolution"]:checked) .cycle-resolution { display: block; }
+@media (width > 620px) {
+  .program-hero {
+    grid-template-areas: "breadcrumb ." "title ." "intro illustration";
+    row-gap: 0;
+    align-items: start;
+  }
+  .program-hero > div:first-child { display: contents; }
+  .program-hero .kicker { grid-area: breadcrumb; }
+  .program-hero h1 { grid-area: title; margin-block-start: 0; }
+  .smoothability-intro { grid-area: intro; }
+  .conifold-plate { grid-area: illustration; }
+
+  /* Align the rule with the ink of the first capital, inside the line box. */
+  .smoothability-intro > :first-child { text-box: trim-start cap alphabetic; }
+  @supports not (text-box: trim-start cap alphabetic) {
+    .conifold-plate { margin-block-start: .5rem; }
+  }
+}
+.face-plate {
+  margin: 1.6rem 0 2rem;
   border-block: 1px solid var(--rule);
   padding-block: 1.2rem .85rem;
 }
-.program-hero .face-plate img {
+.face-plate img {
   display: block;
   width: 100%;
   height: auto;

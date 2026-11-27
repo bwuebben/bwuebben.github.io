@@ -10,6 +10,15 @@
   <h2>The threefold with thirty smoothable singularities</h2>
   <div class="section-copy">
     <p>The example in the opening comes from looking for mirror pairs. A reflexive polytope has a polar dual, and the two polytopes specify mirror families of hypersurfaces. Among the 590 polytopes for which both generic hypersurfaces have at most isolated singularities, a unique mirror pair contains the cone over the first Hirzebruch surface. That cone rules out a smoothing on one side. The <a href="/papers/cy-mirror-pairs/">classification of doubly isolated mirrors</a> gives a complete local inventory on the other side. All twenty-six nodes and four del Pezzo cone points pass the local test.</p>
+    <figure class="face-plate" id="singularity-polygons">
+      <img src="/assets/illustrations/smoothability-faces.png" width="1200" height="358" loading="lazy" alt="A unit square with no interior lattice point, a pentagon with one interior point, and a hexagon with one interior point.">
+      <div class="face-key">
+        <span><b>26</b>nodes</span>
+        <span><b>2</b>degree-seven cones</span>
+        <span><b>2</b>degree-six cones</span>
+      </div>
+      <figcaption>The square gives a node. The pentagon and hexagon give cones over del Pezzo surfaces of degrees seven and six.</figcaption>
+    </figure>
     <p>What could prevent those thirty smoothings from fitting together? Resolve a node by replacing it with a projective line. For a threefold with only nodes, Friedman's criterion asks for coefficients, all nonzero, such that the weighted sum of the exceptional curve classes vanishes in the homology of the resolution. For instance, if two exceptional curves have the same nonzero class, their difference is a relation that uses them both. If one curve is independent of all the others, every relation misses it.</p>
     <p>At a cone point the resolution introduces an entire surface, and curves on that surface can enter the relation too. On the smooth part of a Calabi–Yau threefold there is a holomorphic volume form. Its integral over a three-cycle is called a period. Whenever a combination of cycles bounds in the complement of the singularities, Stokes’ theorem forces the same combination of periods to vanish. This is the source of the <a href="/papers/cy-vanishing-cycle/">vanishing-cycle obstruction</a>. It applies even when a putative smoothing starts with zero first derivative. In the thirty-point example every possible choice of local smoothing components fails the global condition. Even a formal one-parameter family cannot smooth all thirty. <a href="/papers/cy-vanishing-cycle/paper.pdf#page=15">Read the calculation for this threefold.</a></p>
   </div>
@@ -17,7 +26,7 @@
 <section class="section-block focus" id="deformation-space">
   <h2>One cone, two ways to smooth it</h2>
   <div class="section-copy">
-    <p>The degree-six del Pezzo surface is the projective plane blown up at three noncollinear points. The hexagon in the opening describes its cone. Add two lattice triangles and one obtains that hexagon. Add three suitably directed lattice segments and one obtains it again. Here adding shapes means taking all sums of one point from each shape. The first decomposition gives a line of local deformations, the second a plane. The two components meet at the original cone.</p>
+    <p>The degree-six del Pezzo surface is the projective plane blown up at three noncollinear points. The <a href="#singularity-polygons">hexagon in the thirty-point example</a> describes its cone. Add two lattice triangles and one obtains that hexagon. Add three suitably directed lattice segments and one obtains it again. Here adding shapes means taking all sums of one point from each shape. The first decomposition gives a line of local deformations, the second a plane. The two components meet at the original cone.</p>
     <p>On the plane component there are three marked periods <i>a</i>, <i>b</i>, <i>c</i> with <i>a</i> + <i>b</i> + <i>c</i> = 0. These are integrals of the volume form over the three cycles of a nodal modification. The diagram shows real values of the first two periods. The third is then determined. Each line is where one of the three periods vanishes.</p>
     <figure class="period-example" id="degree-six-period-plane" aria-labelledby="period-title">
       <div class="period-plane" aria-hidden="true">

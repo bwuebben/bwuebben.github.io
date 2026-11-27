@@ -286,7 +286,7 @@ SUBGUIDES={
  "calabi-yau":[dict(slug="smoothability",name="Smoothability and deformation spaces",short="Smoothability and deformation spaces",
    question="When do local smoothings fit together?",
    intro="Conifold transitions connect Calabi–Yau families through singular spaces. Which local smoothings fit together, and when does the transition run in reverse on the mirror as Morrison predicted?",
-   intro_fragment="smoothability-intro",hero_fragment="smoothability-faces",image="conifold",
+   intro_fragment="smoothability-intro",hero_fragment="smoothability-cycles",image="conifold",
    stylesheet="assets/smoothability.css",stem="calabi-yau-smoothability-guide",section="six-paper-guide",
    overview="For the connection with curve counting and compact M-theory, see the",
    groups=[("Local models and constructions","local-models",["cy-non-smoothable","cy-toric-pairs"]),
