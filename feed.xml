@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Link periods and deformations of Calabi–Yau threefolds with toric singularities</title>
+      <link>https://bwuebben.github.io/papers/toric-link-periods/</link>
+      <guid>https://bwuebben.github.io/papers/toric-link-periods/#update-2026-11-26</guid>
+      <description>A first-order deformation of a projective Calabi–Yau threefold can extend to second order and be obstructed at third order. For isolated Gorenstein toric singularities, marked link periods identify the full semiuniversal germ, up to a smooth factor, with the linear section of the local deformation spaces cut out by homological relations. In a projective example with two identical cone points, the cubic obstruction survives these relations.</description>
+      <pubDate>Thu, 26 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>Local equations for deformations of Calabi–Yau threefolds with del Pezzo cone points</title>
       <link>https://bwuebben.github.io/papers/stratified-cy-deformation-germs/</link>
       <guid>https://bwuebben.github.io/papers/stratified-cy-deformation-germs/#update-2026-11-26</guid>
