@@ -285,12 +285,14 @@ FORTHCOMING={}
 SUBGUIDES={
  "calabi-yau":[dict(slug="smoothability",name="Smoothability and deformation spaces",short="Smoothability and deformation spaces",
    question="When do local smoothings fit together?",
-   intro="A node can smooth in a small neighbourhood and still be forced to persist on a compact threefold. Relations among curves on a resolution explain which local deformations fit together and, for certain cone points, determine the equations of the entire deformation space.",
-   entry_links=[("stratified-cy-deformation-germs","Read the local equations theorem")],
-   image="conifold",stem="calabi-yau-smoothability-guide",section="six-paper-guide",
+   intro="Conifold transitions connect Calabi–Yau families through singular spaces. Which local smoothings fit together, and when does the transition run in reverse on the mirror as Morrison predicted?",
+   intro_fragment="smoothability-intro",hero_fragment="smoothability-faces",image="conifold",
+   stylesheet="assets/smoothability.css",stem="calabi-yau-smoothability-guide",section="six-paper-guide",
    overview="For the connection with curve counting and compact M-theory, see the",
-   groups=[("Local models and global obstructions","local-models",["cy-non-smoothable","cy-toric-pairs","cy-mirror-pairs","cy-vanishing-cycle"]),
-           ("Which singularities can persist?","deformation-space",["cy-mixed-smoothing","partial-smoothings-degree-six","stratified-cy-deformation-germs","toric-link-periods"]),
+   groups=[("Local models and constructions","local-models",["cy-non-smoothable","cy-toric-pairs"]),
+           ("The thirty-point example","global-relations",["cy-mirror-pairs","cy-vanishing-cycle"]),
+           ("Full and partial smoothings","deformation-space",["cy-mixed-smoothing","partial-smoothings-degree-six"]),
+           ("Equations and higher obstructions","infinitesimal",["stratified-cy-deformation-germs","toric-link-periods"]),
            ("Relations on the mirror","mirror-relations",["cy-conifold-relations"])]),
  dict(slug="universal-curve-counting",name="Universal curve counting",short="Universal curve counting",
    question="Universal curve counting",
@@ -572,7 +574,10 @@ def build_subguides():
             assert all(s in roles for s in slugs if s in by_slug),"Every catalogue paper in a focused guide needs a role"
             hero_art=(ROOT/f'content/{sg["hero_fragment"]}.html').read_text() if sg.get("hero_fragment") else f'<img src="/assets/illustrations/{sg["image"]}.svg" width="800" height="500" alt="Schematic illustration of {E(sg["short"])}">'
             subtitle=f'<p class="small">{E(sg["subtitle"])}</p>' if sg.get("subtitle") else ''
-            intro_html="".join(f'<p class="intro">{E(paragraph)}</p>' for paragraph in sg.get("intro_paragraphs",[sg["intro"]]))
+            if sg.get("intro_fragment"):
+                intro_html=(ROOT/f'content/{sg["intro_fragment"]}.html').read_text()
+            else:
+                intro_html="".join(f'<p class="intro">{E(paragraph)}</p>' for paragraph in sg.get("intro_paragraphs",[sg["intro"]]))
             if sg.get("entry_links"):
                 intro_html+='<div class="entry-links">'+''.join(link(f'/papers/{slug}/',E(label)) for slug,label in sg["entry_links"])+'</div>'
             body=f'''<header class="program-hero"><div><p class="kicker"><a href="/research/">Research</a> / <a href="/research/{p["slug"]}/">{E(p["name"])}</a> / {E(sg["short"])}</p><h1>{sg["question"]}</h1>{subtitle}{intro_html}</div>{hero_art}</header>'''
