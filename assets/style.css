@@ -147,8 +147,13 @@ a:focus-visible,
   gap: 0 2rem;
 }
 
-@media (max-width: 620px) {
+/* Tighter gaps keep the eight entries on one row down to about 685px,
+   and on two rows on a 360px phone. */
+@media (max-width: 780px) {
   .site-nav > ul { column-gap: 1.25rem; }
+}
+@media (max-width: 374px) {
+  .site-nav > ul { column-gap: 1.1rem; }
 }
 
 .site-nav a,

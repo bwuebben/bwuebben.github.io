@@ -65,7 +65,7 @@ for page in sorted(ROOT.rglob("*.html")):
 ns="http://www.sitemaps.org/schemas/sitemap/0.9";ET.register_namespace("",ns)
 p=ROOT/"sitemap.xml";tree=ET.fromstring(p.read_text())
 existing={n.find("{"+ns+"}loc").text for n in tree}
-for folder in ["explorers","research","about","updates","writing","math-and-ai","at-the-wall","when-walls-collide","singularity-microscope","geometry-particles"]:
+for folder in ["explorers","research","about","updates","writing","math-and-ai","at-the-wall","when-walls-collide","singularity-microscope","geometry-particles","gallery"]:
  for f in sorted((ROOT/folder).rglob("index.html")):
   url="https://bwuebben.github.io/"+str(f.relative_to(ROOT)).removesuffix("index.html")
   if url not in existing:

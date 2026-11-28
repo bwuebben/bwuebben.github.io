@@ -16,11 +16,11 @@ navigation and stylesheet links when the site's configuration changes.
 
 ## Site structure
 
-The top navigation is Home, Research Programs, Explorers, Writing, Papers, Updates,
-and About. The catalogue has six subject views, title and date
+The top navigation is Home, Research Programs, Explorers, Writing, Papers, Gallery,
+Updates, and About. The catalogue has six subject views, title and date
 rows, search, sorting, direct manuscript links, and expandable descriptions.
 Individual paper pages retain their full abstracts. Its routes include `/research/` and six
-subject guides, `/explorers/`, `/writing/` and its interactive essays,
+subject guides, `/explorers/`, `/gallery/`, `/writing/` and its interactive essays,
 `/about/`, `/updates/`, and `/feed.xml`.
 
 The Research Programs menu starts with Overview, followed by the six topic guides
@@ -50,6 +50,10 @@ To check header alignment, serve the site locally and run
 Chromium available. Set `BROWSER_CHANNEL=chrome` to use installed Chrome.
 The check scans the sitemap and compares each distinct page layout with the
 homepage, including the open dropdowns at desktop and phone widths.
+The header's column gap tightens at 780px and again at 374px, so the eight
+entries stay on one row down to about 685px and on two rows on a 360px phone.
+Measure the wrapping again after adding or renaming a top-level entry, and keep
+the check's viewport list on both sides of each breakpoint.
 
 The Atiyah–Floer reading route includes Papers I–III: comparison over
 𝔽₂, integral transported orientations, and the identification and
@@ -115,6 +119,7 @@ cobordism-explorer/     interactive Atiyah–Floer cobordism explorer
 beyond-hrp-lab/         interactive signal-aware portfolio laboratory
 at-the-wall/            stability chambers, small spectra, metric response and flow
 when-walls-collide/     exact wall crossing, annular holonomy and period comparison
+gallery/                Geometry beyond sight: three sets of images of Calabi–Yau geometry
 not-enough.html         Not Enough, an essay with interactive figures (self-contained:
                          its drum eigenmodes are embedded as data)
 poem.html               Gradient of Mind (a poem)
@@ -189,7 +194,7 @@ are kept there. Layout, navigation, responsive rules, and page styles live in
 `assets/style.css`.
 
 **Navigation:** edit the links in `site.json` or their outer markup in
-`templates/navigation.html`. The top level contains Home, Research Programs, Explorers, Writing, Papers, Updates, and About.
+`templates/navigation.html`. The top level contains Home, Research Programs, Explorers, Writing, Papers, Gallery, Updates, and About.
 Explorers contains Pillow Case, Conifold Transitions, Atiyah–Floer Cobordism, Beyond HRP, At the Wall and When Walls Collide; add future explorers
 to that group's `children` list.
 Writing's `children` list contains the writing index, Not Enough, Institutional knowledge, Physical limits, the eight essays from Black holes & markets to Nothing condenses alone, and Gradient of Mind. An item with a `children` list becomes a group, rendered as a native HTML
@@ -363,6 +368,37 @@ accent. `standalone.html` keeps the original portable design with `style.css`.
 Preview it at <http://127.0.0.1:8000/beyond-hrp-lab/> and run
 `python3 tools/update-site.py` after editing its assets. Its own README records the
 file layout and the scope of the illustration: it is educational, not a backtest.
+
+## The Gallery
+
+`gallery/index.html`, titled *Geometry beyond sight*, is the Gallery entry in the
+top navigation. It uses the shared navigation, fonts and light/dark theme; its
+styles are scoped to `.gallery-app` in `gallery/style.css`, and the plates keep a
+dark ground in both appearances because every image has one. Preview it at
+<http://127.0.0.1:8000/gallery/>.
+
+The page has three sets, and each ends with a provenance note that must stay
+accurate: generated artwork that was not computed from an equation, generated
+interpretations of the plane quintic that were not verified against it, and
+numerical renderings of the affine curve u⁵ + v⁵ = 1. `gallery/metal_quintic.py`
+is the source of the three computed views and is offered for download on the
+page; it needs NumPy and VTK with offscreen EGL rendering and writes PNG files,
+which are converted to WebP for the page. The final section states what the
+computed images show: part of a genus-six curve inside the Fermat quintic
+threefold, not the threefold or its Ricci-flat metric.
+
+The frontispiece starts midway between the eyebrow line and the capitals of the
+heading, and the opening text is written to end level with its caption: from
+1160px up the two ends differ by a few pixels. The hero has two narrower layouts
+below 1140px and 980px. After editing that text or replacing the image, compare
+where the text and the caption end at desktop width.
+
+To add an image, put a WebP file in `gallery/images/`, add a `figure` with a
+`plate` link, the pixel `width` and `height`, descriptive alt text and a caption
+to the appropriate set, and place it under the provenance note that describes
+it. `app.js` enlarges a plate in a native dialog; without JavaScript the link
+opens the image file. Run `python3 tools/update-site.py` after editing
+`style.css` or `app.js` to refresh their versions.
 
 ## The papers page
 

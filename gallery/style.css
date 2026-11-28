@@ -1,0 +1,79 @@
+/* Gallery: Geometry beyond sight. Fonts and colours come from the site theme.
+   Every image has a dark ground, so the plates keep one in both appearances. */
+.gallery-app {--plate:#09272c;max-width:1240px;margin:auto;padding:0 36px 80px;}
+.gallery-app .eyebrow,.gallery-app .chapter-number {font-family:var(--sans);font-size:11px;line-height:1.6;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);}
+.gallery-app .eyebrow {margin:0 0 20px;}
+.gallery-app .chapter-number {display:block;margin:0 0 14px;}
+.gallery-app a {text-underline-offset:4px;}
+.gallery-app figure {margin:0;}
+.gallery-app var {font-style:italic;}
+.gallery-app sub,.gallery-app sup {line-height:0;font-size:.68em;}
+.gallery-app .formula {white-space:nowrap;}
+.gallery-app .symbols {font-family:"STIX Two Math","Cambria Math","Noto Sans Math",var(--serif);}
+.gallery-app .small {font:13px/1.65 var(--sans);color:var(--ink-soft);margin:18px 0 0;}
+
+/* The frontispiece starts midway between the eyebrow line and the heading's capitals,
+   and the hero text is written to end level with its caption. */
+.gallery-app .gallery-hero {display:grid;grid-template-columns:.85fr 1.15fr;column-gap:clamp(36px,calc(20vw - 184px),64px);align-items:start;padding:64px 0 48px;}
+.gallery-app h1 {font-size:clamp(48px,6.4vw,84px);font-weight:400;letter-spacing:-.055em;line-height:.99;margin:0;}
+.gallery-app h1 em {color:var(--accent);font-weight:400;}
+.gallery-app .hero-copy {font-size:clamp(17.5px,1.613vw,20px);line-height:1.55;margin:20px 0 0;}
+.gallery-app .hero-notes {margin-top:14px;}
+.gallery-app .hero-notes p {font-size:clamp(15px,1.29vw,16px);line-height:1.5;margin:0 0 10px;}
+.gallery-app .hero-notes p:last-child {margin-bottom:0;}
+.gallery-app .frontispiece {margin-top:31px;}
+.gallery-app .frontispiece img {display:block;width:100%;height:auto;border-radius:4px;background:var(--plate);}
+.gallery-app .frontispiece figcaption {padding-top:9px;font:11px/1.6 var(--sans);color:var(--ink-soft);text-align:right;}
+
+.gallery-app .chapter-nav {display:flex;flex-wrap:wrap;gap:12px 36px;padding:19px 0;border-block:1px solid var(--rule);font:13px/1.5 var(--sans);}
+.gallery-app .chapter-nav a {color:var(--ink);text-decoration:none;}
+.gallery-app .chapter-nav a:hover {color:var(--accent);}
+.gallery-app .chapter-nav span {color:var(--ink-soft);margin-right:8px;font-size:11px;}
+
+.gallery-app section {margin-top:0;scroll-margin-top:28px;}
+.gallery-app .collection,.gallery-app .mathematics {padding-top:76px;}
+.gallery-app .section-head {display:grid;grid-template-columns:.85fr 1.15fr;gap:50px;align-items:start;margin-bottom:28px;}
+.gallery-app h2 {font-family:var(--serif);text-transform:none;color:var(--ink);border:0;padding:0;font-weight:400;font-size:clamp(30px,3.7vw,44px);line-height:1.12;letter-spacing:-.03em;margin:0;}
+.gallery-app .section-head p {font-size:18px;line-height:1.65;margin:0;max-width:620px;}
+
+.gallery-app .plates {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.gallery-app .plates.three {grid-template-columns:repeat(3,minmax(0,1fr));}
+.gallery-app .plates.lead figure:first-child {grid-column:1/-1;}
+.gallery-app .plates.lead figure:first-child img {aspect-ratio:3/2;}
+.gallery-app a.plate {display:block;overflow:hidden;background:var(--plate);border:1px solid var(--rule);border-radius:4px;cursor:zoom-in;}
+.gallery-app a.plate:hover {border-color:var(--accent);}
+.gallery-app a.plate img {display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain;transition:transform .45s ease;}
+.gallery-app a.plate:hover img {transform:scale(1.025);}
+.gallery-app .plates figcaption {display:flex;justify-content:space-between;gap:12px;padding:9px 2px 0;font:13px/1.5 var(--sans);color:var(--ink-soft);}
+.gallery-app .plate-arrow {color:var(--accent);}
+
+.gallery-app .provenance {display:flex;align-items:baseline;gap:14px;margin-top:22px;padding-top:10px;border-top:1px solid var(--rule);}
+.gallery-app .provenance p {margin:0;max-width:100ch;font:13px/1.7 var(--sans);color:var(--ink-soft);}
+.gallery-app .provenance strong {color:var(--ink);font-weight:600;}
+.gallery-app .note-number {font:13px/1.7 var(--serif);color:var(--accent);}
+
+.gallery-app .mathematics {display:grid;grid-template-columns:1fr 1fr;gap:50px;}
+.gallery-app .mathematics h2 {margin-bottom:22px;}
+.gallery-app .mathematics p {font-size:18px;line-height:1.65;margin:0 0 16px;max-width:620px;}
+.gallery-app .mathematics .equation {max-width:none;margin:0 0 22px;padding:20px 0;border-block:1px solid var(--rule);font:clamp(18px,2.5vw,30px)/1.6 var(--serif);color:var(--accent);}
+.gallery-app .mathematics .small {font:13px/1.65 var(--sans);margin:0;}
+.gallery-app .endnote {margin:64px 0 0;padding-top:22px;border-top:1px solid var(--rule);font:13px/1.8 var(--sans);color:var(--ink-soft);}
+
+.gallery-viewer {max-width:96vw;max-height:96vh;padding:12px;overflow:auto;border:0;border-radius:4px;background:#061719;color:#f3eee2;}
+.gallery-viewer::backdrop {background:rgba(0,0,0,.87);}
+.gallery-viewer img {display:block;width:auto;height:auto;max-width:89vw;max-height:82vh;margin:auto;object-fit:contain;}
+.gallery-viewer button {display:block;min-height:36px;margin:0 0 8px auto;padding:6px 14px;border:1px solid #315052;border-radius:3px;background:transparent;color:inherit;font:12px/1.4 var(--sans);cursor:pointer;}
+.gallery-viewer button:hover {border-color:#d9b47a;}
+.gallery-viewer button:focus-visible {outline:2px solid #d9b47a;outline-offset:3px;}
+.gallery-viewer p {margin:8px auto 2px;text-align:center;font:13px/1.5 var(--sans);color:#a7bcbc;}
+
+/* The text column narrows faster than the image shrinks. From 1240px down the hero type scales
+   with the viewport; below 1140px the heading moves above and only the paragraphs sit beside
+   the image; below 980px the hero is one column with the image after the introduction. */
+@media(max-width:1139px) {.gallery-app .gallery-hero{grid-template-areas:"head head" "lead figure" "notes figure";column-gap:48px}.gallery-app .hero-text{display:contents}.gallery-app .hero-head{grid-area:head;margin-bottom:32px}.gallery-app .hero-copy{grid-area:lead;align-self:end;margin:0;font-size:clamp(18px,1.8vw,20.5px)}.gallery-app .hero-notes{grid-area:notes;align-self:start}.gallery-app .hero-notes p{font-size:clamp(15px,calc(1.439vw + .61px),17px)}.gallery-app .frontispiece{grid-area:figure;align-self:center;margin-top:0}}
+@media(min-width:801px) and (max-width:1139px) {.gallery-app h1 br{display:none}}
+@media(max-width:979px) {.gallery-app .gallery-hero{grid-template-columns:1fr;grid-template-areas:"head" "lead" "figure" "notes";padding:42px 0 30px}.gallery-app .hero-head{margin-bottom:22px}.gallery-app .hero-copy,.gallery-app .hero-notes{max-width:640px}.gallery-app .frontispiece{max-width:720px;margin:28px 0 24px}.gallery-app .frontispiece figcaption{text-align:left}.gallery-app .hero-notes{margin-top:0}.gallery-app .hero-notes p{font-size:16px;line-height:1.55;margin-bottom:12px}}
+@media(max-width:800px) {.gallery-app{padding:0 22px 60px}.gallery-app h1{font-size:clamp(48px,9vw,72px)}.gallery-app .frontispiece{max-width:none}.gallery-app .section-head{grid-template-columns:1fr;gap:18px}.gallery-app .collection,.gallery-app .mathematics{padding-top:52px}.gallery-app .mathematics{grid-template-columns:1fr;gap:10px}.gallery-app .plates{gap:14px}.gallery-app .plates.three{grid-template-columns:1fr}.gallery-app .endnote{margin-top:48px}}
+@media(max-width:540px) {.gallery-app{padding:0 16px 45px}.gallery-app .gallery-hero{padding-top:35px}.gallery-app .chapter-nav{gap:12px 22px}}
+@media(max-width:420px) {.gallery-app .plates{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce) {.gallery-app a.plate img{transition:none}.gallery-app a.plate:hover img{transform:none}}

@@ -8,7 +8,8 @@ const root = path.resolve(__dirname, '..');
 const base = new URL(process.argv[2] || 'http://127.0.0.1:8000');
 const sitemap = fs.readFileSync(path.join(root, 'sitemap.xml'), 'utf8');
 const routes = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => new URL(match[1]).pathname);
-const viewports = [[1440, 900], [768, 900], [621, 768], [620, 768], [545, 760], [544, 760], [390, 844], [320, 568]];
+const viewports = [[1440, 900], [781, 900], [780, 900], [768, 900], [621, 768], [620, 768], [545, 760], [544, 760],
+  [390, 844], [375, 760], [374, 760], [320, 568]];
 
 // Resolve document-relative assets and group routes that load the same layout.
 // All paper records, for example, use one template and one set of stylesheets.

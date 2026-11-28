@@ -141,6 +141,7 @@ def main():
             "pillowcase-explorer/index.html": ("styles.css", "site.css", "model.js", "app.js"),
             "conifold-lab/index.html": ("styles.css", "model.js", "app.js"),
             "beyond-hrp-lab/index.html": ("site.css", "math.js", "app.js"),
+            "gallery/index.html": ("style.css", "app.js"),
         }
         for name in explorer_assets.get(relative, ()):
             version = hashlib.sha256((page.parent / name).read_bytes()).hexdigest()[:12]
