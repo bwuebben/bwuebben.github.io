@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-11-27",
+    "title": "Geometry beyond sight: a gallery of imagined and computed geometry",
+    "url": "/gallery/",
+    "description": "Three sets of images approach a Calabi–Yau threefold through imagination, interpretation and computation. The first are sculptural forms not computed from any equation, the second are an image generator’s interpretations of the plane quintic, and the third are numerical projections of the curve u⁵ + v⁵ = 1 inside the Fermat quintic threefold. A provenance note with each set states what was calculated and what was invented. The computed views show a bounded part of a genus-six curve, not the threefold or its Ricci-flat metric."
+  },
+  {
+    "date": "2026-11-27",
     "title": "The quadratic and cubic coefficients of circle exchange for balanced local curves",
     "url": "/papers/quadratic-cubic-circle-exchange/",
     "description": "For a balanced local curve of positive genus, two circle actions give the same quadratic and cubic stable-pair coefficients at every Euler characteristic and arbitrary volume character. The comparison holds in every positive curve degree in integral K-theory over the Picard variety. On the disk each Young diagram satisfies a separate identity between Macdonald operators and a sum over reverse plane partitions."

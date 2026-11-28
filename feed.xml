@@ -6,6 +6,13 @@
     <description>New papers, revised manuscripts, and additions to the website.</description>
     <language>en</language>
     <item>
+      <title>Geometry beyond sight: a gallery of imagined and computed geometry</title>
+      <link>https://bwuebben.github.io/gallery/</link>
+      <guid>https://bwuebben.github.io/gallery/#update-2026-11-27</guid>
+      <description>Three sets of images approach a Calabi–Yau threefold through imagination, interpretation and computation. The first are sculptural forms not computed from any equation, the second are an image generator’s interpretations of the plane quintic, and the third are numerical projections of the curve u⁵ + v⁵ = 1 inside the Fermat quintic threefold. A provenance note with each set states what was calculated and what was invented. The computed views show a bounded part of a genus-six curve, not the threefold or its Ricci-flat metric.</description>
+      <pubDate>Fri, 27 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
       <title>The quadratic and cubic coefficients of circle exchange for balanced local curves</title>
       <link>https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/</link>
       <guid>https://bwuebben.github.io/papers/quadratic-cubic-circle-exchange/#update-2026-11-27</guid>
